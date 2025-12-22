@@ -22,14 +22,28 @@ from typing import Optional, List
 from enum import Enum
 
 from mcp.server.fastmcp import FastMCP
+from mcp.server.transport_security import TransportSecuritySettings
 from pydantic import BaseModel, Field, ConfigDict
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("grand-debat-mcp")
 
+# Configure transport security for Railway deployment
+# Allow Railway's public domain and localhost for development
+transport_security = TransportSecuritySettings(
+    enable_dns_rebinding_protection=True,
+    allowed_hosts=[
+        "localhost:*",
+        "127.0.0.1:*",
+        "0.0.0.0:*",
+        "*.up.railway.app:*",
+        "graphragmcp-production.up.railway.app:*",
+    ],
+)
+
 # Initialize the MCP server
-mcp = FastMCP("grand_debat_mcp")
+mcp = FastMCP("grand_debat_mcp", transport_security=transport_security)
 
 # Configuration
 DATA_PATH = os.environ.get('GRAND_DEBAT_DATA_PATH', './law_data')
