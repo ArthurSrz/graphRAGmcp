@@ -722,8 +722,9 @@ async def _find_most_related_community_from_entities(
         for k, v in zip(related_community_keys_counts.keys(), _related_community_datas)
         if v is not None
     }
+    # Only sort keys that exist in related_community_datas (filters out missing community reports)
     related_community_keys = sorted(
-        related_community_keys_counts.keys(),
+        [k for k in related_community_keys_counts.keys() if k in related_community_datas],
         key=lambda k: (
             related_community_keys_counts[k],
             related_community_datas[k]["report_json"].get("rating", -1),
