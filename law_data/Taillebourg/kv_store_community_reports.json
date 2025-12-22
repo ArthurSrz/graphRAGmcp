@@ -1,0 +1,366 @@
+{
+  "L0C3": {
+    "report_string": "# Social Contribution Community\n\nThis community centers around themes of social contribution and citizen involvement, with an emphasis on the interaction between various contributions and social themes. The entities show a hierarchy of relevance, with significant contributions linked to broader social themes and participation by citizens.\n\n## Hierarchy of Contribution and Thematic Association\n\nThe relationship between 'contribution-Unknown-None' and 'thematique-social' suggests a strong link where contributions significantly influence the social themes being addressed. This indicates that contributions in this community might not just be individual acts but can collectively shape social discourses, strengthen communal ties, and lead to actionable insights that could benefit society at large.\n\n## Citizens' Role in Contributions\n\nThe connection between 'citoyen-Unknown-None' and 'contribution-Unknown-None' highlights the involvement of citizens in the contribution process. This relationship emphasizes the importance of citizen participation in contributing to social themes, indicating that the community is engaged and potentially responsive to the issues being addressed, which can enhance civic engagement and responsibility.\n\n## Ambiguous Nature of Contributions\n\nThe label 'contribution-Unknown-None' raises questions about the specific nature of the contributions being made within the community. This ambiguity could imply a need for clearer definitions and goals for contributions, which might enhance organizational effectiveness and community goal alignment, fostering more targeted actions and engagement from both contributors and citizens.\n\n## Social Themes as a Platform for Interaction\n\nThe entity 'thematique-social' serves as a critical platform that captures various social issues being addressed through contributions. This thematic approach not only helps in organizing efforts but can also attract diverse stakeholders, such as NGOs, government bodies, and community members focused on related issues, ultimately broadening the community's impact and outreach.",
+    "report_json": {
+      "title": "Social Contribution Community",
+      "summary": "This community centers around themes of social contribution and citizen involvement, with an emphasis on the interaction between various contributions and social themes. The entities show a hierarchy of relevance, with significant contributions linked to broader social themes and participation by citizens.",
+      "rating": 4.5,
+      "rating_explanation": "The impact severity rating indicates a moderate potential for positive social influence through contributions and thematic development in the community.",
+      "findings": [
+        {
+          "summary": "Hierarchy of Contribution and Thematic Association",
+          "explanation": "The relationship between 'contribution-Unknown-None' and 'thematique-social' suggests a strong link where contributions significantly influence the social themes being addressed. This indicates that contributions in this community might not just be individual acts but can collectively shape social discourses, strengthen communal ties, and lead to actionable insights that could benefit society at large."
+        },
+        {
+          "summary": "Citizens' Role in Contributions",
+          "explanation": "The connection between 'citoyen-Unknown-None' and 'contribution-Unknown-None' highlights the involvement of citizens in the contribution process. This relationship emphasizes the importance of citizen participation in contributing to social themes, indicating that the community is engaged and potentially responsive to the issues being addressed, which can enhance civic engagement and responsibility."
+        },
+        {
+          "summary": "Ambiguous Nature of Contributions",
+          "explanation": "The label 'contribution-Unknown-None' raises questions about the specific nature of the contributions being made within the community. This ambiguity could imply a need for clearer definitions and goals for contributions, which might enhance organizational effectiveness and community goal alignment, fostering more targeted actions and engagement from both contributors and citizens."
+        },
+        {
+          "summary": "Social Themes as a Platform for Interaction",
+          "explanation": "The entity 'thematique-social' serves as a critical platform that captures various social issues being addressed through contributions. This thematic approach not only helps in organizing efforts but can also attract diverse stakeholders, such as NGOs, government bodies, and community members focused on related issues, ultimately broadening the community's impact and outreach."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster L0C3",
+    "edges": [
+      [
+        "contribution-Unknown-4",
+        "thematique-social"
+      ],
+      [
+        "contribution-Unknown-None",
+        "thematique-immigration"
+      ],
+      [
+        "citoyen-Unknown-None",
+        "contribution-Unknown-None"
+      ],
+      [
+        "contribution-Unknown-3",
+        "thematique-social"
+      ],
+      [
+        "contribution-Unknown-None",
+        "thematique-politique"
+      ],
+      [
+        "contribution-Unknown-2",
+        "thematique-social"
+      ],
+      [
+        "contribution-Unknown-None",
+        "thematique-fiscalite"
+      ],
+      [
+        "contribution-Unknown-None",
+        "thematique-social"
+      ]
+    ],
+    "nodes": [
+      "thematique-social",
+      "contribution-Unknown-None",
+      "citoyen-Unknown-None"
+    ],
+    "chunk_ids": [
+      "contrib-0e7002fed880b75d301c918cbb8ea190",
+      "contrib-8c5ed005046e376fa5861341b1cca359",
+      "contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66",
+      "contrib-d1d01407a7dd3ea52bb942091a351c50"
+    ],
+    "occurrence": 0.8,
+    "sub_communities": []
+  },
+  "L0C1": {
+    "report_string": "# Contributions to Democracy and Security Themes\n\nThis community consists of various entities, including unknown citizens and contributions linked to themes of democracy and security. The relationships among these entities highlight a complex web of interactions that may influence the overall societal context.\n\n## Unspecified contributions' role in themes\n\nThe entity 'contribution-Unknown-2' is significantly linked to both the thematic entities, 'thematique-democratie' and 'thematique-securite,' indicating its centrality within this community. However, the lack of detailed information regarding these contributions creates ambiguity about their actual influence and implications. Understanding the nature of these contributions could be crucial for evaluating their potential impacts on society, particularly concerning democratic engagement and security issues.\n\n## Thematic focus on democracy and security\n\n'thematique-democratie' and 'thematique-securite' are themes actively represented within this community, suggesting a focus on civic engagement and safety. The emphasis on these themes may reveal broader societal concerns and priorities, yet without concrete data linked to these themes, it is difficult to ascertain the specific issues or initiatives being addressed. This focus is indicative of potential advocacy or discussions occurring around these critical areas, but the actual community dynamics remain underexplored.\n\n## The presence of an unknown citizen\n\nThe entity 'citoyen-Unknown-2' indicates individual participation in this community; however, the anonymity obscures the specific perspectives or contributions of the citizen. This figure’s link to 'contribution-Unknown-2' shows that individual actions may play a role in the broader themes of democracy and security. Nevertheless, the lack of identifiable claims or contributions limits the ability to measure the citizen's impact or the community’s breadth, underscoring a need for more transparency or engagement.",
+    "report_json": {
+      "title": "Contributions to Democracy and Security Themes",
+      "summary": "This community consists of various entities, including unknown citizens and contributions linked to themes of democracy and security. The relationships among these entities highlight a complex web of interactions that may influence the overall societal context.",
+      "rating": 4.0,
+      "rating_explanation": "The impact severity rating reflects a moderate importance due to the thematic contributions related to democracy and security, though the specifics of the contributions and effects remain unclear.",
+      "findings": [
+        {
+          "summary": "Unspecified contributions' role in themes",
+          "explanation": "The entity 'contribution-Unknown-2' is significantly linked to both the thematic entities, 'thematique-democratie' and 'thematique-securite,' indicating its centrality within this community. However, the lack of detailed information regarding these contributions creates ambiguity about their actual influence and implications. Understanding the nature of these contributions could be crucial for evaluating their potential impacts on society, particularly concerning democratic engagement and security issues."
+        },
+        {
+          "summary": "Thematic focus on democracy and security",
+          "explanation": "'thematique-democratie' and 'thematique-securite' are themes actively represented within this community, suggesting a focus on civic engagement and safety. The emphasis on these themes may reveal broader societal concerns and priorities, yet without concrete data linked to these themes, it is difficult to ascertain the specific issues or initiatives being addressed. This focus is indicative of potential advocacy or discussions occurring around these critical areas, but the actual community dynamics remain underexplored."
+        },
+        {
+          "summary": "The presence of an unknown citizen",
+          "explanation": "The entity 'citoyen-Unknown-2' indicates individual participation in this community; however, the anonymity obscures the specific perspectives or contributions of the citizen. This figure’s link to 'contribution-Unknown-2' shows that individual actions may play a role in the broader themes of democracy and security. Nevertheless, the lack of identifiable claims or contributions limits the ability to measure the citizen's impact or the community’s breadth, underscoring a need for more transparency or engagement."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster L0C1",
+    "edges": [
+      [
+        "contribution-Unknown-2",
+        "thematique-securite"
+      ],
+      [
+        "contribution-Unknown-3",
+        "thematique-democratie"
+      ],
+      [
+        "citoyen-Unknown-2",
+        "contribution-Unknown-2"
+      ],
+      [
+        "contribution-Unknown-2",
+        "thematique-social"
+      ],
+      [
+        "contribution-Unknown-2",
+        "thematique-democratie"
+      ],
+      [
+        "contribution-Unknown-2",
+        "thematique-fiscalite"
+      ]
+    ],
+    "nodes": [
+      "citoyen-Unknown-2",
+      "contribution-Unknown-2",
+      "thematique-democratie",
+      "thematique-securite"
+    ],
+    "chunk_ids": [
+      "contrib-d1d01407a7dd3ea52bb942091a351c50",
+      "contrib-8c5ed005046e376fa5861341b1cca359"
+    ],
+    "occurrence": 0.4,
+    "sub_communities": []
+  },
+  "L0C4": {
+    "report_string": "# Environmental Contributions Community\n\nThis community consists of entities focused on contributions related to ecological themes. The primary actors include a citizen, a contribution entity, and an ecological theme, which together highlight the involvement in environmental initiatives.\n\n## Key role of the citizen entity\n\nThe 'citoyen-Unknown-3' represents an individual contributor within the community. Despite the unknown nature of their contributions, this entity signifies grassroots involvement in ecological themes. Citizens play a crucial role in community initiatives, and their contributions, though unspecified, may indicate a foundation for future engagement or advocacy around environmental issues.\n\n## Significance of the contribution entity\n\nThe 'contribution-Unknown-3' serves as a central element linking the citizen to ecological themes. Its unknown status suggests potential variability in impact, which could range from impactful to negligible based on what contributions entail. Understanding the contributions' content could be pertinent to assessing their role in fostering environmental awareness or action.\n\n## Focus on ecological themes\n\nThe 'thematique-ecologie' emphasizes the community's alignment with environmental issues. While the exploration of specific ecological initiatives lacks clarity, the existence of this thematic link underscores a concerted intent towards fostering ecological awareness. This could lead to more deeply engaged discussions about sustainability and environmental protection in the community.\n\n## Interconnected relationships of community entities\n\nThe relationships between the citizen, contribution, and ecological theme reveal a network where individual actions may lead to broader ecological initiatives. The strong, ranked relationships suggest that contributions from citizens are significant in supporting ecological objectives. However, the opacity surrounding these contributions calls for further assessment to clarify the community's genuine impact on environmental issues.",
+    "report_json": {
+      "title": "Environmental Contributions Community",
+      "summary": "This community consists of entities focused on contributions related to ecological themes. The primary actors include a citizen, a contribution entity, and an ecological theme, which together highlight the involvement in environmental initiatives.",
+      "rating": 3.0,
+      "rating_explanation": "The impact severity rating is low due to the unknown nature of the contribution and citizen's activities, suggesting limited immediate consequences.",
+      "findings": [
+        {
+          "summary": "Key role of the citizen entity",
+          "explanation": "The 'citoyen-Unknown-3' represents an individual contributor within the community. Despite the unknown nature of their contributions, this entity signifies grassroots involvement in ecological themes. Citizens play a crucial role in community initiatives, and their contributions, though unspecified, may indicate a foundation for future engagement or advocacy around environmental issues."
+        },
+        {
+          "summary": "Significance of the contribution entity",
+          "explanation": "The 'contribution-Unknown-3' serves as a central element linking the citizen to ecological themes. Its unknown status suggests potential variability in impact, which could range from impactful to negligible based on what contributions entail. Understanding the contributions' content could be pertinent to assessing their role in fostering environmental awareness or action."
+        },
+        {
+          "summary": "Focus on ecological themes",
+          "explanation": "The 'thematique-ecologie' emphasizes the community's alignment with environmental issues. While the exploration of specific ecological initiatives lacks clarity, the existence of this thematic link underscores a concerted intent towards fostering ecological awareness. This could lead to more deeply engaged discussions about sustainability and environmental protection in the community."
+        },
+        {
+          "summary": "Interconnected relationships of community entities",
+          "explanation": "The relationships between the citizen, contribution, and ecological theme reveal a network where individual actions may lead to broader ecological initiatives. The strong, ranked relationships suggest that contributions from citizens are significant in supporting ecological objectives. However, the opacity surrounding these contributions calls for further assessment to clarify the community's genuine impact on environmental issues."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster L0C4",
+    "edges": [
+      [
+        "contribution-Unknown-3",
+        "thematique-politique"
+      ],
+      [
+        "contribution-Unknown-3",
+        "thematique-fiscalite"
+      ],
+      [
+        "contribution-Unknown-3",
+        "thematique-ecologie"
+      ],
+      [
+        "contribution-Unknown-3",
+        "thematique-social"
+      ],
+      [
+        "contribution-Unknown-3",
+        "thematique-democratie"
+      ],
+      [
+        "citoyen-Unknown-3",
+        "contribution-Unknown-3"
+      ]
+    ],
+    "nodes": [
+      "contribution-Unknown-3",
+      "thematique-ecologie",
+      "citoyen-Unknown-3"
+    ],
+    "chunk_ids": [
+      "contrib-d1d01407a7dd3ea52bb942091a351c50"
+    ],
+    "occurrence": 0.2,
+    "sub_communities": []
+  },
+  "L0C0": {
+    "report_string": "# Fiscality and Immigration Contributions Community\n\nThe community centers around contributions related to fiscality and immigration themes, with citizens engaging in these contributions. The contributions are linked by their relevance to the themed topics, establishing a network of engagement focused on these important societal issues.\n\n## Central themes of fiscality and immigration\n\nThe community is predominantly structured around two key themes: fiscality and immigration, as indicated by the presence of 'thematique-fiscalite' and 'thematique-immigration'. These themes are crucial as they link and categorize the various contributions made by the citizens, highlighting the community's focus on pressing socio-economic issues. Fiscal and immigration matters often invoke strong opinions and can significantly impact both public policy and community dynamics.\n\n## Strong engagement from contributions\n\nThe contributions labeled as 'contribution-Unknown-4' and 'contribution-Unknown-6' indicate substantial engagement with the themes of fiscality and immigration. Each contribution connects back to the themes with varying degrees of significance, where 'contribution-Unknown-4' has exceptional ties to both themes. This suggests that stakeholders in this community are actively participating in discussions surrounding these critical topics, which can influence public sentiment and policy.\n\n## Role of citizens in the contributions\n\nCitizens, such as 'citoyen-Unknown-4' and 'citoyen-Unknown-6', represent individual inputs into the contributions. Their involvement indicates that the community is not just a collective of abstract themes but is also composed of real individuals who are investing their thoughts and efforts into these contributions. This citizen engagement is vital since the personal experiences and views of these individuals can enrich the discussions on fiscality and immigration.\n\n## Ranking of contributions as a measure of relevance\n\nThe relationships show a ranking system that indicates the significance of specific contributions relative to the themes. For instance, the ranking of 'contribution-Unknown-4' receiving a rank of 9 in relation to 'thematique-fiscalite' particularly highlights its importance in the community. This ranking provides insights into which contributions might be more influential in shaping dialogue and decisions regarding these themes.\n\n## Interconnected nature of contributions\n\nThe contributions are interlinked to both themes of fiscality and immigration, suggesting a multidimensional approach to the issues at hand. For example, both primary contributions feed into multiple thematic areas, indicating that the citizens view these concerns as part of a broader socio-political landscape rather than isolated issues. This interconnectedness can foster a more comprehensive understanding among stakeholders, leading to nuanced discussions and solutions.",
+    "report_json": {
+      "title": "Fiscality and Immigration Contributions Community",
+      "summary": "The community centers around contributions related to fiscality and immigration themes, with citizens engaging in these contributions. The contributions are linked by their relevance to the themed topics, establishing a network of engagement focused on these important societal issues.",
+      "rating": 6.5,
+      "rating_explanation": "The impact severity rating is moderate to high, indicating significant societal concerns over fiscal and immigration issues that could lead to public discourse or social action.",
+      "findings": [
+        {
+          "summary": "Central themes of fiscality and immigration",
+          "explanation": "The community is predominantly structured around two key themes: fiscality and immigration, as indicated by the presence of 'thematique-fiscalite' and 'thematique-immigration'. These themes are crucial as they link and categorize the various contributions made by the citizens, highlighting the community's focus on pressing socio-economic issues. Fiscal and immigration matters often invoke strong opinions and can significantly impact both public policy and community dynamics."
+        },
+        {
+          "summary": "Strong engagement from contributions",
+          "explanation": "The contributions labeled as 'contribution-Unknown-4' and 'contribution-Unknown-6' indicate substantial engagement with the themes of fiscality and immigration. Each contribution connects back to the themes with varying degrees of significance, where 'contribution-Unknown-4' has exceptional ties to both themes. This suggests that stakeholders in this community are actively participating in discussions surrounding these critical topics, which can influence public sentiment and policy."
+        },
+        {
+          "summary": "Role of citizens in the contributions",
+          "explanation": "Citizens, such as 'citoyen-Unknown-4' and 'citoyen-Unknown-6', represent individual inputs into the contributions. Their involvement indicates that the community is not just a collective of abstract themes but is also composed of real individuals who are investing their thoughts and efforts into these contributions. This citizen engagement is vital since the personal experiences and views of these individuals can enrich the discussions on fiscality and immigration."
+        },
+        {
+          "summary": "Ranking of contributions as a measure of relevance",
+          "explanation": "The relationships show a ranking system that indicates the significance of specific contributions relative to the themes. For instance, the ranking of 'contribution-Unknown-4' receiving a rank of 9 in relation to 'thematique-fiscalite' particularly highlights its importance in the community. This ranking provides insights into which contributions might be more influential in shaping dialogue and decisions regarding these themes."
+        },
+        {
+          "summary": "Interconnected nature of contributions",
+          "explanation": "The contributions are interlinked to both themes of fiscality and immigration, suggesting a multidimensional approach to the issues at hand. For example, both primary contributions feed into multiple thematic areas, indicating that the citizens view these concerns as part of a broader socio-political landscape rather than isolated issues. This interconnectedness can foster a more comprehensive understanding among stakeholders, leading to nuanced discussions and solutions."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster L0C0",
+    "edges": [
+      [
+        "citoyen-Unknown-4",
+        "contribution-Unknown-4"
+      ],
+      [
+        "contribution-Unknown-6",
+        "thematique-fiscalite"
+      ],
+      [
+        "contribution-Unknown-4",
+        "thematique-social"
+      ],
+      [
+        "contribution-Unknown-2",
+        "thematique-fiscalite"
+      ],
+      [
+        "contribution-Unknown-None",
+        "thematique-immigration"
+      ],
+      [
+        "contribution-Unknown-4",
+        "thematique-fiscalite"
+      ],
+      [
+        "contribution-Unknown-3",
+        "thematique-fiscalite"
+      ],
+      [
+        "contribution-Unknown-6",
+        "thematique-immigration"
+      ],
+      [
+        "contribution-Unknown-4",
+        "thematique-immigration"
+      ],
+      [
+        "citoyen-Unknown-6",
+        "contribution-Unknown-6"
+      ],
+      [
+        "contribution-Unknown-None",
+        "thematique-fiscalite"
+      ]
+    ],
+    "nodes": [
+      "thematique-fiscalite",
+      "contribution-Unknown-4",
+      "thematique-immigration",
+      "citoyen-Unknown-6",
+      "citoyen-Unknown-4",
+      "contribution-Unknown-6"
+    ],
+    "chunk_ids": [
+      "contrib-0e7002fed880b75d301c918cbb8ea190",
+      "contrib-ab59ed4a3c1985045c74cc60f916cc42",
+      "contrib-8c5ed005046e376fa5861341b1cca359",
+      "contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66",
+      "contrib-d1d01407a7dd3ea52bb942091a351c50"
+    ],
+    "occurrence": 1.0,
+    "sub_communities": []
+  },
+  "L0C2": {
+    "report_string": "# Unknown Contributions and Thematic Engagement\n\nThe community consists of various unnamed contributions and thematic elements, particularly focusing on political and justice themes. These entities are interconnected, emphasizing a possible citizen engagement in these issues, although specifics remain poorly defined.\n\n## Role of Contributions in the Community\n\nThe primary entity, 'contribution-Unknown-5', serves as a central point of aggregation for the community's thematic interests. With a rank of 6 in its relationship to 'thematique-politique', this contribution appears to play a crucial role in shaping the political discourse within the community. However, the lack of details around this contribution makes it challenging to fully assess its implications. Its connection to another thematic area related to justice suggests a layered complexity in the issues it addresses, potentially highlighting systemic concerns that resonate with broader societal dialogues.\n\n## Thematic Engagement in Politics and Justice\n\nThere are two primary thematic entities: 'thematique-politique' and 'thematique-justice'. These entities reflect key areas of concern within the community. The high ranking of their connection to contributions indicates they might be pivotal in guiding discussions around governance and social equity. The engagement with justice themes could suggest active awareness and advocacy for rights, although specifics about the nature of these themes remain unspecified, indicating a need for further inquiry and clarity.\n\n## The Unknown Citizen's Role\n\nThe entity 'citoyen-Unknown-5' indicates a participating individual or group within the community who is linked to the contribution entity. This suggests that there is citizen involvement in the discussions surrounding political and justice themes. However, the ambiguous nature of this citizen's identity or activities poses limitations in understanding the depth of their involvement. Their established connection with the contribution further emphasizes that the community is likely a platform for citizen expressions and concerns, although the specifics of these contributions remain undefined.\n\n## Interconnectedness of Themes\n\nThe existence of multiple thematic connections reveals an underlying interconnectedness within the community's issues. The direct ties between 'thematique-politique' and 'thematique-justice', facilitated through contributions, suggest that discussions about political structures are intrinsically linked to justice-related matters. This confluence can be seen as an indication that debates occurring within this community may address overlapping concerns, such as governance, rights, and the pursuit of social justice, even if the exact nuances of these themes are not explicitly detailed.",
+    "report_json": {
+      "title": "Unknown Contributions and Thematic Engagement",
+      "summary": "The community consists of various unnamed contributions and thematic elements, particularly focusing on political and justice themes. These entities are interconnected, emphasizing a possible citizen engagement in these issues, although specifics remain poorly defined.",
+      "rating": 4.5,
+      "rating_explanation": "The impact severity rating is moderate due to the unclear but potentially significant implications of the contributions and thematic focuses on political and justice issues.",
+      "findings": [
+        {
+          "summary": "Role of Contributions in the Community",
+          "explanation": "The primary entity, 'contribution-Unknown-5', serves as a central point of aggregation for the community's thematic interests. With a rank of 6 in its relationship to 'thematique-politique', this contribution appears to play a crucial role in shaping the political discourse within the community. However, the lack of details around this contribution makes it challenging to fully assess its implications. Its connection to another thematic area related to justice suggests a layered complexity in the issues it addresses, potentially highlighting systemic concerns that resonate with broader societal dialogues."
+        },
+        {
+          "summary": "Thematic Engagement in Politics and Justice",
+          "explanation": "There are two primary thematic entities: 'thematique-politique' and 'thematique-justice'. These entities reflect key areas of concern within the community. The high ranking of their connection to contributions indicates they might be pivotal in guiding discussions around governance and social equity. The engagement with justice themes could suggest active awareness and advocacy for rights, although specifics about the nature of these themes remain unspecified, indicating a need for further inquiry and clarity."
+        },
+        {
+          "summary": "The Unknown Citizen's Role",
+          "explanation": "The entity 'citoyen-Unknown-5' indicates a participating individual or group within the community who is linked to the contribution entity. This suggests that there is citizen involvement in the discussions surrounding political and justice themes. However, the ambiguous nature of this citizen's identity or activities poses limitations in understanding the depth of their involvement. Their established connection with the contribution further emphasizes that the community is likely a platform for citizen expressions and concerns, although the specifics of these contributions remain undefined."
+        },
+        {
+          "summary": "Interconnectedness of Themes",
+          "explanation": "The existence of multiple thematic connections reveals an underlying interconnectedness within the community's issues. The direct ties between 'thematique-politique' and 'thematique-justice', facilitated through contributions, suggest that discussions about political structures are intrinsically linked to justice-related matters. This confluence can be seen as an indication that debates occurring within this community may address overlapping concerns, such as governance, rights, and the pursuit of social justice, even if the exact nuances of these themes are not explicitly detailed."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster L0C2",
+    "edges": [
+      [
+        "contribution-Unknown-3",
+        "thematique-politique"
+      ],
+      [
+        "contribution-Unknown-5",
+        "thematique-justice"
+      ],
+      [
+        "contribution-Unknown-None",
+        "thematique-politique"
+      ],
+      [
+        "citoyen-Unknown-5",
+        "contribution-Unknown-5"
+      ],
+      [
+        "contribution-Unknown-5",
+        "thematique-politique"
+      ]
+    ],
+    "nodes": [
+      "thematique-politique",
+      "thematique-justice",
+      "contribution-Unknown-5",
+      "citoyen-Unknown-5"
+    ],
+    "chunk_ids": [
+      "contrib-0e7002fed880b75d301c918cbb8ea190",
+      "contrib-11652fa695f7bc1307a3100db557ffe2",
+      "contrib-d1d01407a7dd3ea52bb942091a351c50"
+    ],
+    "occurrence": 0.6,
+    "sub_communities": []
+  }
+}

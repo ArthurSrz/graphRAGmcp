@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d31" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d30" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d29" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d28" for="node" attr.name="cible" attr.type="string"/>
+<key id="d27" for="node" attr.name="valeur" attr.type="string"/>
+<key id="d26" for="node" attr.name="type" attr.type="string"/>
+<key id="d25" for="node" attr.name="domaine" attr.type="string"/>
+<key id="d24" for="node" attr.name="nom" attr.type="string"/>
+<key id="d23" for="node" attr.name="estTypique" attr.type="boolean"/>
+<key id="d22" for="node" attr.name="gravite" attr.type="string"/>
+<key id="d21" for="node" attr.name="objet" attr.type="string"/>
+<key id="d20" for="node" attr.name="categorie" attr.type="string"/>
+<key id="d19" for="node" attr.name="titre" attr.type="string"/>
+<key id="d18" for="node" attr.name="intensite" attr.type="double"/>
+<key id="d17" for="node" attr.name="sujet" attr.type="string"/>
+<key id="d16" for="node" attr.name="position" attr.type="string"/>
+<key id="d15" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d14" for="node" attr.name="description" attr.type="string"/>
+<key id="d13" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d12" for="node" attr.name="manuscritType" attr.type="string"/>
+<key id="d11" for="node" attr.name="contributionNumber" attr.type="string"/>
+<key id="d10" for="node" attr.name="commune" attr.type="string"/>
+<key id="d9" for="node" attr.name="estPartielle" attr.type="boolean"/>
+<key id="d8" for="node" attr.name="dateCreation" attr.type="string"/>
+<key id="d7" for="node" attr.name="texte" attr.type="string"/>
+<key id="d6" for="node" attr.name="contributionId" attr.type="string"/>
+<key id="d5" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d4" for="node" attr.name="demographic" attr.type="string"/>
+<key id="d3" for="node" attr.name="dateParticipation" attr.type="string"/>
+<key id="d2" for="node" attr.name="codePostal" attr.type="string"/>
+<key id="d1" for="node" attr.name="citoyenId" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="citoyen-Unknown-None">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-None</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="contribution-Unknown-None">
+  <data key="d0">Contribution</data>
+  <data key="d6">contribution-Unknown-None</data>
+  <data key="d7">Cahier de Thaims1. Manuscrit (14 pages), 420 lignes, 3914 motsRÉFLEXIONS DANS LE CADRE DES CAHIERS DE DOLÉANCESI) Constat :1) Un pays de plus en plus divisé, où les inégalités ne font que se creuser.2) Une représentation nationale dont le système est à bout de souffle.3) Une administration refermée sur elle-même, de plus en plus éloignée des citoyens et qui répondde moins en moins à leurs attentes.4) Un exécutif qui n’écoute pas les demandes et les besoins du pays, et axe toute sa polit...</data>
+  <data key="d8"></data>
+  <data key="d9">False</data>
+  <data key="d10">Unknown</data>
+  <data key="d11"></data>
+  <data key="d12"></data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="opinion-8077eeec">
+  <data key="d0">OPINION</data>
+  <data key="d13">Division sociale et inégalités</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d16">contre</data>
+  <data key="d17">inégalités sociales et économiques</data>
+  <data key="d18">0.8</data>
+</node>
+<node id="opinion-71da3211">
+  <data key="d0">OPINION</data>
+  <data key="d13">Administration déconnectée</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d16">contre</data>
+  <data key="d17">déconnexion de l'administration vis-à-vis des citoyens</data>
+  <data key="d18">0.9</data>
+</node>
+<node id="proposition-797202d8">
+  <data key="d0">PROPOSITION</data>
+  <data key="d13">Démocratie directe</data>
+  <data key="d14">Mettre en place un système de référendum d'initiative citoyenne pour permettre aux citoyens d'exprimer leur volonté directement sur des sujets importants.</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d19">Démocratie directe</data>
+  <data key="d20">democratique</data>
+</node>
+<node id="proposition-b63de5b9">
+  <data key="d0">PROPOSITION</data>
+  <data key="d13">Augmenter le SMIC</data>
+  <data key="d14">Augmenter le salaire minimum pour qu'il soit plus attractif par rapport aux aides sociales.</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d19">Augmenter le SMIC</data>
+  <data key="d20">sociale</data>
+</node>
+<node id="doleance-1bd42935">
+  <data key="d0">DOLEANCE</data>
+  <data key="d13">Inégalités entre les classes sociales</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d21">Inégalités croissantes entre les riches et les pauvres</data>
+  <data key="d22">forte</data>
+</node>
+<node id="doleance-8adfec70">
+  <data key="d0">DOLEANCE</data>
+  <data key="d13">Ecart entre villes et campagnes</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d21">Ecart entre les infrastructures des villes et des campagnes</data>
+  <data key="d22">moyenne</data>
+</node>
+<node id="verbatim-cd9cea88">
+  <data key="d0">VERBATIM</data>
+  <data key="d13">Il faut absolument ne pas porter atteinte au pouvoir d'achat et plutôt le favoriser.</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d23">True</data>
+</node>
+<node id="thematique-7347f8ed">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">Fiscalité</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Fiscalité</data>
+</node>
+<node id="thematique-f431e17e">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">Social</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Social</data>
+</node>
+<node id="thematique-c09381a9">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">Démocratie</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Démocratie</data>
+</node>
+<node id="service_public-6e30a008">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d13">Services publics ruraux</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Services publics en milieu rural</data>
+  <data key="d25">social</data>
+</node>
+<node id="acteur_institutionnel-abbaba51">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d13">Présidence</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Présidence de la République</data>
+  <data key="d26">gouvernement</data>
+</node>
+<node id="mode_scrutin-c8d34114">
+  <data key="d0">MODE_SCRUTIN</data>
+  <data key="d13">Référendum d'initiative citoyenne</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Référendum d'initiative citoyenne</data>
+</node>
+<node id="reforme_democratique-b4b2ab1b">
+  <data key="d0">REFORME_DEMOCRATIQUE</data>
+  <data key="d13">Reforme de la représentation nationale</data>
+  <data key="d14">Révision du système de représentation pour inclure des citoyens tirés au sort.</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Reforme de la représentation nationale</data>
+</node>
+<node id="niveau_confiance-50c9019e">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d13">Confiance envers le gouvernement</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d27">faible</data>
+  <data key="d28">gouvernement</data>
+</node>
+<node id="reforme_fiscale-551757a6">
+  <data key="d0">REFORME_FISCALE</data>
+  <data key="d13">Revoir la suppression de l'ISF</data>
+  <data key="d14">Aménager un système qui permette aux grosses fortunes de participer à l'effort national fiscal.</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Revoir la suppression de l'ISF</data>
+</node>
+<node id="type_impot-4c226d35">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d13">ISF</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">ISF</data>
+  <data key="d20">direct</data>
+</node>
+<node id="doleance-925d8834">
+  <data key="d0">DOLEANCE</data>
+  <data key="d13">Problèmes liés à l'aide sociale</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d21">Inadaptation de l'aide sociale à certaines personnes</data>
+  <data key="d22">moyenne</data>
+</node>
+<node id="proposition-e899cc2c">
+  <data key="d0">PROPOSITION</data>
+  <data key="d13">Politique d'aménagement du territoire</data>
+  <data key="d14">Mettre en œuvre une politique d'aménagement du territoire pour réduire l'écart entre villes et campagnes.</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d19">Politique d'aménagement du territoire</data>
+  <data key="d20">democratique</data>
+</node>
+<node id="proposition-b56dc441">
+  <data key="d0">PROPOSITION</data>
+  <data key="d13">Forte régulation des réseaux sociaux</data>
+  <data key="d14">Mettre en place une réglementation stricte pour contrôler la diffusion d'informations sur les réseaux sociaux afin d'éviter les abus.</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d19">Forte régulation des réseaux sociaux</data>
+  <data key="d20">sociale</data>
+</node>
+<node id="doleance-c3ffefa9">
+  <data key="d0">DOLEANCE</data>
+  <data key="d13">Complexité administrative</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d21">Complexité des réglementations administratives</data>
+  <data key="d22">forte</data>
+</node>
+<node id="verbatim-0534cd79">
+  <data key="d0">VERBATIM</data>
+  <data key="d13">Un changement d'attitude paraît vraiment indispensable.</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d23">True</data>
+</node>
+<node id="thematique-26e27b6f">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">Économie</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Économie</data>
+</node>
+<node id="type_impot-43967702">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d13">Taxe sur les grandes entreprises</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Taxe sur les grandes entreprises</data>
+  <data key="d20">direct</data>
+</node>
+<node id="reforme_fiscale-492e3e8a">
+  <data key="d0">REFORME_FISCALE</data>
+  <data key="d13">Taxation des grandes entreprises</data>
+  <data key="d14">Instaurer une taxation plus équitable pour les grandes entreprises pour assurer un financement des services publics.</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">Taxation des grandes entreprises</data>
+</node>
+<node id="thematique-ecologie">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">ECOLOGIE</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">ECOLOGIE</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="thematique-social">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">SOCIAL</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">SOCIAL</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="thematique-fiscalite">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">FISCALITE</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">FISCALITE</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="thematique-securite">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">SECURITE</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">SECURITE</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="thematique-immigration">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">IMMIGRATION</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">IMMIGRATION</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="thematique-sanitaire">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">SANITAIRE</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">SANITAIRE</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="thematique-democratie">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">DEMOCRATIE</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">DEMOCRATIE</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="thematique-politique">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d13">POLITIQUE</data>
+  <data key="d14"></data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d24">POLITIQUE</data>
+  <data key="d5">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Démocratie directe">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Démocratie directe</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Référendum d'initiative citoyenne">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Référendum d'initiative citoyenne</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Inégalités croissantes entre les riches et les pauvres">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Inégalités croissantes entre les riches et les pauvres</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Services publics en milieu rural">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Services publics en milieu rural</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Reforme de la représentation nationale">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Reforme de la représentation nationale</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Revoir la suppression de l'ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Revoir la suppression de l'ISF</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">ISF</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Division sociale et inégalités">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Division sociale et inégalités</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Confiance envers le gouvernement">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Confiance envers le gouvernement</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Administration déconnectée">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Administration déconnectée</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Inadaptation de l'aide sociale à certaines personnes">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Inadaptation de l'aide sociale à certaines personnes</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Aide sociale">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Aide sociale</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Politique d'aménagement du territoire">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Politique d'aménagement du territoire</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Forte régulation des réseaux sociaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Forte régulation des réseaux sociaux</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Dangers des réseaux sociaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Dangers des réseaux sociaux</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Complexité des réglementations administratives">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Complexité des réglementations administratives</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Taxation des grandes entreprises">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Taxation des grandes entreprises</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<node id="Taxe sur les grandes entreprises">
+  <data key="d0">UNKNOWN</data>
+  <data key="d13">Taxe sur les grandes entreprises</data>
+  <data key="d15">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</node>
+<edge source="citoyen-Unknown-None" target="contribution-Unknown-None">
+  <data key="d29">SOUMET</data>
+  <data key="d30">1.0</data>
+  <data key="d31">contribution-Unknown-None</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-ecologie">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-social">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-fiscalite">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-securite">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-immigration">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-sanitaire">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-democratie">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-politique">
+  <data key="d29">ABORDE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Démocratie directe" target="Référendum d'initiative citoyenne">
+  <data key="d29">PROPOSE</data>
+  <data key="d30">0.9</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Démocratie directe" target="Reforme de la représentation nationale">
+  <data key="d29">FORMULE</data>
+  <data key="d30">0.7</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Démocratie directe" target="Complexité des réglementations administratives">
+  <data key="d29">FORMULE</data>
+  <data key="d30">0.7</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Démocratie directe" target="Aide sociale">
+  <data key="d29">FORMULE</data>
+  <data key="d30">0.6</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Référendum d'initiative citoyenne" target="Reforme de la représentation nationale">
+  <data key="d29">PROPOSE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Inégalités croissantes entre les riches et les pauvres" target="Services publics en milieu rural">
+  <data key="d29">CONCERNE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Inégalités croissantes entre les riches et les pauvres" target="Politique d'aménagement du territoire">
+  <data key="d29">FORMULE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Services publics en milieu rural" target="Taxation des grandes entreprises">
+  <data key="d29">FORMULE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Revoir la suppression de l'ISF" target="ISF">
+  <data key="d29">PORTE_SUR_IMPOT</data>
+  <data key="d30">0.9</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Division sociale et inégalités" target="Confiance envers le gouvernement">
+  <data key="d29">TRADUIT</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Confiance envers le gouvernement" target="Administration déconnectée">
+  <data key="d29">TRADUIT</data>
+  <data key="d30">0.9</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Administration déconnectée" target="Complexité des réglementations administratives">
+  <data key="d29">FAIT_REMONTER</data>
+  <data key="d30">0.9</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Inadaptation de l'aide sociale à certaines personnes" target="Aide sociale">
+  <data key="d29">FAIT_REMONTER</data>
+  <data key="d30">0.7</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Forte régulation des réseaux sociaux" target="Dangers des réseaux sociaux">
+  <data key="d29">FORMULE</data>
+  <data key="d30">0.8</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+<edge source="Taxation des grandes entreprises" target="Taxe sur les grandes entreprises">
+  <data key="d29">PORTE_SUR_IMPOT</data>
+  <data key="d30">0.9</data>
+  <data key="d31">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+</edge>
+</graph></graphml>

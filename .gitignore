@@ -18,8 +18,8 @@ ENV/
 .idea/
 *.swp
 
-# Data (too large for git)
-law_data/
+# Data - included for deployment (101MB)
+# law_data/
 
 # Logs
 *.log
