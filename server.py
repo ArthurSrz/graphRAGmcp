@@ -339,7 +339,7 @@ async def grand_debat_query_all(
     """
     Query across ALL 50 communes in a single call - no per-commune approval needed.
 
-    This tool queries all communes in parallel and aggregates results.
+    This tool queries all communes with controlled concurrency to avoid API rate limits.
     Use this for broad questions like "What do French citizens think about X?"
 
     Args:
@@ -375,47 +375,52 @@ async def grand_debat_query_all(
         sorted_communes = sorted(all_communes, key=lambda x: x.get('entity_count', 0), reverse=True)
         target_communes = sorted_communes[:max_communes]
 
+        # Semaphore to limit concurrent API calls (avoid OpenAI rate limits)
+        MAX_CONCURRENT = 5  # Max 5 concurrent OpenAI API calls
+        semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+
         async def query_single_commune(commune_info):
-            """Query a single commune and return results."""
-            commune_id = commune_info['id']
-            commune_path = get_commune_path(commune_id)
-            if not commune_path:
-                return None
+            """Query a single commune with rate limiting."""
+            async with semaphore:  # Acquire semaphore before making API call
+                commune_id = commune_info['id']
+                commune_path = get_commune_path(commune_id)
+                if not commune_path:
+                    return None
 
-            try:
-                rag = GraphRAG(
-                    working_dir=str(commune_path),
-                    best_model_func=gpt_4o_mini_complete,
-                    cheap_model_func=gpt_4o_mini_complete,
-                )
+                try:
+                    rag = GraphRAG(
+                        working_dir=str(commune_path),
+                        best_model_func=gpt_4o_mini_complete,
+                        cheap_model_func=gpt_4o_mini_complete,
+                    )
 
-                result = await rag.aquery(
-                    query,
-                    param=QueryParam(mode=mode.value, return_provenance=include_sources)
-                )
+                    result = await rag.aquery(
+                        query,
+                        param=QueryParam(mode=mode.value, return_provenance=include_sources)
+                    )
 
-                if isinstance(result, dict):
-                    return {
-                        "commune_id": commune_id,
-                        "commune_name": commune_info.get('name', commune_id),
-                        "entity_count": commune_info.get('entity_count', 0),
-                        "answer": result.get("answer", ""),
-                        "provenance": result.get("provenance", {})
-                    }
-                else:
-                    return {
-                        "commune_id": commune_id,
-                        "commune_name": commune_info.get('name', commune_id),
-                        "entity_count": commune_info.get('entity_count', 0),
-                        "answer": result,
-                        "provenance": {}
-                    }
-            except Exception as e:
-                logger.warning(f"Query failed for {commune_id}: {e}")
-                return None
+                    if isinstance(result, dict):
+                        return {
+                            "commune_id": commune_id,
+                            "commune_name": commune_info.get('name', commune_id),
+                            "entity_count": commune_info.get('entity_count', 0),
+                            "answer": result.get("answer", ""),
+                            "provenance": result.get("provenance", {})
+                        }
+                    else:
+                        return {
+                            "commune_id": commune_id,
+                            "commune_name": commune_info.get('name', commune_id),
+                            "entity_count": commune_info.get('entity_count', 0),
+                            "answer": result,
+                            "provenance": {}
+                        }
+                except Exception as e:
+                    logger.warning(f"Query failed for {commune_id}: {e}")
+                    return None
 
-        # Query all communes in parallel
-        logger.info(f"Querying {len(target_communes)} communes in parallel...")
+        # Query all communes with controlled concurrency
+        logger.info(f"Querying {len(target_communes)} communes (max {MAX_CONCURRENT} concurrent)...")
         results = await asyncio.gather(*[query_single_commune(c) for c in target_communes])
 
         # Filter successful results
