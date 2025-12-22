@@ -220,23 +220,30 @@ async def grand_debat_list_communes() -> str:
 async def grand_debat_query(
     commune_id: Annotated[str, Field(description="Commune identifier (e.g., 'Andilly', 'Rochefort')")],
     query: Annotated[str, Field(description="Question about citizen contributions in French", min_length=3)],
-    mode: Annotated[QueryMode, Field(description="'local' for entity-based, 'global' for community summaries")] = QueryMode.LOCAL
+    mode: Annotated[QueryMode, Field(description="'local' for entity-based, 'global' for community summaries")] = QueryMode.LOCAL,
+    include_sources: Annotated[bool, Field(description="Include exact citizen quotes and graph traversal path")] = True
 ) -> str:
     """
     Query a commune's 'Cahier de Doléances' using GraphRAG.
 
     Uses the nano_graphrag engine to answer questions about citizen
     contributions. Supports two modes:
-    - 'local': Entity-based queries finding specific mentions
+    - 'local': Entity-based queries finding specific mentions and exact quotes
     - 'global': Community-based summaries for high-level themes
+
+    When include_sources=True (default), returns the complete provenance chain:
+    - Entities consulted (themes, actors, concepts)
+    - Relationships traversed
+    - Original citizen quotes (source_quotes) - exact text from contributions
 
     Args:
         commune_id: Commune identifier (e.g., 'Rochefort', 'Andilly')
         query: Question about citizen contributions in French
         mode: 'local' for entity-based, 'global' for community summaries
+        include_sources: Include exact citizen quotes and provenance chain (default: True)
 
     Returns:
-        JSON with answer and provenance information
+        JSON with answer and full provenance for end-to-end interpretability
     """
     commune_path = get_commune_path(commune_id)
     if not commune_path:
@@ -263,22 +270,46 @@ async def grand_debat_query(
             cheap_model_func=gpt_4o_mini_complete,
         )
 
+        # Query with provenance for end-to-end interpretability
         result = await rag.aquery(
             query,
-            param=QueryParam(mode=mode.value)
+            param=QueryParam(mode=mode.value, return_provenance=include_sources)
         )
 
-        return json.dumps({
-            "success": True,
-            "commune_id": commune_id,
-            "query": query,
-            "mode": mode.value,
-            "answer": result,
-            "provenance": {
-                "source_commune": commune_id,
-                "data_source": "Grand Débat National 2019"
-            }
-        }, indent=2, ensure_ascii=False)
+        # Handle response format based on provenance flag
+        if include_sources and isinstance(result, dict):
+            answer = result.get("answer", "")
+            provenance = result.get("provenance", {})
+
+            return json.dumps({
+                "success": True,
+                "commune_id": commune_id,
+                "query": query,
+                "mode": mode.value,
+                "answer": answer,
+                "provenance": {
+                    "source_commune": commune_id,
+                    "data_source": "Grand Débat National 2019",
+                    "entities": provenance.get("entities", []),
+                    "relationships": provenance.get("relationships", []),
+                    "communities": provenance.get("communities", []),
+                    "source_quotes": provenance.get("source_quotes", []),  # Exact citizen words
+                    "analysis_points": provenance.get("analysis_points", []),
+                }
+            }, indent=2, ensure_ascii=False)
+        else:
+            # Fallback for string response (include_sources=False)
+            return json.dumps({
+                "success": True,
+                "commune_id": commune_id,
+                "query": query,
+                "mode": mode.value,
+                "answer": result if isinstance(result, str) else result.get("answer", ""),
+                "provenance": {
+                    "source_commune": commune_id,
+                    "data_source": "Grand Débat National 2019"
+                }
+            }, indent=2, ensure_ascii=False)
 
     except Exception as e:
         logger.error(f"Query error for {commune_id}: {e}")

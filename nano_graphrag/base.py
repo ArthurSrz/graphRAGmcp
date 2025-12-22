@@ -13,6 +13,8 @@ class QueryParam:
     response_type: str = "Multiple Paragraphs"
     level: int = 2
     top_k: int = 20
+    # provenance for end-to-end interpretability
+    return_provenance: bool = False  # Return entities, relationships, and source quotes
     # naive search
     naive_max_token_for_text_unit = 12000
     # local search
