@@ -852,9 +852,9 @@ async def _find_most_related_edges_from_entities(
     )
     all_edges_data = truncate_list_by_token_size(
         all_edges_data,
-        key=lambda x: x["description"],
+        key=lambda x: x.get("description", ""),
         max_token_size=query_param.local_max_token_for_local_context,
-        tokenizer_wrapper=tokenizer_wrapper, 
+        tokenizer_wrapper=tokenizer_wrapper,
     )
     return all_edges_data
 
@@ -929,9 +929,9 @@ async def _build_local_query_context(
                 i,
                 e["src_tgt"][0],
                 e["src_tgt"][1],
-                e["description"],
-                e["weight"],
-                e["rank"],
+                e.get("description", ""),
+                e.get("weight", 1.0),
+                e.get("rank", 0),
             ]
         )
     relations_context = list_of_list_to_csv(relations_section_list)
