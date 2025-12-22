@@ -333,19 +333,19 @@ async def grand_debat_query(
 async def grand_debat_query_all(
     query: Annotated[str, Field(description="Question about citizen contributions in French", min_length=3)],
     mode: Annotated[QueryMode, Field(description="'local' for entity-based, 'global' for community summaries")] = QueryMode.GLOBAL,
-    max_communes: Annotated[int, Field(description="Maximum number of communes to query (default: 10, max: 50)", ge=1, le=50)] = 10,
+    max_communes: Annotated[int, Field(description="Number of communes to query (default: 50 = ALL)", ge=1, le=50)] = 50,
     include_sources: Annotated[bool, Field(description="Include exact citizen quotes")] = True
 ) -> str:
     """
-    Query across MULTIPLE communes in a single call - no per-commune approval needed.
+    Query across ALL 50 communes in a single call - no per-commune approval needed.
 
-    This tool queries the top communes (by entity count) and aggregates results.
+    This tool queries all communes in parallel and aggregates results.
     Use this for broad questions like "What do French citizens think about X?"
 
     Args:
         query: Question about citizen contributions in French
         mode: 'global' recommended for cross-commune analysis (default)
-        max_communes: How many communes to query (default: 10)
+        max_communes: How many communes to query (default: 50 = ALL)
         include_sources: Include exact citizen quotes (default: True)
 
     Returns:
