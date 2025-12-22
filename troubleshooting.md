@@ -142,3 +142,36 @@ async def my_tool(
 ```
 
 **Date fixed:** 2025-12-22
+
+---
+
+### KeyError for Community ID (e.g., 'L0C3')
+
+**Problem:**
+```
+ERROR:grand-debat-mcp:Query error for Saint_Jean_Dangely: 'L0C3'
+```
+
+**Cause:**
+Some communes have 0 community reports (e.g., Saint_Jean_Dangely shows `Load KV community_reports with 0 data`). When the GraphRAG query tries to access community data by cluster ID, it fails because the community report doesn't exist.
+
+The bug was in `nano_graphrag/_op.py` line 727: the code sorted all keys from `related_community_keys_counts` but some of those keys don't exist in `related_community_datas` (they were filtered out as None).
+
+**Solution:**
+Filter the sorted keys to only include those that exist in `related_community_datas`:
+
+```python
+# Before (crashes when community doesn't exist)
+related_community_keys = sorted(
+    related_community_keys_counts.keys(),
+    ...
+)
+
+# After (safely handles missing communities)
+related_community_keys = sorted(
+    [k for k in related_community_keys_counts.keys() if k in related_community_datas],
+    ...
+)
+```
+
+**Date fixed:** 2025-12-22
