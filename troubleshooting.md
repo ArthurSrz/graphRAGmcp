@@ -33,3 +33,32 @@ uvicorn.run(
 Add `uvicorn>=0.30.0` to `requirements.txt`.
 
 **Date fixed:** 2025-12-22
+
+---
+
+### HTTP 421 "Invalid Host header" on Railway
+
+**Problem:**
+```
+HTTP/2 421
+Invalid Host header
+```
+
+**Cause:**
+Railway uses a reverse proxy (railway-edge) to route requests. Uvicorn needs to be configured to trust proxy headers, otherwise it rejects requests with mismatched Host headers.
+
+**Solution:**
+Add proxy configuration to uvicorn:
+
+```python
+uvicorn.run(
+    mcp.streamable_http_app(),
+    host=args.host,
+    port=args.port,
+    log_level="info",
+    proxy_headers=True,        # Trust X-Forwarded-* headers
+    forwarded_allow_ips="*"    # Accept forwarded headers from any IP
+)
+```
+
+**Date fixed:** 2025-12-22
