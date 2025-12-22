@@ -19,5 +19,12 @@ aioboto3>=12.0.0
 tenacity>=8.0.0
 transformers>=4.30.0
 
+# nano_graphrag dependencies
+neo4j>=5.0.0
+hnswlib>=0.7.0
+xxhash>=3.0.0
+nano-vectordb>=0.0.6
+dspy-ai>=2.0.0
+
 # Optional: for advanced graph algorithms
 graspologic>=3.0.0
