@@ -91,3 +91,54 @@ mcp = FastMCP("my_server", transport_security=transport_security)
 **Reference:** https://github.com/modelcontextprotocol/python-sdk/issues/1798
 
 **Date fixed:** 2025-12-22
+
+---
+
+### Pydantic Validation Error: "Field required" for params
+
+**Problem:**
+```
+Error executing tool grand_debat_query: 1 validation error for grand_debat_queryArguments
+params
+  Field required [type=missing, input_value={'mode': 'global', 'query': '...', 'commune_id': 'Rochefort'}, input_type=dict]
+```
+
+**Cause:**
+Tools defined with nested Pydantic models like `async def my_tool(params: MyModel)` expect clients to wrap arguments in a `params` object:
+```json
+{"params": {"commune_id": "X", "query": "Y"}}
+```
+
+But most MCP clients (including Dust.tt) send flat arguments:
+```json
+{"commune_id": "X", "query": "Y"}
+```
+
+**Solution:**
+Use flat function parameters with `Annotated` types instead of nested Pydantic models:
+
+```python
+from typing import Annotated
+from pydantic import Field
+
+# Before (requires nested params - breaks Dust.tt)
+class QueryInput(BaseModel):
+    commune_id: str
+    query: str
+
+@mcp.tool()
+async def my_tool(params: QueryInput) -> str:
+    commune_id = params.commune_id
+    ...
+
+# After (accepts flat arguments - works with Dust.tt)
+@mcp.tool()
+async def my_tool(
+    commune_id: Annotated[str, Field(description="Commune ID")],
+    query: Annotated[str, Field(description="Query text")]
+) -> str:
+    # Use commune_id and query directly
+    ...
+```
+
+**Date fixed:** 2025-12-22
