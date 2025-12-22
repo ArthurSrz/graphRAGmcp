@@ -521,4 +521,11 @@ if __name__ == "__main__":
     if args.stdio:
         mcp.run()
     else:
-        mcp.run(transport="streamable-http", host=args.host, port=args.port)
+        # For HTTP transport, use uvicorn to run the ASGI app
+        import uvicorn
+        uvicorn.run(
+            mcp.streamable_http_app(),
+            host=args.host,
+            port=args.port,
+            log_level="info"
+        )
