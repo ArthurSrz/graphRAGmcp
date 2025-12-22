@@ -62,3 +62,32 @@ uvicorn.run(
 ```
 
 **Date fixed:** 2025-12-22
+
+---
+
+### MCP SDK DNS Rebinding Protection (Invalid Host header)
+
+**Problem:**
+```
+Invalid Host header (HTTP 421)
+```
+
+**Cause:**
+MCP Python SDK 1.x introduced DNS rebinding protection. When deployed behind a reverse proxy (Railway, Cloud Run, etc.), the Host header doesn't match the allowed list.
+
+**Solution:**
+Disable DNS rebinding protection when Railway handles security at the edge:
+
+```python
+from mcp.server.transport_security import TransportSecuritySettings
+
+transport_security = TransportSecuritySettings(
+    enable_dns_rebinding_protection=False,
+)
+
+mcp = FastMCP("my_server", transport_security=transport_security)
+```
+
+**Reference:** https://github.com/modelcontextprotocol/python-sdk/issues/1798
+
+**Date fixed:** 2025-12-22

@@ -50,6 +50,33 @@ npx @modelcontextprotocol/inspector python server.py --stdio
 
 ## Deployment
 
+### Public Endpoint (Railway)
+
+The server is deployed and publicly accessible at:
+
+```
+https://graphragmcp-production.up.railway.app/mcp
+```
+
+**Test the endpoint:**
+
+```bash
+curl -X POST "https://graphragmcp-production.up.railway.app/mcp" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc": "2.0", "method": "initialize", "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "test", "version": "1.0"}}, "id": 1}'
+```
+
+### Deploy to Railway
+
+```bash
+# Link project
+railway link -p your-project-name
+
+# Deploy
+railway up
+```
+
 ### Deploy to Cloud Run
 
 ```bash
@@ -77,11 +104,15 @@ docker run -p 8080:8080 \
 
 ## Configuration for Dust.tt
 
-Once deployed, use the public URL in Dust.tt MCP configuration:
+Use the public Railway URL in Dust.tt MCP configuration:
 
 ```
-https://your-cloud-run-url.run.app
+https://graphragmcp-production.up.railway.app/mcp
 ```
+
+**Note:** The MCP client must send:
+- `Content-Type: application/json`
+- `Accept: application/json, text/event-stream`
 
 ## Environment Variables
 
