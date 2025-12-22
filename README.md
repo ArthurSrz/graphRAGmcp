@@ -90,6 +90,51 @@ Add to your MCP settings:
 }
 ```
 
+### Configure in Dust.tt
+
+Dust.tt supports remote MCP servers natively. See [Dust Remote MCP Server docs](https://docs.dust.tt/docs/remote-mcp-server).
+
+**Setup steps:**
+
+1. Go to **Dust Admin** → **Developers** → **MCP Servers**
+2. Click **Add Remote Server**
+3. Enter the server URL:
+   ```
+   https://graphragmcp-production.up.railway.app/mcp
+   ```
+4. Give it a name (e.g., "Grand Debat GraphRAG")
+5. Click **Sync** - Dust will discover all 5 tools automatically
+6. Assign the server to your desired **Spaces**
+
+**Using in Dust Agents:**
+
+Once configured, your Dust agents can use the tools directly:
+
+```
+@agent Query the Grand Debat data for Rochefort about fiscal concerns
+```
+
+The agent will automatically:
+- Initialize a session with the MCP server
+- Call `grand_debat_query` with appropriate parameters
+- Return the GraphRAG-powered response
+
+**Authentication (Optional):**
+
+The server is currently public. To add authentication:
+- In Dust, add a **Bearer Token** under server settings
+- The token will be sent as `Authorization: Bearer <token>` header
+
+**Available Tools in Dust:**
+
+| Tool | What Dust Agents Can Do |
+|------|------------------------|
+| `grand_debat_list_communes` | Discover available communes and statistics |
+| `grand_debat_query` | Answer questions using GraphRAG |
+| `grand_debat_search_entities` | Find specific themes, actors, concepts |
+| `grand_debat_get_communities` | Get AI-generated thematic summaries |
+| `grand_debat_get_contributions` | Read original citizen texts |
+
 ## Example Queries
 
 ### List Communes
