@@ -1,33 +1,210 @@
-# Grand Débat National GraphRAG MCP Server
+# Grand Debat National GraphRAG MCP Server
 
-A remote MCP (Model Context Protocol) server that exposes GraphRAG capabilities for the **Grand Débat National** "Cahiers de Doléances" dataset.
+A remote MCP (Model Context Protocol) server that exposes GraphRAG capabilities for the **Grand Debat National** "Cahiers de Doleances" dataset.
+
+## Live Endpoint
+
+```
+https://graphragmcp-production.up.railway.app/mcp
+```
 
 ## Overview
 
-This MCP server enables LLMs (including Dust.tt agents) to query and analyze citizen contributions from the French Grand Débat National (2019). Each commune's "Cahier de Doléances" is indexed as a separate GraphRAG knowledge graph.
+This MCP server enables LLMs to query and analyze citizen contributions from the French Grand Debat National (2019). Each commune's "Cahier de Doleances" is indexed as a separate GraphRAG knowledge graph, allowing semantic search across 50 communes with 8,000+ entities.
 
-## Features
+### What is GraphRAG?
 
-### Available Tools
+GraphRAG combines knowledge graphs with retrieval-augmented generation. Instead of simple vector search, it:
+- Extracts **entities** (people, themes, concepts) and **relationships** from text
+- Clusters related entities into **communities** with AI-generated summaries
+- Enables both specific entity lookups and high-level thematic analysis
 
-| Tool | Description |
-|------|-------------|
-| `grand_debat_list_communes` | List all available communes with statistics |
-| `grand_debat_query` | Query a commune using GraphRAG (local/global mode) |
-| `grand_debat_search_entities` | Search for entities by pattern |
-| `grand_debat_get_communities` | Get community reports (thematic clusters) |
-| `grand_debat_get_contributions` | Get sample citizen contributions |
+## Available Tools
+
+| Tool | Description | Use Case |
+|------|-------------|----------|
+| `grand_debat_list_communes` | List all 50 communes with statistics | Discover available data |
+| `grand_debat_query` | Query using GraphRAG (local/global mode) | Answer questions about citizen concerns |
+| `grand_debat_search_entities` | Search entities by pattern | Find specific themes or actors |
+| `grand_debat_get_communities` | Get community reports | Explore thematic clusters |
+| `grand_debat_get_contributions` | Get sample contributions | Read original citizen texts |
 
 ### Query Modes
 
-- **Local Mode**: Entity-based queries that find specific mentions and relationships
-- **Global Mode**: Community-based summaries that provide high-level themes
+- **Local Mode**: Entity-based queries finding specific mentions and relationships. Best for targeted questions.
+- **Global Mode**: Community-based summaries providing high-level themes. Best for broad overviews.
 
 ## Quick Start
 
-### Local Development
+### Test with curl
 
 ```bash
+# 1. Initialize session
+curl -s -i -X POST "https://graphragmcp-production.up.railway.app/mcp" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc": "2.0", "method": "initialize", "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "test", "version": "1.0"}}, "id": 1}'
+
+# Note the mcp-session-id header in response
+
+# 2. List available communes
+curl -s -X POST "https://graphragmcp-production.up.railway.app/mcp" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -H "mcp-session-id: YOUR_SESSION_ID" \
+  -d '{"jsonrpc": "2.0", "method": "tools/call", "params": {"name": "grand_debat_list_communes", "arguments": {}}, "id": 2}'
+
+# 3. Query a commune
+curl -s -X POST "https://graphragmcp-production.up.railway.app/mcp" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -H "mcp-session-id: YOUR_SESSION_ID" \
+  -d '{"jsonrpc": "2.0", "method": "tools/call", "params": {"name": "grand_debat_query", "arguments": {"params": {"commune_id": "Rochefort", "query": "Quelles sont les principales preoccupations fiscales?", "mode": "local"}}}, "id": 3}'
+```
+
+### Configure in Claude Desktop
+
+Add to `~/.config/claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "grand-debat": {
+      "url": "https://graphragmcp-production.up.railway.app/mcp",
+      "transport": "streamable-http"
+    }
+  }
+}
+```
+
+### Configure in Cline / VS Code
+
+Add to your MCP settings:
+
+```json
+{
+  "grand-debat": {
+    "url": "https://graphragmcp-production.up.railway.app/mcp",
+    "transport": "streamable-http"
+  }
+}
+```
+
+## Example Queries
+
+### List Communes
+
+```json
+{
+  "name": "grand_debat_list_communes",
+  "arguments": {}
+}
+```
+
+Returns 50 communes including: Rochefort (812 entities), Marennes_Hiers_Brouage (659 entities), Saint_Xandre (537 entities), Saint_Jean_Dangely (505 entities), etc.
+
+### Query with Local Mode (Entity-based)
+
+```json
+{
+  "name": "grand_debat_query",
+  "arguments": {
+    "params": {
+      "commune_id": "Rochefort",
+      "query": "Quelles sont les principales preoccupations fiscales des citoyens?",
+      "mode": "local"
+    }
+  }
+}
+```
+
+### Query with Global Mode (Community-based)
+
+```json
+{
+  "name": "grand_debat_query",
+  "arguments": {
+    "params": {
+      "commune_id": "Surgeres",
+      "query": "Quels sont les grands themes abordes par les citoyens?",
+      "mode": "global"
+    }
+  }
+}
+```
+
+### Search Entities
+
+```json
+{
+  "name": "grand_debat_search_entities",
+  "arguments": {
+    "params": {
+      "commune_id": "Marans",
+      "pattern": "retraite",
+      "limit": 20
+    }
+  }
+}
+```
+
+### Get Community Reports
+
+```json
+{
+  "name": "grand_debat_get_communities",
+  "arguments": {
+    "params": {
+      "commune_id": "Rivedoux_Plage",
+      "limit": 10
+    }
+  }
+}
+```
+
+### Get Original Contributions
+
+```json
+{
+  "name": "grand_debat_get_contributions",
+  "arguments": {
+    "params": {
+      "commune_id": "Andilly",
+      "limit": 5
+    }
+  }
+}
+```
+
+## Available Communes
+
+The server includes data from 50 communes in Charente-Maritime:
+
+| Commune | Entities | Communities | Contributions |
+|---------|----------|-------------|---------------|
+| Rochefort | 812 | 140 | 102 |
+| Marennes_Hiers_Brouage | 659 | 119 | 52 |
+| Saint_Xandre | 537 | 78 | 41 |
+| Saint_Jean_Dangely | 505 | 0 | 50 |
+| Rivedoux_Plage | 387 | 56 | 28 |
+| U_Gue_Dallere | 356 | 17 | 21 |
+| Surgeres | 330 | 54 | 26 |
+| ... | ... | ... | ... |
+
+## Local Development
+
+### Prerequisites
+
+- Python 3.11+
+- OpenAI API key
+
+### Setup
+
+```bash
+# Clone repository
+git clone https://github.com/ArthurSrz/graphRAGmcp.git
+cd graphRAGmcp
+
 # Install dependencies
 pip install -r requirements.txt
 
@@ -35,7 +212,7 @@ pip install -r requirements.txt
 export OPENAI_API_KEY="your-api-key"
 export GRAND_DEBAT_DATA_PATH="./law_data"
 
-# Run with stdio (for local testing)
+# Run with stdio (for local MCP testing)
 python server.py --stdio
 
 # Run as HTTP server
@@ -50,28 +227,20 @@ npx @modelcontextprotocol/inspector python server.py --stdio
 
 ## Deployment
 
-### Public Endpoint (Railway)
-
-The server is deployed and publicly accessible at:
-
-```
-https://graphragmcp-production.up.railway.app/mcp
-```
-
-**Test the endpoint:**
-
-```bash
-curl -X POST "https://graphragmcp-production.up.railway.app/mcp" \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json, text/event-stream" \
-  -d '{"jsonrpc": "2.0", "method": "initialize", "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "test", "version": "1.0"}}, "id": 1}'
-```
-
 ### Deploy to Railway
 
 ```bash
-# Link project
-railway link -p your-project-name
+# Install Railway CLI
+npm install -g @railway/cli
+
+# Login
+railway login
+
+# Link to project
+railway link
+
+# Set environment variable
+railway variables --set "OPENAI_API_KEY=your-key"
 
 # Deploy
 railway up
@@ -80,7 +249,6 @@ railway up
 ### Deploy to Cloud Run
 
 ```bash
-# Build and deploy
 gcloud run deploy grand-debat-mcp \
   --source . \
   --region europe-west1 \
@@ -97,89 +265,34 @@ docker build -t grand-debat-mcp .
 # Run
 docker run -p 8080:8080 \
   -e OPENAI_API_KEY="your-key" \
-  -e GRAND_DEBAT_DATA_PATH="/data" \
-  -v /path/to/law_data:/data \
   grand-debat-mcp
 ```
-
-## Configuration for Dust.tt
-
-Use the public Railway URL in Dust.tt MCP configuration:
-
-```
-https://graphragmcp-production.up.railway.app/mcp
-```
-
-**Note:** The MCP client must send:
-- `Content-Type: application/json`
-- `Accept: application/json, text/event-stream`
 
 ## Environment Variables
 
 | Variable | Description | Default |
 |----------|-------------|---------|
+| `OPENAI_API_KEY` | OpenAI API key for GraphRAG queries | **Required** |
 | `GRAND_DEBAT_DATA_PATH` | Path to commune data | `./law_data` |
-| `OPENAI_API_KEY` | OpenAI API key for queries | Required |
 | `PORT` | HTTP server port | `8080` |
-
-## Data Structure
-
-Each commune folder should contain:
-
-```
-law_data/
-├── Andilly/
-│   ├── vdb_entities.json           # Entity embeddings
-│   ├── kv_store_text_chunks.json   # Original contributions
-│   ├── kv_store_community_reports.json  # Community summaries
-│   └── graph_chunk_entity_relation.graphml  # Knowledge graph
-├── Rochefort/
-│   └── ...
-└── ...
-```
-
-## Example Queries
-
-```python
-# List available communes
-{"name": "grand_debat_list_communes", "arguments": {}}
-
-# Query a commune
-{
-  "name": "grand_debat_query",
-  "arguments": {
-    "commune_id": "Rochefort",
-    "query": "Quelles sont les principales préoccupations fiscales des citoyens?",
-    "mode": "local"
-  }
-}
-
-# Search for entities
-{
-  "name": "grand_debat_search_entities",
-  "arguments": {
-    "commune_id": "Andilly",
-    "pattern": "impôt",
-    "limit": 10
-  }
-}
-```
 
 ## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   Dust.tt / LLM Client                      │
+│                   MCP Client (Claude, Cline, etc.)          │
 └─────────────────────────────────────────────────────────────┘
                               │
-                              │ HTTP / MCP Protocol
+                              │ Streamable HTTP / MCP Protocol
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              Grand Débat MCP Server (Cloud Run)             │
+│              Grand Debat MCP Server (Railway)               │
 │  ┌──────────────────────────────────────────────────────┐  │
+│  │ FastMCP + Uvicorn                                    │  │
+│  │                                                       │  │
 │  │ Tools:                                                │  │
 │  │  - grand_debat_list_communes                         │  │
-│  │  - grand_debat_query                                 │  │
+│  │  - grand_debat_query (local/global)                  │  │
 │  │  - grand_debat_search_entities                       │  │
 │  │  - grand_debat_get_communities                       │  │
 │  │  - grand_debat_get_contributions                     │  │
@@ -193,8 +306,80 @@ law_data/
 │  │   Entities  │  │ Communities │  │   Text Chunks       │ │
 │  │   (VDB)     │  │  (Reports)  │  │ (Contributions)     │ │
 │  └─────────────┘  └─────────────┘  └─────────────────────┘ │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │              Knowledge Graph (GraphML)               │   │
+│  │   Entities ──relationships──> Entities               │   │
+│  └─────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      OpenAI API                             │
+│              (GPT-4o-mini for query synthesis)              │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+## Data Structure
+
+Each commune folder contains pre-indexed GraphRAG data:
+
+```
+law_data/
+├── Rochefort/
+│   ├── vdb_entities.json              # Entity vector database
+│   ├── kv_store_text_chunks.json      # Original contribution texts
+│   ├── kv_store_community_reports.json # AI-generated community summaries
+│   ├── kv_store_full_docs.json        # Full documents
+│   ├── kv_store_llm_response_cache.json # Cached LLM responses
+│   └── graph_chunk_entity_relation.graphml # Knowledge graph
+├── Andilly/
+│   └── ...
+└── ... (50 communes total)
+```
+
+## MCP Protocol Details
+
+### Required Headers
+
+```
+Content-Type: application/json
+Accept: application/json, text/event-stream
+mcp-session-id: <session-id-from-init>  # Required after initialization
+```
+
+### Session Flow
+
+1. **Initialize**: Get session ID from response headers
+2. **Call tools**: Include session ID in subsequent requests
+3. **Handle SSE**: Responses are Server-Sent Events with `event: message` and `data: {...}`
+
+## Troubleshooting
+
+### "Invalid Host header" (421)
+
+The MCP SDK has DNS rebinding protection. For proxy deployments, ensure `TransportSecuritySettings` is configured:
+
+```python
+transport_security = TransportSecuritySettings(
+    enable_dns_rebinding_protection=False,
+)
+```
+
+### "No module named X"
+
+Ensure all dependencies are installed. Key packages:
+- `mcp>=1.0.0`
+- `uvicorn>=0.30.0`
+- `nano-vectordb>=0.0.4`
+- `hnswlib>=0.7.0` (requires g++ for compilation)
+
+### Query returns empty results
+
+- Check if the commune exists: use `grand_debat_list_communes`
+- Verify commune_id matches exactly (e.g., `Saint_Jean_Dangely` not `Saint-Jean-d'Angely`)
+
+See [troubleshooting.md](troubleshooting.md) for detailed solutions.
 
 ## License
 
