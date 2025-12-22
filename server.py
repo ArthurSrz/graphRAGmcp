@@ -18,7 +18,7 @@ import json
 import logging
 import os
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List, Annotated
 from enum import Enum
 
 from mcp.server.fastmcp import FastMCP
@@ -217,7 +217,11 @@ async def grand_debat_list_communes() -> str:
         "openWorldHint": True
     }
 )
-async def grand_debat_query(params: QueryInput) -> str:
+async def grand_debat_query(
+    commune_id: Annotated[str, Field(description="Commune identifier (e.g., 'Andilly', 'Rochefort')")],
+    query: Annotated[str, Field(description="Question about citizen contributions in French", min_length=3)],
+    mode: Annotated[QueryMode, Field(description="'local' for entity-based, 'global' for community summaries")] = QueryMode.LOCAL
+) -> str:
     """
     Query a commune's 'Cahier de Doléances' using GraphRAG.
 
@@ -227,17 +231,19 @@ async def grand_debat_query(params: QueryInput) -> str:
     - 'global': Community-based summaries for high-level themes
 
     Args:
-        params: Query parameters including commune_id, query text, and mode
+        commune_id: Commune identifier (e.g., 'Rochefort', 'Andilly')
+        query: Question about citizen contributions in French
+        mode: 'local' for entity-based, 'global' for community summaries
 
     Returns:
         JSON with answer and provenance information
     """
-    commune_path = get_commune_path(params.commune_id)
+    commune_path = get_commune_path(commune_id)
     if not commune_path:
         available = [c['id'] for c in list_communes()[:10]]
         return json.dumps({
             "success": False,
-            "error": f"Commune '{params.commune_id}' not found",
+            "error": f"Commune '{commune_id}' not found",
             "available_communes": available
         }, ensure_ascii=False)
 
@@ -258,28 +264,28 @@ async def grand_debat_query(params: QueryInput) -> str:
         )
 
         result = await rag.aquery(
-            params.query,
-            param=QueryParam(mode=params.mode.value)
+            query,
+            param=QueryParam(mode=mode.value)
         )
 
         return json.dumps({
             "success": True,
-            "commune_id": params.commune_id,
-            "query": params.query,
-            "mode": params.mode.value,
+            "commune_id": commune_id,
+            "query": query,
+            "mode": mode.value,
             "answer": result,
             "provenance": {
-                "source_commune": params.commune_id,
+                "source_commune": commune_id,
                 "data_source": "Grand Débat National 2019"
             }
         }, indent=2, ensure_ascii=False)
 
     except Exception as e:
-        logger.error(f"Query error for {params.commune_id}: {e}")
+        logger.error(f"Query error for {commune_id}: {e}")
         return json.dumps({
             "success": False,
             "error": str(e),
-            "commune_id": params.commune_id
+            "commune_id": commune_id
         }, ensure_ascii=False)
 
 
@@ -293,7 +299,11 @@ async def grand_debat_query(params: QueryInput) -> str:
         "openWorldHint": False
     }
 )
-async def grand_debat_search_entities(params: EntitySearchInput) -> str:
+async def grand_debat_search_entities(
+    commune_id: Annotated[str, Field(description="Commune identifier")],
+    pattern: Annotated[str, Field(description="Search pattern (case-insensitive)", min_length=2)],
+    limit: Annotated[int, Field(description="Max results", ge=1, le=100)] = 20
+) -> str:
     """
     Search for entities matching a pattern in a commune's knowledge graph.
 
@@ -301,16 +311,18 @@ async def grand_debat_search_entities(params: EntitySearchInput) -> str:
     from citizen contributions.
 
     Args:
-        params: Search parameters including commune_id, pattern, and limit
+        commune_id: Commune identifier (e.g., 'Rochefort', 'Marans')
+        pattern: Search pattern (case-insensitive)
+        limit: Maximum number of results to return
 
     Returns:
         JSON with matching entities and descriptions
     """
-    commune_path = get_commune_path(params.commune_id)
+    commune_path = get_commune_path(commune_id)
     if not commune_path:
         return json.dumps({
             "success": False,
-            "error": f"Commune '{params.commune_id}' not found"
+            "error": f"Commune '{commune_id}' not found"
         }, ensure_ascii=False)
 
     try:
@@ -318,7 +330,7 @@ async def grand_debat_search_entities(params: EntitySearchInput) -> str:
         if not entities_file.exists():
             return json.dumps({
                 "success": False,
-                "error": f"No entities for commune '{params.commune_id}'"
+                "error": f"No entities for commune '{commune_id}'"
             }, ensure_ascii=False)
 
         with open(entities_file, 'r') as f:
@@ -345,17 +357,17 @@ async def grand_debat_search_entities(params: EntitySearchInput) -> str:
                             'description': (entity_info.get('description', '') or '')[:200]
                         })
 
-        pattern_lower = params.pattern.lower()
+        pattern_lower = pattern.lower()
         matching = [
             e for e in all_entities
             if pattern_lower in e['name'].lower() or
                pattern_lower in e.get('description', '').lower()
-        ][:params.limit]
+        ][:limit]
 
         return json.dumps({
             "success": True,
-            "commune_id": params.commune_id,
-            "pattern": params.pattern,
+            "commune_id": commune_id,
+            "pattern": pattern,
             "matches": matching,
             "total_matches": len(matching),
             "total_entities": len(all_entities)
@@ -379,7 +391,10 @@ async def grand_debat_search_entities(params: EntitySearchInput) -> str:
         "openWorldHint": False
     }
 )
-async def grand_debat_get_communities(params: CommuneInput) -> str:
+async def grand_debat_get_communities(
+    commune_id: Annotated[str, Field(description="Commune identifier")],
+    limit: Annotated[int, Field(description="Max items to return", ge=1, le=50)] = 10
+) -> str:
     """
     Get community reports (thematic clusters) from a commune.
 
@@ -388,16 +403,17 @@ async def grand_debat_get_communities(params: CommuneInput) -> str:
     in citizen contributions.
 
     Args:
-        params: Commune ID and limit
+        commune_id: Commune identifier (e.g., 'Rivedoux_Plage')
+        limit: Maximum number of communities to return
 
     Returns:
         JSON with community summaries and ratings
     """
-    commune_path = get_commune_path(params.commune_id)
+    commune_path = get_commune_path(commune_id)
     if not commune_path:
         return json.dumps({
             "success": False,
-            "error": f"Commune '{params.commune_id}' not found"
+            "error": f"Commune '{commune_id}' not found"
         }, ensure_ascii=False)
 
     try:
@@ -405,7 +421,7 @@ async def grand_debat_get_communities(params: CommuneInput) -> str:
         if not communities_file.exists():
             return json.dumps({
                 "success": False,
-                "error": f"No communities for commune '{params.commune_id}'"
+                "error": f"No communities for commune '{commune_id}'"
             }, ensure_ascii=False)
 
         with open(communities_file, 'r') as f:
@@ -413,7 +429,7 @@ async def grand_debat_get_communities(params: CommuneInput) -> str:
 
         communities = []
         if isinstance(communities_data, dict):
-            for comm_id, comm_info in list(communities_data.items())[:params.limit]:
+            for comm_id, comm_info in list(communities_data.items())[:limit]:
                 if isinstance(comm_info, dict):
                     communities.append({
                         'id': comm_id,
@@ -425,7 +441,7 @@ async def grand_debat_get_communities(params: CommuneInput) -> str:
 
         return json.dumps({
             "success": True,
-            "commune_id": params.commune_id,
+            "commune_id": commune_id,
             "communities": communities,
             "total_communities": len(communities_data) if isinstance(communities_data, dict) else 0
         }, indent=2, ensure_ascii=False)
@@ -448,7 +464,10 @@ async def grand_debat_get_communities(params: CommuneInput) -> str:
         "openWorldHint": False
     }
 )
-async def grand_debat_get_contributions(params: CommuneInput) -> str:
+async def grand_debat_get_contributions(
+    commune_id: Annotated[str, Field(description="Commune identifier")],
+    limit: Annotated[int, Field(description="Max items to return", ge=1, le=50)] = 10
+) -> str:
     """
     Get sample citizen contributions from a commune.
 
@@ -456,16 +475,17 @@ async def grand_debat_get_contributions(params: CommuneInput) -> str:
     representing citizens' opinions, proposals, and grievances.
 
     Args:
-        params: Commune ID and limit
+        commune_id: Commune identifier (e.g., 'Andilly')
+        limit: Maximum number of contributions to return
 
     Returns:
         JSON with contribution previews
     """
-    commune_path = get_commune_path(params.commune_id)
+    commune_path = get_commune_path(commune_id)
     if not commune_path:
         return json.dumps({
             "success": False,
-            "error": f"Commune '{params.commune_id}' not found"
+            "error": f"Commune '{commune_id}' not found"
         }, ensure_ascii=False)
 
     try:
@@ -473,7 +493,7 @@ async def grand_debat_get_contributions(params: CommuneInput) -> str:
         if not chunks_file.exists():
             return json.dumps({
                 "success": False,
-                "error": f"No contributions for commune '{params.commune_id}'"
+                "error": f"No contributions for commune '{commune_id}'"
             }, ensure_ascii=False)
 
         with open(chunks_file, 'r') as f:
@@ -481,7 +501,7 @@ async def grand_debat_get_contributions(params: CommuneInput) -> str:
 
         contributions = []
         if isinstance(chunks_data, dict):
-            for chunk_id, chunk_info in list(chunks_data.items())[:params.limit]:
+            for chunk_id, chunk_info in list(chunks_data.items())[:limit]:
                 if isinstance(chunk_info, dict):
                     content = chunk_info.get('content', '')
                     contributions.append({
@@ -493,7 +513,7 @@ async def grand_debat_get_contributions(params: CommuneInput) -> str:
 
         return json.dumps({
             "success": True,
-            "commune_id": params.commune_id,
+            "commune_id": commune_id,
             "contributions": contributions,
             "total_contributions": len(chunks_data) if isinstance(chunks_data, dict) else 0
         }, indent=2, ensure_ascii=False)
