@@ -321,6 +321,169 @@ async def grand_debat_query(
 
 
 @mcp.tool(
+    name="grand_debat_query_all",
+    annotations={
+        "title": "Query All Communes",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": True
+    }
+)
+async def grand_debat_query_all(
+    query: Annotated[str, Field(description="Question about citizen contributions in French", min_length=3)],
+    mode: Annotated[QueryMode, Field(description="'local' for entity-based, 'global' for community summaries")] = QueryMode.GLOBAL,
+    max_communes: Annotated[int, Field(description="Maximum number of communes to query (default: 10, max: 50)", ge=1, le=50)] = 10,
+    include_sources: Annotated[bool, Field(description="Include exact citizen quotes")] = True
+) -> str:
+    """
+    Query across MULTIPLE communes in a single call - no per-commune approval needed.
+
+    This tool queries the top communes (by entity count) and aggregates results.
+    Use this for broad questions like "What do French citizens think about X?"
+
+    Args:
+        query: Question about citizen contributions in French
+        mode: 'global' recommended for cross-commune analysis (default)
+        max_communes: How many communes to query (default: 10)
+        include_sources: Include exact citizen quotes (default: True)
+
+    Returns:
+        JSON with aggregated answers and provenance from all queried communes
+    """
+    import asyncio
+
+    try:
+        # Import GraphRAG
+        import sys
+        project_root = Path(__file__).parent
+        if str(project_root) not in sys.path:
+            sys.path.insert(0, str(project_root))
+
+        from nano_graphrag import GraphRAG, QueryParam
+        from nano_graphrag._llm import gpt_4o_mini_complete
+
+        # Get top communes by entity count
+        all_communes = list_communes()
+        if not all_communes:
+            return json.dumps({
+                "success": False,
+                "error": "No communes found"
+            }, ensure_ascii=False)
+
+        # Sort by entity count and take top N
+        sorted_communes = sorted(all_communes, key=lambda x: x.get('entity_count', 0), reverse=True)
+        target_communes = sorted_communes[:max_communes]
+
+        async def query_single_commune(commune_info):
+            """Query a single commune and return results."""
+            commune_id = commune_info['id']
+            commune_path = get_commune_path(commune_id)
+            if not commune_path:
+                return None
+
+            try:
+                rag = GraphRAG(
+                    working_dir=str(commune_path),
+                    best_model_func=gpt_4o_mini_complete,
+                    cheap_model_func=gpt_4o_mini_complete,
+                )
+
+                result = await rag.aquery(
+                    query,
+                    param=QueryParam(mode=mode.value, return_provenance=include_sources)
+                )
+
+                if isinstance(result, dict):
+                    return {
+                        "commune_id": commune_id,
+                        "commune_name": commune_info.get('name', commune_id),
+                        "entity_count": commune_info.get('entity_count', 0),
+                        "answer": result.get("answer", ""),
+                        "provenance": result.get("provenance", {})
+                    }
+                else:
+                    return {
+                        "commune_id": commune_id,
+                        "commune_name": commune_info.get('name', commune_id),
+                        "entity_count": commune_info.get('entity_count', 0),
+                        "answer": result,
+                        "provenance": {}
+                    }
+            except Exception as e:
+                logger.warning(f"Query failed for {commune_id}: {e}")
+                return None
+
+        # Query all communes in parallel
+        logger.info(f"Querying {len(target_communes)} communes in parallel...")
+        results = await asyncio.gather(*[query_single_commune(c) for c in target_communes])
+
+        # Filter successful results
+        successful_results = [r for r in results if r is not None]
+
+        # Aggregate source quotes from all communes
+        all_source_quotes = []
+        all_entities = []
+        all_communities = []
+
+        for r in successful_results:
+            prov = r.get("provenance", {})
+            commune_id = r.get("commune_id", "")
+
+            # Add commune attribution to each quote
+            for quote in prov.get("source_quotes", []):
+                all_source_quotes.append({
+                    "commune": commune_id,
+                    "content": quote.get("content", ""),
+                    "chunk_id": quote.get("chunk_id", 0)
+                })
+
+            # Aggregate entities with commune attribution
+            for entity in prov.get("entities", [])[:5]:  # Top 5 per commune
+                all_entities.append({
+                    "commune": commune_id,
+                    **entity
+                })
+
+            # Aggregate communities
+            for comm in prov.get("communities", [])[:3]:  # Top 3 per commune
+                all_communities.append({
+                    "commune": commune_id,
+                    **comm
+                })
+
+        return json.dumps({
+            "success": True,
+            "query": query,
+            "mode": mode.value,
+            "communes_queried": len(successful_results),
+            "communes_list": [r["commune_id"] for r in successful_results],
+            "results": [
+                {
+                    "commune_id": r["commune_id"],
+                    "commune_name": r["commune_name"],
+                    "answer_summary": r["answer"][:500] + "..." if len(r["answer"]) > 500 else r["answer"]
+                }
+                for r in successful_results
+            ],
+            "aggregated_provenance": {
+                "data_source": "Grand Débat National 2019",
+                "total_source_quotes": len(all_source_quotes),
+                "source_quotes": all_source_quotes[:30],  # Top 30 quotes across all communes
+                "entities": all_entities[:50],  # Top 50 entities
+                "communities": all_communities[:20],  # Top 20 communities
+            }
+        }, indent=2, ensure_ascii=False)
+
+    except Exception as e:
+        logger.error(f"Query all error: {e}")
+        return json.dumps({
+            "success": False,
+            "error": str(e)
+        }, ensure_ascii=False)
+
+
+@mcp.tool(
     name="grand_debat_search_entities",
     annotations={
         "title": "Search Entities",
