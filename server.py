@@ -527,5 +527,7 @@ if __name__ == "__main__":
             mcp.streamable_http_app(),
             host=args.host,
             port=args.port,
-            log_level="info"
+            log_level="info",
+            proxy_headers=True,
+            forwarded_allow_ips="*"
         )
