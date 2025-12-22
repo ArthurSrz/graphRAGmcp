@@ -30,16 +30,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("grand-debat-mcp")
 
 # Configure transport security for Railway deployment
-# Allow Railway's public domain and localhost for development
+# Disable DNS rebinding protection since Railway handles security at the edge
 transport_security = TransportSecuritySettings(
-    enable_dns_rebinding_protection=True,
-    allowed_hosts=[
-        "localhost:*",
-        "127.0.0.1:*",
-        "0.0.0.0:*",
-        "*.up.railway.app:*",
-        "graphragmcp-production.up.railway.app:*",
-    ],
+    enable_dns_rebinding_protection=False,
 )
 
 # Initialize the MCP server
