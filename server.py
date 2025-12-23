@@ -376,7 +376,8 @@ async def grand_debat_query_all(
         target_communes = sorted_communes[:max_communes]
 
         # Semaphore to limit concurrent API calls (avoid OpenAI rate limits)
-        MAX_CONCURRENT = 5  # Max 5 concurrent OpenAI API calls
+        # Since we query BOTH modes per commune, MAX_CONCURRENT=2 means max 4 API calls
+        MAX_CONCURRENT = 2  # Max 2 concurrent commune queries (4 API calls total)
         semaphore = asyncio.Semaphore(MAX_CONCURRENT)
 
         async def query_single_commune(commune_info):
@@ -399,11 +400,14 @@ async def grand_debat_query_all(
                         cheap_model_func=gpt_4o_mini_complete,
                     )
 
-                    # Query in BOTH modes to get complete data
+                    # Query in BOTH modes with delay between them to avoid rate limits
                     local_result = await rag.aquery(
                         query,
                         param=QueryParam(mode="local", return_provenance=include_sources)
                     )
+
+                    # Small delay between modes to spread out API calls
+                    await asyncio.sleep(0.5)
 
                     global_result = await rag.aquery(
                         query,
