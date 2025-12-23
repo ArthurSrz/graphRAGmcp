@@ -175,3 +175,36 @@ related_community_keys = sorted(
 ```
 
 **Date fixed:** 2025-12-22
+
+---
+
+### OpenAI 429 Rate Limit Errors on Cross-Commune Queries
+
+**Problem:**
+```
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+```
+
+**Cause:**
+The `grand_debat_query_all` tool queries up to 50 communes in parallel. Each commune query triggers multiple OpenAI API calls (embeddings + chat completions). Without rate limiting, this overwhelms the OpenAI API rate limits.
+
+**Solution:**
+Use `asyncio.Semaphore` to limit concurrent API calls:
+
+```python
+import asyncio
+
+MAX_CONCURRENT = 5  # Max 5 concurrent OpenAI API calls
+semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+
+async def query_single_commune(commune_info):
+    """Query a single commune with rate limiting."""
+    async with semaphore:  # Acquire semaphore before making API call
+        # ... query logic here
+        result = await rag.aquery(query, param=QueryParam(...))
+        return result
+```
+
+The semaphore ensures only 5 communes are queried simultaneously, preventing API rate limit errors while still completing all 50 queries efficiently.
+
+**Date fixed:** 2025-12-23
