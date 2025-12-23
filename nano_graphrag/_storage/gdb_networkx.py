@@ -135,13 +135,11 @@ class NetworkXStorage(BaseGraphStorage):
         return None
 
     async def get_nodes_batch(self, node_ids: list[str]) -> dict[str, Union[dict, None]]:
-        # Try direct ID lookup first, fall back to entity_name lookup
+        # ALWAYS use entity_name lookup to get properly typed nodes
+        # Direct ID lookup can find orphan nodes with entity_type=UNKNOWN
         results = []
         for node_id in node_ids:
-            node_data = self._graph.nodes.get(node_id)
-            if node_data is None:
-                # Not found by ID, try by entity_name
-                node_data = await self.get_node_by_name(node_id)
+            node_data = await self.get_node_by_name(node_id)
             results.append(node_data)
         return results
 
