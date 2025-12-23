@@ -432,45 +432,66 @@ async def grand_debat_query_all(
         all_communities = []
 
         for r in successful_results:
-            prov = r.get("provenance", {})
+            if r is None:
+                continue
+            prov = r.get("provenance", {}) or {}
             commune_id = r.get("commune_id", "")
 
             # Add commune attribution to each quote
-            for quote in prov.get("source_quotes", []):
+            source_quotes = prov.get("source_quotes", []) or []
+            for quote in source_quotes:
+                if quote is None:
+                    continue
                 all_source_quotes.append({
                     "commune": commune_id,
-                    "content": quote.get("content", ""),
-                    "chunk_id": quote.get("chunk_id", 0)
+                    "content": quote.get("content", "") if isinstance(quote, dict) else str(quote),
+                    "chunk_id": quote.get("chunk_id", 0) if isinstance(quote, dict) else 0
                 })
 
             # Aggregate entities with commune attribution
-            for entity in prov.get("entities", [])[:5]:  # Top 5 per commune
-                all_entities.append({
-                    "commune": commune_id,
-                    **entity
-                })
+            entities = prov.get("entities", []) or []
+            for entity in entities[:5]:  # Top 5 per commune
+                if entity is None:
+                    continue
+                if isinstance(entity, dict):
+                    all_entities.append({
+                        "commune": commune_id,
+                        **entity
+                    })
 
             # Aggregate communities
-            for comm in prov.get("communities", [])[:3]:  # Top 3 per commune
-                all_communities.append({
-                    "commune": commune_id,
-                    **comm
-                })
+            communities = prov.get("communities", []) or []
+            for comm in communities[:3]:  # Top 3 per commune
+                if comm is None:
+                    continue
+                if isinstance(comm, dict):
+                    all_communities.append({
+                        "commune": commune_id,
+                        **comm
+                    })
+
+        # Build results with null safety
+        results_list = []
+        communes_list = []
+        for r in successful_results:
+            if r is None or not isinstance(r, dict):
+                continue
+            commune_id = r.get("commune_id", "unknown")
+            communes_list.append(commune_id)
+            answer = r.get("answer", "") or ""
+            results_list.append({
+                "commune_id": commune_id,
+                "commune_name": r.get("commune_name", commune_id),
+                "answer_summary": answer[:500] + "..." if len(answer) > 500 else answer
+            })
 
         return json.dumps({
             "success": True,
             "query": query,
             "mode": mode.value,
-            "communes_queried": len(successful_results),
-            "communes_list": [r["commune_id"] for r in successful_results],
-            "results": [
-                {
-                    "commune_id": r["commune_id"],
-                    "commune_name": r["commune_name"],
-                    "answer_summary": r["answer"][:500] + "..." if len(r["answer"]) > 500 else r["answer"]
-                }
-                for r in successful_results
-            ],
+            "communes_queried": len(results_list),
+            "communes_list": communes_list,
+            "results": results_list,
             "aggregated_provenance": {
                 "data_source": "Grand Débat National 2019",
                 "total_source_quotes": len(all_source_quotes),
