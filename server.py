@@ -380,7 +380,12 @@ async def grand_debat_query_all(
         semaphore = asyncio.Semaphore(MAX_CONCURRENT)
 
         async def query_single_commune(commune_info):
-            """Query a single commune with rate limiting."""
+            """
+            Query a single commune with rate limiting.
+            Runs BOTH local and global modes to get complete provenance:
+            - local mode: entities, relationships, source quotes
+            - global mode: community summaries
+            """
             async with semaphore:  # Acquire semaphore before making API call
                 commune_id = commune_info['id']
                 commune_path = get_commune_path(commune_id)
@@ -394,27 +399,46 @@ async def grand_debat_query_all(
                         cheap_model_func=gpt_4o_mini_complete,
                     )
 
-                    result = await rag.aquery(
+                    # Query in BOTH modes to get complete data
+                    local_result = await rag.aquery(
                         query,
-                        param=QueryParam(mode=mode.value, return_provenance=include_sources)
+                        param=QueryParam(mode="local", return_provenance=include_sources)
                     )
 
-                    if isinstance(result, dict):
-                        return {
-                            "commune_id": commune_id,
-                            "commune_name": commune_info.get('name', commune_id),
-                            "entity_count": commune_info.get('entity_count', 0),
-                            "answer": result.get("answer", ""),
-                            "provenance": result.get("provenance", {})
-                        }
-                    else:
-                        return {
-                            "commune_id": commune_id,
-                            "commune_name": commune_info.get('name', commune_id),
-                            "entity_count": commune_info.get('entity_count', 0),
-                            "answer": result,
-                            "provenance": {}
-                        }
+                    global_result = await rag.aquery(
+                        query,
+                        param=QueryParam(mode="global", return_provenance=include_sources)
+                    )
+
+                    # Merge provenance from both modes
+                    merged_provenance = {}
+
+                    if isinstance(local_result, dict):
+                        local_prov = local_result.get("provenance", {}) or {}
+                        merged_provenance.update({
+                            "entities": local_prov.get("entities", []),
+                            "relationships": local_prov.get("relationships", []),
+                            "source_quotes": local_prov.get("source_quotes", []),
+                        })
+
+                    if isinstance(global_result, dict):
+                        global_prov = global_result.get("provenance", {}) or {}
+                        merged_provenance["communities"] = global_prov.get("communities", [])
+
+                    # Use global answer (better for cross-commune synthesis)
+                    answer = ""
+                    if isinstance(global_result, dict):
+                        answer = global_result.get("answer", "")
+                    elif isinstance(global_result, str):
+                        answer = global_result
+
+                    return {
+                        "commune_id": commune_id,
+                        "commune_name": commune_info.get('name', commune_id),
+                        "entity_count": commune_info.get('entity_count', 0),
+                        "answer": answer,
+                        "provenance": merged_provenance
+                    }
                 except Exception as e:
                     logger.warning(f"Query failed for {commune_id}: {e}")
                     return None
@@ -426,9 +450,10 @@ async def grand_debat_query_all(
         # Filter successful results
         successful_results = [r for r in results if r is not None]
 
-        # Aggregate source quotes from all communes
+        # Aggregate provenance from all communes
         all_source_quotes = []
         all_entities = []
+        all_relationships = []
         all_communities = []
 
         for r in successful_results:
@@ -450,13 +475,24 @@ async def grand_debat_query_all(
 
             # Aggregate entities with commune attribution
             entities = prov.get("entities", []) or []
-            for entity in entities[:5]:  # Top 5 per commune
+            for entity in entities:  # All entities (removed limit)
                 if entity is None:
                     continue
                 if isinstance(entity, dict):
                     all_entities.append({
-                        "commune": commune_id,
+                        "source_commune": commune_id,
                         **entity
+                    })
+
+            # Aggregate relationships with commune attribution
+            relationships = prov.get("relationships", []) or []
+            for rel in relationships:  # All relationships
+                if rel is None:
+                    continue
+                if isinstance(rel, dict):
+                    all_relationships.append({
+                        "source_commune": commune_id,
+                        **rel
                     })
 
             # Aggregate communities
@@ -495,8 +531,11 @@ async def grand_debat_query_all(
             "aggregated_provenance": {
                 "data_source": "Grand Débat National 2019",
                 "total_source_quotes": len(all_source_quotes),
+                "total_entities": len(all_entities),
+                "total_relationships": len(all_relationships),
                 "source_quotes": all_source_quotes[:30],  # Top 30 quotes across all communes
-                "entities": all_entities[:50],  # Top 50 entities
+                "entities": all_entities,  # All entities from all communes
+                "relationships": all_relationships,  # All relationships from all communes
                 "communities": all_communities[:20],  # Top 20 communities
             }
         }, indent=2, ensure_ascii=False)
