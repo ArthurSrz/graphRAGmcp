@@ -121,13 +121,36 @@ class NetworkXStorage(BaseGraphStorage):
 
     async def get_node(self, node_id: str) -> Union[dict, None]:
         return self._graph.nodes.get(node_id)
-    
+
+    async def get_node_by_name(self, entity_name: str) -> Union[dict, None]:
+        """Look up node by entity_name attribute instead of node ID."""
+        for node_id, node_data in self._graph.nodes(data=True):
+            if node_data.get('entity_name') == entity_name:
+                return node_data
+        return None
+
     async def get_nodes_batch(self, node_ids: list[str]) -> dict[str, Union[dict, None]]:
-        return await asyncio.gather(*[self.get_node(node_id) for node_id in node_ids])
+        # Try direct ID lookup first, fall back to entity_name lookup
+        results = []
+        for node_id in node_ids:
+            node_data = self._graph.nodes.get(node_id)
+            if node_data is None:
+                # Not found by ID, try by entity_name
+                node_data = await self.get_node_by_name(node_id)
+            results.append(node_data)
+        return results
 
     async def node_degree(self, node_id: str) -> int:
         # [numberchiffre]: node_id not part of graph returns `DegreeView({})` instead of 0
-        return self._graph.degree(node_id) if self._graph.has_node(node_id) else 0
+        # Try direct ID lookup first
+        if self._graph.has_node(node_id):
+            return self._graph.degree(node_id)
+
+        # Fall back to entity_name lookup
+        for gnode_id, node_data in self._graph.nodes(data=True):
+            if node_data.get('entity_name') == node_id:
+                return self._graph.degree(gnode_id)
+        return 0
 
     async def node_degrees_batch(self, node_ids: List[str]) -> List[str]:
         return await asyncio.gather(*[self.node_degree(node_id) for node_id in node_ids])
@@ -151,8 +174,14 @@ class NetworkXStorage(BaseGraphStorage):
         return await asyncio.gather(*[self.get_edge(source_node_id, target_node_id) for source_node_id, target_node_id in edge_pairs])
 
     async def get_node_edges(self, source_node_id: str):
+        # Try direct ID lookup first
         if self._graph.has_node(source_node_id):
             return list(self._graph.edges(source_node_id))
+
+        # Fall back to entity_name lookup
+        for node_id, node_data in self._graph.nodes(data=True):
+            if node_data.get('entity_name') == source_node_id:
+                return list(self._graph.edges(node_id))
         return None
 
     async def get_nodes_edges_batch(
