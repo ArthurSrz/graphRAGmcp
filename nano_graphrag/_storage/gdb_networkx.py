@@ -123,9 +123,11 @@ class NetworkXStorage(BaseGraphStorage):
         return self._graph.nodes.get(node_id)
 
     async def get_node_by_name(self, entity_name: str) -> Union[dict, None]:
-        """Look up node by entity_name attribute instead of node ID."""
+        """Look up node by entity_name attribute instead of node ID (case-insensitive)."""
+        normalized_search = entity_name.upper().strip()
         for node_id, node_data in self._graph.nodes(data=True):
-            if node_data.get('entity_name') == entity_name:
+            stored_name = node_data.get('entity_name', '')
+            if stored_name.upper().strip() == normalized_search:
                 return node_data
         return None
 
@@ -146,9 +148,11 @@ class NetworkXStorage(BaseGraphStorage):
         if self._graph.has_node(node_id):
             return self._graph.degree(node_id)
 
-        # Fall back to entity_name lookup
+        # Fall back to entity_name lookup (case-insensitive)
+        normalized_id = node_id.upper().strip()
         for gnode_id, node_data in self._graph.nodes(data=True):
-            if node_data.get('entity_name') == node_id:
+            stored_name = node_data.get('entity_name', '')
+            if stored_name.upper().strip() == normalized_id:
                 return self._graph.degree(gnode_id)
         return 0
 
@@ -178,9 +182,11 @@ class NetworkXStorage(BaseGraphStorage):
         if self._graph.has_node(source_node_id):
             return list(self._graph.edges(source_node_id))
 
-        # Fall back to entity_name lookup
+        # Fall back to entity_name lookup (case-insensitive)
+        normalized_id = source_node_id.upper().strip()
         for node_id, node_data in self._graph.nodes(data=True):
-            if node_data.get('entity_name') == source_node_id:
+            stored_name = node_data.get('entity_name', '')
+            if stored_name.upper().strip() == normalized_id:
                 return list(self._graph.edges(node_id))
         return None
 
