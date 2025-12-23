@@ -125,10 +125,13 @@ class NetworkXStorage(BaseGraphStorage):
     async def get_node_by_name(self, entity_name: str) -> Union[dict, None]:
         """Look up node by entity_name attribute instead of node ID (case-insensitive)."""
         normalized_search = entity_name.upper().strip()
+        logger.debug(f"get_node_by_name: Searching for '{entity_name}' (normalized: '{normalized_search}')")
         for node_id, node_data in self._graph.nodes(data=True):
             stored_name = node_data.get('entity_name', '')
             if stored_name.upper().strip() == normalized_search:
+                logger.debug(f"get_node_by_name: FOUND match! node_id={node_id}, entity_type={node_data.get('entity_type', 'MISSING')}")
                 return node_data
+        logger.debug(f"get_node_by_name: NO MATCH found for '{entity_name}'")
         return None
 
     async def get_nodes_batch(self, node_ids: list[str]) -> dict[str, Union[dict, None]]:
