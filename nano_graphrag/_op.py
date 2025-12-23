@@ -218,12 +218,12 @@ async def _merge_nodes_then_upsert(
         entity_type=entity_type,
         description=description,
         source_id=source_id,
+        entity_name=entity_name,  # Store entity_name as node attribute for lookups
     )
     await knwoledge_graph_inst.upsert_node(
         entity_name,
         node_data=node_data,
     )
-    node_data["entity_name"] = entity_name
     return node_data
 
 
