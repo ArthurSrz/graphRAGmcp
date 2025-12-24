@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """
-Grand Débat National GraphRAG MCP Server
+Multi-Source GraphRAG MCP Server
 
 A remote MCP (Model Context Protocol) server that exposes GraphRAG capabilities
-for the Grand Débat National "Cahiers de Doléances" dataset.
+for multiple data sources:
+- Grand Débat National "Cahiers de Doléances" (civic data)
+- Borges Library (literary analysis)
+- Future data sources...
 
 This server enables LLMs to:
-- Query citizen contributions by commune using GraphRAG
-- Search across entities and communities
+- Query documents using GraphRAG across multiple corpora
+- Search entities and communities
 - Retrieve provenance chains for transparency
-- Explore the knowledge graph
+- Explore knowledge graphs
 
 Designed for deployment as a remote HTTP service (e.g., Cloud Run, Railway).
 """
@@ -18,7 +21,7 @@ import json
 import logging
 import os
 from pathlib import Path
-from typing import Optional, List, Annotated
+from typing import Optional, List, Annotated, Dict, Any
 from enum import Enum
 
 from mcp.server.fastmcp import FastMCP
@@ -27,7 +30,7 @@ from pydantic import BaseModel, Field, ConfigDict
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("grand-debat-mcp")
+logger = logging.getLogger("graphrag-mcp")
 
 # Configure transport security for Railway deployment
 # Disable DNS rebinding protection since Railway handles security at the edge
@@ -36,10 +39,35 @@ transport_security = TransportSecuritySettings(
 )
 
 # Initialize the MCP server
-mcp = FastMCP("grand_debat_mcp", transport_security=transport_security)
+mcp = FastMCP("graphrag_mcp", transport_security=transport_security)
 
-# Configuration
-DATA_PATH = os.environ.get('GRAND_DEBAT_DATA_PATH', './law_data')
+# ============================================================================
+# Multi-Source Configuration
+# ============================================================================
+
+# Data sources registry - each source has its own path and metadata
+DATA_SOURCES: Dict[str, Dict[str, Any]] = {
+    "grand_debat": {
+        "path": os.environ.get('GRAND_DEBAT_DATA_PATH', './law_data'),
+        "name": "Grand Débat National",
+        "description": "Cahiers de Doléances 2019 - Citizen contributions from 50 communes in Charente-Maritime",
+        "entity_label": "commune",  # What we call each collection (commune, book, etc.)
+        "collection_label": "communes",
+    },
+    "borges_library": {
+        "path": os.environ.get('BORGES_DATA_PATH', './book_data'),
+        "name": "Borges Library",
+        "description": "Literary analysis of French literature - entities, themes, and relationships",
+        "entity_label": "book",
+        "collection_label": "books",
+    },
+}
+
+# Default data source
+DEFAULT_DATA_SOURCE = os.environ.get('DEFAULT_DATA_SOURCE', 'grand_debat')
+
+# Legacy compatibility - keep the old DATA_PATH for existing tools
+DATA_PATH = DATA_SOURCES.get(DEFAULT_DATA_SOURCE, {}).get('path', './law_data')
 
 
 # ============================================================================
@@ -101,8 +129,44 @@ class CommuneInput(BaseModel):
 # Helper Functions
 # ============================================================================
 
+def get_data_source_config(source_id: str) -> Optional[Dict[str, Any]]:
+    """Get configuration for a data source."""
+    return DATA_SOURCES.get(source_id)
+
+
+def get_data_source_path(source_id: str) -> Optional[Path]:
+    """Get the base path for a data source."""
+    config = get_data_source_config(source_id)
+    if config:
+        path = Path(config['path'])
+        if path.exists():
+            return path
+    return None
+
+
+def list_data_sources_info() -> List[Dict[str, Any]]:
+    """List all configured data sources with availability status."""
+    sources = []
+    for source_id, config in DATA_SOURCES.items():
+        path = Path(config['path'])
+        exists = path.exists()
+        collection_count = 0
+        if exists:
+            collection_count = len([d for d in path.iterdir() if d.is_dir()])
+
+        sources.append({
+            "id": source_id,
+            "name": config['name'],
+            "description": config['description'],
+            "available": exists,
+            "collection_count": collection_count,
+            "collection_label": config['collection_label'],
+        })
+    return sources
+
+
 def get_data_path() -> Path:
-    """Get the base path for commune data."""
+    """Get the base path for commune data (legacy compatibility)."""
     return Path(DATA_PATH)
 
 
@@ -174,7 +238,222 @@ def get_commune_path(commune_id: str) -> Optional[Path]:
 
 
 # ============================================================================
-# MCP Tools
+# MCP Tools - Generic Multi-Source
+# ============================================================================
+
+@mcp.tool(
+    name="list_data_sources",
+    annotations={
+        "title": "List Available Data Sources",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False
+    }
+)
+async def mcp_list_data_sources() -> str:
+    """
+    List all available data sources in this GraphRAG server.
+
+    Each data source represents a corpus (e.g., Grand Débat National, Borges Library)
+    with its own collections (communes, books, etc.).
+
+    Returns:
+        JSON with available data sources and their statistics
+    """
+    sources = list_data_sources_info()
+    return json.dumps({
+        "success": True,
+        "data_sources": sources,
+        "total": len(sources),
+        "default_source": DEFAULT_DATA_SOURCE,
+    }, indent=2, ensure_ascii=False)
+
+
+@mcp.tool(
+    name="list_collections",
+    annotations={
+        "title": "List Collections in Data Source",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False
+    }
+)
+async def mcp_list_collections(
+    data_source: Annotated[str, Field(description="Data source ID (e.g., 'grand_debat', 'borges_library')")] = DEFAULT_DATA_SOURCE
+) -> str:
+    """
+    List all collections (communes, books, etc.) in a data source.
+
+    Args:
+        data_source: The data source to query (default: grand_debat)
+
+    Returns:
+        JSON with collections and their statistics
+    """
+    source_path = get_data_source_path(data_source)
+    if not source_path:
+        available = [s['id'] for s in list_data_sources_info() if s['available']]
+        return json.dumps({
+            "success": False,
+            "error": f"Data source '{data_source}' not found or unavailable",
+            "available_sources": available
+        }, ensure_ascii=False)
+
+    config = get_data_source_config(data_source)
+    collections = []
+
+    for item in source_path.iterdir():
+        if item.is_dir():
+            has_entities = (item / "vdb_entities.json").exists()
+            has_graph = (item / "graph_chunk_entity_relation.graphml").exists()
+
+            if has_entities or has_graph:
+                entity_count = 0
+                try:
+                    if has_entities:
+                        with open(item / "vdb_entities.json", 'r') as f:
+                            data = json.load(f)
+                            if isinstance(data, dict) and 'data' in data:
+                                entity_count = len(data['data'])
+                            elif isinstance(data, dict) and '__data__' in data:
+                                entity_count = len(data['__data__'])
+                except Exception:
+                    pass
+
+                collections.append({
+                    'id': item.name,
+                    'name': item.name.replace('_', ' '),
+                    'entity_count': entity_count,
+                })
+
+    return json.dumps({
+        "success": True,
+        "data_source": data_source,
+        "data_source_name": config['name'] if config else data_source,
+        "collection_label": config['collection_label'] if config else "collections",
+        "total": len(collections),
+        "collections": sorted(collections, key=lambda x: x['name'])
+    }, indent=2, ensure_ascii=False)
+
+
+@mcp.tool(
+    name="query",
+    annotations={
+        "title": "Query GraphRAG",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": True
+    }
+)
+async def mcp_query(
+    query: Annotated[str, Field(description="Question to ask", min_length=3)],
+    collection_id: Annotated[str, Field(description="Collection ID (commune, book, etc.)")],
+    data_source: Annotated[str, Field(description="Data source ID")] = DEFAULT_DATA_SOURCE,
+    mode: Annotated[QueryMode, Field(description="'local' for entity-based, 'global' for community summaries")] = QueryMode.LOCAL,
+    include_sources: Annotated[bool, Field(description="Include source quotes and provenance")] = True
+) -> str:
+    """
+    Query a collection using GraphRAG.
+
+    Generic query tool that works with any data source (Grand Débat, Borges Library, etc.).
+
+    Args:
+        query: The question to ask
+        collection_id: The collection to query (commune ID, book ID, etc.)
+        data_source: The data source (default: grand_debat)
+        mode: Query mode - 'local' for entities, 'global' for communities
+        include_sources: Include provenance chain with source quotes
+
+    Returns:
+        JSON with answer and provenance for end-to-end interpretability
+    """
+    source_path = get_data_source_path(data_source)
+    if not source_path:
+        return json.dumps({
+            "success": False,
+            "error": f"Data source '{data_source}' not available"
+        }, ensure_ascii=False)
+
+    collection_path = source_path / collection_id
+    if not collection_path.exists():
+        # Try with underscores
+        alt_path = source_path / collection_id.replace(' ', '_')
+        if alt_path.exists():
+            collection_path = alt_path
+        else:
+            return json.dumps({
+                "success": False,
+                "error": f"Collection '{collection_id}' not found in {data_source}"
+            }, ensure_ascii=False)
+
+    try:
+        import sys
+        project_root = Path(__file__).parent
+        if str(project_root) not in sys.path:
+            sys.path.insert(0, str(project_root))
+
+        from nano_graphrag import GraphRAG, QueryParam
+        from nano_graphrag._llm import gpt_4o_mini_complete
+
+        rag = GraphRAG(
+            working_dir=str(collection_path),
+            best_model_func=gpt_4o_mini_complete,
+            cheap_model_func=gpt_4o_mini_complete,
+        )
+
+        result = await rag.aquery(
+            query,
+            param=QueryParam(mode=mode.value, return_provenance=include_sources)
+        )
+
+        config = get_data_source_config(data_source)
+
+        if include_sources and isinstance(result, dict):
+            answer = result.get("answer", "")
+            provenance = result.get("provenance", {})
+
+            return json.dumps({
+                "success": True,
+                "data_source": data_source,
+                "data_source_name": config['name'] if config else data_source,
+                "collection_id": collection_id,
+                "query": query,
+                "mode": mode.value,
+                "answer": answer,
+                "provenance": {
+                    "source_collection": collection_id,
+                    "data_source": config['name'] if config else data_source,
+                    "entities": provenance.get("entities", []),
+                    "relationships": provenance.get("relationships", []),
+                    "communities": provenance.get("communities", []),
+                    "source_quotes": provenance.get("source_quotes", []),
+                }
+            }, indent=2, ensure_ascii=False)
+        else:
+            return json.dumps({
+                "success": True,
+                "data_source": data_source,
+                "collection_id": collection_id,
+                "query": query,
+                "mode": mode.value,
+                "answer": result if isinstance(result, str) else result.get("answer", ""),
+            }, indent=2, ensure_ascii=False)
+
+    except Exception as e:
+        logger.error(f"Query error for {data_source}/{collection_id}: {e}")
+        return json.dumps({
+            "success": False,
+            "error": str(e),
+            "data_source": data_source,
+            "collection_id": collection_id
+        }, ensure_ascii=False)
+
+
+# ============================================================================
+# MCP Tools - Grand Débat National (Legacy + Specific)
 # ============================================================================
 
 @mcp.tool(
@@ -796,17 +1075,25 @@ async def grand_debat_get_contributions(
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Grand Débat MCP Server")
+    parser = argparse.ArgumentParser(description="Multi-Source GraphRAG MCP Server")
     parser.add_argument("--port", type=int, default=8000, help="HTTP port")
     parser.add_argument("--host", type=str, default="0.0.0.0", help="Host to bind")
     parser.add_argument("--stdio", action="store_true", help="Use stdio transport")
     args = parser.parse_args()
 
-    logger.info(f"Starting Grand Débat MCP Server...")
-    logger.info(f"Data path: {DATA_PATH}")
+    logger.info(f"Starting Multi-Source GraphRAG MCP Server...")
+    logger.info(f"Default data source: {DEFAULT_DATA_SOURCE}")
 
+    # Log all configured data sources
+    for source_id, config in DATA_SOURCES.items():
+        path = Path(config['path'])
+        status = "AVAILABLE" if path.exists() else "NOT FOUND"
+        collection_count = len([d for d in path.iterdir() if d.is_dir()]) if path.exists() else 0
+        logger.info(f"  [{status}] {source_id}: {config['name']} ({collection_count} {config['collection_label']})")
+
+    # Legacy: also log communes for backward compatibility
     communes = list_communes()
-    logger.info(f"Found {len(communes)} communes")
+    logger.info(f"Grand Débat: {len(communes)} communes loaded")
 
     if args.stdio:
         mcp.run()
