@@ -1,94 +1,47 @@
 {
-  "L0C1": {
-    "report_string": "# Social and Health Contributions of Unknown Citizens\n\nThis community encompasses various contributions and thematiques related to social and health issues. Key entities include contributions that are unknown in nature, along with social and health thematiques, and a citizen entity. The relationships among these entities indicate an involvement in social and health-related discussions or activities.\n\n## Central role of unknown contributions\n\nThe entity 'contribution-Unknown-None' serves as a central figure in this community, possibly representing various contributions that are not clearly defined. Its relationships with both social and health thematiques emphasize its significance in addressing broader issues within the community. The absence of specific details about these contributions leaves questions about their actual impact, but the high rank of its associations indicates importance.\n\n## Significance of social thematique\n\nThe 'thematique-social' entity highlights the community's focus on social aspects, linking it directly to the central contribution entity. The established relationship suggests an active engagement or contribution towards social issues, which can entail raising awareness or addressing challenges faced by citizens. This focus might influence local policy or community reactions regarding social welfare.\n\n## Health matters within the community\n\n'thematique-sanitaire' points to health-related concerns within the community framework. Its relationship with the central contribution entity signifies that health issues are acknowledged alongside social themes, potentially indicating a dual approach to community challenges. Understanding how these health contributions are manifested could be crucial for local health initiatives.\n\n## Citizens' involvement as a base\n\nThe 'citoyen-Unknown-None' entity represents citizens' involvement in the community, reflecting unknown contributions towards social and health issues. This connection underscores the relevance of citizen engagement in discussions or contributions, suggesting that community dynamics are perhaps highly influenced by public sentiment or action.",
-    "report_json": {
-      "title": "Social and Health Contributions of Unknown Citizens",
-      "summary": "This community encompasses various contributions and thematiques related to social and health issues. Key entities include contributions that are unknown in nature, along with social and health thematiques, and a citizen entity. The relationships among these entities indicate an involvement in social and health-related discussions or activities.",
-      "rating": 5.0,
-      "rating_explanation": "The impact severity rating is moderate due to the focus on social and health contributions, which can significantly influence community dynamics.",
-      "findings": [
-        {
-          "summary": "Central role of unknown contributions",
-          "explanation": "The entity 'contribution-Unknown-None' serves as a central figure in this community, possibly representing various contributions that are not clearly defined. Its relationships with both social and health thematiques emphasize its significance in addressing broader issues within the community. The absence of specific details about these contributions leaves questions about their actual impact, but the high rank of its associations indicates importance."
-        },
-        {
-          "summary": "Significance of social thematique",
-          "explanation": "The 'thematique-social' entity highlights the community's focus on social aspects, linking it directly to the central contribution entity. The established relationship suggests an active engagement or contribution towards social issues, which can entail raising awareness or addressing challenges faced by citizens. This focus might influence local policy or community reactions regarding social welfare."
-        },
-        {
-          "summary": "Health matters within the community",
-          "explanation": "'thematique-sanitaire' points to health-related concerns within the community framework. Its relationship with the central contribution entity signifies that health issues are acknowledged alongside social themes, potentially indicating a dual approach to community challenges. Understanding how these health contributions are manifested could be crucial for local health initiatives."
-        },
-        {
-          "summary": "Citizens' involvement as a base",
-          "explanation": "The 'citoyen-Unknown-None' entity represents citizens' involvement in the community, reflecting unknown contributions towards social and health issues. This connection underscores the relevance of citizen engagement in discussions or contributions, suggesting that community dynamics are perhaps highly influenced by public sentiment or action."
-        }
-      ]
-    },
-    "level": 0,
-    "title": "Cluster L0C1",
-    "edges": [
-      [
-        "citoyen-Unknown-None",
-        "contribution-Unknown-None"
-      ],
-      [
-        "contribution-Unknown-None",
-        "thematique-politique"
-      ],
-      [
-        "contribution-Unknown-2",
-        "thematique-social"
-      ],
-      [
-        "contribution-Unknown-None",
-        "thematique-sanitaire"
-      ],
-      [
-        "contribution-Unknown-None",
-        "thematique-fiscalite"
-      ],
-      [
-        "contribution-Unknown-None",
-        "thematique-social"
-      ]
-    ],
-    "nodes": [
-      "thematique-social",
-      "contribution-Unknown-None",
-      "citoyen-Unknown-None",
-      "thematique-sanitaire"
-    ],
-    "chunk_ids": [
-      "contrib-9928b46a9cc2ad581e27b8a99291aea7",
-      "contrib-60c9288090317e8734c920a231b118a8"
-    ],
-    "occurrence": 0.6666666666666666,
-    "sub_communities": []
-  },
   "L0C0": {
-    "report_string": "# Political Contributions and Citizen Engagement\n\nThis community is structured around the relationship between various contributions, political themes, and citizens. The key entity is 'contribution-Unknown-2', which relates to both 'thematique-politique' and 'thematique-democratie', indicating a focus on political engagement.\n\n## Central Role of Contribution-Unknown-2\n\nThe entity 'contribution-Unknown-2' serves as a pivotal element in the community, as it connects to both political themes ('thematique-politique' and 'thematique-democratie') and citizens. This indicates that it may represent an important aspect of civic engagement or influence within the political sphere. The ambiguity surrounding this contribution raises questions about its nature and intent, potentially impacting community dynamics.\n\n## Link to Political Themes\n\n'thematique-politique' indicates a focus on political ideologies or movements within the community. Its relationship with 'contribution-Unknown-2' suggests that contributions may be directed towards specific political causes or initiatives. The lack of clarity regarding this contribution could imply varying degrees of significance and potential effect on political discourse, which may warrant further investigation.\n\n## Connection to Democracy\n\n'thematique-democratie' signifies that the contributions may also pertain to democratic processes or advocacy. The relationships established indicate that this community may be engaged in promoting democratic values or actions through the contributions made. Understanding the specific nature of these contributions is crucial for assessing their potential impact on democratic engagement and civic participation.\n\n## Citizen Involvement\n\nThe entity 'citoyen-Unknown-2' connects to 'contribution-Unknown-2', suggesting that citizens are directly involved with or affected by these contributions. This relationship points to the role of individual citizens in the community's broader political context. However, the ambiguity of the citizen entity raises concerns about the inclusivity and representation of the population in this political discourse.",
+    "report_string": "# Doléances and Bureaucratic Grievances\n\nThe community focuses on the collective grievances expressed through Doléances, which highlight dissatisfaction with public policies, bureaucratic inefficiencies, and demands for better governance and services. Key entities include local bureaucracies, issues affecting expatriates, and concerns over wasteful practices in government and business.\n\n## Widespread grievances expressed through Doléances\n\nDoléances serve as a compilation of citizen grievances concerning various public policies and services. They range from frustrations with bureaucratic controls to specific concerns about taxation and service delivery. This broad set of complaints indicates a high level of public discontent that may require government attention to address citizen needs effectively. The hierarchical relationships highlight how these grievances are interconnected with bureaucratic inefficiencies and citizen expectations for better public service.\n\n## Critique of bureaucratic control\n\nEntities like Bureaucrates des CDC and Bureaucratie emphasize public discontent with bureaucratic influences over local elected officials and inefficiencies within government processes. These criticisms shed light on how citizens feel constrained and unhappy with their local governance structures, suggesting a demand for reforms that empower elected representatives and prioritize responsiveness to citizen needs.\n\n## Impact on delivery services and traditional postal systems\n\nDoléances include significant concerns about the presence of Camions de Livraison, which undermine traditional postal services. This sentiment indicates broader anxieties regarding modern delivery methods versus established systems, suggesting a gap in service accessibility and reliability. Highlighting these grievances reveals citizens’ desire for solutions that balance modernization with the preservation of established delivery systems.\n\n## Concerns over fiscal policies and taxation\n\nCritiques regarding Impôts and Impôts sur les Retraités reflect citizens’ concerns about the fairness and applicability of current fiscal policies, especially for expatriates. Issues raised suggest that taxation is a significant pressure point, particularly for those living abroad who face financial burdens and complexity in their tax obligations. Understanding these concerns is essential for creating more equitable tax policies that consider the diverse needs of citizens.\n\n## Media coverage and public discourse\n\nThe presence of media-related grievances points to a desire for more comprehensive and relevant coverage of societal issues. Citizens have expressed a need for insights from journalists like Florence Aubenas, which indicates a demand for grounded reporting that can effectively address public concerns. The relationship between Doléances and media criticism reflects a cycle where improved media discourse could foster better public understanding and engagement with pressing issues.\n\n## Calls for increased control and oversight\n\nPropositions related to Contrôle and Contrôleurs advocate for greater oversight in both governmental and corporate practices. These suggestions suggest that citizens view current systems as lacking adequate checks and balances, potentially leading to inefficiencies. By emphasizing the need for increased inspectors and control mechanisms, the community demonstrates an eagerness for accountability in governance and business practices, which could improve public trust.\n\n## Grievances regarding outsourcing and local employment\n\nDoléances concerning Prestataires de Service Extérieurs expose frustrations regarding businesses hiring external providers instead of employing local workers. This sentiment highlights a critical economic concern where outsourcing may be perceived as a threat to local employment opportunities. Engaging with these grievances is vital for developing policies that support local labor markets and address citizens' economic anxieties.\n\n## Environmental and resource management issues\n\nConcerns regarding Gaspillage and TVA emphasize citizens’ perceptions of resource misuse and inefficiency across public and private sectors. By calling for taxes on wasteful practices, citizens signal a broader desire for sustainable management of resources and accountability among public institutions. Addressing these resource management issues can position the government to respond more adequately to public expectations for sustainable practices.\n\n## Social implications of rural and urban disparity\n\nIssues raised regarding Vitesse sur Routes de Campagne highlight perceived inequalities between rural and urban infrastructures, illustrating a divide in public service quality and transportation policies. Examining these disparities can inform targeted improvements that ensure equitable service delivery across different community landscapes, thus addressing longstanding grievances of rural populations.",
     "report_json": {
-      "title": "Political Contributions and Citizen Engagement",
-      "summary": "This community is structured around the relationship between various contributions, political themes, and citizens. The key entity is 'contribution-Unknown-2', which relates to both 'thematique-politique' and 'thematique-democratie', indicating a focus on political engagement.",
-      "rating": 4.0,
-      "rating_explanation": "The impact severity rating is moderate due to the uncertainty surrounding the contributions and the associated political themes.",
+      "title": "Doléances and Bureaucratic Grievances",
+      "summary": "The community focuses on the collective grievances expressed through Doléances, which highlight dissatisfaction with public policies, bureaucratic inefficiencies, and demands for better governance and services. Key entities include local bureaucracies, issues affecting expatriates, and concerns over wasteful practices in government and business.",
+      "rating": 7.5,
+      "rating_explanation": "The impact severity rating is significant due to the widespread dissatisfaction among citizens regarding bureaucratic processes and public policy, which could lead to social unrest.",
       "findings": [
         {
-          "summary": "Central Role of Contribution-Unknown-2",
-          "explanation": "The entity 'contribution-Unknown-2' serves as a pivotal element in the community, as it connects to both political themes ('thematique-politique' and 'thematique-democratie') and citizens. This indicates that it may represent an important aspect of civic engagement or influence within the political sphere. The ambiguity surrounding this contribution raises questions about its nature and intent, potentially impacting community dynamics."
+          "summary": "Widespread grievances expressed through Doléances",
+          "explanation": "Doléances serve as a compilation of citizen grievances concerning various public policies and services. They range from frustrations with bureaucratic controls to specific concerns about taxation and service delivery. This broad set of complaints indicates a high level of public discontent that may require government attention to address citizen needs effectively. The hierarchical relationships highlight how these grievances are interconnected with bureaucratic inefficiencies and citizen expectations for better public service."
         },
         {
-          "summary": "Link to Political Themes",
-          "explanation": "'thematique-politique' indicates a focus on political ideologies or movements within the community. Its relationship with 'contribution-Unknown-2' suggests that contributions may be directed towards specific political causes or initiatives. The lack of clarity regarding this contribution could imply varying degrees of significance and potential effect on political discourse, which may warrant further investigation."
+          "summary": "Critique of bureaucratic control",
+          "explanation": "Entities like Bureaucrates des CDC and Bureaucratie emphasize public discontent with bureaucratic influences over local elected officials and inefficiencies within government processes. These criticisms shed light on how citizens feel constrained and unhappy with their local governance structures, suggesting a demand for reforms that empower elected representatives and prioritize responsiveness to citizen needs."
         },
         {
-          "summary": "Connection to Democracy",
-          "explanation": "'thematique-democratie' signifies that the contributions may also pertain to democratic processes or advocacy. The relationships established indicate that this community may be engaged in promoting democratic values or actions through the contributions made. Understanding the specific nature of these contributions is crucial for assessing their potential impact on democratic engagement and civic participation."
+          "summary": "Impact on delivery services and traditional postal systems",
+          "explanation": "Doléances include significant concerns about the presence of Camions de Livraison, which undermine traditional postal services. This sentiment indicates broader anxieties regarding modern delivery methods versus established systems, suggesting a gap in service accessibility and reliability. Highlighting these grievances reveals citizens’ desire for solutions that balance modernization with the preservation of established delivery systems."
         },
         {
-          "summary": "Citizen Involvement",
-          "explanation": "The entity 'citoyen-Unknown-2' connects to 'contribution-Unknown-2', suggesting that citizens are directly involved with or affected by these contributions. This relationship points to the role of individual citizens in the community's broader political context. However, the ambiguity of the citizen entity raises concerns about the inclusivity and representation of the population in this political discourse."
+          "summary": "Concerns over fiscal policies and taxation",
+          "explanation": "Critiques regarding Impôts and Impôts sur les Retraités reflect citizens’ concerns about the fairness and applicability of current fiscal policies, especially for expatriates. Issues raised suggest that taxation is a significant pressure point, particularly for those living abroad who face financial burdens and complexity in their tax obligations. Understanding these concerns is essential for creating more equitable tax policies that consider the diverse needs of citizens."
+        },
+        {
+          "summary": "Media coverage and public discourse",
+          "explanation": "The presence of media-related grievances points to a desire for more comprehensive and relevant coverage of societal issues. Citizens have expressed a need for insights from journalists like Florence Aubenas, which indicates a demand for grounded reporting that can effectively address public concerns. The relationship between Doléances and media criticism reflects a cycle where improved media discourse could foster better public understanding and engagement with pressing issues."
+        },
+        {
+          "summary": "Calls for increased control and oversight",
+          "explanation": "Propositions related to Contrôle and Contrôleurs advocate for greater oversight in both governmental and corporate practices. These suggestions suggest that citizens view current systems as lacking adequate checks and balances, potentially leading to inefficiencies. By emphasizing the need for increased inspectors and control mechanisms, the community demonstrates an eagerness for accountability in governance and business practices, which could improve public trust."
+        },
+        {
+          "summary": "Grievances regarding outsourcing and local employment",
+          "explanation": "Doléances concerning Prestataires de Service Extérieurs expose frustrations regarding businesses hiring external providers instead of employing local workers. This sentiment highlights a critical economic concern where outsourcing may be perceived as a threat to local employment opportunities. Engaging with these grievances is vital for developing policies that support local labor markets and address citizens' economic anxieties."
+        },
+        {
+          "summary": "Environmental and resource management issues",
+          "explanation": "Concerns regarding Gaspillage and TVA emphasize citizens’ perceptions of resource misuse and inefficiency across public and private sectors. By calling for taxes on wasteful practices, citizens signal a broader desire for sustainable management of resources and accountability among public institutions. Addressing these resource management issues can position the government to respond more adequately to public expectations for sustainable practices."
+        },
+        {
+          "summary": "Social implications of rural and urban disparity",
+          "explanation": "Issues raised regarding Vitesse sur Routes de Campagne highlight perceived inequalities between rural and urban infrastructures, illustrating a divide in public service quality and transportation policies. Examining these disparities can inform targeted improvements that ensure equitable service delivery across different community landscapes, thus addressing longstanding grievances of rural populations."
         }
       ]
     },
@@ -96,151 +49,150 @@
     "title": "Cluster L0C0",
     "edges": [
       [
-        "contribution-Unknown-3",
-        "thematique-politique"
+        "\"BUREAUCRATES DES CDC\"",
+        "\"DOLÉANCES\""
       ],
       [
-        "contribution-Unknown-2",
-        "thematique-politique"
+        "\"DOLÉANCES\"",
+        "\"IMPÔTS SUR LES RETRAITÉS\""
       ],
       [
-        "citoyen-Unknown-2",
-        "contribution-Unknown-2"
+        "\"CAMIONS DE LIVRAISON\"",
+        "\"DOLÉANCES\""
       ],
       [
-        "contribution-Unknown-None",
-        "thematique-politique"
+        "\"DOLÉANCES\"",
+        "\"RETRAITÉS À L'ÉTRANGER\""
       ],
       [
-        "contribution-Unknown-2",
-        "thematique-social"
+        "\"BUREAUCRATIE\"",
+        "\"DOLÉANCES\""
       ],
       [
-        "contribution-Unknown-2",
-        "thematique-democratie"
+        "\"DOLÉANCES\"",
+        "\"VITESSE SUR ROUTES DE CAMPAGNE\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"POLITIQUE FISCAL\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"MÉDIAS\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"PRESTATAIRES DE SERVICE EXTÉRIEURS\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"IMPÔTS\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"FLORENCE AUBENAS\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"FLORENCE AUBENAS, JOURNALISTE\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"PUBLICITÉS SCANDALEUSES\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"PARLOTTES INUTILES\""
+      ],
+      [
+        "\"DESTRUCTION DE LA POSTE\"",
+        "\"DOLÉANCES\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"ÉTAT\""
+      ],
+      [
+        "\"CONTRÔLEURS\"",
+        "\"DOLÉANCES\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"GASPILLAGE\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"FONCTIONNAIRES BUREAUCRATES\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"ÉCONOMIE\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"TVA\""
+      ],
+      [
+        "\"CONTRÔLE\"",
+        "\"DOLÉANCES\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"POLITIQUE DE TRANSPORT\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"FRANÇAIS À L'ÉTRANGER\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"ENTREPRISES\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"OUVRIERS QUALIFIÉS\""
+      ],
+      [
+        "\"COMMUNES\"",
+        "\"DOLÉANCES\""
+      ],
+      [
+        "\"DOLÉANCES\"",
+        "\"DÉPENSES\""
       ]
     ],
     "nodes": [
-      "citoyen-Unknown-2",
-      "contribution-Unknown-2",
-      "thematique-democratie",
-      "thematique-politique"
+      "\"FRANÇAIS À L'ÉTRANGER\"",
+      "\"BUREAUCRATES DES CDC\"",
+      "\"IMPÔTS\"",
+      "\"FLORENCE AUBENAS\"",
+      "\"POLITIQUE FISCAL\"",
+      "\"COMMUNES\"",
+      "\"MÉDIAS\"",
+      "\"RETRAITÉS À L'ÉTRANGER\"",
+      "\"ÉTAT\"",
+      "\"CAMIONS DE LIVRAISON\"",
+      "\"FLORENCE AUBENAS, JOURNALISTE\"",
+      "\"POLITIQUE DE TRANSPORT\"",
+      "\"DESTRUCTION DE LA POSTE\"",
+      "\"GASPILLAGE\"",
+      "\"ÉCONOMIE\"",
+      "\"CONTRÔLEURS\"",
+      "\"FONCTIONNAIRES BUREAUCRATES\"",
+      "\"PUBLICITÉS SCANDALEUSES\"",
+      "\"CONTRÔLE\"",
+      "\"VITESSE SUR ROUTES DE CAMPAGNE\"",
+      "\"BUREAUCRATIE\"",
+      "\"DOLÉANCES\"",
+      "\"ENTREPRISES\"",
+      "\"PARLOTTES INUTILES\"",
+      "\"OUVRIERS QUALIFIÉS\"",
+      "\"IMPÔTS SUR LES RETRAITÉS\"",
+      "\"TVA\"",
+      "\"DÉPENSES\"",
+      "\"PRESTATAIRES DE SERVICE EXTÉRIEURS\""
     ],
     "chunk_ids": [
-      "contrib-9928b46a9cc2ad581e27b8a99291aea7",
-      "contrib-60c9288090317e8734c920a231b118a8",
-      "contrib-24e8beaa0c50b8e16015df19df82ab5e"
-    ],
-    "occurrence": 1.0,
-    "sub_communities": []
-  },
-  "L0C2": {
-    "report_string": "# Citoyen Contributions and Thematique Immigration\n\nThis community comprises Citizens contributing to discussions around the theme of immigration. Each entity is connected through contributions that help address immigration-related topics, suggesting the importance of this theme in ongoing discourse.\n\n## Citoyen's Contribution to the Community\n\nThe citizen entity is linked to a contribution entity, indicating an individual's involvement in the community around immigration. This relationship underscores the importance of individual voices and perspectives in shaping discussions around immigration, highlighting how personal experiences can influence public discourse.\n\n## Thematique of Immigration as a Central Focus\n\nThe thematic focus on immigration is critical, serving as a common thread that aligns the contributions of various citizens. This theme reflects a significant societal issue that may incite varying opinions and discussions, making the community's engagement on this topic essential for understanding public sentiment and potential policy implications.\n\n## Contribution's Connection to Thematique Immigration\n\nThe contribution entity is directly associated with the thematic focus on immigration, indicating that the input received from citizens is likely geared toward this important topic. This relationship emphasizes the critical role that citizen contributions play in developing narratives and understanding around immigration matters, which are highly relevant in contemporary discussions.",
-    "report_json": {
-      "title": "Citoyen Contributions and Thematique Immigration",
-      "summary": "This community comprises Citizens contributing to discussions around the theme of immigration. Each entity is connected through contributions that help address immigration-related topics, suggesting the importance of this theme in ongoing discourse.",
-      "rating": 4.0,
-      "rating_explanation": "The impact severity rating is moderate, reflecting the significance of immigration discussions in society and the potential for diverse opinions and contributions to shape outcomes.",
-      "findings": [
-        {
-          "summary": "Citoyen's Contribution to the Community",
-          "explanation": "The citizen entity is linked to a contribution entity, indicating an individual's involvement in the community around immigration. This relationship underscores the importance of individual voices and perspectives in shaping discussions around immigration, highlighting how personal experiences can influence public discourse."
-        },
-        {
-          "summary": "Thematique of Immigration as a Central Focus",
-          "explanation": "The thematic focus on immigration is critical, serving as a common thread that aligns the contributions of various citizens. This theme reflects a significant societal issue that may incite varying opinions and discussions, making the community's engagement on this topic essential for understanding public sentiment and potential policy implications."
-        },
-        {
-          "summary": "Contribution's Connection to Thematique Immigration",
-          "explanation": "The contribution entity is directly associated with the thematic focus on immigration, indicating that the input received from citizens is likely geared toward this important topic. This relationship emphasizes the critical role that citizen contributions play in developing narratives and understanding around immigration matters, which are highly relevant in contemporary discussions."
-        }
-      ]
-    },
-    "level": 0,
-    "title": "Cluster L0C2",
-    "edges": [
-      [
-        "contribution-Unknown-3",
-        "thematique-politique"
-      ],
-      [
-        "contribution-Unknown-3",
-        "thematique-fiscalite"
-      ],
-      [
-        "contribution-Unknown-3",
-        "thematique-immigration"
-      ],
-      [
-        "citoyen-Unknown-3",
-        "contribution-Unknown-3"
-      ]
-    ],
-    "nodes": [
-      "contribution-Unknown-3",
-      "citoyen-Unknown-3",
-      "thematique-immigration"
-    ],
-    "chunk_ids": [
-      "contrib-24e8beaa0c50b8e16015df19df82ab5e"
-    ],
-    "occurrence": 0.3333333333333333,
-    "sub_communities": []
-  },
-  "L0C3": {
-    "report_string": "# Fiscality Theme and Citizen Contributions\n\nThis community focuses on the thematique-fiscalite, which is associated with contributions from citizens. The relationship between an unidentified citizen and a contribution related to fiscal themes indicates a network that may be exploring issues around fiscal responsibility or taxation.\n\n## Thematique-fiscalite as a central theme\n\nThe thematique-fiscalite serves as a central entity in this community, although its specific implications are not detailed. This theme likely pertains to discussions or concerns around fiscal policy, taxation, or economic contributions. Its presence suggests that the community may engage in exploring important aspects of finance that could affect broader societal issues.\n\n## Citizen engagement through contributions\n\nThe existence of a contribution linked to an unidentified citizen indicates that members of the community may be involved in discussions or actions related to fiscal matters. The degree of engagement, suggested by the citizen's connection to the contribution, underscores the importance of public participation in financial discussions, although specific details remain unclear.\n\n## Unclear roles of entities\n\nEntities in this community, such as 'citoyen-Unknown-4' and 'contribution-Unknown-4', are poorly defined, limiting the ability to extract meaningful insights. Their anonymity and undefined roles hinder clarity on the specifics of their contributions to the community's objectives.\n\n## Relationships between entities\n\nThe relationship between the citizen and the contribution to thematique-fiscalite highlights a potential network for fiscal dialogue. While the degree of these relationships is rated higher, indicating strong connections, the lack of identifiable goals or contexts leaves the implications of these connections ambiguous. Understanding these relationships may uncover motivations or concerns relevant to fiscal policies.",
-    "report_json": {
-      "title": "Fiscality Theme and Citizen Contributions",
-      "summary": "This community focuses on the thematique-fiscalite, which is associated with contributions from citizens. The relationship between an unidentified citizen and a contribution related to fiscal themes indicates a network that may be exploring issues around fiscal responsibility or taxation.",
-      "rating": 4.5,
-      "rating_explanation": "The impact severity rating reflects moderate importance due to potential implications on fiscal policies and citizen engagement in financial matters.",
-      "findings": [
-        {
-          "summary": "Thematique-fiscalite as a central theme",
-          "explanation": "The thematique-fiscalite serves as a central entity in this community, although its specific implications are not detailed. This theme likely pertains to discussions or concerns around fiscal policy, taxation, or economic contributions. Its presence suggests that the community may engage in exploring important aspects of finance that could affect broader societal issues."
-        },
-        {
-          "summary": "Citizen engagement through contributions",
-          "explanation": "The existence of a contribution linked to an unidentified citizen indicates that members of the community may be involved in discussions or actions related to fiscal matters. The degree of engagement, suggested by the citizen's connection to the contribution, underscores the importance of public participation in financial discussions, although specific details remain unclear."
-        },
-        {
-          "summary": "Unclear roles of entities",
-          "explanation": "Entities in this community, such as 'citoyen-Unknown-4' and 'contribution-Unknown-4', are poorly defined, limiting the ability to extract meaningful insights. Their anonymity and undefined roles hinder clarity on the specifics of their contributions to the community's objectives."
-        },
-        {
-          "summary": "Relationships between entities",
-          "explanation": "The relationship between the citizen and the contribution to thematique-fiscalite highlights a potential network for fiscal dialogue. While the degree of these relationships is rated higher, indicating strong connections, the lack of identifiable goals or contexts leaves the implications of these connections ambiguous. Understanding these relationships may uncover motivations or concerns relevant to fiscal policies."
-        }
-      ]
-    },
-    "level": 0,
-    "title": "Cluster L0C3",
-    "edges": [
-      [
-        "contribution-Unknown-4",
-        "thematique-fiscalite"
-      ],
-      [
-        "citoyen-Unknown-4",
-        "contribution-Unknown-4"
-      ],
-      [
-        "contribution-Unknown-None",
-        "thematique-fiscalite"
-      ],
-      [
-        "contribution-Unknown-3",
-        "thematique-fiscalite"
-      ]
-    ],
-    "nodes": [
-      "citoyen-Unknown-4",
-      "contribution-Unknown-4",
-      "thematique-fiscalite"
-    ],
-    "chunk_ids": [
-      "contrib-9928b46a9cc2ad581e27b8a99291aea7",
-      "contrib-26e88cf1d221dc7963c000078e88fe5e",
       "contrib-24e8beaa0c50b8e16015df19df82ab5e"
     ],
     "occurrence": 1.0,

@@ -1,1795 +1,1567 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d28" for="edge" attr.name="source_id" attr.type="string"/>
-<key id="d27" for="edge" attr.name="weight" attr.type="double"/>
-<key id="d26" for="edge" attr.name="relationship_type" attr.type="string"/>
-<key id="d25" for="node" attr.name="intensite" attr.type="double"/>
-<key id="d24" for="node" attr.name="sujet" attr.type="string"/>
-<key id="d23" for="node" attr.name="position" attr.type="string"/>
-<key id="d22" for="node" attr.name="type" attr.type="string"/>
-<key id="d21" for="node" attr.name="cible" attr.type="string"/>
-<key id="d20" for="node" attr.name="valeur" attr.type="string"/>
-<key id="d19" for="node" attr.name="domaine" attr.type="string"/>
-<key id="d18" for="node" attr.name="estTypique" attr.type="boolean"/>
-<key id="d17" for="node" attr.name="gravite" attr.type="string"/>
-<key id="d16" for="node" attr.name="objet" attr.type="string"/>
-<key id="d15" for="node" attr.name="nom" attr.type="string"/>
-<key id="d14" for="node" attr.name="categorie" attr.type="string"/>
-<key id="d13" for="node" attr.name="titre" attr.type="string"/>
-<key id="d12" for="node" attr.name="source_id" attr.type="string"/>
-<key id="d11" for="node" attr.name="description" attr.type="string"/>
-<key id="d10" for="node" attr.name="manuscritType" attr.type="string"/>
-<key id="d9" for="node" attr.name="contributionNumber" attr.type="long"/>
-<key id="d8" for="node" attr.name="demographic" attr.type="string"/>
-<key id="d7" for="node" attr.name="commune" attr.type="string"/>
-<key id="d6" for="node" attr.name="estPartielle" attr.type="boolean"/>
-<key id="d5" for="node" attr.name="texte" attr.type="string"/>
-<key id="d4" for="node" attr.name="contributionId" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d8" for="edge" attr.name="order" attr.type="long"/>
+<key id="d7" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d6" for="edge" attr.name="description" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="clusters" attr.type="string"/>
 <key id="d3" for="node" attr.name="entity_name" attr.type="string"/>
-<key id="d2" for="node" attr.name="clusters" attr.type="string"/>
-<key id="d1" for="node" attr.name="citoyenId" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
 <key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
-<graph edgedefault="undirected"><node id="citoyen-Unknown-None">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-None</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C3"}]</data>
-  <data key="d3">citoyen-Unknown-None</data>
-</node>
-<node id="contribution-Unknown-None">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-None</data>
-  <data key="d5">Cahier de Taillebourg1. Manuscrit, 40 lignes, 254 mots (homme)Mr Le Président de la République.Vous cherchez de l'argent pour pouvoir payez le peuple alors voilà quelques idées :−−−−−−−−Diminuer votre paye ainsi que celle des ministres et secrétaires d'État.Au moment de votre départ, ne toucher la retraite qu'à l’âge légal (62 ans)et au prorata dutemps passé dans la fonction.Diminuer le nombre de députés et sénateurs français et députés européens. Pour leur retraite,idem, 62 an...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C3"}]</data>
-  <data key="d3">contribution-Unknown-None</data>
-</node>
-<node id="citoyen-Unknown-2">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-2</data>
-  <data key="d8">femme</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-  <data key="d3">citoyen-Unknown-2</data>
-</node>
-<node id="contribution-Unknown-2">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-2</data>
-  <data key="d5">2. Manuscrit, 18 lignes, 97 mots (femme)Mr le PrésidentPar la présente, veuillez trouver mes doléances.−−−−−−−Réduire les charges sociales des entreprises de moins de 10 salariés.Réduire les dépenses au plus haut sommet de l'État avec de nombreux gaspillages.Retour de l'ISF.Seule la TVA est un impôt juste, l'augmenter afin de retirer les charges patronales bien tropchères.Renforcer les contrôles Sécurité sociale et CAF pour renforcer le retour à l'emploi.Mettre en place le RIC a...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">2</data>
-  <data key="d10">manuscrit</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-  <data key="d3">contribution-Unknown-2</data>
-</node>
-<node id="citoyen-Unknown-3">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-3</data>
-  <data key="d8">femme</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C4"}]</data>
-  <data key="d3">citoyen-Unknown-3</data>
-</node>
-<node id="contribution-Unknown-3">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-3</data>
-  <data key="d5">3. Manuscrit, 73 lignes, 357 mots (femme)Madame [Nom]Assemblée nationale à la proportionnelle (représentant toutes les tendances)Reconnaissance du vote blancCahiers de doléances/cahiers citoyens de Charente-Maritime, édition février 2024Cahier de TaillebourgAu niveau des communes, consultation des citoyens sur les aménagements / travaux ou propositionsà faire. Ex. à Taillebourg : suppression des scooters sur la Charente une hérésie écologique !Consultation des citoyens par référendum ...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">3</data>
-  <data key="d10">manuscrit</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C4"}]</data>
-  <data key="d3">contribution-Unknown-3</data>
-</node>
-<node id="citoyen-Unknown-4">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-4</data>
-  <data key="d8">homme</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-  <data key="d3">citoyen-Unknown-4</data>
-</node>
-<node id="contribution-Unknown-4">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-4</data>
-  <data key="d5">4. Manuscrit, 57 lignes, 438 mots (homme)Doléances d'un habitant de Taillebourg 17350 Mr [Nom, Prénom]1/ Aucun des politiques à ce jour pourrait vivre avec un salaire de 900,00 E à 1200,00 E mensuel dansce pays. Les politiques ne peuvent pas se mettre à la place de toutes les personnes avec d'aussifaibles revenus.2/ Pour ma part, l'impôt le plus lourd et le plus injuste, c'est la TVA. Pourquoi? Que l'on soitmilliardaire ou ces bas revenus, la TVA est la même pour tous. Une TVA sociale sera...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">4</data>
-  <data key="d10">manuscrit</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-  <data key="d3">contribution-Unknown-4</data>
-</node>
-<node id="citoyen-Unknown-5">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-5</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C2"}]</data>
-  <data key="d3">citoyen-Unknown-5</data>
-</node>
-<node id="contribution-Unknown-5">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-5</data>
-  <data key="d5">5. Manuscrit (encre bleu clair), 52 lignes, 346 motsLettre aux élusJe pense qu'au 21ème siècle, il serait temps que les gouvernements trouvent un moyen de réduireles inégalités.Les premiers concernés sont nos élus de « haut vol » qui traînent impunément des « casseroles »derrière eux.Chaque jour apporte sont lot de malversations en tout genre...Que dire de M. Sarkozy, mis en examen de nombreuses fois, de M. Fillon et ses détournements defonds publics pour des emplois fictifs (femme, enfa...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">5</data>
-  <data key="d10">manuscrit</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C2"}]</data>
-  <data key="d3">contribution-Unknown-5</data>
-</node>
-<node id="citoyen-Unknown-6">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-6</data>
-  <data key="d8">homme</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-  <data key="d3">citoyen-Unknown-6</data>
-</node>
-<node id="contribution-Unknown-6">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-6</data>
-  <data key="d5">6. Manuscrit, 40 lignes, 194 mots (homme)Monsieur le Président,Il manque de l'argent dans les caisses de l’État.La solution n'est pas de ponctionner la population par des taxes et charges successives, ce qui n'apour effet que de diminuer le pouvoir d'achat et d'augmenter le coût de revient des entreprises, cequi les rend plus vulnérables par rapport au produit étranger.Mais regarder plutôt tous les services publics. Un audit général permettrait de se rendre compte detous les doublons et d...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">6</data>
-  <data key="d10">manuscrit</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-  <data key="d3">contribution-Unknown-6</data>
-</node>
-<node id="proposition-918b73cd">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Diminuer la paye des ministres et secrétaires d'État</data>
-  <data key="d11">Diminuer votre paye ainsi que celle des ministres et secrétaires d'État.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d13">Diminuer la paye des ministres et secrétaires d'État</data>
-  <data key="d14">fiscale</data>
-</node>
-<node id="proposition-b3d11763">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Retraite au prorata du temps passé dans la fonction</data>
-  <data key="d11">Ne toucher la retraite qu'à l’âge légal (62 ans) et au prorata du temps passé dans la fonction.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d13">Retraite au prorata</data>
-  <data key="d14">fiscale</data>
-</node>
-<node id="proposition-675242d4">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Diminuer le nombre de députés et sénateurs</data>
-  <data key="d11">Diminuer le nombre de députés et sénateurs français et députés européens.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d13">Diminuer le nombre de députés et sénateurs</data>
-  <data key="d14">democratique</data>
-</node>
-<node id="reforme_fiscale-85964c11">
-  <data key="d0">REFORME_FISCALE</data>
-  <data key="d3">Remettre l'ISF</data>
-  <data key="d11">Remettre l'ISF car il parait que cela devait créer des emplois.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d15">Remettre l'ISF</data>
-</node>
-<node id="type_impot-4c226d35">
-  <data key="d0">TYPE_IMPOT</data>
-  <data key="d3">ISF</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359&lt;SEP&gt;contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">ISF</data>
-  <data key="d14">direct</data>
-</node>
-<node id="doleance-586e161f">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">GSG pour les retraités</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d16">GSG pour les retraités</data>
-  <data key="d17">forte</data>
-</node>
-<node id="type_impot-e16fd1f3">
-  <data key="d0">TYPE_IMPOT</data>
-  <data key="d3">GSG</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d15">GSG</data>
-  <data key="d14">direct</data>
-</node>
-<node id="doleance-1bc229d0">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Conditions des SDF français</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d16">Conditions des SDF français</data>
-  <data key="d17">forte</data>
-</node>
-<node id="doleance-f97c9cdf">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Vente des usines aux étrangers</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d16">Vente des usines aux étrangers</data>
-  <data key="d17">forte</data>
-</node>
-<node id="verbatim-5572f3ae">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Il faudrait d'abord s'occuper des SDF français qui ont cotisé avant de tomber dans la misère.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d5">Il faudrait d'abord s'occuper des SDF français qui ont cotisé avant de tomber dans la misère.</data>
-  <data key="d18">True</data>
-</node>
-<node id="thematique-570a8d6e">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Fiscale</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d15">Fiscale</data>
-</node>
-<node id="thematique-f431e17e">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Social</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190&lt;SEP&gt;contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Social</data>
-</node>
-<node id="proposition-889dc7eb">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Diminuer la GSG pour les retraités</data>
-  <data key="d11">Diminuer ou supprimer la GSG pour les retraités car la baisse de la taxe d'habitation ne compense pas.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d13">Diminuer la GSG pour les retraités</data>
-  <data key="d14">fiscale</data>
-</node>
-<node id="doleance-b913d753">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Conditions des buralistes</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d16">Conditions des buralistes</data>
-  <data key="d17">moyenne</data>
-</node>
-<node id="doleance-f5268cda">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Accueillir des émigrants</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d16">Accueillir des émigrants</data>
-  <data key="d17">moyenne</data>
-</node>
-<node id="thematique-b306b60e">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Immigration</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190&lt;SEP&gt;contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d15">Immigration</data>
-  <data key="d16">Impuissance face à l'immigration</data>
-  <data key="d17">forte</data>
-</node>
-<node id="verbatim-fb268160">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Vous allez bientôt pleurer que le tourisme diminue.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d5">Vous allez bientôt pleurer que le tourisme diminue.</data>
-  <data key="d18">True</data>
-</node>
-<node id="verbatim-1fa2d72d">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Heureusement que nos anciens ne se sont pas défilés durant les deux guerres mondiales, comme ces gens le font.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d5">Heureusement que nos anciens ne se sont pas défilés durant les deux guerres mondiales, comme ces gens le font.</data>
-  <data key="d18">True</data>
-</node>
-<node id="doleance-cef1ea3b">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Vente d'usines aux étrangers</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d16">Vente d'usines aux étrangers</data>
-  <data key="d17">forte</data>
-</node>
-<node id="service_public-3887bc8e">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Services pour les SDF</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-  <data key="d15">Services pour les SDF</data>
-  <data key="d19">social</data>
-</node>
-<node id="thematique-fiscalite">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">FISCALITE</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-ab59ed4a3c1985045c74cc60f916cc42&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359&lt;SEP&gt;contrib-0e7002fed880b75d301c918cbb8ea190&lt;SEP&gt;contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">FISCALITE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-</node>
-<node id="thematique-immigration">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">IMMIGRATION</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190&lt;SEP&gt;contrib-ab59ed4a3c1985045c74cc60f916cc42&lt;SEP&gt;contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d15">IMMIGRATION</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-</node>
-<node id="thematique-politique">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">POLITIQUE</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190&lt;SEP&gt;contrib-11652fa695f7bc1307a3100db557ffe2&lt;SEP&gt;contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">POLITIQUE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C2"}]</data>
-</node>
-<node id="thematique-social">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">SOCIAL</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190&lt;SEP&gt;contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359&lt;SEP&gt;contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">SOCIAL</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C3"}]</data>
-</node>
-<node id="doleance-f509cdc6">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Charges des entreprises</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d16">Réduction des charges sociales des entreprises de moins de 10 salariés</data>
-  <data key="d17">faible</data>
-</node>
-<node id="doleance-e27a25ea">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Dépenses gouvernementales</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d16">Réduction des dépenses au sommet de l'État</data>
-  <data key="d17">moyenne</data>
-</node>
-<node id="doleance-6bd330d8">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Retour de l'ISF</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d16">Retour de l'ISF</data>
-  <data key="d17">forte</data>
-</node>
-<node id="proposition-c977bb37">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Augmentation de la TVA</data>
-  <data key="d11">Augmenter la TVA afin de retirer les charges patronales considérées comme trop chères.</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d13">Augmentation de la TVA</data>
-  <data key="d14">fiscale</data>
-</node>
-<node id="type_impot-5efceb91">
-  <data key="d0">TYPE_IMPOT</data>
-  <data key="d3">TVA</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">TVA</data>
-  <data key="d14">indirect</data>
-</node>
-<node id="proposition-4bfd006d">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Renforcement des contrôles de la sécurité sociale</data>
-  <data key="d11">Renforcer les contrôles Sécurité sociale et CAF pour améliorer le retour à l'emploi.</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d13">Renforcement des contrôles de la sécurité sociale</data>
-  <data key="d14">sociale</data>
-</node>
-<node id="proposition-f0407bf0">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Mise en place du RIC</data>
-  <data key="d11">Mettre en place le RIC afin que chacun puisse prendre part aux décisions importantes.</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d13">Mise en place du RIC</data>
-  <data key="d14">democratique</data>
-</node>
-<node id="proposition-bb05fea1">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Contrôle des autoroutes</data>
-  <data key="d11">Reprendre le contrôle des autoroutes financées par les Français et aujourd'hui très rentables.</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d13">Reprendre le contrôle des autoroutes</data>
-  <data key="d14">ecologique</data>
-</node>
-<node id="niveau_confiance-1970d9a0">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">Gouvernement</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d20">faible</data>
-  <data key="d21">gouvernement</data>
-  <data key="d15">Gouvernement</data>
-  <data key="d22">gouvernement</data>
-</node>
-<node id="thematique-7347f8ed">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Fiscalité</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">Fiscalité</data>
-</node>
-<node id="thematique-abc3037e">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Dépenses publiques</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">Dépenses publiques</data>
-</node>
-<node id="thematique-a5ff3105">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Emploi</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">Emploi</data>
-</node>
-<node id="thematique-c09381a9">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Démocratie</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">Démocratie</data>
-</node>
-<node id="thematique-0024f2a0">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Transports</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">Transports</data>
-  <data key="d19">infrastructures</data>
-</node>
-<node id="acteur_institutionnel-8dd568ad">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">État</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42&lt;SEP&gt;contrib-11652fa695f7bc1307a3100db557ffe2&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">État</data>
-  <data key="d22">gouvernement</data>
-  <data key="d19">administration</data>
-</node>
-<node id="service_public-571ccedd">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Autoroutes</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">Autoroutes</data>
-  <data key="d19">transport</data>
-</node>
-<node id="service_public-4edb37d0">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Sécurité Sociale</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">Sécurité Sociale</data>
-  <data key="d19">sante</data>
-</node>
-<node id="thematique-securite">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">SECURITE</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">SECURITE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-</node>
-<node id="thematique-democratie">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">DEMOCRATIE</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50&lt;SEP&gt;contrib-8c5ed005046e376fa5861341b1cca359</data>
-  <data key="d15">DEMOCRATIE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-</node>
-<node id="proposition-263c1468">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Assemblée nationale à la proportionnelle</data>
-  <data key="d11">Mettre en place un système de représentation à la proportionnelle dans l'Assemblée nationale pour inclure toutes les tendances.</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d13">Assemblée nationale à la proportionnelle</data>
-  <data key="d14">democratique</data>
-</node>
-<node id="proposition-c7400e78">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Reconnaissance du vote blanc</data>
-  <data key="d11">Instaurer une reconnaissance officielle du vote blanc lors des élections.</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d13">Reconnaissance du vote blanc</data>
-  <data key="d14">democratique</data>
-</node>
-<node id="proposition-ff4bf182">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Consultation des citoyens sur aménagements</data>
-  <data key="d11">Mettre en place des consultations citoyennes pour discuter des aménagements et travaux dans les communes.</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d13">Consultation des citoyens sur aménagements</data>
-  <data key="d14">democratique</data>
-</node>
-<node id="doleance-e08194bd">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Suppression des scooters sur la Charente</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d16">Suppression des scooters</data>
-  <data key="d17">faible</data>
-</node>
-<node id="doleance-510cf96c">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Privilèges des anciens présidents</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d16">Privilèges des anciens présidents</data>
-  <data key="d17">moyenne</data>
-</node>
-<node id="reforme_democratique-dfa13b24">
-  <data key="d0">REFORME_DEMOCRATIQUE</data>
-  <data key="d3">Diminution du nombre d'élus</data>
-  <data key="d11">Réduire le nombre d'élus, y compris sénateurs et parlementaires, pour une meilleure efficacité.</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Diminution du nombre d'élus</data>
-</node>
-<node id="reforme_fiscale-addeb896">
-  <data key="d0">REFORME_FISCALE</data>
-  <data key="d3">Ne pas remettre L'ISF</data>
-  <data key="d11">Ne pas rétablir l'ISF à condition que les contribuables investissent dans l'économie et les entreprises en France.</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Ne pas remettre L'ISF</data>
-</node>
-<node id="proposition-9f642b0d">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Décision des élus locaux sur routes</data>
-  <data key="d11">Permettre aux élus locaux de décider des routes accidentogènes et de réguler la vitesse à 80 km/h sur ces routes.</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d13">Décision des élus locaux sur routes</data>
-  <data key="d14">democratique</data>
-</node>
-<node id="service_public-b7ad6d18">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Services publics en zone rurale</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Services publics en zone rurale</data>
-  <data key="d19">social</data>
-</node>
-<node id="proposition-a9f6239c">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Remettre en service les lignes de chemin de fer</data>
-  <data key="d11">Réactiver les lignes de chemin de fer dans les petites communes.</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d13">Remettre en service les lignes de chemin de fer</data>
-  <data key="d14">transport</data>
-</node>
-<node id="remarque-748de755">
-  <data key="d0">REMARQUE</data>
-  <data key="d3">Arrêter la progression des taxes sur les énergies</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d16">Taxes sur les énergies</data>
-  <data key="d17">forte</data>
-</node>
-<node id="doleance-4a110562">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Limiter les flux migratoires</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d16">Limitation des flux migratoires</data>
-  <data key="d17">moyenne</data>
-</node>
-<node id="doleance-957a9b36">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Arrêter avec la loi « droit du sol »</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d16">Loi droit du sol</data>
-  <data key="d17">forte</data>
-</node>
-<node id="thematique-db91f285">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Politique</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Politique</data>
-</node>
-<node id="thematique-2666cd03">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Écologie</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Écologie</data>
-</node>
-<node id="acteur_institutionnel-080421a5">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">Assemblée nationale</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Assemblée nationale</data>
-  <data key="d22">institution</data>
-</node>
-<node id="acteur_institutionnel-95a8d568">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">Monsanto</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Monsanto</data>
-  <data key="d22">entreprise_publique</data>
-</node>
-<node id="mesure_ecologique-32950eb7">
-  <data key="d0">MESURE_ECOLOGIQUE</data>
-  <data key="d3">Interdiction de commercialiser des graines non répertoriées</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Interdiction de commercialiser des graines non répertoriées</data>
-  <data key="d19">agriculture</data>
-</node>
-<node id="mesure_ecologique-f117a0f2">
-  <data key="d0">MESURE_ECOLOGIQUE</data>
-  <data key="d3">Chasse des oiseaux à la glu</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">Chasse des oiseaux à la glu</data>
-  <data key="d19">écologie</data>
-</node>
-<node id="thematique-ecologie">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">ECOLOGIE</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-  <data key="d15">ECOLOGIE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C4"}]</data>
-</node>
-<node id="doleance-92aee13e">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Salaires politiques</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d16">Salaires des politiques</data>
-  <data key="d17">forte</data>
-</node>
-<node id="opinion-f55b1abb">
-  <data key="d0">OPINION</data>
-  <data key="d3">Injustice de la TVA</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d23">contre</data>
-  <data key="d24">TVA</data>
-  <data key="d25">0.9</data>
-</node>
-<node id="proposition-fcf5a8df">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">TVA sociale</data>
-  <data key="d11">Introduire une TVA sociale où les hauts revenus paient une TVA plus élevée que les faibles revenus</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d13">TVA sociale</data>
-  <data key="d14">fiscale</data>
-</node>
-<node id="doleance-74a3cdc7">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Retraités</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d16">Situation des petits retraités</data>
-  <data key="d17">forte</data>
-</node>
-<node id="verbatim-0c406b12">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Respect pour le peuple</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d5">je demande aux politiques, tous partis confondus, d'avoir du respect quant à vos salaires que vous percevez sur le dos du peuple qui travaille pour vous</data>
-  <data key="d18">True</data>
-</node>
-<node id="niveau_confiance-1b0beac7">
-  <data key="d0">NIVEAU_CONFIANCE</data>
-  <data key="d3">Confiance envers les politiques</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d20">très faible</data>
-  <data key="d21">gouvernement</data>
-</node>
-<node id="niveau_confiance-c17b1898">
-  <data key="d0">NIVEAU_CONFIANCE</data>
-  <data key="d3">Confiance envers Emmanuel Macron</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d20">moyen</data>
-  <data key="d21">Emmanuel Macron</data>
-</node>
-<node id="proposition-4ca6ff43">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Redonner du pouvoir d'achat</data>
-  <data key="d11">Augmenter les revenus des petits retraités pour leur permettre de consommer et ainsi augmenter les recettes de l'État via la TVA</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d13">Redonner du pouvoir d'achat</data>
-  <data key="d14">sociale</data>
-</node>
-<node id="verbatim-5c227dbf">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Ressources pour les retraités</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d5">nous n'avons pas plus d'argent que ceux qui ne travaillent pas dans ce pays. Honteux!</data>
-  <data key="d18">True</data>
-</node>
-<node id="niveau_confiance-a0289a78">
-  <data key="d0">NIVEAU_CONFIANCE</data>
-  <data key="d3">Confiance envers les partis politiques</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d20">très faible</data>
-  <data key="d21">partis politiques</data>
-</node>
-<node id="acteur_institutionnel-7aac76fc">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">Mr Balladur</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d15">Mr Balladur</data>
-  <data key="d22">gouvernement</data>
-</node>
-<node id="thematique-492bff9b">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Pensions de retraite</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d15">Pensions de retraite</data>
-</node>
-<node id="verbatim-00032156">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Calcul des pensions</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-  <data key="d5">Mr Balladur, 1er ministre de l'époque, nous a conduits dans la situation de pensions de retraite trop basses</data>
-  <data key="d18">True</data>
-</node>
-<node id="opinion-38dc6f14">
-  <data key="d0">OPINION</data>
-  <data key="d3">Réduction des inégalités</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d23">pour</data>
-  <data key="d24">réduction des inégalités</data>
-  <data key="d25">0.9</data>
-</node>
-<node id="doleance-6ee98c78">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Malversations des élus</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d16">malversations des élus</data>
-  <data key="d17">forte</data>
-</node>
-<node id="doleance-9e4349c0">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Coût des audits et études</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d16">coût des audits et études</data>
-  <data key="d17">moyenne</data>
-</node>
-<node id="verbatim-9dea2f49">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Honte à nos politiques pour ces meetings de stars à grand renfort de millions d'euros."&lt;</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d5">Honte à nos politiques pour ces meetings de stars à grand renfort de millions d'euros.</data>
-  <data key="d18">True</data>
-</node>
-<node id="thematique-658a15d6">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Corruption</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">Corruption</data>
-</node>
-<node id="acteur_institutionnel-59237099">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">M. Sarkozy</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">M. Sarkozy</data>
-  <data key="d22">gouvernement</data>
-</node>
-<node id="acteur_institutionnel-a0b0a76e">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">M. Fillon</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">M. Fillon</data>
-  <data key="d22">gouvernement</data>
-</node>
-<node id="acteur_institutionnel-af5f514b">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">M. Cahuzac</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">M. Cahuzac</data>
-  <data key="d22">gouvernement</data>
-</node>
-<node id="opinion-e76529c2">
-  <data key="d0">OPINION</data>
-  <data key="d3">Corruption doit être éradiquée</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d23">pour</data>
-  <data key="d24">éradication de la corruption</data>
-  <data key="d25">0.9</data>
-</node>
-<node id="doleance-f839a235">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Honte des meetings politiques</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d16">coût des meetings politiques</data>
-  <data key="d17">forte</data>
-</node>
-<node id="service_public-2a6a53cf">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Syndicats</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">Syndicats</data>
-  <data key="d19">social</data>
-</node>
-<node id="opinion-53cc8e7b">
-  <data key="d0">OPINION</data>
-  <data key="d3">État ne sert à rien avec les audits</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d23">contre</data>
-  <data key="d24">efficacité des audits</data>
-  <data key="d25">0.8</data>
-</node>
-<node id="doleance-9215c977">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Ressenti sur les inégalités sociales</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d16">inégalités sociales ressenties</data>
-  <data key="d17">forte</data>
-</node>
-<node id="thematique-520bd437">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Société de consommation</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">Société de consommation</data>
-</node>
-<node id="acteur_institutionnel-0e64e275">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">Mme Saal</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">Mme Saal</data>
-  <data key="d22">gouvernement</data>
-</node>
-<node id="mesure_ecologique-ed3f3b1b">
-  <data key="d0">MESURE_ECOLOGIQUE</data>
-  <data key="d3">Réduction des coûts administratifs</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">Réduction des coûts administratifs</data>
-  <data key="d19">administration</data>
-</node>
-<node id="thematique-justice">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">JUSTICE</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-  <data key="d15">JUSTICE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C2"}]</data>
-</node>
-<node id="doleance-60912b49">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Manque d'argent dans les caisses de l’État</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d16">Manque d'argent dans les caisses de l’État</data>
-  <data key="d17">forte</data>
-</node>
-<node id="opinion-a7f30a4f">
-  <data key="d0">OPINION</data>
-  <data key="d3">Contre le ponctionnement de la population</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d23">contre</data>
-  <data key="d24">ponctionner la population par des taxes et charges</data>
-  <data key="d25">0.8</data>
-</node>
-<node id="proposition-100ff689">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Audit général des services publics</data>
-  <data key="d11">Effectuer un audit général des services publics pour identifier les doublons et les services inutiles afin d'éliminer les abus et simplifier les règlements.</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d13">Audit général des services publics</data>
-  <data key="d14">democratique</data>
-</node>
-<node id="reforme_fiscale-061b89ea">
-  <data key="d0">REFORME_FISCALE</data>
-  <data key="d3">Diminution des taxes et charges</data>
-  <data key="d11">Diminuer certaines taxes et charges afin d'augmenter le pouvoir d'achat et de rendre les entreprises plus concurrentielles.</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d15">Diminution des taxes et charges</data>
-</node>
-<node id="type_impot-b89c4961">
-  <data key="d0">TYPE_IMPOT</data>
-  <data key="d3">Taxes et charges</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d15">Taxes et charges</data>
-  <data key="d14">direct</data>
-</node>
-<node id="verbatim-9b0b3c5d">
-  <data key="d0">VERBATIM</data>
-  <data key="d3">Redressez la France, c'est votre devoir.</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d5">Redressez la France, c'est votre devoir.</data>
-  <data key="d18">True</data>
-</node>
-<node id="thematique-26e27b6f">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Économie</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d15">Économie</data>
-</node>
-<node id="service_public-131a3037">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Services publics</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-  <data key="d15">Services publics</data>
-  <data key="d19">administratif</data>
-</node>
-<node id="Remettre l'ISF">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Remettre l'ISF</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="ISF">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">ISF</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="GSG pour les retraités">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">GSG pour les retraités</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="GSG">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">GSG</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Diminuer la paye des ministres et secrétaires d'État">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminuer la paye des ministres et secrétaires d'État</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Fiscale">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Fiscale</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Retraite au prorata du temps passé dans la fonction">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Retraite au prorata du temps passé dans la fonction</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Diminuer le nombre de députés et sénateurs">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminuer le nombre de députés et sénateurs</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Democratique">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Democratique</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Social">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Social</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Conditions des SDF français">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Conditions des SDF français</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Vente des usines aux étrangers">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Vente des usines aux étrangers</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Il faudrait d'abord s'occuper des SDF français qui ont cotisé avant de tomber dans la misère.">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Il faudrait d'abord s'occuper des SDF français qui ont cotisé avant de tomber dans la misère.</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Diminuer la GSG pour les retraités">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminuer la GSG pour les retraités</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Accueillir des émigrants">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Accueillir des émigrants</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Immigration">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Immigration</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Conditions des buralistes">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Conditions des buralistes</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Services pour les SDF">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Services pour les SDF</data>
-  <data key="d12">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</node>
-<node id="Réduction des charges sociales des entreprises de moins de 10 salariés">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Réduction des charges sociales des entreprises de moins de 10 salariés</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Charges des entreprises">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Charges des entreprises</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Réduction des dépenses au sommet de l'État">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Réduction des dépenses au sommet de l'État</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Dépenses gouvernementales">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Dépenses gouvernementales</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Retour de l'ISF">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Retour de l'ISF</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Augmentation de la TVA">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Augmentation de la TVA</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="TVA">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">TVA</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Renforcement des contrôles de la sécurité sociale">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Renforcement des contrôles de la sécurité sociale</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Service Public Sécurité Sociale">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Service Public Sécurité Sociale</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Mise en place du RIC">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Mise en place du RIC</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Mode de scrutin&quot;&gt;">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Mode de scrutin"&gt;</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Reprendre le contrôle des autoroutes">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Reprendre le contrôle des autoroutes</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Service Public Autoroutes">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Service Public Autoroutes</data>
-  <data key="d12">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</node>
-<node id="Assemblée nationale à la proportionnelle">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Assemblée nationale à la proportionnelle</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Reconnaissance du vote blanc">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Reconnaissance du vote blanc</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Consultation des citoyens sur aménagements">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Consultation des citoyens sur aménagements</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Décision des élus locaux sur routes">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Décision des élus locaux sur routes</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Diminution du nombre d'élus">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminution du nombre d'élus</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Limitation des flux migratoires">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Limitation des flux migratoires</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Ne pas remettre L'ISF">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Ne pas remettre L'ISF</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Services publics en zone rurale">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Services publics en zone rurale</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="DOLEANCE">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">DOLEANCE</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Remettre en service les lignes de chemin de fer">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Remettre en service les lignes de chemin de fer</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="SERVICE_PUBLIC">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">SERVICE_PUBLIC</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Limiter les flux migratoires">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Limiter les flux migratoires</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Loi droit du sol">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Loi droit du sol</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Politique">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Politique</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Arrêter la progression des taxes sur les énergies">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Arrêter la progression des taxes sur les énergies</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Écologie">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Écologie</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Interdiction de commercialiser des graines non répertoriées">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Interdiction de commercialiser des graines non répertoriées</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Chasse des oiseaux à la glu">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Chasse des oiseaux à la glu</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Transport">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Transport</data>
-  <data key="d12">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</node>
-<node id="Salaires politiques">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Salaires politiques</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Injustice de la TVA">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Injustice de la TVA</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="TVA sociale">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">TVA sociale</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Retraités">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Retraités</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Respect pour le peuple">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Respect pour le peuple</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Confiance envers les politiques">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Confiance envers les politiques</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Gouvernement">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Gouvernement</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Confiance envers Emmanuel Macron">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Confiance envers Emmanuel Macron</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Redonner du pouvoir d'achat">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Redonner du pouvoir d'achat</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Ressources pour les retraités">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Ressources pour les retraités</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Confiance envers les partis politiques">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Confiance envers les partis politiques</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Mr Balladur">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Mr Balladur</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Pensions de retraite">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Pensions de retraite</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Calcul des pensions">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Calcul des pensions</data>
-  <data key="d12">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</node>
-<node id="Réduction des inégalités">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Réduction des inégalités</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Malversations des élus">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Malversations des élus</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Coût des audits et études">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Coût des audits et études</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="État">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">État</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Corruption">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Corruption</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Corruption doit être éradiquée">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Corruption doit être éradiquée</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Honte des meetings politiques">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Honte des meetings politiques</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Syndicats">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Syndicats</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="État ne sert à rien avec les audits">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">État ne sert à rien avec les audits</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Ressenti sur les inégalités sociales">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Ressenti sur les inégalités sociales</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Société de consommation">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Société de consommation</data>
-  <data key="d12">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</node>
-<node id="Manque d'argent dans les caisses de l’État">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Manque d'argent dans les caisses de l’État</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Audit général des services publics">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Audit général des services publics</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Diminution des taxes et charges">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminution des taxes et charges</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Taxes et charges">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Taxes et charges</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Contre le ponctionnement de la population">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Contre le ponctionnement de la population</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Diminution des dépenses publiques">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminution des dépenses publiques</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Services publics">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Services publics</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Économie">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Économie</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="Redressez la France, c'est votre devoir.">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Redressez la France, c'est votre devoir.</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<node id="&lt;&gt;VERBATIM">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">&lt;&gt;VERBATIM</data>
-  <data key="d12">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</node>
-<edge source="citoyen-Unknown-None" target="contribution-Unknown-None">
-  <data key="d26">SOUMET</data>
-  <data key="d27">1.0</data>
-  <data key="d28">contribution-Unknown-None</data>
-</edge>
-<edge source="contribution-Unknown-None" target="thematique-fiscalite">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="contribution-Unknown-None" target="thematique-immigration">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="contribution-Unknown-None" target="thematique-politique">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="contribution-Unknown-None" target="thematique-social">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="citoyen-Unknown-2" target="contribution-Unknown-2">
-  <data key="d26">SOUMET</data>
-  <data key="d27">1.0</data>
-  <data key="d28">contribution-Unknown-2</data>
-</edge>
-<edge source="contribution-Unknown-2" target="thematique-fiscalite">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="contribution-Unknown-2" target="thematique-securite">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="contribution-Unknown-2" target="thematique-democratie">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="contribution-Unknown-2" target="thematique-social">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="citoyen-Unknown-3" target="contribution-Unknown-3">
-  <data key="d26">SOUMET</data>
-  <data key="d27">1.0</data>
-  <data key="d28">contribution-Unknown-3</data>
-</edge>
-<edge source="contribution-Unknown-3" target="thematique-ecologie">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="contribution-Unknown-3" target="thematique-social">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="contribution-Unknown-3" target="thematique-fiscalite">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="contribution-Unknown-3" target="thematique-democratie">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="contribution-Unknown-3" target="thematique-politique">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="citoyen-Unknown-4" target="contribution-Unknown-4">
-  <data key="d26">SOUMET</data>
-  <data key="d27">1.0</data>
-  <data key="d28">contribution-Unknown-4</data>
-</edge>
-<edge source="contribution-Unknown-4" target="thematique-fiscalite">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="contribution-Unknown-4" target="thematique-immigration">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="contribution-Unknown-4" target="thematique-social">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="citoyen-Unknown-5" target="contribution-Unknown-5">
-  <data key="d26">SOUMET</data>
-  <data key="d27">1.0</data>
-  <data key="d28">contribution-Unknown-5</data>
-</edge>
-<edge source="contribution-Unknown-5" target="thematique-justice">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="contribution-Unknown-5" target="thematique-politique">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="citoyen-Unknown-6" target="contribution-Unknown-6">
-  <data key="d26">SOUMET</data>
-  <data key="d27">1.0</data>
-  <data key="d28">contribution-Unknown-6</data>
-</edge>
-<edge source="contribution-Unknown-6" target="thematique-fiscalite">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="contribution-Unknown-6" target="thematique-immigration">
-  <data key="d26">ABORDE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Remettre l'ISF" target="ISF">
-  <data key="d26">PORTE_SUR_IMPOT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Remettre l'ISF" target="Fiscale">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="ISF" target="Retour de l'ISF">
-  <data key="d26">PORTE_SUR_IMPOT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="ISF" target="Ne pas remettre L'ISF">
-  <data key="d26">PORTE_SUR_IMPOT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="GSG pour les retraités" target="GSG">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="GSG pour les retraités" target="Social">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="GSG" target="Diminuer la GSG pour les retraités">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">1.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Diminuer la paye des ministres et secrétaires d'État" target="Fiscale">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Fiscale" target="Retraite au prorata du temps passé dans la fonction">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Diminuer le nombre de députés et sénateurs" target="Democratique">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Social" target="Conditions des SDF français">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Social" target="Vente des usines aux étrangers">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Social" target="Conditions des buralistes">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Social" target="Services publics en zone rurale">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Conditions des SDF français" target="Il faudrait d'abord s'occuper des SDF français qui ont cotisé avant de tomber dans la misère.">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Conditions des SDF français" target="Services pour les SDF">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Accueillir des émigrants" target="Immigration">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-0e7002fed880b75d301c918cbb8ea190</data>
-</edge>
-<edge source="Immigration" target="Retraités">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.85</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Réduction des charges sociales des entreprises de moins de 10 salariés" target="Charges des entreprises">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="Réduction des dépenses au sommet de l'État" target="Dépenses gouvernementales">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="Retour de l'ISF" target="Retour de l'ISF">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="Augmentation de la TVA" target="TVA">
-  <data key="d26">PORTE_SUR_IMPOT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="TVA" target="Injustice de la TVA">
-  <data key="d26">PORTE_SUR_IMPOT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="TVA" target="TVA sociale">
-  <data key="d26">PORTE_SUR_IMPOT</data>
-  <data key="d27">0.95</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Renforcement des contrôles de la sécurité sociale" target="Service Public Sécurité Sociale">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="Mise en place du RIC" target="Mode de scrutin&quot;&gt;">
-  <data key="d26">PROPOSE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="Reprendre le contrôle des autoroutes" target="Service Public Autoroutes">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-8c5ed005046e376fa5861341b1cca359</data>
-</edge>
-<edge source="Assemblée nationale à la proportionnelle" target="Reconnaissance du vote blanc">
-  <data key="d26">FORMULE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Assemblée nationale à la proportionnelle" target="Politique">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Reconnaissance du vote blanc" target="Politique">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Consultation des citoyens sur aménagements" target="Décision des élus locaux sur routes">
-  <data key="d26">FORMULE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Diminution du nombre d'élus" target="Limitation des flux migratoires">
-  <data key="d26">FORMULE</data>
-  <data key="d27">1.1</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Diminution du nombre d'élus" target="Politique">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Services publics en zone rurale" target="DOLEANCE">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Remettre en service les lignes de chemin de fer" target="SERVICE_PUBLIC">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Remettre en service les lignes de chemin de fer" target="Transport">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Limiter les flux migratoires" target="Loi droit du sol">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.6</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Arrêter la progression des taxes sur les énergies" target="Écologie">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Écologie" target="Interdiction de commercialiser des graines non répertoriées">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Écologie" target="Chasse des oiseaux à la glu">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
-</edge>
-<edge source="Salaires politiques" target="Injustice de la TVA">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Salaires politiques" target="Retraités">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.85</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Salaires politiques" target="Respect pour le peuple">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Salaires politiques" target="Confiance envers les politiques">
-  <data key="d26">TRADUIT</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Salaires politiques" target="Gouvernement">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Injustice de la TVA" target="TVA sociale">
-  <data key="d26">FORMULE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Injustice de la TVA" target="Respect pour le peuple">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Injustice de la TVA" target="Confiance envers Emmanuel Macron">
-  <data key="d26">TRADUIT</data>
-  <data key="d27">0.6</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Retraités" target="Redonner du pouvoir d'achat">
-  <data key="d26">FORMULE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Retraités" target="Mr Balladur">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Retraités" target="Pensions de retraite">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Redonner du pouvoir d'achat" target="Ressources pour les retraités">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Redonner du pouvoir d'achat" target="Confiance envers les partis politiques">
-  <data key="d26">TRADUIT</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Pensions de retraite" target="Calcul des pensions">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
-</edge>
-<edge source="Réduction des inégalités" target="Malversations des élus">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="Réduction des inégalités" target="Coût des audits et études">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="Malversations des élus" target="État">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="Malversations des élus" target="Corruption">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="Malversations des élus" target="Corruption doit être éradiquée">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="Coût des audits et études" target="État ne sert à rien avec les audits">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.85</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="État" target="État">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.5</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="État" target="Honte des meetings politiques">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="État" target="Ressenti sur les inégalités sociales">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="État" target="Contre le ponctionnement de la population">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Corruption" target="Société de consommation">
-  <data key="d26">CONTIENT</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="Honte des meetings politiques" target="Syndicats">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-11652fa695f7bc1307a3100db557ffe2</data>
-</edge>
-<edge source="Manque d'argent dans les caisses de l’État" target="Audit général des services publics">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Manque d'argent dans les caisses de l’État" target="Contre le ponctionnement de la population">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Manque d'argent dans les caisses de l’État" target="Diminution des taxes et charges">
-  <data key="d26">FAIT_REMONTER</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Manque d'argent dans les caisses de l’État" target="Économie">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Audit général des services publics" target="Diminution des taxes et charges">
-  <data key="d26">FORMULE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Audit général des services publics" target="Services publics">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Diminution des taxes et charges" target="Taxes et charges">
-  <data key="d26">PORTE_SUR_IMPOT</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Diminution des taxes et charges" target="Diminution des dépenses publiques">
-  <data key="d26">FORMULE</data>
-  <data key="d27">0.7</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Diminution des taxes et charges" target="Contre le ponctionnement de la population">
-  <data key="d26">EXPRIME</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Diminution des taxes et charges" target="Économie">
-  <data key="d26">CONCERNE</data>
-  <data key="d27">0.8</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
-</edge>
-<edge source="Redressez la France, c'est votre devoir." target="&lt;&gt;VERBATIM">
-  <data key="d26">)</data>
-  <data key="d27">0.9</data>
-  <data key="d28">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+<graph edgedefault="undirected"><node id="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"The President of the Republic is the primary institutional actor being addressed in the citizens' grievances and proposals."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"MR LE PRÉSIDENT DE LA RÉPUBLIQUE"</data>
+</node>
+<node id="&quot;DIMINUTION DES SALAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal to reduce salaries of the president and ministers suggests a significant policy change to manage public funds better."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"DIMINUTION DES SALAIRES"</data>
+</node>
+<node id="&quot;RETRAITE À 62 ANS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal regarding retirement at the legal age of 62 indicates a request for equitable treatment regarding retirement benefits for politicians."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"RETRAITE À 62 ANS"</data>
+</node>
+<node id="&quot;DIMINUTION DU NOMBRE DE DÉPUTÉS ET SÉNATEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal aims to reduce the number of French deputies and senators as a means to control public expenditure."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"DIMINUTION DU NOMBRE DE DÉPUTÉS ET SÉNATEURS"</data>
+</node>
+<node id="&quot;REMISE DE L'ISF&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The call to reinstate the ISF (Impôt de Solidarité sur la Fortune) reflects concerns about wealth distribution and the effectiveness of current tax policies."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"REMISE DE L'ISF"</data>
+</node>
+<node id="&quot;GSG POUR LES RETRAITÉS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"The grievance regarding the GSG (Garantie de Soutien Globale) for retirees raises issues related to social security and taxation fairness."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"GSG POUR LES RETRAITÉS"</data>
+</node>
+<node id="&quot;TAXE D'HABITATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The theme of housing tax relates to citizens' concerns about regional taxation and its effect on living standards."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"TAXE D'HABITATION"</data>
+</node>
+<node id="&quot;SDF FRANÇAIS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The theme referring to homeless French citizens highlights social justice issues and the prioritization of support for locals over immigrants."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"SDF FRANÇAIS"</data>
+</node>
+<node id="&quot;USINES VENTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal to stop selling factories to foreigners indicates concerns over national economic sovereignty and job retention."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"USINES VENTES"</data>
+</node>
+<node id="&quot;MR [NOM]&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Mr [Nom] is an anonymous citizen contributing to the consultation, providing multiple grievances and proposals."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"MR [NOM]"</data>
+</node>
+<node id="&quot;DIMINUTION DE LA GSG&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal to decrease or eliminate the GSG (Garantie de Soutien Global) for retirees reflects concerns about fairness in taxation and benefits."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"DIMINUTION DE LA GSG"</data>
+</node>
+<node id="&quot;BURALISTES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Buralistes (tobacconists) are mentioned regarding taxation, reflecting their role in local economies and the impact of tax policy on their business."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"BURALISTES"</data>
+</node>
+<node id="&quot;PETITES STATIONS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Petites stations (small service stations) are referenced in the context of taxation and their economic viability under proposed tax changes."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"PETITES STATIONS"</data>
+</node>
+<node id="&quot;EMIGRANTS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The theme concerning emigrants addresses issues of immigration and resource allocation in social support systems."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"EMIGRANTS"</data>
+</node>
+<node id="&quot;SOCIÉTÉ FRANÇAISE&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"The French society is referred to in the context of its history and contributions during significant events like the world wars."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"SOCIÉTÉ FRANÇAISE"</data>
+</node>
+<node id="&quot;PARADIS FISCAUX&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The mention of tax havens highlights issues related to tax evasion and economic inequality."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"PARADIS FISCAUX"</data>
+</node>
+<node id="&quot;ACCORDS DE VENTE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal regarding conditions around the sale of factories emphasizes concerns about foreign ownership and economic strategy."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"ACCORDS DE VENTE"</data>
+</node>
+<node id="&quot;M. LE MAIRE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Mr. Le Maire is mentioned in relation to local governance and differing opinions on taxation impacts."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"M. LE MAIRE"</data>
+</node>
+<node id="&quot;TOURISME&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The theme of tourism is linked to economic stability and the effects of public policy on local businesses."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"TOURISME"</data>
+</node>
+<node id="&quot;RÉDUCTION DES IMPÔTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The mention of reducing taxes serves to highlight proposals aimed at improving economic conditions for citizens."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"RÉDUCTION DES IMPÔTS"</data>
+</node>
+<node id="&quot;DIMINUTION DE L'IMPOSITION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal for decreasing taxation speaks to broader economic reforms desired by the citizens."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"DIMINUTION DE L'IMPOSITION"</data>
+</node>
+<node id="&quot;CAPITAUX&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Capitaux (capital) refers to financial assets of individuals and companies, particularly in the context of taxation and economic responsibilities."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"CAPITAUX"</data>
+</node>
+<node id="&quot;RETRAITÉS&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Retraités (retirees) are referenced in the context of social welfare and the implications of financial policy changes."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"RETRAITÉS"</data>
+</node>
+<node id="&quot;INSTITUTIONS FINANCIÈRES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Financial institutions are implied in the discussion about capital in tax evasion and economic strategies."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"INSTITUTIONS FINANCIÈRES"</data>
+</node>
+<node id="&quot;IMPACT ÉCONOMIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Economic impact is a recurring theme, reflecting concerns over the consequences of policy proposals on the French economy."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"IMPACT ÉCONOMIQUE"</data>
+</node>
+<node id="&quot;PROPOSITIONS DE RÉFORME&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposed reforms reflect citizens' demands for changes in governance and fiscal policy that align with their needs."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"PROPOSITIONS DE RÉFORME"</data>
+</node>
+<node id="&quot;LUTTE CONTRE LA PAUVRETÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal to address poverty issues highlights broader social justice and equity concerns within the local community."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"LUTTE CONTRE LA PAUVRETÉ"</data>
+</node>
+<node id="&quot;ÉCONOMIE LOCALE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The theme of local economy is connected to citizens' suggestions on tax and welfare policies affecting their livelihoods."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"ÉCONOMIE LOCALE"</data>
+</node>
+<node id="&quot;ÉQUITÉ SOCIALE&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Social equity signifies the demand for fair treatment and equality in social policies affecting French citizens."</data>
+  <data key="d2">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d3">"ÉQUITÉ SOCIALE"</data>
+</node>
+<node id="&quot;MR LE PRÉSIDENT&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Mr le Président is addressed by the author of the contribution, indicating that he is an institutional actor relevant in the context of the citizen's grievances."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"MR LE PRÉSIDENT"</data>
+</node>
+<node id="&quot;DOLÉANCES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Doléances refers to the grievances expressed by the citizen regarding various socio-economic issues."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"DOLÉANCES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;CHARGES SOCIALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Charges sociales refers to social charges on small enterprises, where the proposal is to reduce these for companies with fewer than 10 employees."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"CHARGES SOCIALES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C3"}]</data>
+</node>
+<node id="&quot;DÉPENSES PUBLIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Dépenses publiques refers to state expenditures which the citizen suggests should be reduced due to perceived wastage."&lt;SEP&gt;"Dépenses publiques refers to the public spending that the citizen criticizes, suggesting inefficiencies and waste."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359&lt;SEP&gt;contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"DÉPENSES PUBLIQUES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;ISF&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"Impôt de Solidarité sur la Fortune (ISF) is a tax that citizens want to reinstate as part of a fiscal reform."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"ISF"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;TVA&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"TVA (Taxe sur la Valeur Ajoutée) is described as an unfair tax that burdens both the wealthy and the low-income citizens equally."&lt;SEP&gt;"TVA (Taxe sur la Valeur Ajoutée) is regarded by the citizen as a fair tax, with a proposal to increase it to alleviate high employer charges."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359&lt;SEP&gt;contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"TVA"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;CONTRÔLES SÉCURITÉ SOCIALE ET CAF&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Contrôles Sécurité Sociale et CAF refers to strengthening controls for social security and family allowances to support employment return."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"CONTRÔLES SÉCURITÉ SOCIALE ET CAF"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C4"}]</data>
+</node>
+<node id="&quot;RIC&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"RIC (Référendum d'Initiative Citoyenne) is proposed as a mechanism for citizens to participate in important decision-making."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"RIC"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C2"}]</data>
+</node>
+<node id="&quot;AUTOROUTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Autoroutes refers to the highways financed by the French population, with a suggestion to regain control over them due to their profitability."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"AUTOROUTES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C1"}]</data>
+</node>
+<node id="&quot;FEMME&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Femme refers to the citizen who is expressing her grievances and proposals to Mr le Président."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"FEMME"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;GASPILLAGE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Gaspillage refers to the theme of wastefulness that the citizen identifies in government spending."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"GASPILLAGE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;RETOUR AU TRAVAIL&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Retour au travail refers to the theme concerning policies for increasing employment opportunities."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"RETOUR AU TRAVAIL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C4"}]</data>
+</node>
+<node id="&quot;DÉCISIONS IMPORTANTES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Décisions importantes refers to the theme surrounding significant decisions impacting citizens, related to the proposal for RIC."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"DÉCISIONS IMPORTANTES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C2"}]</data>
+</node>
+<node id="&quot;ENTREPRISES DE MOINS DE 10 SALARIÉS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Entreprises de moins de 10 salariés refers to small businesses that the proposal for reducing social charges specifically targets."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"ENTREPRISES DE MOINS DE 10 SALARIÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C3"}]</data>
+</node>
+<node id="&quot;CONTRÔLE DES AUTOROUTES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Contrôle des autoroutes refers to the theme regarding the management and ownership of highways, proposed for regaining public control."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"CONTRÔLE DES AUTOROUTES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C1"}]</data>
+</node>
+<node id="&quot;CONTRIBUTIONS CITOYENNES&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Contributions citoyennes refers to the broader category of citizen inputs and suggestions in the context of the Grand Débat National."</data>
+  <data key="d2">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d3">"CONTRIBUTIONS CITOYENNES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;MADAME&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Madame is a citizen who expresses concerns and opinions regarding various political and ecological issues in her contribution."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"MADAME"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="&quot;ASSEMBLÉE NATIONALE À LA PROPORTIONNELLE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"L'Assemblée nationale à la proportionnelle is suggested as a reform to ensure representation of all trends in the national assembly."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"ASSEMBLÉE NATIONALE À LA PROPORTIONNELLE"</data>
+</node>
+<node id="&quot;VOTE BLANC&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"The recognition of the vote blanc refers to the opinion that blank votes should be acknowledged in the electoral process."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"VOTE BLANC"</data>
+</node>
+<node id="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahiers de Doléances sont des documents où les citoyens expriment leurs grievances et propositions, comme celui de C. [Nom]."&lt;SEP&gt;"Cahiers de doléances are contributions from citizens reflecting their grievances and proposals regarding public policies."&lt;SEP&gt;"Cahiers de doléances serve as a means for citizens to express their grievances and concerns, facilitating public consultation in France."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50&lt;SEP&gt;contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"CAHIERS DE DOLÉANCES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="&quot;CAHIER DE TAILLEBOURG&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Taillebourg is the document collecting citizens' grievances and proposals related to the local issues in Taillebourg."&lt;SEP&gt;"Cahier de Taillebourg refers to a specific record of citizen contributions from Taillebourg regarding local governance and services."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50&lt;SEP&gt;contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"CAHIER DE TAILLEBOURG"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="&quot;TRAVAUX PROPOSITIONS&quot;">
+  <data key="d0">"QUESTION"</data>
+  <data key="d1">"Travaux Propositions are proposals related to community works and arrangements based on citizen consultations."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"TRAVAUX PROPOSITIONS"</data>
+</node>
+<node id="&quot;SCOOTERS SUR LA CHARENTE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"The issue of scooters on the Charente is a grievance raised concerning ecological concerns and urban planning."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"SCOOTERS SUR LA CHARENTE"</data>
+</node>
+<node id="&quot;RÉFÉRENDUM DES GRANDS SUJETS&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Référendum des grands sujets refers to the proposal for a citizens' referendum on key societal changes."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"RÉFÉRENDUM DES GRANDS SUJETS"</data>
+</node>
+<node id="&quot;MARIAGE POUR TOUS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Mariage pour tous represents a significant social issue concerning the legality of marriage for all individuals."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"MARIAGE POUR TOUS"</data>
+</node>
+<node id="&quot;GROSSE POUR AUTRUI (GPA)&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Grosse pour Autrui (GPA) refers to the theme surrounding surrogacy and its societal implications."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"GROSSE POUR AUTRUI (GPA)"</data>
+</node>
+<node id="&quot;DIMINUTION DU NOMBRE D'ÉLUS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Diminution du nombre d'élus is a proposal aimed at reducing the number of representatives in various legislative bodies."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"DIMINUTION DU NOMBRE D'ÉLUS"</data>
+</node>
+<node id="&quot;CONSEIL D'ÉTAT&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Le Conseil d'État is an institutional actor involved in the scrutiny and approval of laws and regulations in France."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"CONSEIL D'ÉTAT"</data>
+</node>
+<node id="&quot;CONSEIL CONSTITUTIONNEL&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Le Conseil constitutionnel is an institutional body ensuring that laws conform to the constitution."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"CONSEIL CONSTITUTIONNEL"</data>
+</node>
+<node id="&quot;PRIVILÈGES DES ANCIENS PRÉSIDENTS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Privilèges des anciens présidents signifies the grievance regarding the preferential treatment given to former presidents."&lt;SEP&gt;"The issue of privileges for former presidents highlights grievances regarding unjust benefits for political leaders."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"PRIVILÈGES DES ANCIENS PRÉSIDENTS"</data>
+</node>
+<node id="&quot;COMMISSION INDÉPENDANTE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"A commission indépendante is proposed to oversee the maintenance and purchases of the presidency, ensuring accountability."&lt;SEP&gt;"The creation of a commission indépendante is proposed to ensure oversight and transparency regarding governmental functions."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"COMMISSION INDÉPENDANTE"</data>
+</node>
+<node id="&quot;L'ISF&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"L'ISF refers to the proposal regarding the wealth tax, suggesting it should not be reinstated if wealth is invested in the economy."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"L'ISF"</data>
+</node>
+<node id="&quot;ÉLUS LOCAUX&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Élus locaux refer to local elected officials who are suggested to have the authority to manage safety on roads."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"ÉLUS LOCAUX"</data>
+</node>
+<node id="&quot;SERVICES PUBLICS EN ZONE RURALE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"The issue of services publics en zone rurale relates to the grievance about the closure of public services in rural areas."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"SERVICES PUBLICS EN ZONE RURALE"</data>
+</node>
+<node id="&quot;LIGNES DE CHEMIN DE FER&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Lignes de chemin de fer refers to the proposal to restore train services in smaller communities."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"LIGNES DE CHEMIN DE FER"</data>
+</node>
+<node id="&quot;TAXES SUR LES ÉNERGIES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Taxes sur les énergies denotes grievances regarding the increasing tax burdens associated with energy use."&lt;SEP&gt;"Taxes sur les énergies refer to grievances concerning the high taxation on energy consumption, impacting citizens' finances."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"TAXES SUR LES ÉNERGIES"</data>
+</node>
+<node id="&quot;TRANSACTIONS FINANCIÈRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Taxer toutes les transactions financières suggests a proposal to impose taxes on financial transactions."&lt;SEP&gt;"The proposal to tax transactions financières indicates an approach to regulating the financial sector for revenue generation."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"TRANSACTIONS FINANCIÈRES"</data>
+</node>
+<node id="&quot;FLUX MIGRATOIRES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Flux migratoires highlights concerns about immigration and the return of individuals with criminal backgrounds to their countries."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"FLUX MIGRATOIRES"</data>
+</node>
+<node id="&quot;LOI « DROIT DU SOL »&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"The loi « droit du sol » refers to a grievance against the law that grants citizenship based on birthplace."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"LOI « DROIT DU SOL »"</data>
+</node>
+<node id="&quot;DEVENIR FRANÇAIS À PART ENTIÈRE&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"The statement about becoming French emphasizes an opinion that citizenship should entail specific responsibilities."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"DEVENIR FRANÇAIS À PART ENTIÈRE"</data>
+</node>
+<node id="&quot;AMÉNAGEMENTS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Aménagements refers to the theme concerning urban planning and public infrastructure development that citizens want to discuss."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"AMÉNAGEMENTS"</data>
+</node>
+<node id="&quot;TAILLEBOURG&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Taillebourg is a specific locale where the citizens express their concerns and proposals regarding local governance and services."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"TAILLEBOURG"</data>
+</node>
+<node id="&quot;SUPPRESSION DES SCOOTERS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The suppression des scooters is a proposal aimed at eliminating scooter use in Taillebourg due to ecological concerns."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"SUPPRESSION DES SCOOTERS"</data>
+</node>
+<node id="&quot;MESURES ANTI-ÉCOLOGISTES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Mesures anti-écologistes refer to grievances about specific government actions perceived as harmful to environmental welfare."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"MESURES ANTI-ÉCOLOGISTES"</data>
+</node>
+<node id="&quot;CHASSE DES OISEAUX À LA GLU&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Chasse des oiseaux à la glu is a grievance against a hunting practice considered detrimental to wildlife."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"CHASSE DES OISEAUX À LA GLU"</data>
+</node>
+<node id="&quot;COMMERCIALISATION DES GRAINES NON RÉPERTORIÉES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Commercialisation des graines non répertoriées relates to grievances against the regulation favoring monopolies in the seed industry."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"COMMERCIALISATION DES GRAINES NON RÉPERTORIÉES"</data>
+</node>
+<node id="&quot;PESTICIDES SUR CULTURES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Pesticides sur cultures reflects citizen concerns regarding the continued use of pesticides in agriculture and its effects on health and environment."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"PESTICIDES SUR CULTURES"</data>
+</node>
+<node id="&quot;ROUTES ACCIDENTOGÈNES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Routes accidentogènes refer to the theme concerning hazardous roads and the need for localized traffic regulation."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"ROUTES ACCIDENTOGÈNES"</data>
+</node>
+<node id="&quot;VITESSE À 80 KMS/H&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposition to regulate speed to 80 kms/h on certain dangerous roads reflects public safety concerns."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"VITESSE À 80 KMS/H"</data>
+</node>
+<node id="&quot;FERMETURE DES SERVICES PUBLICS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Fermeture des services publics emphasizes grievances about the reduction of public services particularly in rural locations."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"FERMETURE DES SERVICES PUBLICS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="&quot;LIGNES DE CHEMIN DE FER DANS LES PETITES COMMUNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Restoring rail services in small communities is proposed to enhance connectivity and access to public transport."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"LIGNES DE CHEMIN DE FER DANS LES PETITES COMMUNES"</data>
+</node>
+<node id="&quot;DÉLINQUANTS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Concerns related to délinquants involve grievances about criminal behavior and societal responsibility in handling convicted individuals."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"DÉLINQUANTS"</data>
+</node>
+<node id="&quot;FICHAGE S&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Fichage S refers to a classification of individuals deemed a threat, and the grievances relate to how such individuals should be treated."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"FICHAGE S"</data>
+</node>
+<node id="&quot;DROIT DU SOL&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Droit du sol is a grievance against the law that grants citizenship based on location of birth, viewed as controversial by some."</data>
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d3">"DROIT DU SOL"</data>
+</node>
+<node id="&quot;MR [NOM, PRÉNOM]&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Mr [Nom, Prénom] is a citizen from Taillebourg (17350) expressing grievances and opinions regarding low salaries, taxes, and government actions affecting the financial welfare of the population."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"MR [NOM, PRÉNOM]"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;TVA SOCIALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"TVA sociale is proposed as a more equitable tax system where higher earners pay a greater VAT compared to lower earners, aimed at reducing overall TVA rates for the less affluent."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"TVA SOCIALE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;DETTES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Dettes refers to the national debt burdening each French citizen, which Mr [Nom] mentions in the context of social justice and immigration disparities."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"DETTES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;IMMIGRATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Immigration is brought up in relation to financial assistance and governmental support, which Mr [Nom] feels is unjust compared to the burden shouldered by native citizens."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"IMMIGRATION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;POLITIQUE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Politique encompasses the political context and decisions that C. [Nom] critiques, focusing on the actions of elected officials."&lt;SEP&gt;"Politique, or politicians in general, are seen as out of touch with the financial realities facing low-income citizens, according to Mr [Nom]’s grievances."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"POLITIQUE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;MR BALLADUR&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Mr Balladur, the former Prime Minister, is criticized for actions related to pension calculations that have resulted in low retirement benefits for workers."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"MR BALLADUR"</data>
+</node>
+<node id="&quot;EMMANUEL MACRON&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Emmanuel Macron, the current President, is referenced for his comments on welfare abuse, reflecting a complex stance on the financial issues faced by citizens."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"EMMANUEL MACRON"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;PENSIONS DE RETRAITE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Pensions de retraite are referred to as too low for workers who have contributed throughout their lives, leading to grievances from citizens like Mr [Nom]."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"PENSIONS DE RETRAITE"</data>
+</node>
+<node id="&quot;SALAIRES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Salaires refers to low wages in France that are a central theme in Mr [Nom]'s grievances, highlighting the difficulty for citizens to live on such amounts."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"SALAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;POUVOIR D'ACHAT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Pouvoir d'achat refers to the purchasing power of citizens, which the text suggests is being diminished by taxes and charges."&lt;SEP&gt;"Pouvoir d'achat signifies the purchasing power of citizens, with Mr [Nom] arguing that it needs to be restored for low-income individuals to thrive."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"POUVOIR D'ACHAT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;CONSOMMATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Consommation is referred to as being closely linked to the economic health of the state, suggesting that improving citizens' purchasing power will increase consumption and benefit the economy."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"CONSOMMATION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;PETITS RETRAITÉS&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Petits retraités refers to low-income retirees who worked extensive hours and are now facing financial difficulties, as expressed in Mr [Nom]'s contribution."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"PETITS RETRAITÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;PYRÉNÉES&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Pyrénées refers to a geographic location that Mr [Nom] mentions in relation to the inability of low-income citizens to afford vacations or travel."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"PYRÉNÉES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;ÉTAT&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"L'État represents the public authority, which citizens believe has funding issues and needs reform."&lt;SEP&gt;"État represents the governmental body responsible for managing the economic policies that affect the lives of citizens, such as taxes and pensions."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"ÉTAT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;ALLOCATIONS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Allocations refer to social welfare benefits that Mr [Nom] believes are exploited by some, while honest workers and retirees receive little support."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"ALLOCATIONS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;CHARENTE-MARITIME&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Charente-Maritime is the geographical location associated with the citizen contribution, indicating the region of France from which the grievances originate."&lt;SEP&gt;"Charente-Maritime is the region where Taillebourg is located, and where the citizen's contributions are collected for consultation."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66&lt;SEP&gt;contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"CHARENTE-MARITIME"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="&quot;DIVISION SOCIALE&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"Division sociale refers to the social disparities highlighted in Mr [Nom]'s text, dealing with wealth inequality and social justice issues."</data>
+  <data key="d2">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d3">"DIVISION SOCIALE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;C. [NOM]&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"C. [Nom] is a citizen expressing grievances regarding political corruption and inequality in French society."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"C. [NOM]"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;GOUVERNEMENTS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Les gouvernements sont les institutions en place dont C. [Nom] critique le manque d'initiative pour réduire les inégalités."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"GOUVERNEMENTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;M. SARKOZY&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"M. Sarkozy est mentionné comme un ancien président mis en examen, représentant des élus critiqués pour des malversations."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"M. SARKOZY"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;M. FILLON&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"M. Fillon est un ancien parlementaire accusé de détournements de fonds publics, servant d'exemple de mauvaise gestion par les élus."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"M. FILLON"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;M. CAHUZAC&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"M. Cahuzac est un ancien ministre accusé de fraude fiscale, symbolisant les abus au sein du gouvernement."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"M. CAHUZAC"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;MME SAAL&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Mme Saal est une personnalité politique critiquée pour ses dépenses excessives, représentant l'inadéquation des ressources publiques."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"MME SAAL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;LA TRÉZENCE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"La Trézence est un projet local critiqué pour son coût élevé et son absence de réalisation malgré les dépenses engagées."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"LA TRÉZENCE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;CORRUPTION&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"La corruption est un problème majeur évoqué par C. [Nom], nécessitant une éradication dans la société française."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"CORRUPTION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;LIBERTÉ-ÉGALITÉ-FRATERNITÉ&quot;">
+  <data key="d0">"CONSENSUS"</data>
+  <data key="d1">"Liberté-Égalité-Fraternité est un principe fondamental de la République française, mis en opposition à la situation actuelle évoquée par C. [Nom]."&lt;SEP&gt;"Liberté-Égalité-Fraternité is the national motto that the citizen invokes to call for national pride and action."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42&lt;SEP&gt;contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"LIBERTÉ-ÉGALITÉ-FRATERNITÉ"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;AUDITS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Audits are assessments requested by the state, which C. [Nom] argues are costly and unproductive, illustrating inefficient public expenditure."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"AUDITS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;RAPPORTS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Rapports are reports generated for government assessments that C. [Nom] criticizes for being expensive and without tangible outcomes."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"RAPPORTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;ÉTUDES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Études are studies commissioned by the state that C. [Nom] believes result in wasted resources, as many projects do not materialize."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"ÉTUDES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;SYNDICATS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Syndicats are labor unions mentioned by C. [Nom] as supporting dishonest behavior among workers, reflecting issues within labor representation."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"SYNDICATS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;ACTIONNAIRES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Actionnaires refers to shareholders criticized by C. [Nom] for their greed, exacerbating societal inequalities."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"ACTIONNAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;PRODUCTIFS&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"Productifs refers to productive workers who are struggling financially, highlighting the divide between wealthy elites and working-class citizens."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"PRODUCTIFS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;ÉGALITÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Égalité is a theme central to C. [Nom]'s grievances, addressing issues of fairness and equal opportunities in society."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"ÉGALITÉ"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;INÉGALITÉS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Inégalités refer to societal disparities that C. [Nom] calls for the government to address, reflecting a key concern among citizens."</data>
+  <data key="d2">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d3">"INÉGALITÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;MONSIEUR LE PRÉSIDENT&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Monsieur le Président is the addressee of the citizen's grievances and proposals, representing the French state leadership."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"MONSIEUR LE PRÉSIDENT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;TAXES ET CHARGES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Taxes et charges refer to the financial burdens on citizens and companies that the citizen argues should be reduced."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"TAXES ET CHARGES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;AUDIT GÉNÉRAL&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Audit général is suggested as a method to identify redundancies and inefficiencies in public services."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"AUDIT GÉNÉRAL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;SIMPLIFICATION DES RÈGLEMENTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Simplification des règlements aims to reduce bureaucratic obstacles faced by citizens in administrative processes."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"SIMPLIFICATION DES RÈGLEMENTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;CONCURRENCE DES ENTREPRISES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Concurrence des entreprises refers to the competitiveness of businesses, impacted by state spending and taxes."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"CONCURRENCE DES ENTREPRISES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;EMPLOI&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Emploi refers to job creation and employment levels, which the citizen believes would improve with better economic conditions."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"EMPLOI"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;ANNONCE DE RÉFORMES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Annonce de réformes refers to the expectation for government reforms to address the grievances expressed by citizens."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"ANNONCE DE RÉFORMES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Doléances refers to the citizen contribution document where grievances and proposals are expressed by citizens."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"CAHIER DE DOLÉANCES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="&quot;M. [NOM, PRÉNOM, SIGNATURE]&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"M. [Nom, Prénom, Signature] represents the anonymous citizen expressing their concerns and proposals to the government."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"M. [NOM, PRÉNOM, SIGNATURE]"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="&quot;COÛT DE REVIENT DES ENTREPRISES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Coût de revient des entreprises refers to the cost structure of businesses, which is affected by public spending and taxation."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"COÛT DE REVIENT DES ENTREPRISES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;MALADES IMAGINAIRES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Malades imaginaires refers to the inefficiencies in the public health system highlighted as an example of waste in public services."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"MALADES IMAGINAIRES"</data>
+</node>
+<node id="&quot;POSTES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Postes refers to the number of jobs that could potentially be reduced through better efficiency in public administration."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"POSTES"</data>
+</node>
+<node id="&quot;DÉFICIT DE L'ÉTAT&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Déficit de l'État refers to the government's financial shortfall that the citizen believes needs to be reduced."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"DÉFICIT DE L'ÉTAT"</data>
+</node>
+<node id="&quot;MISE EN ŒUVRE DES RÉFORMES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Mise en œuvre des réformes refers to the call for faster implementation of government reforms to address citizen grievances."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"MISE EN ŒUVRE DES RÉFORMES"</data>
+</node>
+<node id="&quot;ADMINISTRATIF&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Administratif refers to administrative services that the citizen believes should be simplified for efficiency."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"ADMINISTRATIF"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;NORMES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Normes refers to regulations that the citizen views as obstacles to efficient governance and public service."</data>
+  <data key="d2">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d3">"NORMES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;CONSULTATION&quot;">
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d1">"Référendum des grands sujets suggests a form of consultation to include citizen voices in essential decisions."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;PROPOSITION&quot;">
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d1">"The proposal regarding L'ISF connects to the broader context of fiscal reforms and economic investment in businesses."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;DOLEANCE&quot;">
+  <data key="d2">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d1">"Citizens express grievances against mesures anti-écologistes as harmful to the environment and public health."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;" target="&quot;MR [NOM]&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Mr [Nom] addresses his grievances directly to the President of the Republic, indicating a desire for institutional response."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;" target="&quot;DIMINUTION DES SALAIRES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal for reducing the salaries relates directly to the responsibilities and actions of the President and ministers."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;" target="&quot;RETRAITE À 62 ANS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The proposal on retirement age reflects grievances concerning equity in public service compensation that the President oversees."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;" target="&quot;DIMINUTION DU NOMBRE DE DÉPUTÉS ET SÉNATEURS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to decrease the number of lawmakers is an expectation directed at the President's ability to initiate reforms."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;" target="&quot;REMISE DE L'ISF&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Reinstating the ISF is a direct fiscal proposal aimed at reforming tax practices under the President's purview."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;" target="&quot;GSG POUR LES RETRAITÉS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The grievance against the GSG for retirees highlights social policies that the President is expected to address."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR LE PRÉSIDENT DE LA RÉPUBLIQUE&quot;" target="&quot;USINES VENTES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal to halt factory sales to foreigners aims at preserving economic stability, a responsibility of the President."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;GSG POUR LES RETRAITÉS&quot;" target="&quot;TAXE D'HABITATION&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"The concerns about housing tax and its relationship to GSG impacts the broader discussion on social welfare policies."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SDF FRANÇAIS&quot;" target="&quot;MR [NOM]&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Mr [Nom]'s mention of homeless French citizens expresses a grievance about social priorities and resource allocation."</data>
+  <data key="d7">contrib-0e7002fed880b75d301c918cbb8ea190</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;CHARGES SOCIALES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizen mentions 'Charges sociales' as a key grievance that needs addressing in their contribution."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;DÉPENSES PUBLIQUES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizen expresses a grievance about 'Dépenses publiques' reflecting concerns over wastage and the need for reduction."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;ISF&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The reinstatement of 'ISF' is highlighted as a grievance indicating a desire for fiscal reform."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;TVA&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The citizen proposes increasing 'TVA', which is part of their grievance about high employer charges."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;CONTRÔLES SÉCURITÉ SOCIALE ET CAF&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Strengthening the controls of 'Sécurité Sociale et CAF' is a proposal to tackle employment issues raised in the grievances."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;RIC&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal for 'RIC' is directly linked to the citizen's grievance about the need for more participatory decision-making."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;AUTOROUTES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Regaining control of 'Autoroutes' is proposed as a response to grievances regarding their profitability and public financing."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;FEMME&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The citizen (Femme) expresses her grievances and proposals in her contribution."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;CONTRIBUTIONS CITOYENNES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The citizen's 'Doléances' are a form of 'Contributions citoyennes' addressing civic concerns."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CHARGES SOCIALES&quot;" target="&quot;ENTREPRISES DE MOINS DE 10 SALARIÉS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The reduction in 'Charges sociales' is specifically targeted at 'Entreprises de moins de 10 salariés'."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;GASPILLAGE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizen points out 'Gaspillage' as the reason for the need to reduce 'Dépenses publiques'."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;ÉTAT&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The État is responsible for managing public spending, which the citizen criticizes as being inefficient and excessive."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;TAXES ET CHARGES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Dépenses publiques contribute to the need for Taxes et charges, which the citizen argues should be reduced."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;AUDIT GÉNÉRAL&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Audit général is proposed as a solution for identifying waste in Dépenses publiques."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;COÛT DE REVIENT DES ENTREPRISES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Coût de revient des entreprises is linked to the level of Dépenses publiques that influences business costs."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TVA&quot;" target="&quot;MR [NOM, PRÉNOM]&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Mr [Nom] criticizes the TVA as an unjust tax that affects all citizens equally regardless of income, expressing his grievance about its unfairness."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CONTRÔLES SÉCURITÉ SOCIALE ET CAF&quot;" target="&quot;RETOUR AU TRAVAIL&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal of strengthening controls relates directly to the theme of increasing 'Retour au travail'."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RIC&quot;" target="&quot;DÉCISIONS IMPORTANTES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal for 'RIC' is aimed at enabling citizens to participate in 'Décisions importantes'."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AUTOROUTES&quot;" target="&quot;CONTRÔLE DES AUTOROUTES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to regain control of 'Autoroutes' is linked to the theme of 'Contrôle des autoroutes'."</data>
+  <data key="d7">contrib-8c5ed005046e376fa5861341b1cca359</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MADAME&quot;" target="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Madame expresses her opinions and grievances in the Cahiers de doléances, reflecting her civic engagement."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;CAHIER DE TAILLEBOURG&quot;">
+  <data key="d5">16.0</data>
+  <data key="d6">"Cahier de Taillebourg is a specific instance of a contribution recorded in the broader context of Cahiers de doléances."&lt;SEP&gt;"Cahiers de doléances collect sentiments from various communes, such as Taillebourg, to capture citizen feedback in the consultation process."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50&lt;SEP&gt;contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;FERMETURE DES SERVICES PUBLICS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The issue of service public closures is recorded in the Cahiers de doléances reflecting community concerns."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;CHARENTE-MARITIME&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Charente-Maritime organizes the collection of Cahiers de doléances from its various communities, illustrating regional citizen concerns."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;C. [NOM]&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"C. [Nom]'s writing is part of the Cahiers de Doléances, reflecting citizen feedback regarding governance and societal issues."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE TAILLEBOURG&quot;" target="&quot;MR [NOM, PRÉNOM]&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"Mr [Nom]’s contributions are documented in the Cahier de Taillebourg, which collects citizen grievances and proposals."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉFÉRENDUM DES GRANDS SUJETS&quot;" target="&quot;CONSULTATION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Référendum des grands sujets suggests a form of consultation to include citizen voices in essential decisions."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉFÉRENDUM DES GRANDS SUJETS&quot;" target="&quot;MARIAGE POUR TOUS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The marriage for all issue is proposed as a significant topic for a referendum on societal change."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DIMINUTION DU NOMBRE D'ÉLUS&quot;" target="&quot;CONSEIL D'ÉTAT&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The Council of State may be involved in the proposal to decrease the number of elected officials in legislative processes."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DIMINUTION DU NOMBRE D'ÉLUS&quot;" target="&quot;CONSEIL CONSTITUTIONNEL&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The Constitutional Council would have a role in overseeing proposals that affect the structure of governance."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;PRIVILÈGES DES ANCIENS PRÉSIDENTS&quot;" target="&quot;COMMISSION INDÉPENDANTE&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The grievance regarding privileges for former presidents leads to the proposal for a commission indépendante for oversight."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;L'ISF&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal regarding L'ISF connects to the broader context of fiscal reforms and economic investment in businesses."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ÉLUS LOCAUX&quot;" target="&quot;SERVICES PUBLICS EN ZONE RURALE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Local elected officials are suggested to have direct involvement in the management of public services in rural areas."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TRANSACTIONS FINANCIÈRES&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The idea to tax transactions financières directly connects to proposals regarding fiscal reforms."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FLUX MIGRATOIRES&quot;" target="&quot;LOI « DROIT DU SOL »&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The concern over immigration (flux migratoires) is related to grievances regarding citizenship laws like the loi « droit du sol »."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FLUX MIGRATOIRES&quot;" target="&quot;DÉLINQUANTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Grievances about dealing with délinquants are related to the larger discourse on managing flux migratoires."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AMÉNAGEMENTS&quot;" target="&quot;TAILLEBOURG&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Taillebourg is exploring various aménagements as part of the community's engagement with citizen proposals."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TAILLEBOURG&quot;" target="&quot;SUPPRESSION DES SCOOTERS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal for the suppression des scooters directly relates to concerns raised within the locality of Taillebourg."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MESURES ANTI-ÉCOLOGISTES&quot;" target="&quot;DOLEANCE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Citizens express grievances against mesures anti-écologistes as harmful to the environment and public health."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MESURES ANTI-ÉCOLOGISTES&quot;" target="&quot;CHASSE DES OISEAUX À LA GLU&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The grievance regarding chasse des oiseaux à la glu connects to broader anti-ecological measures noted by citizens."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MESURES ANTI-ÉCOLOGISTES&quot;" target="&quot;COMMERCIALISATION DES GRAINES NON RÉPERTORIÉES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Concerns about commercialisation des graines non répertoriées are tied to grievances about anti-ecological policies."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MESURES ANTI-ÉCOLOGISTES&quot;" target="&quot;PESTICIDES SUR CULTURES&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"Pesticides sur cultures is an example of anti-ecological measures that citizens have raised concerns about."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ROUTES ACCIDENTOGÈNES&quot;" target="&quot;VITESSE À 80 KMS/H&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The theme surrounding routes accidentogènes correlates with the proposal for regulating speed to improve safety."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;LIGNES DE CHEMIN DE FER DANS LES PETITES COMMUNES&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The proposal for restoring train services tends to connect with broader discussions in the community."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉLINQUANTS&quot;" target="&quot;DROIT DU SOL&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Concerns about droit du sol are connected to grievances about the treatment of individuals classified as délinquants."</data>
+  <data key="d7">contrib-d1d01407a7dd3ea52bb942091a351c50</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;TVA SOCIALE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Mr [Nom] proposes a TVA sociale as a solution to create a fair tax structure that alleviates the burden on lower-income citizens."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;DETTES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Mr [Nom] mentions the national debt per inhabitant to highlight social disparities and provoke a sense of justice regarding financial obligations."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;IMMIGRATION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Mr [Nom] connects immigration to financial concerns, claiming that resources allocated to immigrants neglect the needs of working citizens."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;POLITIQUE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Mr [Nom] expresses his grievance towards politicians, stating they fail to understand the struggles of everyday citizens with low incomes."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;SALAIRES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Mr [Nom] emphasizes the inadequacy of current salaries as a grievance related to financial struggles faced by citizens."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;POUVOIR D'ACHAT&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"Mr [Nom] advocates for the restoration of purchasing power as essential for the economic well-being of low-income citizens."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;CONSOMMATION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Mr [Nom] links the improvement of purchasing power to increased consumption, suggesting this could help the state's finances."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;PYRÉNÉES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Mr [Nom] mentions the Pyrénées to illustrate the holiday limitations faced by citizens with low incomes, expressing a wider sentiment about accessibility."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR [NOM, PRÉNOM]&quot;" target="&quot;DIVISION SOCIALE&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Mr [Nom] discusses social divisions to emphasize the struggle of low-income citizens against wealth discrepancies."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;EMMANUEL MACRON&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Emmanuel Macron is mentioned in the context of current political responsibilities and views on social welfare, aligning with or contradicting citizen sentiment."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;ÉTAT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The État is responsible for implementing the policies that Mr [Nom] criticizes, indicating the link between government action and citizen welfare."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;C. [NOM]&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"C. [Nom]'s critiques are centered around political actions and decisions, highlighting the failings of elected representatives in addressing citizen concerns."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MR BALLADUR&quot;" target="&quot;PENSIONS DE RETRAITE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Mr [Nom] attributes low retirement pensions to policies implemented by Mr Balladur, expressing disdain for past governmental decisions."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;POUVOIR D'ACHAT&quot;" target="&quot;PETITS RETRAITÉS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Petits retraités are suffering from low purchasing power due to inadequate pensions, as discussed by Mr [Nom]."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;POUVOIR D'ACHAT&quot;" target="&quot;TAXES ET CHARGES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Pouvoir d'achat is adversely affected by Taxes et charges, as mentioned in the citizen's grievances."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;ALLOCATIONS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Allocations are managed by the État, which has a role in determining who receives benefits and how adequately citizens are supported."</data>
+  <data key="d7">contrib-a3ec6e920d4e2e6d53d8b70ca4df8b66</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;MONSIEUR LE PRÉSIDENT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Monsieur le Président oversees the État and is responsible for addressing the financial issues and proposals of citizens."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;CONCURRENCE DES ENTREPRISES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The management of État influences the Concurrence des entreprises by affecting economic conditions for businesses."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CHARENTE-MARITIME&quot;" target="&quot;CAHIER DE DOLÉANCES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Doléances originates from Charente-Maritime, linking the grievances to a specific geographical location."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;GOUVERNEMENTS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"C. [Nom] blames the governments for not acting to reduce inequalities, highlighting a disconnect between citizens and leaders."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;M. SARKOZY&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"C. [Nom] references M. Sarkozy as an example of a politician involved in scandals, illustrating perceptions of political corruption."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;M. FILLON&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"M. Fillon is mentioned as another example of political misbehavior and misuse of public funds, emphasizing grievances against politicians."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;M. CAHUZAC&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"M. Cahuzac represents the type of political figure that has let down the citizens, as highlighted by C. [Nom]."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;MME SAAL&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"C. [Nom] criticizes Mme Saal's use of taxpayer money, contributing to a broader discussion on accountability."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;LA TRÉZENCE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"C. [Nom] points to the failed project La Trézence as an example of waste, reflecting concerns over public spending."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;CORRUPTION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"C. [Nom] emphasizes the need to eradicate corruption as a significant grievance against the political system."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;LIBERTÉ-ÉGALITÉ-FRATERNITÉ&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"C. [Nom] contrasts the issue of corruption with the ideals of Liberté-Égalité-Fraternité, underscoring societal discontent."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;AUDITS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"C. [Nom] criticizes the financial burden of audits demanded by the government, questioning their usefulness and calling for their removal."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;RAPPORTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"C. [Nom] argues that the reports produced for government evaluations do not deliver meaningful results and waste public funds."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;ÉTUDES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"C. [Nom] mentions studies requested by the state as evidence of wasted expenditures that don’t lead to practical outcomes."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;SYNDICATS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"C. [Nom] accuses the unions of protecting dishonest workers, suggesting a critique of labor organizations' role in the economy."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;ACTIONNAIRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"C. [Nom] points out the greed of shareholders as a contributing factor to the struggles of ordinary workers, critiquing capitalist excess."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;PRODUCTIFS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"C. [Nom] highlights the difficulties faced by productive workers, contrasting them with wealthy elites, indicating societal imbalance."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;ÉGALITÉ&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"C. [Nom] emphasizes the need for equality, articulating a fundamental grievance against perceived inequities in society."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;C. [NOM]&quot;" target="&quot;INÉGALITÉS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"C. [Nom] directly addresses inequalities as a critical issue that needs government intervention to resolve."</data>
+  <data key="d7">contrib-11652fa695f7bc1307a3100db557ffe2</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;LIBERTÉ-ÉGALITÉ-FRATERNITÉ&quot;" target="&quot;MONSIEUR LE PRÉSIDENT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Liberté-Égalité-Fraternité embodies the values that the citizen expects the Monsieur le Président to uphold in his reforms."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;ANNONCE DE RÉFORMES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Monsieur le Président is urged to make Annonce de réformes to effectively address public concerns."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AUDIT GÉNÉRAL&quot;" target="&quot;SIMPLIFICATION DES RÈGLEMENTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Audit général would reveal the need for Simplification des règlements to improve administrative efficiency."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SIMPLIFICATION DES RÈGLEMENTS&quot;" target="&quot;ADMINISTRATIF&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Administratif services are directly relevant to the need for Simplification des règlements to ease bureaucratic processes."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SIMPLIFICATION DES RÈGLEMENTS&quot;" target="&quot;NORMES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Normes are identified as part of the complexity that calls for Simplification des règlements for efficiency."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CONCURRENCE DES ENTREPRISES&quot;" target="&quot;EMPLOI&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"Concurrence des entreprises directly impacts Emploi, as better competition could lead to job creation."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;M. [NOM, PRÉNOM, SIGNATURE]&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Doléances is the medium through which M. [Nom, Prénom, Signature] expresses their grievances and proposals."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MALADES IMAGINAIRES&quot;" target="&quot;POSTES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The issue of Malades imaginaires relates to the number of Postes that could be cut as a measure of efficiency improvement."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉFICIT DE L'ÉTAT&quot;" target="&quot;MISE EN ŒUVRE DES RÉFORMES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Déficit de l'État is a financial state that the citizen believes should be addressed through Mise en œuvre des réformes."</data>
+  <data key="d7">contrib-ab59ed4a3c1985045c74cc60f916cc42</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
 </graph></graphml>

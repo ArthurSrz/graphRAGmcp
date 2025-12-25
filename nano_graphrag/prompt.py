@@ -194,22 +194,30 @@ Output:
 PROMPTS[
     "entity_extraction"
 ] = """-Goal-
-Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+Given a text document from the Grand Débat National (French citizen consultation 2019), identify all civic entities and their relationships according to the Grand Débat ontology.
+
+-Context-
+This is a citizen contribution (Cahier de Doléances) from a French commune. Extract entities and relationships that capture:
+- What citizens are expressing (opinions, grievances, proposals)
+- Which themes and public services are concerned
+- Which institutions and reforms are mentioned
+- The semantic relationships between these elements
 
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
-- entity_name: Name of the entity, capitalized
+- entity_name: Name of the entity, capitalized (in French)
 - entity_type: One of the following types: [{entity_types}]
-- entity_description: Comprehensive description of the entity's attributes and activities
+- entity_description: Comprehensive description of the entity's attributes and activities (in French)
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>
 
 2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
 For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
+- relationship_type: Use one of these semantic relationship types when applicable: [{relationship_types}]. If none fits exactly, describe the relationship.
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
 - relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
- Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+ Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_type>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
 
 3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
 
@@ -321,7 +329,89 @@ PROMPTS[
 ] = """It appears some entities may have still been missed.  Answer YES | NO if there are still entities that need to be added.
 """
 
-PROMPTS["DEFAULT_ENTITY_TYPES"] = ["organization", "person", "geo", "event"]
+# ============================================================
+# Grand Débat National - Civic Ontology (from Grafo)
+# Constitution Principle V: End-to-End Interpretability
+# ============================================================
+
+PROMPTS["DEFAULT_ENTITY_TYPES"] = [
+    # Core Participants
+    "Citoyen",           # Citizen participant
+    "Contribution",      # Citizen text contribution
+    "Consultation",      # The Grand Débat consultation
+
+    # Questions & Themes
+    "Question",          # Questions in the consultation
+    "Thematique",        # Major themes (Fiscalité, Démocratie, Écologie, Services publics)
+
+    # AI Processing
+    "ClusterSemantique", # Semantic clusters of similar contributions
+    "TypeRepondant",     # Respondent type/category
+
+    # Content Extracted
+    "Opinion",           # Expressed opinion/position
+    "Proposition",       # Proposal/suggestion for change
+    "Doleance",          # Grievance/complaint
+    "Verbatim",          # Direct citizen quote
+
+    # Reforms
+    "ReformeDemocratique",  # Democratic reform proposals
+    "ReformeFiscale",       # Tax reform proposals
+
+    # Trust & Institutions
+    "NiveauConfiance",       # Confidence level in institutions
+    "ActeurInstitutionnel",  # Institutional actor (government, local authorities)
+    "ServicePublic",         # Public service (healthcare, education, transport)
+
+    # Other Entities
+    "Consensus",          # Points of consensus among citizens
+    "CourantIdeologique", # Ideological current/movement
+    "Territoire",         # Geographic territory (commune, region)
+    "TypeImpot",          # Tax type
+    "ModeScrutin",        # Voting mode/electoral system
+    "MesureEcologique",   # Ecological measure
+]
+
+PROMPTS["DEFAULT_RELATIONSHIP_TYPES"] = [
+    # Core Flow (Citizen → Contribution → Question → Theme)
+    "SOUMET",           # Citizen SUBMITS contribution
+    "REPOND_A",         # Contribution RESPONDS TO question
+    "APPARTIENT_A",     # Question BELONGS TO theme
+    "FAIT_PARTIE_DE",   # Theme IS PART OF consultation
+
+    # Classification
+    "CLASSE_DANS",      # Citizen CLASSIFIED IN respondent type
+    "RESIDE_DANS",      # Citizen RESIDES IN territory
+    "REGROUPEE_DANS",   # Contribution GROUPED IN semantic cluster
+    "PRIORISE",         # Respondent type PRIORITIZES theme
+
+    # Content Extraction
+    "EXPRIME",          # Contribution EXPRESSES opinion
+    "FORMULE",          # Contribution FORMULATES proposition
+    "FAIT_REMONTER",    # Contribution RAISES grievance
+    "CONTIENT",         # Contribution CONTAINS verbatim
+    "TRADUIT",          # Contribution REFLECTS confidence level
+    "REPRESENTE",       # Verbatim REPRESENTS respondent type
+
+    # Reform Specialization
+    "EST_TYPE_DE",      # Reform IS TYPE OF proposition
+    "PROPOSE",          # Democratic reform PROPOSES voting mode
+    "PORTE_SUR_IMPOT",  # Fiscal reform CONCERNS tax type
+
+    # Trust & Services
+    "CIBLE",            # Confidence level TARGETS institutional actor
+    "GERE",             # Institutional actor MANAGES public service
+    "CONCERNE",         # Grievance CONCERNS public service
+    "FINANCE",          # Tax type FINANCES public service
+
+    # Consensus & Ideology
+    "SINSCRIT_DANS",    # Opinion INSCRIBES IN ideological current
+    "CONTRIBUE_A",      # Opinion CONTRIBUTES TO consensus
+    "REVELE",           # Consultation REVEALS consensus
+    "INCLUT",           # Theme INCLUDES ecological measure
+    "PORTE_SUR_MESURE", # Consensus CONCERNS ecological measure
+]
+
 PROMPTS["DEFAULT_TUPLE_DELIMITER"] = "<|>"
 PROMPTS["DEFAULT_RECORD_DELIMITER"] = "##"
 PROMPTS["DEFAULT_COMPLETION_DELIMITER"] = "<|COMPLETE|>"

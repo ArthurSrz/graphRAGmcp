@@ -165,7 +165,19 @@ async def _handle_single_relationship_extraction(
     # add this record as edge
     source = clean_str(record_attributes[1].upper())
     target = clean_str(record_attributes[2].upper())
-    edge_description = clean_str(record_attributes[3])
+
+    # Handle both old format (5 fields) and new format with relationship_type (6 fields)
+    # Old: ("relationship", source, target, description, weight)
+    # New: ("relationship", source, target, rel_type, description, weight)
+    if len(record_attributes) >= 6:
+        # New format with relationship_type
+        relationship_type = clean_str(record_attributes[3].upper())
+        edge_description = clean_str(record_attributes[4])
+    else:
+        # Old format without relationship_type
+        relationship_type = "RELATED_TO"  # Default fallback
+        edge_description = clean_str(record_attributes[3])
+
     edge_source_id = chunk_key
     weight = (
         float(record_attributes[-1]) if is_float_regex(record_attributes[-1]) else 1.0
@@ -174,6 +186,7 @@ async def _handle_single_relationship_extraction(
         src_id=source,
         tgt_id=target,
         weight=weight,
+        relationship_type=relationship_type,
         description=edge_description,
         source_id=edge_source_id,
     )
@@ -239,6 +252,7 @@ async def _merge_edges_then_upsert(
     already_source_ids = []
     already_description = []
     already_order = []
+    already_relationship_types = []
     if await knwoledge_graph_inst.has_edge(src_id, tgt_id):
         already_edge = await knwoledge_graph_inst.get_edge(src_id, tgt_id)
         already_weights.append(already_edge["weight"])
@@ -247,10 +261,19 @@ async def _merge_edges_then_upsert(
         )
         already_description.append(already_edge["description"])
         already_order.append(already_edge.get("order", 1))
+        if "relationship_type" in already_edge:
+            already_relationship_types.append(already_edge["relationship_type"])
 
     # [numberchiffre]: `Relationship.order` is only returned from DSPy's predictions
     order = min([dp.get("order", 1) for dp in edges_data] + already_order)
     weight = sum([dp["weight"] for dp in edges_data] + already_weights)
+
+    # Determine relationship_type by majority vote (like entity_type)
+    all_rel_types = [dp.get("relationship_type", "RELATED_TO") for dp in edges_data] + already_relationship_types
+    if all_rel_types:
+        relationship_type = Counter(all_rel_types).most_common(1)[0][0]
+    else:
+        relationship_type = "RELATED_TO"
     description = GRAPH_FIELD_SEP.join(
         sorted(set([dp["description"] for dp in edges_data] + already_description))
     )
@@ -274,7 +297,11 @@ async def _merge_edges_then_upsert(
         src_id,
         tgt_id,
         edge_data=dict(
-            weight=weight, description=description, source_id=source_id, order=order
+            weight=weight,
+            description=description,
+            source_id=source_id,
+            order=order,
+            relationship_type=relationship_type,  # Grand Débat ontology relationship type
         ),
     )
 
@@ -298,6 +325,7 @@ async def extract_entities(
         record_delimiter=PROMPTS["DEFAULT_RECORD_DELIMITER"],
         completion_delimiter=PROMPTS["DEFAULT_COMPLETION_DELIMITER"],
         entity_types=",".join(PROMPTS["DEFAULT_ENTITY_TYPES"]),
+        relationship_types=",".join(PROMPTS.get("DEFAULT_RELATIONSHIP_TYPES", [])),
     )
     continue_prompt = PROMPTS["entiti_continue_extraction"]
     if_loop_prompt = PROMPTS["entiti_if_loop_extraction"]
@@ -606,15 +634,21 @@ def _community_report_json_to_str(parsed_output: dict) -> str:
     summary = parsed_output.get("summary", "")
     findings = parsed_output.get("findings", [])
 
-    def finding_summary(finding: dict):
+    def finding_summary(finding):
         if isinstance(finding, str):
             return finding
-        return finding.get("summary")
+        if isinstance(finding, dict):
+            return finding.get("summary", "")
+        # Handle malformed findings (int, float, etc.)
+        return str(finding) if finding else ""
 
-    def finding_explanation(finding: dict):
+    def finding_explanation(finding):
         if isinstance(finding, str):
             return ""
-        return finding.get("explanation")
+        if isinstance(finding, dict):
+            return finding.get("explanation", "")
+        # Handle malformed findings (int, float, etc.)
+        return ""
 
     report_sections = "\n\n".join(
         f"## {finding_summary(f)}\n\n{finding_explanation(f)}" for f in findings

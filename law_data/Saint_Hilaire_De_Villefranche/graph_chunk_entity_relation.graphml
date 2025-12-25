@@ -1,930 +1,1057 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d27" for="edge" attr.name="source_id" attr.type="string"/>
-<key id="d26" for="edge" attr.name="weight" attr.type="double"/>
-<key id="d25" for="edge" attr.name="relationship_type" attr.type="string"/>
-<key id="d24" for="node" attr.name="type" attr.type="string"/>
-<key id="d23" for="node" attr.name="domaine" attr.type="string"/>
-<key id="d22" for="node" attr.name="cible" attr.type="string"/>
-<key id="d21" for="node" attr.name="valeur" attr.type="string"/>
-<key id="d20" for="node" attr.name="nom" attr.type="string"/>
-<key id="d19" for="node" attr.name="categorie" attr.type="string"/>
-<key id="d18" for="node" attr.name="titre" attr.type="string"/>
-<key id="d17" for="node" attr.name="description" attr.type="string"/>
-<key id="d16" for="node" attr.name="gravite" attr.type="string"/>
-<key id="d15" for="node" attr.name="objet" attr.type="string"/>
-<key id="d14" for="node" attr.name="intensite" attr.type="double"/>
-<key id="d13" for="node" attr.name="sujet" attr.type="string"/>
-<key id="d12" for="node" attr.name="position" attr.type="string"/>
-<key id="d11" for="node" attr.name="source_id" attr.type="string"/>
-<key id="d10" for="node" attr.name="manuscritType" attr.type="string"/>
-<key id="d9" for="node" attr.name="contributionNumber" attr.type="long"/>
-<key id="d8" for="node" attr.name="demographic" attr.type="string"/>
-<key id="d7" for="node" attr.name="commune" attr.type="string"/>
-<key id="d6" for="node" attr.name="estPartielle" attr.type="boolean"/>
-<key id="d5" for="node" attr.name="texte" attr.type="string"/>
-<key id="d4" for="node" attr.name="contributionId" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d8" for="edge" attr.name="order" attr.type="long"/>
+<key id="d7" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d6" for="edge" attr.name="description" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="clusters" attr.type="string"/>
 <key id="d3" for="node" attr.name="entity_name" attr.type="string"/>
-<key id="d2" for="node" attr.name="clusters" attr.type="string"/>
-<key id="d1" for="node" attr.name="citoyenId" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
 <key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
-<graph edgedefault="undirected"><node id="citoyen-Unknown-None">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-None</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-  <data key="d3">citoyen-Unknown-None</data>
-</node>
-<node id="contribution-Unknown-None">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-None</data>
-  <data key="d5">Cahier de Saint-Hilaire-de-Villefranche1. Dactylographié (2 pages), 60 lignes, 722 mots (couple)[Prénoms Nom]Propriétaires et résidant à St-Hilaire de Villefranche depuis 35 ans.À monsieur le président de la République.Cher Monsieur Macron,Je n’utilise le mot cher que par rapport à votre politique qui nous coûte beaucoup d’argent.Puisqu’il m’est permis de m’exprimer, sachez que je considère que vous avez fait un mauvais choix enmisant sur les plus riches. Comme vous le savez, l’homme es...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-  <data key="d3">contribution-Unknown-None</data>
-</node>
-<node id="citoyen-Unknown-2">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-2</data>
-  <data key="d8">homme</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-  <data key="d3">citoyen-Unknown-2</data>
-</node>
-<node id="contribution-Unknown-2">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-2</data>
-  <data key="d5">2. Mail imprimé, 10 lignes, 78 mots (homme)Sujet : DoléancesDe : Prénom Nom &lt;adresse mail&gt;Date : 08/02/2019 15:59Pour : accueil@sainthilairedevillefranche.frCahiers de doléances/cahiers citoyens de Charente-Maritime, édition février 2024Cahier de Saint-Hilaire-de-Villefranche−−−−−−−−−−Fin de l’oligarchie pour une vraie démocratie.Reconnaissance des votes blancs.Casier judicaire vierge pour être élu.Diminution importante des sénateurs et députés et voir 1 seule chambre ave...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">2</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-  <data key="d3">contribution-Unknown-2</data>
-</node>
-<node id="citoyen-Unknown-3">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-3</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C2"}]</data>
-  <data key="d3">citoyen-Unknown-3</data>
-</node>
-<node id="contribution-Unknown-3">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-3</data>
-  <data key="d5">3. Dactylographié, 12 lignes, 123 motsDoléances−−−−−−−−−−−−−taxer les publicités scandaleuses, inutiles et honteusescombien de camions de livraison de petits paquets : destruction de la Postecombien de Français à l’étranger, où payent-ils leurs impôts ?beaucoup trop de parlottes inutiles radio et téléimpôts et dépenses des retraités à l’étrangeron manque d’ouvriers qualifiés mais combien les paie-t-on ?les entreprises prennent des prestataires de service extérieursbureauc...</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">3</data>
-  <data key="d10">dactylographié</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C2"}]</data>
-  <data key="d3">contribution-Unknown-3</data>
-</node>
-<node id="citoyen-Unknown-4">
-  <data key="d0">Citoyen</data>
-  <data key="d1">citoyen-Unknown-4</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C3"}]</data>
-  <data key="d3">citoyen-Unknown-4</data>
-</node>
-<node id="contribution-Unknown-4">
-  <data key="d0">Contribution</data>
-  <data key="d4">contribution-Unknown-4</data>
-  <data key="d5">4. Manuscrit, 12 lignes, 77 mots−−−−−−−Annulation de la hausse de la CSG sur tous les retraités.Revalorisation des pensions à la hauteur de l’inflation : 1,7 % pour 2018.Le retour à l’indexation sur les salaires.Le maintien de la pension de réversion selon les modes de calcul actuels.Rétablissement de l’ISF.Éradication de la fraude et de l’évasion fiscale entre autres.Arrêt des taxes sur les carburants, le gaz et l’électricité (elle va augmenter de 6 % au mois demars)</data>
-  <data key="d6">False</data>
-  <data key="d7">Unknown</data>
-  <data key="d9">4</data>
-  <data key="d10">manuscrit</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C3"}]</data>
-  <data key="d3">contribution-Unknown-4</data>
-</node>
-<node id="opinion-d3720edc">
-  <data key="d0">OPINION</data>
-  <data key="d3">Critique du choix fiscal</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d12">contre</data>
-  <data key="d13">Politique fiscale envers les riches</data>
-  <data key="d14">0.8</data>
-</node>
-<node id="doleance-ec3b9652">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Difficultés financières des retraités</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d15">Charges excessives des retraités</data>
-  <data key="d16">forte</data>
-</node>
-<node id="doleance-9c0f928d">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Revalorisation des pensions</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d15">Pensions bloquées depuis 5 ans</data>
-  <data key="d16">forte</data>
-</node>
-<node id="proposition-59785a8b">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Suppression CSG</data>
-  <data key="d17">Demande de suppression de la CSG de 1,86 % pour les retraités modeste</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d18">Suppression CSG</data>
-  <data key="d19">fiscale</data>
-</node>
-<node id="proposition-4c2bde2f">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Indexation des pensions</data>
-  <data key="d17">Demande d'indexation des pensions sur le coût de la vie</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d18">Indexation des pensions</data>
-  <data key="d19">sociale</data>
-</node>
-<node id="proposition-5804aa8e">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Rattrapage des pensions</data>
-  <data key="d17">Demande d'un rattrapage de 3 % compensatoire pour les pensions</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d18">Rattrapage des pensions</data>
-  <data key="d19">sociale</data>
-</node>
-<node id="type_impot-ddf86b0b">
-  <data key="d0">TYPE_IMPOT</data>
-  <data key="d3">CSG</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7&lt;SEP&gt;contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d20">CSG</data>
-  <data key="d19">direct</data>
-</node>
-<node id="niveau_confiance-849f6b7d">
-  <data key="d0">NIVEAU_CONFIANCE</data>
-  <data key="d3">Confiance en gouvernement</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d21">faible</data>
-  <data key="d22">gouvernement</data>
-</node>
-<node id="service_public-7e73df0a">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Système de santé</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d20">Système de santé</data>
-  <data key="d23">sante</data>
-</node>
-<node id="service_public-644143c7">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Enseignement</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d20">Enseignement</data>
-  <data key="d23">education</data>
-</node>
-<node id="service_public-ff8a12c8">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Organismes bancaires</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d20">Organismes bancaires</data>
-  <data key="d23">finance</data>
-</node>
-<node id="thematique-7347f8ed">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Fiscalité</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d20">Fiscalité</data>
-</node>
-<node id="thematique-f431e17e">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Social</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d20">Social</data>
-</node>
-<node id="thematique-1c5a672c">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Retraite</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d20">Retraite</data>
-</node>
-<node id="thematique-fiscalite">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">FISCALITE</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7&lt;SEP&gt;contrib-26e88cf1d221dc7963c000078e88fe5e&lt;SEP&gt;contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d20">FISCALITE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C3"}]</data>
-</node>
-<node id="thematique-sanitaire">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">SANITAIRE</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-  <data key="d20">SANITAIRE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-</node>
-<node id="thematique-politique">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">POLITIQUE</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7&lt;SEP&gt;contrib-60c9288090317e8734c920a231b118a8&lt;SEP&gt;contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d20">POLITIQUE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-</node>
-<node id="thematique-social">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">SOCIAL</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7&lt;SEP&gt;contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d20">SOCIAL</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C1"}]</data>
-</node>
-<node id="opinion-6726ba56">
-  <data key="d0">OPINION</data>
-  <data key="d3">Fin de l'oligarchie pour une vraie démocratie</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d12">pour</data>
-  <data key="d13">démocratie</data>
-  <data key="d14">0.8</data>
-</node>
-<node id="opinion-ccfb7c10">
-  <data key="d0">OPINION</data>
-  <data key="d3">Reconnaissance des votes blancs</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d12">pour</data>
-  <data key="d13">votes blancs</data>
-  <data key="d14">0.7</data>
-</node>
-<node id="opinion-1f11e086">
-  <data key="d0">OPINION</data>
-  <data key="d3">Casier judiciaire vierge pour être élu</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d12">pour</data>
-  <data key="d13">éligibilité</data>
-  <data key="d14">0.6</data>
-</node>
-<node id="proposition-8ebf3f02">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Diminution des sénateurs et députés</data>
-  <data key="d17">Proposition de diminuer significativement le nombre de sénateurs et députés et de ne maintenir qu'une seule chambre avec des représentants du peuple.</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d18">Diminution des sénateurs et députés</data>
-  <data key="d19">democratique</data>
-</node>
-<node id="proposition-d74dfdae">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Indemnisation à la réelle présence</data>
-  <data key="d17">Proposition d'indemniser les élus uniquement pour leur présence réelle en fonction.</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d18">Indemnisation à la réelle présence</data>
-  <data key="d19">democratique</data>
-</node>
-<node id="proposition-e8fd37ff">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Fin des indemnités et privilèges des mandats</data>
-  <data key="d17">Proposition que la fin de mandat entraîne également la fin des indemnités et des privilèges associés pour les hauts responsables politiques.</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d18">Fin des indemnités et privilèges des mandats</data>
-  <data key="d19">democratique</data>
-</node>
-<node id="proposition-3e65f877">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Rémunération des préfets uniquement en fonction</data>
-  <data key="d17">Proposition de rémunérer les préfets uniquement en fonction de leurs attributions réelles, abolissant ainsi les préfets honorifiques.</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d18">Rémunération des préfets uniquement en fonction</data>
-  <data key="d19">democratique</data>
-</node>
-<node id="proposition-adc7a5b4">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Diminution du salaire des hauts fonctionnaires</data>
-  <data key="d17">Proposition de diminuer les salaires des hauts fonctionnaires.</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d18">Diminution du salaire des hauts fonctionnaires</data>
-  <data key="d19">fiscale</data>
-</node>
-<node id="proposition-eb26bae8">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Imposition des indemnités des élus</data>
-  <data key="d17">Proposition d'imposer les indemnités perçues par les élus.</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d18">Imposition des indemnités des élus</data>
-  <data key="d19">fiscale</data>
-</node>
-<node id="proposition-34ff4d25">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Augmentation des retraites et bas salaires</data>
-  <data key="d17">Proposition d'augmenter les retraites et les salaires des travailleurs à bas revenus.</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d18">Augmentation des retraites et bas salaires</data>
-  <data key="d19">sociale</data>
-</node>
-<node id="thematique-c09381a9">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Démocratie</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d20">Démocratie</data>
-</node>
-<node id="thematique-db91f285">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">Politique</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d20">Politique</data>
-</node>
-<node id="service_public-b209a714">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Élus</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d20">Élus</data>
-  <data key="d23">politique</data>
-</node>
-<node id="service_public-29336955">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Hauts fonctionnaires</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d20">Hauts fonctionnaires</data>
-  <data key="d23">politique</data>
-</node>
-<node id="service_public-153c8224">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">Préfets</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d20">Préfets</data>
-  <data key="d23">politique</data>
-</node>
-<node id="thematique-democratie">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">DEMOCRATIE</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-  <data key="d20">DEMOCRATIE</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C0"}]</data>
-</node>
-<node id="doleance-ed23dbe2">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Taxe publicités</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">taxer les publicités scandaleuses, inutiles et honteuses</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-7f84e9c5">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Destruction de la Poste</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">destruction de la Poste par le nombre de camions de livraison de petits paquets</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-92c5c8da">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Imposition des Français à l'étranger</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">situation des impôts des Français à l’étranger</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-57595380">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Parlottes inutiles</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">trop de parlottes inutiles à la radio et à la télé</data>
-  <data key="d16">faible</data>
-</node>
-<node id="doleance-51b20282">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Impôts des retraités</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">impôts et dépenses des retraités à l’étranger</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-93c79637">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Ouvriers qualifiés</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">manque d’ouvriers qualifiés et leur rémunération</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-27cce61e">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Entreprises et prestataires</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">entreprises qui prennent des prestataires de service extérieurs</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-a1fea300">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Bureaucrates des CDC</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">bureaucrates des CDC, mainmise sur les élus des communes</data>
-  <data key="d16">forte</data>
-</node>
-<node id="doleance-692cea55">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">TVA imposée</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">TVA, impôt honteux et son reversement à l’Etat</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-cfa1b958">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Gaspillage</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">taxer le gaspillage</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-503decd4">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Limitation de vitesse</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">disparité entre les limitations de vitesse sur routes</data>
-  <data key="d16">faible</data>
-</node>
-<node id="doleance-e1f35d8b">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Fonctionnaires bureaucrates</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d15">suppression des fonctionnaires bureaucrates mais plus de contrôleurs</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="service_public-e8ef87f5">
-  <data key="d0">SERVICE_PUBLIC</data>
-  <data key="d3">La Poste</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d20">La Poste</data>
-  <data key="d23">transport</data>
-</node>
-<node id="type_impot-5efceb91">
-  <data key="d0">TYPE_IMPOT</data>
-  <data key="d3">TVA</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d20">TVA</data>
-  <data key="d19">indirect</data>
-</node>
-<node id="acteur_institutionnel-cbcdf960">
-  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
-  <data key="d3">Florence Aubenas</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d20">Florence Aubenas</data>
-  <data key="d24">journaliste</data>
-</node>
-<node id="thematique-immigration">
-  <data key="d0">THEMATIQUE</data>
-  <data key="d3">IMMIGRATION</data>
-  <data key="d11">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
-  <data key="d20">IMMIGRATION</data>
-  <data key="d2">[{"level": 0, "cluster": "L0C2"}]</data>
-</node>
-<node id="proposition-3378248e">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Annulation hausse CSG retraités</data>
-  <data key="d17">Annuler la hausse de la CSG sur tous les retraités.</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d18">Annulation hausse CSG retraités</data>
-  <data key="d19">fiscale</data>
-</node>
-<node id="proposition-47e0aeec">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Revalorisation pensions</data>
-  <data key="d17">Revaloriser les pensions à la hauteur de l'inflation : 1,7 % pour 2018.</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d18">Revalorisation pensions</data>
-  <data key="d19">sociale</data>
-</node>
-<node id="proposition-2d562abf">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Retour indexation sur salaires</data>
-  <data key="d17">Retourner à l'indexation des pensions sur les salaires.</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d18">Retour indexation sur salaires</data>
-  <data key="d19">sociale</data>
-</node>
-<node id="proposition-99dac6f0">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Maintien pension de réversion</data>
-  <data key="d17">Maintenir la pension de réversion selon les modes de calcul actuels.</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d18">Maintien de la pension de réversion</data>
-  <data key="d19">sociale</data>
-</node>
-<node id="proposition-f8a4b908">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Rétablissement de l'ISF</data>
-  <data key="d17">Rétablir l'Impôt de Solidarité sur la Fortune (ISF).</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d18">Rétablissement de l'ISF</data>
-  <data key="d19">fiscale</data>
-</node>
-<node id="proposition-db302b30">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Éradication fraude fiscale</data>
-  <data key="d17">Éradiquer la fraude et l'évasion fiscale.</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d18">Éradication de la fraude fiscale</data>
-  <data key="d19">fiscale</data>
-</node>
-<node id="proposition-e4694781">
-  <data key="d0">PROPOSITION</data>
-  <data key="d3">Arrêt taxation sur carburants</data>
-  <data key="d17">Arrêter les taxes sur les carburants, le gaz et l'électricité qui vont augmenter de 6 % au mois de mars.</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d18">Arrêt des taxes sur les carburants</data>
-  <data key="d19">fiscale</data>
-</node>
-<node id="doleance-9b1e3dab">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Hausse CSG retraités</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d15">Hausse de la CSG sur les retraités</data>
-  <data key="d16">forte</data>
-</node>
-<node id="doleance-bf7b1fd9">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Pensions non revalorisées</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d15">Pensions non revalorisées à l'inflation</data>
-  <data key="d16">forte</data>
-</node>
-<node id="doleance-d4ebb7c9">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Indexation sur salaires</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d15">Pas de retour à l'indexation sur les salaires</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-25e710a2">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Régime de pension de réversion</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d15">Maintien des modes de calcul de la pension de réversion</data>
-  <data key="d16">moyenne</data>
-</node>
-<node id="doleance-b184bc51">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">ISF supprimé</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d15">Suppression de l'ISF</data>
-  <data key="d16">forte</data>
-</node>
-<node id="doleance-f97ac4b3">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Fraude fiscale</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d15">Fraude et évasion fiscale</data>
-  <data key="d16">forte</data>
-</node>
-<node id="doleance-ebd9d33e">
-  <data key="d0">DOLEANCE</data>
-  <data key="d3">Augmentation des taxes</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-  <data key="d15">Augmentation des taxes sur les carburants, gaz et électricité</data>
-  <data key="d16">forte</data>
-</node>
-<node id="Critique du choix fiscal">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Critique du choix fiscal</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Difficultés financières des retraités">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Difficultés financières des retraités</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Suppression CSG">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Suppression CSG</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Indexation des pensions">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Indexation des pensions</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Rattrapage des pensions">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Rattrapage des pensions</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="CSG">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">CSG</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Confiance en gouvernement">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Confiance en gouvernement</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Système de santé">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Système de santé</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Enseignement">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Enseignement</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Organismes bancaires">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Organismes bancaires</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Fiscalité">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Fiscalité</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Social">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Social</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Retraite">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Retraite</data>
-  <data key="d11">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
-</node>
-<node id="Fin de l'oligarchie pour une vraie démocratie">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Fin de l'oligarchie pour une vraie démocratie</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Diminution des sénateurs et députés">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminution des sénateurs et députés</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Indemnisation à la réelle présence">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Indemnisation à la réelle présence</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Fin des indemnités et privilèges des mandats">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Fin des indemnités et privilèges des mandats</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Rémunération des préfets uniquement en fonction">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Rémunération des préfets uniquement en fonction</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Diminution du salaire des hauts fonctionnaires">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Diminution du salaire des hauts fonctionnaires</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Imposition des indemnités des élus">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Imposition des indemnités des élus</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Augmentation des retraites et bas salaires">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Augmentation des retraites et bas salaires</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Démocratie">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Démocratie</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Élus">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Élus</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Hauts fonctionnaires">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Hauts fonctionnaires</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Préfets">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Préfets</data>
-  <data key="d11">contrib-60c9288090317e8734c920a231b118a8</data>
-</node>
-<node id="Annulation hausse CSG retraités">
-  <data key="d0">UNKNOWN</data>
-  <data key="d3">Annulation hausse CSG retraités</data>
-  <data key="d11">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
-</node>
-<edge source="citoyen-Unknown-None" target="contribution-Unknown-None">
-  <data key="d25">SOUMET</data>
-  <data key="d26">1.0</data>
-  <data key="d27">contribution-Unknown-None</data>
+<graph edgedefault="undirected"><node id="&quot;SAINT-HILAIRE-DE-VILLEFRANCHE&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Saint-Hilaire-de-Villefranche is a commune in France where the citizens express their concerns regarding economic policies and public services."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"SAINT-HILAIRE-DE-VILLEFRANCHE"</data>
+</node>
+<node id="&quot;MONSIEUR MACRON&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Monsieur Macron is the President of France, addressed in the document regarding his policies and their impact on citizens."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"MONSIEUR MACRON"</data>
+</node>
+<node id="&quot;PENSIONS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Pensions are public services providing financial support to retirees, which are the focus of revaluation and maintenance efforts."&lt;SEP&gt;"Pensions refer to the regular payments made to retirees, which are discussed with regard to their adequacy and adjustments to living costs."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e&lt;SEP&gt;contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"PENSIONS"</data>
+</node>
+<node id="&quot;CSG&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"CSG (Contribution Sociale Généralisée) is a tax that impacts the incomes of citizens, highlighted as a burden in the document."&lt;SEP&gt;"CSG, or Contribution Sociale Généralisée, is a tax levied in France to contribute to social security, which is proposed for annulment for retirees."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e&lt;SEP&gt;contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"CSG"</data>
+</node>
+<node id="&quot;RETRAITÉS&quot;">
+  <data key="d0">"TYPEREPONDANT"</data>
+  <data key="d1">"Retraités refer to pensioners who are directly affected by the proposals concerning the CSG increase, pension revaluation, and taxation."&lt;SEP&gt;"Retraités refers to retired citizens who express grievances about their pensions and living conditions in the document."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e&lt;SEP&gt;contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"RETRAITÉS"</data>
+</node>
+<node id="&quot;CHARGES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Charges represent the various expenses outlined by the citizens, indicating the financial strain they are under."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"CHARGES"</data>
+</node>
+<node id="&quot;GROGNE DE LA POPULATION LABORIEUSE&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Grogne de la Population Laborieuse is an expression of dissatisfaction among working-class citizens regarding government policies."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"GROGNE DE LA POPULATION LABORIEUSE"</data>
+</node>
+<node id="&quot;SUPPRESSION DE LA CSG&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Suppression de la CSG is a specific demand made by the citizens to alleviate their financial burden."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"SUPPRESSION DE LA CSG"</data>
+</node>
+<node id="&quot;INDEXATION DES PENSIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Indexation des Pensions is the proposal to adjust pensions according to the cost of living, aimed at maintaining retirees' purchasing power."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"INDEXATION DES PENSIONS"</data>
+</node>
+<node id="&quot;RATTRAPAGE DE 3 % COMPENSATOIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Rattrapage de 3 % compensatoire is another demand for an increase in pensions to match the inflation and rising costs."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"RATTRAPAGE DE 3 % COMPENSATOIRE"</data>
+</node>
+<node id="&quot;PROPRIÉTAIRES&quot;">
+  <data key="d0">"TYPEREPONDANT"</data>
+  <data key="d1">"Propriétaires refers to homeowners in Saint-Hilaire-de-Villefranche who express their concerns about the economic impact of government policies."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"PROPRIÉTAIRES"</data>
+</node>
+<node id="&quot;POLITIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Politique represents the political decisions made by the government that affect the economic welfare of citizens, particularly targeting the wealthy."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"POLITIQUE"</data>
+</node>
+<node id="&quot;EGOÏSME&quot;">
+  <data key="d0">"COURANTIDEOLOGIQUE"</data>
+  <data key="d1">"Egoïsme refers to the ideological perspective that suggests individuals act primarily in their own self-interest, influencing the author's view on wealth distribution."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"EGOÏSME"</data>
+</node>
+<node id="&quot;LUXUEUX&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Luxueux describes the luxury sector which is highlighted as benefiting from government policies while lower-income individuals struggle economically."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"LUXUEUX"</data>
+</node>
+<node id="&quot;INFRASTRUCTURES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Infrastructures reference the major public works and systems that require investment and attention but are at risk due to economic policies."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"INFRASTRUCTURES"</data>
+</node>
+<node id="&quot;ENSEIGNEMENT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Enseignement refers to the education system, which is mentioned concerning its funding and the implications of economic policies on its quality."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"ENSEIGNEMENT"</data>
+</node>
+<node id="&quot;SYSTÈME DE SANTÉ&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Système de Santé represents the healthcare system, which is being scrutinized for funding and access issues resulting from economic decisions."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"SYSTÈME DE SANTÉ"</data>
+</node>
+<node id="&quot;CHARGES INCONTOURNABLES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Charges Incontournables denote the unavoidable expenses faced by retirees that are not being justly compensated by their pensions."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"CHARGES INCONTOURNABLES"</data>
+</node>
+<node id="&quot;BANQUES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Banques refer to financial institutions that are criticized for their role in pushing citizens into debt. They are mentioned in relation to the financial stress on retirees."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"BANQUES"</data>
+</node>
+<node id="&quot;DETTES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Dettes signify the debts that retirees face due to insufficient income, a major concern expressed in the document."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"DETTES"</data>
+</node>
+<node id="&quot;INFLATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Inflation refers to the rising costs of living that erode purchasing power, specifically cited as a factor affecting retirees and their pensions."</data>
+  <data key="d2">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d3">"INFLATION"</data>
+</node>
+<node id="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Saint-Hilaire-de-Villefranche represents a citizen consultation document collecting grievances and proposals from the citizens of Saint-Hilaire-de-Villefranche."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE"</data>
+</node>
+<node id="&quot;OLIGARCHIE&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Oligarchie refers to the perception of an oligarchy existing in the French political system, leading to calls for its end to achieve true democracy."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"OLIGARCHIE"</data>
+</node>
+<node id="&quot;DÉMOCRATIE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Démocratie signifies the desired governmental system that the citizens advocate for, expressing a need for more democratic processes and representation."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"DÉMOCRATIE"</data>
+</node>
+<node id="&quot;VOTES BLANCS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Votes Blancs refers to the recognition and inclusion of blank votes in elections, indicating a demand for better acknowledgment of citizens' electoral expressions."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"VOTES BLANCS"</data>
+</node>
+<node id="&quot;CASIER JUDICIAIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Casier Judiciaire refers to a proposal for candidates to have a clean criminal record in order to be eligible for election, ensuring integrity in elected officials."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"CASIER JUDICIAIRE"</data>
+</node>
+<node id="&quot;SÉNATEURS ET DÉPUTÉS&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Sénateurs et Députés are the representatives whose numbers the citizens demand to reduce significantly to ensure better representation with a single chamber."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"SÉNATEURS ET DÉPUTÉS"</data>
+</node>
+<node id="&quot;INDEMNISATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Indemnisation pertains to the demand for compensations based on actual attendance, opposing the current practices of remuneration irrespective of presence."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"INDEMNISATION"</data>
+</node>
+<node id="&quot;MANDAT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Mandat proposes that at the end of the mandate of politicians, they should also end their indemnities and privileges, prioritizing accountability."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"MANDAT"</data>
+</node>
+<node id="&quot;RÉMUNÉRATION DES PRÉFETS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Rémunération des Préfets suggests that prefects should be paid based only on their function, abolishing honorary posts."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"RÉMUNÉRATION DES PRÉFETS"</data>
+</node>
+<node id="&quot;HAUTS FONCTIONNAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Hauts Fonctionnaires refers to the proposal of reducing salaries for senior officials as part of broader austerity measures."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"HAUTS FONCTIONNAIRES"</data>
+</node>
+<node id="&quot;INDEMNITÉS DES ÉLUS&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"Indemnités des Élus indicates a proposed taxation or imposition on the allowances received by elected officials."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"INDEMNITÉS DES ÉLUS"</data>
+</node>
+<node id="&quot;RETRAITES ET BAS SALAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Retraites et Bas Salaires refer to proposals advocating for an increase in pensions and low wages to improve citizens' living standards."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"RETRAITES ET BAS SALAIRES"</data>
+</node>
+<node id="&quot;HOMME&quot;">
+  <data key="d0">"TYPEREPONDANT"</data>
+  <data key="d1">"Homme indicates a male respondent contributing to the citizen consultation, providing insights and views on various issues."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"HOMME"</data>
+</node>
+<node id="&quot;MAIL&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Mail represents the formal communication method used by the citizen to share grievances and proposals in the consultation process."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"MAIL"</data>
+</node>
+<node id="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Cahiers de Doléances refers to the broader initiative of collecting citizens’ grievances and proposals across various communes in France."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"CAHIERS DE DOLÉANCES"</data>
+</node>
+<node id="&quot;CHARENTE-MARITIME&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Charente-Maritime is the geographical region where Saint-Hilaire-de-Villefranche and its citizens are located, influencing the context of their consultation."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"CHARENTE-MARITIME"</data>
+</node>
+<node id="&quot;DATE&quot;">
+  <data key="d0">"VERBATIM"</data>
+  <data key="d1">"The date associated with the submission of the document, which adds to the temporal context of the citizen's contribution."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"DATE"</data>
+</node>
+<node id="&quot;PRÉNOM NOM&quot;">
+  <data key="d0">"TYPEREPONDANT"</data>
+  <data key="d1">"Prénom Nom represents a placeholder for the identity of the citizen respondent, who identifies themselves in the contribution."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"PRÉNOM NOM"</data>
+</node>
+<node id="&quot;ADRESSE MAIL&quot;">
+  <data key="d0">"VERBATIM"</data>
+  <data key="d1">"Adresse Mail indicates the contact information provided by the citizen, reflecting the formal nature of their contribution."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"ADRESSE MAIL"</data>
+</node>
+<node id="&quot;SIGNATURE&quot;">
+  <data key="d0">"VERBATIM"</data>
+  <data key="d1">"Signature signifies the personal commitment and authenticity of the citizen's contribution to the consultation process."</data>
+  <data key="d2">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d3">"SIGNATURE"</data>
+</node>
+<node id="&quot;DOLÉANCES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Doléances are expressions of grievances or complaints from citizens regarding public policies and services."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"DOLÉANCES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;PUBLICITÉS SCANDALEUSES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Publicités Scandaleuses refers to controversial and unnecessary advertisements that citizens believe should be taxed."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"PUBLICITÉS SCANDALEUSES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;CAMIONS DE LIVRAISON&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Camions de Livraison refers to delivery trucks for small packages, highlighting concerns about the destruction of traditional postal services."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"CAMIONS DE LIVRAISON"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;FRANÇAIS À L'ÉTRANGER&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Français à l'Étranger addresses the dilemma of where expatriate French citizens pay their taxes."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"FRANÇAIS À L'ÉTRANGER"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;PARLOTTES INUTILES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Parlottes Inutiles refers to excessive and unproductive discussions in media such as radio and television."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"PARLOTTES INUTILES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;RETRAITÉS À L'ÉTRANGER&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Retraités à l'Étranger pertains to issues regarding taxes and expenditures relevant to French retirees living abroad."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"RETRAITÉS À L'ÉTRANGER"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;OUVRIERS QUALIFIÉS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Ouvriers Qualifiés highlights the lack of skilled workers and questions about their pay."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"OUVRIERS QUALIFIÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ENTREPRISES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Entreprises references businesses that hire external service providers instead of local labor."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"ENTREPRISES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;BUREAUCRATES DES CDC&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Bureaucrates des CDC concerns bureaucrats from local communities exerting control over elected officials."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"BUREAUCRATES DES CDC"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;TVA&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"TVA (Taxe sur la Valeur Ajoutée) is referred to as a shameful tax, questioned for its proper allocation to the state."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"TVA"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;FLORENCE AUBENAS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Florence Aubenas is a field journalist whose insights the citizens want to hear more often, reflecting a demand for more on-the-ground reporting."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"FLORENCE AUBENAS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;GASPILLAGE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Gaspillage refers to wasteful practices that citizens propose should be taxed to discourage inefficiency."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"GASPILLAGE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;VITESSE SUR ROUTES DE CAMPAGNE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Vitesse sur Routes de Campagne addresses speed limits on rural roads, contrasting them with limits on central roads."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"VITESSE SUR ROUTES DE CAMPAGNE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;FONCTIONNAIRES BUREAUCRATES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Fonctionnaires Bureaucrates suggests eliminating bureaucratic civil servants in favor of increasing the number of inspectors."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"FONCTIONNAIRES BUREAUCRATES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;CONTRÔLEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Contrôleurs refers to the proposed increase in the number of inspectors to ensure better oversight."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"CONTRÔLEURS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;DESTRUCTION DE LA POSTE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Destruction de la Poste refers to the concern regarding the impact of delivery trucks on the traditional postal service, signaling a grievance over service reductions and accessibility."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"DESTRUCTION DE LA POSTE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;IMPÔTS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Impôts represents the general concerns around taxation, especially for expatriates and retirees, highlighting dissatisfaction with the tax system."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"IMPÔTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;BUREAUCRATIE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Bureaucratie refers to the frustrations with bureaucratic inefficiencies and the call for reducing unnecessary bureaucratic controls."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"BUREAUCRATIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;DÉPENSES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Dépenses highlights the issues related to how expenses are managed, particularly relating to retirees living abroad."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"DÉPENSES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;POLITIQUE FISCAL&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Politique Fiscal encompasses the broader public policies regarding tax and governance that citizens are critiquing."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"POLITIQUE FISCAL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;COMMUNES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Communes are local government entities that are seen as influenced by bureaucratic processes, often critiqued by citizens."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"COMMUNES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;FLORENCE AUBENAS, JOURNALISTE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Florence Aubenas is recognized as an important journalist whose perspective is sought for grounded reporting on societal issues."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"FLORENCE AUBENAS, JOURNALISTE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ÉTAT&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"État refers to the national government which is implied in the grievances related to tax allocation and public service management."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"ÉTAT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;PRESTATAIRES DE SERVICE EXTÉRIEURS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Prestataires de Service Extérieurs indicates external service providers hired by businesses, often viewed negatively by citizens due to perceived job loss."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"PRESTATAIRES DE SERVICE EXTÉRIEURS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;CONTRÔLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Contrôle represents the proposed increase in oversight of governmental and business practices to ensure accountability."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"CONTRÔLE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;POLITIQUE DE TRANSPORT&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Politique de Transport refers to the public policies surrounding transportation, which citizens believe could be improved for better infrastructure."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"POLITIQUE DE TRANSPORT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;MÉDIAS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Médias reflects the citizens' dissatisfaction with the current media discourse, particularly regarding the trivial discussions broadcasted."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"MÉDIAS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ÉCONOMIE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Économie pertains to the general state and management of the economy as it relates to public grievances on spending and taxation."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"ÉCONOMIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;IMPÔTS SUR LES RETRAITÉS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Impôts sur les Retraités highlights concerns specific to taxes imposed on retirees, usually living abroad, and questions about their financial burdens."</data>
+  <data key="d2">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d3">"IMPÔTS SUR LES RETRAITÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ANNULATION DE LA HAUSSE DE LA CSG SUR TOUS LES RETRAITÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to cancel the increase of the Contribution Sociale Généralisée (CSG) affecting all retirees."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"ANNULATION DE LA HAUSSE DE LA CSG SUR TOUS LES RETRAITÉS"</data>
+</node>
+<node id="&quot;REVALORISATION DES PENSIONS À LA HAUTEUR DE L’INFLATION : 1,7 % POUR 2018&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to revalue pensions to match inflation at a rate of 1.7% for the year 2018."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"REVALORISATION DES PENSIONS À LA HAUTEUR DE L’INFLATION : 1,7 % POUR 2018"</data>
+</node>
+<node id="&quot;RETOUR À L’INDEXATION SUR LES SALAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to return to the practice of indexing pensions to salaries."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"RETOUR À L’INDEXATION SUR LES SALAIRES"</data>
+</node>
+<node id="&quot;MAINTIEN DE LA PENSION DE RÉVERSION SELON LES MODES DE CALCUL ACTUELS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to maintain current calculation methods for spousal pensions."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"MAINTIEN DE LA PENSION DE RÉVERSION SELON LES MODES DE CALCUL ACTUELS"</data>
+</node>
+<node id="&quot;RÉTABLISSEMENT DE L’ISF&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to reinstate the Impôt de Solidarité sur la Fortune (ISF), a wealth tax."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"RÉTABLISSEMENT DE L’ISF"</data>
+</node>
+<node id="&quot;ÉRADICATION DE LA FRAUDE ET DE L’ÉVASION FISCALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal aimed at eradicating tax fraud and evasion, among other measures."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"ÉRADICATION DE LA FRAUDE ET DE L’ÉVASION FISCALE"</data>
+</node>
+<node id="&quot;ARRÊT DES TAXES SUR LES CARBURANTS, LE GAZ ET L’ÉLECTRICITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to stop the taxes on fuels, gas, and electricity, which are set to increase by 6% in March."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"ARRÊT DES TAXES SUR LES CARBURANTS, LE GAZ ET L’ÉLECTRICITÉ"</data>
+</node>
+<node id="&quot;ISF&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"ISF, or Impôt de Solidarité sur la Fortune, is a wealth tax in France that is proposed to be reinstated to enhance fiscal equity."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"ISF"</data>
+</node>
+<node id="&quot;TAXES SUR LES CARBURANTS&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"Taxes on fuels refer to the levies imposed on fuel, gas, and electricity, which are proposed to be halted to alleviate financial pressure on citizens."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"TAXES SUR LES CARBURANTS"</data>
+</node>
+<node id="&quot;FRAUDE FISCALE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Fraude fiscale refers to tax fraud, which citizens are demanding to eradicate as part of proposals for better fiscal governance."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"FRAUDE FISCALE"</data>
+</node>
+<node id="&quot;ÉVASION FISCALE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Évasion fiscale refers to tax evasion, which citizens express as a grievance needing eradication and reform."</data>
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d3">"ÉVASION FISCALE"</data>
+</node>
+<node id="&quot;ABOLIR LES TAXES SUR LES CARBURANTS&quot;">
+  <data key="d2">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d1">"The proposal to stop fuel taxes is tied to grievances of tax burdens, addressing economic issues affecting citizens."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;MONSIEUR MACRON&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The concerns expressed by the Communes like Saint-Hilaire-de-Villefranche are directed towards Monsieur Macron for urgent attention."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-None" target="thematique-fiscalite">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;MONSIEUR MACRON&quot;" target="&quot;CSG&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Monsieur Macron is criticized for the implementation of the CSG that financially burdens retirees and working-class citizens."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-None" target="thematique-sanitaire">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;PENSIONS&quot;" target="&quot;RETRAITÉS&quot;">
+  <data key="d5">19.0</data>
+  <data key="d6">"Retraités are directly affected by the state of Pensions which are inadequate to cover the financial challenges they face."&lt;SEP&gt;"Retraités rely on Pensions as their primary source of income, which is proposed to be revalued.";</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e&lt;SEP&gt;contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-None" target="thematique-politique">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CSG&quot;" target="&quot;RETRAITÉS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Retraités are directly affected by the proposed annulment of the CSG increase, which impacts their financial situation."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-None" target="thematique-social">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;RETRAITÉS&quot;" target="&quot;GROGNE DE LA POPULATION LABORIEUSE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Retraités express a shared sentiment of dissatisfaction reflected in the Grogne de la Population Laborieuse about their financial circumstances."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="citoyen-Unknown-2" target="contribution-Unknown-2">
-  <data key="d25">SOUMET</data>
-  <data key="d26">1.0</data>
-  <data key="d27">contribution-Unknown-2</data>
+<edge source="&quot;RETRAITÉS&quot;" target="&quot;CHARGES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Charges represent the financial hurdles that Retraités have to face, leading to their discontent and grievances."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-2" target="thematique-social">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;RETRAITÉS&quot;" target="&quot;SUPPRESSION DE LA CSG&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Suppression de la CSG is a proposal directly aimed to benefit Retraités by easing their financial pressures."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-2" target="thematique-democratie">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;RETRAITÉS&quot;" target="&quot;INDEXATION DES PENSIONS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Indexation des Pensions is proposed by Retraités as a necessary adjustment to improve their standard of living."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-2" target="thematique-politique">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;RETRAITÉS&quot;" target="&quot;RATTRAPAGE DE 3 % COMPENSATOIRE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Rattrapage de 3 % compensatoire is a demand made by Retraités to address their stagnant pension levels amidst rising costs."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="citoyen-Unknown-3" target="contribution-Unknown-3">
-  <data key="d25">SOUMET</data>
-  <data key="d26">1.0</data>
-  <data key="d27">contribution-Unknown-3</data>
+<edge source="&quot;RETRAITÉS&quot;" target="&quot;ISF&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Retraités are involved in the discussions surrounding ISF as potential beneficiaries of fiscal equity through its reinstatement."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-3" target="thematique-fiscalite">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+<edge source="&quot;PROPRIÉTAIRES&quot;" target="&quot;POLITIQUE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Propriétaires are affected by government Politique which influences their financial stability and living conditions."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-3" target="thematique-immigration">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;EGOÏSME&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Politique enacted reflects a belief in Egoïsme that prioritizes wealthy citizens, leading to socioeconomic disparities."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-3" target="thematique-politique">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;LUXUEUX&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Luxueux sector is mentioned in relation to Politique, indicating that benefits are disproportionately directed toward the wealthy at the expense of others."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="citoyen-Unknown-4" target="contribution-Unknown-4">
-  <data key="d25">SOUMET</data>
-  <data key="d26">1.0</data>
-  <data key="d27">contribution-Unknown-4</data>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;INFRASTRUCTURES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Infrastructures are at risk due to the government's prioritization of financial policies that favor the wealthy, impacting public investment."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="contribution-Unknown-4" target="thematique-fiscalite">
-  <data key="d25">ABORDE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;ENSEIGNEMENT&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Enseignement is discussed as an area that suffers from the effects of Politique that favors the affluent over public funding for education."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Critique du choix fiscal" target="Difficultés financières des retraités">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;POLITIQUE&quot;" target="&quot;SYSTÈME DE SANTÉ&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Système de Santé is impacted negatively by Politique that diverts resources away from essential public services to wealthier segments."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Critique du choix fiscal" target="Confiance en gouvernement">
-  <data key="d25">TRADUIT</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CHARGES INCONTOURNABLES&quot;" target="&quot;DETTES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Charges Incontournables contribute to the Dettes accrued by retirees, showing the financial pressure they are under."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Critique du choix fiscal" target="Fiscalité">
-  <data key="d25">SINSCRIT_DANS</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CHARGES INCONTOURNABLES&quot;" target="&quot;INFLATION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Inflation exacerbates the burden of Charges Incontournables for retirees, highlighting the need for sufficient pension adjustments."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Suppression CSG">
-  <data key="d25">FAIT_REMONTER</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;BANQUES&quot;" target="&quot;DETTES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Banques are implicated in the creation of Dettes for citizens, pushing them into financial hardship due to lending practices."</data>
+  <data key="d7">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Indexation des pensions">
-  <data key="d25">FAIT_REMONTER</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;OLIGARCHIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizens express a grievance about the perceived oligarchy, pushing for the end of it for a genuine democracy."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Rattrapage des pensions">
-  <data key="d25">FAIT_REMONTER</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;DÉMOCRATIE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The document reflects the citizens' desire for a more robust system of democracy that addresses their needs."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Système de santé">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.7</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;VOTES BLANCS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The demands for the recognition of blank votes show the citizens' desire for a more inclusive electoral system."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Enseignement">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.7</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;CASIER JUDICIAIRE&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The proposal for a clean criminal record for candidates indicates a focus on integrity in governance as expressed in the document."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Organismes bancaires">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.7</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;SÉNATEURS ET DÉPUTÉS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The call to reduce the number of senators and deputies is a key issue in the proposed reforms for better representation."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Social">
-  <data key="d25">SINSCRIT_DANS</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;INDEMNISATION&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The demand for attendance-based compensation speaks to the citizens' wish for accountability among their elected officials."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Difficultés financières des retraités" target="Retraite">
-  <data key="d25">SINSCRIT_DANS</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;MANDAT&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal for ending indemnities and privileges at the end of a mandate highlights the accountability sought by citizens."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Suppression CSG" target="CSG">
-  <data key="d25">PORTE_SUR_IMPOT</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;RÉMUNÉRATION DES PRÉFETS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The suggestion for paying prefects based strictly on their function indicates a desire for efficiency and accountability in public service."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Indexation des pensions" target="CSG">
-  <data key="d25">PORTE_SUR_IMPOT</data>
-  <data key="d26">0.2</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;HAUTS FONCTIONNAIRES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The reduction in salaries for high officials is part of the broader grievance regarding fiscal measures and equity within governance."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Rattrapage des pensions" target="CSG">
-  <data key="d25">PORTE_SUR_IMPOT</data>
-  <data key="d26">0.2</data>
-  <data key="d27">contrib-9928b46a9cc2ad581e27b8a99291aea7</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;INDEMNITÉS DES ÉLUS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to impose taxes on elected officials' allowances reflects a demand for accountability and fairness in governance."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="CSG" target="Annulation hausse CSG retraités">
-  <data key="d25">PORTE_SUR_IMPOT</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;RETRAITES ET BAS SALAIRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The advocacy for increasing pensions and low salaries shows the connection between citizens’ welfare and the proposed fiscal measures."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin de l'oligarchie pour une vraie démocratie" target="Diminution des sénateurs et députés">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;HOMME&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"The contribution is submitted by a male respondent, indicating the gender of the contributor in the consultation."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin de l'oligarchie pour une vraie démocratie" target="Indemnisation à la réelle présence">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;MAIL&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Mail serves as the format through which the citizen expresses their grievances and proposals in the consultation process."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin de l'oligarchie pour une vraie démocratie" target="Fin des indemnités et privilèges des mandats">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The document is part of the larger initiative of Cahiers de Doléances designed to gather citizen input nationwide."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin de l'oligarchie pour une vraie démocratie" target="Rémunération des préfets uniquement en fonction">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;CHARENTE-MARITIME&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The commune's location in Charente-Maritime contextualizes the citizen's grievances and proposals in the regional governance."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin de l'oligarchie pour une vraie démocratie" target="Diminution du salaire des hauts fonctionnaires">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;DATE&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"The date of submission provides a timeline for understanding when the grievances were expressed by citizens."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin de l'oligarchie pour une vraie démocratie" target="Imposition des indemnités des élus">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;PRÉNOM NOM&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The personal identifier indicates the ownership of the grievances and proposals within the consultation document."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin de l'oligarchie pour une vraie démocratie" target="Augmentation des retraites et bas salaires">
-  <data key="d25">EXPRIME</data>
-  <data key="d26">0.9</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;ADRESSE MAIL&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"Providing an email address reflects the need for communication and follow-up regarding the citizen's contributions."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Diminution des sénateurs et députés" target="Diminution du salaire des hauts fonctionnaires">
-  <data key="d25">FORMULE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;CAHIER DE SAINT-HILAIRE-DE-VILLEFRANCHE&quot;" target="&quot;SIGNATURE&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The inclusion of a signature serves to authenticate the contribution and affirm the commitment of the citizen to their expressed viewpoints."</data>
+  <data key="d7">contrib-60c9288090317e8734c920a231b118a8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Diminution des sénateurs et députés" target="Augmentation des retraites et bas salaires">
-  <data key="d25">FORMULE</data>
-  <data key="d26">0.7</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;PUBLICITÉS SCANDALEUSES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances includes the request to tax controversial advertisements, showcasing citizen discontent."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Diminution des sénateurs et députés" target="Démocratie">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;CAMIONS DE LIVRAISON&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances points to the issue surrounding delivery trucks and their impact on postal services."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Indemnisation à la réelle présence" target="Fin des indemnités et privilèges des mandats">
-  <data key="d25">FORMULE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;FRANÇAIS À L'ÉTRANGER&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances encompasses the query regarding tax responsibilities of French citizens living abroad."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Indemnisation à la réelle présence" target="Élus">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;PARLOTTES INUTILES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Doléances mentions the excessive talk on media as a significant concern among citizens."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin des indemnités et privilèges des mandats" target="Imposition des indemnités des élus">
-  <data key="d25">FORMULE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;RETRAITÉS À L'ÉTRANGER&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances addresses issues faced by French retirees abroad, linking to taxation concerns."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Fin des indemnités et privilèges des mandats" target="Hauts fonctionnaires">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;OUVRIERS QUALIFIÉS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances highlights the need for skilled workers and critiques their compensation."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Rémunération des préfets uniquement en fonction" target="Préfets">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;ENTREPRISES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Doléances comments on businesses preferring outsourcing over employing local workers."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Diminution du salaire des hauts fonctionnaires" target="Hauts fonctionnaires">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;BUREAUCRATES DES CDC&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances critiques bureaucrats for their control over local elected representatives."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Imposition des indemnités des élus" target="Élus">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.8</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;TVA&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Doléances raises concerns about the Taxe sur la Valeur Ajoutée, questioning its fairness and allocation."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
-<edge source="Augmentation des retraites et bas salaires" target="Démocratie">
-  <data key="d25">CONCERNE</data>
-  <data key="d26">0.7</data>
-  <data key="d27">contrib-60c9288090317e8734c920a231b118a8</data>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;FLORENCE AUBENAS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Doléances expresses a desire for more coverage from journalist Florence Aubenas, indicating appreciation for dedicated field reporting."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;GASPILLAGE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances suggests taxation on wasteful practices as a means to address citizen concerns on resource use."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;VITESSE SUR ROUTES DE CAMPAGNE&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Doléances raises a complaint about inconsistent speed limits on rural versus central roads."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;FONCTIONNAIRES BUREAUCRATES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances proposes the reduction of bureaucratic roles in favor of enhancing local oversight capacity."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;CONTRÔLEURS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances aligns with the suggestion to increase inspectors for better governance of public services."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;DESTRUCTION DE LA POSTE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances encompasses the concern regarding the impact of modern delivery services on traditional postal services."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;IMPÔTS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances expresses a broader concern regarding taxation and its implications for various citizen demographics."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;BUREAUCRATIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances critiques the bureaucratic inefficiency that citizens face in various public services."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;DÉPENSES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances includes grievances about the management of public expenditures, especially related to retirees."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;POLITIQUE FISCAL&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances addresses the overall grievances with the fiscal policies implemented by the government."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;COMMUNES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances mentions local governments (communes) as part of the bureaucratic apparatus critiqued by citizens."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;FLORENCE AUBENAS, JOURNALISTE&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Doléances highlights a desire for perspectives from influential journalists like Florence Aubenas to address current issues."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;ÉTAT&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Doléances implicates the national government's role in managing taxation and public grievances."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;PRESTATAIRES DE SERVICE EXTÉRIEURS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances critiques the reliance on external service providers and calls for greater support for local workers."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;CONTRÔLE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Doléances suggests the need for increased control and oversight in both governmental and corporate practices."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;POLITIQUE DE TRANSPORT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances refers to public policy issues regarding transportation that citizens deem inadequate."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;MÉDIAS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Doléances expresses a desire for improved media discussion and coverage of relevant societal issues."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;ÉCONOMIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Doléances reflects broader economic concerns that influence public dissatisfaction with existing policies."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES&quot;" target="&quot;IMPÔTS SUR LES RETRAITÉS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Doléances raises specific concerns regarding taxation on retirees living abroad, reflecting their financial struggles."</data>
+  <data key="d7">contrib-24e8beaa0c50b8e16015df19df82ab5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ANNULATION DE LA HAUSSE DE LA CSG SUR TOUS LES RETRAITÉS&quot;" target="&quot;REVALORISATION DES PENSIONS À LA HAUTEUR DE L’INFLATION : 1,7 % POUR 2018&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal addresses the financial concerns of retirees and aims to provide them with support in light of inflation."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;REVALORISATION DES PENSIONS À LA HAUTEUR DE L’INFLATION : 1,7 % POUR 2018&quot;" target="&quot;RETOUR À L’INDEXATION SUR LES SALAIRES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"These proposals are related as both focus on adjusting pensions to keep pace with economic changes like inflation and salary increments."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MAINTIEN DE LA PENSION DE RÉVERSION SELON LES MODES DE CALCUL ACTUELS&quot;" target="&quot;RÉTABLISSEMENT DE L’ISF&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Both proposals relate to financial security and fairness in the taxation system and pension benefits for retirees."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MAINTIEN DE LA PENSION DE RÉVERSION SELON LES MODES DE CALCUL ACTUELS&quot;" target="&quot;ARRÊT DES TAXES SUR LES CARBURANTS, LE GAZ ET L’ÉLECTRICITÉ&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Unifying factor here is a concern for the financial welfare of citizens, particularly in managing costs versus benefits of public services."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉTABLISSEMENT DE L’ISF&quot;" target="&quot;ÉRADICATION DE LA FRAUDE ET DE L’ÉVASION FISCALE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"These proposals share a common goal of reforming the taxation system to ensure fairness and equity among citizens."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ÉRADICATION DE LA FRAUDE ET DE L’ÉVASION FISCALE&quot;" target="&quot;ARRÊT DES TAXES SUR LES CARBURANTS, LE GAZ ET L’ÉLECTRICITÉ&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Both proposals focus on reducing the financial burden on citizens, though through different mechanisms of fiscal reform."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FRAUDE FISCALE&quot;" target="&quot;ÉVASION FISCALE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Both grievances focus on the need for reforming the tax system to eliminate unlawful practices that burden taxpayers."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FRAUDE FISCALE&quot;" target="&quot;ABOLIR LES TAXES SUR LES CARBURANTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to stop fuel taxes is tied to grievances of tax burdens, addressing economic issues affecting citizens."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ÉVASION FISCALE&quot;" target="&quot;ABOLIR LES TAXES SUR LES CARBURANTS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Addressing fuel taxes relates to broader concerns about financial pressure from taxation that invites citizens to seek justice against evasion."</data>
+  <data key="d7">contrib-26e88cf1d221dc7963c000078e88fe5e</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
 </edge>
 </graph></graphml>
