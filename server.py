@@ -71,6 +71,77 @@ DATA_PATH = DATA_SOURCES.get(DEFAULT_DATA_SOURCE, {}).get('path', './law_data')
 
 
 # ============================================================================
+# GraphRAG Instance Cache (Feature 006-graph-optimization, T015)
+# ============================================================================
+
+import time
+from collections import OrderedDict
+
+class GraphRAGCache:
+    """
+    LRU cache for GraphRAG instances to avoid re-initialization per query.
+
+    Performance impact: GraphRAG init takes 15-30s per instance.
+    With caching, subsequent queries to the same commune are instant.
+
+    TTL: 5 minutes (300 seconds) to balance memory vs performance.
+    Max size: 10 instances (covers typical multi-commune queries).
+    """
+
+    def __init__(self, maxsize: int = 10, ttl_seconds: int = 300):
+        self._cache: OrderedDict = OrderedDict()  # path -> (instance, timestamp)
+        self.maxsize = maxsize
+        self.ttl_seconds = ttl_seconds
+        self._hits = 0
+        self._misses = 0
+
+    def get(self, working_dir: str):
+        """Get cached GraphRAG instance if valid, None otherwise."""
+        if working_dir not in self._cache:
+            self._misses += 1
+            return None
+
+        instance, timestamp = self._cache[working_dir]
+
+        # Check TTL
+        if time.time() - timestamp > self.ttl_seconds:
+            del self._cache[working_dir]
+            self._misses += 1
+            logger.debug(f"GraphRAG cache expired for {working_dir}")
+            return None
+
+        # Move to end (LRU)
+        self._cache.move_to_end(working_dir)
+        self._hits += 1
+        logger.debug(f"GraphRAG cache hit for {working_dir} (hits={self._hits}, misses={self._misses})")
+        return instance
+
+    def put(self, working_dir: str, instance):
+        """Cache a GraphRAG instance."""
+        # Evict oldest if at capacity
+        while len(self._cache) >= self.maxsize:
+            oldest_key = next(iter(self._cache))
+            del self._cache[oldest_key]
+            logger.debug(f"GraphRAG cache evicted: {oldest_key}")
+
+        self._cache[working_dir] = (instance, time.time())
+        logger.debug(f"GraphRAG cache stored: {working_dir} (size={len(self._cache)})")
+
+    def stats(self) -> dict:
+        """Return cache statistics."""
+        return {
+            "size": len(self._cache),
+            "maxsize": self.maxsize,
+            "hits": self._hits,
+            "misses": self._misses,
+            "hit_rate": self._hits / (self._hits + self._misses) if (self._hits + self._misses) > 0 else 0
+        }
+
+# Global cache instance
+_graphrag_cache = GraphRAGCache(maxsize=10, ttl_seconds=300)
+
+
+# ============================================================================
 # Enums and Models
 # ============================================================================
 
@@ -655,16 +726,23 @@ async def grand_debat_query_all(
         target_communes = sorted_communes[:max_communes]
 
         # Semaphore to limit concurrent API calls (avoid OpenAI rate limits)
-        # Since we query BOTH modes per commune, MAX_CONCURRENT=2 means max 4 API calls
-        MAX_CONCURRENT = 2  # Max 2 concurrent commune queries (4 API calls total)
+        # Feature 006-graph-optimization: Increased from 2 to 6 for better parallelism
+        # With single_mode=True, this allows 6 concurrent API calls (was 4 with dual mode)
+        MAX_CONCURRENT = 6  # Max 6 concurrent commune queries for improved throughput
         semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+
+        # Feature 006-graph-optimization T016: Single mode option
+        # When True, only runs global mode (halves LLM calls)
+        # Global mode provides community summaries which are sufficient for cross-commune analysis
+        single_mode = True  # Default to single mode for performance
 
         async def query_single_commune(commune_info):
             """
             Query a single commune with rate limiting.
-            Runs BOTH local and global modes to get complete provenance:
-            - local mode: entities, relationships, source quotes
-            - global mode: community summaries
+
+            Feature 006-graph-optimization:
+            - T015: Uses GraphRAG instance cache to avoid re-initialization
+            - T016: single_mode=True skips local mode (50% fewer LLM calls)
             """
             async with semaphore:  # Acquire semaphore before making API call
                 commune_id = commune_info['id']
@@ -673,36 +751,44 @@ async def grand_debat_query_all(
                     return None
 
                 try:
-                    rag = GraphRAG(
-                        working_dir=str(commune_path),
-                        best_model_func=gpt_4o_mini_complete,
-                        cheap_model_func=gpt_4o_mini_complete,
-                    )
+                    # T015: Try to get cached GraphRAG instance
+                    working_dir = str(commune_path)
+                    rag = _graphrag_cache.get(working_dir)
 
-                    # Query in BOTH modes with delay between them to avoid rate limits
-                    local_result = await rag.aquery(
-                        query,
-                        param=QueryParam(mode="local", return_provenance=include_sources)
-                    )
+                    if rag is None:
+                        # Cache miss - create new instance
+                        rag = GraphRAG(
+                            working_dir=working_dir,
+                            best_model_func=gpt_4o_mini_complete,
+                            cheap_model_func=gpt_4o_mini_complete,
+                        )
+                        _graphrag_cache.put(working_dir, rag)
 
-                    # Small delay between modes to spread out API calls
-                    await asyncio.sleep(0.5)
+                    # T016: Single mode optimization
+                    local_result = None
+                    merged_provenance = {}
 
+                    if not single_mode:
+                        # Original dual-mode: query both local and global
+                        local_result = await rag.aquery(
+                            query,
+                            param=QueryParam(mode="local", return_provenance=include_sources)
+                        )
+                        await asyncio.sleep(0.5)  # Rate limit delay
+
+                        if isinstance(local_result, dict):
+                            local_prov = local_result.get("provenance", {}) or {}
+                            merged_provenance.update({
+                                "entities": local_prov.get("entities", []),
+                                "relationships": local_prov.get("relationships", []),
+                                "source_quotes": local_prov.get("source_quotes", []),
+                            })
+
+                    # Always run global mode
                     global_result = await rag.aquery(
                         query,
                         param=QueryParam(mode="global", return_provenance=include_sources)
                     )
-
-                    # Merge provenance from both modes
-                    merged_provenance = {}
-
-                    if isinstance(local_result, dict):
-                        local_prov = local_result.get("provenance", {}) or {}
-                        merged_provenance.update({
-                            "entities": local_prov.get("entities", []),
-                            "relationships": local_prov.get("relationships", []),
-                            "source_quotes": local_prov.get("source_quotes", []),
-                        })
 
                     if isinstance(global_result, dict):
                         global_prov = global_result.get("provenance", {}) or {}

@@ -49,6 +49,103 @@ from .base import (
 )
 
 
+# ============================================================================
+# LLM Response Cache Singleton (Feature 006-graph-optimization, T017)
+# ============================================================================
+
+class LLMResponseCacheSingleton:
+    """
+    Singleton cache for LLM responses shared across all GraphRAG instances.
+
+    Problem: Each GraphRAG instance creates its own llm_response_cache,
+    meaning identical queries to different communes don't benefit from caching.
+
+    Solution: A global singleton that all instances share, with TTL-based expiration.
+
+    Performance impact: -5-20s for overlapping queries across communes.
+    """
+    _instance = None
+    _cache: dict = None
+    _timestamps: dict = None
+    _ttl_seconds: int = 3600  # 1 hour
+    _max_entries: int = 1000
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+            cls._instance._cache = {}
+            cls._instance._timestamps = {}
+            cls._instance._hits = 0
+            cls._instance._misses = 0
+        return cls._instance
+
+    async def get(self, key: str):
+        """Get cached response if valid."""
+        import time
+        if key not in self._cache:
+            self._misses += 1
+            return None
+
+        # Check TTL
+        if time.time() - self._timestamps.get(key, 0) > self._ttl_seconds:
+            del self._cache[key]
+            del self._timestamps[key]
+            self._misses += 1
+            return None
+
+        self._hits += 1
+        return self._cache[key]
+
+    async def set(self, key: str, value):
+        """Cache a response."""
+        import time
+        # Evict oldest entries if at capacity
+        if len(self._cache) >= self._max_entries:
+            # Remove oldest 10%
+            sorted_keys = sorted(self._timestamps.keys(), key=lambda k: self._timestamps[k])
+            for k in sorted_keys[:len(sorted_keys) // 10]:
+                del self._cache[k]
+                del self._timestamps[k]
+
+        self._cache[key] = value
+        self._timestamps[key] = time.time()
+
+    async def filter_keys(self, keys: list) -> list:
+        """Return keys not in cache (for upsert operations)."""
+        return [k for k in keys if k not in self._cache]
+
+    async def upsert(self, data: dict):
+        """Batch upsert."""
+        for k, v in data.items():
+            await self.set(k, v)
+
+    async def get_by_id(self, key: str):
+        """Alias for get."""
+        return await self.get(key)
+
+    async def get_by_ids(self, keys: list):
+        """Batch get."""
+        return [await self.get(k) for k in keys]
+
+    async def index_done_callback(self):
+        """No-op for interface compatibility."""
+        pass
+
+    def stats(self) -> dict:
+        """Return cache statistics."""
+        return {
+            "size": len(self._cache),
+            "max_entries": self._max_entries,
+            "hits": self._hits,
+            "misses": self._misses,
+            "hit_rate": self._hits / (self._hits + self._misses) if (self._hits + self._misses) > 0 else 0
+        }
+
+
+# Global singleton instance
+_llm_response_cache_singleton = LLMResponseCacheSingleton()
+
+
 @dataclass
 class GraphRAG:
     working_dir: str = field(
@@ -178,10 +275,10 @@ class GraphRAG:
             namespace="text_chunks", global_config=asdict(self)
         )
 
+        # Feature 006-graph-optimization T017: Use singleton cache for LLM responses
+        # This allows responses to be shared across all GraphRAG instances
         self.llm_response_cache = (
-            self.key_string_value_json_storage_cls(
-                namespace="llm_response_cache", global_config=asdict(self)
-            )
+            _llm_response_cache_singleton
             if self.enable_llm_cache
             else None
         )

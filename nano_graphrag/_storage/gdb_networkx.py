@@ -110,6 +110,28 @@ class NetworkXStorage(BaseGraphStorage):
             "node2vec": self._node2vec_embed,
         }
 
+        # Feature 006-graph-optimization T026: Entity name hash index for O(1) lookup
+        # Maps normalized entity_name -> node_id
+        # Eliminates O(n) iteration in get_node_by_name
+        self._entity_name_index: Dict[str, str] = {}
+        self._build_entity_name_index()
+
+    def _build_entity_name_index(self):
+        """Build hash index from entity_name -> node_id for O(1) lookups."""
+        self._entity_name_index.clear()
+        for node_id, node_data in self._graph.nodes(data=True):
+            entity_name = node_data.get('entity_name', '')
+            if entity_name:
+                normalized = entity_name.upper().strip()
+                self._entity_name_index[normalized] = node_id
+        logger.debug(f"Built entity name index with {len(self._entity_name_index)} entries")
+
+    def _update_entity_name_index(self, node_id: str, entity_name: str):
+        """Update index when a node is added/modified."""
+        if entity_name:
+            normalized = entity_name.upper().strip()
+            self._entity_name_index[normalized] = node_id
+
     async def index_done_callback(self):
         NetworkXStorage.write_nx_graph(self._graph, self._graphml_xml_file)
 
@@ -123,14 +145,23 @@ class NetworkXStorage(BaseGraphStorage):
         return self._graph.nodes.get(node_id)
 
     async def get_node_by_name(self, entity_name: str) -> Union[dict, None]:
-        """Look up node by entity_name attribute instead of node ID (case-insensitive)."""
+        """
+        Look up node by entity_name attribute (case-insensitive).
+
+        Feature 006-graph-optimization T026: O(1) lookup using hash index
+        (was O(n) iteration over all nodes)
+        """
         normalized_search = entity_name.upper().strip()
         logger.debug(f"get_node_by_name: Searching for '{entity_name}' (normalized: '{normalized_search}')")
-        for node_id, node_data in self._graph.nodes(data=True):
-            stored_name = node_data.get('entity_name', '')
-            if stored_name.upper().strip() == normalized_search:
+
+        # T026: O(1) hash lookup
+        node_id = self._entity_name_index.get(normalized_search)
+        if node_id is not None:
+            node_data = self._graph.nodes.get(node_id)
+            if node_data:
                 logger.debug(f"get_node_by_name: FOUND match! node_id={node_id}, entity_type={node_data.get('entity_type', 'MISSING')}")
                 return node_data
+
         logger.debug(f"get_node_by_name: NO MATCH found for '{entity_name}'")
         return None
 
