@@ -1154,6 +1154,175 @@ async def grand_debat_get_contributions(
         }, ensure_ascii=False)
 
 
+@mcp.tool(
+    name="grand_debat_get_full_graph",
+    annotations={
+        "title": "Get Full Entity Graph (No LLM)",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False
+    }
+)
+async def grand_debat_get_full_graph(
+    max_communes: Annotated[int, Field(description="Max communes to load (default: 50 = ALL)", ge=1, le=50)] = 50,
+    include_relationships: Annotated[bool, Field(description="Include relationships from GraphML files")] = True
+) -> str:
+    """
+    Get the full entity graph from all communes WITHOUT running LLM queries.
+
+    This tool directly reads entity data from vdb_entities.json files and
+    optionally parses GraphML files for relationships. It's designed for
+    fast initial graph loading (200+ nodes) without API calls or LLM costs.
+
+    Perfect for:
+    - Initial page load with full graph visualization
+    - Exploring entity landscape before semantic queries
+    - Performance-critical applications
+
+    Args:
+        max_communes: How many communes to load (default: 50 = ALL)
+        include_relationships: Whether to parse GraphML for relationships (slower but complete)
+
+    Returns:
+        JSON with all entities and relationships across communes
+    """
+    try:
+        # Get all communes sorted by entity count
+        all_communes = list_communes()
+        if not all_communes:
+            return json.dumps({
+                "success": False,
+                "error": "No communes found"
+            }, ensure_ascii=False)
+
+        sorted_communes = sorted(all_communes, key=lambda x: x.get('entity_count', 0), reverse=True)
+        target_communes = sorted_communes[:max_communes]
+
+        all_entities = []
+        all_relationships = []
+        entity_id_to_commune = {}  # Track which commune each entity belongs to
+
+        # Load entities from each commune
+        for commune_info in target_communes:
+            commune_id = commune_info['id']
+            commune_path = get_commune_path(commune_id)
+            if not commune_path:
+                continue
+
+            try:
+                # Load entities from vdb_entities.json
+                entities_file = commune_path / "vdb_entities.json"
+                if entities_file.exists():
+                    with open(entities_file, 'r') as f:
+                        entities_data = json.load(f)
+
+                    # Parse entity data (handles both formats)
+                    if isinstance(entities_data, dict):
+                        entity_list = []
+                        if 'data' in entities_data and isinstance(entities_data['data'], list):
+                            entity_list = entities_data['data']
+                        elif '__data__' in entities_data:
+                            entity_list = [
+                                {"__id__": k, **v} if isinstance(v, dict) else {"__id__": k, "entity_name": str(v)}
+                                for k, v in entities_data['__data__'].items()
+                            ]
+
+                        for entity_info in entity_list:
+                            if not isinstance(entity_info, dict):
+                                continue
+
+                            entity_id = entity_info.get('__id__', '')
+                            entity_name = entity_info.get('entity_name', entity_id)
+                            # Remove quotes from entity names
+                            if entity_name.startswith('"') and entity_name.endswith('"'):
+                                entity_name = entity_name[1:-1]
+
+                            all_entities.append({
+                                "id": entity_id,
+                                "name": entity_name,
+                                "type": entity_info.get('entity_type', 'CIVIC_ENTITY'),
+                                "description": entity_info.get('description', ''),
+                                "source_commune": commune_id,
+                                "importance_score": 0.5  # Default importance
+                            })
+                            entity_id_to_commune[entity_id] = commune_id
+
+                # Load relationships from GraphML if requested
+                if include_relationships:
+                    graphml_file = commune_path / "graph_chunk_entity_relation.graphml"
+                    if graphml_file.exists():
+                        try:
+                            import xml.etree.ElementTree as ET
+                            tree = ET.parse(graphml_file)
+                            root = tree.getroot()
+
+                            # GraphML namespace
+                            ns = {'g': 'http://graphml.graphdrawing.org/xmlns'}
+
+                            # Parse edges (relationships)
+                            for edge in root.findall('.//g:edge', ns):
+                                source_id = edge.get('source', '')
+                                target_id = edge.get('target', '')
+
+                                # Only include relationships between entities we loaded
+                                if source_id in entity_id_to_commune and target_id in entity_id_to_commune:
+                                    # Extract relationship type from edge data
+                                    rel_type = "RELATED_TO"
+                                    weight = 1.0
+                                    description = ""
+
+                                    for data in edge.findall('g:data', ns):
+                                        key = data.get('key', '')
+                                        if key == 'type' or key == 'relation':
+                                            rel_type = data.text or "RELATED_TO"
+                                        elif key == 'weight':
+                                            try:
+                                                weight = float(data.text or 1.0)
+                                            except ValueError:
+                                                weight = 1.0
+                                        elif key == 'description':
+                                            description = data.text or ""
+
+                                    all_relationships.append({
+                                        "source": source_id,
+                                        "target": target_id,
+                                        "type": rel_type,
+                                        "weight": weight,
+                                        "description": description,
+                                        "source_commune": commune_id
+                                    })
+
+                        except Exception as e:
+                            logger.warning(f"Failed to parse GraphML for {commune_id}: {e}")
+
+            except Exception as e:
+                logger.warning(f"Failed to load entities for {commune_id}: {e}")
+                continue
+
+        return json.dumps({
+            "success": True,
+            "total_communes": len(target_communes),
+            "total_entities": len(all_entities),
+            "total_relationships": len(all_relationships),
+            "communes_loaded": [c['id'] for c in target_communes],
+            "data_source": "Grand Débat National 2019",
+            "provenance": {
+                "entities": all_entities,
+                "relationships": all_relationships,
+                "source_quotes": [],  # No quotes in this fast-load mode
+                "communities": []  # No communities in this fast-load mode
+            }
+        }, indent=2, ensure_ascii=False)
+
+    except Exception as e:
+        logger.error(f"Get full graph error: {e}")
+        return json.dumps({
+            "success": False,
+            "error": str(e)
+        }, ensure_ascii=False)
+
+
 # ============================================================================
 # Server Entry Point
 # ============================================================================
