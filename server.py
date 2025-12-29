@@ -614,11 +614,16 @@ async def grand_debat_query(
         from nano_graphrag import GraphRAG, QueryParam
         from nano_graphrag._llm import gpt_4o_mini_complete
 
-        rag = GraphRAG(
-            working_dir=str(commune_path),
-            best_model_func=gpt_4o_mini_complete,
-            cheap_model_func=gpt_4o_mini_complete,
-        )
+        # Use cached GraphRAG instance to avoid slow NanoVectorDB re-initialization
+        working_dir = str(commune_path)
+        rag = _graphrag_cache.get(working_dir)
+        if rag is None:
+            rag = GraphRAG(
+                working_dir=working_dir,
+                best_model_func=gpt_4o_mini_complete,
+                cheap_model_func=gpt_4o_mini_complete,
+            )
+            _graphrag_cache.put(working_dir, rag)
 
         # Query with provenance for end-to-end interpretability
         result = await rag.aquery(
