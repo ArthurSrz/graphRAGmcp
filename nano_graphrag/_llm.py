@@ -181,6 +181,9 @@ async def gpt_5_nano_complete(
     # GPT-5 models use max_completion_tokens instead of max_tokens
     if "max_tokens" in kwargs:
         kwargs["max_completion_tokens"] = kwargs.pop("max_tokens")
+    # Set temperature to 0.7 to match Dust RAG configuration for fair comparison
+    if "temperature" not in kwargs:
+        kwargs["temperature"] = 0.7
     return await openai_complete_if_cache(
         "gpt-5-nano",
         prompt,

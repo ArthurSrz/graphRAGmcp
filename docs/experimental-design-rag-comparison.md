@@ -420,12 +420,20 @@ This appendix documents all configuration parameters for both RAG systems to ens
 
 ### G.3 Model Alignment Summary
 
-| System | Generation Model | Embedding Model | Temperature |
-|--------|------------------|-----------------|-------------|
-| **Dust RAG** | `gpt-5-nano` | N/A (Dust-managed) | 0.7 |
-| **GraphRAG MCP** | `gpt-5-nano` | `text-embedding-3-small` | 0 (default) |
+| System | Generation Model | Embedding Model | Temperature | Timeout |
+|--------|------------------|-----------------|-------------|---------|
+| **Dust RAG** | `gpt-5-nano` | N/A (Dust-managed) | 0.7 | 120s |
+| **GraphRAG MCP** | `gpt-5-nano` | `text-embedding-3-small` | 0.7 | 120s |
 
-**Note:** As of December 30, 2025, both systems use `gpt-5-nano` for generation, eliminating model disparity as a confounding variable. Previous experiments used `claude-sonnet-4-5-20250929` (Dust) vs `gpt-4o-mini` (GraphRAG), which introduced significant model capability differences.
+**Note:** As of December 30, 2025, both systems are fully aligned:
+- **Model**: Both use `gpt-5-nano` (OpenAI)
+- **Temperature**: Both use 0.7 for comparable creativity/determinism
+- **Timeout**: Both use 120 seconds
+
+Previous experiments had asymmetries:
+- Model: `claude-sonnet-4-5-20250929` (Dust) vs `gpt-4o-mini` (GraphRAG)
+- Temperature: 0.7 (Dust) vs 1.0 (GraphRAG default)
+- Timeout: 120s (Dust) vs 60s (GraphRAG)
 
 ---
 
