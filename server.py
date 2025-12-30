@@ -423,6 +423,189 @@ def build_context_from_graph(entities: list, communities: list, query: str, max_
 
 
 # ============================================================================
+# Community-First Retrieval Helpers (Latency Optimization)
+# ============================================================================
+
+def select_communities_by_keywords(query: str, max_communes: int = 50) -> list:
+    """
+    Select relevant communities via keyword matching on pre-computed reports.
+
+    Skips expensive embedding search entirely. Uses community titles/summaries.
+    Expected latency: <500ms (pure JSON parsing, no API calls)
+    """
+    import re
+    stop_words = {'le', 'la', 'les', 'de', 'du', 'des', 'un', 'une', 'et', 'ou',
+                  'que', 'qui', 'dans', 'pour', 'sur', 'avec', 'par', 'est', 'sont',
+                  'ce', 'cette', 'ces', 'au', 'aux', 'en', 'il', 'elle', 'nous', 'vous'}
+    query_words = set(re.findall(r'\b\w{3,}\b', query.lower())) - stop_words
+
+    if not query_words:
+        return []
+
+    all_communities = []
+    for commune in list_communes()[:max_communes]:
+        commune_path = get_commune_path(commune['id'])
+        if not commune_path:
+            continue
+        communities_file = commune_path / "kv_store_community_reports.json"
+        if not communities_file.exists():
+            continue
+
+        try:
+            with open(communities_file, 'r') as f:
+                data = json.load(f)
+        except Exception:
+            continue
+
+        for comm_id, comm_data in data.items():
+            report = comm_data.get('report_json', {})
+            if not report:
+                continue
+
+            rating = report.get('rating', 0)
+            if rating < 4.0:  # Skip low-quality communities
+                continue
+
+            title = report.get('title', '').lower()
+            summary = report.get('summary', '').lower()
+
+            # Score by keyword relevance (title weighted 3x)
+            score = sum(3 if w in title else (1 if w in summary else 0) for w in query_words)
+
+            if score > 0:
+                all_communities.append({
+                    'commune_id': commune['id'],
+                    'community_id': comm_id,
+                    'title': report.get('title', ''),
+                    'summary': report.get('summary', ''),
+                    'rating': rating,
+                    'score': score,
+                    'nodes': comm_data.get('nodes', []),  # Entity IDs for extraction
+                })
+
+    # Sort by combined relevance and quality score
+    all_communities.sort(key=lambda x: x['score'] * x['rating'], reverse=True)
+    return all_communities[:15]
+
+
+def extract_entities_from_communities(communities: list) -> list:
+    """
+    Extract entity IDs directly from community nodes.
+
+    No vector DB search needed - communities already contain entity references.
+    Expected latency: <10ms (pure Python set operations)
+    """
+    entity_set = set()
+    for comm in communities:
+        for node_id in comm.get('nodes', []):
+            # Clean up quoted format: '"ENTITY_NAME"' -> 'ENTITY_NAME'
+            clean_id = str(node_id).strip().strip('"')
+            if clean_id:
+                entity_set.add(clean_id)
+    return list(entity_set)[:100]
+
+
+def expand_via_graphml(seed_entities: list, commune_ids: set, max_hops: int = 2) -> tuple:
+    """
+    BFS expansion through GraphML relationships.
+
+    Discovers multi-hop connections from seed entities.
+    Expected latency: 500ms-2s (GraphML parsing + in-memory BFS)
+
+    Returns:
+        (entities, paths) - expanded entities with metadata, relationship paths
+    """
+    from collections import defaultdict, deque
+    import xml.etree.ElementTree as ET
+
+    adjacency = defaultdict(list)
+    entity_data = {}
+
+    # Parse GraphML files for relevant communes only
+    for cid in commune_ids:
+        commune_path = get_commune_path(cid)
+        if not commune_path:
+            continue
+        graphml = commune_path / "graph_chunk_entity_relation.graphml"
+        if not graphml.exists():
+            continue
+
+        try:
+            tree = ET.parse(graphml)
+            root = tree.getroot()
+            ns = {'g': 'http://graphml.graphdrawing.org/xmlns'}
+
+            # Build key map for data extraction
+            key_map = {}
+            for k in root.findall('g:key', ns):
+                key_map[k.get('id', '')] = k.get('attr.name', '')
+
+            def get_data(elem, name):
+                for d in elem.findall('g:data', ns):
+                    if key_map.get(d.get('key', '')) == name:
+                        return (d.text or '').strip().strip('"')
+                return ''
+
+            # Parse nodes
+            for node in root.findall('.//g:node', ns):
+                nid = node.get('id', '').strip('"')
+                if nid:
+                    entity_data[nid] = {
+                        'name': get_data(node, 'entity_name') or nid,
+                        'type': get_data(node, 'entity_type'),
+                        'description': get_data(node, 'description')[:300],
+                        'commune': cid
+                    }
+
+            # Parse edges into adjacency list
+            for edge in root.findall('.//g:edge', ns):
+                src = edge.get('source', '').strip('"')
+                tgt = edge.get('target', '').strip('"')
+                rel = get_data(edge, 'relationship_type') or 'RELATED_TO'
+                if src and tgt:
+                    adjacency[src].append((tgt, rel))
+                    adjacency[tgt].append((src, rel))
+        except Exception as e:
+            logger.warning(f"Failed to parse GraphML for {cid}: {e}")
+            continue
+
+    # BFS from seed entities
+    visited = set()
+    queue = deque()
+    paths = []
+
+    # Initialize with seeds that exist in our graph
+    for e in seed_entities:
+        if e in entity_data or e in adjacency:
+            visited.add(e)
+            queue.append((e, 0))
+
+    while queue and len(visited) < 200:
+        entity, depth = queue.popleft()
+        if depth >= max_hops:
+            continue
+
+        for neighbor, rel in adjacency.get(entity, []):
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append((neighbor, depth + 1))
+                paths.append({
+                    'source': entity,
+                    'target': neighbor,
+                    'type': rel,
+                    'hop': depth + 1
+                })
+
+    # Build entity list with metadata
+    entities = []
+    for e in visited:
+        if e in entity_data:
+            entities.append({**entity_data[e], 'id': e})
+
+    return entities, paths[:30]
+
+
+# ============================================================================
 # MCP Tools - Generic Multi-Source
 # ============================================================================
 
@@ -995,6 +1178,144 @@ RÉPONSE:"""
 
     except Exception as e:
         logger.error(f"Query all error: {e}")
+        import traceback
+        traceback.print_exc()
+        return json.dumps({
+            "success": False,
+            "error": str(e)
+        }, ensure_ascii=False)
+
+
+@mcp.tool(
+    name="grand_debat_query_fast",
+    annotations={
+        "title": "Fast Query All Communes (<10s)",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": True
+    }
+)
+async def grand_debat_query_fast(
+    query: Annotated[str, Field(description="Question about citizen contributions (French)", min_length=3)],
+    max_communes: Annotated[int, Field(description="Maximum communes to query", ge=1, le=50)] = 50
+) -> str:
+    """
+    FAST query (<10s) using community-first retrieval + multi-hop traversal.
+
+    **Performance**: Skips embedding search entirely. Uses pre-computed community
+    reports and in-memory graph traversal. Target latency: <10 seconds.
+
+    Architecture:
+    1. Community selection via keyword matching (0.5s)
+    2. Entity extraction from community nodes (instant)
+    3. Multi-hop BFS expansion through GraphML (1-2s)
+    4. Single LLM call with aggregated context (3-5s)
+
+    Args:
+        query: Question in French about the Grand Débat National
+        max_communes: Maximum number of communes to include (default: 50)
+
+    Returns:
+        JSON with answer, provenance, and performance metrics
+    """
+    import time
+    from nano_graphrag._llm import gpt_5_nano_complete
+    start_time = time.time()
+
+    try:
+        # Phase 1: Community selection via keyword matching (0.5s)
+        phase1_start = time.time()
+        communities = select_communities_by_keywords(query, max_communes)
+        phase1_time = time.time() - phase1_start
+
+        if not communities:
+            return json.dumps({
+                "success": False,
+                "error": "Aucune communauté pertinente trouvée pour cette requête.",
+                "suggestion": "Essayez des mots-clés plus généraux (fiscalité, écologie, démocratie...)"
+            }, ensure_ascii=False)
+
+        # Phase 2: Extract entities from communities (instant)
+        phase2_start = time.time()
+        seed_entities = extract_entities_from_communities(communities)
+        commune_ids = set(c['commune_id'] for c in communities)
+        phase2_time = time.time() - phase2_start
+
+        # Phase 3: Multi-hop expansion (1-2s)
+        phase3_start = time.time()
+        entities, paths = expand_via_graphml(seed_entities, commune_ids, max_hops=2)
+        phase3_time = time.time() - phase3_start
+
+        # Phase 4: Build context + LLM call (3-5s)
+        phase4_start = time.time()
+
+        # Build context for LLM
+        context_parts = ["## Synthèses thématiques\n"]
+        for c in communities[:8]:
+            context_parts.append(f"**[{c['commune_id']}] {c['title']}**\n")
+            context_parts.append(f"{c['summary'][:300]}\n\n")
+
+        context_parts.append("## Entités clés\n")
+        for e in entities[:40]:
+            desc = e.get('description', '')[:150]
+            context_parts.append(f"- **{e['name']}** ({e['commune']}): {desc}\n")
+
+        context_parts.append("\n## Relations découvertes\n")
+        for p in paths[:15]:
+            context_parts.append(f"- {p['source']} --[{p['type']}]--> {p['target']}\n")
+
+        context = "".join(context_parts)
+
+        prompt = f"""Tu es un analyste expert des contributions citoyennes du Grand Débat National 2019.
+Analyse les données de {len(commune_ids)} communes de Charente-Maritime et réponds à la question.
+
+QUESTION: {query}
+
+CONTEXTE DU GRAPHE DE CONNAISSANCES:
+{context}
+
+INSTRUCTIONS:
+- Synthétise les informations de plusieurs communes
+- Cite des exemples spécifiques avec leurs communes d'origine
+- Reste factuel et basé sur les données fournies
+- Réponds en français
+
+RÉPONSE:"""
+
+        answer = await gpt_5_nano_complete(prompt)
+        phase4_time = time.time() - phase4_start
+
+        total_time = time.time() - start_time
+
+        response = {
+            "success": True,
+            "query": query,
+            "answer": answer,
+            "performance": {
+                "total_seconds": round(total_time, 2),
+                "target_met": total_time < 10.0,
+                "phases": {
+                    "community_selection": round(phase1_time, 3),
+                    "entity_extraction": round(phase2_time, 3),
+                    "multihop_expansion": round(phase3_time, 3),
+                    "llm_call": round(phase4_time, 3)
+                }
+            },
+            "provenance": {
+                "communities_matched": len(communities),
+                "seed_entities": len(seed_entities),
+                "expanded_entities": len(entities),
+                "relationship_paths": len(paths),
+                "communes": list(commune_ids)
+            }
+        }
+
+        logger.info(f"Fast query completed in {total_time:.2f}s (target: <10s)")
+        return json.dumps(response, indent=2, ensure_ascii=False)
+
+    except Exception as e:
+        logger.error(f"Fast query error: {e}")
         import traceback
         traceback.print_exc()
         return json.dumps({
