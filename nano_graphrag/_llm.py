@@ -178,6 +178,9 @@ async def gpt_4o_mini_complete(
 async def gpt_5_nano_complete(
     prompt, system_prompt=None, history_messages=[], **kwargs
 ) -> str:
+    # GPT-5 models use max_completion_tokens instead of max_tokens
+    if "max_tokens" in kwargs:
+        kwargs["max_completion_tokens"] = kwargs.pop("max_tokens")
     return await openai_complete_if_cache(
         "gpt-5-nano",
         prompt,
