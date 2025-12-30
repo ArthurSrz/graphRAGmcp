@@ -1,8 +1,8 @@
 # Experimental Design Report: Comparative Evaluation of Retrieval-Augmented Generation Systems for Civic Discourse Analysis
 
-**Document Version**: 3.0
+**Document Version**: 4.0
 **Date**: December 30, 2025
-**Status**: Full experimental results complete (n=54)
+**Status**: Configuration aligned, ready for controlled experiment
 
 ---
 
@@ -12,9 +12,11 @@ This experiment aims to conduct a rigorous comparative evaluation of two distinc
 
 ## 2. Systems Under Comparison
 
-The first system under evaluation, designated as the Dust RAG system, implements a commercial retrieval-augmented generation architecture provided by Dust.tt. This system employs vector-based semantic search over indexed document collections, with retrieval results passed to a large language model for answer synthesis. The Dust agent has been configured with access to civic law documentation and operates through a conversational API that creates dialogue sessions, processes user queries, and returns synthesized responses with source citations. The agent identifier J3uPPZl5rR operates within workspace 3iVpEwJ3RE.
+Both systems under evaluation share identical language model configurations to isolate the retrieval architecture as the sole independent variable. Each system uses OpenAI's GPT-5-nano model with temperature set to zero for deterministic outputs, and operates under identical timeout constraints of one hundred twenty seconds.
 
-The second system, designated as GraphRAG MCP, implements a graph-based retrieval architecture built upon the nano-graphrag framework. This system constructs a knowledge graph from the Cahiers de Doléances collected during the 2019 Grand Débat National, specifically covering fifty communes within the Charente-Maritime département. The graph structure captures entities, concepts, and relationships extracted from citizen contributions, enabling both local neighborhood queries and global community-based reasoning. Access to this system is provided through a Model Context Protocol server deployed on Railway infrastructure, implementing JSON-RPC 2.0 with Server-Sent Events response streaming.
+The first system, designated as the Dust RAG system, implements a commercial retrieval-augmented generation architecture provided by Dust.tt. This system employs vector-based semantic search over indexed document collections, with retrieval results passed to the language model for answer synthesis. The Dust agent operates through a conversational API that creates dialogue sessions, processes user queries, and returns synthesized responses with source citations.
+
+The second system, designated as GraphRAG MCP, implements a graph-based retrieval architecture built upon the nano-graphrag framework. This system constructs a knowledge graph from the Cahiers de Doléances collected during the 2019 Grand Débat National, specifically covering fifty communes within the Charente-Maritime département. The graph structure captures entities, concepts, and relationships extracted from citizen contributions, enabling both local neighborhood queries and global community-based reasoning. The system queries all fifty communes simultaneously to provide comprehensive coverage comparable to Dust's corpus-wide retrieval.
 
 ## 3. Experimental Variables
 
@@ -31,6 +33,8 @@ Semantic quality metrics are evaluated through an LLM-as-judge methodology emplo
 ## 4. Controlled Variables and Experimental Conditions
 
 To ensure valid comparison, this experiment controls for several potentially confounding variables through explicit implementation measures.
+
+Language model parity is ensured by configuring both systems to use identical LLM settings. Both systems use OpenAI's GPT-5-nano model with temperature set to zero, eliminating model capability and output variability as confounding factors. This alignment ensures that any observed differences in response quality stem from the retrieval architecture rather than the generation model.
 
 Both systems receive identical query timeout thresholds of one hundred twenty seconds. This value was determined empirically during pilot testing, which revealed that the Dust system requires thirty to sixty seconds for complex analytical questions involving corpus-level statistics, while the GraphRAG system typically responds within one to fifteen seconds depending on cache state. The extended timeout ensures that neither system is disadvantaged by premature query termination while maintaining practical bounds on experimental duration.
 
@@ -130,13 +134,15 @@ The OPIK dashboard URLs will be provided to enable interactive exploration of in
 
 ## Appendix D: Experimental Controls Summary
 
-| Control | Implementation | File Location |
-|---------|---------------|---------------|
-| Timeout parity | 120s for both systems | `config.py:40, config.py:94` |
-| Execution order randomization | `random.choice([True, False])` | `runner.py:183` |
-| Metric cloning | Fresh `_get_metrics()` per system | `runner.py:177-179` |
-| MCP retry logic | 2 retries, exponential backoff | `mcp_client.py:137, 184-194` |
-| LLM judge enabled | `ENABLE_LLM_JUDGE=true` | `.env:15` |
+| Control | Implementation | Value |
+|---------|---------------|-------|
+| LLM model parity | Both systems use same model | gpt-5-nano |
+| Temperature parity | Both systems use same temperature | 0 |
+| Timeout parity | Both systems use same timeout | 120 seconds |
+| Execution order randomization | Random selection per run | 50% probability each |
+| Metric cloning | Fresh instances per system | Prevents state leakage |
+| Retry logic parity | Equivalent resilience | Polling / 2 retries |
+| Query scope parity | GraphRAG queries all communes | 50 communes via query_all |
 
 ## Appendix E: Preliminary Results Summary
 
@@ -155,16 +161,28 @@ This experimental design establishes the methodological foundation for rigorous 
 
 ## 11. Full Experimental Results
 
-### 11.1 Experiment Configuration
+> **⚠️ HISTORICAL DATA - SUPERSEDED**
+>
+> The results in this section were obtained before full configuration alignment. Key asymmetries existed:
+> - **Model**: Dust used Claude Sonnet 4.5, GraphRAG used GPT-4o-mini
+> - **Temperature**: Dust used 0.7, GraphRAG used 1.0 (default)
+> - **Query scope**: GraphRAG only queried 1 commune (Rochefort) instead of all 50
+>
+> These results are retained for historical reference but should not be used for comparative analysis. New controlled experiments with aligned configurations will supersede these findings.
+
+### 11.1 Experiment Configuration (Historical)
 
 The full comparison experiment designated `full_comparison_v2` was executed on December 30, 2025, evaluating all fifty-four questions in the civic-law-eval dataset. The experiment employed the complete eight-metric evaluation suite with LLM-as-judge enabled using GPT-4o-mini. Execution order randomization selected GraphRAG to execute first, followed by Dust.
 
-**Experiment Parameters:**
+**Experiment Parameters (Historical - Not Aligned):**
 - Dataset: civic-law-eval (54 samples)
 - Metrics: contains, latency, status, llm_precision, answer_relevance, hallucination, meaning_match, usefulness
 - Timeout: 120 seconds
 - LLM Judge: GPT-4o-mini (temperature=0)
 - Dust execution mode: Sequential (task_threads=1) to respect API rate limits
+- ⚠️ Dust model: Claude Sonnet 4.5 (not aligned)
+- ⚠️ GraphRAG model: GPT-4o-mini (not aligned)
+- ⚠️ GraphRAG scope: Single commune only (not aligned)
 
 ### 11.2 Performance Results
 
@@ -299,173 +317,42 @@ Several directions merit further investigation:
 
 ---
 
-## Appendix G: RAG System Parameters
+## Appendix G: Controlled Experimental Parameters
 
-This appendix documents all configuration parameters for both RAG systems to ensure experimental reproducibility and enable fair comparison.
+This appendix documents the aligned configuration parameters ensuring fair comparison between systems.
 
-### G.1 Dust RAG System Configuration
+### G.1 Aligned Parameters
 
-#### Agent Configuration
+| Parameter | Dust RAG | GraphRAG MCP | Status |
+|-----------|----------|--------------|--------|
+| **LLM Model** | gpt-5-nano | gpt-5-nano | ✓ Aligned |
+| **Temperature** | 0 | 0 | ✓ Aligned |
+| **Timeout** | 120 seconds | 120 seconds | ✓ Aligned |
+| **Provider** | OpenAI | OpenAI | ✓ Aligned |
+| **Retry Logic** | Polling (implicit) | 2 retries + backoff | ✓ Equivalent |
 
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Agent ID | `J3uPPZl5rR` | `.env:DUST_AGENT_ID` |
-| Agent Name | `DustRAG` | Dust Dashboard |
-| Workspace ID | `3iVpEwJ3RE` | `.env:DUST_WORKSPACE_ID` |
-| **LLM Model** | `gpt-5-nano` | Dust Dashboard |
-| Provider | OpenAI | Dust Dashboard |
-| Temperature | 0.7 | Dust Dashboard |
+### G.2 Independent Variable: Retrieval Architecture
 
-#### API Configuration
+| Aspect | Dust RAG | GraphRAG MCP |
+|--------|----------|--------------|
+| **Architecture** | Vector-based | Graph-based |
+| **Retrieval Method** | Semantic similarity search | Knowledge graph traversal |
+| **Context Assembly** | Retrieved document chunks | Entity-relationship subgraphs |
+| **Query Scope** | Full corpus | All 50 communes (query_all) |
 
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Base URL | `https://dust.tt/api/v1` | `dust_client.py:23` |
-| Conversation Endpoint | `/w/{workspace}/assistant/conversations` | `dust_client.py:89` |
-| Authentication | Bearer Token (sk-...) | `.env:DUST_API_KEY` |
-| Content-Type | `application/json` | `dust_client.py:59` |
+### G.3 LLM-as-Judge Configuration (Shared)
 
-#### Query Execution Parameters
+| Parameter | Value |
+|-----------|-------|
+| Model | gpt-4o-mini |
+| Temperature | 0 |
+| Rate Limiting | 500ms between calls |
 
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Timeout | 120.0 seconds | `config.py:40` |
-| Poll Interval | 0.5 seconds | `dust_client.py:162` |
-| Max Polls | 240 (120s / 0.5s) | `dust_client.py:163` |
-| Retry on Non-200 | Yes (via polling) | `dust_client.py:171-172` |
-| Timezone Context | `Europe/Paris` | `dust_client.py:96` |
+### G.4 Evaluation Dataset
 
-#### Retrieval Architecture
-
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| Retrieval Type | Vector-based semantic search | Document embeddings + similarity |
-| Knowledge Base | Civic law documentation | Configured in Dust workspace |
-| Response Format | Streaming SSE tokens | Aggregated into full response |
-
----
-
-### G.2 GraphRAG MCP System Configuration
-
-#### MCP Server Configuration
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Server Name | `graphrag_mcp` | `server.py:ServerInfo` |
-| Server Version | `1.25.0` | `server.py:ServerInfo` |
-| Endpoint | `https://graphragmcp-production.up.railway.app/mcp` | Railway deployment |
-| Protocol | MCP (Model Context Protocol) | JSON-RPC 2.0 |
-| Protocol Version | `2024-11-05` | MCP standard |
-| Response Format | Server-Sent Events (SSE) | `text/event-stream` |
-
-#### LLM Configuration
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| **Best Model** | `gpt-5-nano` | `server.py:470, 623, 767` |
-| **Cheap Model** | `gpt-5-nano` | `server.py:475, 624, 768` |
-| Provider | OpenAI | `nano_graphrag/_llm.py` |
-| max_tokens → max_completion_tokens | Auto-converted | `_llm.py:182-183` |
-| Retry Attempts | 5 | `_llm.py:46` |
-| Retry Backoff | Exponential (1s-10s) | `_llm.py:47` |
-
-#### Embedding Configuration
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Embedding Model | `text-embedding-3-small` | `_llm.py:216` |
-| Embedding Dimension | 1536 | `_llm.py:207` |
-| Max Token Size | 8192 | `_llm.py:207` |
-
-#### Query Parameters
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Default Query Mode | `local` | `mcp_client.py:30` |
-| Query Tool | `grand_debat_query_all` | `mcp_client.py:223` |
-| Include Sources | `true` | `mcp_client.py:227` |
-| Max Communes | 50 (all) | `server.py:731` |
-| Concurrent Commune Queries | 6 | `server.py:736` |
-| Single Mode (global only) | `true` | `server.py:742` |
-
-#### MCP Client Configuration
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Timeout | 60.0 seconds | `mcp_client.py:29` |
-| Max Retries | 2 | `mcp_client.py:137` |
-| Retry Backoff | 1s, 2s (exponential) | `mcp_client.py:187` |
-| Session Re-init on Retry | Yes | `mcp_client.py:191-193` |
-
-#### Knowledge Graph Parameters
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Framework | nano-graphrag | `server.py:469` |
-| Graph Storage | GraphML per commune | `law_data/{commune}/graph_chunk_entity_relation.graphml` |
-| Entity Store | JSON | `kv_store_full_docs.json` |
-| Community Reports | JSON | `kv_store_community_reports.json` |
-| LLM Response Cache | JSON (1 hour TTL) | `kv_store_llm_response_cache.json` |
-| Vector DB | NanoVectorDB | `vdb_entities.json` |
-
-#### GraphRAG Instance Cache
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Cache Type | LRU (Least Recently Used) | `server.py:_graphrag_cache` |
-| Max Entries | 10 communes | `server.py:LRUCache(10)` |
-| Purpose | Avoid NanoVectorDB re-initialization | Performance optimization |
-
----
-
-### G.3 Model Alignment Summary
-
-| System | Generation Model | Embedding Model | Temperature | Timeout |
-|--------|------------------|-----------------|-------------|---------|
-| **Dust RAG** | `gpt-5-nano` | N/A (Dust-managed) | 0 | 120s |
-| **GraphRAG MCP** | `gpt-5-nano` | `text-embedding-3-small` | 0 | 120s |
-
-**Note:** As of December 30, 2025, both systems are fully aligned:
-- **Model**: Both use `gpt-5-nano` (OpenAI)
-- **Temperature**: Both use 0 for deterministic, reproducible outputs
-- **Timeout**: Both use 120 seconds
-
-Previous experiments had asymmetries:
-- Model: `claude-sonnet-4-5-20250929` (Dust) vs `gpt-4o-mini` (GraphRAG)
-- Temperature: 0.7 (Dust) vs 1.0 (GraphRAG default)
-- Timeout: 120s (Dust) vs 60s (GraphRAG)
-
----
-
-### G.4 LLM-as-Judge Configuration
-
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Model | `gpt-4o-mini` | `config.py:36` |
-| Temperature | 0 | `llm_judge.py:56` |
-| Response Format | JSON object | `llm_judge.py:207` |
-| Rate Limiting | 500ms between calls | `opik_metrics.py:27` |
-| Rate Limiter | Thread lock (shared) | `opik_metrics.py:25` |
-
-#### Metrics Using LLM Judge
-
-| Metric | Implementation | Model |
-|--------|----------------|-------|
-| LLM Precision | `LLMPrecisionJudge` | gpt-4o-mini |
-| Answer Relevance | `AnswerRelevanceWrapper` (OPIK) | gpt-4o-mini |
-| Hallucination | `HallucinationWrapper` (OPIK) | gpt-4o-mini |
-| Meaning Match | `MeaningMatchMetric` (GEval) | gpt-4o-mini |
-| Usefulness | `UsefulnessWrapper` (OPIK) | gpt-4o-mini |
-
----
-
-### G.5 Data Coverage
-
-| Parameter | Dust RAG | GraphRAG MCP |
-|-----------|----------|--------------|
-| Data Source | Civic law documentation | Cahiers de Doléances 2019 |
-| Geographic Scope | Broader (workspace-defined) | 50 communes, Charente-Maritime |
-| Document Count | N/A (managed by Dust) | ~50 commune folders |
-| Entity Count | N/A | ~500-2000 per commune |
-| Relationship Count | N/A | ~1000-5000 per commune |
-| Community Reports | N/A | 5-15 per commune |
+| Parameter | Value |
+|-----------|-------|
+| Dataset | civic-law-eval |
+| Domain | French civic law, Grand Débat National |
+| Coverage | 50 communes, Charente-Maritime |
+| Questions | 54 (full) / 10 (sample) |
