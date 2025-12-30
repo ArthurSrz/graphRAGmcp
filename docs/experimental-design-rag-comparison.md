@@ -296,3 +296,168 @@ Several directions merit further investigation:
 **Experiment Identifier:** full_comparison_v2
 **Execution Date:** 2025-12-30 13:18:54 - 14:02:58 UTC
 **Execution Order:** GraphRAG first, Dust second (randomized)
+
+---
+
+## Appendix G: RAG System Parameters
+
+This appendix documents all configuration parameters for both RAG systems to ensure experimental reproducibility and enable fair comparison.
+
+### G.1 Dust RAG System Configuration
+
+#### Agent Configuration
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Agent ID | `J3uPPZl5rR` | `.env:DUST_AGENT_ID` |
+| Agent Name | `DustRAG` | Dust Dashboard |
+| Workspace ID | `3iVpEwJ3RE` | `.env:DUST_WORKSPACE_ID` |
+| **LLM Model** | `gpt-5-nano` | Dust Dashboard |
+| Provider | OpenAI | Dust Dashboard |
+| Temperature | 0.7 | Dust Dashboard |
+
+#### API Configuration
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Base URL | `https://dust.tt/api/v1` | `dust_client.py:23` |
+| Conversation Endpoint | `/w/{workspace}/assistant/conversations` | `dust_client.py:89` |
+| Authentication | Bearer Token (sk-...) | `.env:DUST_API_KEY` |
+| Content-Type | `application/json` | `dust_client.py:59` |
+
+#### Query Execution Parameters
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Timeout | 120.0 seconds | `config.py:40` |
+| Poll Interval | 0.5 seconds | `dust_client.py:162` |
+| Max Polls | 240 (120s / 0.5s) | `dust_client.py:163` |
+| Retry on Non-200 | Yes (via polling) | `dust_client.py:171-172` |
+| Timezone Context | `Europe/Paris` | `dust_client.py:96` |
+
+#### Retrieval Architecture
+
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| Retrieval Type | Vector-based semantic search | Document embeddings + similarity |
+| Knowledge Base | Civic law documentation | Configured in Dust workspace |
+| Response Format | Streaming SSE tokens | Aggregated into full response |
+
+---
+
+### G.2 GraphRAG MCP System Configuration
+
+#### MCP Server Configuration
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Server Name | `graphrag_mcp` | `server.py:ServerInfo` |
+| Server Version | `1.25.0` | `server.py:ServerInfo` |
+| Endpoint | `https://graphragmcp-production.up.railway.app/mcp` | Railway deployment |
+| Protocol | MCP (Model Context Protocol) | JSON-RPC 2.0 |
+| Protocol Version | `2024-11-05` | MCP standard |
+| Response Format | Server-Sent Events (SSE) | `text/event-stream` |
+
+#### LLM Configuration
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| **Best Model** | `gpt-5-nano` | `server.py:470, 623, 767` |
+| **Cheap Model** | `gpt-5-nano` | `server.py:475, 624, 768` |
+| Provider | OpenAI | `nano_graphrag/_llm.py` |
+| max_tokens → max_completion_tokens | Auto-converted | `_llm.py:182-183` |
+| Retry Attempts | 5 | `_llm.py:46` |
+| Retry Backoff | Exponential (1s-10s) | `_llm.py:47` |
+
+#### Embedding Configuration
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Embedding Model | `text-embedding-3-small` | `_llm.py:216` |
+| Embedding Dimension | 1536 | `_llm.py:207` |
+| Max Token Size | 8192 | `_llm.py:207` |
+
+#### Query Parameters
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Default Query Mode | `local` | `mcp_client.py:30` |
+| Query Tool | `grand_debat_query_all` | `mcp_client.py:223` |
+| Include Sources | `true` | `mcp_client.py:227` |
+| Max Communes | 50 (all) | `server.py:731` |
+| Concurrent Commune Queries | 6 | `server.py:736` |
+| Single Mode (global only) | `true` | `server.py:742` |
+
+#### MCP Client Configuration
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Timeout | 60.0 seconds | `mcp_client.py:29` |
+| Max Retries | 2 | `mcp_client.py:137` |
+| Retry Backoff | 1s, 2s (exponential) | `mcp_client.py:187` |
+| Session Re-init on Retry | Yes | `mcp_client.py:191-193` |
+
+#### Knowledge Graph Parameters
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Framework | nano-graphrag | `server.py:469` |
+| Graph Storage | GraphML per commune | `law_data/{commune}/graph_chunk_entity_relation.graphml` |
+| Entity Store | JSON | `kv_store_full_docs.json` |
+| Community Reports | JSON | `kv_store_community_reports.json` |
+| LLM Response Cache | JSON (1 hour TTL) | `kv_store_llm_response_cache.json` |
+| Vector DB | NanoVectorDB | `vdb_entities.json` |
+
+#### GraphRAG Instance Cache
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Cache Type | LRU (Least Recently Used) | `server.py:_graphrag_cache` |
+| Max Entries | 10 communes | `server.py:LRUCache(10)` |
+| Purpose | Avoid NanoVectorDB re-initialization | Performance optimization |
+
+---
+
+### G.3 Model Alignment Summary
+
+| System | Generation Model | Embedding Model | Temperature |
+|--------|------------------|-----------------|-------------|
+| **Dust RAG** | `gpt-5-nano` | N/A (Dust-managed) | 0.7 |
+| **GraphRAG MCP** | `gpt-5-nano` | `text-embedding-3-small` | 0 (default) |
+
+**Note:** As of December 30, 2025, both systems use `gpt-5-nano` for generation, eliminating model disparity as a confounding variable. Previous experiments used `claude-sonnet-4-5-20250929` (Dust) vs `gpt-4o-mini` (GraphRAG), which introduced significant model capability differences.
+
+---
+
+### G.4 LLM-as-Judge Configuration
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Model | `gpt-4o-mini` | `config.py:36` |
+| Temperature | 0 | `llm_judge.py:56` |
+| Response Format | JSON object | `llm_judge.py:207` |
+| Rate Limiting | 500ms between calls | `opik_metrics.py:27` |
+| Rate Limiter | Thread lock (shared) | `opik_metrics.py:25` |
+
+#### Metrics Using LLM Judge
+
+| Metric | Implementation | Model |
+|--------|----------------|-------|
+| LLM Precision | `LLMPrecisionJudge` | gpt-4o-mini |
+| Answer Relevance | `AnswerRelevanceWrapper` (OPIK) | gpt-4o-mini |
+| Hallucination | `HallucinationWrapper` (OPIK) | gpt-4o-mini |
+| Meaning Match | `MeaningMatchMetric` (GEval) | gpt-4o-mini |
+| Usefulness | `UsefulnessWrapper` (OPIK) | gpt-4o-mini |
+
+---
+
+### G.5 Data Coverage
+
+| Parameter | Dust RAG | GraphRAG MCP |
+|-----------|----------|--------------|
+| Data Source | Civic law documentation | Cahiers de Doléances 2019 |
+| Geographic Scope | Broader (workspace-defined) | 50 communes, Charente-Maritime |
+| Document Count | N/A (managed by Dust) | ~50 commune folders |
+| Entity Count | N/A | ~500-2000 per commune |
+| Relationship Count | N/A | ~1000-5000 per commune |
+| Community Reports | N/A | 5-15 per commune |
