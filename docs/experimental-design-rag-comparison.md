@@ -1,8 +1,8 @@
 # Experimental Design Report: Comparative Evaluation of Retrieval-Augmented Generation Systems for Civic Discourse Analysis
 
-**Document Version**: 4.0
+**Document Version**: 5.0
 **Date**: December 30, 2025
-**Status**: Configuration aligned, ready for controlled experiment
+**Status**: Configuration corrected (temperature fix), ready for controlled experiment
 
 ---
 
@@ -12,7 +12,7 @@ This experiment aims to conduct a rigorous comparative evaluation of two distinc
 
 ## 2. Systems Under Comparison
 
-Both systems under evaluation share identical language model configurations to isolate the retrieval architecture as the sole independent variable. Each system uses OpenAI's GPT-5-nano model with temperature set to 0.7, and operates under identical timeout constraints of one hundred twenty seconds.
+Both systems under evaluation share the same base language model to isolate the retrieval architecture as the primary independent variable. Each system uses OpenAI's GPT-5-nano model and operates under identical timeout constraints of one hundred twenty seconds. A notable constraint exists with temperature settings: Dust operates at temperature 0.7 (platform-fixed), while GraphRAG operates at temperature 1.0 (gpt-5-nano model constraint). This asymmetry is documented as a known limitation in Appendix G.
 
 The first system, designated as the Dust RAG system, implements a commercial retrieval-augmented generation architecture provided by Dust.tt. This system employs vector-based semantic search over indexed document collections, with retrieval results passed to the language model for answer synthesis. The Dust agent operates through a conversational API that creates dialogue sessions, processes user queries, and returns synthesized responses with source citations.
 
@@ -34,7 +34,7 @@ Semantic quality metrics are evaluated through an LLM-as-judge methodology emplo
 
 To ensure valid comparison, this experiment controls for several potentially confounding variables through explicit implementation measures.
 
-Language model parity is ensured by configuring both systems to use identical LLM settings. Both systems use OpenAI's GPT-5-nano model with temperature set to 0.7, eliminating model capability and output variability as confounding factors. This alignment ensures that any observed differences in response quality stem from the retrieval architecture rather than the generation model. The temperature value of 0.7 is determined by Dust's fixed configuration, which cannot be modified programmatically.
+Language model parity is partially ensured by configuring both systems to use the same base LLM (GPT-5-nano). However, a temperature asymmetry exists due to platform constraints: Dust operates at temperature 0.7 (platform-fixed, cannot be modified via API), while GraphRAG operates at temperature 1.0 (gpt-5-nano model constraint, the model only accepts temperature=1.0). This asymmetry may affect response creativity and consistency: higher temperature (GraphRAG) produces more varied outputs, while lower temperature (Dust) produces more deterministic outputs. This limitation is documented in Section 7.6 and Appendix G.
 
 Both systems receive identical query timeout thresholds of one hundred twenty seconds. This value was determined empirically during pilot testing, which revealed that the Dust system requires thirty to sixty seconds for complex analytical questions involving corpus-level statistics, while the GraphRAG system typically responds within one to fifteen seconds depending on cache state. The extended timeout ensures that neither system is disadvantaged by premature query termination while maintaining practical bounds on experimental duration.
 
@@ -77,6 +77,8 @@ The shared metric state threat, wherein reuse of metric objects might provide ad
 The timeout asymmetry threat, wherein different timeout configurations might unfairly advantage one system, is mitigated through unified timeout configuration. Both systems receive identical one hundred twenty second timeouts from a single configuration source, and this value is validated at experiment initialization.
 
 The dataset scope mismatch between systems represents a threat to construct validity. The Dust system potentially has access to broader training data beyond the fifty communes covered by the GraphRAG knowledge graph. Questions in the evaluation dataset have been reviewed to ensure they pertain specifically to topics and communes within GraphRAG coverage, though the possibility remains that Dust's broader knowledge base provides contextual advantages not reflected in the GraphRAG system's more focused but potentially deeper commune-specific knowledge.
+
+The temperature parameter asymmetry represents an unmitigable threat to internal validity. Due to platform constraints, Dust operates at temperature 0.7 while GraphRAG operates at temperature 1.0. This asymmetry cannot be resolved: the Dust platform does not expose temperature configuration via API, and the GPT-5-nano model rejects any temperature value other than 1.0. The effect of this asymmetry is that GraphRAG responses may exhibit greater variability and creativity compared to Dust's more deterministic outputs. Consumers of experimental results should consider this limitation when interpreting response quality metrics, particularly those measuring semantic precision and answer consistency.
 
 External validity is limited by the domain-specific nature of this evaluation. Results obtained for civic discourse analysis in the French legal context may not generalize to other languages, legal systems, or question-answering domains. The findings should be interpreted as specific to the evaluated configuration rather than as universal statements about vector versus graph retrieval architectures.
 
@@ -326,10 +328,12 @@ This appendix documents the aligned configuration parameters ensuring fair compa
 | Parameter | Dust RAG | GraphRAG MCP | Status |
 |-----------|----------|--------------|--------|
 | **LLM Model** | gpt-5-nano | gpt-5-nano | ✓ Aligned |
-| **Temperature** | 0.7 | 0.7 | ✓ Aligned |
+| **Temperature** | 0.7 (platform-fixed) | 1.0 (model-fixed) | ⚠ Asymmetric |
 | **Timeout** | 120 seconds | 120 seconds | ✓ Aligned |
 | **Provider** | OpenAI | OpenAI | ✓ Aligned |
 | **Retry Logic** | Polling (implicit) | 2 retries + backoff | ✓ Equivalent |
+
+**Temperature Asymmetry Note**: The GPT-5-nano model only accepts temperature=1.0. Attempts to set temperature=0.7 result in API error 400: "Unsupported value: 'temperature' does not support 0.7 with this model." Dust's temperature is fixed at 0.7 by the platform and cannot be modified programmatically. This asymmetry is an unavoidable platform constraint.
 
 ### G.2 Independent Variable: Retrieval Architecture
 
