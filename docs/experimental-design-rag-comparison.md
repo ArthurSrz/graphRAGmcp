@@ -12,7 +12,7 @@ This experiment aims to conduct a rigorous comparative evaluation of two distinc
 
 ## 2. Systems Under Comparison
 
-Both systems under evaluation share identical language model configurations to isolate the retrieval architecture as the sole independent variable. Each system uses OpenAI's GPT-5-nano model with temperature set to zero for deterministic outputs, and operates under identical timeout constraints of one hundred twenty seconds.
+Both systems under evaluation share identical language model configurations to isolate the retrieval architecture as the sole independent variable. Each system uses OpenAI's GPT-5-nano model with temperature set to 0.7, and operates under identical timeout constraints of one hundred twenty seconds.
 
 The first system, designated as the Dust RAG system, implements a commercial retrieval-augmented generation architecture provided by Dust.tt. This system employs vector-based semantic search over indexed document collections, with retrieval results passed to the language model for answer synthesis. The Dust agent operates through a conversational API that creates dialogue sessions, processes user queries, and returns synthesized responses with source citations.
 
@@ -34,7 +34,7 @@ Semantic quality metrics are evaluated through an LLM-as-judge methodology emplo
 
 To ensure valid comparison, this experiment controls for several potentially confounding variables through explicit implementation measures.
 
-Language model parity is ensured by configuring both systems to use identical LLM settings. Both systems use OpenAI's GPT-5-nano model with temperature set to zero, eliminating model capability and output variability as confounding factors. This alignment ensures that any observed differences in response quality stem from the retrieval architecture rather than the generation model.
+Language model parity is ensured by configuring both systems to use identical LLM settings. Both systems use OpenAI's GPT-5-nano model with temperature set to 0.7, eliminating model capability and output variability as confounding factors. This alignment ensures that any observed differences in response quality stem from the retrieval architecture rather than the generation model. The temperature value of 0.7 is determined by Dust's fixed configuration, which cannot be modified programmatically.
 
 Both systems receive identical query timeout thresholds of one hundred twenty seconds. This value was determined empirically during pilot testing, which revealed that the Dust system requires thirty to sixty seconds for complex analytical questions involving corpus-level statistics, while the GraphRAG system typically responds within one to fifteen seconds depending on cache state. The extended timeout ensures that neither system is disadvantaged by premature query termination while maintaining practical bounds on experimental duration.
 
@@ -137,7 +137,7 @@ The OPIK dashboard URLs will be provided to enable interactive exploration of in
 | Control | Implementation | Value |
 |---------|---------------|-------|
 | LLM model parity | Both systems use same model | gpt-5-nano |
-| Temperature parity | Both systems use same temperature | 0 |
+| Temperature parity | Both systems use same temperature | 0.7 |
 | Timeout parity | Both systems use same timeout | 120 seconds |
 | Execution order randomization | Random selection per run | 50% probability each |
 | Metric cloning | Fresh instances per system | Prevents state leakage |
@@ -326,7 +326,7 @@ This appendix documents the aligned configuration parameters ensuring fair compa
 | Parameter | Dust RAG | GraphRAG MCP | Status |
 |-----------|----------|--------------|--------|
 | **LLM Model** | gpt-5-nano | gpt-5-nano | ✓ Aligned |
-| **Temperature** | 0 | 0 | ✓ Aligned |
+| **Temperature** | 0.7 | 0.7 | ✓ Aligned |
 | **Timeout** | 120 seconds | 120 seconds | ✓ Aligned |
 | **Provider** | OpenAI | OpenAI | ✓ Aligned |
 | **Retry Logic** | Polling (implicit) | 2 retries + backoff | ✓ Equivalent |
