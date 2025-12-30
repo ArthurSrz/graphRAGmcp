@@ -467,12 +467,12 @@ async def mcp_query(
             sys.path.insert(0, str(project_root))
 
         from nano_graphrag import GraphRAG, QueryParam
-        from nano_graphrag._llm import gpt_4o_mini_complete
+        from nano_graphrag._llm import gpt_5_nano_complete
 
         rag = GraphRAG(
             working_dir=str(collection_path),
-            best_model_func=gpt_4o_mini_complete,
-            cheap_model_func=gpt_4o_mini_complete,
+            best_model_func=gpt_5_nano_complete,
+            cheap_model_func=gpt_5_nano_complete,
         )
 
         result = await rag.aquery(
@@ -612,7 +612,7 @@ async def grand_debat_query(
             sys.path.insert(0, str(project_root))
 
         from nano_graphrag import GraphRAG, QueryParam
-        from nano_graphrag._llm import gpt_4o_mini_complete
+        from nano_graphrag._llm import gpt_5_nano_complete
 
         # Use cached GraphRAG instance to avoid slow NanoVectorDB re-initialization
         working_dir = str(commune_path)
@@ -620,8 +620,8 @@ async def grand_debat_query(
         if rag is None:
             rag = GraphRAG(
                 working_dir=working_dir,
-                best_model_func=gpt_4o_mini_complete,
-                cheap_model_func=gpt_4o_mini_complete,
+                best_model_func=gpt_5_nano_complete,
+                cheap_model_func=gpt_5_nano_complete,
             )
             _graphrag_cache.put(working_dir, rag)
 
@@ -716,7 +716,7 @@ async def grand_debat_query_all(
             sys.path.insert(0, str(project_root))
 
         from nano_graphrag import GraphRAG, QueryParam
-        from nano_graphrag._llm import gpt_4o_mini_complete
+        from nano_graphrag._llm import gpt_5_nano_complete
 
         # Get top communes by entity count
         all_communes = list_communes()
@@ -764,8 +764,8 @@ async def grand_debat_query_all(
                         # Cache miss - create new instance
                         rag = GraphRAG(
                             working_dir=working_dir,
-                            best_model_func=gpt_4o_mini_complete,
-                            cheap_model_func=gpt_4o_mini_complete,
+                            best_model_func=gpt_5_nano_complete,
+                            cheap_model_func=gpt_5_nano_complete,
                         )
                         _graphrag_cache.put(working_dir, rag)
 
