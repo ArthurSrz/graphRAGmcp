@@ -731,13 +731,9 @@ async def grand_debat_query_all(
         target_communes = sorted_communes[:max_communes]
 
         # Semaphore to limit concurrent API calls (avoid OpenAI rate limits)
-        # Reduced from 6 to 2 to prevent 429 rate limit errors with gpt-5-nano
-        # gpt-5-nano has stricter rate limits than gpt-4o-mini
-        MAX_CONCURRENT = 2  # Conservative limit to avoid rate limiting
+        # Reduced from 6 to 4 to prevent 429 rate limit errors with gpt-5-nano
+        MAX_CONCURRENT = 4
         semaphore = asyncio.Semaphore(MAX_CONCURRENT)
-
-        # Delay between commune queries to spread out API calls
-        QUERY_DELAY_SECONDS = 1.0  # 1 second delay between queries
 
         # Feature 006-graph-optimization T016: Single mode option
         # When True, only runs global mode (halves LLM calls)
@@ -797,9 +793,6 @@ async def grand_debat_query_all(
                         query,
                         param=QueryParam(mode="global", return_provenance=include_sources)
                     )
-
-                    # Rate limit delay after query to prevent 429 errors
-                    await asyncio.sleep(QUERY_DELAY_SECONDS)
 
                     if isinstance(global_result, dict):
                         global_prov = global_result.get("provenance", {}) or {}
