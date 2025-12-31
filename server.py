@@ -1303,11 +1303,46 @@ RÉPONSE:"""
                 }
             },
             "provenance": {
-                "communities_matched": len(communities),
-                "seed_entities": len(seed_entities),
-                "expanded_entities": len(entities),
-                "relationship_paths": len(paths),
-                "communes": list(commune_ids)
+                # Full entity data for graph visualization (Constitution Principle I)
+                "entities": [
+                    {
+                        "id": e.get('name', f"entity-{i}"),
+                        "name": e.get('name', ''),
+                        "type": e.get('type', 'CIVIC_ENTITY'),
+                        "description": e.get('description', '')[:200],
+                        "source_commune": e.get('commune', ''),
+                        "importance_score": e.get('importance_score', 0.5)
+                    }
+                    for i, e in enumerate(entities[:50])  # Limit to 50 for performance
+                ],
+                # Full relationship data for graph edges
+                "relationships": [
+                    {
+                        "source": p.get('source', ''),
+                        "target": p.get('target', ''),
+                        "type": p.get('type', 'RELATED_TO'),
+                        "description": p.get('description', ''),
+                        "weight": p.get('weight', 1.0)
+                    }
+                    for p in paths[:30]  # Limit to 30 for performance
+                ],
+                # Community summaries
+                "communities": [
+                    {
+                        "title": c.get('title', ''),
+                        "summary": c.get('summary', '')[:300],
+                        "commune": c.get('commune_id', '')
+                    }
+                    for c in communities[:10]
+                ],
+                # Statistics
+                "stats": {
+                    "communities_matched": len(communities),
+                    "seed_entities": len(seed_entities),
+                    "expanded_entities": len(entities),
+                    "relationship_paths": len(paths),
+                    "communes": list(commune_ids)
+                }
             }
         }
 
