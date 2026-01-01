@@ -165,7 +165,17 @@ async def _handle_single_relationship_extraction(
     # add this record as edge
     source = clean_str(record_attributes[1].upper())
     target = clean_str(record_attributes[2].upper())
-    edge_description = clean_str(record_attributes[3])
+
+    # Handle both 5-field (old) and 6-field (new with relationship_type) formats
+    # 6-field: ("relationship", source, target, type, description, strength)
+    # 5-field: ("relationship", source, target, description, strength)
+    if len(record_attributes) >= 6:
+        relationship_type = clean_str(record_attributes[3]).upper()
+        edge_description = clean_str(record_attributes[4])
+    else:
+        relationship_type = "RELATED_TO"
+        edge_description = clean_str(record_attributes[3])
+
     edge_source_id = chunk_key
     weight = (
         float(record_attributes[-1]) if is_float_regex(record_attributes[-1]) else 1.0
@@ -173,6 +183,7 @@ async def _handle_single_relationship_extraction(
     return dict(
         src_id=source,
         tgt_id=target,
+        relationship_type=relationship_type,
         weight=weight,
         description=edge_description,
         source_id=edge_source_id,
@@ -239,6 +250,7 @@ async def _merge_edges_then_upsert(
     already_source_ids = []
     already_description = []
     already_order = []
+    already_relationship_type = None
     if await knwoledge_graph_inst.has_edge(src_id, tgt_id):
         already_edge = await knwoledge_graph_inst.get_edge(src_id, tgt_id)
         already_weights.append(already_edge["weight"])
@@ -247,6 +259,7 @@ async def _merge_edges_then_upsert(
         )
         already_description.append(already_edge["description"])
         already_order.append(already_edge.get("order", 1))
+        already_relationship_type = already_edge.get("relationship_type")
 
     # [numberchiffre]: `Relationship.order` is only returned from DSPy's predictions
     order = min([dp.get("order", 1) for dp in edges_data] + already_order)
@@ -257,6 +270,17 @@ async def _merge_edges_then_upsert(
     source_id = GRAPH_FIELD_SEP.join(
         set([dp["source_id"] for dp in edges_data] + already_source_ids)
     )
+
+    # Merge relationship_type: prefer specific types over RELATED_TO
+    all_types = [dp.get("relationship_type", "RELATED_TO") for dp in edges_data]
+    if already_relationship_type:
+        all_types.append(already_relationship_type)
+    # Pick the first non-RELATED_TO type, or default to RELATED_TO
+    relationship_type = next(
+        (t for t in all_types if t and t != "RELATED_TO"),
+        "RELATED_TO"
+    )
+
     for need_insert_id in [src_id, tgt_id]:
         if not (await knwoledge_graph_inst.has_node(need_insert_id)):
             await knwoledge_graph_inst.upsert_node(
@@ -274,7 +298,11 @@ async def _merge_edges_then_upsert(
         src_id,
         tgt_id,
         edge_data=dict(
-            weight=weight, description=description, source_id=source_id, order=order
+            weight=weight,
+            description=description,
+            source_id=source_id,
+            order=order,
+            relationship_type=relationship_type
         ),
     )
 
