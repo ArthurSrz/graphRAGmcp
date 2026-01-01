@@ -214,7 +214,7 @@ Formater chaque entité ainsi : ("entity"{tuple_delimiter}<entity_name>{tuple_de
 Pour chaque paire d'entités liées, extraire les informations suivantes :
 - source_entity: nom de l'entité source, tel qu'identifié à l'étape 1
 - target_entity: nom de l'entité cible, tel qu'identifié à l'étape 1
-- relationship_type: Utiliser un de ces types de relations sémantiques si applicable : [{relationship_types}]. Sinon, décrire la relation.
+- relationship_type: **OBLIGATOIRE** - Utiliser UNIQUEMENT un des types suivants : [{relationship_types}]. NE PAS inventer de nouveaux types. Si aucun type ne correspond exactement, utiliser le type sémantiquement le plus proche de la liste.
 - relationship_description: explication de pourquoi l'entité source et l'entité cible sont liées
 - relationship_strength: score numérique indiquant la force de la relation entre les entités
 Formater chaque relation ainsi : ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_type>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
@@ -224,74 +224,49 @@ Formater chaque relation ainsi : ("relationship"{tuple_delimiter}<source_entity>
 4. Une fois terminé, afficher {completion_delimiter}
 
 ######################
--Examples-
+-Exemples Grand Débat National-
 ######################
-Example 1:
+Exemple 1 - Contribution citoyenne sur les services publics:
 
-Entity_types: [person, technology, mission, organization, location]
+Entity_types: [Citoyen, Contribution, Thematique, Opinion, Doleance, ServicePublic, Proposition]
 Text:
-while Alex clenched his jaw, the buzz of frustration dull against the backdrop of Taylor's authoritarian certainty. It was this competitive undercurrent that kept him alert, the sense that his and Jordan's shared commitment to discovery was an unspoken rebellion against Cruz's narrowing vision of control and order.
-
-Then Taylor did something unexpected. They paused beside Jordan and, for a moment, observed the device with something akin to reverence. “If this tech can be understood..." Taylor said, their voice quieter, "It could change the game for us. For all of us.”
-
-The underlying dismissal earlier seemed to falter, replaced by a glimpse of reluctant respect for the gravity of what lay in their hands. Jordan looked up, and for a fleeting heartbeat, their eyes locked with Taylor's, a wordless clash of wills softening into an uneasy truce.
-
-It was a small transformation, barely perceptible, but one that Alex noted with an inward nod. They had all been brought here by different paths
+Jean-Pierre de Rochefort-sur-Mer a participé au Grand Débat le 15 février 2019. Dans sa contribution, il exprime son mécontentement concernant la fermeture des bureaux de poste ruraux. Il propose de maintenir une présence postale minimale dans chaque commune de moins de 2000 habitants. Il souligne également que les services publics sont essentiels pour maintenir le lien social dans les territoires ruraux.
 ################
 Output:
-("entity"{tuple_delimiter}"Alex"{tuple_delimiter}"person"{tuple_delimiter}"Alex is a character who experiences frustration and is observant of the dynamics among other characters."){record_delimiter}
-("entity"{tuple_delimiter}"Taylor"{tuple_delimiter}"person"{tuple_delimiter}"Taylor is portrayed with authoritarian certainty and shows a moment of reverence towards a device, indicating a change in perspective."){record_delimiter}
-("entity"{tuple_delimiter}"Jordan"{tuple_delimiter}"person"{tuple_delimiter}"Jordan shares a commitment to discovery and has a significant interaction with Taylor regarding a device."){record_delimiter}
-("entity"{tuple_delimiter}"Cruz"{tuple_delimiter}"person"{tuple_delimiter}"Cruz is associated with a vision of control and order, influencing the dynamics among other characters."){record_delimiter}
-("entity"{tuple_delimiter}"The Device"{tuple_delimiter}"technology"{tuple_delimiter}"The Device is central to the story, with potential game-changing implications, and is revered by Taylor."){record_delimiter}
-("relationship"{tuple_delimiter}"Alex"{tuple_delimiter}"Taylor"{tuple_delimiter}"OBSERVES"{tuple_delimiter}"Alex is affected by Taylor's authoritarian certainty and observes changes in Taylor's attitude towards the device."{tuple_delimiter}7){record_delimiter}
-("relationship"{tuple_delimiter}"Alex"{tuple_delimiter}"Jordan"{tuple_delimiter}"COLLABORATES_WITH"{tuple_delimiter}"Alex and Jordan share a commitment to discovery, which contrasts with Cruz's vision."{tuple_delimiter}6){record_delimiter}
-("relationship"{tuple_delimiter}"Taylor"{tuple_delimiter}"Jordan"{tuple_delimiter}"INTERACTS_WITH"{tuple_delimiter}"Taylor and Jordan interact directly regarding the device, leading to a moment of mutual respect and an uneasy truce."{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"Jordan"{tuple_delimiter}"Cruz"{tuple_delimiter}"OPPOSES"{tuple_delimiter}"Jordan's commitment to discovery is in rebellion against Cruz's vision of control and order."{tuple_delimiter}5){record_delimiter}
-("relationship"{tuple_delimiter}"Taylor"{tuple_delimiter}"The Device"{tuple_delimiter}"REVERES"{tuple_delimiter}"Taylor shows reverence towards the device, indicating its importance and potential impact."{tuple_delimiter}9){completion_delimiter}
+("entity"{tuple_delimiter}"JEAN-PIERRE"{tuple_delimiter}"Citoyen"{tuple_delimiter}"Jean-Pierre est un citoyen de Rochefort-sur-Mer qui a participé au Grand Débat National le 15 février 2019."){record_delimiter}
+("entity"{tuple_delimiter}"CONTRIBUTION JEAN-PIERRE"{tuple_delimiter}"Contribution"{tuple_delimiter}"Contribution citoyenne du 15 février 2019 concernant les services publics ruraux et la présence postale."){record_delimiter}
+("entity"{tuple_delimiter}"SERVICES PUBLICS"{tuple_delimiter}"Thematique"{tuple_delimiter}"Thème du Grand Débat concernant l'organisation et l'accessibilité des services publics."){record_delimiter}
+("entity"{tuple_delimiter}"MECONTENTEMENT FERMETURE POSTE"{tuple_delimiter}"Opinion"{tuple_delimiter}"Opinion négative exprimée sur la fermeture des bureaux de poste en zone rurale."){record_delimiter}
+("entity"{tuple_delimiter}"FERMETURE BUREAUX POSTE RURAUX"{tuple_delimiter}"Doleance"{tuple_delimiter}"Doléance concernant la disparition des services postaux dans les petites communes."){record_delimiter}
+("entity"{tuple_delimiter}"LA POSTE"{tuple_delimiter}"ServicePublic"{tuple_delimiter}"Service public postal mentionné dans la contribution."){record_delimiter}
+("entity"{tuple_delimiter}"MAINTIEN PRESENCE POSTALE"{tuple_delimiter}"Proposition"{tuple_delimiter}"Proposition de maintenir une présence postale minimale dans les communes de moins de 2000 habitants."){record_delimiter}
+("relationship"{tuple_delimiter}"JEAN-PIERRE"{tuple_delimiter}"CONTRIBUTION JEAN-PIERRE"{tuple_delimiter}"SOUMET"{tuple_delimiter}"Jean-Pierre soumet sa contribution au Grand Débat National."{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"CONTRIBUTION JEAN-PIERRE"{tuple_delimiter}"SERVICES PUBLICS"{tuple_delimiter}"APPARTIENT_A"{tuple_delimiter}"La contribution appartient au thème des services publics."{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"CONTRIBUTION JEAN-PIERRE"{tuple_delimiter}"MECONTENTEMENT FERMETURE POSTE"{tuple_delimiter}"EXPRIME"{tuple_delimiter}"La contribution exprime une opinion sur les fermetures de bureaux de poste."{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"CONTRIBUTION JEAN-PIERRE"{tuple_delimiter}"FERMETURE BUREAUX POSTE RURAUX"{tuple_delimiter}"FAIT_REMONTER"{tuple_delimiter}"La contribution fait remonter cette doléance sur les fermetures."{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"CONTRIBUTION JEAN-PIERRE"{tuple_delimiter}"MAINTIEN PRESENCE POSTALE"{tuple_delimiter}"FORMULE"{tuple_delimiter}"La contribution formule cette proposition de maintien postal."{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"FERMETURE BUREAUX POSTE RURAUX"{tuple_delimiter}"LA POSTE"{tuple_delimiter}"CONCERNE"{tuple_delimiter}"La doléance concerne le service public postal La Poste."{tuple_delimiter}10){completion_delimiter}
 #############################
-Example 2:
+Exemple 2 - Réunion citoyenne sur la démocratie:
 
-Entity_types: [person, technology, mission, organization, location]
+Entity_types: [Contribution, Consultation, ReformeDemocratique, ModeScrutin, Consensus, Opinion, Thematique]
 Text:
-They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes. This elevation in their mission could not be shackled by regulations and established protocols—it demanded a new perspective, a new resolve.
-
-Tension threaded through the dialogue of beeps and static as communications with Washington buzzed in the background. The team stood, a portentous air enveloping them. It was clear that the decisions they made in the ensuing hours could redefine humanity's place in the cosmos or condemn them to ignorance and potential peril.
-
-Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants. Mercer's latter instincts gained precedence— the team's mandate had evolved, no longer solely to observe and report but to interact and prepare. A metamorphosis had begun, and Operation: Dulce hummed with the newfound frequency of their daring, a tone set not by the earthly
+Les citoyens réunis à La Rochelle dans le cadre du Grand Débat National ont largement plébiscité l'introduction du référendum d'initiative citoyenne. Un consensus s'est dégagé sur la nécessité de réformer le mode de scrutin pour les élections législatives. La thématique de la démocratie et citoyenneté a suscité des débats animés.
 #############
 Output:
-("entity"{tuple_delimiter}"Washington"{tuple_delimiter}"location"{tuple_delimiter}"Washington is a location where communications are being received, indicating its importance in the decision-making process."){record_delimiter}
-("entity"{tuple_delimiter}"Operation: Dulce"{tuple_delimiter}"mission"{tuple_delimiter}"Operation: Dulce is described as a mission that has evolved to interact and prepare, indicating a significant shift in objectives and activities."){record_delimiter}
-("entity"{tuple_delimiter}"The team"{tuple_delimiter}"organization"{tuple_delimiter}"The team is portrayed as a group of individuals who have transitioned from passive observers to active participants in a mission, showing a dynamic change in their role."){record_delimiter}
-("relationship"{tuple_delimiter}"The team"{tuple_delimiter}"Washington"{tuple_delimiter}"RECEIVES_FROM"{tuple_delimiter}"The team receives communications from Washington, which influences their decision-making process."{tuple_delimiter}7){record_delimiter}
-("relationship"{tuple_delimiter}"The team"{tuple_delimiter}"Operation: Dulce"{tuple_delimiter}"EXECUTES"{tuple_delimiter}"The team is directly involved in Operation: Dulce, executing its evolved objectives and activities."{tuple_delimiter}9){completion_delimiter}
-#############################
-Example 3:
-
-Entity_types: [person, role, technology, organization, event, location, concept]
-Text:
-their voice slicing through the buzz of activity. "Control may be an illusion when facing an intelligence that literally writes its own rules," they stated stoically, casting a watchful eye over the flurry of data.
-
-"It's like it's learning to communicate," offered Sam Rivera from a nearby interface, their youthful energy boding a mix of awe and anxiety. "This gives talking to strangers' a whole new meaning."
-
-Alex surveyed his team—each face a study in concentration, determination, and not a small measure of trepidation. "This might well be our first contact," he acknowledged, "And we need to be ready for whatever answers back."
-
-Together, they stood on the edge of the unknown, forging humanity's response to a message from the heavens. The ensuing silence was palpable—a collective introspection about their role in this grand cosmic play, one that could rewrite human history.
-
-The encrypted dialogue continued to unfold, its intricate patterns showing an almost uncanny anticipation
-#############
-Output:
-("entity"{tuple_delimiter}"Sam Rivera"{tuple_delimiter}"person"{tuple_delimiter}"Sam Rivera is a member of a team working on communicating with an unknown intelligence, showing a mix of awe and anxiety."){record_delimiter}
-("entity"{tuple_delimiter}"Alex"{tuple_delimiter}"person"{tuple_delimiter}"Alex is the leader of a team attempting first contact with an unknown intelligence, acknowledging the significance of their task."){record_delimiter}
-("entity"{tuple_delimiter}"Control"{tuple_delimiter}"concept"{tuple_delimiter}"Control refers to the ability to manage or govern, which is challenged by an intelligence that writes its own rules."){record_delimiter}
-("entity"{tuple_delimiter}"Intelligence"{tuple_delimiter}"concept"{tuple_delimiter}"Intelligence here refers to an unknown entity capable of writing its own rules and learning to communicate."){record_delimiter}
-("entity"{tuple_delimiter}"First Contact"{tuple_delimiter}"event"{tuple_delimiter}"First Contact is the potential initial communication between humanity and an unknown intelligence."){record_delimiter}
-("entity"{tuple_delimiter}"Humanity's Response"{tuple_delimiter}"event"{tuple_delimiter}"Humanity's Response is the collective action taken by Alex's team in response to a message from an unknown intelligence."){record_delimiter}
-("relationship"{tuple_delimiter}"Sam Rivera"{tuple_delimiter}"Intelligence"{tuple_delimiter}"COMMUNICATES_WITH"{tuple_delimiter}"Sam Rivera is directly involved in the process of learning to communicate with the unknown intelligence."{tuple_delimiter}9){record_delimiter}
-("relationship"{tuple_delimiter}"Alex"{tuple_delimiter}"First Contact"{tuple_delimiter}"LEADS"{tuple_delimiter}"Alex leads the team that might be making the First Contact with the unknown intelligence."{tuple_delimiter}10){record_delimiter}
-("relationship"{tuple_delimiter}"Alex"{tuple_delimiter}"Humanity's Response"{tuple_delimiter}"COORDINATES"{tuple_delimiter}"Alex and his team are the key figures in Humanity's Response to the unknown intelligence."{tuple_delimiter}8){record_delimiter}
-("relationship"{tuple_delimiter}"Control"{tuple_delimiter}"Intelligence"{tuple_delimiter}"CHALLENGED_BY"{tuple_delimiter}"The concept of Control is challenged by the Intelligence that writes its own rules."{tuple_delimiter}7){completion_delimiter}
+("entity"{tuple_delimiter}"REUNION LA ROCHELLE"{tuple_delimiter}"Contribution"{tuple_delimiter}"Contribution collective issue de la réunion citoyenne de La Rochelle dans le cadre du Grand Débat."){record_delimiter}
+("entity"{tuple_delimiter}"GRAND DEBAT NATIONAL"{tuple_delimiter}"Consultation"{tuple_delimiter}"Consultation citoyenne nationale organisée en 2019 pour recueillir les avis des Français."){record_delimiter}
+("entity"{tuple_delimiter}"REFERENDUM INITIATIVE CITOYENNE"{tuple_delimiter}"ReformeDemocratique"{tuple_delimiter}"Réforme démocratique visant à permettre aux citoyens d'initier des référendums."){record_delimiter}
+("entity"{tuple_delimiter}"SCRUTIN LEGISLATIVES"{tuple_delimiter}"ModeScrutin"{tuple_delimiter}"Mode de scrutin actuel pour les élections législatives, jugé à réformer."){record_delimiter}
+("entity"{tuple_delimiter}"CONSENSUS REFORME SCRUTIN"{tuple_delimiter}"Consensus"{tuple_delimiter}"Consensus dégagé sur la nécessité de réformer le mode de scrutin."){record_delimiter}
+("entity"{tuple_delimiter}"SOUTIEN RIC"{tuple_delimiter}"Opinion"{tuple_delimiter}"Opinion favorable au référendum d'initiative citoyenne exprimée par les participants."){record_delimiter}
+("entity"{tuple_delimiter}"DEMOCRATIE ET CITOYENNETE"{tuple_delimiter}"Thematique"{tuple_delimiter}"Thème du Grand Débat concernant la vie démocratique et la participation citoyenne."){record_delimiter}
+("relationship"{tuple_delimiter}"REUNION LA ROCHELLE"{tuple_delimiter}"GRAND DEBAT NATIONAL"{tuple_delimiter}"FAIT_PARTIE_DE"{tuple_delimiter}"La réunion de La Rochelle fait partie du Grand Débat National."{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"REUNION LA ROCHELLE"{tuple_delimiter}"SOUTIEN RIC"{tuple_delimiter}"EXPRIME"{tuple_delimiter}"La réunion exprime un soutien au RIC."{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"REUNION LA ROCHELLE"{tuple_delimiter}"DEMOCRATIE ET CITOYENNETE"{tuple_delimiter}"APPARTIENT_A"{tuple_delimiter}"La réunion appartient au thème démocratie et citoyenneté."{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"SOUTIEN RIC"{tuple_delimiter}"CONSENSUS REFORME SCRUTIN"{tuple_delimiter}"CONTRIBUE_A"{tuple_delimiter}"L'opinion favorable au RIC contribue au consensus sur la réforme."{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"GRAND DEBAT NATIONAL"{tuple_delimiter}"CONSENSUS REFORME SCRUTIN"{tuple_delimiter}"REVELE"{tuple_delimiter}"Le Grand Débat révèle ce consensus sur la réforme du scrutin."{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"REFERENDUM INITIATIVE CITOYENNE"{tuple_delimiter}"SCRUTIN LEGISLATIVES"{tuple_delimiter}"PROPOSE"{tuple_delimiter}"La réforme RIC propose de modifier le mode de scrutin."{tuple_delimiter}7){completion_delimiter}
 #############################
 -Real Data-
 ######################

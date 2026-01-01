@@ -28,6 +28,100 @@ from .base import (
 from .prompt import GRAPH_FIELD_SEP, PROMPTS
 
 
+# ============================================================
+# Ontology Constraints (from law_graph_core/ontology)
+# Constitution Principle: Strict ontology compliance
+# ============================================================
+
+# Ontology-defined relationship types (from law_graph_core/ontology/model/model.arrows.json)
+VALID_RELATIONSHIP_TYPES = {
+    "SOUMET", "CLASSE_DANS", "RESIDE_DANS", "REPOND_A", "APPARTIENT_A",
+    "FAIT_PARTIE_DE", "REPRESENTE", "PRIORISE", "REGROUPEE_DANS", "POSSEDE",
+    "GENERE", "EXPRIME", "SINSCRIT_DANS", "CONTRIBUE_A", "FORMULE",
+    "FAIT_REMONTER", "CONTIENT", "TRADUIT", "REVELE", "CONCERNE",
+    "PORTE_SUR_IMPOT", "CIBLE", "GERE", "INCLUT", "PORTE_SUR_MESURE",
+    "PROPOSE", "FINANCE", "EST_TYPE_DE"
+}
+
+# Mapping from common non-ontology types to closest ontology type
+RELATIONSHIP_TYPE_MAPPING = {
+    # Generic relationships → closest ontology match
+    "RELATED_TO": "APPARTIENT_A",
+    "PORTE_SUR": "CONCERNE",
+    "ORGANISE": "FAIT_PARTIE_DE",
+    "PARTICIPENT_A": "CONTRIBUE_A",
+    "PARTICIPENT_À": "CONTRIBUE_A",
+    "INTERAGIT_AVEC": "CONTRIBUE_A",
+    "INTERAGISSENT_AVEC": "CONTRIBUE_A",
+    "EST_ORGANISÉE_DANS": "FAIT_PARTIE_DE",
+    "EST_ORGANISEE_DANS": "FAIT_PARTIE_DE",
+    "EST_REFEREE_SUR": "APPARTIENT_A",
+    "EST_LIE_A": "APPARTIENT_A",
+    "ANIMENT": "GERE",
+    "ENTRETIENNENT": "CONTRIBUE_A",
+    "DATE_DE_REUNION": "FAIT_PARTIE_DE",
+    "DATE_DE_CREATION": "FAIT_PARTIE_DE",
+    "IDENTIFIE": "CONTIENT",
+    "INDIQUE": "TRADUIT",
+    "INCLUENT": "INCLUT",
+    "RELIENT": "APPARTIENT_A",
+    "COMPORTE": "CONTIENT",
+    "FINANCIE": "FINANCE",
+    "SE_DEROULE_LE": "FAIT_PARTIE_DE",
+    "PARTICIPE_A": "CONTRIBUE_A",
+    "ANIME": "GERE",
+    "ABORDE": "CONCERNE",
+    "TRAITE": "CONCERNE",
+    "EVOQUE": "EXPRIME",
+    "MENTIONNE": "CONTIENT",
+    "DISCUTE": "EXPRIME",
+    "RASSEMBLE": "FAIT_PARTIE_DE",
+    "REUNIT": "FAIT_PARTIE_DE",
+    # English fallbacks (from generic examples)
+    "OBSERVES": "EXPRIME",
+    "COLLABORATES_WITH": "CONTRIBUE_A",
+    "INTERACTS_WITH": "CONTRIBUE_A",
+    "OPPOSES": "EXPRIME",
+    "REVERES": "EXPRIME",
+    "RECEIVES_FROM": "REPOND_A",
+    "EXECUTES": "FORMULE",
+    "COMMUNICATES_WITH": "CONTRIBUE_A",
+    "LEADS": "GERE",
+    "COORDINATES": "GERE",
+    "CHALLENGED_BY": "CONCERNE",
+}
+
+
+def normalize_relationship_type(raw_type: str) -> str:
+    """
+    Map non-ontology relationship types to valid ontology types.
+
+    This function enforces strict ontology compliance by:
+    1. Checking if the type is already valid
+    2. Mapping known non-ontology types to their closest ontology equivalent
+    3. Falling back to APPARTIENT_A for unknown types
+    """
+    if not raw_type:
+        return "APPARTIENT_A"
+
+    # Strip quotes and whitespace, normalize to uppercase with underscores
+    normalized = raw_type.upper().strip().replace(" ", "_").replace('"', '').replace("'", "")
+
+    # If already valid, return as-is
+    if normalized in VALID_RELATIONSHIP_TYPES:
+        return normalized
+
+    # Try mapping
+    if normalized in RELATIONSHIP_TYPE_MAPPING:
+        return RELATIONSHIP_TYPE_MAPPING[normalized]
+
+    # Log unknown type for debugging
+    logger.warning(f"Unknown relationship type '{raw_type}' mapped to APPARTIENT_A")
+
+    # Default fallback
+    return "APPARTIENT_A"
+
+
 def chunking_by_token_size(
     tokens_list: list[list[int]],
     doc_keys,
@@ -170,10 +264,12 @@ async def _handle_single_relationship_extraction(
     # 6-field: ("relationship", source, target, type, description, strength)
     # 5-field: ("relationship", source, target, description, strength)
     if len(record_attributes) >= 6:
-        relationship_type = clean_str(record_attributes[3]).upper()
+        # Normalize to ontology-compliant relationship type
+        relationship_type = normalize_relationship_type(clean_str(record_attributes[3]))
         edge_description = clean_str(record_attributes[4])
     else:
-        relationship_type = "RELATED_TO"
+        # Fallback when no type specified - use default ontology type
+        relationship_type = "APPARTIENT_A"
         edge_description = clean_str(record_attributes[3])
 
     edge_source_id = chunk_key
