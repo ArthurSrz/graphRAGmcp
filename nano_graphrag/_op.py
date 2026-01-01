@@ -165,19 +165,7 @@ async def _handle_single_relationship_extraction(
     # add this record as edge
     source = clean_str(record_attributes[1].upper())
     target = clean_str(record_attributes[2].upper())
-
-    # Handle both old format (5 fields) and new format with relationship_type (6 fields)
-    # Old: ("relationship", source, target, description, weight)
-    # New: ("relationship", source, target, rel_type, description, weight)
-    if len(record_attributes) >= 6:
-        # New format with relationship_type
-        relationship_type = clean_str(record_attributes[3].upper())
-        edge_description = clean_str(record_attributes[4])
-    else:
-        # Old format without relationship_type
-        relationship_type = "RELATED_TO"  # Default fallback
-        edge_description = clean_str(record_attributes[3])
-
+    edge_description = clean_str(record_attributes[3])
     edge_source_id = chunk_key
     weight = (
         float(record_attributes[-1]) if is_float_regex(record_attributes[-1]) else 1.0
@@ -186,7 +174,6 @@ async def _handle_single_relationship_extraction(
         src_id=source,
         tgt_id=target,
         weight=weight,
-        relationship_type=relationship_type,
         description=edge_description,
         source_id=edge_source_id,
     )
@@ -231,12 +218,12 @@ async def _merge_nodes_then_upsert(
         entity_type=entity_type,
         description=description,
         source_id=source_id,
-        entity_name=entity_name,  # Store entity_name as node attribute for lookups
     )
     await knwoledge_graph_inst.upsert_node(
         entity_name,
         node_data=node_data,
     )
+    node_data["entity_name"] = entity_name
     return node_data
 
 
@@ -252,7 +239,6 @@ async def _merge_edges_then_upsert(
     already_source_ids = []
     already_description = []
     already_order = []
-    already_relationship_types = []
     if await knwoledge_graph_inst.has_edge(src_id, tgt_id):
         already_edge = await knwoledge_graph_inst.get_edge(src_id, tgt_id)
         already_weights.append(already_edge["weight"])
@@ -261,19 +247,10 @@ async def _merge_edges_then_upsert(
         )
         already_description.append(already_edge["description"])
         already_order.append(already_edge.get("order", 1))
-        if "relationship_type" in already_edge:
-            already_relationship_types.append(already_edge["relationship_type"])
 
     # [numberchiffre]: `Relationship.order` is only returned from DSPy's predictions
     order = min([dp.get("order", 1) for dp in edges_data] + already_order)
     weight = sum([dp["weight"] for dp in edges_data] + already_weights)
-
-    # Determine relationship_type by majority vote (like entity_type)
-    all_rel_types = [dp.get("relationship_type", "RELATED_TO") for dp in edges_data] + already_relationship_types
-    if all_rel_types:
-        relationship_type = Counter(all_rel_types).most_common(1)[0][0]
-    else:
-        relationship_type = "RELATED_TO"
     description = GRAPH_FIELD_SEP.join(
         sorted(set([dp["description"] for dp in edges_data] + already_description))
     )
@@ -297,11 +274,7 @@ async def _merge_edges_then_upsert(
         src_id,
         tgt_id,
         edge_data=dict(
-            weight=weight,
-            description=description,
-            source_id=source_id,
-            order=order,
-            relationship_type=relationship_type,  # Grand Débat ontology relationship type
+            weight=weight, description=description, source_id=source_id, order=order
         ),
     )
 
@@ -325,7 +298,7 @@ async def extract_entities(
         record_delimiter=PROMPTS["DEFAULT_RECORD_DELIMITER"],
         completion_delimiter=PROMPTS["DEFAULT_COMPLETION_DELIMITER"],
         entity_types=",".join(PROMPTS["DEFAULT_ENTITY_TYPES"]),
-        relationship_types=",".join(PROMPTS.get("DEFAULT_RELATIONSHIP_TYPES", [])),
+        relationship_types=",".join(PROMPTS["DEFAULT_RELATIONSHIP_TYPES"]),
     )
     continue_prompt = PROMPTS["entiti_continue_extraction"]
     if_loop_prompt = PROMPTS["entiti_if_loop_extraction"]
@@ -357,7 +330,7 @@ async def extract_entities(
                 if_loop_prompt, history_messages=history
             )
             if_loop_result = if_loop_result.strip().strip('"').strip("'").lower()
-            if if_loop_result != "yes":
+            if if_loop_result not in ["yes", "oui"]:
                 break
 
         records = split_string_by_multi_markers(
@@ -634,21 +607,15 @@ def _community_report_json_to_str(parsed_output: dict) -> str:
     summary = parsed_output.get("summary", "")
     findings = parsed_output.get("findings", [])
 
-    def finding_summary(finding):
+    def finding_summary(finding: dict):
         if isinstance(finding, str):
             return finding
-        if isinstance(finding, dict):
-            return finding.get("summary", "")
-        # Handle malformed findings (int, float, etc.)
-        return str(finding) if finding else ""
+        return finding.get("summary")
 
-    def finding_explanation(finding):
+    def finding_explanation(finding: dict):
         if isinstance(finding, str):
             return ""
-        if isinstance(finding, dict):
-            return finding.get("explanation", "")
-        # Handle malformed findings (int, float, etc.)
-        return ""
+        return finding.get("explanation")
 
     report_sections = "\n\n".join(
         f"## {finding_summary(f)}\n\n{finding_explanation(f)}" for f in findings
@@ -756,9 +723,8 @@ async def _find_most_related_community_from_entities(
         for k, v in zip(related_community_keys_counts.keys(), _related_community_datas)
         if v is not None
     }
-    # Only sort keys that exist in related_community_datas (filters out missing community reports)
     related_community_keys = sorted(
-        [k for k in related_community_keys_counts.keys() if k in related_community_datas],
+        related_community_keys_counts.keys(),
         key=lambda k: (
             related_community_keys_counts[k],
             related_community_datas[k]["report_json"].get("rating", -1),
@@ -887,9 +853,9 @@ async def _find_most_related_edges_from_entities(
     )
     all_edges_data = truncate_list_by_token_size(
         all_edges_data,
-        key=lambda x: x.get("description", ""),
+        key=lambda x: x["description"],
         max_token_size=query_param.local_max_token_for_local_context,
-        tokenizer_wrapper=tokenizer_wrapper,
+        tokenizer_wrapper=tokenizer_wrapper, 
     )
     return all_edges_data
 
@@ -902,12 +868,10 @@ async def _build_local_query_context(
     text_chunks_db: BaseKVStorage[TextChunkSchema],
     query_param: QueryParam,
     tokenizer_wrapper,
-    return_provenance: bool = False,
 ):
-    """Build context for local query. Returns (context_string, provenance_dict) if return_provenance=True."""
     results = await entities_vdb.query(query, top_k=query_param.top_k)
     if not len(results):
-        return (None, None) if return_provenance else None
+        return None
     node_datas = await knowledge_graph_inst.get_nodes_batch([r["entity_name"] for r in results])
     if not all([n is not None for n in node_datas]):
         logger.warning("Some nodes are missing, maybe the storage is damaged")
@@ -966,9 +930,9 @@ async def _build_local_query_context(
                 i,
                 e["src_tgt"][0],
                 e["src_tgt"][1],
-                e.get("description", ""),
-                e.get("weight", 1.0),
-                e.get("rank", 0),
+                e["description"],
+                e["weight"],
+                e["rank"],
             ]
         )
     relations_context = list_of_list_to_csv(relations_section_list)
@@ -982,8 +946,7 @@ async def _build_local_query_context(
     for i, t in enumerate(use_text_units):
         text_units_section_list.append([i, t["content"]])
     text_units_context = list_of_list_to_csv(text_units_section_list)
-
-    context_string = f"""
+    return f"""
 -----Reports-----
 ```csv
 {communities_context}
@@ -1002,46 +965,6 @@ async def _build_local_query_context(
 ```
 """
 
-    if return_provenance:
-        # Build structured provenance for end-to-end interpretability
-        provenance = {
-            "entities": [
-                {
-                    "name": n.get("entity_name", ""),
-                    "type": n.get("entity_type", "UNKNOWN"),
-                    "description": n.get("description", ""),
-                    "rank": n.get("rank", 0),
-                }
-                for n in node_datas if n is not None
-            ],
-            "relationships": [
-                {
-                    "source": e["src_tgt"][0],
-                    "target": e["src_tgt"][1],
-                    "description": e.get("description", ""),
-                    "weight": float(e.get("weight") or 1.0),
-                }
-                for e in use_relations
-            ],
-            "communities": [
-                {
-                    "title": c.get("report_json", {}).get("title", ""),
-                    "summary": c.get("report_json", {}).get("summary", ""),
-                }
-                for c in use_communities
-            ],
-            "source_quotes": [
-                {
-                    "content": t.get("content", ""),
-                    "chunk_id": t.get("chunk_order_index", i),
-                }
-                for i, t in enumerate(use_text_units)
-            ],
-        }
-        return context_string, provenance
-
-    return context_string
-
 
 async def local_query(
     query,
@@ -1052,49 +975,21 @@ async def local_query(
     query_param: QueryParam,
     tokenizer_wrapper,
     global_config: dict,
-):
-    """
-    Execute a local (entity-based) query.
-
-    Returns:
-        If query_param.return_provenance is True: dict with 'answer' and 'provenance'
-        Otherwise: str (just the answer)
-    """
+) -> str:
     use_model_func = global_config["best_model_func"]
-
-    # Build context with optional provenance
-    if query_param.return_provenance:
-        context, provenance = await _build_local_query_context(
-            query,
-            knowledge_graph_inst,
-            entities_vdb,
-            community_reports,
-            text_chunks_db,
-            query_param,
-            tokenizer_wrapper,
-            return_provenance=True,
-        )
-    else:
-        context = await _build_local_query_context(
-            query,
-            knowledge_graph_inst,
-            entities_vdb,
-            community_reports,
-            text_chunks_db,
-            query_param,
-            tokenizer_wrapper,
-            return_provenance=False,
-        )
-        provenance = None
-
+    context = await _build_local_query_context(
+        query,
+        knowledge_graph_inst,
+        entities_vdb,
+        community_reports,
+        text_chunks_db,
+        query_param,
+        tokenizer_wrapper,
+    )
     if query_param.only_need_context:
         return context
     if context is None:
-        fail_response = PROMPTS["fail_response"]
-        if query_param.return_provenance:
-            return {"answer": fail_response, "provenance": None}
-        return fail_response
-
+        return PROMPTS["fail_response"]
     sys_prompt_temp = PROMPTS["local_rag_response"]
     sys_prompt = sys_prompt_temp.format(
         context_data=context, response_type=query_param.response_type
@@ -1103,9 +998,6 @@ async def local_query(
         query,
         system_prompt=sys_prompt,
     )
-
-    if query_param.return_provenance:
-        return {"answer": response, "provenance": provenance}
     return response
 
 
@@ -1165,23 +1057,13 @@ async def global_query(
     query_param: QueryParam,
     tokenizer_wrapper,
     global_config: dict,
-):
-    """
-    Execute a global (community-based) query.
-
-    Returns:
-        If query_param.return_provenance is True: dict with 'answer' and 'provenance'
-        Otherwise: str (just the answer)
-    """
+) -> str:
     community_schema = await knowledge_graph_inst.community_schema()
     community_schema = {
         k: v for k, v in community_schema.items() if v["level"] <= query_param.level
     }
     if not len(community_schema):
-        fail_response = PROMPTS["fail_response"]
-        if query_param.return_provenance:
-            return {"answer": fail_response, "provenance": None}
-        return fail_response
+        return PROMPTS["fail_response"]
     use_model_func = global_config["best_model_func"]
 
     sorted_community_schemas = sorted(
@@ -1225,10 +1107,7 @@ async def global_query(
             )
     final_support_points = [p for p in final_support_points if p["score"] > 0]
     if not len(final_support_points):
-        fail_response = PROMPTS["fail_response"]
-        if query_param.return_provenance:
-            return {"answer": fail_response, "provenance": None}
-        return fail_response
+        return PROMPTS["fail_response"]
     final_support_points = sorted(
         final_support_points, key=lambda x: x["score"], reverse=True
     )
@@ -1236,7 +1115,7 @@ async def global_query(
         final_support_points,
         key=lambda x: x["answer"],
         max_token_size=query_param.global_max_token_for_community_report,
-        tokenizer_wrapper=tokenizer_wrapper,
+        tokenizer_wrapper=tokenizer_wrapper, # 传入 wrapper
     )
     points_context = []
     for dp in final_support_points:
@@ -1256,32 +1135,6 @@ Importance Score: {dp['score']}
             report_data=points_context, response_type=query_param.response_type
         ),
     )
-
-    if query_param.return_provenance:
-        # Build provenance from communities used in global mode
-        provenance = {
-            "entities": [],  # Global mode doesn't use direct entity lookup
-            "relationships": [],
-            "communities": [
-                {
-                    "title": c.get("report_json", {}).get("title", ""),
-                    "summary": c.get("report_json", {}).get("summary", ""),
-                    "rating": c.get("report_json", {}).get("rating", 0),
-                }
-                for c in community_datas[:20]  # Limit to top 20 communities
-            ],
-            "source_quotes": [],  # Global mode uses community summaries, not raw chunks
-            "analysis_points": [
-                {
-                    "analyst": dp["analyst"],
-                    "insight": dp["answer"],
-                    "score": dp["score"],
-                }
-                for dp in final_support_points[:10]  # Top 10 insights
-            ],
-        }
-        return {"answer": response, "provenance": provenance}
-
     return response
 
 

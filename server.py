@@ -561,7 +561,8 @@ def expand_via_graphml(seed_entities: list, commune_ids: set, max_hops: int = 2)
             for edge in root.findall('.//g:edge', ns):
                 src = edge.get('source', '').strip('"')
                 tgt = edge.get('target', '').strip('"')
-                rel = get_data(edge, 'relationship_type') or 'RELATED_TO'
+                # Try multiple field names for relationship type (GraphML uses 'type' via attr.name)
+                rel = get_data(edge, 'type') or get_data(edge, 'relationship_type') or get_data(edge, 'label') or 'RELATED_TO'
                 if src and tgt:
                     adjacency[src].append((tgt, rel))
                     adjacency[tgt].append((src, rel))
@@ -1717,7 +1718,8 @@ async def grand_debat_get_full_graph(
 
                     # Only include relationships between entities we loaded
                     if source_id in entity_ids and target_id in entity_ids:
-                        rel_type = get_data(edge, 'relationship_type') or get_data(edge, 'type') or 'RELATED_TO'
+                        # Try 'type' first (matches GraphML attr.name), then fallbacks
+                        rel_type = get_data(edge, 'type') or get_data(edge, 'relationship_type') or get_data(edge, 'label') or 'RELATED_TO'
                         weight_str = get_data(edge, 'weight')
                         try:
                             weight = float(weight_str) if weight_str else 1.0

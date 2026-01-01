@@ -193,35 +193,35 @@ Output:
 
 PROMPTS[
     "entity_extraction"
-] = """-Goal-
-Given a text document from the Grand Débat National (French citizen consultation 2019), identify all civic entities and their relationships according to the Grand Débat ontology.
+] = """-Objectif-
+À partir d'un texte issu du Grand Débat National (consultation citoyenne française 2019), identifier toutes les entités civiques et leurs relations selon l'ontologie du Grand Débat.
 
--Context-
-This is a citizen contribution (Cahier de Doléances) from a French commune. Extract entities and relationships that capture:
-- What citizens are expressing (opinions, grievances, proposals)
-- Which themes and public services are concerned
-- Which institutions and reforms are mentioned
-- The semantic relationships between these elements
+-Contexte-
+Ceci est une contribution citoyenne (compte-rendu de réunion locale) d'une commune française. Extraire les entités et relations qui capturent :
+- Ce que les citoyens expriment (opinions, doléances, propositions)
+- Quels thèmes et services publics sont concernés
+- Quelles institutions et réformes sont mentionnées
+- Les relations sémantiques entre ces éléments
 
--Steps-
-1. Identify all entities. For each identified entity, extract the following information:
-- entity_name: Name of the entity, capitalized (in French)
-- entity_type: One of the following types: [{entity_types}]
-- entity_description: Comprehensive description of the entity's attributes and activities (in French)
-Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>
+-Étapes-
+1. Identifier toutes les entités. Pour chaque entité identifiée, extraire les informations suivantes :
+- entity_name: Nom de l'entité, en majuscules (en français)
+- entity_type: Un des types suivants : [{entity_types}]
+- entity_description: Description complète des attributs et activités de l'entité (en français)
+Formater chaque entité ainsi : ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>
 
-2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
-For each pair of related entities, extract the following information:
-- source_entity: name of the source entity, as identified in step 1
-- target_entity: name of the target entity, as identified in step 1
-- relationship_type: Use one of these semantic relationship types when applicable: [{relationship_types}]. If none fits exactly, describe the relationship.
-- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
- Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_type>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+2. À partir des entités identifiées à l'étape 1, identifier toutes les paires (entité_source, entité_cible) qui sont *clairement liées* entre elles.
+Pour chaque paire d'entités liées, extraire les informations suivantes :
+- source_entity: nom de l'entité source, tel qu'identifié à l'étape 1
+- target_entity: nom de l'entité cible, tel qu'identifié à l'étape 1
+- relationship_type: Utiliser un de ces types de relations sémantiques si applicable : [{relationship_types}]. Sinon, décrire la relation.
+- relationship_description: explication de pourquoi l'entité source et l'entité cible sont liées
+- relationship_strength: score numérique indiquant la force de la relation entre les entités
+Formater chaque relation ainsi : ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_type>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
 
-3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+3. Retourner le résultat en français sous forme d'une liste unique de toutes les entités et relations identifiées. Utiliser **{record_delimiter}** comme délimiteur.
 
-4. When finished, output {completion_delimiter}
+4. Une fois terminé, afficher {completion_delimiter}
 
 ######################
 -Examples-
@@ -304,112 +304,114 @@ Output:
 
 PROMPTS[
     "summarize_entity_descriptions"
-] = """You are a helpful assistant responsible for generating a comprehensive summary of the data provided below.
-Given one or two entities, and a list of descriptions, all related to the same entity or group of entities.
-Please concatenate all of these into a single, comprehensive description. Make sure to include information collected from all the descriptions.
-If the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.
-Make sure it is written in third person, and include the entity names so we the have full context.
+] = """Vous êtes un assistant chargé de générer un résumé complet des données fournies ci-dessous.
+Étant donné une ou deux entités et une liste de descriptions, toutes liées à la même entité ou groupe d'entités.
+Veuillez concaténer tout cela en une seule description complète. Assurez-vous d'inclure les informations de toutes les descriptions.
+Si les descriptions fournies sont contradictoires, résolvez les contradictions et fournissez un résumé unique et cohérent.
+Assurez-vous que le texte est écrit à la troisième personne et incluez les noms des entités pour le contexte.
 
 #######
--Data-
-Entities: {entity_name}
-Description List: {description_list}
+-Données-
+Entités: {entity_name}
+Liste des descriptions: {description_list}
 #######
-Output:
+Résultat:
 """
 
 
 PROMPTS[
     "entiti_continue_extraction"
-] = """MANY entities were missed in the last extraction.  Add them below using the same format:
+] = """PLUSIEURS entités ont été manquées lors de la dernière extraction. Ajoutez-les ci-dessous en utilisant le même format :
 """
 
 PROMPTS[
     "entiti_if_loop_extraction"
-] = """It appears some entities may have still been missed.  Answer YES | NO if there are still entities that need to be added.
+] = """Il semble que certaines entités aient encore été manquées. Répondez OUI | NON s'il reste des entités à ajouter.
 """
 
 # ============================================================
-# Grand Débat National - Civic Ontology (from Grafo)
-# Constitution Principle V: End-to-End Interpretability
+# Grand Débat National - Ontologie Civique (depuis law_graph_core)
+# Principe de la Constitution V : Interprétabilité de bout en bout
 # ============================================================
 
 PROMPTS["DEFAULT_ENTITY_TYPES"] = [
-    # Core Participants
-    "Citoyen",           # Citizen participant
-    "Contribution",      # Citizen text contribution
-    "Consultation",      # The Grand Débat consultation
+    # Participants principaux
+    "Citoyen",           # Participant avec citoyenId, codePostal, dateParticipation
+    "Contribution",      # Texte citoyen avec contributionId, texte, dateCreation
+    "Consultation",      # Le Grand Débat avec dateDebut, dateFin, nombreParticipants
 
-    # Questions & Themes
-    "Question",          # Questions in the consultation
-    "Thematique",        # Major themes (Fiscalité, Démocratie, Écologie, Services publics)
+    # Questions & Thèmes
+    "Question",          # Questions avec libelle, ordre, typeQuestion
+    "Thematique",        # Thèmes majeurs avec nom, description
 
-    # AI Processing
-    "ClusterSemantique", # Semantic clusters of similar contributions
-    "TypeRepondant",     # Respondent type/category
+    # Traitement IA
+    "ClusterSemantique", # Clusters sémantiques avec label, taille, centroide
+    "Encodage",          # Embeddings vectoriels avec vecteur, modele, dimension
+    "TypeRepondant",     # Type de répondant avec nom, pourcentage, description
 
-    # Content Extracted
-    "Opinion",           # Expressed opinion/position
-    "Proposition",       # Proposal/suggestion for change
-    "Doleance",          # Grievance/complaint
-    "Verbatim",          # Direct citizen quote
+    # Contenu extrait
+    "Opinion",           # Opinion exprimée avec position, sujet, intensite
+    "Proposition",       # Proposition avec titre, description, categorie
+    "Doleance",          # Doléance avec objet, gravite, frequence
+    "Verbatim",          # Citation directe avec texte, estTypique, scoreRepresentativite
 
-    # Reforms
-    "ReformeDemocratique",  # Democratic reform proposals
-    "ReformeFiscale",       # Tax reform proposals
+    # Réformes
+    "ReformeDemocratique",  # Réforme démocratique avec nom, nombreMentions
+    "ReformeFiscale",       # Réforme fiscale avec nom, impact
 
-    # Trust & Institutions
-    "NiveauConfiance",       # Confidence level in institutions
-    "ActeurInstitutionnel",  # Institutional actor (government, local authorities)
-    "ServicePublic",         # Public service (healthcare, education, transport)
+    # Confiance & Institutions
+    "NiveauConfiance",       # Niveau de confiance avec valeur, intensite
+    "ActeurInstitutionnel",  # Acteur institutionnel avec nom, type, niveauConfiance
+    "ServicePublic",         # Service public avec nom, domaine, priorite
 
-    # Other Entities
-    "Consensus",          # Points of consensus among citizens
-    "CourantIdeologique", # Ideological current/movement
-    "Territoire",         # Geographic territory (commune, region)
-    "TypeImpot",          # Tax type
-    "ModeScrutin",        # Voting mode/electoral system
-    "MesureEcologique",   # Ecological measure
+    # Autres entités
+    "Consensus",          # Points de consensus avec sujet, type, pourcentageAccord
+    "CourantIdeologique", # Courant idéologique avec nom, pourcentage
+    "CourantLaique",      # Courant laïque avec positionLoi1905
+    "Territoire",         # Territoire géographique avec nom, type, population
+    "TypeImpot",          # Type d'impôt avec nom, categorie, sentimentMoyen
+    "ModeScrutin",        # Mode de scrutin avec nom, nombreMentions
+    "MesureEcologique",   # Mesure écologique avec domaine, consensusObjectif
 ]
 
 PROMPTS["DEFAULT_RELATIONSHIP_TYPES"] = [
-    # Core Flow (Citizen → Contribution → Question → Theme)
-    "SOUMET",           # Citizen SUBMITS contribution
-    "REPOND_A",         # Contribution RESPONDS TO question
-    "APPARTIENT_A",     # Question BELONGS TO theme
-    "FAIT_PARTIE_DE",   # Theme IS PART OF consultation
+    # Flux principal (Citoyen → Contribution → Question → Thème)
+    "SOUMET",           # Citoyen SOUMET contribution
+    "REPOND_A",         # Contribution RÉPOND À question
+    "APPARTIENT_A",     # Question APPARTIENT À thème
+    "FAIT_PARTIE_DE",   # Thème FAIT PARTIE DE consultation
 
     # Classification
-    "CLASSE_DANS",      # Citizen CLASSIFIED IN respondent type
-    "RESIDE_DANS",      # Citizen RESIDES IN territory
-    "REGROUPEE_DANS",   # Contribution GROUPED IN semantic cluster
-    "PRIORISE",         # Respondent type PRIORITIZES theme
+    "CLASSE_DANS",      # Citoyen CLASSÉ DANS type de répondant
+    "RESIDE_DANS",      # Citoyen RÉSIDE DANS territoire
+    "REGROUPEE_DANS",   # Contribution REGROUPÉE DANS cluster sémantique
+    "PRIORISE",         # Type de répondant PRIORISE thème
 
-    # Content Extraction
-    "EXPRIME",          # Contribution EXPRESSES opinion
-    "FORMULE",          # Contribution FORMULATES proposition
-    "FAIT_REMONTER",    # Contribution RAISES grievance
-    "CONTIENT",         # Contribution CONTAINS verbatim
-    "TRADUIT",          # Contribution REFLECTS confidence level
-    "REPRESENTE",       # Verbatim REPRESENTS respondent type
+    # Extraction de contenu
+    "EXPRIME",          # Contribution EXPRIME opinion
+    "FORMULE",          # Contribution FORMULE proposition
+    "FAIT_REMONTER",    # Contribution FAIT REMONTER doléance
+    "CONTIENT",         # Contribution CONTIENT verbatim
+    "TRADUIT",          # Contribution TRADUIT niveau de confiance
+    "REPRESENTE",       # Verbatim REPRÉSENTE type de répondant
 
-    # Reform Specialization
-    "EST_TYPE_DE",      # Reform IS TYPE OF proposition
-    "PROPOSE",          # Democratic reform PROPOSES voting mode
-    "PORTE_SUR_IMPOT",  # Fiscal reform CONCERNS tax type
+    # Spécialisation des réformes
+    "EST_TYPE_DE",      # Réforme EST TYPE DE proposition
+    "PROPOSE",          # Réforme démocratique PROPOSE mode de scrutin
+    "PORTE_SUR_IMPOT",  # Réforme fiscale PORTE SUR type d'impôt
 
-    # Trust & Services
-    "CIBLE",            # Confidence level TARGETS institutional actor
-    "GERE",             # Institutional actor MANAGES public service
-    "CONCERNE",         # Grievance CONCERNS public service
-    "FINANCE",          # Tax type FINANCES public service
+    # Confiance & Services
+    "CIBLE",            # Niveau de confiance CIBLE acteur institutionnel
+    "GERE",             # Acteur institutionnel GÈRE service public
+    "CONCERNE",         # Doléance CONCERNE service public
+    "FINANCE",          # Type d'impôt FINANCE service public
 
-    # Consensus & Ideology
-    "SINSCRIT_DANS",    # Opinion INSCRIBES IN ideological current
-    "CONTRIBUE_A",      # Opinion CONTRIBUTES TO consensus
-    "REVELE",           # Consultation REVEALS consensus
-    "INCLUT",           # Theme INCLUDES ecological measure
-    "PORTE_SUR_MESURE", # Consensus CONCERNS ecological measure
+    # Consensus & Idéologie
+    "SINSCRIT_DANS",    # Opinion S'INSCRIT DANS courant idéologique
+    "CONTRIBUE_A",      # Opinion CONTRIBUE À consensus
+    "REVELE",           # Consultation RÉVÈLE consensus
+    "INCLUT",           # Thème INCLUT mesure écologique
+    "PORTE_SUR_MESURE", # Consensus PORTE SUR mesure écologique
 ]
 
 PROMPTS["DEFAULT_TUPLE_DELIMITER"] = "<|>"

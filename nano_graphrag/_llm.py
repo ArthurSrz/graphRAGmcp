@@ -175,6 +175,18 @@ async def gpt_4o_mini_complete(
     )
 
 
+async def gpt_4o_nano_complete(
+    prompt, system_prompt=None, history_messages=[], **kwargs
+) -> str:
+    return await openai_complete_if_cache(
+        "gpt-4.1-nano-2025-04-14",
+        prompt,
+        system_prompt=system_prompt,
+        history_messages=history_messages,
+        **kwargs,
+    )
+
+
 async def gpt_5_nano_complete(
     prompt, system_prompt=None, history_messages=[], **kwargs
 ) -> str:
