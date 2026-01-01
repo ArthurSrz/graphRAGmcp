@@ -1275,9 +1275,24 @@ QUESTION: {query}
 CONTEXTE DU GRAPHE DE CONNAISSANCES:
 {context}
 
-INSTRUCTIONS:
-- Synthétise les informations de plusieurs communes
-- Cite des exemples spécifiques avec leurs communes d'origine
+INSTRUCTIONS DE FORMAT (OBLIGATOIRE):
+Structure ta réponse comme un nano-rapport avec des titres Markdown:
+
+# Titre principal (synthèse en une phrase)
+
+## Analyse
+[Corps de l'analyse avec les entités clés]
+
+## Exemples par commune
+[Exemples spécifiques avec leurs communes d'origine]
+
+## Relations clés
+[Les relations importantes du graphe qui justifient l'analyse]
+
+RÈGLES:
+- Utilise OBLIGATOIREMENT les headers Markdown (# ## ###)
+- Cite les entités exactement comme elles apparaissent dans le contexte
+- Mentionne les relations sous forme: ENTITÉ --[TYPE]--> ENTITÉ
 - Reste factuel et basé sur les données fournies
 - Réponds en français
 
