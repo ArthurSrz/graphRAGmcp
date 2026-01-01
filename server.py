@@ -384,9 +384,9 @@ def build_context_from_graph(entities: list, communities: list, query: str, max_
     relevant_entities = sorted([e for e, s in scored_entities if s > 0],
                                key=lambda x: score_entity(x), reverse=True)[:40]
 
-    # If no keyword matches, take entities with descriptions
+    # If no keyword matches, take entities with descriptions (no limit)
     if not relevant_entities:
-        relevant_entities = [e for e in entities if e.get('description')][:30]
+        relevant_entities = [e for e in entities if e.get('description')]
 
     context_parts = []
     current_size = 0
@@ -603,7 +603,7 @@ def expand_via_graphml(seed_entities: list, commune_ids: set, max_hops: int = 2)
         if e in entity_data:
             entities.append({**entity_data[e], 'id': e})
 
-    return entities, paths[:30]
+    return entities, paths  # No limit - return full subgraph
 
 
 # ============================================================================
