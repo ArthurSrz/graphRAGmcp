@@ -1304,6 +1304,7 @@ RÉPONSE:"""
             },
             "provenance": {
                 # Full entity data for graph visualization (Constitution Principle I)
+                # No limit - return complete subgraph from multi-hop traversal
                 "entities": [
                     {
                         "id": e.get('name', f"entity-{i}"),
@@ -1313,9 +1314,10 @@ RÉPONSE:"""
                         "source_commune": e.get('commune', ''),
                         "importance_score": e.get('importance_score', 0.5)
                     }
-                    for i, e in enumerate(entities[:50])  # Limit to 50 for performance
+                    for i, e in enumerate(entities)
                 ],
                 # Full relationship data for graph edges
+                # No limit - return all paths from BFS expansion
                 "relationships": [
                     {
                         "source": p.get('source', ''),
@@ -1324,16 +1326,16 @@ RÉPONSE:"""
                         "description": p.get('description', ''),
                         "weight": p.get('weight', 1.0)
                     }
-                    for p in paths[:30]  # Limit to 30 for performance
+                    for p in paths
                 ],
-                # Community summaries
+                # Community summaries - no limit
                 "communities": [
                     {
                         "title": c.get('title', ''),
                         "summary": c.get('summary', '')[:300],
                         "commune": c.get('commune_id', '')
                     }
-                    for c in communities[:10]
+                    for c in communities
                 ],
                 # Statistics
                 "stats": {
