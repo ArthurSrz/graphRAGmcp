@@ -1,0 +1,2376 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d8" for="edge" attr.name="order" attr.type="long"/>
+<key id="d7" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d6" for="edge" attr.name="description" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;GOUVERNANTS ET REPRÉSENTANTS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"GOUVERNANTS ET REPRÉSENTANTS refers to current and former representatives whose roles and actions are being criticized and whose number and benefits are proposed for reduction."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"GOUVERNANTS ET REPRÉSENTANTS"</data>
+</node>
+<node id="&quot;ÉLECTIONS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"ÉLECTIONS discusses the responsibilities and improvements needed in the electoral process, including mandatory voting and accounting for blank ballots."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"ÉLECTIONS"</data>
+</node>
+<node id="&quot;CITOYENNETÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"CITOYENNETÉ addresses the principles that should guide laws, focusing on equity, transparency, and citizen engagement in governance processes."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"CITOYENNETÉ"</data>
+</node>
+<node id="&quot;SOCIAL&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"SOCIAL encompasses proposals aimed at improving social standards, including wage equality and support for social aid programs."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"SOCIAL"</data>
+</node>
+<node id="&quot;MOBILITÉ/LOGEMENT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"MOBILITÉ/LOGEMENT covers issues related to transportation and the living conditions necessary for a dignified life while promoting energy efficiency."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"MOBILITÉ/LOGEMENT"</data>
+</node>
+<node id="&quot;ÉCONOMIE/FISCALITÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"ÉCONOMIE/FISCALITÉ focuses on the fair distribution of business profits and the need for a harmonized tax system across Europe."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"ÉCONOMIE/FISCALITÉ"</data>
+</node>
+<node id="&quot;SMIC&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"SMIC is the minimum wage in France, referenced in the context of demands for salary increases."&lt;SEP&gt;"SMIC refers to the proposed minimum wage that allows individuals to live with dignity, indicating a need for better social standards."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a&lt;SEP&gt;contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"SMIC"</data>
+</node>
+<node id="&quot;ÉQUITABILITÉ DES IMPÔTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Équitabilité des impôts emphasizes the idea of fair taxation across all income levels, promoting social justice and economic stability."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"ÉQUITABILITÉ DES IMPÔTS"</data>
+</node>
+<node id="&quot;LIBERTÉ - ÉGALITÉ - FRATERNITÉ&quot;">
+  <data key="d0">"CONSENSUS"</data>
+  <data key="d1">"Liberté - Égalité - Fraternité represents the foundational principles of the French Republic, which are highlighted as essential in reforms."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"LIBERTÉ - ÉGALITÉ - FRATERNITÉ"</data>
+</node>
+<node id="&quot;SOLIDARITÉ - LAÏCITÉ - DÉMOCRATIE&quot;">
+  <data key="d0">"CONSENSUS"</data>
+  <data key="d1">"SOLIDARITÉ - LAÏCITÉ - DÉMOCRATIE signifies key societal values that should underpin proposed changes and reforms."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"SOLIDARITÉ - LAÏCITÉ - DÉMOCRATIE"</data>
+</node>
+<node id="&quot;HABITANTE DE CHARENTE-MARITIME&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Habitante de Charente-Maritime is a citizen who gathered and summarized opinions and contributions from the local community regarding governance and civic participation."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"HABITANTE DE CHARENTE-MARITIME"</data>
+</node>
+<node id="&quot;RÉDUIRE LEUR NOMBRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Réduire leur nombre is a proposal aimed at decreasing the number of governors and their employees to enhance efficiency and accountability."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"RÉDUIRE LEUR NOMBRE"</data>
+</node>
+<node id="&quot;STAGES SUR LE TERRAIN&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Stages sur le terrain suggests that governors should undergo practical experience in various sectors to understand citizens' realities better."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"STAGES SUR LE TERRAIN"</data>
+</node>
+<node id="&quot;AVANTAGES DIVERS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Avantages divers refers to various privileges enjoyed by governors that should be eliminated for fairness with societal standards."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"AVANTAGES DIVERS"</data>
+</node>
+<node id="&quot;CALCUL DES RETRAITES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Calcul des retraites indicates a request to reconsider how pensions are calculated for governors, ensuring fairness akin to other citizens."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"CALCUL DES RETRAITES"</data>
+</node>
+<node id="&quot;VOTE OBLIGATOIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Vote obligatoire advocates for making voting mandatory to increase participation and ensure representativeness of election outcomes."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"VOTE OBLIGATOIRE"</data>
+</node>
+<node id="&quot;COMPTABILISER LES BULLETINS BLANCS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Comptabiliser les bulletins blancs emphasizes the need to account for blank votes in election results for better representation."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"COMPTABILISER LES BULLETINS BLANCS"</data>
+</node>
+<node id="&quot;INSTANCES DE DÉBAT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Instances de débat refers to the creation of forums for discussions at various government levels to enhance civic engagement."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"INSTANCES DE DÉBAT"</data>
+</node>
+<node id="&quot;ACCÈS AUX DOCUMENTS ADMINISTRATIFS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Accès aux documents administratifs focuses on promoting transparency by making governmental documents accessible to citizens."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"ACCÈS AUX DOCUMENTS ADMINISTRATIFS"</data>
+</node>
+<node id="&quot;ÉCHELLE DES SALAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Échelle des salaires addresses the proposal to limit salary ratios within companies or administrations to 1 to 20 for fairness."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"ÉCHELLE DES SALAIRES"</data>
+</node>
+<node id="&quot;EXPRESSION DES CORPS INTERMÉDIAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Expression des corps intermédiaires emphasizes the need to consider inputs from intermediaries like unions and associations in policy-making."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"EXPRESSION DES CORPS INTERMÉDIAIRES"</data>
+</node>
+<node id="&quot;SEUILS DE CALCUL POUR L'ACCÈS AUX AIDES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Seuils de calcul pour l'accès aux aides calls for increasing thresholds for accessing social aids to support more citizens effectively."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"SEUILS DE CALCUL POUR L'ACCÈS AUX AIDES"</data>
+</node>
+<node id="&quot;EUROPE SOCIALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Europe sociale proposes the construction of a true social Europe that equitably supports its citizens."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"EUROPE SOCIALE"</data>
+</node>
+<node id="&quot;TRANSPORTS PUBLICS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Transports publics refers to public transportation services that should be improved to reduce individual vehicle reliance."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"TRANSPORTS PUBLICS"</data>
+</node>
+<node id="&quot;RÉSEAU ROUTIER&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Réseau routier indicates the public road network that requires better maintenance and safety measures."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"RÉSEAU ROUTIER"</data>
+</node>
+<node id="&quot;LOGEMENT DÉCENT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Logement décent insists on ensuring that every individual has access to housing that meets basic living standards and conserves energy."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"LOGEMENT DÉCENT"</data>
+</node>
+<node id="&quot;BÉNÉFICES DES ENTREPRISES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Bénéfices des entreprises conveys the idea to distribute business profits fairly among employees, investments, and shareholders."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"BÉNÉFICES DES ENTREPRISES"</data>
+</node>
+<node id="&quot;IMPÔT&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"Impôt applies to the taxation on all incomes to ensure that wealth is equitably contributed toward society's needs."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"IMPÔT"</data>
+</node>
+<node id="&quot;ISF&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"ISF refers to the impôt de solidarité sur la fortune, which is proposed to be reinstated."&lt;SEP&gt;"ISF refers to the tax on wealth, which should be scrutinized to ensure reinvestment into societal benefits."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a&lt;SEP&gt;contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"ISF"</data>
+</node>
+<node id="&quot;HARMONISATION DE LA FISCALITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Harmonisation de la fiscalité discusses the necessity to align tax regulations across Europe to promote fairness and cooperation."</data>
+  <data key="d2">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d3">"HARMONISATION DE LA FISCALITÉ"</data>
+</node>
+<node id="&quot;PRÉNOM NOM&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Prénom NOM expresses various grievances and proposals related to public policies and government spending in their contribution."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"PRÉNOM NOM"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"This is a formal citizen contribution expressing dissatisfaction and proposals for reform."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"DOLÉANCES DE [PRÉNOM NOM, ADRESSE]"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;RETRAITES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Retraites encompasses pension systems and their sustainability, reflecting concerns over retirement security."&lt;SEP&gt;"The demand to restore pensions and reimburse amounts wrongly taken from pension funds, indicating a concern for financial justice."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3&lt;SEP&gt;contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"RETRAITES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;SUPPRIMER 2/3 DES DÉPUTÉS ET DES SÉNATEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to reduce the number of deputies and senators, aimed at reforming the political structure."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"SUPPRIMER 2/3 DES DÉPUTÉS ET DES SÉNATEURS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;RÉTABLIR L'ISF OU CRÉER SON ÉQUIVALENT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to restore the wealth tax (ISF) or create a similar tax, reflecting concerns about wealth distribution."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"RÉTABLIR L'ISF OU CRÉER SON ÉQUIVALENT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;DIMINUER DE 50 % LES SALAIRES DES MINISTRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to cut the salaries of ministers and their advisors by 50%, aimed at reducing public spending."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"DIMINUER DE 50 % LES SALAIRES DES MINISTRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;FAIRE UN MÉNAGE DANS LES STRUCTURES RÉGIONALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to clean up administrative structures at various levels, indicating a desire for more efficient governance."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"FAIRE UN MÉNAGE DANS LES STRUCTURES RÉGIONALES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;PRIX DE VENTE DU GAS-OIL&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"An opinion on resetting the fuel price according to its cost, rather than the price of gasoline, indicating economic concerns."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"PRIX DE VENTE DU GAS-OIL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;INSTALLATION DE PANNEAUX SOLAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to install solar panels on public buildings, aimed at promoting sustainable energy."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"INSTALLATION DE PANNEAUX SOLAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;FERMONS DES AÉROPORTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to close airports that are seen as unnecessary, indicating a desire for land use efficiency and environmental concerns."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"FERMONS DES AÉROPORTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;MONTPELLIER-DE-MÉDILLAN&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Montpellier-de-Médillan is the commune from which the citizen's contribution originates, providing geographical context."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"MONTPELLIER-DE-MÉDILLAN"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;07.01.2019&quot;">
+  <data key="d0">"DATE"</data>
+  <data key="d1">"The date indicates when the contribution was made, providing temporal context."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"07.01.2019"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;LES ASSISTANTS PARLEMENTAIRES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"The parliamentary assistants are mentioned regarding proposed reductions, indicating their role in government and public services."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"LES ASSISTANTS PARLEMENTAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;LES DÉPUTÉS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"The deputies are part of the legislative body being criticized for their numbers and roles in the proposal."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"LES DÉPUTÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;LES SÉNATEURS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"The senators are referenced in the context of proposed cuts, indicating their involvement in legislative processes."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"LES SÉNATEURS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;SYSTÈMES RÉGIONAUX&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"The regional systems are mentioned in relation to the proposed cleanup, highlighting concerns about governmental structure."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"SYSTÈMES RÉGIONAUX"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;PANNEAUX SOLAIRES&quot;">
+  <data key="d0">"MESUREECOLOGIQUE"</data>
+  <data key="d1">"Solar panels are proposed as a sustainable measure for public buildings, indicating ecological considerations in the contribution."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"PANNEAUX SOLAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;AÉROPORTS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Airports are criticized in the proposal to close them, reflecting a reconsideration of public infrastructure."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"AÉROPORTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;NIVEAUX DE CONFIANCE&quot;">
+  <data key="d0">"NIVEAUCONFIANCE"</data>
+  <data key="d1">"The general sentiment of distrust in the institutions is implicit in the grievances expressed by the citizen."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"NIVEAUX DE CONFIANCE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;ÉCONOMIE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The theme of economic management is prevalent in the citizen's proposals and grievances about public spending."&lt;SEP&gt;"Économie deals with financial policies, taxation, and economic support measures pertinent to citizens and businesses."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3&lt;SEP&gt;contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"ÉCONOMIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;TRANSITION ÉNERGÉTIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The theme of energy transition is mentioned through the proposal for solar panel installations, indicating a focus on sustainability."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d3">"TRANSITION ÉNERGÉTIQUE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</data>
+</node>
+<node id="&quot;JUSTICE SOCIALE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"A proposal prioritizing social justice, aiming to eliminate the presence of homeless people on the streets and increase support for students."&lt;SEP&gt;"Justice Sociale is a key thematic area focusing on equity, welfare, and the reduction of social disparities."&lt;SEP&gt;"Justice Sociale refers to social justice topics raised in the contributions, emphasizing fairness in economic support."&lt;SEP&gt;"Social justice is a significant theme reflected in the demands for restoring pensions and adjusting taxes to wealth distribution."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3&lt;SEP&gt;contrib-b526e6965165b427e09045db95afa38a&lt;SEP&gt;contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"JUSTICE SOCIALE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;DÉMOCRATIE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Démocratie encompasses ideas and proposals aiming to strengthen democratic processes in France."&lt;SEP&gt;"The concept of democracy is implied in the calls for reducing parliamentary staff and improving governmental accountability."</data>
+  <data key="d2">contrib-2629136f0285d0c239927f76375045a3&lt;SEP&gt;contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"DÉMOCRATIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;L'ÉNERGIE NUCLÉAIRE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"L'énergie nucléaire est critiquée pour son coût exorbitant et les dangers qu'elle présente, révélant un appel à une sortie rapide du nucléaire en France."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"L'ÉNERGIE NUCLÉAIRE"</data>
+</node>
+<node id="&quot;ÉNERGIES RENOUVELABLES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les énergies renouvelables doivent être développées pour rattraper le retard de la France par rapport à l'Union européenne, représentant une diversité nécessaire dans le futur énergétique."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉNERGIES RENOUVELABLES"</data>
+</node>
+<node id="&quot;VÉHICULES ÉLECTRIQUES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Les véhicules électriques sont mentionnés comme une option qui n'est pas la seule, en comparaison avec d'autres technologies comme les voitures à hydrogène."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"VÉHICULES ÉLECTRIQUES"</data>
+</node>
+<node id="&quot;TRAIN&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Le train est utilisé pour les déplacements, mais son réseau est critiqué pour son état et ses coûts, et des lignes vitales sont abandonnées."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"TRAIN"</data>
+</node>
+<node id="&quot;TGV&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les TGV sont mentionnés comme étant développés vers Paris au détriment des lignes secondaires, mettant en avant un déséquilibre dans le réseau ferroviaire."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"TGV"</data>
+</node>
+<node id="&quot;CAHIER DE MONTPELLIER-DE-MÉDILLAN&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de doléances qui contient des préoccupations des citoyens concernant divers aspects des services publics et de l'environnement."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"CAHIER DE MONTPELLIER-DE-MÉDILLAN"</data>
+</node>
+<node id="&quot;TRANSPORTS AÉRIEN&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Les compagnies aériennes à bas coût sont critiquées pour leur coût, et une proposition est faite pour qu'elles soient davantage taxées."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"TRANSPORTS AÉRIEN"</data>
+</node>
+<node id="&quot;NUMÉRIQUE&quot;">
+  <data key="d0">"QUESTION"</data>
+  <data key="d1">"Le numérique est perçu comme excluant une partie de la population, malgré une baisse potentielle des coûts des services publics."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"NUMÉRIQUE"</data>
+</node>
+<node id="&quot;UNION EUROPÉENNE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"L'Union Européenne est considérée comme un acteur ayant mis en place un marché et une monnaie communs, soulevant des préoccupations concernant l'équité sociale et environnementale."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"UNION EUROPÉENNE"</data>
+</node>
+<node id="&quot;MARCHÉ COMMUN&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Le marché commun de l'Europe est cité, mais des propositions appellent à faire du social et de l'environnement une priorité."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"MARCHÉ COMMUN"</data>
+</node>
+<node id="&quot;COÛT DES TRAJETS EN TRAIN&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Le coût des trajets en train est jugé élevé, créant une inégalité par rapport à d'autres modes de transport, tels que l'avion."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"COÛT DES TRAJETS EN TRAIN"</data>
+</node>
+<node id="&quot;SÉCURITÉ NUCLÉAIRE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"La sécurité nucléaire est mise en avant comme un problème majeur en raison des malfaçons et du coût des mesures de sécurité."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SÉCURITÉ NUCLÉAIRE"</data>
+</node>
+<node id="&quot;DÉCHETS NUCLÉAIRES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Les déchets nucléaires sont décrits comme un problème environnemental sérieux, en raison de leur stockage difficile et de leur radioactivité sur des milliers d'années."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"DÉCHETS NUCLÉAIRES"</data>
+</node>
+<node id="&quot;PARIS&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Paris est cité comme principale destination pour les TGV, montrant un déséquilibre dans l'efficacité des transports en France."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PARIS"</data>
+</node>
+<node id="&quot;BORDEAUX&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Bordeaux est mentionnée comme un point névralgique pour le réseau ferroviaire avec des usagers qui dépendent des lignes pour se déplacer."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"BORDEAUX"</data>
+</node>
+<node id="&quot;LIGNE NANTES-BORDEAUX&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"La ligne NANTES-BORDEAUX est critiquée pour sa durée de trajet excessive en comparaison avec Bordeaux-Paris."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"LIGNE NANTES-BORDEAUX"</data>
+</node>
+<node id="&quot;LIGNE SAINTES-BORDEAUX&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"La ligne SAINTES-BORDEAUX est utilisée par de nombreux usagers, renforçant la nécessité de maintenir des lignes secondaires."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"LIGNE SAINTES-BORDEAUX"</data>
+</node>
+<node id="&quot;LIGNE BORDEAUX-LYON&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"La ligne BORDEAUX-LYON est signalée comme abandonnée et peu accessible, compliquant les trajets en train entre ces villes."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"LIGNE BORDEAUX-LYON"</data>
+</node>
+<node id="&quot;LIGNE LIMOGES-LYON&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"La ligne LIMOGES-LYON est mentionnée comme étant inexistante, ce qui pose un problème pour la connectivité régionale."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"LIGNE LIMOGES-LYON"</data>
+</node>
+<node id="&quot;COÛT DES BILLETS DE TRAIN&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Le coût élevé des billets de train est identifié comme un obstacle pour les usagers, en comparaison avec d'autres modes de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"COÛT DES BILLETS DE TRAIN"</data>
+</node>
+<node id="&quot;TAXATION DES COMPAGNIES AÉRIENNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition est faite pour que les compagnies aériennes à bas coûts soient davantage taxées afin d'égaliser les coûts de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"TAXATION DES COMPAGNIES AÉRIENNES"</data>
+</node>
+<node id="&quot;ÉNERGIE HYBRIDE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"L'idée d'une énergie hybride qui combine différentes sources est évoquée comme essentielle pour la transition énergétique."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉNERGIE HYBRIDE"</data>
+</node>
+<node id="&quot;SERVICES EN LIGNE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Les services en ligne sont mentionnés comme un vecteur d'exclusion pour les personnes sans accès numérique, plutôt que d'améliorer l'accès."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SERVICES EN LIGNE"</data>
+</node>
+<node id="&quot;SOLIDARITÉ SOCIALE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"La solidarité sociale doit devenir une priorité dans la construction européenne, en parallèle avec les aspects économiques."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SOLIDARITÉ SOCIALE"</data>
+</node>
+<node id="&quot;SOLUTION ÉNERGÉTIQUE DIVERSIFIÉE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une solution énergétique diversifiée est souhaitée pour inclure plusieurs types d'énergies, comme le biogaz, l'éolien, et le photovoltaïque."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SOLUTION ÉNERGÉTIQUE DIVERSIFIÉE"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT DURABLE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Le développement durable est mentionné comme une nécessité pour l'intégration des préoccupations sociales et environnementales que l'Europe doit adresser."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"DÉVELOPPEMENT DURABLE"</data>
+</node>
+<node id="&quot;ÉCONOMIE DE L'ÉTAT&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Le numérique est perçu comme un moyen de faire baisser les coûts de fonctionnement des services publics, mais cela crée des inégalités."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉCONOMIE DE L'ÉTAT"</data>
+</node>
+<node id="&quot;ACCÈS AUX SERVICES PUBLICS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"L'accès aux services publics est critiqué pour devenir de plus en plus difficile à cause de la transition numérique."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ACCÈS AUX SERVICES PUBLICS"</data>
+</node>
+<node id="&quot;RÉSEAU DE TRANSPORT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Le réseau de transport est perçu comme déséquilibré, centrant les investissements sur des lignes rapides au détriment des lignes locales."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉSEAU DE TRANSPORT"</data>
+</node>
+<node id="&quot;RÉFORMES ÉCOLOGIQUES&quot;">
+  <data key="d0">"REFORMEECOLOGIQUE"</data>
+  <data key="d1">"Les réformes écologiques sont nécessaires pour intégrer les préoccupations environnementales dans la planification des politiques publiques."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉFORMES ÉCOLOGIQUES"</data>
+</node>
+<node id="&quot;GOUVERNANCE EUROPÉENNE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"La gouvernance européenne doit évoluer pour prioriser le social et l'environnement, en tenant compte de la diversité des pays."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"GOUVERNANCE EUROPÉENNE"</data>
+</node>
+<node id="&quot;OMERTA NUCLÉAIRE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"L'omerta sur les dangers du nucléaire est dénoncée, appelant à une transparence sur les risques et coûts associés."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"OMERTA NUCLÉAIRE"</data>
+</node>
+<node id="&quot;NOUVELLES INFRASTRUCTURES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Des nouvelles infrastructures de transport doivent être développées pour maintenir une mobilité accessible et durable en France."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"NOUVELLES INFRASTRUCTURES"</data>
+</node>
+<node id="&quot;TRANSPORTS ALTERNATIFS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les transports alternatifs sont nécessaires pour réduire la dépendance à la voiture et améliorer l'accès aux services publics."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"TRANSPORTS ALTERNATIFS"</data>
+</node>
+<node id="&quot;VISION D'AVENIR ÉNERGÉTIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une vision d'avenir énergétique inclusive est proposée, englobant l'avenir durable par l'utilisation de plusieurs sources d'énergie."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"VISION D'AVENIR ÉNERGÉTIQUE"</data>
+</node>
+<node id="&quot;AMÉLIORATION DES INFRASTRUCTURES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une demande d'amélioration des infrastructures de transport pour garantir des services de qualité à tous les territoires."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AMÉLIORATION DES INFRASTRUCTURES"</data>
+</node>
+<node id="&quot;RÉSEAU FERROVIAIRE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Le réseau ferroviaire est un service public crucial, mais il est critiqué pour son fonctionnement et son état actuel."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉSEAU FERROVIAIRE"</data>
+</node>
+<node id="&quot;ÉQUITÉ DES SERVICES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"L'équité des services publics est évoquée, soulignant que tous les citoyens devraient avoir un accès égal aux transports."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉQUITÉ DES SERVICES"</data>
+</node>
+<node id="&quot;AVENIR DES TRANSPORTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"L'avenir des transports doit inclure une réflexion sur l'intégration de plusieurs modes de transports pour assurer la durabilité."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AVENIR DES TRANSPORTS"</data>
+</node>
+<node id="&quot;ACCESSIBILITÉ DES SERVICES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"L'accessibilité des services est une préoccupation croissante face à l'évolution numérique, qui peut conduire à l'exclusion."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ACCESSIBILITÉ DES SERVICES"</data>
+</node>
+<node id="&quot;CHANGEMENT DE PARADIGME&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Un changement de paradigme est nécessaire concernant les énergies et les transports pour favoriser une transition efficace et durable."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"CHANGEMENT DE PARADIGME"</data>
+</node>
+<node id="&quot;SOLUTIONS RÉGIONALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Des solutions régionales adaptées aux spécificités locales doivent être envisagées pour optimiser le réseau de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SOLUTIONS RÉGIONALES"</data>
+</node>
+<node id="&quot;COOPÉRATION INTERRÉGIONALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"La coopération interrégionale est essentielle pour améliorer le transport et réduire les inégalités entre les territoires."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"COOPÉRATION INTERRÉGIONALE"</data>
+</node>
+<node id="&quot;POLITIQUE DE TRANSPORT&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Une politique de transport cohérente doit être définie pour s'assurer que toutes les lignes sont soutenues équitablement."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"POLITIQUE DE TRANSPORT"</data>
+</node>
+<node id="&quot;RÉDUCTION DES COÛTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition est faite pour réduire les coûts liés aux services publics pour favoriser un accès pour tous."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉDUCTION DES COÛTS"</data>
+</node>
+<node id="&quot;SERVICES DE PROXIMITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les services de proximité doivent être renforcés pour garantir l'accessibilité aux citoyens dans toutes les régions."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SERVICES DE PROXIMITÉ"</data>
+</node>
+<node id="&quot;SATISFACTION DES USAGERS&quot;">
+  <data key="d0">"NIVEAUCONFIANCE"</data>
+  <data key="d1">"Le niveau de satisfaction des usagers concernant les services de transport est critiqué comme étant trop faible et doit être amélioré."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SATISFACTION DES USAGERS"</data>
+</node>
+<node id="&quot;PARTENARIATS PUBLIC-PRIVÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les partenariats public-privé doivent être explorés pour financer et développer les infrastructures de manière durable."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PARTENARIATS PUBLIC-PRIVÉ"</data>
+</node>
+<node id="&quot;COMITÉ CONSULTATIF&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Un comité consultatif pourrait être mis en place pour donner la parole aux usagers et intégrer leurs besoins dans l'évolution des services."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"COMITÉ CONSULTATIF"</data>
+</node>
+<node id="&quot;TRANSPORTS EN COMMUN&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les transports en commun doivent être révisés et modernisés pour répondre aux besoins actuels des usagers."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"TRANSPORTS EN COMMUN"</data>
+</node>
+<node id="&quot;ÉQUILIBRAGE DES INVESTISSEMENTS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Il est nécessaire d'équilibrer les investissements entre les grandes villes et les zones rurales dans le domaine des transports."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉQUILIBRAGE DES INVESTISSEMENTS"</data>
+</node>
+<node id="&quot;PLAN DE MOBILITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Un plan de mobilité est suggéré pour définir une vision claire sur le développement des transports pour l'avenir."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PLAN DE MOBILITÉ"</data>
+</node>
+<node id="&quot;RÉGLEMENTATION DES TRANSPORTS&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Une réglementation des transports pourrait assurer une meilleure régulation des prix et des services pour les usagers."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉGLEMENTATION DES TRANSPORTS"</data>
+</node>
+<node id="&quot;INNOVATION TECHNOLOGIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"L'innovation technologique doit être intégrée dans les solutions de transport pour améliorer l'efficacité et réduire les coûts."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"INNOVATION TECHNOLOGIQUE"</data>
+</node>
+<node id="&quot;CONSULTATION DES CITOYENS&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Une véritable consultation des citoyens est nécessaire pour répondre efficacement à leurs attentes et besoins en matière de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"CONSULTATION DES CITOYENS"</data>
+</node>
+<node id="&quot;ADAPTATION DES RÉGLEMENTATIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les réglementations dans le secteur des transports devraient être adaptées aux nouvelles réalités économiques et sociales."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ADAPTATION DES RÉGLEMENTATIONS"</data>
+</node>
+<node id="&quot;ÉCONOMIE VERTE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Le développement d'une économie verte pourrait offrir des solutions aux enjeux de transports et d'énergie."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉCONOMIE VERTE"</data>
+</node>
+<node id="&quot;ENGAGEMENT DES CITOYENS&quot;">
+  <data key="d0">"CONSENSUS"</data>
+  <data key="d1">"Il est nécessaire d'engager activement les citoyens dans la planification et la mise en œuvre des politiques de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ENGAGEMENT DES CITOYENS"</data>
+</node>
+<node id="&quot;DIALOGUE CONSTRUCTIF&quot;">
+  <data key="d0">"CONSENSUS"</data>
+  <data key="d1">"Un dialogue constructif est nécessaire entre les divers acteurs pour établir des consensus sur les problématiques de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"DIALOGUE CONSTRUCTIF"</data>
+</node>
+<node id="&quot;ÉCOLOGIE ET TRANSPORT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"L'écologie et le transport doivent être étroitement liés pour garantir une prise de décision durable."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉCOLOGIE ET TRANSPORT"</data>
+</node>
+<node id="&quot;SENSIBILISATION DES USAGERS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"La sensibilisation des usagers à l'importance de différents modes de transport est essentielle pour encourager des comportements durables."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SENSIBILISATION DES USAGERS"</data>
+</node>
+<node id="&quot;ÉVALUATION DES SERVICES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une évaluation régulière des services de transport doit être mise en place pour garantir leur qualité et leur pertinence."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉVALUATION DES SERVICES"</data>
+</node>
+<node id="&quot;RESSOURCES LINGUISTIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Des ressources linguistiques doivent être mises à disposition pour aider les citoyens dans leurs interactions avec les services publics."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RESSOURCES LINGUISTIQUES"</data>
+</node>
+<node id="&quot;IMPACT SOCIAL DES TRANSPORTS&quot;">
+  <data key="d0">"QUESTION"</data>
+  <data key="d1">"L'impact social des choix de transport doit être étudié pour comprendre ses conséquences sur les citoyens."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"IMPACT SOCIAL DES TRANSPORTS"</data>
+</node>
+<node id="&quot;ÉQUITÉ ENTRE RÉGIONS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"L'équité entre les régions doit être respectée pour que chacun ait accès aux mêmes services."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉQUITÉ ENTRE RÉGIONS"</data>
+</node>
+<node id="&quot;MOBILITÉ DURABLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"La mise en œuvre de solutions de mobilité durable devrait devenir une priorité dans la politique de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"MOBILITÉ DURABLE"</data>
+</node>
+<node id="&quot;SÉCURITÉ DES TRAJETS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"La sécurité des trajets en train est un problème soulevé, les usagers exprimant leurs préoccupations."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SÉCURITÉ DES TRAJETS"</data>
+</node>
+<node id="&quot;DIALOGUE ENTRE MOIS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Un dialogue entre les usagers et les décideurs est nécessaire pour adapter les services de transport aux besoins réels."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"DIALOGUE ENTRE MOIS"</data>
+</node>
+<node id="&quot;PARTICIPATION CITOYENNE&quot;">
+  <data key="d0">"CONSENSUS"</data>
+  <data key="d1">"La participation citoyenne doit être valorisée dans le cadre des décisions concernant le transport et l'énergie."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PARTICIPATION CITOYENNE"</data>
+</node>
+<node id="&quot;PÉRENNITÉ DES LIGNES&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"La pérennité des lignes de transport est essentielle pour garantir leur accessibilité et leur fonctionnement effectif."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PÉRENNITÉ DES LIGNES"</data>
+</node>
+<node id="&quot;AMÉLIORATION DES SERVICES SPÉCIALISÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les services spécialisés (pour les personnes âgées, ou à mobilité réduite, etc.) doivent être améliorés."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AMÉLIORATION DES SERVICES SPÉCIALISÉS"</data>
+</node>
+<node id="&quot;CHOIX D'ÉNERGIE VERTE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Le choix d'énergie verte est perçu comme crucial pour l'avenir énergétique durable."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"CHOIX D'ÉNERGIE VERTE"</data>
+</node>
+<node id="&quot;PARTENARIAT PUBLIC&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Le partenariat entre le secteur public et privé doit être renforcé pour améliorer l'efficacité dans les services."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PARTENARIAT PUBLIC"</data>
+</node>
+<node id="&quot;INCLUSION NUMÉRIQUE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"L'inclusion numérique doit faire partie de la stratégie pour un accès égal aux services."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"INCLUSION NUMÉRIQUE"</data>
+</node>
+<node id="&quot;AMÉLIORATION DES LIAISONS INTERRÉGIONALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Améliorer les liaisons interrégionales est vital pour assurer la mobilité des citoyens."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AMÉLIORATION DES LIAISONS INTERRÉGIONALES"</data>
+</node>
+<node id="&quot;MESURES DE SOUTIEN&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Il est proposé de mettre en place des mesures de soutien pour les usagers des transports."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"MESURES DE SOUTIEN"</data>
+</node>
+<node id="&quot;VISION ÉCOLOGIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une vision écologique doit guider les décisions liées aux déplacements et à l'énergie."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"VISION ÉCOLOGIQUE"</data>
+</node>
+<node id="&quot;ACTIONS CONCRÈTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Des actions concrètes doivent être mises en œuvre pour adresser les préoccupations des citoyens."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ACTIONS CONCRÈTES"</data>
+</node>
+<node id="&quot;GUIDE DES TRANSPORTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Un guide des transports doit être élaboré pour aider les citoyens à naviguer dans les choix de mobilité."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"GUIDE DES TRANSPORTS"</data>
+</node>
+<node id="&quot;SERVICES PERSONNALISÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposer des services personnalisés pourrait améliorer l'expérience des usagers."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SERVICES PERSONNALISÉS"</data>
+</node>
+<node id="&quot;AMÉLIORATION DES CONNECTIVITÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Il est essentiel d'améliorer les connectivités entre différents modes de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AMÉLIORATION DES CONNECTIVITÉS"</data>
+</node>
+<node id="&quot;COMPATIBILITÉ DES SERVICES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Les services doivent être compatibles entre eux pour faciliter les déplacements des usagers."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"COMPATIBILITÉ DES SERVICES"</data>
+</node>
+<node id="&quot;INFRASTRUCTURES DURABLES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Le développement d'infrastructures durables est nécessaire pour répondre aux défis climatiques."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"INFRASTRUCTURES DURABLES"</data>
+</node>
+<node id="&quot;AMÉLIORATION DES CONDITIONS DE VOYAGE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Des propositions doivent être faites pour améliorer les conditions de voyage."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AMÉLIORATION DES CONDITIONS DE VOYAGE"</data>
+</node>
+<node id="&quot;RÉDUCTION DE L'IMPACT ENVIRONNEMENTAL&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Des mesures doivent être prises pour réduire l'impact environnemental des transports."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉDUCTION DE L'IMPACT ENVIRONNEMENTAL"</data>
+</node>
+<node id="&quot;FACILITATION DES ÉCHANGES INTERRÉGIONAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"La facilitation des échanges interrégionaux doit être favorisée pour développer les relations entre les régions."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"FACILITATION DES ÉCHANGES INTERRÉGIONAUX"</data>
+</node>
+<node id="&quot;CRÉDIT D'IMPÔT POUR L'ÉCO-MOBILITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Un crédit d'impôt pour l'éco-mobilité pourrait inciter davantage de citoyens à choisir des moyens de transport durables."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"CRÉDIT D'IMPÔT POUR L'ÉCO-MOBILITÉ"</data>
+</node>
+<node id="&quot;TARIFICATION SOLIDAIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Instaurer une tarification solidaire pour les transports pourrait permettre aux usagers de bénéficier de tarifs plus accessibles."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"TARIFICATION SOLIDAIRE"</data>
+</node>
+<node id="&quot;RÉFORMES POUR UN AVENIR DURABLE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Des réformes sont indispensables pour garantir un avenir durable dans le secteur des transports."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉFORMES POUR UN AVENIR DURABLE"</data>
+</node>
+<node id="&quot;ÉVALUATION DES IMPACTS SOCIAUX ET ENVIRONNEMENTAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une évaluation des impacts sociaux et environnementaux des transports doit être réalisée pour éclairer les politiques publiques."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ÉVALUATION DES IMPACTS SOCIAUX ET ENVIRONNEMENTAUX"</data>
+</node>
+<node id="&quot;RÉADILITATION DES LIGNES ABANDONNÉES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Réhabiliter les lignes abandonnées est crucial pour améliorer le réseau de transports existant."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÉADILITATION DES LIGNES ABANDONNÉES"</data>
+</node>
+<node id="&quot;COLLABORATION ENTRE COLLECTIVITÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une collaboration entre collectivités est nécessaire pour développer un réseau de transport efficace et durable."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"COLLABORATION ENTRE COLLECTIVITÉS"</data>
+</node>
+<node id="&quot;PRIORITÉ À L'ÉDUCATION ENVIRONNEMENTALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Il est suggéré de donner une priorité à l'éducation environnementale pour sensibiliser les citoyens."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PRIORITÉ À L'ÉDUCATION ENVIRONNEMENTALE"</data>
+</node>
+<node id="&quot;RECHERCHE ET DÉVELOPPEMENT DANS LE SECTEUR DES TRANSPORTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Investir dans la recherche et le développement est crucial pour l'innovation dans le secteur des transports."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RECHERCHE ET DÉVELOPPEMENT DANS LE SECTEUR DES TRANSPORTS"</data>
+</node>
+<node id="&quot;ACCORDS DE COOPÉRATION TRANSFRONTALIÈRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les accords de coopération transfrontalière doivent être renforcés pour améliorer la connectivité entre régions."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ACCORDS DE COOPÉRATION TRANSFRONTALIÈRE"</data>
+</node>
+<node id="&quot;OBSERVATION DES RETOURS D'EXPÉRIENCE UTILISATEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Il est proposé d'observer les retours d'expérience des utilisateurs pour améliorer les services."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"OBSERVATION DES RETOURS D'EXPÉRIENCE UTILISATEURS"</data>
+</node>
+<node id="&quot;SENSIBILISATION AUX TRANSPORTS DURABLES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Il est indispensable de sensibiliser le public aux avantages des transports durables."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SENSIBILISATION AUX TRANSPORTS DURABLES"</data>
+</node>
+<node id="&quot;MEILLEURE INTERMODALITÉ DES TRANSPORTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"La meilleure intermodalité des transports est essentielle pour garantir un système de transport efficace."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"MEILLEURE INTERMODALITÉ DES TRANSPORTS"</data>
+</node>
+<node id="&quot;ACCESSIBILITÉ DES SERVICES D'URGENCE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"L'accessibilité aux services d'urgence est une préoccupation croissante évoquée par les citoyens."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"ACCESSIBILITÉ DES SERVICES D'URGENCE"</data>
+</node>
+<node id="&quot;GESTION DES RÉSEAUX INTELLIGENTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"La gestion des réseaux intelligents doit être adoptée pour optimiser les infrastructures de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"GESTION DES RÉSEAUX INTELLIGENTS"</data>
+</node>
+<node id="&quot;AMÉLIORATION DE LA SÉCURITÉ DES INFRASTRUCTURES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Il est proposé d'améliorer la sécurité des infrastructures pour assurer des trajets sûrs."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AMÉLIORATION DE LA SÉCURITÉ DES INFRASTRUCTURES"</data>
+</node>
+<node id="&quot;RÔLE DE L'ÉTAT DANS LES TRANSPORTS&quot;">
+  <data key="d0">"QUESTION"</data>
+  <data key="d1">"Le rôle de l'État dans le secteur des transports est questionné, notamment en matière de régulation et de soutien."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"RÔLE DE L'ÉTAT DANS LES TRANSPORTS"</data>
+</node>
+<node id="&quot;AMÉLIORATION DE L'INFORMATION DES USAGERS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Il est nécessaire d'améliorer l'information des usagers sur les services disponibles."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AMÉLIORATION DE L'INFORMATION DES USAGERS"</data>
+</node>
+<node id="&quot;DÉMARCHE D'AMÉLIORATION CONTINUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une démarche d'amélioration continue doit être ancrée dans la gestion des services de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"DÉMARCHE D'AMÉLIORATION CONTINUE"</data>
+</node>
+<node id="&quot;SERVICES DE TRANSPORT FLEXIBLES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Des services de transport flexibles doivent être mis en avant pour s'adapter aux besoins des usagers."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"SERVICES DE TRANSPORT FLEXIBLES"</data>
+</node>
+<node id="&quot;AJUSTEMENT DES HORAIRES DE TRANSPORT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"L'ajustement des horaires de transport devrait être envisagé pour mieux répondre aux heures de pointe."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"AJUSTEMENT DES HORAIRES DE TRANSPORT"</data>
+</node>
+<node id="&quot;PRISE EN COMPTE DES NOUVELLES MOBILITÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"La prise en compte des nouvelles mobilités est essentielle pour l'évolution des services de transport."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"PRISE EN COMPTE DES NOUVELLES MOBILITÉS"</data>
+</node>
+<node id="&quot;COST OF LIVING&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Le coût de la vie, y compris le coût des transports, est mentionné comme une préoccupation majeure des citoyens."</data>
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d3">"COST OF LIVING"</data>
+</node>
+<node id="&quot;RÉFORME DU MILLEFEUILLE ADMINISTRATIF&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to simplify and reform the complex layers of administrative governance in France."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"RÉFORME DU MILLEFEUILLE ADMINISTRATIF"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;PROPORTIONNELLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to introduce proportional representation to enhance the representation of the population."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"PROPORTIONNELLE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;VOTE BLANC&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to officially recognize blank votes in elections, allowing citizens to express their dissent without supporting any candidate."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"VOTE BLANC"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;TRANSPARENCE SUR L'UTILISATION DE L'ARGENT PUBLIC&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal advocating for greater transparency regarding how public funds are spent."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"TRANSPARENCE SUR L'UTILISATION DE L'ARGENT PUBLIC"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;TAXE GAFA&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to impose taxes on major tech companies, often referred to as GAFA (Google, Apple, Facebook, Amazon)."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"TAXE GAFA"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;UTILITÉ DES CONSEILS&quot;">
+  <data key="d0">"QUESTION"</data>
+  <data key="d1">"A question regarding the relevance and effectiveness of various advisory councils such as CNDP and CESE."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"UTILITÉ DES CONSEILS"</data>
+</node>
+<node id="&quot;PRIVILÈGES DES ANCIENS PRÉSIDENTS ET ÉLUS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to reduce the privileges granted to former presidents and elected officials."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"PRIVILÈGES DES ANCIENS PRÉSIDENTS ET ÉLUS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;DÉCENTRALISATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal advocating for increased decentralization to promote equity between urban and rural areas."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"DÉCENTRALISATION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;HAUT DÉBIT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to develop high-speed internet access universally to eliminate zones without coverage."&lt;SEP&gt;"Haut Débit refers to high-speed internet service, which is essential for modern communication and is a public service concern."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"HAUT DÉBIT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;RÉFÉRENDUM D'INITIATIVE CITOYENNE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal for a citizens' initiative referendum on non-sovereign issues to enhance democratic participation."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"RÉFÉRENDUM D'INITIATIVE CITOYENNE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;RÉFORME DE L'EUROPE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to reform European Union policies due to the significant disparities among member states."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"RÉFORME DE L'EUROPE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;ACCUEILLIR DES MIGRANTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to stop accepting migrants given the current housing inadequacies for the existing population."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"ACCUEILLIR DES MIGRANTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;TRAVAILLEURS DÉTACHÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal stating that posted workers should pay social charges in the host country unless for short missions."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"TRAVAILLEURS DÉTACHÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;CICE POUR PME&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to allocate the Competitiveness and Employment Tax Credit (CICE) exclusively to small and medium enterprises, excluding large corporations."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"CICE POUR PME"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;INDEXATION DES RETRAITES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to index pensions to inflation to ensure their adequacy over time."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"INDEXATION DES RETRAITES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;AGRICULTURE RAISONNÉE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to promote reasonable agriculture practices rather than the development of industrial farms."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"AGRICULTURE RAISONNÉE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C1"}]</data>
+</node>
+<node id="&quot;FERROUTAGE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to encourage rail transport as a less polluting alternative to road transport."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"FERROUTAGE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Doléances is a citizen consultation document where residents express their opinions, grievances, and proposals related to various societal issues."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"CAHIER DE DOLÉANCES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;CITOYENS&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Citoyens refers to the citizens of France participating in the consultation process, expressing their desires and concerns about governance and public services."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"CITOYENS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;CONSULTATION DU GRAND DÉBAT NATIONAL&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Consultation du Grand Débat National is a nationwide dialogue initiative aimed at gathering citizen feedback and fostering democratic engagement."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"CONSULTATION DU GRAND DÉBAT NATIONAL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;TRANSPARENCE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Transparence is a theme addressing the need for openness in government dealings and the management of public resources."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"TRANSPARENCE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="&quot;ENVIRONNEMENT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Environnement highlights issues related to ecological sustainability and the impact of policies on the natural world."&lt;SEP&gt;"The overall theme of environmental protection and sustainability that underpins many of the citizen's concerns, particularly regarding pollution and health."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721&lt;SEP&gt;contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"ENVIRONNEMENT"</data>
+</node>
+<node id="&quot;RURALITÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Ruralité addresses concerns and proposals specific to rural areas, including services and infrastructure."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"RURALITÉ"</data>
+</node>
+<node id="&quot;SERVICES PUBLICS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Services Publics refers to the government services provided to citizens, including healthcare, education, and infrastructure."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"SERVICES PUBLICS"</data>
+</node>
+<node id="&quot;CNDP&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"CNDP stands for Commission Nationale du Débat Public, an institution that facilitates public debates on significant projects and policies."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"CNDP"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;CESE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"CESE stands for Conseil Économique, Social et Environnemental, an advisory body in France that provides input on social and economic policies."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"CESE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;CICE&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"CICE refers to the 'Crédit d'Impôt pour la Compétitivité et l'Emploi', a proposal aimed at supporting small and medium enterprises, but the citizen argues it should not benefit large companies that make profits while laying off employees."&lt;SEP&gt;"CICE refers to the Crédit d'Impôt pour la Compétitivité et l'Emploi, a tax credit scheme aimed at promoting competitiveness among businesses."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721&lt;SEP&gt;contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"CICE"</data>
+</node>
+<node id="&quot;AGRICULTEURS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Agriculteurs refers to farmers, a group directly impacted by policies regarding agriculture and rural development."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"AGRICULTEURS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C1"}]</data>
+</node>
+<node id="&quot;MESURES ÉCOLOGIQUES&quot;">
+  <data key="d0">"MESUREECOLOGIQUE"</data>
+  <data key="d1">"Mesures écologiques refers to actions and policies aimed at promoting environmental sustainability and reducing ecological footprints."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"MESURES ÉCOLOGIQUES"</data>
+</node>
+<node id="&quot;ZONES BLANCHES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Zones blanches are areas lacking adequate internet services, highlighting rural connectivity issues."</data>
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d3">"ZONES BLANCHES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;FEMME&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"A female citizen who expresses various opinions, grievances, and proposals concerning public policies and services."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"FEMME"</data>
+</node>
+<node id="&quot;AGRICULTEURS ET VITICULTEURS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Agricultural and wine producers who need assistance in transitioning away from pesticides, reflecting a demand for sustainable practices."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"AGRICULTEURS ET VITICULTEURS"</data>
+</node>
+<node id="&quot;TRANSPORTS EN COMMUN ET FRET FERROVIAIRE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Public transportation and freight services, which the citizen advocates for improvement and increased prioritization."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"TRANSPORTS EN COMMUN ET FRET FERROVIAIRE"</data>
+</node>
+<node id="&quot;LABORATOIRES PHARMACEUTIQUES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Pharmaceutical laboratories that should prioritize patient care over financial interests, as per the citizen's opinion."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"LABORATOIRES PHARMACEUTIQUES"</data>
+</node>
+<node id="&quot;IMPÔTS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Taxation policies that the citizen believes should focus on addressing fraud among individuals and corporations."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"IMPÔTS"</data>
+</node>
+<node id="&quot;VENTE D’ARMES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The citizen proposes to stop selling arms to countries that exploit and harm innocent civilians, citing Saudi Arabia as an example."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"VENTE D’ARMES"</data>
+</node>
+<node id="&quot;SOUTIEN AUX PAYS EN VOIE DE DÉVELOPPEMENT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to support developing countries while ensuring proper monitoring of European Union funds allocated to them."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"SOUTIEN AUX PAYS EN VOIE DE DÉVELOPPEMENT"</data>
+</node>
+<node id="&quot;PERTURBATEURS ENDOCRINIENS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Endocrine disruptors and other harmful substances that the citizen wishes to eliminate to protect children's health."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"PERTURBATEURS ENDOCRINIENS"</data>
+</node>
+<node id="&quot;AVENIR POUR NOS ENFANTS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Concerns regarding the future of children's health in relation to pollution affecting water, land, food, and fauna."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"AVENIR POUR NOS ENFANTS"</data>
+</node>
+<node id="&quot;BULLETINS BLANCS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"The citizen's request to consider white ballots in elections speaks to the desire for electoral reform and integrity in the democratic process."&lt;SEP&gt;"White ballots, which the citizen wants to be considered in electoral processes, indicating a concern for electoral integrity."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"BULLETINS BLANCS"</data>
+</node>
+<node id="&quot;CARREFOUR&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Carrefour is a large retail company mentioned as an example of a business that makes profits while laying off employees, highlighting concerns about corporate responsibility."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"CARREFOUR"</data>
+</node>
+<node id="&quot;PESTICIDES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Pesticides are chemical substances that the citizen believes should no longer be used by farmers and winemakers for health and environmental reasons."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"PESTICIDES"</data>
+</node>
+<node id="&quot;90 KM/H&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal to return to a speed limit of 90 km/h on roads, indicating concerns about road safety and environmental impacts."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"90 KM/H"</data>
+</node>
+<node id="&quot;EXPLOITATION ET MASSACRE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Refers to the exploitation and massacre of innocents in conflict areas, which the citizen opposes, particularly in relation to arms sales."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"EXPLOITATION ET MASSACRE"</data>
+</node>
+<node id="&quot;UNION EUROPÉENNE (UE)&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"The European Union, which the citizen references in the context of funding for developing countries, indicating an interest in international cooperation and accountability."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"UNION EUROPÉENNE (UE)"</data>
+</node>
+<node id="&quot;FINANCES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Financial motivations and interests that are critiqued by the citizen in relation to the healthcare sector, emphasizing the need for prioritizing patient welfare."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"FINANCES"</data>
+</node>
+<node id="&quot;E171&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"E171 refers to a food additive that the citizen expresses concern over due to health implications, especially for children, highlighting the need for better food safety standards."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"E171"</data>
+</node>
+<node id="&quot;CONTRÔLE D'UTILISATION DES FONDS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal to control how funds allocated by the EU are used in developing countries to prevent misuse and ensure effectiveness."</data>
+  <data key="d2">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d3">"CONTRÔLE D'UTILISATION DES FONDS"</data>
+</node>
+<node id="&quot;MANUSCRIT&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Manuscrit is a written document that summarizes citizen grievances and proposals in the context of the Grand Débat National."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"MANUSCRIT"</data>
+</node>
+<node id="&quot;RIC&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"RIC refers to the referendum d'initiative citoyenne, a proposal for empowering citizen participation in decision-making."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"RIC"</data>
+</node>
+<node id="&quot;RETRAITE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Retraite pertains to pensions, which are mentioned in the context of demands for increases."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"RETRAITE"</data>
+</node>
+<node id="&quot;TAXE CARBURANT&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"TAXE Carburant points to taxes on fuel that are proposed to be abolished."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"TAXE CARBURANT"</data>
+</node>
+<node id="&quot;TAXE D'HABITATION&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"Taxe D'Habitation is a tax proposed to be eliminated."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"TAXE D'HABITATION"</data>
+</node>
+<node id="&quot;ALLOCATIONS HANDICAPÉS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Allocations Handicapés refers to benefits for people with disabilities, which are called to be increased."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"ALLOCATIONS HANDICAPÉS"</data>
+</node>
+<node id="&quot;FEMME SEULE ET AVEC ENFANTS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Femme Seule et Avec Enfants raises the issue of support for single mothers, proposed for increased allocations."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"FEMME SEULE ET AVEC ENFANTS"</data>
+</node>
+<node id="&quot;SDF&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"SDF stands for sans domicile fixe, referring to a grievance about the condition of homelessness."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"SDF"</data>
+</node>
+<node id="&quot;PRÉLÈVEMENT À LA SOURCE&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"Prélèvement à la Source refers to withholding tax at the source, which is proposed to be abolished."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"PRÉLÈVEMENT À LA SOURCE"</data>
+</node>
+<node id="&quot;INDEMNITÉS PRÉSIDENTIELLES À VIE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Indemnités Présidentielles à Vie refers to lifetime allowances for presidents and is expressed as a grievance."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"INDEMNITÉS PRÉSIDENTIELLES À VIE"</data>
+</node>
+<node id="&quot;DÉPUTÉS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Députés refers to members of the French Parliament who are mentioned regarding their number and privileges."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"DÉPUTÉS"</data>
+</node>
+<node id="&quot;SÉNATEURS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Sénateurs refers to French senators, mentioned in context with their advantages."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"SÉNATEURS"</data>
+</node>
+<node id="&quot;CONSEILLERS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Conseillers refers to advisers mentioned in the context of privileges and advantages."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"CONSEILLERS"</data>
+</node>
+<node id="&quot;VOTE MI-MANDAT PRÉSIDENTIELLE&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Vote Mi-Mandat Présidentielle is a proposed consultation referring to voting on presidential mid-terms."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"VOTE MI-MANDAT PRÉSIDENTIELLE"</data>
+</node>
+<node id="&quot;LIMITATION 90 KM/H&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Limitation 90 km/h refers to the proposed reinstatement of speed limit regulations."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"LIMITATION 90 KM/H"</data>
+</node>
+<node id="&quot;FEUILLE DE CAHIER GRANDS CARREAUX&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Feuille de Cahier Grands Carreaux is the type of paper used for the citizen contribution in the Grand Débat National, indicating a formal medium for expressing opinions."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"FEUILLE DE CAHIER GRANDS CARREAUX"</data>
+</node>
+<node id="&quot;LIGNES&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Lignes refer to the lines of text written on the contribution, indicating structured communication of grievances and proposals."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"LIGNES"</data>
+</node>
+<node id="&quot;MOTS&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Mots represents the number of words in the contribution, reflecting the conciseness of citizen expressions."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"MOTS"</data>
+</node>
+<node id="&quot;RETOUR&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Retour signifies a call for reversing previous policies, specifically mentioning the return of ISF."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"RETOUR"</data>
+</node>
+<node id="&quot;AUGMENTATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Augmentation refers to proposals for increasing various allowances and benefits, such as those for disabled individuals."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"AUGMENTATION"</data>
+</node>
+<node id="&quot;FIN&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Fin expresses grievances regarding the cessation of certain taxes or allowances, indicating discontent with current economic policies."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"FIN"</data>
+</node>
+<node id="&quot;PLUS DE SDF&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Plus de SDF emphasizes the demand for an increase in efforts to address homelessness, which is a major social issue."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"PLUS DE SDF"</data>
+</node>
+<node id="&quot;STOP&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Stop indicates a firm proposal to halt the creation of new taxes, reflecting citizens' frustrations with fiscal policies."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"STOP"</data>
+</node>
+<node id="&quot;HAUSSES DE TAXE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Hausses de Taxe relates to grievances regarding increasing taxes that citizens find burdensome."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"HAUSSES DE TAXE"</data>
+</node>
+<node id="&quot;FIN DES AVANTAGES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Fin des Avantages emphasizes the proposal to end various perks for elected officials, showcasing a demand for equality in public service."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"FIN DES AVANTAGES"</data>
+</node>
+<node id="&quot;LIMITATIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Limitations refers to proposed limitations such as vehicular speed restrictions, reflecting concerns over road safety and regulatory enforcement."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"LIMITATIONS"</data>
+</node>
+<node id="&quot;SEUL&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Seul highlights the individual challenge faced by citizens, particularly in social contexts such as single-parent households that need support."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"SEUL"</data>
+</node>
+<node id="&quot;ENFANTS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Enfants refers to concerns regarding children, particularly in discussions on social support and economic policies affecting families."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"ENFANTS"</data>
+</node>
+<node id="&quot;DÉMOGRAPHIE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Démographie relates to demographic considerations in policies, particularly impacting social services and benefits."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"DÉMOGRAPHIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;FISCALITÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Fiscalité refers to tax-related matters that citizens are concerned about and calls for reform."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"FISCALITÉ"</data>
+</node>
+<node id="&quot;POLITIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Politique addresses the political landscape and institutional reforms citizens are advocating for."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"POLITIQUE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;SÉCURITÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Sécurité highlights safety concerns raised by citizens in relation to public policies and social structures."</data>
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d3">"SÉCURITÉ"</data>
+</node>
+<node id="&quot;SERVICES NUMÉRISÉS&quot;">
+  <data key="d2">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d1">"Le numérique touche aux services de l'État qui, bien qu'efficaces, excluent ceux qui n'ont pas accès à ces services."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;PROPOSITION&quot;">
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d1">"This proposal addresses necessary reforms in the administrative structure, aiming for efficiency and clarity."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}, {"level": 2, "cluster": "L0C1_C0_C0"}]</data>
+</node>
+<node id="&quot;QUESTION&quot;">
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d1">"This question investigates the effectiveness of advisory bodies, which is related to governance and representation issues."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;PME&quot;">
+  <data key="d2">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d1">"The CICE proposal aims to benefit PME specifically, aligning fiscal reform with economic growth objectives."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;FIN TAXE CARBURANT&quot;">
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d1">"The Stop proposal reinforces the demand to end the TAXE Carburant, indicating a strong opposition to burdensome taxation."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;REFORMEFISCALE&quot;">
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d1">"Fiscalité encompasses the concerns citizens have about taxes, relating it directly to reform proposals for fiscal accountability."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;SERVICEPUBLIC&quot;">
+  <data key="d2">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d1">"Sécurité ties into the need for effective public services aimed at ensuring safety, which is a civic concern raised in the contributions."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;GOUVERNANTS ET REPRÉSENTANTS&quot;" target="&quot;ÉLECTIONS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The criticism of GOUVERNANTS ET REPRÉSENTANTS relates to the calls for improvements in the ÉLECTIONS process, including accountability and representation."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;GOUVERNANTS ET REPRÉSENTANTS&quot;" target="&quot;CITOYENNETÉ&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"CITOYENNETÉ stresses the need for equitable laws and transparency which directly impacts the role of GOUVERNANTS ET REPRÉSENTANTS."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;GOUVERNANTS ET REPRÉSENTANTS&quot;" target="&quot;HABITANTE DE CHARENTE-MARITIME&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Habitante de Charente-Maritime represents the voice of citizens who are critical of GOUVERNANTS ET REPRÉSENTANTS and their actions."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CITOYENNETÉ&quot;" target="&quot;SOCIAL&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The proposals in SOCIAL are related to foundations laid out in CITOYENNETÉ advocating social rights and equitable laws."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CITOYENNETÉ&quot;" target="&quot;LIBERTÉ - ÉGALITÉ - FRATERNITÉ&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The principles of Liberté - Égalité - Fraternité are fundamental to the proposals outlined in CITOYENNETÉ."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CITOYENNETÉ&quot;" target="&quot;HABITANTE DE CHARENTE-MARITIME&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"Habitante de Charente-Maritime is involved in gathering contributions that reflect citizens' opinions on CITOYENNETÉ issues."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SOCIAL&quot;" target="&quot;MOBILITÉ/LOGEMENT&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"MOBILITÉ/LOGEMENT aims to enhance living conditions which resonates with proposals made in SOCIAL regarding social equity."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SOCIAL&quot;" target="&quot;ÉCONOMIE/FISCALITÉ&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"ÉCONOMIE/FISCALITÉ metrics influence the social policies proposed in SOCIAL, creating a link between economic reforms and social welfare."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ÉCONOMIE/FISCALITÉ&quot;" target="&quot;SOLIDARITÉ - LAÏCITÉ - DÉMOCRATIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The concepts of SOLIDARITÉ - LAÏCITÉ - DÉMOCRATIE encompass ideals that support recommendations in ÉCONOMIE/FISCALITÉ."</data>
+  <data key="d7">contrib-713e9c1f3a5eeb04eac07944fcef01bb</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SMIC&quot;" target="&quot;MANUSCRIT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Manuscrit expresses a demand for higher wages linked to the SMIC, which is a central topic of the grievances."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ISF&quot;" target="&quot;MANUSCRIT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Manuscrit proposes the return of the ISF, which relates to civic demands for fiscal reform."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ISF&quot;" target="&quot;RETOUR&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Retour signifies the call to roll back fiscal changes, particularly related to the reinstatement of ISF, which citizens want to see happen."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;PRÉNOM NOM&quot;" target="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"The citizen Prénom NOM is the author of the contribution, which encapsulates their grievances and proposals."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;RETRAITES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The contribution includes a grievance regarding pensions, indicating a direct expression of dissatisfaction with current policies."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;SUPPRIMER 2/3 DES DÉPUTÉS ET DES SÉNATEURS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The contribution proposes a reduction in political representatives as a means to reform the political system."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;RÉTABLIR L'ISF OU CRÉER SON ÉQUIVALENT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The contribution suggests reinstating the wealth tax, revealing concerns about equity in taxation."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;DIMINUER DE 50 % LES SALAIRES DES MINISTRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The contribution proposes salary cuts for ministers, reflecting views on public funding and accountability."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;FAIRE UN MÉNAGE DANS LES STRUCTURES RÉGIONALES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal for cleaning up administrative structures shows the author's intent for political efficiency."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;PRIX DE VENTE DU GAS-OIL&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The contribution expresses an opinion on fuel pricing that aligns with economic management concerns."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;INSTALLATION DE PANNEAUX SOLAIRES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"This proposal reflects an environmentally conscious perspective in the contribution."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;FERMONS DES AÉROPORTS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The suggestion to close certain airports indicates a focus on land use and sustainability issues as expressed in the contribution."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;MONTPELLIER-DE-MÉDILLAN&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The contribution originates from Montpellier-de-Médillan, linking the grievances to a specific French commune."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;07.01.2019&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"The contribution date (07.01.2019) contextualizes the timing of these grievances and proposals."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;LES ASSISTANTS PARLEMENTAIRES&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Mention of parliamentary assistants indicates that the proposals are aimed at restructuring governmental roles."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;LES DÉPUTÉS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal to reduce the number of deputies indicates a direct critique of their representation and function."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;LES SÉNATEURS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The mention of senators reveals the citizen's concern for legislative effectiveness and efficiency."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;SYSTÈMES RÉGIONAUX&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to clean up regional systems shows the author's intent to improve governance at multiple administrative levels."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;PANNEAUX SOLAIRES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The mention of solar panels connects the citizen's proposals to ecological sustainability efforts."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;AÉROPORTS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Critique of airports reflects an assessment of public space utilization and its implications for local governance."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;NIVEAUX DE CONFIANCE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The overall distrust in institutions is reflected in the citizen's grievances, indicating a lack of confidence in current governance."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;ÉCONOMIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposals and grievances address economic management and resource allocation issues, critical themes for governance."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;TRANSITION ÉNERGÉTIQUE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal for solar panels relates to energy transition, emphasizing a focus on ecological solutions in public policy."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;JUSTICE SOCIALE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The calls for restoring pensions and equitable taxation reflect concerns for social justice embedded in the contribution."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DOLÉANCES DE [PRÉNOM NOM, ADRESSE]&quot;" target="&quot;DÉMOCRATIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal for fewer deputies suggests a desire to enhance democratic accountability and efficiency in governance."</data>
+  <data key="d7">contrib-2629136f0285d0c239927f76375045a3</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RETRAITES&quot;" target="&quot;JUSTICE SOCIALE&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"The discussion around Retraites directly relates to broader themes of Justice Sociale, emphasizing fair treatment for the elderly."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;JUSTICE SOCIALE&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal encompasses broad social welfare themes, focusing on support for marginalized groups in society."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;JUSTICE SOCIALE&quot;" target="&quot;CAHIER DE DOLÉANCES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Justice Sociale is a key concern reflected in the grievances and proposals within the Cahier de Doléances."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;JUSTICE SOCIALE&quot;" target="&quot;POLITIQUE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Justice Sociale reflects the societal call for equitable political action and policy reform, indicating advocacy for fair treatment."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE&quot;" target="&quot;TRANSPARENCE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The theme of Transparence is essential for fostering a healthy Démocratie, ensuring citizens are informed and engaged."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;L'ÉNERGIE NUCLÉAIRE&quot;" target="&quot;ÉNERGIES RENOUVELABLES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Le déclin de l'énergie nucléaire est proposé comme une condition pour favoriser le développement des énergies renouvelables."</data>
+  <data key="d7">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;L'ÉNERGIE NUCLÉAIRE&quot;" target="&quot;TRAIN&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Les critiques sur l'énergie nucléaire soulignent la nécessité d'un développement équilibré d'autres modes de transport durable, comme le train."</data>
+  <data key="d7">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;L'ÉNERGIE NUCLÉAIRE&quot;" target="&quot;CAHIER DE MONTPELLIER-DE-MÉDILLAN&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Le cahier de doléances recueille des avis critiques sur l'énergie nucléaire et propose des alternatives pour l'avenir énergétique."</data>
+  <data key="d7">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TRAIN&quot;" target="&quot;TGV&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Le TGV est critiqué pour avoir délaissé des lignes secondaires vitales, mettant en avant une gestion déséquilibrée du réseau ferroviaire."</data>
+  <data key="d7">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TRANSPORTS AÉRIEN&quot;" target="&quot;COÛT DES TRAJETS EN TRAIN&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Le coût du transport aérien à bas coût influence les prix des transports en train, rendant ces derniers non compétitifs."</data>
+  <data key="d7">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;NUMÉRIQUE&quot;" target="&quot;SERVICES NUMÉRISÉS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Le numérique touche aux services de l'État qui, bien qu'efficaces, excluent ceux qui n'ont pas accès à ces services."</data>
+  <data key="d7">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;UNION EUROPÉENNE&quot;" target="&quot;MARCHÉ COMMUN&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"L'Union Européenne est directement liée à la création du marché commun, qui pose des enjeux de solidarité sociale et environnementale en Europe."</data>
+  <data key="d7">contrib-213898308ef3696dbc5a673bbbe1a198</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉFORME DU MILLEFEUILLE ADMINISTRATIF&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal addresses necessary reforms in the administrative structure, aiming for efficiency and clarity."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;PROPORTIONNELLE&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The proposal seeks to reform the electoral system, specifically enhancing representation through proportional methods."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;VOTE BLANC&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"This proposal relates to improvements in the electoral process, allowing for a clearer reflection of voter sentiment."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TRANSPARENCE SUR L'UTILISATION DE L'ARGENT PUBLIC&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal calls for accountability and visibility in government spending, correlating with good governance principles."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TAXE GAFA&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal aims at ensuring fair taxation for large technology companies, aligning with the theme of fiscal reform."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;UTILITÉ DES CONSEILS&quot;" target="&quot;QUESTION&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"This question investigates the effectiveness of advisory bodies, which is related to governance and representation issues."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;PRIVILÈGES DES ANCIENS PRÉSIDENTS ET ÉLUS&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"This proposal pertains to the reduction of privileges in political offices, highlighting themes related to accountability and equality."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉCENTRALISATION&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal aims to address regional inequities in service delivery and governance, emphasizing territorial balance."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;HAUT DÉBIT&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal tackles issues of digital access and equality in service provision across urban and rural areas."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;HAUT DÉBIT&quot;" target="&quot;ZONES BLANCHES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The lack of access to Haut Débit in Zones blanches highlights the need for targeted interventions and reforms."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉFÉRENDUM D'INITIATIVE CITOYENNE&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal aims to enhance citizen participation in governance, directly related to democratic engagement themes."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉFORME DE L'EUROPE&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal is concerned with institutional reforms to address disparities within the European Union, linking it to broader governance and cooperation themes."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ACCUEILLIR DES MIGRANTS&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"This proposal speaks to migration issues and housing adequacies, relating to social policy ramifications."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TRAVAILLEURS DÉTACHÉS&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"This proposal addresses labor rights and social charges, linking employment policy concerns with social justice."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CICE POUR PME&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal concerns fiscal measures aimed at supporting small businesses, addressing economic equality and opportunity."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;INDEXATION DES RETRAITES&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal aims to enhance the security of pensions over time, relating to themes of social justice and economic stability."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AGRICULTURE RAISONNÉE&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"This proposal encourages environmentally sustainable practices, linking agriculture to ecological concerns."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AGRICULTURE RAISONNÉE&quot;" target="&quot;AGRICULTEURS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Agriculteurs are crucial stakeholders in the push for Agriculture raisonnée and sustainable farming practices."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FERROUTAGE&quot;" target="&quot;PROPOSITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal targets environmental issues by promoting less polluting transport methods, linking it to ecological measures."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;CITOYENS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The Cahier de Doléances contains contributions from citizens, showcasing their collective voices in the consultation process."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;CONSULTATION DU GRAND DÉBAT NATIONAL&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"The Cahier de Doléances is a direct output of the Grand Débat National consultation, reflecting citizen engagement."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;CESE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"CESE's recommendations and expertise should be considered in discussions presented in the Cahier de Doléances."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CONSULTATION DU GRAND DÉBAT NATIONAL&quot;" target="&quot;CNDP&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The CNDP plays a role in the Consultation du Grand Débat National by facilitating public discussions on key issues."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ENVIRONNEMENT&quot;" target="&quot;MESURES ÉCOLOGIQUES&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"The theme of Environnement emphasizes the need for Mesures écologiques to ensure sustainability and ecological responsibility."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ENVIRONNEMENT&quot;" target="&quot;FEMME&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"Environmental concerns drive many of the citizen's opinions and grievances, linking various themes together under a common advocacy for sustainability."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RURALITÉ&quot;" target="&quot;SERVICES PUBLICS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The theme of Ruralité is closely linked with the provision of Services Publics to ensure equitable access to resources in rural areas."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CICE&quot;" target="&quot;PME&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The CICE proposal aims to benefit PME specifically, aligning fiscal reform with economic growth objectives."</data>
+  <data key="d7">contrib-62c51f9ec6b563c049bf2a9c978a0440</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CICE&quot;" target="&quot;FEMME&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The citizen expresses a clear opinion about the CICE, advocating for its specific focus on smaller businesses rather than large ones."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;AGRICULTEURS ET VITICULTEURS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizen addresses the need for support for farmers in reducing pesticide use, showing concern for agricultural practices."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;TRANSPORTS EN COMMUN ET FRET FERROVIAIRE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizen advocates for the revalorization of public transport and freight, indicating a demand for better public services."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;LABORATOIRES PHARMACEUTIQUES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The citizen articulates a view that pharmaceutical companies should serve patients rather than financial interests, revealing a critique of current practices."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;IMPÔTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The citizen raises issues related to tax policies, emphasizing the need to combat fraud, which is a critical social justice issue."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;VENTE D’ARMES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizen proposes to end arms sales to countries that abuse their citizens, showing moral and ethical considerations in foreign policy."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;SOUTIEN AUX PAYS EN VOIE DE DÉVELOPPEMENT&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The citizen proposes the support of developing countries under stricter supervision of fund usage, highlighting international responsibility."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;PERTURBATEURS ENDOCRINIENS&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"The citizen expresses a strong concern for the health risks posed by endocrine disruptors to children, demonstrating a public health issue."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;AVENIR POUR NOS ENFANTS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The citizen reflects on the implications of pollution on future generations, showcasing a commitment to environmental sustainability."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;BULLETINS BLANCS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The citizen wants white ballots to be acknowledged in the electoral process, emphasizing a push for electoral reform."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;CARREFOUR&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The mention of Carrefour serves as a critique of corporate practices, connecting the citizen's grievances about layoffs and profits directly to institutional practices."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;PESTICIDES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The citizen's concern about pesticides highlights a request for sustainable agricultural practices that prioritize health and the environment."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;90 KM/H&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The call to return to a speed limit of 90 km/h indicates a focus on public safety and potentially a reduction in environmental impact."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;EXPLOITATION ET MASSACRE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The citizen's opposition to arms sales to countries that exploit and massacre implies a strong moral stance against complicity in human rights violations."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;UNION EUROPÉENNE (UE)&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The EU's role in funding developing countries connects to the citizen's concern for accountability and the ethical use of funds."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;FINANCES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Criticism of financial motives within healthcare highlights the citizen's priority for patient welfare over profit, an important element of health policy."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;E171&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Highlighting concerns about E171 reflects a broader interest in food safety and children's health, emphasizing regulatory scrutiny."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME&quot;" target="&quot;CONTRÔLE D'UTILISATION DES FONDS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The citizen's emphasis on controlling the use of EU funds points to a desire for ethical governance and proper allocation of resources."</data>
+  <data key="d7">contrib-d3f1bacb173f7372547879709dc03721</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;RIC&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Manuscrit mentions the RIC as a significant democratic reform that citizens are advocating for."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;RETRAITE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Manuscrit discusses proposals for higher pensions (Retraite), indicating a clear civic concern regarding social welfare."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;TAXE CARBURANT&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The Manuscrit argues for the abolishment of the TAXE Carburant, depicting the economic grievances of citizens."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;TAXE D'HABITATION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Manuscrit includes a proposal for the elimination of the Taxe D'Habitation, reflecting fiscal demands."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;ALLOCATIONS HANDICAPÉS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Manuscrit's mention of Allocations Handicapés indicates a call for increased social support for disabled individuals."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;FEMME SEULE ET AVEC ENFANTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Manuscrit advocates for improved support for women raising children alone, highlighting a pressing social issue."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;SDF&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Manuscrit's mention of SDF indicates a civic grievance focused on the issue of homelessness."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;PRÉLÈVEMENT À LA SOURCE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Manuscrit demands the abolition of Prélèvement à la Source, reflecting criticism of current fiscal policies."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;INDEMNITÉS PRÉSIDENTIELLES À VIE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The grievance against Indemnités Présidentielles à Vie in the Manuscrit illustrates a demand for political reform regarding allowances for officials."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;DÉPUTÉS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Manuscrit mentions Députés in relation to the excess number and privileges described, indicating a call for reform in representation."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;SÉNATEURS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Manuscrit expresses concerns regarding Sénateurs and their privileges, suggesting a need for institutional reform."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;CONSEILLERS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The mention of Conseillers in the Manuscrit points to grievances regarding the benefits and privileges of political advisers."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;VOTE MI-MANDAT PRÉSIDENTIELLE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The Manuscrit proposes a Vote Mi-Mandat Présidentielle, highlighting calls for more direct democratic participation."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;LIMITATION 90 KM/H&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Manuscrit discusses the issue of Limitation 90 km/h as part of broader civic concerns regarding transportation regulations."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;FEUILLE DE CAHIER GRANDS CARREAUX&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Feuille de Cahier Grands Carreaux is the medium used to create the Manuscrit, indicating the format of citizen contributions."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;LIGNES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Lignes represent the structured form of the Manuscrit, showing how citizens organized their thoughts and grievances."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;MANUSCRIT&quot;" target="&quot;MOTS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Mots quantify the content of the Manuscrit, implying the level of citizen engagement and the specificity of their concerns."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;TAXE CARBURANT&quot;" target="&quot;FIN&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The relationship between Fin and TAXE Carburant indicates a demand to stop this tax, highlighting citizen dissatisfaction with fiscal policies."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ALLOCATIONS HANDICAPÉS&quot;" target="&quot;AUGMENTATION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Augmentation indicates a proposal for increasing Allocations Handicapés, reflecting citizen concern for social support systems."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;ALLOCATIONS HANDICAPÉS&quot;" target="&quot;ENFANTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Enfants connects to broader discussions about children in families who may need increased allocations, highlighting social welfare concerns."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FEMME SEULE ET AVEC ENFANTS&quot;" target="&quot;SEUL&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Seul relates to singular experiences in the context of support for femmes seules, emphasizing the need for societal assistance."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SDF&quot;" target="&quot;PLUS DE SDF&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Plus de SDF connects to the broader issue of homelessness, emphasizing a heightened concern and demand for action on this matter."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉPUTÉS&quot;" target="&quot;FIN DES AVANTAGES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Fin des Avantages addresses grievances regarding the privileges of Députés, indicating a call for equality and accountability."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;LIMITATION 90 KM/H&quot;" target="&quot;LIMITATIONS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Limitations discusses proposed regulations, specifically addressing vehicular speed as part of broader regulatory concerns."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;STOP&quot;" target="&quot;FIN TAXE CARBURANT&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The Stop proposal reinforces the demand to end the TAXE Carburant, indicating a strong opposition to burdensome taxation."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;DÉMOGRAPHIE&quot;" target="&quot;POLITIQUE&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Démographie relates to the demographic impacts of the policies discussed, indicating a link between citizen demographics and political priorities."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;FISCALITÉ&quot;" target="&quot;REFORMEFISCALE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Fiscalité encompasses the concerns citizens have about taxes, relating it directly to reform proposals for fiscal accountability."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SÉCURITÉ&quot;" target="&quot;SERVICEPUBLIC&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Sécurité ties into the need for effective public services aimed at ensuring safety, which is a civic concern raised in the contributions."</data>
+  <data key="d7">contrib-b526e6965165b427e09045db95afa38a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+</graph></graphml>

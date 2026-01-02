@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d8" for="edge" attr.name="order" attr.type="long"/>
+<key id="d7" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d6" for="edge" attr.name="description" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;CAHIER DE THAIMS&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Thaims is a citizen contribution document containing reflections, observations, and proposals related to societal issues in France."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"CAHIER DE THAIMS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;INÉGALITÉS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Inégalités refers to the growing social and economic disparities between various groups in France, impacting citizens' purchasing power and social cohesion."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"INÉGALITÉS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="&quot;REPRÉSENTATION NATIONALE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Représentation nationale refers to the current structure and functioning of the national representation system in France, including the role of elected officials and the effectiveness of democratic processes."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"REPRÉSENTATION NATIONALE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ADMINISTRATION&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Administration denotes the functioning and structure of public administration in France, characterized by complexity and perceived disconnection from citizens."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"ADMINISTRATION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;EXÉCUTIF&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Exécutif refers to the governing body led by the President and Prime Minister, tasked with implementing policies and responding to citizens' needs."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"EXÉCUTIF"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;TECHNOCRATIE&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"Technocratie indicates the influence of technical expertise and bureaucratic processes in governance, often leading to a disconnect from citizen concerns."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"TECHNOCRATIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;DÉMOCRATIE DIRECTE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Démocratie directe refers to the proposal for a system where citizens can directly participate in decision-making through mechanisms like referendums."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"DÉMOCRATIE DIRECTE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;POUVOIR D'ACHAT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Pouvoir d'achat relates to citizens' financial capacity to consume goods and services, heavily influenced by economic policies and measures."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"POUVOIR D'ACHAT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="&quot;RÉSEAUX D'INFLUENCE&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"Réseaux d'influence refers to the networks that reportedly manipulate political and economic decisions, raising concerns about transparency and fairness."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"RÉSEAUX D'INFLUENCE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;IMPÔT SUR LA FORTUNE (ISF)&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"Impôt sur la fortune (ISF) relates to the controversial tax on wealth in France, seen as an issue of social justice and fiscal policy."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"IMPÔT SUR LA FORTUNE (ISF)"</data>
+</node>
+<node id="&quot;AIDE SOCIALE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Aide sociale refers to government assistance programs aimed at supporting citizens in need, which can create dependency if overly relied upon."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"AIDE SOCIALE"</data>
+</node>
+<node id="&quot;FORMATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Formation encompasses educational and vocational training programs aimed at improving citizens' employability and skills."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"FORMATION"</data>
+</node>
+<node id="&quot;SÉCURITÉ ROUTIÈRE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Sécurité routière involves measures put in place to reduce road accidents and enhance safety, recently criticized as ineffective and monetarily motivated."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"SÉCURITÉ ROUTIÈRE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ÉCOLOGIE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Écologie refers to environmental considerations and policies aimed at addressing climate change and ecological sustainability."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"ÉCOLOGIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;DIVISION SOCIALE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Division sociale refers to the societal divides that have intensified, indicating a split between various social classes in France."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"DIVISION SOCIALE"</data>
+</node>
+<node id="&quot;CLIMAT SOCIAL&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Climat social denotes the prevailing public sentiment and atmosphere regarding social and political matters, reflecting citizen dissatisfaction."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"CLIMAT SOCIAL"</data>
+</node>
+<node id="&quot;POLITIQUE ÉCONOMIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Politique économique refers to the government's economic policy direction, which has been critiqued for favoring financial over practical considerations."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"POLITIQUE ÉCONOMIQUE"</data>
+</node>
+<node id="&quot;DISCUSSIONS PARLEMENTAIRES&quot;">
+  <data key="d0">"VERBATIM"</data>
+  <data key="d1">"Discussions parlementaires captures the ongoing conversations and debates within the French Parliament regarding policies and reforms."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"DISCUSSIONS PARLEMENTAIRES"</data>
+</node>
+<node id="&quot;ÉLECTIONS PRÉSIDENTIELLES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Élections présidentielles denotes the national elections in France that determine the President, highlighting the importance of voter perceptions."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"ÉLECTIONS PRÉSIDENTIELLES"</data>
+</node>
+<node id="&quot;PMI-PME&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"PMI-PME encompasses small and medium-sized enterprises that are crucial for job creation and economic activities within France."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"PMI-PME"</data>
+</node>
+<node id="&quot;DÉMAGOGIE&quot;">
+  <data key="d0">"COURANTIDEOLOGIQUE"</data>
+  <data key="d1">"Démagogie refers to political strategies aimed at appealing to popular desires and prejudices rather than rational argument, often criticized in the context of modern governance."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"DÉMAGOGIE"</data>
+</node>
+<node id="&quot;POLITIQUE DE LUTTE CONTRE L'ÉCOLOGIE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Politique de lutte contre l'écologie refers to proposed strategies to balance ecological concerns with economic stability, especially pertinent to current policies."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"POLITIQUE DE LUTTE CONTRE L'ÉCOLOGIE"</data>
+</node>
+<node id="&quot;RÉMUNÉRATION DES ÉLUS&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Rémunération des élus focuses on the compensation of elected officials, calling for an evaluation of its fairness and impact on public trust."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"RÉMUNÉRATION DES ÉLUS"</data>
+</node>
+<node id="&quot;RÉFÉRENDUM D'INITIATIVE CITOYENNE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Référendum d'initiative citoyenne represents a call for mechanisms that allow citizens to bring forth referendums on significant issues."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"RÉFÉRENDUM D'INITIATIVE CITOYENNE"</data>
+</node>
+<node id="&quot;TECHNOCRATES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Technocrates are individuals within the bureaucratic system often criticized for their detachment from citizen needs and practical realities."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"TECHNOCRATES"</data>
+</node>
+<node id="&quot;ÉTHIQUE DANS L'ADMINISTRATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Éthique dans l'administration promotes the idea of upholding integrity and transparency within government operations."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"ÉTHIQUE DANS L'ADMINISTRATION"</data>
+</node>
+<node id="&quot;CHANTIERS D'INSERTION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Chantiers d'insertion refers to employment initiatives aimed at assisting people in integrating back into the workforce, specifically targeting those reliant on social aids."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"CHANTIERS D'INSERTION"</data>
+</node>
+<node id="&quot;CONDITION DE VIE DES RETRAITÉS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Condition de vie des retraités highlights the welfare and economic situations faced by retirees in contemporary France."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"CONDITION DE VIE DES RETRAITÉS"</data>
+</node>
+<node id="&quot;BESOINS DES CITOYENS&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Besoins des citoyens involves the various expectations and demands that citizens have from their government regarding services and policies."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"BESOINS DES CITOYENS"</data>
+</node>
+<node id="&quot;QUALITÉ DES SERVICES PUBLICS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Qualité des services publics evaluates the effectiveness and responsiveness of public services available to citizens."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"QUALITÉ DES SERVICES PUBLICS"</data>
+</node>
+<node id="&quot;MUTATIONS SOCIÉTALES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Mutations sociétales indicates the ongoing changes and transformations within French society, affecting various aspects of life including family structures and societal norms."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"MUTATIONS SOCIÉTALES"</data>
+</node>
+<node id="&quot;RESSENTIMENT POPULAIRE&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Ressentiment populaire captures the general feelings of discontent and frustration expressed by the populace regarding governance and social issues."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"RESSENTIMENT POPULAIRE"</data>
+</node>
+<node id="&quot;NOUVEAUX DÉFIS POUR LES GÉNÉRATIONS FUTURES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Nouveaux défis pour les générations futures addresses the need to prepare upcoming generations for societal and environmental challenges."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"NOUVEAUX DÉFIS POUR LES GÉNÉRATIONS FUTURES"</data>
+</node>
+<node id="&quot;RESTAURATION DES VALEURS SOCIALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Restauration des valeurs sociales calls for a return to core social values that promote solidarity and community involvement."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"RESTAURATION DES VALEURS SOCIALES"</data>
+</node>
+<node id="&quot;CULTURE DE LA PARTICIPATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Culture de la participation highlights the importance of fostering an environment where citizens actively engage in political and societal discussions."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"CULTURE DE LA PARTICIPATION"</data>
+</node>
+<node id="&quot;IMPACT DE LA MONDIALISATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Impact de la mondialisation addresses the effects of global integration on national policies and local economies."</data>
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d3">"IMPACT DE LA MONDIALISATION"</data>
+</node>
+<node id="&quot;REFORMEFISCALE&quot;">
+  <data key="d2">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d1">"Changes to the Impôt sur la fortune (ISF) are seen as exacerbating Inégalités, affecting perceptions of fairness and social justice."</data>
+  <data key="d0">"UNKNOWN"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;INÉGALITÉS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Thaims addresses the issue of Inégalités, emphasizing the widening gap between different social classes and its implications."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;REPRÉSENTATION NATIONALE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Thaims critiques the current state of Représentation nationale, suggesting it requires reform to better reflect citizen interests."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;ADMINISTRATION&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Cahier de Thaims highlights the distance between the Administration and citizens, advocating for more accessible public services."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;EXÉCUTIF&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Thaims critiques the Exécutif for being unresponsive to citizen demands and advises for improved communication and respect."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;TECHNOCRATIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Thaims discusses the negative impacts of Technocratie on administration and citizen relations, calling for reforms."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;DÉMOCRATIE DIRECTE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Thaims proposes Démocratie directe as a means to empower citizens and enhance participation in governance."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;POUVOIR D'ACHAT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Thaims emphasizes the importance of preserving Pouvoir d'achat for social stability and economic growth."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;SÉCURITÉ ROUTIÈRE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Thaims critiques Sécurité routière measures for being perceived as financially motivated rather than genuinely safety-oriented."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE THAIMS&quot;" target="&quot;ÉCOLOGIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Thaims emphasizes the need for ecological policies that are balanced and do not adversely affect the economy."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;INÉGALITÉS&quot;" target="&quot;POUVOIR D'ACHAT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The rising Inégalités directly affect the Pouvoir d'achat of the middle class, leading to economic disparities."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;INÉGALITÉS&quot;" target="&quot;REFORMEFISCALE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Changes to the Impôt sur la fortune (ISF) are seen as exacerbating Inégalités, affecting perceptions of fairness and social justice."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;EXÉCUTIF&quot;" target="&quot;RÉSEAUX D'INFLUENCE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Exécutif is criticized for being influenced by Réseaux d'influence rather than the needs of the general populace."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AIDE SOCIALE&quot;" target="&quot;FORMATION&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Cahier de Thaims suggests the need for more effective Formation programs to reduce dependencies on Aide sociale."</data>
+  <data key="d7">contrib-ee0a9557857b9a0049106bf8db8386b7</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+</graph></graphml>

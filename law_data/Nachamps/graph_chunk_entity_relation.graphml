@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d8" for="edge" attr.name="order" attr.type="long"/>
+<key id="d7" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d6" for="edge" attr.name="description" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;CAHIER DE NACHAMPS&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Nachamps is a citizen contribution document containing opinions and proposals from citizens regarding various themes."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"CAHIER DE NACHAMPS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;EMMANUEL MACRON&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Emmanuel Macron is the President of France who initiated the Grand Débat National to discuss major national themes."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"EMMANUEL MACRON"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;LIBERTÉ, ÉGALITÉ, FRATERNITÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Liberté, égalité, fraternité is a well-known slogan representing the fundamental values of the French Republic."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"LIBERTÉ, ÉGALITÉ, FRATERNITÉ"</data>
+</node>
+<node id="&quot;TRANSITION ÉCOLOGIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Transition écologique refers to an equitable ecological and energy transition emphasized as a key theme in the consultation."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"TRANSITION ÉCOLOGIQUE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;SYSTÈME FISCAL&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Système fiscal is the theme related to fiscal policies which the citizens seek to clarify and improve."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"SYSTÈME FISCAL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Démocratie et citoyenneté emphasizes the need for improved democratic practices and citizenship within the country."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"DÉMOCRATIE ET CITOYENNETÉ"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;ÉTAT&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"État refers to the government structure and its presence across the territory, which citizens feel needs reorganization."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"ÉTAT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;ÉCONOMIE D'EAU ET D’ÉLECTRICITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Suggestions made for individuals to change daily behaviors to conserve water and electricity."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"ÉCONOMIE D'EAU ET D’ÉLECTRICITÉ"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;ISOLATION DES LOGEMENTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal encouraging the insulation of homes for those in energy poverty to improve energy efficiency."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"ISOLATION DES LOGEMENTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;COVOITURAGE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Covoiturage is a proposal aiming to promote shared transportation methods as a means of mobility."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"COVOITURAGE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="&quot;ÉVASION FISCALE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Évasion fiscale refers to concerns regarding tax evasion by wealthy individuals and businesses."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"ÉVASION FISCALE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;RÉFORMULATION DU SYSTÈME FISCAL&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal to simplify the tax code for clarity and equity."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"RÉFORMULATION DU SYSTÈME FISCAL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;SALAIRE JUSTE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Salaire juste advocates for fair and equitable salaries that enable workers to live decently."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"SALAIRE JUSTE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;RÉFÉRENDUMS D'INITIATIVE LOCALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"This proposal calls for more frequent local initiative referendums to engage citizens in governance."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"RÉFÉRENDUMS D'INITIATIVE LOCALE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;DIMINUTION DU NOMBRE D'ÉLUS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposing a reduction in the number of elected officials to streamline governance."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"DIMINUTION DU NOMBRE D'ÉLUS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;VOTE OBLIGATOIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Vote obligatoire suggests making voting compulsory for all eligible citizens."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"VOTE OBLIGATOIRE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;TIRAGE AU SORT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Tirage au sort is a proposal to reinstate the lottery system for selecting municipal councils and mayors."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"TIRAGE AU SORT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;INTÉGRATION DE NOUVEAUX ARRIVANTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Emphasizes the importance of welcoming and integrating newcomers into society."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"INTÉGRATION DE NOUVEAUX ARRIVANTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C1"}]</data>
+</node>
+<node id="&quot;REFORME DE L'ÉTAT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Reforme de l'État aims to reorganize the functioning and presence of the government throughout the territory."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"REFORME DE L'ÉTAT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C1"}]</data>
+</node>
+<node id="&quot;TRANSPORT EN COMMUN&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Transport en commun represents public transport services that should be utilized by officials for travel."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"TRANSPORT EN COMMUN"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;CENTRES DE VIE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Centres de vie advocates for the merging of communes to create community centers to foster social interactions."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"CENTRES DE VIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;NIVEAU EUROPÉEN DE PIB&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Seeks to achieve the European-level GDP by reducing public spending and encouraging responsible citizen behavior."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"NIVEAU EUROPÉEN DE PIB"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;LANGAGE DE L’ÉMOTION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Langage de l’émotion refers to the communication style based on emotional expression, which the document suggests should give way to reasoned dialogue."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"LANGAGE DE L’ÉMOTION"</data>
+</node>
+<node id="&quot;LANGAGE DE LA RAISON&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Langage de la raison is emphasized as a necessary communication approach for improving understanding and cooperation among citizens."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"LANGAGE DE LA RAISON"</data>
+</node>
+<node id="&quot;PRIVILÈGES DES ÉLUS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Privilèges des élus refers to the perceived advantages and benefits enjoyed by elected officials that conflict with the ideals of equality."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"PRIVILÈGES DES ÉLUS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;HAUTS FONCTIONNAIRES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Hauts fonctionnaires are high-ranking civil servants whose roles and privileges should be examined according to public demand for equality."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"HAUTS FONCTIONNAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;AVANTAGES AUX ANCIENS PRÉSIDENTS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Avantages aux anciens présidents refers to the ongoing benefits given to former presidents that some citizens feel should be reconsidered or eliminated."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"AVANTAGES AUX ANCIENS PRÉSIDENTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;COMPORTEMENT RESPONSABLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Comportement responsable emphasizes the need for citizens to take personal responsibility for public spending and resource use."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"COMPORTEMENT RESPONSABLE"</data>
+</node>
+<node id="&quot;RAPPORT DE FRANCE-STRATÉGIE&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Rapport de France-Stratégie is a report mentioned that involves data relating to public policies and responsibilities concerning social spending."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"RAPPORT DE FRANCE-STRATÉGIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C1"}]</data>
+</node>
+<node id="&quot;DROITS DE L'HOMME ET DU CITOYEN&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Droits de l'homme et du citoyen refers to the fundamental human rights that should guide the integration of newcomers in the context of civic identity."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"DROITS DE L'HOMME ET DU CITOYEN"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C1"}]</data>
+</node>
+<node id="&quot;IDENTITÉ EUROPÉENNE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Identité européenne discusses the evolving concept of European identity in relation to immigration and societal contributions."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"IDENTITÉ EUROPÉENNE"</data>
+</node>
+<node id="&quot;RÉFORME DE LA SANTÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Réforme de la santé suggests changes in the healthcare system aimed at reducing spending while improving efficiency."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"RÉFORME DE LA SANTÉ"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;TRANSPORTS ALTERNATIFS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Transports alternatifs encourages the use of alternative transport options as part of a broader effort to reduce public expenditure."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"TRANSPORTS ALTERNATIFS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;ÉQUITÉ DES SALAIRES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Équité des salaires addresses the issue of fair wage distribution and discrepancies between different job roles."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"ÉQUITÉ DES SALAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="&quot;RENFORCEMENT DE LA DÉMOCRATIE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Renforcement de la démocratie refers to initiatives aimed at enhancing democratic practices and citizen engagement in governance."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"RENFORCEMENT DE LA DÉMOCRATIE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;SYSTÈME ÉDUCATIF&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Système éducatif encompasses educational services that should be funded and structured in a transparent manner regarding their costs and benefits."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"SYSTÈME ÉDUCATIF"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;BESOINS DES TERRITOIRES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Besoins des territoires highlights the importance of addressing the unique needs and characteristics of different regions within the country."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"BESOINS DES TERRITOIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}, {"level": 2, "cluster": "L0C0_C0_C0"}]</data>
+</node>
+<node id="&quot;ÉGALITÉ DES DROITS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Égalité des droits emphasizes the necessity of equal treatment and access to resources for all citizens, regardless of their background."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"ÉGALITÉ DES DROITS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;DROIT DE VOTE&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Droit de vote discusses opinions regarding the importance of voting and civic participation for a healthy democracy."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"DROIT DE VOTE"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;INTERACTION AVEC LES ÉLUS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Interaction avec les élus suggests enhancing communication channels between citizens and their elected representatives for better governance."</data>
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d3">"INTERACTION AVEC LES ÉLUS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C1"}, {"level": 1, "cluster": "L0C1_C0"}]</data>
+</node>
+<node id="&quot;ÉCONOMIE DE DÉPENSES&quot;">
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d1">"The emphasis on responsible behavior directly impacts economic savings and resource usage by citizens."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;IMMIGRATION&quot;">
+  <data key="d2">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d1">"The discussion of European identity expresses views on how immigration influences cultural and societal dynamics in France."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;CAHIER DE NACHAMPS&quot;" target="&quot;EMMANUEL MACRON&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The contribution is part of the broader Grand Débat National initiated by Emmanuel Macron."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"FAIT_PARTIE_DE"</data>
+</edge>
+<edge source="&quot;CAHIER DE NACHAMPS&quot;" target="&quot;TRANSITION ÉCOLOGIQUE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The document contains important proposals referring to the theme of Transition écologique."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONTIENT"</data>
+</edge>
+<edge source="&quot;CAHIER DE NACHAMPS&quot;" target="&quot;SYSTÈME FISCAL&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The document discusses various aspects related to the Système fiscal theme."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONTIENT"</data>
+</edge>
+<edge source="&quot;CAHIER DE NACHAMPS&quot;" target="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The document includes insights on the theme of Démocratie et citoyenneté."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONTIENT"</data>
+</edge>
+<edge source="&quot;CAHIER DE NACHAMPS&quot;" target="&quot;ÉTAT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The document asserts proposals regarding how the État should manage its resources and structure."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"GERE"</data>
+</edge>
+<edge source="&quot;TRANSITION ÉCOLOGIQUE&quot;" target="&quot;ÉCONOMIE D'EAU ET D’ÉLECTRICITÉ&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"This proposal addresses methods of transitioning towards ecological sustainability through individual actions."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;TRANSITION ÉCOLOGIQUE&quot;" target="&quot;ISOLATION DES LOGEMENTS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal connects housing insulation efforts with ecological transitions by addressing energy poverty."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;TRANSITION ÉCOLOGIQUE&quot;" target="&quot;COVOITURAGE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Covoiturage is proposed to contribute to the ecological transition by promoting shared transport."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;SYSTÈME FISCAL&quot;" target="&quot;ÉVASION FISCALE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Évasion fiscale is a concern that is inherently related to the issues within the Système fiscal."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"FAIT_PARTIE_DE"</data>
+</edge>
+<edge source="&quot;SYSTÈME FISCAL&quot;" target="&quot;RÉFORMULATION DU SYSTÈME FISCAL&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The proposal is aimed at reformulating the Système fiscal to make it more understandable and fair."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;SYSTÈME FISCAL&quot;" target="&quot;SALAIRE JUSTE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Advocating for a fair wage is linked to the discussions about the structures of the Système fiscal."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;SYSTÈME FISCAL&quot;" target="&quot;ÉQUITÉ DES SALAIRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The issue of fair wages concerns discussions about the impacts and structures within the Système fiscal."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;RÉFÉRENDUMS D'INITIATIVE LOCALE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal to increase local referendums relates directly to enhancing democratic practices."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;DIMINUTION DU NOMBRE D'ÉLUS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to reduce elected officials aims to improve democratic engagement and efficiency."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;VOTE OBLIGATOIRE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Vote obligatoire suggests measures to enhance democratic participation and civic responsibility."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;TIRAGE AU SORT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal for selection by lot addresses democratic engagement by rethinking how representatives are chosen."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;INTÉGRATION DE NOUVEAUX ARRIVANTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"This proposition refers to the necessity of inclusivity in citizenship, aligning with democratic values."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;RENFORCEMENT DE LA DÉMOCRATIE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The initiative to strengthen democracy connects directly with enhancing citizen engagement and participation in governance."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;ÉGALITÉ DES DROITS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The emphasis on equality of rights is tied to the fundamental principles of democracy and citizenship."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;DROIT DE VOTE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Expressing the importance of voting relates directly to democratic practices and citizen participation."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"EXPRIME"</data>
+</edge>
+<edge source="&quot;DÉMOCRATIE ET CITOYENNETÉ&quot;" target="&quot;INTERACTION AVEC LES ÉLUS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Enhancing interaction with elected representatives aims to strengthen democratic engagement."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;REFORME DE L'ÉTAT&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal advocates for a systematic reform within the structures of the État itself."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;TRANSPORT EN COMMUN&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The service public of transport should be under the management and enforcement of the État."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"GERE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;CENTRES DE VIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"This proposal calls for a reorganization of local governance under the direction of the État for community development."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;NIVEAU EUROPÉEN DE PIB&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Achieving a European-level GDP involves changes in policies managed by the État."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;PRIVILÈGES DES ÉLUS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The privileges of elected officials concern the overall governance and regulatory practices within the État."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;HAUTS FONCTIONNAIRES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Hauts fonctionnaires relate to the operational aspects and governance issues handled by the État."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;AVANTAGES AUX ANCIENS PRÉSIDENTS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The benefits afforded to former presidents are associated with policies set by the État regarding past officials."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;RÉFORME DE LA SANTÉ&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"This proposal to reform the health system is directed at altering the workings of the État and its fiscal responsibilities."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;TRANSPORTS ALTERNATIFS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Calls for using alternative transport options under the management of the État to promote sustainability."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"GERE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;SYSTÈME ÉDUCATIF&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The educational system is managed by the État as part of public services provided to citizens."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"GERE"</data>
+</edge>
+<edge source="&quot;ÉTAT&quot;" target="&quot;BESOINS DES TERRITOIRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Addressing the specific needs of territories is a concern that requires attention from the État in its policies."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;INTÉGRATION DE NOUVEAUX ARRIVANTS&quot;" target="&quot;DROITS DE L'HOMME ET DU CITOYEN&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The focus on human rights directly pertains to how newcomers are integrated into French society."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;REFORME DE L'ÉTAT&quot;" target="&quot;RAPPORT DE FRANCE-STRATÉGIE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The report serves as a component influencing the reform discussions around the state's operation and efficiency."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"FAIT_PARTIE_DE"</data>
+</edge>
+<edge source="&quot;LANGAGE DE L’ÉMOTION&quot;" target="&quot;LANGAGE DE LA RAISON&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The document describes the desired transition from a language of emotion to one of reason as necessary for productive dialogue."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"TRADUIT"</data>
+</edge>
+<edge source="&quot;COMPORTEMENT RESPONSABLE&quot;" target="&quot;ÉCONOMIE DE DÉPENSES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The emphasis on responsible behavior directly impacts economic savings and resource usage by citizens."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"PORTE_SUR_MESURE"</data>
+</edge>
+<edge source="&quot;IDENTITÉ EUROPÉENNE&quot;" target="&quot;IMMIGRATION&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The discussion of European identity expresses views on how immigration influences cultural and societal dynamics in France."</data>
+  <data key="d7">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d8">1</data>
+  <data key="d9">"EXPRIME"</data>
+</edge>
+</graph></graphml>

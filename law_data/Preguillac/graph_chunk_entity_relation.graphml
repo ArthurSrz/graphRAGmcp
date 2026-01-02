@@ -1,0 +1,2268 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d8" for="edge" attr.name="order" attr.type="long"/>
+<key id="d7" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d6" for="edge" attr.name="description" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d3" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;CAHIER DE PRÉGUILLAC&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Préguillac is a document listing citizen contributions related to political reforms and financial measures."&lt;SEP&gt;"Le Cahier de Préguillac est une contribution citoyenne qui regroupe diverses opinions et propositions sur la gestion des services publics et des institutions."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9&lt;SEP&gt;contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"CAHIER DE PRÉGUILLAC"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;VOTE BLANC&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Vote Blanc refers to the consideration of blank votes in elections, suggesting a desire for electoral reforms."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"VOTE BLANC"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ÉLECTION&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Élection refers to the election process, associated with grievances about its integrity and the proposal to annul elections if the majority votes blank."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"ÉLECTION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;NOMBRE DE PARLEMENTAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Nombre de Parlementaires suggests the proposal to reduce the number of parliamentarians as a reform measure."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"NOMBRE DE PARLEMENTAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;AVANTAGES ANCIENS PRÉSIDENTS ET MINISTRES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Avantages Anciens Présidents et Ministres refers to grievances concerning benefits granted to former presidents and ministers, advocating for their suppression."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"AVANTAGES ANCIENS PRÉSIDENTS ET MINISTRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;INDEMNITÉS DES PARLEMENTAIRES ET MINISTRES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Indemnités des Parlementaires et Ministres refers to grievances regarding the compensation of parliamentarians and ministers, suggesting a reduction."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"INDEMNITÉS DES PARLEMENTAIRES ET MINISTRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;ALLOCATION ADULTE HANDICAPÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Allocation Adulte Handicapé refers to the proposal to grant this allowance without considering the spouse's income."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"ALLOCATION ADULTE HANDICAPÉ"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;TAXES SALARIALES ET PATRONALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Taxes Salariales et Patronales refers to the proposal to decrease these taxes to boost the economy."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"TAXES SALARIALES ET PATRONALES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;AIDE MÉDICALE D'ÉTAT&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Aide Médicale d'État refers to grievances regarding the reduction of state medical aid."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"AIDE MÉDICALE D'ÉTAT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;TAXATION DES CARBURANTS MARITIMES ET AÉRIENS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Taxation des Carburants Maritimes et Aériens refers to the proposal to impose taxes on maritime and air fuels."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"TAXATION DES CARBURANTS MARITIMES ET AÉRIENS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;CUMUL DES MANDATS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Cumul des Mandats refers to the grievance against the practice of holding multiple mandates, advocating for its total elimination."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"CUMUL DES MANDATS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;FONCTIONNAIRES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Fonctionnaires refers to grievances suggesting the reduction of civil servants through improved service distribution."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"FONCTIONNAIRES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;MANUSCRIT&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Manuscrit refers to the handwritten document component of Caja de Doléances representing citizen contributions regarding various political and economic proposals."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"MANUSCRIT"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;LIGNES&quot;">
+  <data key="d0">"MESUREECOLOGIQUE"</data>
+  <data key="d1">"Lignes is the measure of text lines in the document, indicating the quantifiable aspects of citizen contributions."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"LIGNES"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;MOTS&quot;">
+  <data key="d0">"MESUREECOLOGIQUE"</data>
+  <data key="d1">"Mots signifies the count of words within the document, reflecting the extent of citizen discourse in their contributions."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"MOTS"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;RÉDUCTION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Réduction denotes a proposal for diminishing certain governmental structures or financial requirements, as expressed by citizens in their contributions."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"RÉDUCTION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;DIMINUTION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Diminution refers to the proposal for lessening governmental expenses or functions through citizen grievances and suggestions."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"DIMINUTION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;FIN TOTAL&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Fin Total refers to the proposal suggesting an absolute end to the practice of holding multiple positions by public officials, advocating for political reform."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"FIN TOTAL"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;MEILLEURE RÉPARTITION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Meilleure Répartition implies a proposal for more efficient distribution of civil servants across services to reduce workforce numbers."</data>
+  <data key="d2">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d3">"MEILLEURE RÉPARTITION"</data>
+  <data key="d4">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="&quot;RÉFÉRENDUMS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposition to implement referendums to allow the people to vote on legislative projects, ensuring their opinions are considered."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"RÉFÉRENDUMS"</data>
+</node>
+<node id="&quot;M. SARROZY&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"An institutional actor mentioned in the context of bypassing public opinion regarding legislative processes."&lt;SEP&gt;"M. SARROZY is an institutional actor who is mentioned in relation to ignoring the people's opinions in legislative matters."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"M. SARROZY"</data>
+</node>
+<node id="&quot;RÉGULATION DE L'IMMIGRATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to regulate immigration through identity checks and investigations on all refugees and immigrants entering France."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"RÉGULATION DE L'IMMIGRATION"</data>
+</node>
+<node id="&quot;TERRORISTES POTENTIELS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Grievance regarding the need to differentiate categories of potential terrorists to ensure public safety."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"TERRORISTES POTENTIELS"</data>
+</node>
+<node id="&quot;RETRAITES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to review pensions to ensure all workers receive a dignified pension in retirement."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"RETRAITES"</data>
+</node>
+<node id="&quot;INÉGALITÉS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Grievance highlighting the need to address and eliminate inequalities in retirement pensions."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"INÉGALITÉS"</data>
+</node>
+<node id="&quot;CHARGES PATRONALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to decrease employer contributions for small and medium-sized enterprises and small artisans."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"CHARGES PATRONALES"</data>
+</node>
+<node id="&quot;ÂGE DE DÉPART À LA RETRAITE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to maintain or lower the retirement age to 60 years."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ÂGE DE DÉPART À LA RETRAITE"</data>
+</node>
+<node id="&quot;IMPÔTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les impôts représentent une forme de contribution financière des citoyens pour financer les services publics et les infrastructures."&lt;SEP&gt;"Proposal for a fairer tax system, including higher taxes on large salaries and measures to combat tax fraud."&lt;SEP&gt;"Taxes should be fair and proportional, with a need for restructuring according to citizens' capabilities, as expressed by citizens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9&lt;SEP&gt;contrib-cc18cf5fa692062efb22c06d903340bf&lt;SEP&gt;contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"IMPÔTS"</data>
+</node>
+<node id="&quot;FRAUDE FISCALE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Grievance indicating the need for increased measures against tax fraud and tax loopholes."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"FRAUDE FISCALE"</data>
+</node>
+<node id="&quot;CONTRÔLES FISCAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for greater resources and measures to enforce tax controls effectively."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"CONTRÔLES FISCAUX"</data>
+</node>
+<node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahier de Doléances is a document that collects citizen grievances and opinions in a structured manner for the Grand Débat National."&lt;SEP&gt;"Le Cahier de doléances est une contribution citoyenne qui présente les opinions, propositions, et doléances des citoyens."&lt;SEP&gt;"The document where citizens express their opinions, grievances, and proposals regarding local governance and public policies."</data>
+  <data key="d2">contrib-9ba2c4ef5b731e446b406bf17758cc49&lt;SEP&gt;contrib-2ecef0411014bb63e67fc29ec3be03b9&lt;SEP&gt;contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"CAHIER DE DOLÉANCES"</data>
+</node>
+<node id="&quot;IMMIGRATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme related to the management and regulation of immigrants and refugees in France, reflecting public concern about security and integration."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"IMMIGRATION"</data>
+</node>
+<node id="&quot;PENSIONS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme concerning the financial support and social security provided to retirees, highlighting citizens' concerns about retirement adequacy."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"PENSIONS"</data>
+</node>
+<node id="&quot;CHARGES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme related to the financial burdens on businesses, particularly small and medium enterprises."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"CHARGES"</data>
+</node>
+<node id="&quot;FISCALITÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme related to taxation, including concerns about tax fairness and the burden on different income groups."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"FISCALITÉ"</data>
+</node>
+<node id="&quot;PUBLIC SAFETY&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme relating to the security of citizens, especially concerning potential terrorism and immigration regulations."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"PUBLIC SAFETY"</data>
+</node>
+<node id="&quot;PETITS ARTISANS&quot;">
+  <data key="d0">"TYPEREPONDANT"</data>
+  <data key="d1">"Type of respondents referring to small artisans affected by fiscal and regulatory policies."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"PETITS ARTISANS"</data>
+</node>
+<node id="&quot;GRAND PUBLIC&quot;">
+  <data key="d0">"TYPEREPONDANT"</data>
+  <data key="d1">"Type of respondents referring to the general public whose opinions are sought in the consultation processes."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"GRAND PUBLIC"</data>
+</node>
+<node id="&quot;LUTTE CONTRE LA FRAUDE FISCALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Emphasizing the necessity to strengthen the fight against tax evasion indicates the citizens' demand for a fairer taxation system."&lt;SEP&gt;"Proposal to take stronger measures against tax fraud and financial irregularities to ensure a fair tax system."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf&lt;SEP&gt;contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"LUTTE CONTRE LA FRAUDE FISCALE"</data>
+</node>
+<node id="&quot;NICHES FISCALES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Grievance about existing tax loopholes that allow for unfair advantages in the tax system."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"NICHES FISCALES"</data>
+</node>
+<node id="&quot;ÉCONOMIE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme related to economic measures and policies that impact the financial situation of citizens, businesses, and public services."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ÉCONOMIE"</data>
+</node>
+<node id="&quot;SYSTÈME FISCAL&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme concerning the overall structure and fairness of the fiscal system in France."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"SYSTÈME FISCAL"</data>
+</node>
+<node id="&quot;PENSION SUFFISANTE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal emphasizing the need for pensions to provide a sufficient living for retirees."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"PENSION SUFFISANTE"</data>
+</node>
+<node id="&quot;CONTRÔLES D’IDENTITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for implementing identity checks as a measure to regulate immigration and enhance public safety."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"CONTRÔLES D’IDENTITÉ"</data>
+</node>
+<node id="&quot;ENQUÊTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for investigating immigration cases to uphold security and differentiate between immigrants."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ENQUÊTES"</data>
+</node>
+<node id="&quot;RÉPONSES AUX AVIS DU PEUPLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to ensure that the views and inputs of the citizens are taken into consideration in governmental decisions."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"RÉPONSES AUX AVIS DU PEUPLE"</data>
+</node>
+<node id="&quot;ÉGALITÉ SOCIALE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme related to social equality and the reduction of disparities among various social and economic groups."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ÉGALITÉ SOCIALE"</data>
+</node>
+<node id="&quot;SOUTIEN AUX PME&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for support measures aimed at small and medium enterprises to alleviate their financial burdens."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"SOUTIEN AUX PME"</data>
+</node>
+<node id="&quot;CONTRÔLE DES IMPÔTS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Public service responsibilities related to tax collection and ensuring compliance with tax laws."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"CONTRÔLE DES IMPÔTS"</data>
+</node>
+<node id="&quot;IMPÔT SUR LE REVENU&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"Type of income tax which citizens suggest should be fairer and more progressive based on the income level."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"IMPÔT SUR LE REVENU"</data>
+</node>
+<node id="&quot;ÉCONOMIE NOTOIRE&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Opinion advocating for significant measures to improve the economy by addressing tax fairness."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ÉCONOMIE NOTOIRE"</data>
+</node>
+<node id="&quot;CONTRÔLE FISCAL RENFORCÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to enhance tax inspections and controls to combat fiscal irregularities and ensure compliance."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"CONTRÔLE FISCAL RENFORCÉ"</data>
+</node>
+<node id="&quot;SÉCURITÉ PUBLIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"La sécurité publique est un service garantissant la protection des citoyens et la sécurité dans les lieux publics."&lt;SEP&gt;"Theme referring to the measures and societal considerations in maintaining public safety from crime and terrorism."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9&lt;SEP&gt;contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"SÉCURITÉ PUBLIQUE"</data>
+</node>
+<node id="&quot;DIFFÉRENCIATION DANS LES FICHIERS S&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to differentiate categories within security files (fichiers S) to improve targeted security measures."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"DIFFÉRENCIATION DANS LES FICHIERS S"</data>
+</node>
+<node id="&quot;PÉNALITÉS POUR LES CONTREVENANTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal suggesting penalties for those violating immigration policies to enforce regulations."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"PÉNALITÉS POUR LES CONTREVENANTS"</data>
+</node>
+<node id="&quot;INVESTIGATION SUR L'IMMIGRATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for conducting investigations on immigration cases to ensure legal compliance and security."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"INVESTIGATION SUR L'IMMIGRATION"</data>
+</node>
+<node id="&quot;POLITIQUE D'IMMIGRATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme regarding the overall policies in place governing immigration and refugee integration into society."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"POLITIQUE D'IMMIGRATION"</data>
+</node>
+<node id="&quot;JUSTESSE DES IMPÔTS&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"Opinion emphasizing the need for a taxation system that is perceived as equitable by citizens."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"JUSTESSE DES IMPÔTS"</data>
+</node>
+<node id="&quot;ALIMENTATION À FAIBLE COÛT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal aimed at ensuring affordable food options for all citizens."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ALIMENTATION À FAIBLE COÛT"</data>
+</node>
+<node id="&quot;AJUSTEMENTS FISCAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for making adjustments to the fiscal system to better accommodate the needs of citizens."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"AJUSTEMENTS FISCAUX"</data>
+</node>
+<node id="&quot;SUIVI DES POLITIQUES FISCALES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Public service responsibilities concerning the monitoring and evaluation of fiscal policies."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"SUIVI DES POLITIQUES FISCALES"</data>
+</node>
+<node id="&quot;SANTÉ PUBLIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme emphasizing the importance of public health and related policies."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"SANTÉ PUBLIQUE"</data>
+</node>
+<node id="&quot;ACCÈS ÉQUITABLE AUX SERVICES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for ensuring equitable access to public services for all segments of the population."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ACCÈS ÉQUITABLE AUX SERVICES"</data>
+</node>
+<node id="&quot;GESTION DES RESSOURCES PUBLIQUES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme concerning the management of public resources and their allocation."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"GESTION DES RESSOURCES PUBLIQUES"</data>
+</node>
+<node id="&quot;RESPECT DES DROITS DES TRAVAILLEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal advocating for the respect and protection of worker rights in various sectors."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"RESPECT DES DROITS DES TRAVAILLEURS"</data>
+</node>
+<node id="&quot;ÉDUCATION&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Theme addressing issues related to education and access to quality educational resources."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"ÉDUCATION"</data>
+</node>
+<node id="&quot;PROTECTION DES PLUS VULNÉRABLES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to enhance support and protections for the most vulnerable populations."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"PROTECTION DES PLUS VULNÉRABLES"</data>
+</node>
+<node id="&quot;RESPONSABILITÉ SOCIALE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Grievance addressing the need for social responsibility among institutions and businesses."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"RESPONSABILITÉ SOCIALE"</data>
+</node>
+<node id="&quot;INVESTISSEMENT DANS LA COMMUNAUTÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal for increased investment in local communities to foster development and well-being."</data>
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d3">"INVESTISSEMENT DANS LA COMMUNAUTÉ"</data>
+</node>
+<node id="&quot;RETRAITE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Une demande pour ne pas dépasser 62 ans pour l'âge de la retraite, exprimant un souhait concernant les réformes des retraites."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RETRAITE"</data>
+</node>
+<node id="&quot;JUSTIFICATIFS DES FRAIS DES DÉPUTÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de demander aux députés des justificatifs de leurs frais avec un plafond afin de limiter leur rémunération."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"JUSTIFICATIFS DES FRAIS DES DÉPUTÉS"</data>
+</node>
+<node id="&quot;PRÉSENCE DES DÉPUTÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour imposer une présence régulière et contrôlée des députés à l’Assemblée nationale, avec des sanctions en cas d'absence."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PRÉSENCE DES DÉPUTÉS"</data>
+</node>
+<node id="&quot;IMPÔTS SUR LE REVENU&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de payer les impôts sur le revenu sur le chiffre réel touché."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"IMPÔTS SUR LE REVENU"</data>
+</node>
+<node id="&quot;AUGMENTATION DES SALAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une demande d'augmentation de tous les salaires de 100 euros jusqu'à 2000 euros."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AUGMENTATION DES SALAIRES"</data>
+</node>
+<node id="&quot;RÉDUCTION DES SALAIRES DES PRÉSIDENTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de réduire les salaires des présidents de commissions, tel que la Commission nationale du débat public."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉDUCTION DES SALAIRES DES PRÉSIDENTS"</data>
+</node>
+<node id="&quot;SERVICES PUBLICS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Une thématique concernant la sensibilisation des citoyens sur l'importance des services publics qu'ils financent avec leurs impôts."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SERVICES PUBLICS"</data>
+</node>
+<node id="&quot;RESPECT DE SOI ET DES AUTRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une demande d'instaurer le respect de soi et des autres dès la petite enfance pour favoriser la cohésion sociale."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RESPECT DE SOI ET DES AUTRES"</data>
+</node>
+<node id="&quot;COMMUNAUTÉS DE COMMUNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de ne pas dépasser un certain nombre de communes pour que celles-ci restent à taille humaine."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COMMUNAUTÉS DE COMMUNES"</data>
+</node>
+<node id="&quot;RASSEMBLEMENT DE SERVICES ADMINISTRATIFS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de rassembler des services administratifs ou la poste avec les mairies en cas de suppression de certains services."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RASSEMBLEMENT DE SERVICES ADMINISTRATIFS"</data>
+</node>
+<node id="&quot;CITOYENS&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Citizens express the need for government consultation before drafting new laws and emphasize the importance of engaging various stakeholders."&lt;SEP&gt;"Les citoyens sont les individus qui participent au débat et expriment leurs besoins et souhaits concernant les politiques publiques et les services."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9&lt;SEP&gt;contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"CITOYENS"</data>
+</node>
+<node id="&quot;DÉPUTÉS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Les députés sont des acteurs institutionnels responsables de la représentation des citoyens à l'Assemblée nationale et de la prise de décisions législatives."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉPUTÉS"</data>
+</node>
+<node id="&quot;COMMISSION NATIONALE DU DÉBAT PUBLIC&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"La Commission nationale du débat public est un acteur institutionnel qui régule et facilite les débats publics en France."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COMMISSION NATIONALE DU DÉBAT PUBLIC"</data>
+</node>
+<node id="&quot;ENVIRONNEMENT&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"L'environnement est une thématique essentielle liée à la gestion des ressources et des services naturels, souvent mentionnée dans les débats citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ENVIRONNEMENT"</data>
+</node>
+<node id="&quot;ABRIS-BUS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les abris-bus sont des éléments des infrastructures publiques qui fournissent un service essentiel aux usagers des transports en commun."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ABRIS-BUS"</data>
+</node>
+<node id="&quot;POUBELLES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les poubelles font partie des services publics essentiels pour la gestion des déchets dans la commune."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"POUBELLES"</data>
+</node>
+<node id="&quot;BANCS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les bancs sont des installations publiques qui contribuent à l'aménagement urbain et au bien-être des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"BANCS"</data>
+</node>
+<node id="&quot;TABLES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les tables en espaces publics permettent aux citoyens de se rassembler et de profiter des espaces extérieurs."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"TABLES"</data>
+</node>
+<node id="&quot;ROUTES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les routes sont des infrastructures publiques essentielles pour la mobilité et le transport au sein des communes."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ROUTES"</data>
+</node>
+<node id="&quot;ÉCOLE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"L'école est une institution publique chargée de l'éducation des enfants et adolescents."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉCOLE"</data>
+</node>
+<node id="&quot;GESTION DES DÉCHETS&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"La gestion des déchets est un service public crucial assurant un environnement propre et une bonne santé publique."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"GESTION DES DÉCHETS"</data>
+</node>
+<node id="&quot;VIVRE ENSEMBLE EN BONNE INTELLIGENCE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à instaurer une culture de respect dès la petite enfance pour favoriser l'harmonie sociale."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"VIVRE ENSEMBLE EN BONNE INTELLIGENCE"</data>
+</node>
+<node id="&quot;PROXIMITÉ DES SERVICES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de rassembler les services administratifs pour assurer une meilleure proximité pour les citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROXIMITÉ DES SERVICES"</data>
+</node>
+<node id="&quot;THÈME DE LA CITOYENNETÉ&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Ce thème traite des droits et devoirs des citoyens dans une démocratie, souvent évoqué dans les cahiers de doléances."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"THÈME DE LA CITOYENNETÉ"</data>
+</node>
+<node id="&quot;AMÉNAGEMENT DES TERRITOIRES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Le thème de l'aménagement des territoires aborde comment les espaces urbains et ruraux doivent être structurés pour le bénéfice des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AMÉNAGEMENT DES TERRITOIRES"</data>
+</node>
+<node id="&quot;DÉMOCRATIE&quot;">
+  <data key="d0">"COURANTIDEOLOGIQUE"</data>
+  <data key="d1">"La démocratie est un courant idéologique qui favorise la participation des citoyens et l'égalité des droits."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉMOCRATIE"</data>
+</node>
+<node id="&quot;RÉFORMES FISCALES&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"Les réformes fiscales sont des changements dans le système d'imposition qui peuvent impacter le public et les finances des collectivités."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉFORMES FISCALES"</data>
+</node>
+<node id="&quot;RESPECT&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"Le respect fait partie d'un cluster sémantique important qui englobe les valeurs de convivance et d'harmonie sociale."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RESPECT"</data>
+</node>
+<node id="&quot;PARTICIPATION CITOYENNE&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"La participation citoyenne est un aspect essentiel du débat public qui encourage les citoyens à s'impliquer dans les décisions politiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PARTICIPATION CITOYENNE"</data>
+</node>
+<node id="&quot;INSTITUTIONS LOCALES&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Les institutions locales comprennent les entités qui gèrent les affaires publiques au niveau communal et départemental."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"INSTITUTIONS LOCALES"</data>
+</node>
+<node id="&quot;IMPOTS SUR LE REVENU&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"L'impôt sur le revenu est une taxe prélevée sur les revenus des citoyens, souvent sujet à débat dans le cadre des réformes fiscales."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"IMPOTS SUR LE REVENU"</data>
+</node>
+<node id="&quot;CONTRÔLE DES DÉPENSES DES DÉPUTÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à assurer un contrôle rigoureux des dépenses des députés pour garantir la transparence et la responsabilité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONTRÔLE DES DÉPENSES DES DÉPUTÉS"</data>
+</node>
+<node id="&quot;SANCTIONS POUR ABSENTÉISME&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition d'imposer des sanctions financières aux députés en cas de non-respect de la présence minimale requise."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SANCTIONS POUR ABSENTÉISME"</data>
+</node>
+<node id="&quot;ACCÈS AUX SERVICES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Le thème de l'accès aux services traite de la manière dont les citoyens peuvent accéder facilement aux services publics."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ACCÈS AUX SERVICES"</data>
+</node>
+<node id="&quot;TAILLE HUMAINE DES COMMUNAUTÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui souligne l'importance de garder les communautés à une taille suffisante pour un accès facile aux services."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"TAILLE HUMAINE DES COMMUNAUTÉS"</data>
+</node>
+<node id="&quot;COMMUNICATION DES INSTITUTIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de renforcer la communication entre institutions publiques et citoyens pour plus de transparence et d'engagement."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COMMUNICATION DES INSTITUTIONS"</data>
+</node>
+<node id="&quot;RAPPEL DES COÛTS DES SERVICES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à sensibiliser les citoyens sur le financement des services publics via les impôts."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RAPPEL DES COÛTS DES SERVICES"</data>
+</node>
+<node id="&quot;ÉDUCATION À LA CITOYENNETÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition d'intégrer l'éducation à la citoyenneté dans le parcours scolaire pour sensibiliser les jeunes aux droits civiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉDUCATION À LA CITOYENNETÉ"</data>
+</node>
+<node id="&quot;CONSULTATION PUBLIQUE&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Une consultation publique est un processus de dialogue entre les citoyens et les institutions sur les questions qui les concernent."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONSULTATION PUBLIQUE"</data>
+</node>
+<node id="&quot;CHARENTE-MARITIME&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Charente-Maritime is a department in France where citizen contributions are collected and organized."&lt;SEP&gt;"La Charente-Maritime est un département français qui se trouve au cœur des préoccupations abordées dans le Cahier de doléances."</data>
+  <data key="d2">contrib-9ba2c4ef5b731e446b406bf17758cc49&lt;SEP&gt;contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CHARENTE-MARITIME"</data>
+</node>
+<node id="&quot;70 PROPOSITIONS&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Les citoyens sont appelés à soumettre 70 propositions lors de la consultation nationale."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"70 PROPOSITIONS"</data>
+</node>
+<node id="&quot;COHÉSION SOCIALE&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"La cohésion sociale est un cluster sémantique qui inclut des idées de vivre ensemble et de respect mutuel."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COHÉSION SOCIALE"</data>
+</node>
+<node id="&quot;DEMANDE DE CONTRÔLE DÉMOCRATIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une demande pour renforcer le contrôle démocratique sur l'action des députés et des élus afin d'assurer une meilleure gouvernance."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DEMANDE DE CONTRÔLE DÉMOCRATIQUE"</data>
+</node>
+<node id="&quot;MISE EN AVANT DES SERVICES GRATUITS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en avant les services publics gratuits afin d'en augmenter l'utilisation."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"MISE EN AVANT DES SERVICES GRATUITS"</data>
+</node>
+<node id="&quot;SENSIBILISATION AUX ENJEUX MAJEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour accroître la sensibilisation des citoyens sur les enjeux majeurs et les décisions politique."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SENSIBILISATION AUX ENJEUX MAJEURS"</data>
+</node>
+<node id="&quot;TRANSPARENCE DES INSTITUTIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour garantir la transparence des institutions et des processus décisionnels envers les citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"TRANSPARENCE DES INSTITUTIONS"</data>
+</node>
+<node id="&quot;EMPOWERMENT DES CITOYENS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une Proposition visant à donner plus de pouvoir aux citoyens dans la prise de décision politique."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"EMPOWERMENT DES CITOYENS"</data>
+</node>
+<node id="&quot;GRIEFS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Les griefs des citoyens sont les plaintes et insatisfactions qu'ils formulent au sujet des politiques ou des services."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"GRIEFS"</data>
+</node>
+<node id="&quot;AVENIR DES SERVICES PUBLICS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Le débat sur l'avenir des services publics est central dans les contributions des citoyens, reflétant leurs attentes et préoccupations."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AVENIR DES SERVICES PUBLICS"</data>
+</node>
+<node id="&quot;COHÉSION INTERGÉNÉRATIONNELLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer la cohésion entre les générations dans la société."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COHÉSION INTERGÉNÉRATIONNELLE"</data>
+</node>
+<node id="&quot;RÉDUCTION DES INÉGALITÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour s'attaquer aux inégalités sociales et économiques dans la société."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉDUCTION DES INÉGALITÉS"</data>
+</node>
+<node id="&quot;SOUTIEN À L'ÉCONOMIE LOCALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer le soutien à l'économie locale et aux initiatives du développement communautaire."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN À L'ÉCONOMIE LOCALE"</data>
+</node>
+<node id="&quot;AMÉLIORATION CONTINUE DES POLITIQUES PUBLIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour promouvoir l'amélioration continue des politiques publiques en fonction des retours des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AMÉLIORATION CONTINUE DES POLITIQUES PUBLIQUES"</data>
+</node>
+<node id="&quot;EVALUATION DES POLITIQUES PUBLIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour introduire une évaluation régulière des politiques publiques afin de s'assurer de leur efficacité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"EVALUATION DES POLITIQUES PUBLIQUES"</data>
+</node>
+<node id="&quot;DÉMARCHES PARTICIPATIVES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour encourager des démarches participatives impliquant les citoyens dans la construction des politiques publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉMARCHES PARTICIPATIVES"</data>
+</node>
+<node id="&quot;RÉCUPÉRATION D'IDÉES NOVATRICES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour favoriser la récupération d'idées novatrices provenant des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉCUPÉRATION D'IDÉES NOVATRICES"</data>
+</node>
+<node id="&quot;PROJETS COMMUNAUTAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition apportant des idées pour renforcer les projets communautaires collectifs."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROJETS COMMUNAUTAIRES"</data>
+</node>
+<node id="&quot;CRÉATION D'EMPLOIS LOCAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour initier la création d'emplois locaux comme stratégie de développement économique."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CRÉATION D'EMPLOIS LOCAUX"</data>
+</node>
+<node id="&quot;ÉCHANGES INTERCULTURELS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à favoriser les échanges interculturels entre diverses populations pour une meilleure intégration."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉCHANGES INTERCULTURELS"</data>
+</node>
+<node id="&quot;RÉPARTITION ÉQUITABLE DES RESSOURCES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour garantir une répartition équitable des ressources entre les communautés."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉPARTITION ÉQUITABLE DES RESSOURCES"</data>
+</node>
+<node id="&quot;INCLUSION SOCIALE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"L'inclusion sociale est une thématique traitant des moyens pour intégrer tous les citoyens dans la société."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"INCLUSION SOCIALE"</data>
+</node>
+<node id="&quot;SERVICES SOCIAUX&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les services sociaux font partie des services publics qui visent à soutenir les citoyens en difficultés."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SERVICES SOCIAUX"</data>
+</node>
+<node id="&quot;COMMUNICATION DES ACTIONS GOUVERNEMENTALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à améliorer la communication des actions du gouvernement afin que les citoyens soient bien informés."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COMMUNICATION DES ACTIONS GOUVERNEMENTALES"</data>
+</node>
+<node id="&quot;SYSTÈME DE SANTÉ&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Le système de santé est un service public axé sur la guérison et la prévention des maladies pour tous les citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SYSTÈME DE SANTÉ"</data>
+</node>
+<node id="&quot;TRANSPORTS EN COMMUN&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les transports en commun sont des services publics qui facilitent le déplacement des citoyens à travers les villes."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"TRANSPORTS EN COMMUN"</data>
+</node>
+<node id="&quot;CRÉATION DE LOGEMENTS SOCIAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour initier la création de logements sociaux pour répondre aux besoins des populations défavorisées."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CRÉATION DE LOGEMENTS SOCIAUX"</data>
+</node>
+<node id="&quot;APPUI AUX ASSOCIATIONS LOCALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour soutenir l'appui aux associations locales dans leurs activités communautaires."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"APPUI AUX ASSOCIATIONS LOCALES"</data>
+</node>
+<node id="&quot;COLLECTIF POUR LA JUSTICE SOCIALE&quot;">
+  <data key="d0">"COHÉRENTIDEOLOGIQUE"</data>
+  <data key="d1">"Un collectif qui milite pour des réformes en faveur de la justice sociale dans la société."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COLLECTIF POUR LA JUSTICE SOCIALE"</data>
+</node>
+<node id="&quot;RESSOURCES ÉDUCATIVES LOCALES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Les ressources éducatives locales sont des services publics qui facilitent l'éducation et l'apprentissage dans les communautés."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RESSOURCES ÉDUCATIVES LOCALES"</data>
+</node>
+<node id="&quot;DIALOGUE CITOYEN&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Le dialogue citoyen est un processus de communication entre les citoyens et les élus pour échanger des idées et des préoccupations."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DIALOGUE CITOYEN"</data>
+</node>
+<node id="&quot;SYNTHÈSE DES CONTRIBUTIONS&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Une synthèse des contributions des citoyens est basée sur le retour d’informations lors des consultations publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SYNTHÈSE DES CONTRIBUTIONS"</data>
+</node>
+<node id="&quot;REGARDS CROISÉS ENTRE CITOYENS&quot;">
+  <data key="d0">"COHÉRENTIDEOLOGIQUE"</data>
+  <data key="d1">"Une méthode de dialogue qui encourage le partage d'idées entre citoyens de divers horizons."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"REGARDS CROISÉS ENTRE CITOYENS"</data>
+</node>
+<node id="&quot;OBSERVATION DES PRATIQUES POLITIQUES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Une thématique qui observe et analyse les pratiques politiques en cours pour leur efficacité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"OBSERVATION DES PRATIQUES POLITIQUES"</data>
+</node>
+<node id="&quot;ÉTHIQUES ET DÉONTOLOGIE DANS LA FONCTION PUBLIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Une thématique qui traite des normes éthiques et déontologiques dans la fonction publique."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉTHIQUES ET DÉONTOLOGIE DANS LA FONCTION PUBLIQUE"</data>
+</node>
+<node id="&quot;PARTICIPATION CITOYENNE ACTIVE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui encourage une participation citoyenne active dans le processus décisionnel."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PARTICIPATION CITOYENNE ACTIVE"</data>
+</node>
+<node id="&quot;FACILITATION DE L'ACCÈS À L'INFORMATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour faciliter l'accès à l'information publique afin d'améliorer la transparence."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"FACILITATION DE L'ACCÈS À L'INFORMATION"</data>
+</node>
+<node id="&quot;ÉGALITÉ DES DROITS ET DES CHANCES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Une doléance qui demande des mesures pour garantir l'égalité des droits et des chances pour tous les citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉGALITÉ DES DROITS ET DES CHANCES"</data>
+</node>
+<node id="&quot;CONSULTATION SUR LES CHOIX POLITIQUES&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"Une consultation sur les choix politiques est une méthode collaborative pour recueillir l'avis citoyen sur des sujets politiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONSULTATION SUR LES CHOIX POLITIQUES"</data>
+</node>
+<node id="&quot;IMPLICATION LOCALE DANS LES POLITIQUES PUBLIQUES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Une thématique tournée vers l'implication des citoyens dans l'élaboration des politiques publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"IMPLICATION LOCALE DANS LES POLITIQUES PUBLIQUES"</data>
+</node>
+<node id="&quot;PERSPECTIVES D'AVENIR POUR LA SOCIÉTÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui soulève des questions sur les perspectives d'avenir de la société contemporaine."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PERSPECTIVES D'AVENIR POUR LA SOCIÉTÉ"</data>
+</node>
+<node id="&quot;ENGAGEMENT DES JEUNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui cherche à encourager l'engagement civique et social des jeunes dans leur communauté."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ENGAGEMENT DES JEUNES"</data>
+</node>
+<node id="&quot;SOUTIEN AUX DÉMARCHES COLLECTIVES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour encourager et soutenir les démarches collectives des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN AUX DÉMARCHES COLLECTIVES"</data>
+</node>
+<node id="&quot;PERSPECTIVE D'UN MONDE MEILLEUR&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Un appel à réfléchir sur des idées qui contribueront à un monde meilleur et plus solidaire."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PERSPECTIVE D'UN MONDE MEILLEUR"</data>
+</node>
+<node id="&quot;INCLUSIVITÉ DANS LA GOUVERNANCE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à intégrer les principes d'inclusivité dans toutes les sphères de la gouvernance."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"INCLUSIVITÉ DANS LA GOUVERNANCE"</data>
+</node>
+<node id="&quot;PROLIFERATION DES INÉGALITÉS SOCIALES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Une doléance concernant l'accroissement des inégalités sociales et demande des mesures pour y remédier."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROLIFERATION DES INÉGALITÉS SOCIALES"</data>
+</node>
+<node id="&quot;RÉDUCTION DES ÉCARTS ENTRE RICHES ET PAUVRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à réduire les écarts de revenus entre les riches et les pauvres pour une société plus équitable."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉDUCTION DES ÉCARTS ENTRE RICHES ET PAUVRES"</data>
+</node>
+<node id="&quot;APPUI AUX INITIATIVES VERTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour soutenir des initiatives écologiques au sein des collectivités locales."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"APPUI AUX INITIATIVES VERTES"</data>
+</node>
+<node id="&quot;CONCERNANT L'ÉCOLOGIE ET LE CHANGEMENT CLIMATIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Thématique qui aborde les enjeux écologiques et les mesures à prendre pour se conformer aux exigences du changement climatique."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONCERNANT L'ÉCOLOGIE ET LE CHANGEMENT CLIMATIQUE"</data>
+</node>
+<node id="&quot;GOUVERNANCE RESPONSABLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour établir une gouvernance responsable et participative dans la gestion des affaires publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"GOUVERNANCE RESPONSABLE"</data>
+</node>
+<node id="&quot;AMÉLIORATION DES CONDITIONS DE VIE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour améliorer les conditions de vie des citoyens de manière générale."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AMÉLIORATION DES CONDITIONS DE VIE"</data>
+</node>
+<node id="&quot;ENGAGEMENT ENVERS LA BIODIVERSITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer l'engagement envers la protection de la biodiversité dans les politiques locales."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ENGAGEMENT ENVERS LA BIODIVERSITÉ"</data>
+</node>
+<node id="&quot;PRISE EN COMPTE DES BESOINS DES CITOYENS&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Une thématique qui souligne l'importance de prendre en compte les besoins des citoyens dans l'élaboration des politiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PRISE EN COMPTE DES BESOINS DES CITOYENS"</data>
+</node>
+<node id="&quot;PROPOSITIONS D'AMÉLIORATION DES SERVICES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Les propositions faites par les citoyens pour améliorer le service public sont collectées pour être étudiées et mises en œuvre."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROPOSITIONS D'AMÉLIORATION DES SERVICES"</data>
+</node>
+<node id="&quot;ÉLECTIONS TRANSPARENTES ET PARTICIPATIVES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour garantir que les élections soient transparentes et favorisent la participation citoyenne."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉLECTIONS TRANSPARENTES ET PARTICIPATIVES"</data>
+</node>
+<node id="&quot;MAINTIEN DES SERVICES DE PROXIMITÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour maintenir et améliorer les services de proximité pour tous les citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"MAINTIEN DES SERVICES DE PROXIMITÉ"</data>
+</node>
+<node id="&quot;ALERTE SUR LES RISQUES DE SUPPRESSIONS DE SERVICES&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Une doléance qui alerte sur le risque imminent de suppression de services essentiels pour la population."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ALERTE SUR LES RISQUES DE SUPPRESSIONS DE SERVICES"</data>
+</node>
+<node id="&quot;ACCOMPAGNEMENT DES PERSONNES ÂGÉES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour accompagner les personnes âgées dans leur quotidien et leurs besoins."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ACCOMPAGNEMENT DES PERSONNES ÂGÉES"</data>
+</node>
+<node id="&quot;PROMOTION DE L'ÉGALITÉ DES SEXES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour promouvoir l'égalité des sexes sur le lieu de travail et dans la vie quotidienne."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROMOTION DE L'ÉGALITÉ DES SEXES"</data>
+</node>
+<node id="&quot;DÉCENTRALISATION DES SERVICES ÉTATIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à décentraliser les services étatiques pour rapprocher l'administration publique des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉCENTRALISATION DES SERVICES ÉTATIQUES"</data>
+</node>
+<node id="&quot;RÉPONSE RAPIDE AUX DEMANDES DES CITOYENS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour garantir une réponse rapide et efficace aux demandes des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉPONSE RAPIDE AUX DEMANDES DES CITOYENS"</data>
+</node>
+<node id="&quot;DYNAMIQUE DE PARTICIPATION SOCIALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour encourager une dynamique de participation sociale au sein des communautés."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DYNAMIQUE DE PARTICIPATION SOCIALE"</data>
+</node>
+<node id="&quot;SOUTIEN AUX FAMILLES EN DIFFICULTÉ&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposition visant à fournir un soutien aux familles qui rencontrent des difficultés économiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN AUX FAMILLES EN DIFFICULTÉ"</data>
+</node>
+<node id="&quot;STRATÉGIES N'ÉCLAIRANT PAS SUFFISAMMENT LE DÉBAT PUBLIC&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Une doléance exprimée pour critiquer les stratégies qui n'éclairent pas assez le débat public."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"STRATÉGIES N'ÉCLAIRANT PAS SUFFISAMMENT LE DÉBAT PUBLIC"</data>
+</node>
+<node id="&quot;OUVERTURE DES INSTITUTIONS À L'OPINION PUBLIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour ouvrir les institutions à l'opinion publique afin de renforcer la transparence."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"OUVERTURE DES INSTITUTIONS À L'OPINION PUBLIQUE"</data>
+</node>
+<node id="&quot;DÉMARCHES DE CONCERTATION POUR LES DÉCISIONS PUBLIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à implanter des démarches de concertation plus poussées pour les décisions publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉMARCHES DE CONCERTATION POUR LES DÉCISIONS PUBLIQUES"</data>
+</node>
+<node id="&quot;AMÉLIORATION DE L'ACCÈS À LA JUSTICE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour améliorer l'accès à la justice pour tous les citoyens, afin de garantir leurs droits."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AMÉLIORATION DE L'ACCÈS À LA JUSTICE"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT DES TRANSPORTS DURABLES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour développer et promouvoir des transports durables et respectueux de l'environnement."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉVELOPPEMENT DES TRANSPORTS DURABLES"</data>
+</node>
+<node id="&quot;MESURES DE SOUTIEN AUX TRAVAILLEURS PRÉCAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en place des mesures de soutien spécifiques pour les travailleurs précaires."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"MESURES DE SOUTIEN AUX TRAVAILLEURS PRÉCAIRES"</data>
+</node>
+<node id="&quot;ACCESSIBILITÉ DES SERVICES PUBLICS POUR LES PERSONNES HANDICAPÉES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui vise à rendre les services publics accessibles aux personnes en situation de handicap."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ACCESSIBILITÉ DES SERVICES PUBLICS POUR LES PERSONNES HANDICAPÉES"</data>
+</node>
+<node id="&quot;PROPOSITION DE PRINCIPES ÉTHIQUES DANS LE SERVICE PUBLIC&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour intégrer des principes éthiques dans le service public pour garantir la justice et l'égalité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROPOSITION DE PRINCIPES ÉTHIQUES DANS LE SERVICE PUBLIC"</data>
+</node>
+<node id="&quot;RÉFORME DES STRUCTURES ADMINISTRATIVES&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Une réforme qui propose une refonte des structures administratives pour favoriser l'efficacité et la réactivité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉFORME DES STRUCTURES ADMINISTRATIVES"</data>
+</node>
+<node id="&quot;ÉVALUATION DES VOIX CITOYENNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour évaluer les voix citoyennes et s'assurer de leur prise en compte dans les décisions."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉVALUATION DES VOIX CITOYENNES"</data>
+</node>
+<node id="&quot;PASSERELLE ENTRE ÉLU ET CITOYEN&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour créer une passerelle permettant le dialogue entre élus et citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PASSERELLE ENTRE ÉLU ET CITOYEN"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT DE L'ÉCONOMIE CIRCULAIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition en faveur du développement d'une économie circulaire pour favoriser la durabilité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉVELOPPEMENT DE L'ÉCONOMIE CIRCULAIRE"</data>
+</node>
+<node id="&quot;CONSULTATIONS RÉGULIÈRES POUR LES CITOYENS&quot;">
+  <data key="d0">|"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour organiser des consultations régulières afin de faire participer les citoyens dans les décisions publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONSULTATIONS RÉGULIÈRES POUR LES CITOYENS"</data>
+</node>
+<node id="&quot;AMÉLIORER LA QUALITÉ DE L'AIR&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui vise à améliorer la qualité de l'air afin de protéger la santé des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AMÉLIORER LA QUALITÉ DE L'AIR"</data>
+</node>
+<node id="&quot;INITIATIVES DE RÉDUCTION DES DÉCHETS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour développer des initiatives qui visent à réduire les déchets produits par la communauté."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"INITIATIVES DE RÉDUCTION DES DÉCHETS"</data>
+</node>
+<node id="&quot;COLLECTES DE FONDS POUR PROJETS LOCAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour organiser des collectes de fonds en vue de financer des projets locaux."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COLLECTES DE FONDS POUR PROJETS LOCAUX"</data>
+</node>
+<node id="&quot;RENFORCER LA SÉCURITÉ ALIMENTAIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer la sécurité alimentaire à travers des mesures concrètes."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RENFORCER LA SÉCURITÉ ALIMENTAIRE"</data>
+</node>
+<node id="&quot;RENFORCEMENT DES PROTECTIONS DES CONSOMMATEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à renforcer les protections accordées aux consommateurs contre les abus."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RENFORCEMENT DES PROTECTIONS DES CONSOMMATEURS"</data>
+</node>
+<node id="&quot;LUTTE CONTRE LE GASPILLAGE ALIMENTAIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en œuvre des actions concrètes contre le gaspillage alimentaire."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"LUTTE CONTRE LE GASPILLAGE ALIMENTAIRE"</data>
+</node>
+<node id="&quot;RÉCUPÉRATION DES ESPACES PUBLICS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour récupérer les espaces publics et les rendre accessibles aux citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉCUPÉRATION DES ESPACES PUBLICS"</data>
+</node>
+<node id="&quot;AMÉLIORATION DE LA QUALITÉ DES SERVICES SOCIAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en place des mesures améliorant la qualité des services sociaux."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"AMÉLIORATION DE LA QUALITÉ DES SERVICES SOCIAUX"</data>
+</node>
+<node id="&quot;PRÉSERVATION DU PATRIMOINE HISTORIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour préserver le patrimoine historique et culturel dans le territoire."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PRÉSERVATION DU PATRIMOINE HISTORIQUE"</data>
+</node>
+<node id="&quot;ÉTABLISSEMENT DE PARTENARIATS LOCAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour établir des partenariats entre les collectivités locales et d'autres acteurs de la société."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉTABLISSEMENT DE PARTENARIATS LOCAUX"</data>
+</node>
+<node id="&quot;RÉSEAU DE SOLIDARITÉ ENTRE CITOYENS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour créer un réseau de solidarité entre citoyens pour des actions collectives."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉSEAU DE SOLIDARITÉ ENTRE CITOYENS"</data>
+</node>
+<node id="&quot;SOUTIEN À L'ART ET À LA CULTURE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour soutenir l'art et la culture au niveau local afin d'enrichir la vie communautaire."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN À L'ART ET À LA CULTURE"</data>
+</node>
+<node id="&quot;ÉVALUATION DES POLITIQUES D'ÉDUCATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour évaluer les politiques d'éducation pour s'assurer qu'elles répondent aux besoins des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉVALUATION DES POLITIQUES D'ÉDUCATION"</data>
+</node>
+<node id="&quot;DÉMOCRATISATION DE L'ACCÈS À L'ÉDUCATION&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour garantir la démocratisation de l'accès à l'éducation à tous les niveaux."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉMOCRATISATION DE L'ACCÈS À L'ÉDUCATION"</data>
+</node>
+<node id="&quot;RÉDUCTION DES INÉGALITÉS ÉCONOMIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour réduire les inégalités économiques qui touchent certaines populations."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉDUCTION DES INÉGALITÉS ÉCONOMIQUES"</data>
+</node>
+<node id="&quot;IMPLICATION DES ACTEURS ASSOCIATIFS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour impliquer davantage les acteurs associatifs dans la formulation des politiques publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"IMPLICATION DES ACTEURS ASSOCIATIFS"</data>
+</node>
+<node id="&quot;RÉNOVATION DES INFRASTRUCTURES PUBLIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en œuvre la rénovation des infrastructures publiques afin d'améliorer les services."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉNOVATION DES INFRASTRUCTURES PUBLIQUES"</data>
+</node>
+<node id="&quot;CRÉATION DE PROJETS ÉDUCATIFS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour créer des projets éducatifs en collaboration avec les écoles et les collectivités."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CRÉATION DE PROJETS ÉDUCATIFS"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT DE PROGRAMMES DE FORMATION POUR ADULTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de développement de programmes de formation pour adultes afin d'encourager la montée en compétences."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉVELOPPEMENT DE PROGRAMMES DE FORMATION POUR ADULTES"</data>
+</node>
+<node id="&quot;PARTICIPATION DES CITOYENS DANS LE DÉVELOPPEMENT DES POLITIQUES LOCALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour accroître la participation des citoyens dans le développement des politiques locales."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PARTICIPATION DES CITOYENS DANS LE DÉVELOPPEMENT DES POLITIQUES LOCALES"</data>
+</node>
+<node id="&quot;COLLABORATION ENTRE LES SECTEURS PUBLICS ET PRIVÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à renforcer la collaboration entre les secteurs public et privé pour une offre de services améliorée."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"COLLABORATION ENTRE LES SECTEURS PUBLICS ET PRIVÉS"</data>
+</node>
+<node id="&quot;PROMOTION DE LA BIODIVERSITÉ DANS LES POLITIQUES LOCALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour intégrer la biodiversité dans les politiques locales."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROMOTION DE LA BIODIVERSITÉ DANS LES POLITIQUES LOCALES"</data>
+</node>
+<node id="&quot;CRÉATION DE PARCOURS D'INSERTION PROFESSIONNELLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour créer des parcours d'insertion professionnelle pour les jeunes."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CRÉATION DE PARCOURS D'INSERTION PROFESSIONNELLE"</data>
+</node>
+<node id="&quot;MISE EN PLACE DE DISPOSITIFS DE LOGEMENT ABORDABLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en place des dispositifs de logement abordable pour les ménages à faibles revenus."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"MISE EN PLACE DE DISPOSITIFS DE LOGEMENT ABORDABLE"</data>
+</node>
+<node id="&quot;INTENSIFICATION DES ACTIONS DE SENSIBILISATION À L'ENVIRONNEMENT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour intensifier les actions de sensibilisation à l'environnement à destination des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"INTENSIFICATION DES ACTIONS DE SENSIBILISATION À L'ENVIRONNEMENT"</data>
+</node>
+<node id="&quot;MISE EN AVANT DE LA CULTURE LOCALE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour valoriser la culture locale dans les pratiques et services offerts par la collectivité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"MISE EN AVANT DE LA CULTURE LOCALE"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT D'UNE GOUVERNANCE PARTICIPATIVE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui vise à établir une gouvernance participative au sein des collectivités."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉVELOPPEMENT D'UNE GOUVERNANCE PARTICIPATIVE"</data>
+</node>
+<node id="&quot;SOUTIEN À LA CRÉATION D'ENTREPRISES LOCALES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour soutenir la création d'entreprises locales comme moteur économique."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN À LA CRÉATION D'ENTREPRISES LOCALES"</data>
+</node>
+<node id="&quot;CONCEPTION DE POLITIQUES DE SANTÉ PUBLIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour élaborer des politiques de santé publique qui répondent aux besoins des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONCEPTION DE POLITIQUES DE SANTÉ PUBLIQUE"</data>
+</node>
+<node id="&quot;INITIATIVES EN FAVEUR DE LA VIE ASSOCIATIVE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour soutenir les initiatives en faveur de la vie associative dans la commune."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"INITIATIVES EN FAVEUR DE LA VIE ASSOCIATIVE"</data>
+</node>
+<node id="&quot;CONCEPTION DE MOYENS DE TRANSPORT ÉCOLOGIQUES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour concevoir des moyens de transport écologiques pour réduire l'empreinte carbone."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONCEPTION DE MOYENS DE TRANSPORT ÉCOLOGIQUES"</data>
+</node>
+<node id="&quot;MISE EN PLACE DE RESSOURCES POUR L'INCLUSION NUMÉRIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en place des ressources pour favoriser l'inclusion numérique dans les communautés."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"MISE EN PLACE DE RESSOURCES POUR L'INCLUSION NUMÉRIQUE"</data>
+</node>
+<node id="&quot;ÉVALUATION DES STRUCTURES DE GOUVERNANCE EXISTANTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition de réévaluation des structures de gouvernance existantes pour leur modernisation."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉVALUATION DES STRUCTURES DE GOUVERNANCE EXISTANTES"</data>
+</node>
+<node id="&quot;ACCROISSEMENT DU FINANCEMENT DES SERVICES SOCIAUX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à augmenter le financement des services sociaux pour répondre à une demande croissante."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ACCROISSEMENT DU FINANCEMENT DES SERVICES SOCIAUX"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT D'ESPACES COMMUNAUTAIRES POLYVALENTS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour développer des espaces communautaires polyvalents pour favoriser les interactions sociales."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉVELOPPEMENT D'ESPACES COMMUNAUTAIRES POLYVALENTS"</data>
+</node>
+<node id="&quot;FORMATION À LA CITOYENNETÉ ACTIVE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour intégrer la formation à la citoyenneté active dans les cursus scolaires."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"FORMATION À LA CITOYENNETÉ ACTIVE"</data>
+</node>
+<node id="&quot;INTERACTIONS ENTRE LES GÉNÉRATIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à susciter des interactions enrichissantes entre les générations."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"INTERACTIONS ENTRE LES GÉNÉRATIONS"</data>
+</node>
+<node id="&quot;ENCOURAGER L'AUTONOMIE DES JEUNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui vise à encourager l'autonomie des jeunes dans le cadre de leur développement personnel."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ENCOURAGER L'AUTONOMIE DES JEUNES"</data>
+</node>
+<node id="&quot;PROMOTION DU BÉNÉVOLAT&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour promouvoir le bénévolat comme un acte civique essentiel."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"PROMOTION DU BÉNÉVOLAT"</data>
+</node>
+<node id="&quot;SERVICE DE MÉDIATION SOCIALE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Le service de médiation sociale est un service public visant à résoudre les conflits entre citoyens et institutions."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SERVICE DE MÉDIATION SOCIALE"</data>
+</node>
+<node id="&quot;ÉTABLIR DES MOMENTS DE RENCONTRE ENTRE CITOYENS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à établir des moments de rencontre entre citoyens pour discuter des enjeux communs."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ÉTABLIR DES MOMENTS DE RENCONTRE ENTRE CITOYENS"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT DE L'ÉDUCATION ARTISTIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour promouvoir le développement de l'éducation artistique pour enrichir la culture des citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉVELOPPEMENT DE L'ÉDUCATION ARTISTIQUE"</data>
+</node>
+<node id="&quot;SATISFACTION DES USAGERS DES SERVICES PUBLICS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Une doléance exprimant la préoccupation sur la satisfaction des usagers des services publics."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SATISFACTION DES USAGERS DES SERVICES PUBLICS"</data>
+</node>
+<node id="&quot;STRATÉGIES DE COMMUNICATION AMBITIEUX DANS LES INSTITUTIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en œuvre des stratégies de communication ambitieuses dans les institutions publiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"STRATÉGIES DE COMMUNICATION AMBITIEUX DANS LES INSTITUTIONS"</data>
+</node>
+<node id="&quot;RENFORCEMENT DES RESSOURCES HUMAINES DANS LE SERVICE PUBLIC&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer les ressources humaines dans le service public pour améliorer l'efficacité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RENFORCEMENT DES RESSOURCES HUMAINES DANS LE SERVICE PUBLIC"</data>
+</node>
+<node id="&quot;ACCÈS À L'INFORMATION PUBLIQUE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour garantir un meilleur accès à l'information publique pour les citoyens."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ACCÈS À L'INFORMATION PUBLIQUE"</data>
+</node>
+<node id="&quot;SOUTIEN AUX INITIATIVES DE JEUNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en place un soutien aux initiatives portées par les jeunes."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN AUX INITIATIVES DE JEUNES"</data>
+</node>
+<node id="&quot;DÉMOCRATISATION DES SERVICES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour garantir la démocratisation des services publics afin d'assurer l'équité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉMOCRATISATION DES SERVICES"</data>
+</node>
+<node id="&quot;LUTTE CONTRE LE RACISME ET LES DISCRIMINATIONS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour engager la lutte contre le racisme et les discriminations sous toutes leurs formes."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"LUTTE CONTRE LE RACISME ET LES DISCRIMINATIONS"</data>
+</node>
+<node id="&quot;DIALOGUE ÉCOLOGIQUES ENTRE LES COLLECTIVITÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour établir un dialogue écologique entre les collectivités locales pour échanger sur les bonnes pratiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DIALOGUE ÉCOLOGIQUES ENTRE LES COLLECTIVITÉS"</data>
+</node>
+<node id="&quot;STRATÉGIES POUR LE SERVICE PUBLIC&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition qui établit de nouvelles stratégies pour le service public afin d'assurer sa modernité."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"STRATÉGIES POUR LE SERVICE PUBLIC"</data>
+</node>
+<node id="&quot;POLITIQUE DE DÉVELOPPEMENT DURABLE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour mettre en œuvre une politique de développement durable qui répond aux défis contemporains."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"POLITIQUE DE DÉVELOPPEMENT DURABLE"</data>
+</node>
+<node id="&quot;CONCERTATION AVEC LES ÉLUS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer la concertation avec les élus pour un meilleur suivi des engagements."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"CONCERTATION AVEC LES ÉLUS"</data>
+</node>
+<node id="&quot;DÉVELOPPEMENT D'ATELIERS DE PRATIQUE CITOYENNE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour développer des ateliers de pratique citoyenne qui sensibilisent aux enjeux civiques."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"DÉVELOPPEMENT D'ATELIERS DE PRATIQUE CITOYENNE"</data>
+</node>
+<node id="&quot;SOUTIEN À L'ÉCONOMIE SOCIALE ET SOLIDAIRE&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour soutenir les initiatives d'économie sociale et solidaire dans les territoires."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN À L'ÉCONOMIE SOCIALE ET SOLIDAIRE"</data>
+</node>
+<node id="&quot;FORMATION CONTINUE DES TRAVAILLEURS PUBLICS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour intégrer des formations continues pour les travailleurs issus des services publics."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"FORMATION CONTINUE DES TRAVAILLEURS PUBLICS"</data>
+</node>
+<node id="&quot;ACCROISSEMENT DE LA PROTECTION DES TRAVAILLEURS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à accroître la protection des travailleurs, notamment ceux en situation précaire."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"ACCROISSEMENT DE LA PROTECTION DES TRAVAILLEURS"</data>
+</node>
+<node id="&quot;MESURE D'ÉVALUATION DES SERVICES PUBLICS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer les mesures d'évaluation des services publics pour assurer leur bon fonctionnement."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"MESURE D'ÉVALUATION DES SERVICES PUBLICS"</data>
+</node>
+<node id="&quot;IMPLICATION DES MIGRANTS DANS LES DÉMARCHES CITOYENNES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour renforcer l'implication des migrants dans les démarches citoyennes."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"IMPLICATION DES MIGRANTS DANS LES DÉMARCHES CITOYENNES"</data>
+</node>
+<node id="&quot;RÉPONSE AUX BESOINS DES PERSONNES ISOLÉES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition visant à garantir une réponse adaptée aux besoins des personnes isolées."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"RÉPONSE AUX BESOINS DES PERSONNES ISOLÉES"</data>
+</node>
+<node id="&quot;SOUTIEN À L'ÉDUCATION DES PUBLICS DÉFAVORISÉS&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Une proposition pour soutenir l'éducation des publics défavorisés afin de lutter contre les inégalités."</data>
+  <data key="d2">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d3">"SOUTIEN À L'ÉDUCATION DES PUBLICS DÉFAVORISÉS"</data>
+</node>
+<node id="&quot;SUPPRIMER LA CSG&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposition to remove the CSG for all retirees whose pension is equal to or below 2200 euros."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"SUPPRIMER LA CSG"</data>
+</node>
+<node id="&quot;REVALORISER LES SALAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to revalue all salaries up to 2000 euros."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"REVALORISER LES SALAIRES"</data>
+</node>
+<node id="&quot;AUGMENTER LA RÉMUNÉRATION DES MAIRES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Proposal to increase the remuneration of mayors and municipal councilors in small communes (≤ 1000 inhabitants) to encourage citizen involvement in communal life."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"AUGMENTER LA RÉMUNÉRATION DES MAIRES"</data>
+</node>
+<node id="&quot;RETRAITÉS&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Retirees are citizens affected by financial policies and proposals regarding pension and taxation."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"RETRAITÉS"</data>
+</node>
+<node id="&quot;MAIRES ET CONSEILLERS MUNICIPAUX&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Mayors and municipal councilors are local institutional actors responsible for governance and encouraging citizen involvement."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"MAIRES ET CONSEILLERS MUNICIPAUX"</data>
+</node>
+<node id="&quot;PETITES COMMUNES&quot;">
+  <data key="d0">"TERRITOIRE"</data>
+  <data key="d1">"Small communes (≤ 1000 inhabitants) are local territories that may benefit from reforms to increase civic participation."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"PETITES COMMUNES"</data>
+</node>
+<node id="&quot;CONTRIBUTION&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"The documented citizen input reflecting opinions, grievances, and proposals regarding public policies and services."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"CONTRIBUTION"</data>
+</node>
+<node id="&quot;CONSULTATION&quot;">
+  <data key="d0">"CONSULTATION"</data>
+  <data key="d1">"The process by which citizens express their views and contribute to discussions on national issues, such as the Grand Débat National."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"CONSULTATION"</data>
+</node>
+<node id="&quot;DOLEANCE&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"A specific grievance or complaint articulated by citizens concerning public policies or local governance."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"DOLEANCE"</data>
+</node>
+<node id="&quot;SERVICEPUBLIC&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Public services provided to citizens, which may include health, education, transportation, and municipal services."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"SERVICEPUBLIC"</data>
+</node>
+<node id="&quot;OPINION&quot;">
+  <data key="d0">"OPINION"</data>
+  <data key="d1">"A personal belief or judgment expressed by citizens regarding policies or social issues."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"OPINION"</data>
+</node>
+<node id="&quot;QUESTION&quot;">
+  <data key="d0">"QUESTION"</data>
+  <data key="d1">"Inquiries raised by citizens about policies, services, or governance that require clarification or consideration."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"QUESTION"</data>
+</node>
+<node id="&quot;THEMATIQUE&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"Themes or subjects of discussion that emerge during citizens' contributions, linked to their grievances or proposals."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"THEMATIQUE"</data>
+</node>
+<node id="&quot;CLUSTERSEMANTIQUE&quot;">
+  <data key="d0">"CLUSTERSEMANTIQUE"</data>
+  <data key="d1">"A grouping of related themes or concepts that reflect common issues or concerns raised by citizens."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"CLUSTERSEMANTIQUE"</data>
+</node>
+<node id="&quot;TYPEREPONDANT&quot;">
+  <data key="d0">"TYPEREPONDANT"</data>
+  <data key="d1">"The classification of respondents in the consultation process, such as citizens, experts, or institutional representatives."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"TYPEREPONDANT"</data>
+</node>
+<node id="&quot;NIVEAUCONFIANCE&quot;">
+  <data key="d0">"NIVEAUCONFIANCE"</data>
+  <data key="d1">"The level of trust citizens have in institutions, which may influence their willingness to engage in public consultations."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"NIVEAUCONFIANCE"</data>
+</node>
+<node id="&quot;REFORMEDEMOCRATIQUE&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"Reforms aimed at improving democratic processes, governance, and electoral systems to enhance civic participation."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"REFORMEDEMOCRATIQUE"</data>
+</node>
+<node id="&quot;REFORMEFISCALE&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"Tax reforms that address fiscal policies impacting equitable distribution of wealth and resources."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"REFORMEFISCALE"</data>
+</node>
+<node id="&quot;CONSENSUS&quot;">
+  <data key="d0">"CONSENSUS"</data>
+  <data key="d1">"A general agreement among citizens on specific proposals or themes emerging from the consultation process."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"CONSENSUS"</data>
+</node>
+<node id="&quot;COURANTIDEOLOGIQUE&quot;">
+  <data key="d0">"COURANTIDEOLOGIQUE"</data>
+  <data key="d1">"Ideological currents that may influence public opinion, policy proposals, and civic engagement."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"COURANTIDEOLOGIQUE"</data>
+</node>
+<node id="&quot;TYPEIMPOT&quot;">
+  <data key="d0">"TYPEIMPOT"</data>
+  <data key="d1">"Different categories of taxes that may be discussed or proposed in the context of fiscal reforms."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"TYPEIMPOT"</data>
+</node>
+<node id="&quot;MODESCRUTIN&quot;">
+  <data key="d0">"MODESCRUTIN"</data>
+  <data key="d1">"The method of voting employed during elections, which can affect democratic engagement and outcomes."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"MODESCRUTIN"</data>
+</node>
+<node id="&quot;MESUREECOLOGIQUE&quot;">
+  <data key="d0">"MESUREECOLOGIQUE"</data>
+  <data key="d1">"Environmental measures proposed by citizens, aimed at enhancing ecological sustainability and addressing climate change."</data>
+  <data key="d2">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d3">"MESUREECOLOGIQUE"</data>
+</node>
+<node id="&quot;GOUVERNEMENT&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"The government is tasked with consulting citizens and other associations before implementing laws, highlighting its role in the democratic process."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"GOUVERNEMENT"</data>
+</node>
+<node id="&quot;SYNDICATS&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Unions are mentioned as key players that the government should consult during law-making to ensure broader representation of citizens' voices."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"SYNDICATS"</data>
+</node>
+<node id="&quot;ASSEMBLÉE NATIONALE&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"The National Assembly is highlighted as a crucial institution in maintaining governmental stability and representing citizen perspectives through electoral processes."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"ASSEMBLÉE NATIONALE"</data>
+</node>
+<node id="&quot;SÉNAT&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"The Senate is mentioned as an institution that should be replaced by a new assembly elected by universal suffrage to enhance representativity of different citizen ideas."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"SÉNAT"</data>
+</node>
+<node id="&quot;LOI DE 1905&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"The Law of 1905 serves as a foundational guarantee of republican laws and emphasizes the separation of state and religion."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"LOI DE 1905"</data>
+</node>
+<node id="&quot;ÉGALITÉ HOMMES/FEMMES&quot;">
+  <data key="d0">"THEMATIQUE"</data>
+  <data key="d1">"The concept of gender equality is asserted as a key principle that the state should uphold, ensuring equal rights for all citizens."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"ÉGALITÉ HOMMES/FEMMES"</data>
+</node>
+<node id="&quot;SERVICE NATIONAL ACTIF&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"The Future Active National Service must prohibit religious symbols, illustrating the intersection of secularism with state duties."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"SERVICE NATIONAL ACTIF"</data>
+</node>
+<node id="&quot;PETITES ENTREPRISES&quot;">
+  <data key="d0">"SERVICEPUBLIC"</data>
+  <data key="d1">"Small businesses need prioritized subsidies to support their growth and sustainability against larger corporations."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"PETITES ENTREPRISES"</data>
+</node>
+<node id="&quot;ÉNERGIES PROPRES&quot;">
+  <data key="d0">"MESUREECOLOGIQUE"</data>
+  <data key="d1">"Clean energy initiatives are necessary to combat rising energy demands and pollution, reflecting citizens' ecological concerns."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"ÉNERGIES PROPRES"</data>
+</node>
+<node id="&quot;NEOLIBÉRALISME&quot;">
+  <data key="d0">"COURANTIDEOLOGIQUE"</data>
+  <data key="d1">"Neoliberalism is criticized for exposing European industries to harsh competition without protection, showing a concern for national economic sovereignty."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"NEOLIBÉRALISME"</data>
+</node>
+<node id="&quot;OMC&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"The WTO is highlighted as an organization that has set rules detrimental to European economies, showcasing interference in local markets."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"OMC"</data>
+</node>
+<node id="&quot;BERNARD MACHEFERT&quot;">
+  <data key="d0">"CITOYEN"</data>
+  <data key="d1">"Bernard Machefert is a specific citizen referenced who may indicate the authoring individual of the document, adding a personal touch to the grievance."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"BERNARD MACHEFERT"</data>
+</node>
+<node id="&quot;LISSEMENT DES VOTES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"The proposal of considering blank votes in the percentage of expressed votes reflects a citizen's concern for fair electoral representation."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"LISSEMENT DES VOTES"</data>
+</node>
+<node id="&quot;VOTES BLANCS&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Blank votes should be acknowledged and counted in electoral processes to enhance the legitimacy of representative systems."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"VOTES BLANCS"</data>
+</node>
+<node id="&quot;NOMBRE DE VOIX&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A proposal is made that an elected official must obtain a certain percentage of registered votes; otherwise, the election will be annulled."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"NOMBRE DE VOIX"</data>
+</node>
+<node id="&quot;ÉGREMENT DES DEVOIRS RELIGIEUX&quot;">
+  <data key="d0">"DOLEANCE"</data>
+  <data key="d1">"Religious signs should be removed from public life as part of the commitment to secularism and separation of state and religion."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"ÉGREMENT DES DEVOIRS RELIGIEUX"</data>
+</node>
+<node id="&quot;FONDS POUR CONSTRUCTIONS RELIGIEUSES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"A reform is suggested to control funding for the construction of religious buildings, allowing for better governance and accountability."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"FONDS POUR CONSTRUCTIONS RELIGIEUSES"</data>
+</node>
+<node id="&quot;SALARIES DES ENTREPRISES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"It's proposed that salaries in a company should be capped in relation to the lowest salary, suggesting fairness in income distribution."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"SALARIES DES ENTREPRISES"</data>
+</node>
+<node id="&quot;SUPPRESSION DES NICHES FISCALES&quot;">
+  <data key="d0">"REFORMEFISCALE"</data>
+  <data key="d1">"There is a call to eliminate tax loopholes related to patronage, aiming for a more equitable tax system for all."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"SUPPRESSION DES NICHES FISCALES"</data>
+</node>
+<node id="&quot;RÉGLEMENTATION DES PRATIQUES DES GRANDES SURFACES&quot;">
+  <data key="d0">"PROPOSITION"</data>
+  <data key="d1">"Regulations should oversee how large supermarkets interact with small producers to ensure fairness and support local agriculture."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"RÉGLEMENTATION DES PRATIQUES DES GRANDES SURFACES"</data>
+</node>
+<node id="&quot;AMÉNAGEMENT DE LA LOI&quot;">
+  <data key="d0">"REFORMEDEMOCRATIQUE"</data>
+  <data key="d1">"The proposal suggests adjustments to existing laws to allow for greater state control over religious funding and institutions."</data>
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d3">"AMÉNAGEMENT DE LA LOI"</data>
+</node>
+<node id="&quot;MAIRE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Maire refers to the elected official in charge of managing a commune, who is responsible for local governance."</data>
+  <data key="d2">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d3">"MAIRE"</data>
+</node>
+<node id="&quot;SECRÉTAIRE DE MAIRIE&quot;">
+  <data key="d0">"ACTEURINSTITUTIONNEL"</data>
+  <data key="d1">"Secrétaire de mairie is the municipal secretary who assists the maire and handles administrative tasks and documentation."</data>
+  <data key="d2">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d3">"SECRÉTAIRE DE MAIRIE"</data>
+</node>
+<node id="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <data key="d0">"CONTRIBUTION"</data>
+  <data key="d1">"Cahiers de doléances is a collection of citizen contributions designed to express various opinions and grievances during the Grand Débat National."</data>
+  <data key="d2">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d3">"CAHIERS DE DOLÉANCES"</data>
+</node>
+<node id="&quot;ÉDITION AVRIL 2024&quot;">
+  <data key="d0">"DATE"</data>
+  <data key="d1">"édition avril 2024 refers to the publication date of the Cahiers de doléances, indicating when the document was formalized."</data>
+  <data key="d2">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d3">"ÉDITION AVRIL 2024"</data>
+</node>
+<node id="&quot;19 HEURES&quot;">
+  <data key="d0">"HEURE"</data>
+  <data key="d1">"19 heures indicates the time at which the Cahier de Doléances was officially closed."</data>
+  <data key="d2">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d3">"19 HEURES"</data>
+</node>
+<node id="&quot;PME&quot;">
+  <data key="d2">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d1">"The proposal to decrease employer contributions is aimed at supporting small and medium enterprises (PME)."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;SUBVENTIONS - AIDES&quot;">
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d1">"Subsidies should specifically target small businesses to support their growth against larger competitors."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ÉCOLOGIE&quot;">
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d1">"Promoting clean energy is proposed as a necessary measure to address rising energy demands and climate change."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;IMPOTS&quot;">
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d1">"The suggestion to cap salaries in relation to the lowest salary relates to concerns about social equity and fair taxation."'</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;SALAIRES DES ENTREPRISES&quot;">
+  <data key="d2">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d1">"The suggestion to cap salaries in relation to the lowest salary relates to concerns about social equity and fair taxation."'</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;VOTE BLANC&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac discusses the importance of considering Votes Blanc in elections and proposes its relevant reform."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;ÉLECTION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac expresses a grievance about the election process and suggests reforms related to it."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;NOMBRE DE PARLEMENTAIRES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Préguillac includes a proposal to reduce the number of parliamentarians as part of the suggested reforms."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;AVANTAGES ANCIENS PRÉSIDENTS ET MINISTRES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Préguillac highlights a grievance about the benefits for former leaders and calls for their cancellation."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;INDEMNITÉS DES PARLEMENTAIRES ET MINISTRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac points out grievances regarding the compensation for parliamentarians and ministers, requesting a reduction."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;ALLOCATION ADULTE HANDICAPÉ&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Préguillac proposes that the Allocation Adulte Handicapé be provided without considering the spouse's income."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;TAXES SALARIALES ET PATRONALES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Préguillac suggests reducing taxes on salaries and employers to stimulate the economy."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;AIDE MÉDICALE D'ÉTAT&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Cahier de Préguillac expresses grievance regarding the proposed reduction of state medical aid."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;TAXATION DES CARBURANTS MARITIMES ET AÉRIENS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac suggests the implementation of taxes on maritime and aerial fuels as part of its proposals."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;CUMUL DES MANDATS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Préguillac raises a grievance about the practice of multiple mandates, advocating for its total abolition."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;FONCTIONNAIRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac discusses the grievances related to civil servants and suggests better distribution to reduce their numbers."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;MANUSCRIT&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac contains the Manuscrit as a component of its citizen contributions to reforms."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;LIGNES&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"Cahier de Préguillac is quantified by the measure of lignes, indicating the structure of citizen contributions."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;MOTS&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"Cahier de Préguillac is encapsulated by the measure of mots, reflecting the detail and depth of the citizen's input."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;RÉDUCTION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac discusses the theme of réduction as proposals for decreasing governmental oversight and structures."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;DIMINUTION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac includes the theme of diminution in its proposals aimed at reducing certain governmental roles and costs."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;FIN TOTAL&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Cahier de Préguillac advocates for fin total concerning the overall prohibition of multiple mandates in public office."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE PRÉGUILLAC&quot;" target="&quot;MEILLEURE RÉPARTITION&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Cahier de Préguillac suggests that meilleure répartition could lead to a more efficient operation of public services through lesser workforce sizes."</data>
+  <data key="d7">contrib-fee5b2fe3ba3d7b5d8062714be8fe71a</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉFÉRENDUMS&quot;" target="&quot;M. SARROZY&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal for referendums is a direct response to M. SARROZY's actions of ignoring public opinion on legislative matters."</data>
+  <data key="d7">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RÉGULATION DE L'IMMIGRATION&quot;" target="&quot;TERRORISTES POTENTIELS&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to regulate immigration directly concerns the issue of potential terrorists, emphasizing public safety measures."</data>
+  <data key="d7">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RETRAITES&quot;" target="&quot;INÉGALITÉS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal to review pensions addresses the grievance of inequalities experienced by retirees, seeking to ensure fairness."</data>
+  <data key="d7">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;RETRAITES&quot;" target="&quot;ÂGE DE DÉPART À LA RETRAITE&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal to lower the retirement age is part of the broader discussion around pensions and adequate support for retirees."</data>
+  <data key="d7">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CHARGES PATRONALES&quot;" target="&quot;PME&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The proposal to decrease employer contributions is aimed at supporting small and medium enterprises (PME)."</data>
+  <data key="d7">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;IMPÔTS&quot;" target="&quot;FRAUDE FISCALE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The proposal for a fairer taxation system includes combating tax fraud, indicating a relationship between the two financial issues."</data>
+  <data key="d7">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;IMPÔTS&quot;" target="&quot;CITOYENS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The issue of fair taxation directly concerns citizens, as they call for a proportional income tax based on financial capabilities."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;IMPÔTS&quot;" target="&quot;LUTTE CONTRE LA FRAUDE FISCALE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The emphasis on combating tax fraud is connected to the broader theme of fair taxation and accountability in the financial system."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONCERNE"</data>
+</edge>
+<edge source="&quot;FRAUDE FISCALE&quot;" target="&quot;CONTRÔLES FISCAUX&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal for more resources for tax controls relates directly to the need to tackle tax fraud effectively."</data>
+  <data key="d7">contrib-cc18cf5fa692062efb22c06d903340bf</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;RETRAITE&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"La demande concernant l'âge de la retraite est exprimée dans le cadre du Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;JUSTIFICATIFS DES FRAIS DES DÉPUTÉS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"La proposition de demander des justificatifs de frais des députés est partagée dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;PRÉSENCE DES DÉPUTÉS&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"La proposition pour une présence régulière des députés fait partie des réflexions soulevées dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;IMPÔTS SUR LE REVENU&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"La proposition de changer le mode de paiement des impôts est mentionnée dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;AUGMENTATION DES SALAIRES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"La demande d'augmentation de salaires est une proposition mise en avant dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;RÉDUCTION DES SALAIRES DES PRÉSIDENTS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"La proposition de réduire les salaires des présidents des commissions est exprimée dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;SERVICES PUBLICS&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"La thématique des services publics est un sujet central abordé dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;RESPECT DE SOI ET DES AUTRES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"La proposition d'instaurer le respect dès la petite enfance est une contribution notée dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;COMMUNAUTÉS DE COMMUNES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"La proposition concernant la taille des communautés de communes est énoncée dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;RASSEMBLEMENT DE SERVICES ADMINISTRATIFS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"La proposition de rassembler des services en cas de suppressions est une idée partagée dans le Cahier de doléances."</data>
+  <data key="d7">contrib-2ecef0411014bb63e67fc29ec3be03b9</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;MAIRE&quot;">
+  <data key="d5">16.0</data>
+  <data key="d6">"Cahier de Doléances is presented to the maire for consideration and response regarding citizen opinions and grievances."</data>
+  <data key="d7">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;ÉDITION AVRIL 2024&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"Cahier de Doléances is dated with the edition of avril 2024, signifying its relevance and currency."</data>
+  <data key="d7">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;19 HEURES&quot;">
+  <data key="d5">5.0</data>
+  <data key="d6">"Cahier de Doléances was officially closed at 19 heures, indicating the time of administrative closure."</data>
+  <data key="d7">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;CITOYENS&quot;" target="&quot;GOUVERNEMENT&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Citizens demand consultation from the government before new laws are enacted, emphasizing democratic participation."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONSULTATION"</data>
+</edge>
+<edge source="&quot;CITOYENS&quot;" target="&quot;BERNARD MACHEFERT&quot;">
+  <data key="d5">10.0</data>
+  <data key="d6">"Bernard Machefert represents citizen contributions and concerns voiced in the Cahier de doléances, embedding a personal narrative into collective grievances."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"REPRESENTE"</data>
+</edge>
+<edge source="&quot;CHARENTE-MARITIME&quot;" target="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <data key="d5">14.0</data>
+  <data key="d6">"Cahiers de doléances is associated with the region of Charente-Maritime where they are produced and utilized."</data>
+  <data key="d7">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;SUPPRIMER LA CSG&quot;" target="&quot;RETRAITÉS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Retirees would benefit from the proposal to remove the CSG, which addresses their financial concerns."</data>
+  <data key="d7">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;REVALORISER LES SALAIRES&quot;" target="&quot;RETRAITÉS&quot;">
+  <data key="d5">6.0</data>
+  <data key="d6">"The proposal to revalue salaries indirectly benefits retirees, as it aims to improve financial conditions for citizens."</data>
+  <data key="d7">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AUGMENTER LA RÉMUNÉRATION DES MAIRES&quot;" target="&quot;MAIRES ET CONSEILLERS MUNICIPAUX&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The proposal to increase remuneration is directed towards mayors and councilors, affecting their professional conditions."</data>
+  <data key="d7">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;AUGMENTER LA RÉMUNÉRATION DES MAIRES&quot;" target="&quot;PETITES COMMUNES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The proposal specifically concerns mayors and councilors from small communes, linking local governance reform to community engagement."</data>
+  <data key="d7">contrib-7eea731a40791ed39e1337c7f80526d8</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;GOUVERNEMENT&quot;" target="&quot;SYNDICATS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The government is expected to consult with unions to ensure a diverse representation of citizen voices in law-making."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"CONSULTATION"</data>
+</edge>
+<edge source="&quot;GOUVERNEMENT&quot;" target="&quot;ASSEMBLÉE NATIONALE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The National Assembly is a crucial part of the government, responsible for electing representatives and ensuring citizen interests are addressed."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"FAIT_PARTIE_DE"</data>
+</edge>
+<edge source="&quot;GOUVERNEMENT&quot;" target="&quot;FONDS POUR CONSTRUCTIONS RELIGIEUSES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposal regarding controlling funds for religious construction is a direct appeal to the government for regulatory oversight."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;GOUVERNEMENT&quot;" target="&quot;AMÉNAGEMENT DE LA LOI&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The proposed adjustments to the law request governmental action to enhance checks on religious funding, ensuring secular principles are upheld."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;ASSEMBLÉE NATIONALE&quot;" target="&quot;SÉNAT&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Senate is proposed to be replaced by a new assembly elected by universal suffrage to increase representativity in governance."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"EST_TYPE_DE"</data>
+</edge>
+<edge source="&quot;LOI DE 1905&quot;" target="&quot;ÉGALITÉ HOMMES/FEMMES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The Law of 1905 ensures that gender equality is upheld in the public sphere, reinforcing democratic values."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"FAIT_PARTIE_DE"</data>
+</edge>
+<edge source="&quot;LOI DE 1905&quot;" target="&quot;ÉGREMENT DES DEVOIRS RELIGIEUX&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"The push for eliminating religious symbols in public life aligns directly with the principles of the Law of 1905 regarding secularism."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"INCLUT"</data>
+</edge>
+<edge source="&quot;ÉGALITÉ HOMMES/FEMMES&quot;" target="&quot;SERVICE NATIONAL ACTIF&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The Future Active National Service will reflect the government's commitment to secularism and gender equality by prohibiting religious symbols."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"SERVIR_DE"</data>
+</edge>
+<edge source="&quot;PETITES ENTREPRISES&quot;" target="&quot;SUBVENTIONS - AIDES&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"Subsidies should specifically target small businesses to support their growth against larger competitors."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"CIBLE"</data>
+</edge>
+<edge source="&quot;PETITES ENTREPRISES&quot;" target="&quot;RÉGLEMENTATION DES PRATIQUES DES GRANDES SURFACES&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Regulating practices of large surfaces intends to protect small businesses and ensure they are treated fairly within the market."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"GERER"</data>
+</edge>
+<edge source="&quot;ÉNERGIES PROPRES&quot;" target="&quot;ÉCOLOGIE&quot;">
+  <data key="d5">9.0</data>
+  <data key="d6">"Promoting clean energy is proposed as a necessary measure to address rising energy demands and climate change."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;NEOLIBÉRALISME&quot;" target="&quot;OMC&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"Neoliberalism is implicated in the nation's economic challenges, partially due to regulations imposed by the WTO that adversely affect European markets."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"FAIT_PARTIE_DE"</data>
+</edge>
+<edge source="&quot;LISSEMENT DES VOTES&quot;" target="&quot;VOTES BLANCS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The discussion on blank votes relates to a proposal for how they should be factored in during electoral analysis for fairness."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;LISSEMENT DES VOTES&quot;" target="&quot;NOMBRE DE VOIX&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The proposed requirement for minimum votes relates to citizens' concerns about the electoral process's legitimacy and representation standards."</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;SUPPRESSION DES NICHES FISCALES&quot;" target="&quot;IMPOTS&quot;">
+  <data key="d5">8.0</data>
+  <data key="d6">"The call for eliminating tax loopholes is directly tied to demands for a more just fiscal system that treats all equally."'</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+<edge source="&quot;MAIRE&quot;" target="&quot;SECRÉTAIRE DE MAIRIE&quot;">
+  <data key="d5">18.0</data>
+  <data key="d6">"Secrétaire de mairie acts on behalf of the maire when the maire is unavailable, showing a direct hierarchical relationship."</data>
+  <data key="d7">contrib-9ba2c4ef5b731e446b406bf17758cc49</data>
+  <data key="d8">1</data>
+  <data key="d9">RELATED_TO</data>
+</edge>
+<edge source="&quot;IMPOTS&quot;" target="&quot;SALAIRES DES ENTREPRISES&quot;">
+  <data key="d5">7.0</data>
+  <data key="d6">"The suggestion to cap salaries in relation to the lowest salary relates to concerns about social equity and fair taxation."'</data>
+  <data key="d7">contrib-a2251cdca6c3e72459947f7f35e0ec5e</data>
+  <data key="d8">1</data>
+  <data key="d9">"PROPOSE"</data>
+</edge>
+</graph></graphml>
