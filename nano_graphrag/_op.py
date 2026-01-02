@@ -1,7 +1,7 @@
 import re
 import json
 import asyncio
-from typing import Union
+from typing import Union, Dict
 from collections import Counter, defaultdict
 from ._splitter import SeparatorSplitter
 from ._utils import (
@@ -877,23 +877,39 @@ async def _find_most_related_text_unit_from_entities(
     knowledge_graph_inst: BaseGraphStorage,
     tokenizer_wrapper,
 ):
-    # Handle missing source_id by getting it from graph storage
+    # PERFORMANCE FIX: Batch graph node lookups for entities missing source_id (was: N+1 pattern)
+    # Phase 1: Identify which entities need graph lookup
+    entities_needing_lookup = []
+    lookup_indices = []  # Track positions for batch result mapping
+    for idx, dp in enumerate(node_datas):
+        if "source_id" not in dp:
+            entity_name = dp.get("entity_name", "")
+            if entity_name:
+                entities_needing_lookup.append(entity_name)
+                lookup_indices.append(idx)
+
+    # Phase 2: Single batch call for all missing entities (was: N individual await calls)
+    fallback_data_map = {}
+    if entities_needing_lookup:
+        try:
+            fallback_results = await knowledge_graph_inst.get_nodes_batch(entities_needing_lookup)
+            fallback_data_map = {
+                name: data for name, data in zip(entities_needing_lookup, fallback_results) if data is not None
+            }
+            logger.debug(f"Batch fetched {len(fallback_data_map)} graph nodes for source_id fallback (was {len(entities_needing_lookup)} calls)")
+        except Exception as e:
+            logger.warning(f"Batch graph node lookup failed: {e}")
+
+    # Phase 3: Build text_units using batch results
     text_units = []
     for dp in node_datas:
         if "source_id" in dp:
             text_units.append(split_string_by_multi_markers(dp["source_id"], [GRAPH_FIELD_SEP]))
         else:
-            # Fallback: try to get source_id from graph storage
             entity_name = dp.get("entity_name", "")
-            if entity_name:
-                try:
-                    graph_node_data = await knowledge_graph_inst.get_node(entity_name)
-                    if graph_node_data and "source_id" in graph_node_data:
-                        text_units.append(split_string_by_multi_markers(graph_node_data["source_id"], [GRAPH_FIELD_SEP]))
-                    else:
-                        text_units.append([])  # Empty list as fallback
-                except:
-                    text_units.append([])  # Empty list as fallback
+            graph_node_data = fallback_data_map.get(entity_name)
+            if graph_node_data and "source_id" in graph_node_data:
+                text_units.append(split_string_by_multi_markers(graph_node_data["source_id"], [GRAPH_FIELD_SEP]))
             else:
                 text_units.append([])  # Empty list as fallback
     edges = await knowledge_graph_inst.get_nodes_edges_batch([dp["entity_name"] for dp in node_datas])
@@ -912,6 +928,19 @@ async def _find_most_related_text_unit_from_entities(
             else:
                 # Handle missing source_id - use empty set as fallback
                 all_one_hop_text_units_lookup[k] = set()
+    # PERFORMANCE FIX: Batch fetch all text chunks at once (eliminates N+1 pattern)
+    # Collect all unique chunk IDs first
+    all_chunk_ids = set()
+    for this_text_units in text_units:
+        all_chunk_ids.update(this_text_units)
+
+    # Single batch call to fetch all chunks (was: N individual await calls)
+    all_chunk_ids_list = list(all_chunk_ids)
+    all_chunks_data = await text_chunks_db.get_by_ids(all_chunk_ids_list)
+    chunk_data_map = {cid: data for cid, data in zip(all_chunk_ids_list, all_chunks_data) if data is not None}
+    logger.debug(f"Batch fetched {len(chunk_data_map)} text chunks (was {len(all_chunk_ids)} individual calls)")
+
+    # Now build lookup using pre-fetched data (O(1) lookups instead of async I/O)
     all_text_units_lookup = {}
     for index, (this_text_units, this_edges) in enumerate(zip(text_units, edges)):
         for c_id in this_text_units:
@@ -925,7 +954,7 @@ async def _find_most_related_text_unit_from_entities(
                 ):
                     relation_counts += 1
             all_text_units_lookup[c_id] = {
-                "data": await text_chunks_db.get_by_id(c_id),
+                "data": chunk_data_map.get(c_id),  # O(1) dict lookup instead of await
                 "order": index,
                 "relation_counts": relation_counts,
             }
@@ -1269,7 +1298,7 @@ async def global_query(
     query_param: QueryParam,
     tokenizer_wrapper,
     global_config: dict,
-) -> str:
+) -> Union[str, Dict]:
     community_schema = await knowledge_graph_inst.community_schema()
     community_schema = {
         k: v for k, v in community_schema.items() if v["level"] <= query_param.level
@@ -1347,7 +1376,35 @@ Importance Score: {dp['score']}
             report_data=points_context, response_type=query_param.response_type
         ),
     )
-    return response
+
+    # Extract source_quotes from community chunks if return_provenance enabled
+    if query_param.return_provenance:
+        # Get chunk IDs from used communities
+        chunk_ids = set()
+        for comm in community_datas:
+            chunk_ids.update(comm.get("chunk_ids", []))
+
+        # Query text_chunks_db for actual chunk content
+        source_chunks = []
+        for chunk_id in list(chunk_ids)[:20]:  # Limit to top 20
+            chunk_data = await text_chunks_db.get_by_id(chunk_id)
+            if chunk_data:
+                source_chunks.append({
+                    "id": chunk_id,
+                    "content": chunk_data.get("content", "")[:500],
+                    "commune": chunk_data.get("commune", "")
+                })
+
+        return {
+            "answer": response,
+            "provenance": {
+                "entities": [c.get("report_json", {}) for c in community_datas],  # Community entities
+                "relationships": [],  # Global mode has no explicit relationships
+                "source_quotes": source_chunks
+            }
+        }
+    else:
+        return response  # Backward compatible
 
 
 async def naive_query(
@@ -1357,7 +1414,7 @@ async def naive_query(
     query_param: QueryParam,
     tokenizer_wrapper,
     global_config: dict,
-):
+) -> Union[str, Dict]:
     use_model_func = global_config["best_model_func"]
     results = await chunks_vdb.query(query, top_k=query_param.top_k)
     if not len(results):
@@ -1383,4 +1440,24 @@ async def naive_query(
         query,
         system_prompt=sys_prompt,
     )
-    return response
+
+    # Extract source_quotes from retrieved chunks if return_provenance enabled
+    if query_param.return_provenance:
+        source_chunks = []
+        for chunk in maybe_trun_chunks[:20]:  # Limit to top 20
+            source_chunks.append({
+                "id": chunk.get("chunk_id", chunk.get("id", "")),
+                "content": chunk.get("content", "")[:500],
+                "commune": chunk.get("commune", "")
+            })
+
+        return {
+            "answer": response,
+            "provenance": {
+                "entities": [],  # Naive mode doesn't use entity extraction
+                "relationships": [],  # Naive mode has no explicit relationships
+                "source_quotes": source_chunks
+            }
+        }
+    else:
+        return response  # Backward compatible

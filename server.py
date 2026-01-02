@@ -138,7 +138,9 @@ class GraphRAGCache:
         }
 
 # Global cache instance
-_graphrag_cache = GraphRAGCache(maxsize=10, ttl_seconds=300)
+# PERFORMANCE FIX: Increased from maxsize=10 to cover all 50 communes
+# Increased TTL from 5min to 15min to reduce re-initialization during analysis
+_graphrag_cache = GraphRAGCache(maxsize=50, ttl_seconds=900)
 
 
 # ============================================================================
@@ -481,6 +483,7 @@ def select_communities_by_keywords(query: str, max_communes: int = 50) -> list:
                     'rating': rating,
                     'score': score,
                     'nodes': comm_data.get('nodes', []),  # Entity IDs for extraction
+                    'chunk_ids': comm_data.get('chunk_ids', []),  # Chunk IDs for source quotes (Constitution Principle V)
                 })
 
     # Sort by combined relevance and quality score
@@ -798,7 +801,12 @@ async def mcp_query(
                     "entities": provenance.get("entities", []),
                     "relationships": provenance.get("relationships", []),
                     "communities": provenance.get("communities", []),
-                    "source_quotes": provenance.get("source_quotes", []),
+                    # Constitution Principle V: End-to-End Interpretability
+                    # Each source_quote must include collection attribution for provenance chain
+                    "source_quotes": [
+                        {**quote, "commune": collection_id}
+                        for quote in provenance.get("source_quotes", [])
+                    ],
                 }
             }, indent=2, ensure_ascii=False)
         else:
@@ -942,11 +950,16 @@ async def grand_debat_query(
                 "answer": answer,
                 "provenance": {
                     "source_commune": commune_id,
-                    "data_source": "Grand Débat National 2019",
+                    "data_source": "Grand Debat National 2019",
                     "entities": provenance.get("entities", []),
                     "relationships": provenance.get("relationships", []),
                     "communities": provenance.get("communities", []),
-                    "source_quotes": provenance.get("source_quotes", []),  # Exact citizen words
+                    # Constitution Principle V: End-to-End Interpretability
+                    # Each source_quote must include commune attribution for provenance chain
+                    "source_quotes": [
+                        {**quote, "commune": commune_id}
+                        for quote in provenance.get("source_quotes", [])
+                    ],
                     "analysis_points": provenance.get("analysis_points", []),
                 }
             }, indent=2, ensure_ascii=False)
@@ -1167,12 +1180,56 @@ RÉPONSE:"""
         }
 
         if include_sources:
+            # Load text chunks database for source_quotes
+            source_quotes = []
+            chunk_ids_to_load = set()
+
+            # Extract chunk IDs from entities
+            for entity in all_entities[:50]:
+                chunk_ids = entity.get("chunk_ids", [])
+                for chunk_id in chunk_ids[:3]:  # Max 3 chunks per entity
+                    chunk_ids_to_load.add((chunk_id, entity.get("source_commune", "")))
+
+            # Load chunks from each commune
+            for chunk_id, source_commune in list(chunk_ids_to_load):
+                commune_path = get_commune_path(source_commune)
+                if not commune_path:
+                    continue
+
+                chunks_file = commune_path / "kv_store_text_chunks.json"
+                if not chunks_file.exists():
+                    continue
+
+                try:
+                    with open(chunks_file, 'r', encoding='utf-8') as f:
+                        text_chunks = json.load(f)
+
+                    if chunk_id in text_chunks:
+                        chunk_data = text_chunks[chunk_id]
+                        source_quotes.append({
+                            "id": chunk_id,
+                            "content": chunk_data.get("content", "")[:500],
+                            "commune": source_commune  # Use community's commune_id, not chunk's "Unknown" value
+                        })
+                except Exception as e:
+                    logger.warning(f"Error loading chunks for {source_commune}: {e}")
+
+            # Deduplicate by chunk ID
+            seen_ids = set()
+            unique_quotes = []
+            for quote in source_quotes:
+                if quote["id"] not in seen_ids:
+                    seen_ids.add(quote["id"])
+                    unique_quotes.append(quote)
+
             response["provenance"] = {
                 "data_source": "Grand Débat National 2019",
                 "total_entities": len(all_entities),
                 "total_communities": len(all_communities),
                 "entities": all_entities[:50],  # Top 50 for response size
                 "communities": all_communities[:20],
+                "source_quotes": unique_quotes[:20],  # Top 20 chunks
+                "relationships": []  # Query_all doesn't track explicit paths
             }
 
         return json.dumps(response, indent=2, ensure_ascii=False)
@@ -1199,7 +1256,8 @@ RÉPONSE:"""
 )
 async def grand_debat_query_fast(
     query: Annotated[str, Field(description="Question about citizen contributions (French)", min_length=3)],
-    max_communes: Annotated[int, Field(description="Maximum communes to query", ge=1, le=50)] = 50
+    max_communes: Annotated[int, Field(description="Maximum communes to query", ge=1, le=50)] = 50,
+    include_sources: Annotated[bool, Field(description="Include source quotes for provenance")] = True
 ) -> str:
     """
     FAST query (<10s) using community-first retrieval + multi-hop traversal.
@@ -1363,6 +1421,51 @@ RÉPONSE:"""
                 }
             }
         }
+
+        # Add source_quotes if requested (Constitution Principle I)
+        if include_sources:
+            source_quotes = []
+            chunk_ids_to_load = set()
+
+            # Extract chunk IDs from communities
+            for c in communities[:20]:
+                chunk_ids = c.get("chunk_ids", [])
+                for chunk_id in chunk_ids[:3]:  # Max 3 per community
+                    chunk_ids_to_load.add((chunk_id, c.get("commune_id", "")))
+
+            # Load chunks from communes
+            for chunk_id, source_commune in list(chunk_ids_to_load)[:50]:  # Limit to 50 total
+                commune_path = get_commune_path(source_commune)
+                if not commune_path:
+                    continue
+
+                chunks_file = commune_path / "kv_store_text_chunks.json"
+                if not chunks_file.exists():
+                    continue
+
+                try:
+                    with open(chunks_file, 'r', encoding='utf-8') as f:
+                        text_chunks = json.load(f)
+
+                    if chunk_id in text_chunks:
+                        chunk_data = text_chunks[chunk_id]
+                        source_quotes.append({
+                            "id": chunk_id,
+                            "content": chunk_data.get("content", "")[:500],
+                            "commune": source_commune  # Use community's commune_id, not chunk's "Unknown" value
+                        })
+                except Exception as e:
+                    logger.warning(f"Error loading chunks for {source_commune}: {e}")
+
+            # Deduplicate
+            seen = set()
+            unique_quotes = []
+            for q in source_quotes:
+                if q["id"] not in seen:
+                    seen.add(q["id"])
+                    unique_quotes.append(q)
+
+            response["provenance"]["source_quotes"] = unique_quotes
 
         logger.info(f"Fast query completed in {total_time:.2f}s (target: <10s)")
         return json.dumps(response, indent=2, ensure_ascii=False)
@@ -1776,6 +1879,34 @@ async def grand_debat_get_full_graph(
 
         logger.info(f"Loaded {len(all_entities)} entities, {len(all_relationships)} relationships from {len(communes_loaded)} communes")
 
+        # Load text chunks for source_quotes
+        source_quotes = []
+        for commune_id in communes_loaded:
+            commune_path = get_commune_path(commune_id)
+            if not commune_path:
+                continue
+
+            chunks_file = commune_path / "kv_store_text_chunks.json"
+            if not chunks_file.exists():
+                continue
+
+            try:
+                with open(chunks_file, 'r', encoding='utf-8') as f:
+                    text_chunks = json.load(f)
+
+                # Take first 10 chunks from each commune (or adjust based on need)
+                for chunk_id, chunk_data in list(text_chunks.items())[:10]:
+                    source_quotes.append({
+                        "id": chunk_id,
+                        "content": chunk_data.get("content", "")[:500],
+                        "commune": chunk_data.get("commune", commune_id)
+                    })
+            except Exception as e:
+                logger.warning(f"Error loading chunks for {commune_id}: {e}")
+
+        # Limit to 50 total chunks for performance
+        source_quotes = source_quotes[:50]
+
         return json.dumps({
             "success": True,
             "total_communes": len(communes_loaded),
@@ -1786,7 +1917,7 @@ async def grand_debat_get_full_graph(
             "provenance": {
                 "entities": all_entities,
                 "relationships": all_relationships,
-                "source_quotes": [],  # Use grand_debat_get_entity_details for on-demand chunks
+                "source_quotes": source_quotes,
                 "communities": []  # Use grand_debat_get_communities for community data
             }
         }, indent=2, ensure_ascii=False)
