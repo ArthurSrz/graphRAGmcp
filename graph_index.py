@@ -278,19 +278,22 @@ class GraphIndex:
         Returns:
             (entities, paths) - Entity metadata dicts and traversal paths
         """
-        # Priority queue: (negative_weight, depth, entity_id, path_from)
+        # Priority queue: (negative_weight, depth, counter, entity_id, path_from)
         # Negative weight because heapq is min-heap, we want max-weight first
+        # Counter breaks ties to avoid comparing dicts (which fails)
         heap = []
         visited: Dict[str, float] = {}  # entity -> best weight seen
         paths = []
+        counter = 0  # Unique counter for heap tie-breaking
 
         # Initialize with seeds
         for seed in seed_entities:
             if self.has_entity(seed):
-                heapq.heappush(heap, (0.0, 0, seed, None))
+                heapq.heappush(heap, (0.0, 0, counter, seed, None))
+                counter += 1
 
         while heap and len(visited) < max_results:
-            neg_weight, depth, entity_id, came_from = heapq.heappop(heap)
+            neg_weight, depth, _, entity_id, came_from = heapq.heappop(heap)
             current_weight = -neg_weight
 
             # Skip if already visited with better weight
@@ -338,9 +341,11 @@ class GraphIndex:
                 heapq.heappush(heap, (
                     -combined_weight,  # Negative for max-heap behavior
                     depth + 1,
+                    counter,  # Tie-breaker to avoid dict comparison
                     edge.target,
                     {'source': entity_id, 'rel_type': edge.rel_type, 'weight': edge.weight}
                 ))
+                counter += 1
 
         # Build entity list with metadata
         entities = []
