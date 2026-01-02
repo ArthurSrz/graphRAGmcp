@@ -79,7 +79,7 @@ DATA_PATH = DATA_SOURCES.get(DEFAULT_DATA_SOURCE, {}).get('path', './law_data')
 # ============================================================================
 
 import time
-from collections import OrderedDict
+from collections import OrderedDict, defaultdict
 
 class GraphRAGCache:
     """
@@ -403,8 +403,6 @@ async def load_chunks_parallel(
     Returns:
         List of chunk dicts with id, content, commune
     """
-    from collections import defaultdict
-
     # Group by commune to minimize file I/O
     chunks_by_commune: Dict[str, List[str]] = defaultdict(list)
     for chunk_id, commune in chunk_requests:
