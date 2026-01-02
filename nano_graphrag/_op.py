@@ -992,10 +992,16 @@ async def _build_local_query_context(
     text_chunks_db: BaseKVStorage[TextChunkSchema],
     query_param: QueryParam,
     tokenizer_wrapper,
+    return_provenance: bool = False,
 ):
+    """Build context for local query.
+
+    If return_provenance is True, returns (context_string, provenance_dict).
+    Otherwise returns just the context string for backward compatibility.
+    """
     results = await entities_vdb.query(query, top_k=query_param.top_k)
     if not len(results):
-        return None
+        return (None, None) if return_provenance else None
     node_datas = await knowledge_graph_inst.get_nodes_batch([r["entity_name"] for r in results])
     if not all([n is not None for n in node_datas]):
         logger.warning("Some nodes are missing, maybe the storage is damaged")
@@ -1070,7 +1076,8 @@ async def _build_local_query_context(
     for i, t in enumerate(use_text_units):
         text_units_section_list.append([i, t["content"]])
     text_units_context = list_of_list_to_csv(text_units_section_list)
-    return f"""
+
+    context_string = f"""
 -----Reports-----
 ```csv
 {communities_context}
@@ -1089,6 +1096,49 @@ async def _build_local_query_context(
 ```
 """
 
+    if return_provenance:
+        # Build structured provenance data for end-to-end interpretability
+        provenance = {
+            "entities": [
+                {
+                    "id": n.get("entity_name", f"entity-{i}"),
+                    "name": n.get("entity_name", ""),
+                    "type": n.get("entity_type", "UNKNOWN"),
+                    "description": (n.get("description", "") or "")[:300],
+                    "rank": n.get("rank", 0),
+                }
+                for i, n in enumerate(node_datas) if n is not None
+            ],
+            "relationships": [
+                {
+                    "source": e["src_tgt"][0],
+                    "target": e["src_tgt"][1],
+                    "type": "RELATED_TO",  # Default type
+                    "description": (e.get("description", "") or "")[:200],
+                    "weight": e.get("weight", 1.0),
+                }
+                for e in use_relations
+            ],
+            "communities": [
+                {
+                    "title": c.get("report_json", {}).get("title", f"Community {i}"),
+                    "summary": (c.get("report_string", "") or "")[:400],
+                    "rating": c.get("report_json", {}).get("rating", 0),
+                }
+                for i, c in enumerate(use_communities)
+            ],
+            "source_quotes": [
+                {
+                    "id": t.get("chunk_id", f"chunk-{i}"),
+                    "content": (t.get("content", "") or "")[:500],
+                }
+                for i, t in enumerate(use_text_units)
+            ],
+        }
+        return context_string, provenance
+
+    return context_string
+
 
 async def local_query(
     query,
@@ -1099,21 +1149,52 @@ async def local_query(
     query_param: QueryParam,
     tokenizer_wrapper,
     global_config: dict,
-) -> str:
+):
+    """Execute local query with optional provenance tracking.
+
+    Returns:
+        If query_param.return_provenance is True: dict with {answer, provenance}
+        Otherwise: string response (backward compatible)
+    """
     use_model_func = global_config["best_model_func"]
-    context = await _build_local_query_context(
-        query,
-        knowledge_graph_inst,
-        entities_vdb,
-        community_reports,
-        text_chunks_db,
-        query_param,
-        tokenizer_wrapper,
-    )
+
+    # Get context with optional provenance
+    if query_param.return_provenance:
+        result = await _build_local_query_context(
+            query,
+            knowledge_graph_inst,
+            entities_vdb,
+            community_reports,
+            text_chunks_db,
+            query_param,
+            tokenizer_wrapper,
+            return_provenance=True,
+        )
+        context, provenance = result if result else (None, None)
+    else:
+        context = await _build_local_query_context(
+            query,
+            knowledge_graph_inst,
+            entities_vdb,
+            community_reports,
+            text_chunks_db,
+            query_param,
+            tokenizer_wrapper,
+            return_provenance=False,
+        )
+        provenance = None
+
     if query_param.only_need_context:
+        if query_param.return_provenance:
+            return {"context": context, "provenance": provenance}
         return context
+
     if context is None:
-        return PROMPTS["fail_response"]
+        fail_response = PROMPTS["fail_response"]
+        if query_param.return_provenance:
+            return {"answer": fail_response, "provenance": {"entities": [], "relationships": [], "communities": [], "source_quotes": []}}
+        return fail_response
+
     sys_prompt_temp = PROMPTS["local_rag_response"]
     sys_prompt = sys_prompt_temp.format(
         context_data=context, response_type=query_param.response_type
@@ -1122,6 +1203,13 @@ async def local_query(
         query,
         system_prompt=sys_prompt,
     )
+
+    if query_param.return_provenance:
+        return {
+            "answer": response,
+            "provenance": provenance or {"entities": [], "relationships": [], "communities": [], "source_quotes": []}
+        }
+
     return response
 
 
