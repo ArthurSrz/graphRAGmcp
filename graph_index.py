@@ -390,10 +390,10 @@ class GraphIndex:
 
     def get_chunks_for_entity(self, entity_id: str) -> List[ChunkMetadata]:
         """
-        Get all chunks sourcing an entity. O(degree) lookup.
+        Get all chunks sourcing an entity. O(1) lookup.
 
-        Traverses HAS_SOURCE edges to find source chunks.
-        This is the inverse of get_entities_for_chunk().
+        Uses source_id attribute parsed from GraphML (not HAS_SOURCE edges).
+        GraphML stores chunk references as: <data key="source_id">chunk1<SEP>chunk2</data>
 
         Args:
             entity_id: Entity identifier
@@ -402,9 +402,11 @@ class GraphIndex:
             List of ChunkMetadata for source chunks
         """
         chunks = []
-        for edge in self.get_neighbors(entity_id):
-            if edge.rel_type == "HAS_SOURCE" and edge.target in self._chunks:
-                chunks.append(self._chunks[edge.target])
+        # Use parsed source_ids from GraphML attributes (line 222-227)
+        chunk_ids = self._entity_source_ids.get(entity_id, [])
+        for chunk_id in chunk_ids:
+            if chunk_id in self._chunks:
+                chunks.append(self._chunks[chunk_id])
         return chunks
 
     def get_entities_for_chunk(self, chunk_id: str) -> List[EntityMetadata]:
