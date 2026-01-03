@@ -1763,27 +1763,33 @@ async def grand_debat_query_fast(
                 break
 
         # Build context for LLM
-        context_parts = ["## Synthèses thématiques\n"]
+        # FIX ROOT CAUSE #2: Move chunks to TOP so LLM prioritizes citizen text over summaries
+        context_parts = []
+
+        # PRIORITY 1: Citizen quotes FIRST (most specific, grounded evidence)
+        if source_quotes:
+            context_parts.append("## Citations citoyennes (texte source)\n\n")
+            for q in source_quotes[:15]:  # Increased from 10 to 15
+                commune = q.get('commune', 'Inconnu')
+                content = q.get('content', '')[:600]  # Increased from 400 to 600 chars
+                context_parts.append(f"**[{commune}]**: \"{content}\"\n\n")
+
+        # PRIORITY 2: Thematic summaries (broader context)
+        context_parts.append("\n## Synthèses thématiques\n")
         for c in communities[:8]:
             context_parts.append(f"**[{c['commune_id']}] {c['title']}**\n")
             context_parts.append(f"{c['summary'][:300]}\n\n")
 
+        # PRIORITY 3: Key entities
         context_parts.append("## Entités clés\n")
         for e in entities[:40]:
             desc = e.get('description', '')[:150]
             context_parts.append(f"- **{e['name']}** ({e['commune']}): {desc}\n")
 
+        # PRIORITY 4: Discovered relationships
         context_parts.append("\n## Relations découvertes\n")
         for p in paths[:15]:
             context_parts.append(f"- {p['source']} --[{p['type']}]--> {p['target']}\n")
-
-        # Add citizen quotes for precise, grounded answers (improves meaning_match)
-        if source_quotes:
-            context_parts.append("\n## Citations citoyennes (texte source)\n")
-            for q in source_quotes[:10]:
-                commune = q.get('commune', 'Inconnu')
-                content = q.get('content', '')[:400]  # Limit to 400 chars per quote
-                context_parts.append(f"**[{commune}]**: \"{content}\"\n\n")
 
         context = "".join(context_parts)
 
