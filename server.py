@@ -1739,16 +1739,14 @@ async def grand_debat_query_fast(
         # Phase 4: Build context + LLM call (3-5s)
         phase4_start = time.time()
 
-        # Get source chunks via graph traversal (O(1) in-memory, no file I/O)
-        # These provide the actual citizen text for precise, deterministic answers
+        # Get source chunks via graph traversal from SEED entities (not expanded)
+        # FIX: Expanded entities include chunks themselves (which don't have HAS_SOURCE edges)
+        # Use all_seeds (original entity IDs like 'FISCALITÉ') which DO have HAS_SOURCE edges
         source_quotes = []
         seen_chunks = set()
-        for entity in entities[:100]:
-            entity_id = entity.get('id', '')
-            if not entity_id:
-                continue
-            chunks = index.get_chunks_for_entity(entity_id)
-            for chunk in chunks[:2]:  # Max 2 chunks per entity
+        for seed_id in all_seeds[:100]:
+            chunks = index.get_chunks_for_entity(seed_id)
+            for chunk in chunks[:2]:  # Max 2 chunks per seed entity
                 if chunk.chunk_id not in seen_chunks:
                     seen_chunks.add(chunk.chunk_id)
                     source_quotes.append({
