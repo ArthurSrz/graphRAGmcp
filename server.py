@@ -1744,8 +1744,18 @@ async def grand_debat_query_fast(
         # Use all_seeds (original entity IDs like 'FISCALITÉ') which DO have HAS_SOURCE edges
         source_quotes = []
         seen_chunks = set()
+
+        # DEBUG: Log seed entities to investigate chunk retrieval
+        logger.info(f"DEBUG: Processing {len(all_seeds)} seed entities for chunks")
+        logger.info(f"DEBUG: First 10 seeds: {all_seeds[:10]}")
+
+        chunks_found_per_seed = 0
         for seed_id in all_seeds[:100]:
             chunks = index.get_chunks_for_entity(seed_id)
+            if chunks:
+                chunks_found_per_seed += 1
+                logger.info(f"DEBUG: Seed '{seed_id}' has {len(chunks)} chunks")
+
             for chunk in chunks[:2]:  # Max 2 chunks per seed entity
                 if chunk.chunk_id not in seen_chunks:
                     seen_chunks.add(chunk.chunk_id)
@@ -1761,6 +1771,8 @@ async def grand_debat_query_fast(
                     break
             if len(source_quotes) >= 15:
                 break
+
+        logger.info(f"DEBUG: Retrieved {len(source_quotes)} source_quotes from {chunks_found_per_seed} seeds with chunks")
 
         # Build context for LLM
         # FIX ROOT CAUSE #2: Move chunks to TOP so LLM prioritizes citizen text over summaries
