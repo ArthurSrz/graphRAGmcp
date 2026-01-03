@@ -1857,28 +1857,39 @@ RÉPONSE:"""
             }
         }
 
-        # Add source_quotes if requested (Constitution Principle I)
-        # Feature 007-mcp-graph-optimization T007: Parallel chunk loading
+        # Add source_quotes if requested (Constitution Principle V: End-to-end interpretability)
+        # Feature: Fast graph traversal to chunks - O(1) in-memory lookup
         if include_sources:
-            # Extract chunk IDs from communities
-            chunk_requests = []
-            for c in communities[:20]:
-                chunk_ids = c.get("chunk_ids", [])
-                for chunk_id in chunk_ids[:3]:  # Max 3 per community
-                    chunk_requests.append((chunk_id, c.get("commune_id", "")))
+            source_quotes = []
+            seen_chunks = set()
 
-            # Load chunks in parallel (each file opened once)
-            source_quotes = await load_chunks_parallel(chunk_requests[:50])
+            # Get chunks via graph traversal (no file I/O!)
+            # GraphIndex already has chunks loaded with HAS_SOURCE edges
+            for entity in entities[:100]:
+                entity_id = entity.get('id', '')
+                if not entity_id:
+                    continue
 
-            # Deduplicate
-            seen = set()
-            unique_quotes = []
-            for q in source_quotes:
-                if q["id"] not in seen:
-                    seen.add(q["id"])
-                    unique_quotes.append(q)
+                # O(degree) lookup via HAS_SOURCE edges
+                chunks = index.get_chunks_for_entity(entity_id)
+                for chunk in chunks[:3]:  # Max 3 chunks per entity
+                    if chunk.chunk_id not in seen_chunks:
+                        seen_chunks.add(chunk.chunk_id)
+                        source_quotes.append({
+                            "id": chunk.chunk_id,
+                            "content": chunk.content[:500],
+                            "commune": chunk.commune,
+                            "contribution_type": chunk.contribution_type,
+                            "demographic": chunk.demographic,
+                            "chunk_order": chunk.chunk_order_index,
+                        })
 
-            response["provenance"]["source_quotes"] = unique_quotes
+                    if len(source_quotes) >= 20:
+                        break
+                if len(source_quotes) >= 20:
+                    break
+
+            response["provenance"]["source_quotes"] = source_quotes
 
         logger.info(f"Fast query completed in {total_time:.2f}s (target: <10s)")
         return json.dumps(response, indent=2, ensure_ascii=False)

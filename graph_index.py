@@ -15,6 +15,7 @@ Constitutional Compliance:
 """
 
 import os
+import json
 import logging
 from collections import defaultdict
 from pathlib import Path
@@ -31,6 +32,8 @@ logger = logging.getLogger(__name__)
 # Higher weight = higher priority in traversal
 RELATIONSHIP_WEIGHTS = {
     "CONCERNE": 1.0,        # Highest: directly concerns topic
+    "HAS_SOURCE": 0.9,      # Entity -> Chunk (provenance link)
+    "SOURCED_BY": 0.9,      # Chunk -> Entity (reverse provenance)
     "CONTRIBUE_A": 0.8,     # Contributes to
     "EXPRIME": 0.7,         # Expresses
     "PROPOSE": 0.6,         # Proposes
@@ -45,6 +48,7 @@ ENTITY_TYPE_PRIORITY = {
     "COMMUNE": 10,          # Constitution Principle II: Commune-centric
     "CONCEPT": 8,           # Thematic concepts
     "THEME": 7,             # Thematic groupings
+    "CHUNK": 6,             # Text chunks (source provenance)
     "ACTOR": 5,             # Political actors
     "ORGANIZATION": 5,      # Organizations
     "PERSON": 3,            # Individual references
@@ -61,6 +65,25 @@ class EntityMetadata:
     description: str
     commune: str
     node_id: str
+
+
+@dataclass
+class ChunkMetadata:
+    """
+    Metadata for a text chunk node.
+
+    Feature: Fast graph traversal to chunks (Constitution Principle V).
+    Chunks are first-class graph citizens reachable via HAS_SOURCE edges.
+    """
+    chunk_id: str
+    content: str
+    tokens: int
+    chunk_order_index: int
+    full_doc_id: str
+    commune: str
+    contribution_number: Optional[int] = None
+    contribution_type: Optional[str] = None
+    demographic: Optional[str] = None
 
 
 @dataclass
@@ -97,12 +120,19 @@ class GraphIndex:
         # Normalized name index: UPPERCASE_NAME -> entity_id (for fuzzy-ish lookup)
         self._name_index: Dict[str, str] = {}
 
+        # Chunk metadata: chunk_id -> ChunkMetadata (Fast traversal to chunks)
+        self._chunks: Dict[str, ChunkMetadata] = {}
+
+        # Entity source IDs: entity_id -> [chunk_ids] (parsed from GraphML)
+        self._entity_source_ids: Dict[str, List[str]] = {}
+
         # Communes loaded
         self._loaded_communes: Set[str] = set()
 
         # Stats for logging
         self._total_nodes = 0
         self._total_edges = 0
+        self._total_chunks = 0
         self._load_time_ms = 0
 
     async def initialize(self, commune_ids: Optional[List[str]] = None) -> None:
@@ -188,6 +218,14 @@ class GraphIndex:
                 normalized = entity_name.upper().strip()
                 self._name_index[normalized] = node_id
 
+                # Parse source_id for chunk linkage (T003)
+                source_id_raw = get_data(node, 'source_id')
+                if source_id_raw:
+                    # source_id contains chunk IDs separated by <SEP>
+                    chunk_ids = [s.strip() for s in source_id_raw.split('<SEP>') if s.strip()]
+                    if chunk_ids:
+                        self._entity_source_ids[node_id] = chunk_ids
+
                 node_count += 1
 
             # Parse edges into adjacency list
@@ -220,12 +258,92 @@ class GraphIndex:
             self._total_edges += edge_count
             self._loaded_communes.add(commune_id)
 
-            logger.debug(f"Loaded {commune_id}: {node_count} nodes, {edge_count} edges")
+            # Load chunks and create HAS_SOURCE edges (T004)
+            chunk_count = await self._load_commune_chunks(commune_id)
+            self._total_chunks += chunk_count
+
+            logger.debug(f"Loaded {commune_id}: {node_count} nodes, {edge_count} edges, {chunk_count} chunks")
 
         except ET.ParseError as e:
             logger.error(f"Failed to parse GraphML for {commune_id}: {e}")
         except Exception as e:
             logger.error(f"Error loading {commune_id}: {e}")
+
+    async def _load_commune_chunks(self, commune_id: str) -> int:
+        """
+        Load text chunks and create HAS_SOURCE edges for fast traversal.
+
+        Feature: Fast graph traversal to chunks (Constitution Principle V).
+        After this, chunks are first-class graph citizens reachable via expand_weighted().
+
+        Args:
+            commune_id: Commune identifier
+
+        Returns:
+            Number of chunks loaded
+        """
+        commune_path = self.data_path / commune_id
+        chunks_file = commune_path / "kv_store_text_chunks.json"
+
+        if not chunks_file.exists():
+            return 0
+
+        try:
+            with open(chunks_file, 'r', encoding='utf-8') as f:
+                chunks_data = json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            logger.warning(f"Failed to load chunks for {commune_id}: {e}")
+            return 0
+
+        chunk_count = 0
+        has_source_weight = RELATIONSHIP_WEIGHTS.get("HAS_SOURCE", 0.9)
+
+        for chunk_id, chunk_info in chunks_data.items():
+            # Store chunk metadata
+            self._chunks[chunk_id] = ChunkMetadata(
+                chunk_id=chunk_id,
+                content=chunk_info.get('content', ''),
+                tokens=chunk_info.get('tokens', 0),
+                chunk_order_index=chunk_info.get('chunk_order_index', 0),
+                full_doc_id=chunk_info.get('full_doc_id', ''),
+                commune=commune_id,
+                contribution_number=chunk_info.get('contribution_number'),
+                contribution_type=chunk_info.get('contribution_type'),
+                demographic=chunk_info.get('demographic'),
+            )
+
+            # Add chunk as pseudo-entity for adjacency traversal
+            self._entities[chunk_id] = EntityMetadata(
+                name=f"CONTRIBUTION_{chunk_info.get('chunk_order_index', 0)}",
+                entity_type="CHUNK",
+                description=chunk_info.get('content', '')[:200],
+                commune=commune_id,
+                node_id=chunk_id,
+            )
+
+            chunk_count += 1
+
+        # Create HAS_SOURCE edges from parsed source_ids
+        # Filter to only entities from this commune to avoid cross-commune edge creation issues
+        for entity_id, chunk_ids in self._entity_source_ids.items():
+            entity = self._entities.get(entity_id)
+            if entity and entity.commune == commune_id:
+                for chunk_id in chunk_ids:
+                    if chunk_id in self._chunks:
+                        # Entity -> Chunk (HAS_SOURCE)
+                        self._adjacency[entity_id].append(EdgeInfo(
+                            target=chunk_id,
+                            rel_type="HAS_SOURCE",
+                            weight=has_source_weight
+                        ))
+                        # Chunk -> Entity (SOURCED_BY) for bidirectional traversal
+                        self._adjacency[chunk_id].append(EdgeInfo(
+                            target=entity_id,
+                            rel_type="SOURCED_BY",
+                            weight=has_source_weight
+                        ))
+
+        return chunk_count
 
     def get_neighbors(self, entity_id: str) -> List[EdgeInfo]:
         """
@@ -256,12 +374,69 @@ class GraphIndex:
         """Check if entity exists in index."""
         return entity_id in self._entities or entity_id in self._adjacency
 
+    # ========== Chunk Access Methods (T005) ==========
+
+    def get_chunk(self, chunk_id: str) -> Optional[ChunkMetadata]:
+        """
+        Get chunk content by ID. O(1) lookup.
+
+        Args:
+            chunk_id: Chunk identifier (e.g., 'contrib-abc123')
+
+        Returns:
+            ChunkMetadata with full content, or None if not found
+        """
+        return self._chunks.get(chunk_id)
+
+    def get_chunks_for_entity(self, entity_id: str) -> List[ChunkMetadata]:
+        """
+        Get all chunks sourcing an entity. O(degree) lookup.
+
+        Traverses HAS_SOURCE edges to find source chunks.
+        This is the inverse of get_entities_for_chunk().
+
+        Args:
+            entity_id: Entity identifier
+
+        Returns:
+            List of ChunkMetadata for source chunks
+        """
+        chunks = []
+        for edge in self.get_neighbors(entity_id):
+            if edge.rel_type == "HAS_SOURCE" and edge.target in self._chunks:
+                chunks.append(self._chunks[edge.target])
+        return chunks
+
+    def get_entities_for_chunk(self, chunk_id: str) -> List[EntityMetadata]:
+        """
+        Get all entities derived from a chunk. O(degree) lookup.
+
+        Traverses SOURCED_BY edges to find derived entities.
+        This is the inverse of get_chunks_for_entity().
+
+        Args:
+            chunk_id: Chunk identifier
+
+        Returns:
+            List of EntityMetadata for derived entities
+        """
+        entities = []
+        for edge in self.get_neighbors(chunk_id):
+            if edge.rel_type == "SOURCED_BY" and edge.target in self._entities:
+                entity = self._entities.get(edge.target)
+                if entity and entity.entity_type != "CHUNK":
+                    entities.append(entity)
+        return entities
+
+    # ========== End Chunk Access Methods ==========
+
     def expand_weighted(
         self,
         seed_entities: List[str],
         max_hops: int = 2,
         max_results: int = 200,
-        commune_filter: Optional[Set[str]] = None
+        commune_filter: Optional[Set[str]] = None,
+        include_chunks: bool = True
     ) -> Tuple[List[dict], List[dict]]:
         """
         Weighted multi-hop expansion from seed entities.
@@ -274,6 +449,8 @@ class GraphIndex:
             max_hops: Maximum traversal depth
             max_results: Maximum entities to return
             commune_filter: Optional set of commune IDs to restrict search
+            include_chunks: Whether to include CHUNK nodes in traversal (default True)
+                           When True, traversal naturally reaches chunks via HAS_SOURCE edges.
 
         Returns:
             (entities, paths) - Entity metadata dicts and traversal paths
@@ -321,14 +498,18 @@ class GraphIndex:
                 if edge.target in visited:
                     continue
 
+                target_entity = self.get_entity(edge.target)
+
+                # Optional chunk filtering (T006)
+                if not include_chunks and target_entity and target_entity.entity_type == "CHUNK":
+                    continue
+
                 # Optional commune filtering
                 if commune_filter:
-                    target_entity = self.get_entity(edge.target)
                     if target_entity and target_entity.commune not in commune_filter:
                         continue
 
-                # Entity type priority bonus (T006)
-                target_entity = self.get_entity(edge.target)
+                # Entity type priority bonus
                 type_bonus = 0.0
                 if target_entity:
                     type_bonus = ENTITY_TYPE_PRIORITY.get(
@@ -372,6 +553,7 @@ class GraphIndex:
         return {
             'total_nodes': self._total_nodes,
             'total_edges': self._total_edges,
+            'total_chunks': self._total_chunks,
             'loaded_communes': len(self._loaded_communes),
             'load_time_ms': self._load_time_ms,
             'memory_estimate_mb': self._estimate_memory_mb()
@@ -379,10 +561,11 @@ class GraphIndex:
 
     def _estimate_memory_mb(self) -> float:
         """Rough memory estimate in MB."""
-        # Rough estimate: ~200 bytes per entity, ~50 bytes per edge
+        # Rough estimate: ~200 bytes per entity, ~50 bytes per edge, ~1500 bytes per chunk
         entity_bytes = self._total_nodes * 200
         edge_bytes = self._total_edges * 50
-        return (entity_bytes + edge_bytes) / (1024 * 1024)
+        chunk_bytes = self._total_chunks * 1500  # Chunks include full content
+        return (entity_bytes + edge_bytes + chunk_bytes) / (1024 * 1024)
 
 
 # Singleton instance for server-wide use

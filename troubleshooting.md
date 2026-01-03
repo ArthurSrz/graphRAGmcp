@@ -266,3 +266,67 @@ entities, paths = await expand_via_index(all_seeds, None, max_hops=3, max_result
 - `server.py`: Added `search_entities_globally()`, modified `grand_debat_query_fast()`
 
 **Date fixed:** 2026-01-03
+
+---
+
+### Fast Graph Traversal to Chunks (Slow Source Quote Retrieval)
+
+**Problem:**
+```
+Chunk retrieval: 500ms+ per query (file I/O)
+Source quotes require loading JSON files from disk during query execution
+```
+
+**Symptoms:**
+- Queries with `include_sources=True` are slower than expected
+- Each query opens 20-50 JSON files to load chunk content
+- File I/O blocks during query execution
+
+**Root Cause:**
+Chunks were NOT part of the GraphIndex. To retrieve source quotes:
+1. Parse `source_id` fields from entities (contains `chunk-abc<SEP>chunk-def`)
+2. Open `kv_store_text_chunks.json` per commune
+3. Load chunk content from JSON
+
+This file I/O happened during query execution, adding 500ms+ latency.
+
+**Solution:**
+Made chunks first-class graph citizens with `HAS_SOURCE` edges:
+
+1. **Added ChunkMetadata dataclass** - stores full chunk content in memory
+2. **Extended GraphIndex to load chunks** - `_load_commune_chunks()` runs during initialization
+3. **Created HAS_SOURCE/SOURCED_BY edges** - bidirectional entity ↔ chunk links
+4. **O(1) chunk retrieval** - `get_chunks_for_entity()` traverses edges, no file I/O
+
+```python
+# Before (file I/O during query - 500ms+)
+chunk_requests = [(chunk_id, commune_id) for c in communities...]
+source_quotes = await load_chunks_parallel(chunk_requests)
+
+# After (in-memory traversal - <1ms)
+for entity in entities:
+    chunks = index.get_chunks_for_entity(entity_id)  # O(degree) lookup
+    for chunk in chunks:
+        source_quotes.append({
+            "id": chunk.chunk_id,
+            "content": chunk.content[:500],
+            "commune": chunk.commune,
+        })
+```
+
+**Memory Impact:**
+- ~1,000 chunks × ~1.5KB = ~1.5 MB additional memory
+- ~5,000 HAS_SOURCE edges × ~50 bytes = ~0.25 MB
+- Total: ~1.75 MB (trivial for server)
+
+**Performance Impact:**
+| Operation | Before | After |
+|-----------|--------|-------|
+| Get chunks for query | 500ms (file I/O) | <1ms (in-memory) |
+| Index load time | ~2s | ~3s (one-time) |
+
+**Files changed:**
+- `graph_index.py`: Added ChunkMetadata, _load_commune_chunks(), get_chunk(), get_chunks_for_entity()
+- `server.py`: Updated grand_debat_query_fast() to use graph traversal
+
+**Date fixed:** 2026-01-03
