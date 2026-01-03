@@ -1908,7 +1908,9 @@ RÉPONSE:"""
 
         # Add source_quotes to provenance (already collected via graph traversal above)
         # Truncate content for JSON response (full content was used in LLM prompt)
+        logger.info(f"DEBUG: include_sources={include_sources}, source_quotes={len(source_quotes)}")
         if include_sources and source_quotes:
+            logger.info(f"DEBUG: Adding {len(source_quotes)} source_quotes to response")
             response["provenance"]["source_quotes"] = [
                 {
                     "id": q["id"],
@@ -1920,6 +1922,9 @@ RÉPONSE:"""
                 }
                 for q in source_quotes
             ]
+            logger.info(f"DEBUG: Response has {len(response['provenance']['source_quotes'])} quotes")
+        else:
+            logger.warning(f"DEBUG: NOT adding quotes - include_sources={include_sources}")
 
         logger.info(f"Fast query completed in {total_time:.2f}s (target: <10s)")
         return json.dumps(response, indent=2, ensure_ascii=False)
