@@ -208,3 +208,61 @@ async def query_single_commune(commune_info):
 The semaphore ensures only 5 communes are queried simultaneously, preventing API rate limit errors while still completing all 50 queries efficiently.
 
 **Date fixed:** 2025-12-23
+
+---
+
+### Low Meaning Match Score in Opik (9-Commune Limitation)
+
+**Problem:**
+```
+meaning_match score: 0.037 (3.7% average)
+GraphRAG responses say "dans les 9 communes analysées" even though 55 communes are available
+```
+
+**Symptoms:**
+- Opik evaluation shows very low semantic similarity between GraphRAG output and expected answers
+- GraphRAG returns "no data found" for queries that should have results
+- Responses mention analyzing only 9 communes instead of all 55
+- hallucination score is high (57%) - system claims "no data" when data exists
+
+**Root Cause:**
+The `grand_debat_query_fast` function used keyword matching to select communities, then constrained the graph expansion to only those communes that had matching communities. This caused:
+1. `select_communities_by_keywords()` returned communities from ~9 communes
+2. `expand_via_index()` was called with `commune_filter=commune_ids` limiting traversal
+3. Data in the other 46 communes was never searched
+
+**Solution:**
+Implemented **DUAL-STRATEGY** retrieval with corpus-wide coverage:
+
+1. **Added `search_entities_globally()`** - searches entity names/descriptions across ALL 55 communes
+2. **Combined seed sources** - use both community-based seeds AND global entity seeds
+3. **Removed commune filtering** - pass `None` to `expand_via_index()` for cross-commune traversal
+4. **Increased max_hops to 3** - deeper traversal to reach chunks
+
+```python
+# Phase 1a: Community selection (existing - for thematic context)
+communities = await select_communities_by_keywords(query, max_communes)
+
+# Phase 1b: Global entity search (NEW - corpus-wide)
+global_entities = await search_entities_globally(query, max_results=100)
+
+# Phase 2: Merge seeds from both strategies
+all_seeds = list(set(community_seeds + global_seeds))
+
+# Phase 3: Expansion WITHOUT commune filter (FIXED)
+entities, paths = await expand_via_index(all_seeds, None, max_hops=3, max_results=500)
+```
+
+**Results:**
+- Before: 9 communes searched, 16% coverage
+- After: 51 communes with data, 92.7% coverage
+
+**Performance Impact:**
+- Global entity search: <100ms (GraphIndex is pre-loaded)
+- Deeper traversal (3 hops): <100ms (O(1) neighbor lookups)
+- Total query time remains <10s (LLM call dominates)
+
+**Files changed:**
+- `server.py`: Added `search_entities_globally()`, modified `grand_debat_query_fast()`
+
+**Date fixed:** 2026-01-03

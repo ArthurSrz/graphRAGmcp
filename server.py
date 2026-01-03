@@ -945,6 +945,83 @@ async def expand_via_index(
     return entities, paths
 
 
+async def search_entities_globally(query: str, max_results: int = 100) -> List[dict]:
+    """
+    Search entities by keywords across ALL communes using GraphIndex.
+
+    Feature: Fix for 9-commune limitation - ensures corpus-wide search.
+
+    This function searches entity names and descriptions across all 55 communes,
+    not just communities that match the query keywords.
+
+    Performance: O(n) scan but very fast (<100ms for 21K entities)
+    since GraphIndex is pre-loaded in memory.
+
+    Args:
+        query: Search query in French
+        max_results: Maximum entities to return (default 100)
+
+    Returns:
+        List of matching entity dicts with scores
+    """
+    import re
+
+    # Ensure GraphIndex is initialized
+    index = await ensure_graph_index_initialized()
+
+    # French stop words
+    stop_words = {'le', 'la', 'les', 'de', 'du', 'des', 'un', 'une', 'et', 'ou',
+                  'que', 'qui', 'dans', 'pour', 'sur', 'avec', 'par', 'est', 'sont',
+                  'ce', 'cette', 'ces', 'au', 'aux', 'en', 'il', 'elle', 'nous', 'vous',
+                  'tous', 'tout', 'plus', 'moins', 'entre', 'comme', 'être', 'avoir'}
+
+    # Extract query keywords
+    query_words = set(re.findall(r'\b\w{3,}\b', query.lower())) - stop_words
+
+    if not query_words:
+        return []
+
+    # Score each entity by keyword matches
+    scored_entities = []
+
+    for entity_id, metadata in index._entities.items():
+        # Search in entity name and description
+        name_lower = metadata.name.lower()
+        desc_lower = metadata.description.lower()
+
+        score = 0
+        for keyword in query_words:
+            # Name match = 5 points (very relevant)
+            if keyword in name_lower:
+                score += 5
+            # Description match = 1 point
+            if keyword in desc_lower:
+                score += 1
+
+        if score > 0:
+            scored_entities.append({
+                'id': entity_id,
+                'name': metadata.name,
+                'type': metadata.entity_type,
+                'description': metadata.description,
+                'commune': metadata.commune,
+                'score': score
+            })
+
+    # Sort by score descending
+    scored_entities.sort(key=lambda x: x['score'], reverse=True)
+
+    # Return top results
+    results = scored_entities[:max_results]
+
+    logger.debug(
+        f"search_entities_globally: '{query[:50]}...' -> "
+        f"{len(results)} entities from {len(set(e['commune'] for e in results))} communes"
+    )
+
+    return results
+
+
 # ============================================================================
 # MCP Tools - Generic Multi-Source
 # ============================================================================
@@ -1573,15 +1650,16 @@ async def grand_debat_query_fast(
     include_sources: Annotated[bool, Field(description="Include source quotes for provenance")] = True
 ) -> str:
     """
-    FAST query (<10s) using community-first retrieval + multi-hop traversal.
+    FAST query (<10s) using DUAL-STRATEGY retrieval + multi-hop traversal.
 
     **Performance**: Skips embedding search entirely. Uses pre-computed community
-    reports and in-memory graph traversal. Target latency: <10 seconds.
+    reports AND global entity search for corpus-wide coverage. Target latency: <10 seconds.
 
-    Architecture:
-    1. Community selection via keyword matching (0.5s)
-    2. Entity extraction from community nodes (instant)
-    3. Multi-hop BFS expansion through GraphML (1-2s)
+    Architecture (DUAL-STRATEGY for full corpus coverage):
+    1a. Community selection via keyword matching (<100ms) - thematic context
+    1b. Global entity keyword search (<100ms) - corpus-wide coverage
+    2. Combine seeds from both strategies (instant)
+    3. Multi-hop BFS expansion across ALL communes (50ms)
     4. Single LLM call with aggregated context (3-5s)
 
     Args:
@@ -1596,30 +1674,67 @@ async def grand_debat_query_fast(
     start_time = time.time()
 
     try:
-        # Phase 1: Community selection via keyword matching (<100ms with cache)
-        # Feature 007-mcp-graph-optimization T004: Use pre-loaded cache
-        phase1_start = time.time()
+        # Get total communes for provenance tracking
+        index = await ensure_graph_index_initialized()
+        total_communes_available = len(index._loaded_communes)
+
+        # Phase 1a: Community selection via keyword matching (<100ms with cache)
+        # Provides thematic context and summaries
+        phase1a_start = time.time()
         communities = await select_communities_by_keywords(query, max_communes)
-        phase1_time = time.time() - phase1_start
+        phase1a_time = time.time() - phase1a_start
 
-        if not communities:
-            return json.dumps({
-                "success": False,
-                "error": "Aucune communauté pertinente trouvée pour cette requête.",
-                "suggestion": "Essayez des mots-clés plus généraux (fiscalité, écologie, démocratie...)"
-            }, ensure_ascii=False)
+        # Phase 1b: Global entity keyword search across ALL communes (<100ms)
+        # FIX for 9-commune limitation: ensures corpus-wide coverage
+        phase1b_start = time.time()
+        global_entities = await search_entities_globally(query, max_results=100)
+        phase1b_time = time.time() - phase1b_start
 
-        # Phase 2: Extract entities from communities (instant)
+        # Combine seed entities from both strategies
         phase2_start = time.time()
-        seed_entities = extract_entities_from_communities(communities)
-        commune_ids = set(c['commune_id'] for c in communities)
+
+        # Strategy A: Seeds from communities (thematic clusters)
+        community_seeds = extract_entities_from_communities(communities) if communities else []
+        community_commune_ids = set(c['commune_id'] for c in communities) if communities else set()
+
+        # Strategy B: Seeds from global entity search (corpus-wide)
+        global_seeds = [e['id'] for e in global_entities[:50]]
+        global_commune_ids = set(e['commune'] for e in global_entities)
+
+        # Merge seeds (deduplicated)
+        all_seeds = list(set(community_seeds + global_seeds))
+
+        # Track all communes that contributed data
+        all_commune_ids = community_commune_ids | global_commune_ids
+
         phase2_time = time.time() - phase2_start
 
-        # Phase 3: Multi-hop expansion (<50ms with GraphIndex, was 25-30s with GraphML)
-        # Feature 007-mcp-graph-optimization T002: Use pre-loaded index
+        # Check if we have any seeds
+        if not all_seeds:
+            return json.dumps({
+                "success": False,
+                "error": "Aucune entité pertinente trouvée pour cette requête.",
+                "suggestion": "Essayez des mots-clés plus généraux (fiscalité, écologie, démocratie...)",
+                "provenance": {
+                    "communes_searched": total_communes_available,
+                    "communes_with_results": 0
+                }
+            }, ensure_ascii=False)
+
+        # Phase 3: Multi-hop expansion across ALL communes (no filtering!)
+        # FIX: Pass None instead of commune_ids to allow cross-commune traversal
+        # DEEP TRAVERSAL: max_hops=3 to reach chunks (entity → relation → entity → chunk)
+        # This is fast (<100ms) since GraphIndex is pre-loaded
         phase3_start = time.time()
-        entities, paths = await expand_via_index(seed_entities, commune_ids, max_hops=2)
+        entities, paths = await expand_via_index(all_seeds, None, max_hops=3, max_results=500)
         phase3_time = time.time() - phase3_start
+
+        # Track communes from expanded results
+        expanded_commune_ids = set(e.get('commune', '') for e in entities if e.get('commune'))
+        final_commune_ids = all_commune_ids | expanded_commune_ids
+
+        # Combined phase 1 time for backward compatibility
+        phase1_time = phase1a_time + phase1b_time
 
         # Phase 4: Build context + LLM call (3-5s)
         phase4_start = time.time()
@@ -1642,7 +1757,7 @@ async def grand_debat_query_fast(
         context = "".join(context_parts)
 
         prompt = f"""Tu es un analyste expert des contributions citoyennes du Grand Débat National 2019.
-Analyse les données de {len(commune_ids)} communes de Charente-Maritime et réponds à la question.
+Analyse les données de {len(final_commune_ids)} communes de Charente-Maritime (sur {total_communes_available} disponibles) et réponds à la question.
 
 QUESTION: {query}
 
@@ -1685,8 +1800,9 @@ RÉPONSE:"""
                 "total_seconds": round(total_time, 2),
                 "target_met": total_time < 10.0,
                 "phases": {
-                    "community_selection": round(phase1_time, 3),
-                    "entity_extraction": round(phase2_time, 3),
+                    "community_selection": round(phase1a_time, 3),
+                    "global_entity_search": round(phase1b_time, 3),
+                    "seed_merging": round(phase2_time, 3),
                     "multihop_expansion": round(phase3_time, 3),
                     "llm_call": round(phase4_time, 3)
                 }
@@ -1726,13 +1842,17 @@ RÉPONSE:"""
                     }
                     for c in communities
                 ],
-                # Statistics
+                # Statistics - Full provenance tracking
                 "stats": {
-                    "communities_matched": len(communities),
-                    "seed_entities": len(seed_entities),
+                    "communities_matched": len(communities) if communities else 0,
+                    "seed_entities_community": len(community_seeds),
+                    "seed_entities_global": len(global_seeds),
+                    "seed_entities_total": len(all_seeds),
                     "expanded_entities": len(entities),
                     "relationship_paths": len(paths),
-                    "communes": list(commune_ids)
+                    "communes_searched": total_communes_available,
+                    "communes_with_results": len(final_commune_ids),
+                    "communes": list(final_commune_ids)
                 }
             }
         }
