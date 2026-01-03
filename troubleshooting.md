@@ -330,3 +330,57 @@ for entity in entities:
 - `server.py`: Updated grand_debat_query_fast() to use graph traversal
 
 **Date fixed:** 2026-01-03
+
+---
+
+### Chunks Not Retrieved (expand_weighted Returns Chunks as Entities)
+
+**Problem:**
+```
+source_quotes: 0
+No citizen quotes in LLM context
+meaning_match: 0.02 (very low)
+```
+
+**Symptoms:**
+- `get_chunks_for_entity()` returns empty lists for all expanded entities
+- Source quotes are 0 even though chunks exist in GraphIndex
+- LLM responses don't include citizen text
+
+**Root Cause:**
+When `expand_weighted()` is called with `include_chunks=True`, it traverses to chunks and returns them as entities. These chunk pseudo-entities have IDs like `contrib-6e0daf98...`.
+
+Chunks don't have `HAS_SOURCE` edges to other chunks - they ARE the sources. So `get_chunks_for_entity("contrib-xxx")` returns nothing.
+
+```
+Entity FISCALITÉ --[HAS_SOURCE]--> Chunk contrib-xxx
+                                    ↑
+                              expand_weighted returns this
+                                    ↓
+get_chunks_for_entity("contrib-xxx") -> [] (chunks don't have HAS_SOURCE)
+```
+
+**Solution:**
+Get chunks from **seed entities** (like `FISCALITÉ`), not from expanded entities:
+
+```python
+# Before (broken): iterating over expanded entities which include chunks
+for entity in entities[:100]:
+    entity_id = entity.get('id', '')  # This is "contrib-xxx" (a chunk!)
+    chunks = index.get_chunks_for_entity(entity_id)  # Returns []
+
+# After (fixed): iterate over all_seeds (original entity IDs)
+for seed_id in all_seeds[:100]:  # IDs like "FISCALITÉ", "CSG", etc.
+    chunks = index.get_chunks_for_entity(seed_id)  # Returns chunks!
+```
+
+**Verification:**
+```
+Before: source_quotes: 0
+After: source_quotes: 15
+```
+
+**Files changed:**
+- `server.py`: Changed chunk retrieval loop from `entities` to `all_seeds`
+
+**Date fixed:** 2026-01-03
