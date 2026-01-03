@@ -1739,6 +1739,31 @@ async def grand_debat_query_fast(
         # Phase 4: Build context + LLM call (3-5s)
         phase4_start = time.time()
 
+        # Get source chunks via graph traversal (O(1) in-memory, no file I/O)
+        # These provide the actual citizen text for precise, deterministic answers
+        source_quotes = []
+        seen_chunks = set()
+        for entity in entities[:100]:
+            entity_id = entity.get('id', '')
+            if not entity_id:
+                continue
+            chunks = index.get_chunks_for_entity(entity_id)
+            for chunk in chunks[:2]:  # Max 2 chunks per entity
+                if chunk.chunk_id not in seen_chunks:
+                    seen_chunks.add(chunk.chunk_id)
+                    source_quotes.append({
+                        "id": chunk.chunk_id,
+                        "content": chunk.content,
+                        "commune": chunk.commune,
+                        "contribution_type": chunk.contribution_type,
+                        "demographic": chunk.demographic,
+                        "chunk_order": chunk.chunk_order_index,
+                    })
+                if len(source_quotes) >= 15:
+                    break
+            if len(source_quotes) >= 15:
+                break
+
         # Build context for LLM
         context_parts = ["## Synthèses thématiques\n"]
         for c in communities[:8]:
@@ -1753,6 +1778,14 @@ async def grand_debat_query_fast(
         context_parts.append("\n## Relations découvertes\n")
         for p in paths[:15]:
             context_parts.append(f"- {p['source']} --[{p['type']}]--> {p['target']}\n")
+
+        # Add citizen quotes for precise, grounded answers (improves meaning_match)
+        if source_quotes:
+            context_parts.append("\n## Citations citoyennes (texte source)\n")
+            for q in source_quotes[:10]:
+                commune = q.get('commune', 'Inconnu')
+                content = q.get('content', '')[:400]  # Limit to 400 chars per quote
+                context_parts.append(f"**[{commune}]**: \"{content}\"\n\n")
 
         context = "".join(context_parts)
 
@@ -1857,39 +1890,20 @@ RÉPONSE:"""
             }
         }
 
-        # Add source_quotes if requested (Constitution Principle V: End-to-end interpretability)
-        # Feature: Fast graph traversal to chunks - O(1) in-memory lookup
-        if include_sources:
-            source_quotes = []
-            seen_chunks = set()
-
-            # Get chunks via graph traversal (no file I/O!)
-            # GraphIndex already has chunks loaded with HAS_SOURCE edges
-            for entity in entities[:100]:
-                entity_id = entity.get('id', '')
-                if not entity_id:
-                    continue
-
-                # O(degree) lookup via HAS_SOURCE edges
-                chunks = index.get_chunks_for_entity(entity_id)
-                for chunk in chunks[:3]:  # Max 3 chunks per entity
-                    if chunk.chunk_id not in seen_chunks:
-                        seen_chunks.add(chunk.chunk_id)
-                        source_quotes.append({
-                            "id": chunk.chunk_id,
-                            "content": chunk.content[:500],
-                            "commune": chunk.commune,
-                            "contribution_type": chunk.contribution_type,
-                            "demographic": chunk.demographic,
-                            "chunk_order": chunk.chunk_order_index,
-                        })
-
-                    if len(source_quotes) >= 20:
-                        break
-                if len(source_quotes) >= 20:
-                    break
-
-            response["provenance"]["source_quotes"] = source_quotes
+        # Add source_quotes to provenance (already collected via graph traversal above)
+        # Truncate content for JSON response (full content was used in LLM prompt)
+        if include_sources and source_quotes:
+            response["provenance"]["source_quotes"] = [
+                {
+                    "id": q["id"],
+                    "content": q["content"][:500],  # Truncate for response
+                    "commune": q["commune"],
+                    "contribution_type": q.get("contribution_type"),
+                    "demographic": q.get("demographic"),
+                    "chunk_order": q.get("chunk_order"),
+                }
+                for q in source_quotes
+            ]
 
         logger.info(f"Fast query completed in {total_time:.2f}s (target: <10s)")
         return json.dumps(response, indent=2, ensure_ascii=False)
