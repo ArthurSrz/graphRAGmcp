@@ -1578,7 +1578,7 @@ INSTRUCTIONS:
 RÉPONSE:"""
 
         logger.info(f"Making ONE LLM call with {len(context)} chars context...")
-        answer = await gpt_5_nano_complete(prompt)
+        answer = await gpt_5_nano_complete(prompt, max_tokens=8192)
 
         # ============================================================
         # Build response with provenance
@@ -1835,7 +1835,9 @@ PROTOCOLE D'ANALYSE EXHAUSTIVE (EXECUTION OBLIGATOIRE):
 
 1. EXPLORATION COMPLÈTE: Analyse TOUTES les entités, relations et chunks fournis dans le contexte
 2. PROVENANCE SYSTEMATIQUE: Cite la commune source ET l'entité civique pour CHAQUE fait extrait
-3. RICHESSE INFORMATIONNELLE: Privilégie la complétude - inclus tous les faits pertinents du graphe (pas de limite de longueur stricte, vise 400-800 mots si nécessaire)
+3. RICHESSE INFORMATIONNELLE: Privilégie la complétude - inclus tous les faits pertinents du graphe.
+   LONGUEUR CIBLE: 2500-5000 mots au total (50-100 mots par commune avec information pertinente).
+   Chaque commune DOIT avoir son propre paragraphe détaillé avec provenance complète (entités + sources).
 4. PRECISION FACTUELLE: Chaque affirmation doit être exacte et traçable au graphe source
 5. DIVERSITÉ DES SOURCES: Valorise la multiplicité des communes et entités qui parlent du même sujet
 
@@ -1878,7 +1880,7 @@ RÈGLES ABSOLUES:
 
 EXTRACTION CHIRURGICALE:"""
 
-        answer = await gpt_5_nano_complete(prompt)
+        answer = await gpt_5_nano_complete(prompt, max_tokens=8192)
         phase4_time = time.time() - phase4_start
 
         total_time = time.time() - start_time
@@ -2044,9 +2046,14 @@ async def grand_debat_query_local_surgical(
         # - top_k=100 (massive retrieval for ontological coverage)
         # - local_max_hops=5 (deep multi-hop for small worlds)
         # - Increased token limits for complete context
+        # - Comprehensive response_type for detailed multi-commune analysis
         result = await rag.aquery(
             query,
-            param=QueryParam(mode="local", return_provenance=include_sources)
+            param=QueryParam(
+                mode="local",
+                return_provenance=include_sources,
+                response_type="Comprehensive multi-commune analysis: 2500-5000 words total. Structure: Introduction (2-3 sentences) + ## Analyse par commune (one detailed paragraph per commune with provenance, 50-100 words each) + ## Synthèse transversale (patterns and variations across communes)"
+            )
         )
 
         total_time = time.time() - start_time
