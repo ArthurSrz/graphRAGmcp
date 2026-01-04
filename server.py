@@ -1969,6 +1969,279 @@ EXTRACTION CHIRURGICALE:"""
 
 
 @mcp.tool(
+    name="grand_debat_query_local_surgical",
+    annotations={
+        "title": "Query with Surgical RAG (Local Mode with Small Worlds)",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False
+    }
+)
+async def grand_debat_query_local_surgical(
+    query: Annotated[str, Field(description="Question about citizen contributions (French)", min_length=3)],
+    commune_id: Annotated[str, Field(description="Target commune for local mode query")] = "Angoulins",
+    include_sources: Annotated[bool, Field(description="Include full provenance chain")] = True
+) -> str:
+    """
+    SURGICAL RAG query using true LOCAL MODE with massive ontological expansion.
+
+    **Architecture (Small Worlds Retrieval)**:
+    - Uses QueryParam with mode="local" (NOT manual expansion)
+    - Leverages configured settings: top_k=100, local_max_hops=5
+    - Reconstitutes complete "petits mondes" with ontological coverage
+    - Surgical prompt with end-to-end interpretability
+
+    **Returns**: JSON with answer, provenance chain, and small worlds statistics
+    """
+    start_time = time.time()
+
+    try:
+        # Get commune path
+        commune_path = get_commune_path(commune_id)
+        if not commune_path:
+            available = [c['id'] for c in list_communes()[:10]]
+            return json.dumps({
+                "success": False,
+                "error": f"Commune '{commune_id}' not found",
+                "available_communes": available
+            }, ensure_ascii=False)
+
+        # Import GraphRAG
+        import sys
+        project_root = Path(__file__).parent
+        if str(project_root) not in sys.path:
+            sys.path.insert(0, str(project_root))
+
+        from nano_graphrag import GraphRAG, QueryParam
+        from nano_graphrag._llm import gpt_5_nano_complete
+
+        # Get cached GraphRAG instance
+        working_dir = str(commune_path)
+        rag = _graphrag_cache.get(working_dir)
+        if rag is None:
+            rag = GraphRAG(
+                working_dir=working_dir,
+                best_model_func=gpt_5_nano_complete,
+                cheap_model_func=gpt_5_nano_complete,
+            )
+            _graphrag_cache.put(working_dir, rag)
+
+        # Use LOCAL MODE with our configured QueryParam defaults:
+        # - top_k=100 (massive retrieval for ontological coverage)
+        # - local_max_hops=5 (deep multi-hop for small worlds)
+        # - Increased token limits for complete context
+        result = await rag.aquery(
+            query,
+            param=QueryParam(mode="local", return_provenance=include_sources)
+        )
+
+        total_time = time.time() - start_time
+
+        # Extract provenance for small worlds analysis (result is a dict)
+        answer = ""
+        provenance = {}
+
+        if isinstance(result, dict):
+            answer = result.get("answer", "")
+            if include_sources:
+                result_prov = result.get("provenance", {})
+                entities = result_prov.get('entities', [])
+                chunks = result_prov.get('source_quotes', [])  # FIXED: use 'source_quotes' not 'chunks'
+                relationships = result_prov.get('relationships', [])
+
+                # Analyze ontological coverage
+                entity_types = {}
+                for e in entities:
+                    etype = e.get('type', 'UNKNOWN')  # FIXED: use 'type' not 'entity_type'
+                    # Normalize by stripping quotes
+                    normalized_type = etype.strip('"').strip("'")
+                    entity_types[normalized_type] = entity_types.get(normalized_type, 0) + 1
+
+                # Count unique communes in the small world
+                communes_in_small_world = set(
+                    c.get('commune', 'Unknown') for c in chunks if c.get('commune') != 'Unknown'
+                )
+
+                # Calculate ontological coverage
+                CORE_CIVIC_ENTITY_TYPES = [
+                    "PROPOSITION", "THEMATIQUE", "SERVICEPUBLIC", "DOLEANCE",
+                    "ACTEURINSTITUTIONNEL", "OPINION", "CITOYEN", "CONCEPT",
+                    "REFORMEDEMOCRATIQUE", "TERRITOIRE", "COMMUNE", "CONTRIBUTION"
+                ]
+                missing_types = [t for t in CORE_CIVIC_ENTITY_TYPES if t not in entity_types]
+                coverage_pct = (len(CORE_CIVIC_ENTITY_TYPES) - len(missing_types)) / len(CORE_CIVIC_ENTITY_TYPES) * 100
+
+                provenance = {
+                    "entities": entities[:50],  # Sample for output size
+                    "source_quotes": chunks[:20],
+                    "relationships": relationships[:30],
+                    "small_worlds_stats": {
+                        "target_commune": commune_id,
+                        "total_entities_retrieved": len(entities),
+                        "total_chunks_retrieved": len(chunks),
+                        "total_relationships": len(relationships),
+                        "entity_type_coverage": entity_types,
+                        "communes_in_small_world": list(communes_in_small_world),
+                        "ontological_coverage_pct": round(coverage_pct, 1),
+                        "missing_types": missing_types
+                    }
+                }
+
+        response = {
+            "success": True,
+            "query": query,
+            "answer": answer,
+            "mode": "local",
+            "architecture": "Surgical RAG with Small Worlds (top_k=100, local_max_hops=5)",
+            "performance": {
+                "total_seconds": round(total_time, 2),
+                "query_mode": "local_surgical_rag"
+            },
+            "provenance": provenance if include_sources else None
+        }
+
+        return json.dumps(response, indent=2, ensure_ascii=False)
+
+    except Exception as e:
+        logger.error(f"Local surgical query error: {e}")
+        import traceback
+        traceback.print_exc()
+        return json.dumps({
+            "success": False,
+            "error": str(e),
+            "commune_id": commune_id
+        }, ensure_ascii=False)
+
+
+@mcp.tool(
+    name="grand_debat_query_all_surgical",
+    annotations={
+        "title": "Query ALL Communes in Parallel (56 Mini-Worlds)",
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False
+    }
+)
+async def grand_debat_query_all_surgical(
+    query: Annotated[str, Field(description="Question about citizen contributions (French)", min_length=3)],
+    max_communes: Annotated[int, Field(description="Maximum communes to query in parallel", ge=1, le=56)] = 56
+) -> str:
+    """
+    Query ALL communes in PARALLEL using local mode surgical RAG.
+
+    **Architecture (56 Mini-Worlds in Parallel)**:
+    - Queries up to 56 communes concurrently using asyncio.gather()
+    - Each commune creates its own mini-world with top_k=100, local_max_hops=5
+    - Aggregates results from all mini-worlds
+    - Much faster than sequential queries (~30-60s vs 30+ minutes)
+
+    **Returns**: JSON with aggregated results and mini-worlds statistics
+    """
+    start_time = time.time()
+
+    try:
+        # Get all communes
+        all_communes = list_communes()
+        communes_to_query = [c['id'] for c in all_communes[:max_communes]]
+
+        logger.info(f"Starting parallel surgical query across {len(communes_to_query)} communes...")
+
+        # Query all communes in parallel
+        tasks = [
+            grand_debat_query_local_surgical(query, commune_id, include_sources=True)
+            for commune_id in communes_to_query
+        ]
+
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        # Aggregate results
+        mini_worlds = []
+        total_entities = 0
+        total_chunks = 0
+        total_relationships = 0
+        all_answers = []
+
+        for commune_id, result_str in zip(communes_to_query, results):
+            if isinstance(result_str, Exception):
+                logger.warning(f"Commune {commune_id} failed: {result_str}")
+                continue
+
+            try:
+                result = json.loads(result_str)
+                if result.get('success'):
+                    prov = result.get('provenance', {}) or {}
+                    stats = prov.get('small_worlds_stats', {}) or {}
+
+                    entities = stats.get('total_entities_retrieved', 0)
+                    chunks = stats.get('total_chunks_retrieved', 0)
+                    rels = stats.get('total_relationships', 0)
+
+                    mini_worlds.append({
+                        'commune': commune_id,
+                        'entities': entities,
+                        'chunks': chunks,
+                        'relationships': rels,
+                        'coverage_pct': stats.get('ontological_coverage_pct', 0)
+                    })
+
+                    total_entities += entities
+                    total_chunks += chunks
+                    total_relationships += rels
+                    all_answers.append(result.get('answer', ''))
+            except Exception as e:
+                logger.warning(f"Failed to parse result for {commune_id}: {e}")
+
+        total_time = time.time() - start_time
+
+        # Create aggregated answer by combining all individual answers
+        aggregated_answer = "\n\n---\n\n".join(all_answers) if all_answers else "Aucune réponse générée"
+
+        # Collect unique communes with results
+        communes_with_results = list(set(mw['commune'] for mw in mini_worlds))
+
+        # Create aggregated response
+        response = {
+            "success": True,
+            "query": query,
+            "architecture": "Parallel Surgical RAG (56 Mini-Worlds)",
+            "mini_worlds_count": len(mini_worlds),
+            "aggregated_answer": aggregated_answer,
+            "aggregated_stats": {
+                "total_communes_queried": len(communes_to_query),
+                "successful_queries": len(mini_worlds),
+                "failed_queries": len(communes_to_query) - len(mini_worlds),
+                "total_entities": total_entities,
+                "total_chunks": total_chunks,
+                "total_relationships": total_relationships,
+                "avg_entities_per_commune": round(total_entities / len(mini_worlds), 1) if mini_worlds else 0,
+                "avg_chunks_per_commune": round(total_chunks / len(mini_worlds), 1) if mini_worlds else 0,
+                "avg_ontological_coverage": round(sum(mw['coverage_pct'] for mw in mini_worlds) / len(mini_worlds), 1) if mini_worlds else 0,
+                "communes_with_results": communes_with_results
+            },
+            "mini_worlds": mini_worlds[:10],  # Sample first 10
+            "answers_sample": all_answers[:3],  # Sample first 3 answers
+            "performance": {
+                "total_seconds": round(total_time, 2),
+                "communes_queried": len(mini_worlds),
+                "queries_per_second": round(len(mini_worlds) / total_time, 2) if total_time > 0 else 0
+            }
+        }
+
+        return json.dumps(response, indent=2, ensure_ascii=False)
+
+    except Exception as e:
+        logger.error(f"Parallel surgical query error: {e}")
+        import traceback
+        traceback.print_exc()
+        return json.dumps({
+            "success": False,
+            "error": str(e)
+        }, ensure_ascii=False)
+
+
+@mcp.tool(
     name="grand_debat_search_entities",
     annotations={
         "title": "Search Entities",

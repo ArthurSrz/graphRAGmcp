@@ -953,19 +953,25 @@ async def _find_most_related_text_unit_from_entities(
     ]
 
     entity_type_counts = {}
+    entity_type_counts_normalized = {}  # Without quotes for comparison
     for node_data in all_multi_hop_nodes_data:
         if node_data and "entity_type" in node_data:
             entity_type = node_data["entity_type"]
             entity_type_counts[entity_type] = entity_type_counts.get(entity_type, 0) + 1
+            # Normalize by stripping quotes for coverage check
+            normalized_type = entity_type.strip('"').strip("'")
+            entity_type_counts_normalized[normalized_type] = entity_type_counts_normalized.get(normalized_type, 0) + 1
 
-    # Check completeness of "petit monde"
-    missing_types = [t for t in CORE_CIVIC_ENTITY_TYPES if t not in entity_type_counts]
+    # Check completeness of "petit monde" using normalized types
+    missing_types = [t for t in CORE_CIVIC_ENTITY_TYPES if t not in entity_type_counts_normalized]
     coverage_pct = (len(CORE_CIVIC_ENTITY_TYPES) - len(missing_types)) / len(CORE_CIVIC_ENTITY_TYPES) * 100
 
-    logger.info(f"Small world: {len(all_multi_hop_nodes)} nodes, {coverage_pct:.1f}% ontological coverage ({len(entity_type_counts)}/{len(CORE_CIVIC_ENTITY_TYPES)} types)")
-    logger.info(f"Entity types: {entity_type_counts}")
+    logger.info(f"Small world: {len(all_multi_hop_nodes)} nodes, {coverage_pct:.1f}% ontological coverage ({len(CORE_CIVIC_ENTITY_TYPES) - len(missing_types)}/{len(CORE_CIVIC_ENTITY_TYPES)} types)")
+    logger.info(f"Entity types found: {sorted(entity_type_counts_normalized.keys())}")
     if missing_types:
         logger.warning(f"Missing civic types in small world: {missing_types}")
+    else:
+        logger.info(f"✓ Complete ontological coverage: all {len(CORE_CIVIC_ENTITY_TYPES)} core civic types present!")
 
     # Build text units lookup from all discovered nodes
     all_one_hop_text_units_lookup = {}
@@ -1020,6 +1026,16 @@ async def _find_most_related_text_unit_from_entities(
         tokenizer_wrapper=tokenizer_wrapper, # 传入 wrapper
     )
     all_text_units: list[TextChunkSchema] = [t["data"] for t in all_text_units]
+
+    # Log chunk retrieval for debugging (Issue #3)
+    logger.info(f"Retrieved {len(all_text_units)} chunks from small world")
+    for i, chunk in enumerate(all_text_units[:5], 1):  # Show first 5 chunks
+        commune = chunk.get('commune', 'Unknown')
+        content_preview = chunk.get('content', '')[:150]
+        logger.info(f"  Chunk {i}: [{commune}] {content_preview}...")
+    if len(all_text_units) > 5:
+        logger.info(f"  ... and {len(all_text_units) - 5} more chunks")
+
     return all_text_units
 
 
@@ -1207,6 +1223,9 @@ async def _build_local_query_context(
                 {
                     "id": t.get("chunk_id", f"chunk-{i}"),
                     "content": (t.get("content", "") or "")[:500],
+                    "commune": t.get("commune", "Unknown"),  # ADDED: civic provenance
+                    "full_doc_id": t.get("full_doc_id", ""),  # ADDED: document lineage
+                    "chunk_order_index": t.get("chunk_order_index", 0),  # ADDED: position tracking
                 }
                 for i, t in enumerate(use_text_units)
             ],
