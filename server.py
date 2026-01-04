@@ -1810,11 +1810,11 @@ async def grand_debat_query_fast(
 
         context = "".join(context_parts)
 
-        prompt = f"""Tu es un chirurgien de données citoyennes - extrais avec PRECISION CHIRURGICALE les informations critiques du graphe reconstitué.
+        prompt = f"""Tu es un analyste expert des données citoyennes du Grand Débat National. Ton rôle est de fournir une analyse EXHAUSTIVE et PRÉCISE basée sur le graphe de connaissances reconstitué.
 
-QUESTION CHIRURGICALE: {query}
+QUESTION: {query}
 
-PETIT MONDE RECONSTITUÉ ({len(final_commune_ids)} communes sur {total_communes_available} disponibles, expansion multi-hop 5 niveaux):
+GRAPHE DE CONNAISSANCES RECONSTITUÉ ({len(final_commune_ids)} communes sur {total_communes_available} disponibles, expansion multi-hop 5 niveaux):
 {context}
 
 ONTOLOGIE CIVIQUE DU GRAPHE:
@@ -1823,38 +1823,51 @@ Relations: RELATED_TO, PROPOSE, FAIT_PARTIE_DE, CONCERNE, EXPRIME
 
 PRINCIPES CONSTITUTIONNELS DU RAG:
 
-1. COMPLETENESS REQUIREMENT: Ce petit monde a été reconstitué en interrogeant TOUTES les {len(final_commune_ids)} communes pour cette question. Chaque commune a été explorée avec expansion multi-hop pour garantir la complétude ontologique.
+1. EXHAUSTIVITÉ MAXIMALE: Ce graphe a été reconstitué en interrogeant TOUTES les {len(final_commune_ids)} communes. Tu DOIS explorer TOUTES les informations disponibles dans le contexte fourni, même si elles semblent redondantes ou variées.
 
-2. END-TO-END INTERPRETABILITY (cœur du RAG): Chaque fait extrait DOIT être traçable via la chaîne de provenance complète:
+2. PRÉCISION AVEC PROVENANCE: Chaque fait extrait DOIT être traçable via la chaîne de provenance complète:
    Réponse → Entité civique → Chunk de texte → Commune → Texte citoyen original
    Cette traçabilité est OBLIGATOIRE pour chaque assertion.
 
-PROTOCOLE CHIRURGICAL (EXECUTION OBLIGATOIRE):
+3. COMPLETENESS OVER BREVITY: Préfère une réponse complète et informative plutôt qu'une réponse courte. Si le graphe contient beaucoup d'informations pertinentes, inclus-les TOUTES.
 
-1. PRECISION LASER: Réponds UNIQUEMENT à la question posée, zéro généralisation
+PROTOCOLE D'ANALYSE EXHAUSTIVE (EXECUTION OBLIGATOIRE):
+
+1. EXPLORATION COMPLÈTE: Analyse TOUTES les entités, relations et chunks fournis dans le contexte
 2. PROVENANCE SYSTEMATIQUE: Cite la commune source ET l'entité civique pour CHAQUE fait extrait
-3. EXTREME QUALITY: Longueur 200-300 mots maximum, chaque mot justifié par le petit monde
-4. EXTRACTION CRITIQUE: Priorise les faits non-redondants, chaque entité porte une information unique
-5. INTERPRETABILITE: Assure la traçabilité end-to-end pour CHAQUE affirmation
+3. RICHESSE INFORMATIONNELLE: Privilégie la complétude - inclus tous les faits pertinents du graphe (pas de limite de longueur stricte, vise 400-800 mots si nécessaire)
+4. PRECISION FACTUELLE: Chaque affirmation doit être exacte et traçable au graphe source
+5. DIVERSITÉ DES SOURCES: Valorise la multiplicité des communes et entités qui parlent du même sujet
 
-STRUCTURE MARKDOWN OBLIGATOIRE (forte conviction):
+INSTRUCTIONS DE FORMATAGE:
 
-# [Synthèse chirurgicale en une phrase laser-focused]
+Si le graphe contient des informations pertinentes:
+- Synthétise les thèmes principaux en introduction
+- Liste TOUS les faits pertinents par commune avec leur provenance
+- Regroupe les informations similaires mais cite TOUTES les communes sources
+- Inclus les nuances et variations entre communes
 
-## Faits critiques extraits
+Si aucune information pertinente n'est trouvée:
+- Indique explicitement "Aucune information trouvée dans les {len(final_commune_ids)} communes analysées"
+- Liste les types d'entités explorées
+- Suggère des reformulations de la question si pertinent
 
-[Pour chaque fait critique du petit monde:]
-- **À [Commune]**: [fait précis extrait] (entité: NOM_EXACT, type: TYPE_ONTOLOGIE)
+STRUCTURE DE RÉPONSE:
 
-## Provenance des entités civiques
+[Synthèse thématique en 2-3 phrases]
 
-[Traçabilité vers les entités sources:]
-- **ENTITÉ_1** ([Commune]) --[RELATION]--> **ENTITÉ_2** ([Commune])
-- [Justification: pourquoi cette relation est critique pour la question]
+## Analyse par commune
 
-## Couverture du petit monde
+[Pour CHAQUE commune avec information pertinente:]
+**[Commune]**: [Faits extraits avec détails] (entités: NOMS_EXACTS)
 
-Analysé: {len(final_commune_ids)} communes | Entités extraites: [nombre] | Ontologie: [types d'entités rencontrés]
+## Synthèse transversale
+
+[Patterns communs, variations régionales, thèmes récurrents]
+
+## Provenance du graphe
+
+Communes analysées: {len(final_commune_ids)} | Entités extraites: [nombre] | Types principaux: [liste]
 
 RÈGLES ABSOLUES:
 - Utilise OBLIGATOIREMENT les headers Markdown (# ##) pour structure forte
