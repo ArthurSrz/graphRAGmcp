@@ -1,0 +1,1746 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d9" for="edge" attr.name="relationship_type" attr.type="string" />
+<ns0:key id="d8" for="edge" attr.name="order" attr.type="long" />
+<ns0:key id="d7" for="edge" attr.name="source_id" attr.type="string" />
+<ns0:key id="d6" for="edge" attr.name="description" attr.type="string" />
+<ns0:key id="d5" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d4" for="node" attr.name="clusters" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="entity_name" attr.type="string" />
+<ns0:key id="d2" for="node" attr.name="source_id" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="description" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+<ns0:graph edgedefault="undirected"><node id="&quot;TAUGON_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Taugon - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Taugon-commune-root"</data><data key="d3">"TAUGON_COMMUNE"</data><data key="d4">[]</data></node><ns0:node id="&quot;CAHIER DE TAUGON&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Taugon is a citizen contribution document reflecting the opinions and proposals of residents from Taugon during the Grand Débat National."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"CAHIER DE TAUGON"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C6"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MAIRE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Le maire is the institutional actor organizing the meeting to gather opinions from citizens in Taugon."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"MAIRE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C6"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;27 PERSONNES&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"27 personnes refers to the citizens participating in the meeting, indicating community engagement and representation."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"27 PERSONNES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C6"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GILETS JAUNES&quot;">
+  <ns0:data key="d0">"COURANTIDEOLOGIQUE"</ns0:data>
+  <ns0:data key="d1">"Gilets Jaunes is a citizen movement in France advocating for social change and expressing grievances regarding government policies."&lt;SEP&gt;"Gilets jaunes refers to a social movement in France characterized by protests against economic inequality and government policies."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5&lt;SEP&gt;contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"GILETS JAUNES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉUNION&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Réunion refers to the meeting held on January 30, 2019, organized by the Maire to discuss citizen contributions for the Grand Débat National."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"RÉUNION"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;30 JANVIER 2019&quot;">
+  <ns0:data key="d0">"DATE"</ns0:data>
+  <ns0:data key="d1">"30 janvier 2019 specifies the date on which the meeting took place, providing a temporal context for the consultation."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"30 JANVIER 2019"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAUGON&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Taugon is a commune in France where the citizens express their concerns about national issues during the consultation."&lt;SEP&gt;"Taugon is the geographic area represented in the Cahier de Taugon, indicating the specific locality involved in the citizen consultations."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5&lt;SEP&gt;contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"TAUGON"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;OPINIONS DES CITOYENS&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Opinions des citoyens represents the various perspectives and sentiments expressed by the participants during the consultation meeting."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"OPINIONS DES CITOYENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROPOSITIONS DES CITOYENS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Propositions des citoyens refers to the suggestions and recommendations made by citizens during the meeting for addressing their concerns."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"PROPOSITIONS DES CITOYENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GRIEVANCES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Grievances refers to the complaints or issues raised by citizens during the consultation process, seeking attention and resolution."</ns0:data>
+  <ns0:data key="d2">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d3">"GRIEVANCES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FISCALITÉ ET DÉPENSES PUBLIQUES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"This theme addresses taxation and public spending issues, focusing on how these impacts citizens' financial situations and government efficiency."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"FISCALITÉ ET DÉPENSES PUBLIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMPÔTS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"A subtopic within taxation that deals specifically with different taxes and their implications for citizens and the economy."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"IMPÔTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BAISSER LA CSG À 6,6 % POUR TOUS LES RETRAITÉS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests reducing the Generalized Social Contribution (CSG) tax rate for all retirees to alleviate financial burdens."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"BAISSER LA CSG À 6,6 % POUR TOUS LES RETRAITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INDEXER LES PENSIONS DE RETRAITE SUR L'INFLATION&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal advocates for adjusting retirement pensions according to inflation to maintain purchasing power for retirees."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"INDEXER LES PENSIONS DE RETRAITE SUR L'INFLATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRIMER LES PRINCIPALES NICHES FISCALES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal calls for the elimination of significant tax loopholes that may disproportionately benefit certain individuals or corporations."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"SUPPRIMER LES PRINCIPALES NICHES FISCALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉTABLIR L'ISF POUR LES PLUS RICHES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests reintroducing the Wealth Tax (ISF) targeting high earners to ensure fair contribution to public finances."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"RÉTABLIR L'ISF POUR LES PLUS RICHES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉPENSES PUBLIQUES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"This theme deals with public spending and how it is managed to benefit citizens effectively and reduce waste."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"DÉPENSES PUBLIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;APPLIQUER LES RECOMMANDATIONS DU RAPPORT 'ACTIONS PUBLIQUES 2022'">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal aims to implement the recommendations from the 'Public Actions 2022' report to save 30 billion euros over 5 years."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"APPLIQUER LES RECOMMANDATIONS DU RAPPORT 'ACTIONS PUBLIQUES 2022'</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRIMER LES COMITÉS INUTILES ET INEFFICACES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal advocates for eliminating ineffective committees, specifically naming the National Public Debate Committee and the Economic and Social Council (CESE)."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"SUPPRIMER LES COMITÉS INUTILES ET INEFFICACES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ORGANISATION DE L'ÉTAT ET DES COLLECTIVITÉS PUBLIQUES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"This theme focuses on the organization of the State and public communities, including governance structures and their effectiveness for citizens."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"ORGANISATION DE L'ÉTAT ET DES COLLECTIVITÉS PUBLIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRIMER UN ÉCHELON TERRITORIAL : LE CANTON&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal recommends the removal of cantons to streamline governance and reduce administrative layers."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"SUPPRIMER UN ÉCHELON TERRITORIAL : LE CANTON"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POURSUIVRE LA DÉCENTRALISATION DE L'ÉTAT&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal encourages the further decentralization of the State, including deploying state officials in local territories."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"POURSUIVRE LA DÉCENTRALISATION DE L'ÉTAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;REVOIR LE STATUT DES FONCTIONNAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests revising the status of civil servants to improve job mobility across different regions and professions."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"REVOIR LE STATUT DES FONCTIONNAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FACILITER LA PROXIMITÉ DES SERVICES ADMINISTRATIFS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal aims to enhance the accessibility of administrative services for citizens in small communities through mobile administration services."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"FACILITER LA PROXIMITÉ DES SERVICES ADMINISTRATIFS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;METTRE EN PLACE UN SOUTIEN INTERNET&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal seeks to provide Internet support for citizens who require assistance, enhancing digital access."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"METTRE EN PLACE UN SOUTIEN INTERNET"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉMOCRATIE CITOYENNETÉ&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"This theme addresses issues around citizen democracy, representation, and electoral processes affecting public involvement and governance."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"DÉMOCRATIE CITOYENNETÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COMPTABILISER LE VOTE BLANC&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal aims to ensure that blank votes are counted as valid expressions of opinion in electoral processes."&lt;SEP&gt;"This proposal endorses counting blank votes in elections to reflect public sentiment more accurately."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3&lt;SEP&gt;contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"COMPTABILISER LE VOTE BLANC"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INTRODUIRE LA PROPORTIONNELLE AUX ÉLECTIONS LÉGISLATIVES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal advocates for the introduction of proportional representation in legislative elections, with a suggestion of 30% of seats."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"INTRODUIRE LA PROPORTIONNELLE AUX ÉLECTIONS LÉGISLATIVES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉDUIRE DE 30 % LE NOMBRE DE DÉPUTÉS ET DE SÉNATEURS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal recommends a 30% reduction in the number of deputies and senators to streamline the legislative process and reduce costs."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"RÉDUIRE DE 30 % LE NOMBRE DE DÉPUTÉS ET DE SÉNATEURS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRIMER LE CESE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal calls for the elimination of the Economic and Social Council to reduce bureaucratic complexity."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"SUPPRIMER LE CESE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LIMITER LE RIC AUX SUJETS LOCAUX&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal proposes to limit the Citizen's Initiative Referendum (RIC) to local issues, enhancing its relevance and practicality."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"LIMITER LE RIC AUX SUJETS LOCAUX"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LIMITER LE 80 KM/H AUX ROUTES DÉPARTEMENTALES LES PLUS DANGEREUSES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal seeks to limit the speed of 80 km/h to only the most dangerous departmental roads for increased safety."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"LIMITER LE 80 KM/H AUX ROUTES DÉPARTEMENTALES LES PLUS DANGEREUSES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LIMITER LE NOMBRE DE MIGRANTS AUX POSSIBILITÉS D'INTÉGRATION DE NOTRE PAYS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests restricting the number of migrants to those whom the country can integrate effectively, establishing quotas."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"LIMITER LE NOMBRE DE MIGRANTS AUX POSSIBILITÉS D'INTÉGRATION DE NOTRE PAYS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AIDER LES PAYS D'ORIGINE DES MIGRANTS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal aims to provide assistance to the countries of origin of migrants to address root causes of migration and support development."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"AIDER LES PAYS D'ORIGINE DES MIGRANTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LA TRANSITION ÉCOLOGIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"This theme addresses environmental transition and policies aimed at protecting the environment and promoting sustainability."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"LA TRANSITION ÉCOLOGIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXER LE KÉROSÈNE DES AVIONS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests introducing taxes on aviation fuel to reduce environmental impact and promote sustainable transport."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"TAXER LE KÉROSÈNE DES AVIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;METTRE EN PLACE DES MOYENS DE TRANSPORT COLLECTIF ENTRE LES VILLAGES ET LES VILLES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal advocates for establishing collective transportation options such as taxi-buses and carpooling between villages and cities to enhance accessibility."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"METTRE EN PLACE DES MOYENS DE TRANSPORT COLLECTIF ENTRE LES VILLAGES ET LES VILLES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXER LES PRODUITS QUI NE RESPECTENT LES NORMES ENVIRONNEMENTALES DE L'EUROPE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal calls for taxing products that do not comply with European environmental standards to encourage sustainability."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"TAXER LES PRODUITS QUI NE RESPECTENT LES NORMES ENVIRONNEMENTALES DE L'EUROPE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXER LES POLLUEURS AU NIVEAU DE LA POLLUTION CRÉE PAR CHACUN&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests implementing taxes on polluters based on their individual contribution to pollution, promoting accountability and responsibility."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"TAXER LES POLLUEURS AU NIVEAU DE LA POLLUTION CRÉE PAR CHACUN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COMITÉ NATIONAL DU DÉBAT PUBLIC&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"The National Public Debate Committee is an institution involved in facilitating public discourse and debate on significant issues within France."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"COMITÉ NATIONAL DU DÉBAT PUBLIC"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CESE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"The Economic, Social and Environmental Council (CESE) is a French institution that advises on economic and social issues, often criticized for its effectiveness and utility."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"CESE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BUS MOBILE DES ADMINISTRATIONS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"This refers to a mobile administration bus, aimed at delivering public services to citizens in rural areas, enhancing access to government resources."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"BUS MOBILE DES ADMINISTRATIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INTERNET POUR LES CITOYENS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"This refers to the initiative to provide Internet support to citizens, focused on increasing digital access and reducing the digital divide."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"INTERNET POUR LES CITOYENS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;80 KM/H&quot;">
+  <ns0:data key="d0">"MODESCRUTIN"</ns0:data>
+  <ns0:data key="d1">"This refers to the speed limit of 80 km/h, particularly focused on safety regulations for certain road types in France."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"80 KM/H"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;QUOTAS&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"This refers to the establishment of quotas as a regulatory mechanism for controlling immigration in alignment with integration capabilities in the host country."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"QUOTAS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXE SUR LE KÉROSÈNE&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"This is a proposed tax on aviation fuel, aimed at reducing carbon emissions from air travel as part of environmental policy."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"TAXE SUR LE KÉROSÈNE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MESURES ENVIRONNEMENTALES&quot;">
+  <ns0:data key="d0">"CLUSTERSEMANTIQUE"</ns0:data>
+  <ns0:data key="d1">"This cluster encompasses various measures aimed at environmental preservation and promoting sustainability practices."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"MESURES ENVIRONNEMENTALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MOBILITÉ ENTRE LES MÉTIERS/RÉGIONS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests facilitating mobility among civil servants across different professions and regions to enhance workforce flexibility."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"MOBILITÉ ENTRE LES MÉTIERS/RÉGIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SOUTIEN POUR LES PAYS D'ORIGINE DES MIGRANTS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal emphasizes aid for migrants' countries of origin to address underlying issues leading to migration."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"SOUTIEN POUR LES PAYS D'ORIGINE DES MIGRANTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRANSPORT COLLECTIF ENTRE VILLAGES ET VILLES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal advocates for the establishment of public transport options connecting rural areas with urban centers to enhance accessibility."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"TRANSPORT COLLECTIF ENTRE VILLAGES ET VILLES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRIMES AU MÉRITE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal introduces merit-based bonuses for civil servants to incentivize performance and improve public service quality."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"PRIMES AU MÉRITE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉVALUATION DES COMITÉS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"This grievance expresses concerns regarding the effectiveness of various public committees and their impact on decision-making."</ns0:data>
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d3">"ÉVALUATION DES COMITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;UNE RETRAITÉE MODESTE&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Une retraitée modeste exprime ses opinions sur la gestion de l'État et les frais de fonctionnement des institutions gouvernementales."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"UNE RETRAITÉE MODESTE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GESTION DE L'ÉTAT&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"La gestion de l'État concerne l'organisation et le fonctionnement des institutions gouvernementales et leur impact sur les finances."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"GESTION DE L'ÉTAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AUTORITÉS ADMINISTRATIVES INDÉPENDANTES&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Les autorités administratives indépendantes sont des organismes qui fonctionnent sans lien direct avec le gouvernement, tels que la défense des droits."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"AUTORITÉS ADMINISTRATIVES INDÉPENDANTES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;JACQUES TOUBON&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Jacques Toubon est mentionné en tant que président d'une autorité indépendante, appelé à être responsable de la gestion."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"JACQUES TOUBON"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CHANTAL JOUANNO&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Chantal Jouanno est également mentionnée comme une figure ayant un rôle dans une autorité administrative indépendante."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"CHANTAL JOUANNO"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SENAT&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Le Sénat est mentionné comme une institution gouvernementale dont la réduction de membres est proposée."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"SENAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉLYSÉE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"L'Élysée est le siège de la présidence française, dont le train de vie est critiqué."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"ÉLYSÉE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDEURS D'ASILE POLITIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les vrais demandeurs d'asile politique sont ceux qui cherchent protection en raison de persécutions."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"DEMANDEURS D'ASILE POLITIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDEURS ÉCONOMIQUES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les demandeurs économiques sont ceux qui migrent pour des raisons économiques et sont critiqués.</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"DEMANDEURS ÉCONOMIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIER DE DOLÉANCES DE TAUGON&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Doléances de Taugon contient des propositions concernant l'électorat, l'immigration, et l'informatique pour les services administratifs."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"CAHIER DE DOLÉANCES DE TAUGON"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VOTE OBLIGATOIRE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"La proposition de rendre le vote obligatoire vise à augmenter la responsabilité des citoyens lors des élections."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"VOTE OBLIGATOIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AMENDE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"La sanction d'amende pour non-participation au vote est suggérée pour encourager la participation."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"AMENDE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AIDE EN MAIRIE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Proposé comme un soutien pour aider ceux qui ne peuvent pas s'équiper pour les services administratifs digitalisés."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"AIDE EN MAIRIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRAIS DE GESTION&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Les frais de gestion des institutions, tels que les salaires excessifs des présidents et les coûts de fonctionnement, sont critiqués comme étant trop élevés."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"FRAIS DE GESTION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRE DES FONCTIONNAIRES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Les salaires des fonctionnaires de la Chambre des députés, du Sénat, et de l'Élysée sont mentionnés comme une source de gaspillage financier."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"SALAIRE DES FONCTIONNAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AVANTAGES SOCIAUX POUR ANCIENS ÉLUS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Les avantages accordés aux anciens élus sont mentionnés comme une charge financière excessive pour l'État."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"AVANTAGES SOCIAUX POUR ANCIENS ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ACCOMPAGNEMENT TRÈS COÛTEUX DES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Les coûts liés aux soins et à l'assistance fournis aux anciens présidents sont dénoncés."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"ACCOMPAGNEMENT TRÈS COÛTEUX DES ANCIENS PRÉSIDENTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉDUCTION DU NOMBRE DES MEMBRES DU SÉNAT&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"La proposition de réduire le nombre de membres du Sénat est avancée comme une mesure de rationalisation des coûts."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"RÉDUCTION DU NOMBRE DES MEMBRES DU SÉNAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FINANCES DE L'ÉTAT&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les finances de l'État sont un sujet important dans les doléances portant sur la gestion et les dépenses publiques."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"FINANCES DE L'ÉTAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ENGAGEMENT CITOYEN&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"L'engagement citoyen est promu par des propositions visant à renforcer la responsabilité des citoyens concernant le vote."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"ENGAGEMENT CITOYEN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INFORMATIQUE DES SERVICES ADMINISTRATIFS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"L'informatisation des services administratifs est discutée, avec des propositions pour aider ceux qui n'ont pas accès à la technologie."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"INFORMATIQUE DES SERVICES ADMINISTRATIFS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BULLETINS BLANCS OU NULS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les bulletins blancs ou nuls sont mentionnés comme étant une forme de participation électorale à reconnaître."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"BULLETINS BLANCS OU NULS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RESPONSABILITÉ DES CITOYENS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"La responsabilité des citoyens est un thème central, surtout en ce qui concerne leur participation aux élections."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"RESPONSABILITÉ DES CITOYENS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDEURS DÉBOUTÉS DU DROIT D'ASILE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les demandeurs qui ont été refusés du droit d'asile doivent être pris en compte dans la gestion de l'immigration."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"DEMANDEURS DÉBOUTÉS DU DROIT D'ASILE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MANUSCRIT, 30 LIGNES, 241 MOTS (FEMME)&quot;">
+  <ns0:data key="d0">"VERBATIM"</ns0:data>
+  <ns0:data key="d1">"Le manuscrit est un compte rendu d'une contribution d'une citoyenne sur différents sujets qui la concernent."</ns0:data>
+  <ns0:data key="d2">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d3">"MANUSCRIT, 30 LIGNES, 241 MOTS (FEMME)"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GRAND DÉBAT&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Grand Débat is a national citizen consultation initiated by the French government to gather public opinions and proposals."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"GRAND DÉBAT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MACRON&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Macron is the President of France, addressed in the letter as the recipient of the citizens' grievances and opinions."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"MACRON"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Doléances is a document where citizens express their complaints and demands related to public policies and governance."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"CAHIER DE DOLÉANCES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Public services refer to government services provided to citizens, which require improvements and reforms as highlighted in the contributions."&lt;SEP&gt;"Services Publics refer to the public services that citizens believe need improvement and expansion, cited in the grievances."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d&lt;SEP&gt;contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SERVICES PUBLICS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POLITIQUE ULTRALIÉRALE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Politique Ultraliérale refers to the neoliberal policies criticized by the Gilets Jaunes for their impact on social justice and public goods."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"POLITIQUE ULTRALIÉRALE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉBAT&quot;">
+  <ns0:data key="d0">"QUESTION"</ns0:data>
+  <ns0:data key="d1">"Débat represents the discussion and dialogue fostered by the Grand Débat consultation, construed as problematic in this context."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"DÉBAT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DETTE PUBLIQUE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Dette Publique refers to the public debt that citizens argue could be increased due to unaddressed demands during the consultation."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"DETTE PUBLIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Taxes are pointed out as a crucial theme related to economic grievances affecting citizens' daily lives."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"TAXES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CHÔMAGE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Chômage refers to unemployment issues that are discussed as core problems within the citizen consultation."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"CHÔMAGE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉPONSES DU GOUVERNEMENT&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Réponses du Gouvernement is the citizens' opinion on how the government's responses to their grievances are inadequate and unsatisfactory."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"RÉPONSES DU GOUVERNEMENT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COCOTTE-MINUTE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Cocotte-minute is a metaphor indicating the potential for social unrest if the government's actions do not align with citizens' expectations."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"COCOTTE-MINUTE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COLLECTIF&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"collectif refers to a group of individuals participating in the contribution, indicating a collective voice of citizens expressing their opinions."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"COLLECTIF"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LETTRE AU PRÉSIDENT MACRON&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Lettre au Président Macron is a formal letter addressed to the French President, outlining the grievances and demands of the Gilets Jaunes."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"LETTRE AU PRÉSIDENT MACRON"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GROUPE DES GILETS JAUNES&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Groupe des Gilets Jaunes is a specific collective of the Gilets Jaunes participants who have voiced their opinions during the Grand Débat."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"GROUPE DES GILETS JAUNES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CRITIQUES DES CHRONIQUEURS&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Critiques des Chroniqueurs refers to the opinions expressed by journalists which claim that the Grand Débat does not adequately represent citizens' voices."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"CRITIQUES DES CHRONIQUEURS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MALAISE FRANÇAIS&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Malaise Français refers to the general sentiment of dissatisfaction among the French populace regarding current political and economic conditions."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"MALAISE FRANÇAIS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SIMPLIFICATION ADMINISTRATIVE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Simplification Administrative refers to the proposal for reducing bureaucratic procedures to improve public services."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"SIMPLIFICATION ADMINISTRATIVE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PARTICIPATIONS DANS D'AUTRES DÉBATS&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Participations dans d'autres Débats refers to the previous experiences of citizens participating in other discussions, influencing their views on the Grand Débat."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"PARTICIPATIONS DANS D'AUTRES DÉBATS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MOUVEMENT POLITIQUE&quot;">
+  <ns0:data key="d0">"COURANTIDEOLOGIQUE"</ns0:data>
+  <ns0:data key="d1">"Mouvement politique refers to the various political movements from which the Gilets Jaunes originate, representing diverse ideological backgrounds."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"MOUVEMENT POLITIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VIOLENCES ORCHESTRÉES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Violences Orchestrées refers to the grievances concerning alleged orchestrated violence against the Gilets Jaunes movement."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"VIOLENCES ORCHESTRÉES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉPONSES DES MÉDIAS&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Réponses des Médias signifies the public's perception of media narratives regarding the Gilets Jaunes, particularly with regard to their legitimacy."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"RÉPONSES DES MÉDIAS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MOBILISATIONS CONTINUES&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Mobilisations Continues indicates the ongoing support and activism among the Gilets Jaunes, emphasizing their sustained engagement."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"MOBILISATIONS CONTINUES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BAISSE DE PARTICIPATION&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Baisse de participation refers to the observed decrease in participation from some citizens in protests and how it is perceived by the Gilets Jaunes."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"BAISSE DE PARTICIPATION"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GRAND CONSENSUS&quot;">
+  <ns0:data key="d0">"CONSENSUS"</ns0:data>
+  <ns0:data key="d1">"Grand Consensus refers to the widespread agreement among citizens on certain grievances and proposals raised during the consultation."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"GRAND CONSENSUS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉPONSES INSUFFISANTES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Réponses Insuffisantes highlights the perception that the government's responses to citizen concerns are inadequate."</ns0:data>
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d3">"RÉPONSES INSUFFISANTES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉMOCRATIE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Démocratie refers to the theme of citizen participation and governance, highlighting the need for democratic reforms in institutions."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"DÉMOCRATIE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYENNETÉ&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Citoyenneté represents citizenship, emphasizing the involvement and rights of citizens in the political process."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"CITOYENNETÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INSTITUTIONS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Institutions are the governing bodies that citizens wish to reform to enhance democracy and representation."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"INSTITUTIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SIXIÈME RÉPUBLIQUE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal for a sixth republic calls for establishing a new constitution that would modernize the current political framework."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SIXIÈME RÉPUBLIQUE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RIC&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"RIC stands for Référendum d’Initiative Citoyenne, a proposal for allowing citizens to initiate referendums on various matters."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RIC"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ASSEMBLÉE CITOYENNE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The assembly of citizens is suggested to replace the Senate, allowing for direct representation of citizens' voices."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"ASSEMBLÉE CITOYENNE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROPORTIONNELLE INTÉGRALE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Proportionnelle intégrale refers to the electoral representation system that aims for full proportionality in elections for better representation."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"PROPORTIONNELLE INTÉGRALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VOTE BLANC&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Vote blanc is the concept of recognizing blank votes as valid expressions of opinion."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"VOTE BLANC"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CUMUL DES MANDATS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal seeks to abolish the holding of multiple political offices simultaneously by elected officials."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"CUMUL DES MANDATS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRES DES ÉLUS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Adjusting elected officials' salaries aims for fairness and accountability within public service."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SALAIRES DES ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMMUNITÉ PARLEMENTAIRE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal for the abolition of parliamentary immunity seeks to hold elected officials accountable for their actions."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"IMMUNITÉ PARLEMENTAIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRAUDES FISCALES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This refers to measures advocating for strict penalties against significant tax frauds."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"FRAUDES FISCALES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CICE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"CICE refers to a tax credit for competitiveness and employment that should be limited in usage."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"CICE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈME DE RETRAITE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The retirement system proposal emphasizes a fair and coherent approach to pension distribution."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SYSTÈME DE RETRAITE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HARMONISATION FISCALE EUROPEENNE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The harmonization of European taxation is a proposal for unifying tax regulations across EU member states."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"HARMONISATION FISCALE EUROPEENNE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONSTITUTION EUROPEENNE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This refers to the total annulment of the European Constitution as per the citizen's demands."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"CONSTITUTION EUROPEENNE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COUR DES COMPTES&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"The Cour des Comptes is an institution responsible for auditing public finances, involved in ensuring transparency."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"COUR DES COMPTES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉLECTEURS&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"Electeurs refers to the citizens eligible to vote who are calling for better representation and reforms."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"ÉLECTEURS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉLECTIONS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Elections are public services essential for democracy, where citizens express their will through voting."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"ÉLECTIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITÉ&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Cité refers to the community or municipality where the citizens express their grievances and proposals."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"CITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMMIGRATION&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Immigration is a theme concerning how to manage and regulate the influx of people into the country."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"IMMIGRATION"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈME DE SÉCURITÉ SOCIALE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The social security system proposal focuses on harmonizing benefits and services to ensure equality."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SYSTÈME DE SÉCURITÉ SOCIALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRAITEES EUROPEENS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Negotiating the European Treaties aligns with the demand for more autonomy and revised regulations for France within the EU."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"TRAITEES EUROPEENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYENS&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Citizens refer to the individuals who contribute their opinions, grievances, and proposals for reform."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"CITOYENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DISSOLUTION DES ASSEMBLÉES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal to dissolve the assemblies and enforce direct elections by citizens aims to increase public involvement in governance."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"DISSOLUTION DES ASSEMBLÉES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRÉSENCE OBLIGATOIRE DES ÉLUS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Requiring the mandatory presence of elected officials during votes in assemblies is proposed to enhance accountability."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"PRÉSENCE OBLIGATOIRE DES ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRESSION DU CUMUL DES MANDATS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This suggests eliminating the practice of holding multiple political offices simultaneously to reduce conflicts of interest."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SUPPRESSION DU CUMUL DES MANDATS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉAJUSTEMENT DES SALAIRES DES ÉLUS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Revising the salaries of elected officials to ensure fair compensation and accountability in public service is proposed."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÉAJUSTEMENT DES SALAIRES DES ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FIN DES PRIVILÈGES À VIE DES ÉLUS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal to end life-long salaries and privileges for elected officials aims to promote ethical standards in governance."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"FIN DES PRIVILÈGES À VIE DES ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRESSION DE L'IMMUNITÉ PARLEMENTAIRE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Abolishing parliamentary immunity is proposed to ensure that elected officials are held accountable for their actions."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SUPPRESSION DE L'IMMUNITÉ PARLEMENTAIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INÉLIGIBILITÉ À VIE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Proposing that elected officials found guilty of misconduct during their term become permanently ineligible for office aims to restore integrity."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"INÉLIGIBILITÉ À VIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PEINE PLANCHER&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"A proposal for a minimum penalty for serious tax fraud aims to deter illegal activities and uphold fairness in taxation."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"PEINE PLANCHER"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INTERDICTION D'EXERCER UNE FONCTION PUBLIQUE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests banning individuals with serious criminal convictions from holding public office."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"INTERDICTION D'EXERCER UNE FONCTION PUBLIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AVIS DÉCISIONNEL DE LA COUR DES COMPTES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal for a decisive opinion from the Cour des Comptes on public finances aims to enhance accountability."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"AVIS DÉCISIONNEL DE LA COUR DES COMPTES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ALLOCATION D'UN BUDGET FIXE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Allocating a fixed and identical budget for each political party for campaign financing aims to promote equality in electoral processes."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"ALLOCATION D'UN BUDGET FIXE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉGALITÉ DU TEMPS DE PAROLE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Ensuring equal speaking time for all political parties during elections aims to enhance fairness."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"ÉGALITÉ DU TEMPS DE PAROLE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;STATUT DU CONJOINT DU PRÉSIDENT&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal suggests there should be no official status for the spouse of the president to avoid conflicts of interest."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"STATUT DU CONJOINT DU PRÉSIDENT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFORME DE L'ENA&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"An overhaul of the École Nationale d'Administration and the status of public officials is proposed to improve public service quality."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÉFORME DE L'ENA"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFORME DES MÉDIAS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The reform of media institutions and reevaluation of director nominations aims to enhance media integrity and independence."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÉFORME DES MÉDIAS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉVISION DU MILLEFEUILLE TERRITORIAL&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal seeks to reevaluate and simplify the administrative divisions to improve governance effectiveness."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÉVISION DU MILLEFEUILLE TERRITORIAL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÔLE DES COMMISSIONS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Reassessing the role and utility of legislative commissions aims to optimize their functioning and relevance."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÔLE DES COMMISSIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÈGLEMENTATION DE L'IMMIGRATION&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal for regulating immigration suggests that policies should address root causes and be based on the host country's capacity."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÈGLEMENTATION DE L'IMMIGRATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈME DE TAXATION&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"A comprehensive review of the taxation system, including reassessments and the introduction of new taxes, is proposed to improve fiscal balance."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"SYSTÈME DE TAXATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NATIONALISATION DES SOURCES D'ÉNERGIE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal advocates for nationalizing energy sources to ensure public control over vital resources."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"NATIONALISATION DES SOURCES D'ÉNERGIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RENATIONALISATION DES AUTOROUTES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Reclaiming control over highways through nationalization is proposed as a measure for improving public infrastructure management."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RENATIONALISATION DES AUTOROUTES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;STOP AUX PRIVATISATIONS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Ending the privatization of state assets and services is proposed to maintain public ownership and accountability."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"STOP AUX PRIVATISATIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉVISE DES DROITS DE SUCCESSION&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Reviewing inheritance laws aims to ensure fairness in wealth distribution and taxation."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÉVISE DES DROITS DE SUCCESSION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LIMITATION DES TARIFS DES LOYERS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposed limitation on rent prices aims to make housing affordable and proportionate to tenants' income."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"LIMITATION DES TARIFS DES LOYERS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFORME DE L'EMPLOI&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Proposals related to labor policies and restructuring aim to improve employment rates and conditions."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RÉFORME DE L'EMPLOI"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;EUROPE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Europe refers to the challenges and reforms proposed regarding the European Union and its regulations."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"EUROPE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HARMONISATION SOCIALE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Social harmonization within the EU is proposed to align social policies amongst member states for equity."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"HARMONISATION SOCIALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ANNULATION DE LA CONSTITUTION EUROPEENNE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The demand for the annulment of the European Constitution reflects significant concerns about EU governance."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"ANNULATION DE LA CONSTITUTION EUROPEENNE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RENÉGOCIATION DES TRAITÉS EUROPEENS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Renegotiating European treaties aims to address perceived imbalances and injustices within the EU framework."</ns0:data>
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d3">"RENÉGOCIATION DES TRAITÉS EUROPEENS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;APPLIQUER LES RECOMMANDATIONS DU RAPPORT 'ACTIONS PUBLIQUES 2022&quot;">
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d1">"The application of this report's recommendations relates to public spending as it aims to manage financial resources effectively."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICEPUBLIC&quot;">
+  <ns0:data key="d2">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d1">"The initiative for a mobile administration bus is directly related to public services aimed at increasing accessibility for citizens."&lt;</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d2">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d1">"The Cocotte-minute metaphorically represents the risk of social upheaval if the Government ignores citizens' grievances."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRANSPARENCE&quot;">
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d1">"The Cour des Comptes oversees public finances and ensures the transparency of public accounts."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈME D'ACCUEIL&quot;">
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d1">"The management of immigration votes must consider the hosting capabilities and social responsibilities."::</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉCONOMIE&quot;">
+  <ns0:data key="d2">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d1">"Citizens express economic grievances and demand reforms to improve financial conditions."::</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:edge source="&quot;CAHIER DE TAUGON&quot;" target="&quot;MAIRE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Taugon captures the contributions made during the meeting organized by the Maire for citizen engagement."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MAIRE&quot;" target="&quot;27 PERSONNES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Maire organized a meeting that involved the participation of 27 personnes, showing his role in facilitating citizen dialogue."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;27 PERSONNES&quot;" target="&quot;GILETS JAUNES&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"Among the 27 personnes, 2 are identified as Gilets jaunes, indicating the presence of diverse citizen perspectives."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;OPINIONS DES CITOYENS&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"The inclusion of Gilets jaunes among 27 personnes reflects their influence on the Opinions des citoyens expressed during the Réunion."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;GRAND DÉBAT&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Gilets Jaunes are participants in the Grand Débat, voicing their grievances and proposals in the consultation."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;MACRON&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Macron is addressed directly by the Gilets Jaunes, expressing their discontent with his policies."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;CAHIER DE DOLÉANCES&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"The grievances of the Gilets Jaunes are formally documented in the Cahier de Doléances."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;POLITIQUE ULTRALIÉRALE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Gilets Jaunes express their grievance against the Politique Ultraliérale that they believe harms the public good."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;RÉPONSES DU GOUVERNEMENT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Gilets Jaunes critique the Réponses du Gouvernement as inadequate to address their concerns."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;MALAISE FRANÇAIS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Malaise Français describes the broader discontent from which the Gilets Jaunes movement arises, indicating common grievances."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;PARTICIPATIONS DANS D'AUTRES DÉBATS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Participations dans d'autres Débats inform the Gilets Jaunes' perspective about the Grand Débat, shaping their approaches and responses."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;RÉPONSES DES MÉDIAS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Réponses des Médias influence public perception of the Gilets Jaunes, impacting their legitimacy and support."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;MOBILISATIONS CONTINUES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Mobilisations Continues denotes persistent efforts by Gilets Jaunes to advocate for their demands amid changing social dynamics."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;GRAND CONSENSUS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Grand Consensus among citizens encapsulates the shared grievances that unite the Gilets Jaunes movement in their demands."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;RÉPONSES INSUFFISANTES&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"Réponses Insuffisantes represent the key critique of Gilets Jaunes regarding how their grievances are addressed or ignored by authorities."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉUNION&quot;" target="&quot;OPINIONS DES CITOYENS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Réunion was a platform for gathering the Opinions des citoyens, showcasing active participation in the civic process."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉUNION&quot;" target="&quot;PROPOSITIONS DES CITOYENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"During the Réunion, citizens were able to present their Propositions, reflecting their concerns and aspirations."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉUNION&quot;" target="&quot;GRIEVANCES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Réunion served as an opportunity for citizens to voice their Grievances, indicating the meeting's role in addressing community issues."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉUNION&quot;" target="&quot;TAUGON&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The Réunion took place in Taugon, emphasizing the local context of the citizen engagement efforts."</ns0:data>
+  <ns0:data key="d7">contrib-556699066954d174008f8b917863b6c5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;TAUGON&quot;" target="&quot;GRAND DÉBAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Taugon is a specific location participating in the Grand Débat, voicing localized concerns of its citizens."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔTS&quot;" target="&quot;BAISSER LA CSG À 6,6 % POUR TOUS LES RETRAITÉS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal to decrease the CSG relates directly to the taxation theme, addressing how taxes affect retirees."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔTS&quot;" target="&quot;INDEXER LES PENSIONS DE RETRAITE SUR L'INFLATION&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal to index pension increases directly connects with taxation as it affects financial policies for retirees."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔTS&quot;" target="&quot;SUPPRIMER LES PRINCIPALES NICHES FISCALES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal to eliminate tax loopholes is intricately linked to the overall tax theme, aiming at equitable taxation."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔTS&quot;" target="&quot;RÉTABLIR L'ISF POUR LES PLUS RICHES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Reintroducing the Wealth Tax is a direct legislative proposal concerning taxation policies aimed at richer individuals."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;APPLIQUER LES RECOMMANDATIONS DU RAPPORT 'ACTIONS PUBLIQUES 2022&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The application of this report's recommendations relates to public spending as it aims to manage financial resources effectively."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;SUPPRIMER LES COMITÉS INUTILES ET INEFFICACES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Removing ineffective committees directly affects the management and efficiency of public spending."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;COMITÉ NATIONAL DU DÉBAT PUBLIC&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The National Public Debate Committee is relevant within discussions on public spending, which is often shaped by public discourse."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉPENSES PUBLIQUES&quot;" target="&quot;ÉVALUATION DES COMITÉS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Concerns about the effectiveness of public committees impact the management and allocation of public spending."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ORGANISATION DE L'ÉTAT ET DES COLLECTIVITÉS PUBLIQUES&quot;" target="&quot;SUPPRIMER UN ÉCHELON TERRITORIAL : LE CANTON&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"This proposal to eliminate a territorial level relates to the organizational structure of the State and public entities."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ORGANISATION DE L'ÉTAT ET DES COLLECTIVITÉS PUBLIQUES&quot;" target="&quot;POURSUIVRE LA DÉCENTRALISATION DE L'ÉTAT&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Promoting decentralization involves changing the organizational structure of State's governance."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ORGANISATION DE L'ÉTAT ET DES COLLECTIVITÉS PUBLIQUES&quot;" target="&quot;REVOIR LE STATUT DES FONCTIONNAIRES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Revising civil servant regulations directly alters how the public service is organized and operates."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ORGANISATION DE L'ÉTAT ET DES COLLECTIVITÉS PUBLIQUES&quot;" target="&quot;MOBILITÉ ENTRE LES MÉTIERS/RÉGIONS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Facilitating mobility among civil servants relates to the organization and effectiveness of public service delivery."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ORGANISATION DE L'ÉTAT ET DES COLLECTIVITÉS PUBLIQUES&quot;" target="&quot;PRIMES AU MÉRITE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Implementing merit-based bonuses relates to improving the organization and efficiency of public service performance."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;DÉMOCRATIE CITOYENNETÉ&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"This overarching theme represents various proposals that seek to enhance citizen democratic engagement and representation."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;COMPTABILISER LE VOTE BLANC&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Counting white votes relates to enhancing the integrity of the democratic process within the citizenship theme."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;INTRODUIRE LA PROPORTIONNELLE AUX ÉLECTIONS LÉGISLATIVES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Proportional representation is a direct proposal aimed at improving electoral democracy, fitting within the citizen democracy theme."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;RÉDUIRE DE 30 % LE NOMBRE DE DÉPUTÉS ET DE SÉNATEURS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Reducing the number of representatives is a reform suggestion that pertains directly to the mechanisms of citizen representation in democracy."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;LIMITER LE RIC AUX SUJETS LOCAUX&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Limiting the Citizen's Initiative Referendum to local issues relates to practical frameworks for engaging citizens in democracy."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;LIMITER LE NOMBRE DE MIGRANTS AUX POSSIBILITÉS D'INTÉGRATION DE NOTRE PAYS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"This proposal addresses how immigration intersects with citizenship rights and responsibilities, impacting democratic engagement."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;CESE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The CESE is linked to the theme of citizen democracy, as it provides advisory roles on social issues that reflect public interests."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;80 KM/H&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The speed limit of 80 km/h is a regulatory issue that influences local governance and citizen engagement in road safety debates."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;QUOTAS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Establishing quotas for migrants relates directly to the integration policies and frameworks that shape citizenship and democratic participation."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE CITOYENNETÉ&quot;" target="&quot;SOUTIEN POUR LES PAYS D'ORIGINE DES MIGRANTS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Providing support to countries of origin for migrants connects to broader themes of immigration policy within citizen governance."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;LA TRANSITION ÉCOLOGIQUE&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"This overarching theme encapsulates various proposals focused on environmental sustainability and policies for ecological transition."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;TAXER LE KÉROSÈNE DES AVIONS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Introducing taxes on aviation fuel is a proposal aimed at reducing aviation's environmental impact within ecological transition efforts."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;METTRE EN PLACE DES MOYENS DE TRANSPORT COLLECTIF ENTRE LES VILLAGES ET LES VILLES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Establishing collective transport relates to promoting sustainable transport options in ecological transition."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;TAXER LES PRODUITS QUI NE RESPECTENT LES NORMES ENVIRONNEMENTALES DE L'EUROPE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Taxing non-compliant products relates directly to enforcing environmental standards as part of the ecological transition agenda."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;TAXER LES POLLUEURS AU NIVEAU DE LA POLLUTION CRÉE PAR CHACUN&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Taxing polluters based on their impact is a significant proposal within environmental protection efforts in the ecological transition theme."</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;TAXE SUR LE KÉROSÈNE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposed tax on aviation fuel is a key measure within environmental policies aimed at reducing carbon emissions."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;MESURES ENVIRONNEMENTALES&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"This cluster of environmental measures directly supports the overarching theme of ecological transition and sustainability efforts."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LA TRANSITION ÉCOLOGIQUE&quot;" target="&quot;TRANSPORT COLLECTIF ENTRE VILLAGES ET VILLES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Establishing collective transport options supports ecological transition efforts by promoting sustainable transportation."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;BUS MOBILE DES ADMINISTRATIONS&quot;" target="&quot;SERVICEPUBLIC&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The initiative for a mobile administration bus is directly related to public services aimed at increasing accessibility for citizens."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;INTERNET POUR LES CITOYENS&quot;" target="&quot;SERVICEPUBLIC&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The provision of Internet support relates directly to enhancing public services related to digital accessibility for citizens."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4aad1b173134d09b9d8d57335249f5ef</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;UNE RETRAITÉE MODESTE&quot;" target="&quot;GESTION DE L'ÉTAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Une retraitée modeste exprime des préoccupations concernant la gestion de l'État et les frais associés aux institutions gouvernementales."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;UNE RETRAITÉE MODESTE&quot;" target="&quot;FRAIS DE GESTION&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La retraitée critique les frais de gestion excessifs, illustrant son mécontentement vis-à-vis des dépenses publiques."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;UNE RETRAITÉE MODESTE&quot;" target="&quot;RÉDUCTION DU NOMBRE DES MEMBRES DU SÉNAT&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"La retraitée propose la réduction du Sénat comme une réforme souhaitable."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GESTION DE L'ÉTAT&quot;" target="&quot;AUTORITÉS ADMINISTRATIVES INDÉPENDANTES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"La gestion de l'État inclut le fonctionnement des autorités administratives indépendantes, qui sont critiquées pour leurs coûts."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GESTION DE L'ÉTAT&quot;" target="&quot;SENAT&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"La gestion de l'État est liée aux propositions relatives à la réduction du Sénat."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GESTION DE L'ÉTAT&quot;" target="&quot;ÉLYSÉE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Le train de vie de l'Élysée est une critique liée à la gestion défaillante des finances de l'État."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GESTION DE L'ÉTAT&quot;" target="&quot;FINANCES DE L'ÉTAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La gestion de l'État est intimement liée à l'état des finances publiques, sujet de préoccupation pour la retraitée."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AUTORITÉS ADMINISTRATIVES INDÉPENDANTES&quot;" target="&quot;JACQUES TOUBON&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Jacques Toubon est mentionné en tant que président de l'autorité administrative indépendante critiquée."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AUTORITÉS ADMINISTRATIVES INDÉPENDANTES&quot;" target="&quot;CHANTAL JOUANNO&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Chantal Jouanno est également mentionnée comme une figure clé au sein d'une autorité indépendante."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DEMANDEURS D'ASILE POLITIQUE&quot;" target="&quot;DEMANDEURS ÉCONOMIQUES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"La distinction entre demandeurs d'asile politique et économique est faite pour des raisons de politique migratoire."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DEMANDEURS D'ASILE POLITIQUE&quot;" target="&quot;DEMANDEURS DÉBOUTÉS DU DROIT D'ASILE&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"La détention de demandeurs déboutés du droit d'asile est liée à la politique sur l'asile."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES DE TAUGON&quot;" target="&quot;VOTE OBLIGATOIRE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances de Taugon propose de rendre le vote obligatoire, montrant une volonté d'engagement citoyen."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES DE TAUGON&quot;" target="&quot;AIDE EN MAIRIE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Le cahier mentionne la nécessité d'une aide en mairie pour faciliter l'utilisation des services administratifs digitalisés."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES DE TAUGON&quot;" target="&quot;INFORMATIQUE DES SERVICES ADMINISTRATIFS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Le cahier aborde la nécessité d'informatiser les services administratifs tout en offrant de l'aide."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES DE TAUGON&quot;" target="&quot;RESPONSABILITÉ DES CITOYENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Le cahier évoque plusieurs points liés à la responsabilité civique des citoyens."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;VOTE OBLIGATOIRE&quot;" target="&quot;AMENDE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La proposition de vote obligatoire inclut une sanction financière pour ceux qui ne respectent pas cette obligation."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;VOTE OBLIGATOIRE&quot;" target="&quot;ENGAGEMENT CITOYEN&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"La décision de rendre le vote obligatoire est perçue comme un moyen de renforcer l'engagement citoyen."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;VOTE OBLIGATOIRE&quot;" target="&quot;BULLETINS BLANCS OU NULS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Rendre le vote obligatoire permettrait aussi de comptabiliser les bulletins blancs."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FRAIS DE GESTION&quot;" target="&quot;SALAIRE DES FONCTIONNAIRES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Les salaires des fonctionnaires sont mentionnés comme des éléments de frais de gestion trop élevés."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FRAIS DE GESTION&quot;" target="&quot;AVANTAGES SOCIAUX POUR ANCIENS ÉLUS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"La retraitée fait état des avantages financiers disproportionnés pour les anciens élus lors de sa critique des frais."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FRAIS DE GESTION&quot;" target="&quot;ACCOMPAGNEMENT TRÈS COÛTEUX DES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Le coût de l'accompagnement des anciens présidents est un exemple des frais excessifs cités."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉDUCTION DU NOMBRE DES MEMBRES DU SÉNAT&quot;" target="&quot;FINANCES DE L'ÉTAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La réduction des membres du Sénat est liée à un besoin des finances de l'État."</ns0:data>
+  <ns0:data key="d7">contrib-529dc88a1068ac6637845996e2910e9d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GRAND DÉBAT&quot;" target="&quot;DÉBAT&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Grand Débat aims to facilitate a Débat among citizens about important issues, although it is criticized for biases."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GRAND DÉBAT&quot;" target="&quot;LETTRE AU PRÉSIDENT MACRON&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Lettre au Président Macron is part of the discourse related to the Grand Débat, expressing citizen demands and concerns."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MACRON&quot;" target="&quot;COCOTTE-MINUTE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The mention of Cocotte-minute indicates a warning to Macron regarding the citizens' frustration with ongoing issues."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;SERVICES PUBLICS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Cahier de Doléances includes demands for improved Services Publics to address citizens' needs."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;TAXES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The theme of Taxes is significant in the Cahier de Doléances, reflecting economic concerns of citizens."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;CHÔMAGE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Chômage is highlighted in the Cahier de Doléances as a major issue impacting citizens' well-being."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;COLLECTIF&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The collectif contributes to the Cahier de Doléances, representing collective grievances and opinions from citizens."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;SIMPLIFICATION ADMINISTRATIVE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Simplification Administrative is proposed as a measure to improve Services Publics as voiced by citizens in their contributions."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Citizens express dissatisfaction with public services, pushing for significant reforms to improve their quality."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉPONSES DU GOUVERNEMENT&quot;" target="&quot;CRITIQUES DES CHRONIQUEURS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Critiques des Chroniqueurs emphasize the inadequacy of the Réponses du Gouvernement in addressing citizen sentiments."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;COCOTTE-MINUTE&quot;" target="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Cocotte-minute metaphorically represents the risk of social upheaval if the Government ignores citizens' grievances."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;COLLECTIF&quot;" target="&quot;GROUPE DES GILETS JAUNES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Groupe des Gilets Jaunes is a specific manifestation of the collectif that engages in discussions and contributions during the Grand Débat."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;VIOLENCES ORCHESTRÉES&quot;" target="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Violences Orchestrées suggest that the government's response to the Gilets Jaunes is perceived as antagonistic, leading to grievances."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;BAISSE DE PARTICIPATION&quot;" target="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Baisse de participation indicates a notion that the government misinterprets the conditions within the movement, which is critical for future actions."</ns0:data>
+  <ns0:data key="d7">contrib-5f8c72533d82a572d8a6b3e331dae59d</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Citizens demand reforms to enhance democracy through active participation in governance."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉMOCRATIE&quot;" target="&quot;SIXIÈME RÉPUBLIQUE&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"The push for a sixth republic aims to reform democracy through introducing a new constitution."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SIXIÈME RÉPUBLIQUE&quot;" target="&quot;HARMONISATION FISCALE EUROPEENNE&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Constitutional reforms proposed may include fiscal harmonization as part of democratic upgrades."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RIC&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Citizens express a desire for a referendum initiative to allow them to influence legislation directly."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ASSEMBLÉE CITOYENNE&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Citizens propose replacing the Senate with a citizen assembly for direct representation."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PROPORTIONNELLE INTÉGRALE&quot;" target="&quot;ÉLECTIONS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Proportionality in elections is proposed to enhance fairness and representation in the electoral process."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;VOTE BLANC&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The recognition of blank votes correlates with citizens' rights to express dissent in elections."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SALAIRES DES ÉLUS&quot;" target="&quot;COUR DES COMPTES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Cour des Comptes could play a role in regulating and auditing the salaries of elected officials."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FRAUDES FISCALES&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Citizens demand strict measures against tax fraud, linking their concerns to broader fiscal reforms."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SYSTÈME DE RETRAITE&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The retirement system calls for revisions that align with the needs of the citizens."::</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;HARMONISATION FISCALE EUROPEENNE&quot;" target="&quot;TRAITEES EUROPEENS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal for fiscal harmonization ties directly to renegotiating European treaties."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;COUR DES COMPTES&quot;" target="&quot;TRANSPARENCE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Cour des Comptes oversees public finances and ensures the transparency of public accounts."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMMIGRATION&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Citizens express concerns over immigration and propose methods to address its causes and regulations."</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMMIGRATION&quot;" target="&quot;SYSTÈME D'ACCUEIL&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"The management of immigration votes must consider the hosting capabilities and social responsibilities."::</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CITOYENS&quot;" target="&quot;ÉCONOMIE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Citizens express economic grievances and demand reforms to improve financial conditions."::</ns0:data>
+  <ns0:data key="d7">contrib-88c9493257e442f47af1ac0df3e0b4c3</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>

@@ -1,0 +1,954 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d9" for="edge" attr.name="relationship_type" attr.type="string" />
+<ns0:key id="d8" for="edge" attr.name="order" attr.type="long" />
+<ns0:key id="d7" for="edge" attr.name="source_id" attr.type="string" />
+<ns0:key id="d6" for="edge" attr.name="description" attr.type="string" />
+<ns0:key id="d5" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d4" for="node" attr.name="clusters" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="entity_name" attr.type="string" />
+<ns0:key id="d2" for="node" attr.name="source_id" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="description" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+<ns0:graph edgedefault="undirected"><node id="&quot;FONTENET_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Fontenet - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Fontenet-commune-root"</data><data key="d3">"FONTENET_COMMUNE"</data><data key="d4">[]</data></node><node id="&quot;FONTENET_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Fontenet - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Fontenet-commune-root"</data><data key="d3">"FONTENET_COMMUNE"</data><data key="d4">[]</data></node><ns0:node id="&quot;CAHIER DE FONTENET&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Fontenet is a citizen consultation document where opinions and grievances regarding political and financial matters are expressed."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"CAHIER DE FONTENET"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FEMME&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Femme is the contributor of the document, expressing her opinions and proposals related to public policies and reforms."&lt;SEP&gt;"Femme refers to the contributor of the text, who expresses opinions and grievances as a citizen."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11&lt;SEP&gt;contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"FEMME"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉDUCTION DES RETRAITES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Réduction des retraites proposes a significant reduction of pensions for former presidents and politicians to alleviate financial burdens."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"RÉDUCTION DES RETRAITES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPER-PRÉSIDENTE DE CROATIE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Super-présidente de Croatie is hinted as a role model for reducing lavish governmental spending in France, especially at the Élysée and in ministries."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"SUPER-PRÉSIDENTE DE CROATIE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ISF&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"ISF (Impôt de Solidarity sur la Fortune) refers to the wealth tax that the contributor suggests reinstating for the wealthier population."&lt;SEP&gt;"ISF (Impôt de Solidarité sur la Fortune) is a wealth tax in France that has been abolished, leading to grievances regarding fiscal injustice."&lt;SEP&gt;"ISF refers to the proposed reinstatement of the Impôt de Solidarité sur la Fortune, a wealth tax seen as a corrective measure for fiscal inequality."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11&lt;SEP&gt;contrib-605c676244d35c4cbb487b9c47cad602&lt;SEP&gt;contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"ISF"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DIALOGUE AVEC LE PEUPLE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Dialogue avec le peuple refers to accepting public discourse and listening to citizens as an essential approach for governance."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"DIALOGUE AVEC LE PEUPLE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFÉRENDUM&quot;">
+  <ns0:data key="d0">"QUESTION"</ns0:data>
+  <ns0:data key="d1">"Référendum is raised as a method for engaging with citizens and obtaining their opinions on significant issues."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"RÉFÉRENDUM"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PAIX ET SÉRÉNITÉ&quot;">
+  <ns0:data key="d0">"CONSENSUS"</ns0:data>
+  <ns0:data key="d1">"Paix et sérénité represent the desired states of society that the contributor hopes will be restored through political listening and reforms."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"PAIX ET SÉRÉNITÉ"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Cahier de doléances is a document meant for gathering citizen grievances and opinions regarding public policies and governance."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"CAHIER DE DOLÉANCES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MAIRE DE FONTENET&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Maire de Fontenet is the recipient of the contribution, representing the local government and authority responsible for addressing the concerns raised by citizens."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"MAIRE DE FONTENET"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GUERRE CIVILE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Guerre civile refers to the contributor's expressed anger about the societal unrest and challenges faced by the citizens in their country."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"GUERRE CIVILE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FONDS&quot;">
+  <ns0:data key="d0">"QUESTION"</ns0:data>
+  <ns0:data key="d1">"Fonds indicates a query about where to find financial resources to support public services and initiatives."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"FONDS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRAIN DE VIE À L’ÉLYSÉE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Train de vie à l’Élysée refers to the proposed reduction of the extravagant lifestyle and expenses of the government, particularly at the presidential level."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"TRAIN DE VIE À L’ÉLYSÉE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POTS CASSÉS&quot;">
+  <ns0:data key="d0">"METAPHOR"</ns0:data>
+  <ns0:data key="d1">"Pots cassés is a metaphor used to express the idea that the same group of citizens always suffers the consequences of political mismanagement and crisis."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"POTS CASSÉS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BEAU PAYS&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Beau pays is a conceptual expression reflecting the contributor's love for France and desire to restore its image through effective governance."</ns0:data>
+  <ns0:data key="d2">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d3">"BEAU PAYS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LIBERTÉ, ÉGALITÉ ET FRATERNITÉ&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"This phrase inscribed on public buildings symbolizes the fundamental values of the French Republic. The contribution questions its current relevance."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"LIBERTÉ, ÉGALITÉ ET FRATERNITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYENS&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Citizens are individuals contributing their thoughts on societal issues affecting their living conditions and the responsibilities of elected officials."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"CITOYENS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;C.D.I.&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"C.D.I. refers to a permanent employment contract, representing job stability which is problematic when citizens cannot afford living expenses."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"C.D.I."</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LOGEMENTS SOCIAUX&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Social housing is a public service that aims to provide affordable housing. The contribution criticizes the refusal to construct more housing."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"LOGEMENTS SOCIAUX"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AGRICULTEURS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Farmers face the challenge of selling products below cost, which threatens their livelihood and contradicts the values of fair work."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"AGRICULTEURS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahiers de doléances are citizen contributions that reflect grievances and opinions regarding current injustices and public policy."&lt;SEP&gt;"Les cahiers de doléances sont des documents permettant aux citoyens d'exprimer leurs opinions, propositions et doléances."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b&lt;SEP&gt;contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"CAHIERS DE DOLÉANCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉLUS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Elected officials are representatives criticized for their privileges and lack of engagement with the concerns of average citizens."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRIVILEGES ANCIENS ÉLUS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Former elected officials retain privileges which are viewed as unfair, given their lack of responsibility towards their previous duties."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"PRIVILEGES ANCIENS ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"The contribution expresses grievances regarding increasing taxes viewed as burdensome for the general populace to remedy the financial mismanagement."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"TAXES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;1789&quot;">
+  <ns0:data key="d0">"CONSENSUS"</ns0:data>
+  <ns0:data key="d1">"Referencing the year 1789 signifies the historical abolition of privileges which the contributor feels is being undone in modern society."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"1789"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HOMME&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Homme refers to a male citizen contributing to the grievances expressed in the document, highlighting issues faced by individuals working in various sectors."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"HOMME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AMENDES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Fines are mentioned as a preferred choice by some cities over taking action to build social housing, representing systemic issues in public policy."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"AMENDES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRODUITS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Products sold by farmers at a loss are a theme representing the economic challenges facing the agricultural sector."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"PRODUITS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CUMUL DES MANDATS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"The accumulation of mandates refers to elected representatives holding multiple positions which may lead to conflicts of interest and detachment from constituents."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"CUMUL DES MANDATS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INDEMNITÉS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Indemnities received by elected officials are viewed as excessive, especially during times when citizens struggle financially."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"INDEMNITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HONTE&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"‘Honte’ expresses a strong opinion regarding the actions and decisions of cities that opt to pay fines instead of addressing housing shortages."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"HONTE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PETIT PEUPLE&quot;">
+  <ns0:data key="d0">"CONSENSUS"</ns0:data>
+  <ns0:data key="d1">"‘Petit Peuple’ refers to ordinary citizens, emphasizing their struggles against the elite and their financial burdens."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"PETIT PEUPLE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉFICITS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Deficits are mentioned in the context of increasing taxes that the citizens feel are unjust, used to support a few privileged individuals."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"DÉFICITS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRÉROGATIVES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Prerogatives are discussed concerning former elected officials who still enjoy benefits without holding any power, highlighting inequities in public service."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"PRÉROGATIVES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GENDARMES&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Gendarmes are referenced as public officials tasked with protecting properties of former elected officials, raising concerns about resource allocation."</ns0:data>
+  <ns0:data key="d2">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d3">"GENDARMES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GILETS JAUNES&quot;">
+  <ns0:data key="d0">"COURANTIDEOLOGIQUE"</ns0:data>
+  <ns0:data key="d1">"Gilets Jaunes is a social movement in France advocating for various grievances related to economic injustices, including taxes and living standards."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"GILETS JAUNES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DOLÉANCES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Doléances refers to grievances expressed by citizens, particularly related to taxes, cost of living, and retirement benefits."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"DOLÉANCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMPÔT&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"Impôt refers to taxes that citizens are required to pay based on their income, which is a central theme in the opinion expressed by the citizen."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"IMPÔT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFÉRENDUM D’INITIATIVE CITOYEN&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"Référendum d’Initiative Citoyen is a proposed democratic reform aimed at allowing citizens to have a stronger voice in political decisions."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"RÉFÉRENDUM D’INITIATIVE CITOYEN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CANTINE GRATUITE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cantine Gratuite is a proposal suggesting that school meals should be free for all children, ensuring they have access to balanced food."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"CANTINE GRATUITE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TERRITOIRE FRANÇAIS&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Territoire Français refers to the geographical area of France where the citizen’s opinions and proposals regarding taxation and policies are concerned."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"TERRITOIRE FRANÇAIS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ASSISTANAT&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Assistanat refers to social assistance programs which the contributor critiques, advocating for a more equitable system of taxation instead."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"ASSISTANAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NIVEAU DE VIE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Niveau de vie refers to the standard of living, a key concern mentioned in the context of grievances about economic conditions."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"NIVEAU DE VIE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RETRAITES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Retraites refers to pension benefits that are mentioned as being negatively impacted, highlighting concerns of the elderly."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"RETRAITES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROMESSES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Promesses refers to the unfulfilled promises made by elected officials, which the contributor criticizes as a recurring issue."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"PROMESSES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉGALITÉ EN DROITS ET EN DEVOIRS&quot;">
+  <ns0:data key="d0">"CONSENSUS"</ns0:data>
+  <ns0:data key="d1">"Égalité en droits et en devoirs is a principle emphasized in the text, advocating for equal rights and responsibilities for all citizens."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"ÉGALITÉ EN DROITS ET EN DEVOIRS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SCOLARISATION&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Scolarisation refers to the education system in which free meals through Cantine Gratuite would benefit children."</ns0:data>
+  <ns0:data key="d2">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d3">"SCOLARISATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;EMMANUEL MACRON&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Emmanuel Macron is the President of France, whose policies are being critiqued by citizens in terms of fiscal measures benefiting the wealthy."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"EMMANUEL MACRON"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CSG&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"CSG (Contributions Sociales Généralisées) is a social contribution tax that has increased, affecting lower-income citizens adversely."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"CSG"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;APL&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"APL (Aide Personnalisée au Logement) is a housing subsidy whose reduction has been criticized for worsening living conditions."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"APL"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CICE&quot;">
+  <ns0:data key="d0">"MESUREECOLOGIQUE"</ns0:data>
+  <ns0:data key="d1">"CICE (Crédit d'Impôt pour la Compétitivité et l'Emploi) is a tax measure that is believed to benefit corporations without proving effectiveness."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"CICE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GAFA&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"GAFA refers to major multinational technology companies like Google, Amazon, Facebook, and Apple, which are subjects of taxation proposals."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"GAFA"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DISCRIMINATION FISCALE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Discrimination fiscale is a grievance regarding the unfair tax burden on lower-income individuals compared to wealthier taxpayers."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"DISCRIMINATION FISCALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRIME D'ACTIVITÉ&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Prime d'activité is a financial aid that could be automatically reflected on payslips, making it easier for recipients to receive."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"PRIME D'ACTIVITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFÉRENDUM D'INITIATIVE CITOYENNE (RIC)&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The RIC is a proposal to create a simpler process for citizens to initiate referendums, which is seen as a way to enhance democratic participation."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"RÉFÉRENDUM D'INITIATIVE CITOYENNE (RIC)"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LAÏCITÉ&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Laïcité refers to the principle of secularism in France and is seen as a fundamental value for integration among diverse populations."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"LAÏCITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INÉGALITÉS RURALES-URBAINES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"The disparities between rural and urban areas, especially regarding access to public services, are highlighted as a major concern."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"INÉGALITÉS RURALES-URBAINES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRAUDE FISCALE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Fraude fiscale refers to the tax evasion issue where significant tax revenues are lost, negatively impacting the state's budget."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"FRAUDE FISCALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LIMITATION DE VITESSE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal to return to a speed limit of 90 km/h is linked to rural concerns about transport and local conditions."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"LIMITATION DE VITESSE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉGALITÉ DES CHANCES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Égalité des chances refers to the call for equal opportunities, particularly in political representation and social justice."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"ÉGALITÉ DES CHANCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AUGMENTER LES SALAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal to increase salaries aims to improve living standards and reset wage structures for workers."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"AUGMENTER LES SALAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXE SUR LE CARBONE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"This complaint addresses the need for a carbon tax to address environmental impact, particularly from wealthier individuals and large corporations."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"TAXE SUR LE CARBONE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DISTRIBUTIONS AUX ENTREPRISES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Distributions aux entreprises refers to the financial aid given to companies without any conditions, which is criticized for lacking accountability."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"DISTRIBUTIONS AUX ENTREPRISES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POLITIQUE FISCALE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Politique fiscale encompasses the overall tax policies in France, which are a major point of concern for citizens expressing inequality."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"POLITIQUE FISCALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BAISSE DES APL&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Baisse des APL refers to the reduction of housing assistance that impacts the financial stability of many households."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"BAISSE DES APL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉMUNÉRATIONS DES TRAVAILLEURS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Rémunérations des travailleurs refers to the concerns about the low wages and their impact on living standards."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"RÉMUNÉRATIONS DES TRAVAILLEURS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CLASSE POPULAIRE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Classe populaire refers to lower socioeconomic groups who are disproportionately affected by tax policies and economic hardships."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"CLASSE POPULAIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ACCORDS DE LIBRE-ÉCHANGE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Accords de libre-échange are trade agreements criticized for benefiting multinational corporations at the expense of local industries."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"ACCORDS DE LIBRE-ÉCHANGE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES PUBLICS RURAUX&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Services publics ruraux refers to public services in rural areas that are diminishing, leading to a call for equity in access."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"SERVICES PUBLICS RURAUX"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DROIT D'ASILE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Droit d'asile refers to legal protections for asylum seekers, which are subject to debate regarding immigration policies."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"DROIT D'ASILE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NUMÉROS DE SÉCURITÉ SOCIALE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Numéros de sécurité sociale are identifiers for citizens in the health system, essential for public welfare access."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"NUMÉROS DE SÉCURITÉ SOCIALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXES SUR LES CARBURANTS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Taxes sur les carburants are criticized by citizens for penalizing those who need to use personal vehicles for essential travel."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"TAXES SUR LES CARBURANTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRES MINIMUMS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Salaires minimums refer to proposals aimed at increasing minimum wage levels to improve low-income workers' financial conditions."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"SALAIRES MINIMUMS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COHÉSION SOCIALE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Cohésion sociale refers to the social unity that the citizens feel is threatened by current policies and inequalities."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"COHÉSION SOCIALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFORME DES RETRAITES&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"Réforme des retraites is a policy reform concerning pension systems that has garnered protests and widespread concern."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"RÉFORME DES RETRAITES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RESSOURCES FISCALES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Ressources fiscales encompass the revenue streams for the state and are critical in the discussion of fiscal equality."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"RESSOURCES FISCALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ENVIRONNEMENT ET CLIMAT&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Environnement et climat addresses the ecological concerns that arise from fiscal and economic policies."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"ENVIRONNEMENT ET CLIMAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONTRIBUTIONS FISCALES&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"Contributions fiscales are various taxes citizens must pay, which are scrutinized for fairness and effectiveness."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"CONTRIBUTIONS FISCALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFORMES FISCALES&quot;">
+  <ns0:data key="d0">"REFORMEFISCALE"</ns0:data>
+  <ns0:data key="d1">"Réformes fiscales refers to the changes in tax laws that citizens feel disproportionately favor the wealthy at their expense."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"RÉFORMES FISCALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COLLECTIVITÉS LOCALES&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Collectivités locales are local government bodies that provide services and may be influenced by national fiscal policies."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"COLLECTIVITÉS LOCALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INÉGALITÉS SOCIALES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Inégalités sociales refer to the growing disparities among different social classes, particularly in economic access and opportunity."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"INÉGALITÉS SOCIALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PARTICIPATION CITOYENNE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Participation citoyenne advocates for greater involvement of citizens in political processes and decision-making."</ns0:data>
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d3">"PARTICIPATION CITOYENNE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AUGMENTER LES RETRAITES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"La proposition d'augmenter les retraites vise à améliorer les conditions financières des retraités."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"AUGMENTER LES RETRAITES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HABITANTE D’UNE COMMUNE RURALE&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Une femme résidant dans une commune rurale qui utilise sa voiture régulièrement pour ses achats et rendez-vous médicaux."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"HABITANTE D’UNE COMMUNE RURALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COÛT DU GAZOLE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Le coût du gazole et ses fluctuations impactent fortement le budget des habitants, en particulier ceux qui dépendent de leur voiture pour divers déplacements."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"COÛT DU GAZOLE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRÉNOM NOM&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Le nom de l'auteur de la contribution est inséré anonymement, signalant une plainte ou un commentaire sur la situation actuelle."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"PRÉNOM NOM"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LE 17/01/2019&quot;">
+  <ns0:data key="d0">"DATE"</ns0:data>
+  <ns0:data key="d1">"La date à laquelle la contribution a été rédigée, indiquant le moment de l'expression citoyenne."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"LE 17/01/2019"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MANUSCRIT&quot;">
+  <ns0:data key="d0">"VERBATIM"</ns0:data>
+  <ns0:data key="d1">"Le manuscrit est un document original contenant le texte de la contribution de la citoyenne, incluant ses doléances et propositions."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"MANUSCRIT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIERS CITOYENS DE CHARENTE-MARITIME&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Les cahiers citoyens de Charente-Maritime sont une initiative permettant aux habitants de faire entendre leur voix durant le Grand Débat National."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"CAHIERS CITOYENS DE CHARENTE-MARITIME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FERMÉE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"La mention que l'écriture est similaire à une autre contribution mais avec un nom différent pourrait souligner l'idée que certaines préoccupations sont reprises par plusieurs citoyens."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"FERMÉE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRIX DU GAZOLE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Le prix du gazole est un sujet abordé par la citoyenne, soulignant les fluctuations qui affectent son budget."</ns0:data>
+  <ns0:data key="d2">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d3">"PRIX DU GAZOLE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMPOSER LES MULTINATIONALES&quot;">
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d1">"The mention of GAFA relates to broader proposals for more equitable taxation of large corporations operating in France."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICEPUBLIC&quot;">
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d1">"The Prime d'activité is a proposed service designed to assist working individuals with their income, linked to public service efforts."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RURALITÉ&quot;">
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d1">"The proposal to adjust the speed limit links to rural experiences and the unique needs of residents in those areas."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROPOSITION&quot;">
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d1">"The proposal to increase salaries is a response to economic hardships faced by workers, reflecting a direct citizen demand."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMPOSER PLUS JUSTEMENT&quot;">
+  <ns0:data key="d2">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d1">"The calls for a carbon tax tie into the larger narrative of fair taxation and corporate responsibilities towards climate change."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:edge source="&quot;CAHIER DE FONTENET&quot;" target="&quot;FEMME&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Femme contributes her personal insights and viewpoints within the Cahier de Fontenet, demonstrating civic engagement."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE FONTENET&quot;" target="&quot;RÉDUCTION DES RETRAITES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Fontenet articulates the proposal of reducing pensions as a financial remedy for political mismanagement."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE FONTENET&quot;" target="&quot;SUPER-PRÉSIDENTE DE CROATIE&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Fontenet references the Super-présidente de Croatie as an example for reducing government extravagance."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE FONTENET&quot;" target="&quot;ISF&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Fontenet advocates for the reinstatement of the ISF to counteract fiscal disparities."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE FONTENET&quot;" target="&quot;DIALOGUE AVEC LE PEUPLE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Fontenet emphasizes the importance of open dialogue and responsiveness to the citizenry in government affairs."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE FONTENET&quot;" target="&quot;PAIX ET SÉRÉNITÉ&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The ultimate goal expressed in Cahier de Fontenet is to restore Paix et sérénité in society through reforms and listening to the public."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FEMME&quot;" target="&quot;GUERRE CIVILE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Femme expresses her dissatisfaction and concern regarding the ongoing Guerre civile as a pressing issue affecting the citizenry."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FEMME&quot;" target="&quot;BEAU PAYS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Femme shows a longing for the preservation of her Beau pays and calls for reforms to enhance its well-being."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FEMME&quot;" target="&quot;NIVEAU DE VIE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contributor expresses concerns about her own living standard, specifically related to the economic climate in France."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FEMME&quot;" target="&quot;RETRAITES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contributor highlights the issue of Retraites, linking it to broader socioeconomic grievances."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FEMME&quot;" target="&quot;PROMESSES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The contributor mentions Promesses, criticizing elected officials for neglecting commitments made during campaigns."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ISF&quot;" target="&quot;EMMANUEL MACRON&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The abolition of ISF is a decision taken by Emmanuel Macron that has led to widespread grievances regarding fiscal justice."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DIALOGUE AVEC LE PEUPLE&quot;" target="&quot;RÉFÉRENDUM&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal of Dialogue avec le peuple suggests employing Référendum as a tool for engaging citizens in decision-making."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;MAIRE DE FONTENET&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Cahier de doléances is addressed to the Maire de Fontenet, underscoring the importance of governmental response to citizen input."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;GUERRE CIVILE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de doléances expresses the concern of Guerre civile as a significant issue that needs urgent attention from the government."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;FONDS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Cahier de doléances questions the availability of Fonds as part of expressing public grievances and seeking financial relief."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;TRAIN DE VIE À L’ÉLYSÉE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The mention of Train de vie à l’Élysée reveals a direct relationship with the contributor's suggestions for reducing governmental expenses."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;POTS CASSÉS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The term Pots cassés reflects the idea that the outcomes of political failures disproportionately affect ordinary citizens, as stated in the Cahier de doléances."</ns0:data>
+  <ns0:data key="d7">contrib-605c676244d35c4cbb487b9c47cad602</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LIBERTÉ, ÉGALITÉ ET FRATERNITÉ&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The phrase symbolizes citizens' expectations from their elected officials, which they feel are not being met in current circumstances."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CITOYENS&quot;" target="&quot;LOGEMENTS SOCIAUX&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The citizens express grievances regarding the lack of social housing, which affects their ability to live comfortably."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CITOYENS&quot;" target="&quot;ÉLUS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The elected officials are criticized by citizens for their detachment from the realities faced by the population."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CITOYENS&quot;" target="&quot;C.D.I.&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Citizens in C.D.I. jobs are highlighted as struggling to afford living, indicating that employment alone does not guarantee a decent life."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CITOYENS&quot;" target="&quot;TAXES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Increasing taxes are a direct grievance to citizens, who feel overburdened and exploited by the current financial system."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LOGEMENTS SOCIAUX&quot;" target="&quot;AGRICULTEURS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The plight of farmers selling below cost is mentioned alongside the issue of housing, indicating a broader economic concern affecting multiple groups."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LOGEMENTS SOCIAUX&quot;" target="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contribution source discusses social housing as a key issue, indicating its importance in citizen dissatisfaction."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;HABITANTE D’UNE COMMUNE RURALE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"L'habitante utilise les cahiers de doléances pour exprimer ses préoccupations et propositions en tant que citoyenne."</ns0:data>
+  <ns0:data key="d7">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;PRÉNOM NOM&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Le nom inséré par l'habitante témoigne de son engagement dans le processus de consultation via les cahiers de doléances."</ns0:data>
+  <ns0:data key="d7">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ÉLUS&quot;" target="&quot;PRIVILEGES ANCIENS ÉLUS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The contribution points out that former elected officials maintain privileges that are no longer deserved, indicating a lack of accountability."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;TAXES&quot;" target="&quot;1789&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The reference to 1789 suggests that the modern tax situation is reminiscent of historical inequalities, creating a sense of urgency and frustration."</ns0:data>
+  <ns0:data key="d7">contrib-719920efaf004bc78c2db5900ff5f1bf</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;DOLÉANCES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Gilets Jaunes movement expresses Doléances regarding economic issues, taxes, and living conditions."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GILETS JAUNES&quot;" target="&quot;RÉFÉRENDUM D’INITIATIVE CITOYEN&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Gilets Jaunes movement calls for the Référendum d’Initiative Citoyen, aligning with their demand for greater citizen power."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;IMPÔT&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Doléances highlight concerns regarding taxation levels and fairness, particularly how it impacts living standards."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;RÉFÉRENDUM D’INITIATIVE CITOYEN&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The concerns expressed in Doléances relate to a demand for the Référendum d’Initiative Citoyen, emphasizing citizen engagement in governance."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;CANTINE GRATUITE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Cantine Gratuite addresses Doléances related to economic hardship faced by families, ensuring basic needs are met."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔT&quot;" target="&quot;TERRITOIRE FRANÇAIS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Impôt is relevant to all individuals living in the Territoire Français, focusing on equitable taxation based on income."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔT&quot;" target="&quot;ASSISTANAT&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Assistanat is criticized in relation to how it intersects with the system of Impôt, suggesting reform for fairness in taxation and assistance."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔT&quot;" target="&quot;CANTINE GRATUITE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Cantine Gratuite relates to funding that can be derived from a fairer tax system, specifically taxing the wealthy."</ns0:data>
+  <ns0:data key="d7">contrib-43e9da3d3a1ee4123a56799ed5673e11</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;IMPÔT&quot;" target="&quot;FRAUDE FISCALE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The issue of fraud fiscale relates directly to concerns over the government's efficacy in tax collection and the fairness of the system."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;EMMANUEL MACRON&quot;" target="&quot;CSG&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The increase in CSG is a policy under Emmanuel Macron that is perceived negatively by citizens who face financial strain."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CSG&quot;" target="&quot;APL&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The reduction in APL is linked to the broader context of increased taxes like the CSG, impacting citizens' livelihoods."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CICE&quot;" target="&quot;DISCRIMINATION FISCALE&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The CICE is criticized for contributing to tax discrimination against lower-income individuals, affecting fairness in the tax system."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GAFA&quot;" target="&quot;IMPOSER LES MULTINATIONALES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The mention of GAFA relates to broader proposals for more equitable taxation of large corporations operating in France."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PRIME D'ACTIVITÉ&quot;" target="&quot;SERVICEPUBLIC&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Prime d'activité is a proposed service designed to assist working individuals with their income, linked to public service efforts."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉFÉRENDUM D'INITIATIVE CITOYENNE (RIC)&quot;" target="&quot;ÉGALITÉ DES CHANCES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The concept of RIC is proposed to enhance equality of opportunity in political involvement and representation."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LAÏCITÉ&quot;" target="&quot;INÉGALITÉS RURALES-URBAINES&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The principles of laïcité are invoked to address social cohesion issues that are exacerbated by rural-urban disparities."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LIMITATION DE VITESSE&quot;" target="&quot;RURALITÉ&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal to adjust the speed limit links to rural experiences and the unique needs of residents in those areas."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AUGMENTER LES SALAIRES&quot;" target="&quot;PROPOSITION&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal to increase salaries is a response to economic hardships faced by workers, reflecting a direct citizen demand."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;TAXE SUR LE CARBONE&quot;" target="&quot;IMPOSER PLUS JUSTEMENT&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The calls for a carbon tax tie into the larger narrative of fair taxation and corporate responsibilities towards climate change."</ns0:data>
+  <ns0:data key="d7">contrib-e5637c5257ccf7da22163a78a1b7f116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AUGMENTER LES RETRAITES&quot;" target="&quot;HABITANTE D’UNE COMMUNE RURALE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"L'habitante propose d'augmenter les retraites en réponse aux difficultés financières rencontrées dans sa commune."</ns0:data>
+  <ns0:data key="d7">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;HABITANTE D’UNE COMMUNE RURALE&quot;" target="&quot;COÛT DU GAZOLE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"L'habitante exprime une préoccupation concernant l'impact du coût du gazole sur son budget, ce qui contribue à son appel à des augmentations de retraites."</ns0:data>
+  <ns0:data key="d7">contrib-3fdff2f5c96bbef929428424fa8d0d1b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>

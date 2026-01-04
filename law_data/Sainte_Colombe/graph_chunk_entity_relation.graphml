@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d9" for="edge" attr.name="relationship_type" attr.type="string" />
+<ns0:key id="d8" for="edge" attr.name="order" attr.type="long" />
+<ns0:key id="d7" for="edge" attr.name="source_id" attr.type="string" />
+<ns0:key id="d6" for="edge" attr.name="description" attr.type="string" />
+<ns0:key id="d5" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d4" for="node" attr.name="clusters" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="entity_name" attr.type="string" />
+<ns0:key id="d2" for="node" attr.name="source_id" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="description" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+<ns0:graph edgedefault="undirected"><node id="&quot;SAINTE COLOMBE_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Sainte Colombe - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Sainte_Colombe-commune-root"</data><data key="d3">"SAINTE COLOMBE_COMMUNE"</data><data key="d4">[]</data></node><ns0:node id="&quot;CAHIER DE SAINTE-COLOMBE&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Sainte-Colombe is a citizen contribution document expressing the opinions and proposals of residents from the commune regarding public policies and services."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"CAHIER DE SAINTE-COLOMBE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POUVOIR D’ACHAT&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Pouvoir d’achat refers to the purchasing power of citizens and addresses concerns and proposals related to it in the contribution."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"POUVOIR D’ACHAT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HAUSSE DES SALAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Hausse des salaires is a proposal advocating for an increase in salaries to improve citizens' purchasing power."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"HAUSSE DES SALAIRES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRESSION DE LA CSG POUR LES RETRAITÉS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Suppression de la CSG pour les retraités is a proposal suggesting the removal of the General Social Contribution for retirees to enhance their financial situation."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"SUPPRESSION DE LA CSG POUR LES RETRAITÉS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BAISSE DE LA TVA SUR PRODUITS DE 1ÈRE NÉCESSITÉ&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Baisse de la TVA sur produits de 1ère nécessité is a proposal for reducing the VAT on essential goods to alleviate financial burdens on citizens."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"BAISSE DE LA TVA SUR PRODUITS DE 1ÈRE NÉCESSITÉ"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AAH&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"AAH (Allocation aux Adultes Handicapés) refers to the financial assistance provided to disabled adults, implying a concern to review its amount and related aids."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"AAH"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CHARGES POUR LES PETITS ENTREPRENEURS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Charges pour les petits entrepreneurs addresses the grievances regarding the financial burdens faced by small business owners, calling for a reduction of these charges."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"CHARGES POUR LES PETITS ENTREPRENEURS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RIC&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"RIC (Référendum d'Initiative Citoyenne) is proposed as a mechanism for citizens to have a voice in the legislative process through citizen debates."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"RIC"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ISF&quot;">
+  <ns0:data key="d0">"REFORMEFISCALE"</ns0:data>
+  <ns0:data key="d1">"ISF (Impôt de Solidarité sur la Fortune) is a proposed tax reform suggesting a fairer tax system to replace the existing ISF."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"ISF"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VOTE BLANC&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Vote Blanc advocates for the recognition of blank votes, emphasizing the importance of voter expression and reform in voting rights."&lt;SEP&gt;"Vote blanc is proposed for recognition, allowing votes to express dissent in elections without endorsing any candidate."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7&lt;SEP&gt;contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"VOTE BLANC"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FORCES DE L’ORDRE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Forces de l'ordre refers to law enforcement agencies, with calls for preventing misconduct and the suggestion to remove the use of flashballs."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"FORCES DE L’ORDRE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SUPPRESSION DU FLASHBALL&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Suppression du flashball is a proposal advocating for the removal of flashball weapons used by law enforcement to prevent excessive violence."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"SUPPRESSION DU FLASHBALL"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COMMUNE DE SAINTE-COLOMBE&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Commune de Sainte-Colombe is the geographic and administrative area from which the citizens' contributions originate, indicating local governance concerns."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"COMMUNE DE SAINTE-COLOMBE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;17 JANVIER 2019&quot;">
+  <ns0:data key="d0">"DATE"</ns0:data>
+  <ns0:data key="d1">"17 janvier 2019 marks the date of the contribution, providing context for the timing of the civic engagement and feedback."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"17 JANVIER 2019"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DROITS DES CITOYENS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Droits des citoyens pertains to the rights of citizens, which are implicitly connected to the proposals for greater inclusion and recognition of citizen voices."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"DROITS DES CITOYENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Services publics refers to public services crucial for citizen welfare, which are addressed in the contributions discussing financial proposals."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"SERVICES PUBLICS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;REFORMES FISCALES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Reformes fiscales encompasses tax-related themes, representing the citizens' concerns regarding equity in the tax system."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"REFORMES FISCALES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DIALOGUE CITOYEN&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Dialogue citoyen refers to the proposed mechanism for citizens to engage in discussions about legislative matters, emphasizing civic participation."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"DIALOGUE CITOYEN"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AIDES POUR LES PERSONNES EN SITUATION DE HANDICAP&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Aides pour les personnes en situation de handicap supports disabled individuals, linking to the concerns raised about the AAH and social support systems."</ns0:data>
+  <ns0:data key="d2">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d3">"AIDES POUR LES PERSONNES EN SITUATION DE HANDICAP"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SMIG&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"SMIG refers to the Salaire Minimum Interprofessionnel de Croissance, with a proposed increase of 15% by citizens expressing the need for higher minimum wage."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"SMIG"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Salaires refers to wages that are proposed to increase by 10% for those under 2000 €, highlighting the citizens' concerns for low-income earners."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"SALAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RETRAITES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Retraites denotes pensions, which are proposed to be indexed to inflation, ensuring financial stability for retirees."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"RETRAITES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RIP&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"RIP refers to the Rappel d'Initiative Populaire, a proposal concerning citizen-initiated legislation."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"RIP"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COMMISSIONS THÉODULE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Commissions Théodule represents various governmental commissions, proposed for dissolution by citizens who seek reduction in bureaucracy."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"COMMISSIONS THÉODULE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SÉNAT&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Sénat refers to the French Senate, with a proposal for its complete abolition, reflecting citizens’ demand for reform in governance."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"SÉNAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HAUTS FONCTIONNAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Hauts Fonctionnaires pertains to high-ranking officials, proposed to have their income limited as part of financial reforms."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"HAUTS FONCTIONNAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MINISTRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Ministres refers to members of the government, proposed to have their incomes reduced, excluding mayors, in response to calls for governmental accountability."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"MINISTRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROPORTIONNELLE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Proportionnelle supports the implementation of proportional representation in elections, reflecting a demand for fairer electoral processes."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"PROPORTIONNELLE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;JUSTICE ÉQUITABLE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Justice Équitable emphasizes the need for justice that is fair between the wealthy and the rest of the population, highlighting social equity concerns."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"JUSTICE ÉQUITABLE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Doléances refers to a document that contains citizens' grievances and proposals regarding public policies, representing collective input from the community."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"CAHIER DE DOLÉANCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TERRITOIRE&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Territoire indicates the local area in which these grievances and proposals are gathered, specifically targeting the interests of the commune and its citizens."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"TERRITOIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CHARENTE-MARITIME&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Charente-Maritime is a specific commune in France where the citizen consultation took place, contextualizing the contributions made by its citizens."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"CHARENTE-MARITIME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;17.01.2019&quot;">
+  <ns0:data key="d0">"DATE"</ns0:data>
+  <ns0:data key="d1">"17.01.2019 marks the submission date of the Cahier de Doléances, indicating the time frame of the expressed opinions and proposals."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"17.01.2019"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SIGNATURE&quot;">
+  <ns0:data key="d0">"VERBATIM"</ns0:data>
+  <ns0:data key="d1">"Signature represents the closing affirmation by the citizen, validating the authenticity of the contributions recorded in the document."</ns0:data>
+  <ns0:data key="d2">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d3">"SIGNATURE"</ns0:data>
+</ns0:node>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;POUVOIR D’ACHAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contribution discusses the theme of purchasing power, highlighting related grievances and proposals."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;HAUSSE DES SALAIRES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal for an increase in salaries is part of the contributions aimed at improving citizens' purchasing power."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;SUPPRESSION DE LA CSG POUR LES RETRAITÉS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal to remove the CSG for retirees is associated with the broader theme of improving financial conditions for citizens."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;BAISSE DE LA TVA SUR PRODUITS DE 1ÈRE NÉCESSITÉ&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal to lower VAT on essential products links directly to the theme of enhancing purchasing power of citizens."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;AAH&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The contribution addresses the need to review the AAH as part of the theme of social assistance and financial security for citizens."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;CHARGES POUR LES PETITS ENTREPRENEURS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"This grievance regarding burdens on small entrepreneurs is related to overall economic concerns raised in the contribution."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;RIC&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal for a citizen referendum (RIC) is aimed at enhancing citizen engagement in legislative processes as reflected in the contributions."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;ISF&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal for a fair tax system represents a fiscal reform being discussed within the contribution's themes."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;VOTE BLANC&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The call for recognition of the blank vote links to themes of democratic representation and accountability discussed in the contribution."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;FORCES DE L’ORDRE&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The discussion about law enforcement is connected to the broader themes of public security and citizen rights in the contribution."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;SUPPRESSION DU FLASHBALL&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal advocates for changes in law enforcement practices, relating to the grievances mentioned in the contribution."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;COMMUNE DE SAINTE-COLOMBE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The contribution originates from the Commune de Sainte-Colombe, highlighting local concerns and civic participation."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;17 JANVIER 2019&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"The date of the contribution contextualizes the feedback and civic engagement occurring at a particular point in time."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;DROITS DES CITOYENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposals address the rights of citizens, reflecting their desire for enhanced involvement in democracy."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;SERVICES PUBLICS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The contributions highlight concerns related to public services, indicating citizens' demands for better governance and support."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;REFORMES FISCALES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contributions include concerns regarding tax reforms, connecting to citizens' desires for fairness in taxation."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;DIALOGUE CITOYEN&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The mention of a citizen dialogue emphasizes the need for an inclusive process in discussing laws and reforms."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINTE-COLOMBE&quot;" target="&quot;AIDES POUR LES PERSONNES EN SITUATION DE HANDICAP&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The discussion regarding financial support for disabled individuals aligns with broader themes of social justice and equity in the contributions."</ns0:data>
+  <ns0:data key="d7">contrib-a6cb5f09a2d4138a12949a759653ec5a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;VOTE BLANC&quot;" target="&quot;PROPORTIONNELLE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Proposing both recognition of blank votes and proportional representation signifies citizens’ call for reforms that enhance voter inclusivity and fairness."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SMIG&quot;" target="&quot;SALAIRES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Citizens propose a direct correlation where a rise in SMIG's minimum wage is linked to the increase of salaries for low-wage earners."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SMIG&quot;" target="&quot;RETRAITES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposed indexing of pensions to inflation highlights the link between living wages and maintaining the purchasing power of retirees."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SALAIRES&quot;" target="&quot;JUSTICE ÉQUITABLE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The focus on equitable justice reveals a desire for fair treatment and wage adjustments, thereby connecting social justice with economic reform."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RIP&quot;" target="&quot;COMMISSIONS THÉODULE&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The proposal for RIP appeals to citizen engagement and directly addresses the need for reducing bureaucratic structures like commissions."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;COMMISSIONS THÉODULE&quot;" target="&quot;SÉNAT&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposed dissolution of the Sénat aligns with the request to eliminate various commissions, indicating a push for streamlined governance."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;HAUTS FONCTIONNAIRES&quot;" target="&quot;MINISTRES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposals for limiting income of hauts fonctionnaires and reducing ministers’ salaries denote a broader call for government accountability and reform."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;CHARENTE-MARITIME&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Cahier de Doléances originates from Charente-Maritime, illustrating it as a specific initiative of the local territory to collect citizen input."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;17.01.2019&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Cahier de Doléances was completed and signed on the date 17.01.2019, establishing a timeline for the proposals made by citizens."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;TERRITOIRE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contributions encapsulated in the Cahier de Doléances reflect the unique social and economic conditions and concerns of the Territoire involved."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;SIGNATURE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Signature at the end of the Cahier de Doléances validates the document, confirming that these reflections and proposals lift from a citizen's perspective."</ns0:data>
+  <ns0:data key="d7">contrib-86e20604a01c66488737a0880b23e0e7</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>

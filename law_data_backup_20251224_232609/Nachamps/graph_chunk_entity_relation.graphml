@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d24" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d23" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d22" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d21" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d20" for="node" attr.name="domaine" attr.type="string"/>
+<key id="d19" for="node" attr.name="gravite" attr.type="string"/>
+<key id="d18" for="node" attr.name="objet" attr.type="string"/>
+<key id="d17" for="node" attr.name="intensite" attr.type="double"/>
+<key id="d16" for="node" attr.name="sujet" attr.type="string"/>
+<key id="d15" for="node" attr.name="position" attr.type="string"/>
+<key id="d14" for="node" attr.name="cible" attr.type="string"/>
+<key id="d13" for="node" attr.name="valeur" attr.type="string"/>
+<key id="d12" for="node" attr.name="type" attr.type="string"/>
+<key id="d11" for="node" attr.name="nom" attr.type="string"/>
+<key id="d10" for="node" attr.name="categorie" attr.type="string"/>
+<key id="d9" for="node" attr.name="titre" attr.type="string"/>
+<key id="d8" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d7" for="node" attr.name="description" attr.type="string"/>
+<key id="d6" for="node" attr.name="commune" attr.type="string"/>
+<key id="d5" for="node" attr.name="estPartielle" attr.type="boolean"/>
+<key id="d4" for="node" attr.name="texte" attr.type="string"/>
+<key id="d3" for="node" attr.name="contributionId" attr.type="string"/>
+<key id="d2" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d1" for="node" attr.name="citoyenId" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="citoyen-Unknown-None">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-None</data>
+  <data key="d2">citoyen-Unknown-None</data>
+</node>
+<node id="contribution-Unknown-None">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-None</data>
+  <data key="d4">Cahier de Nachamps1. Manuscrit (4 pages), 95 lignes, 778 mots (2 hommes)Grand débat nationalLiberté, égalité, fraternité…« Changer les choses pour vivre mieux » !Emmanuel MacronLe monde ne change que si nous-mêmes prenons la décision de changer dans nos comportements etnos raisonnements quotidiens. Se parler est primordial pour pouvoir échanger et cesser de« transformer les mots en armes »… selon les mots d'un écrivain et cinéaste. « Il faut que le langagede l’émotion cède le pas à celu...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d2">contribution-Unknown-None</data>
+</node>
+<node id="proposition-78752222">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Transition énergétique équitable</data>
+  <data key="d7">Réaliser de manière équitable la transition énergétique comprenant des économies d'eau et d'électricité, et favoriser l'isolation des logements et le changement de chaudières pour les personnes en précarité énergétique.</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d9">Transition énergétique équitable</data>
+  <data key="d10">écologique</data>
+</node>
+<node id="proposition-7ecda82a">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Redéfinition du système fiscal</data>
+  <data key="d7">Redonner du sens à un système fiscal devenu illisible, avec des mesures telles que la lutte contre l’évasion fiscale, la simplification du code des impôts, et la maintien de la progressivité de l'impôt.</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d9">Redéfinition du système fiscal</data>
+  <data key="d10">fiscale</data>
+</node>
+<node id="proposition-d75b89fa">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Conditions de démocratie et citoyenneté</data>
+  <data key="d7">Penser les conditions de la démocratie et de la citoyenneté, avec des référendums d'initiative locale, la diminution du nombre d'élus, et l'institution de la proportionnelle.</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d9">Conditions de démocratie et citoyenneté</data>
+  <data key="d10">democratique</data>
+</node>
+<node id="proposition-b816019e">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Réorganisation de l'État</data>
+  <data key="d7">Réorganiser l'État et sa présence sur tout le territoire en rendant les élus et hauts fonctionnaires plus proches des citoyens et en regroupant les communes.</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d9">Réorganisation de l'État</data>
+  <data key="d10">administratif</data>
+</node>
+<node id="mode_scrutin-b6410e1a">
+  <data key="d0">REFORME_DEMOCRATIQUE</data>
+  <data key="d2">Proportionnelle</data>
+  <data key="d7">Institution de la représentation proportionnelle dans le système électoral.</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Proportionnelle</data>
+</node>
+<node id="mode_scrutin-c93ef120">
+  <data key="d0">MODE_SCRUTIN</data>
+  <data key="d2">Vote blanc</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Vote blanc</data>
+</node>
+<node id="mode_scrutin-fc78f938">
+  <data key="d0">MODE_SCRUTIN</data>
+  <data key="d2">Vote obligatoire</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Vote obligatoire</data>
+</node>
+<node id="acteur_institutionnel-ed980782">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">Gouvernement français</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Gouvernement français</data>
+  <data key="d12">gouvernement</data>
+</node>
+<node id="niveau_confiance-50c9019e">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers le gouvernement</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d13">moyen</data>
+  <data key="d14">Gouvernement français</data>
+</node>
+<node id="thematique-8cec7d6c">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Justice</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Justice</data>
+</node>
+<node id="thematique-7347f8ed">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Fiscalité</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Fiscalité</data>
+</node>
+<node id="thematique-c09381a9">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Démocratie</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Démocratie</data>
+</node>
+<node id="thematique-2666cd03">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Écologie</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Écologie</data>
+</node>
+<node id="opinion-7743e61f">
+  <data key="d0">OPINION</data>
+  <data key="d2">Changement nécessaire pour vivre mieux</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d15">pour</data>
+  <data key="d16">changement dans nos comportements</data>
+  <data key="d17">0.8</data>
+</node>
+<node id="doleance-66d08423">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Système fiscal injuste</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d18">injustices du système fiscal</data>
+  <data key="d19">forte</data>
+</node>
+<node id="service_public-88473153">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Transport en commun</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Transport en commun</data>
+  <data key="d20">transport</data>
+</node>
+<node id="mesure_ecologique-fd970e85">
+  <data key="d0">MESURE_ECOLOGIQUE</data>
+  <data key="d2">Économies d'énergie</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Économies d'énergie</data>
+  <data key="d20">énergie</data>
+</node>
+<node id="mesure_ecologique-21c60dbd">
+  <data key="d0">MESURE_ECOLOGIQUE</data>
+  <data key="d2">Covoiturage</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Covoiturage</data>
+  <data key="d20">transport</data>
+</node>
+<node id="type_impot-ebfd6713">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d2">Impôt sur le revenu</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Impôt sur le revenu</data>
+  <data key="d10">direct</data>
+</node>
+<node id="type_impot-8ddaf756">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d2">Impôts locaux</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Impôts locaux</data>
+  <data key="d10">local</data>
+</node>
+<node id="type_impot-3e344838">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d2">Taxes sur les sociétés</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Taxes sur les sociétés</data>
+  <data key="d10">direct</data>
+</node>
+<node id="reforme_democratique-4543ad25">
+  <data key="d0">REFORME_DEMOCRATIQUE</data>
+  <data key="d2">Référendums d'initiative locale</data>
+  <data key="d7">Instaurer des référendums d'initiative locale pour accroître la participation citoyenne.</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Référendums d'initiative locale</data>
+</node>
+<node id="reforme_democratique-a1eecf03">
+  <data key="d0">REFORME_DEMOCRATIQUE</data>
+  <data key="d2">Tirage au sort</data>
+  <data key="d7">Retour du tirage au sort au sein des conseils municipaux pour élire le maire chaque année.</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">Tirage au sort</data>
+</node>
+<node id="thematique-ecologie">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">ECOLOGIE</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">ECOLOGIE</data>
+</node>
+<node id="thematique-social">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">SOCIAL</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">SOCIAL</data>
+</node>
+<node id="thematique-fiscalite">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">FISCALITE</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">FISCALITE</data>
+</node>
+<node id="thematique-immigration">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">IMMIGRATION</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">IMMIGRATION</data>
+</node>
+<node id="thematique-sanitaire">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">SANITAIRE</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">SANITAIRE</data>
+</node>
+<node id="thematique-democratie">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">DEMOCRATIE</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">DEMOCRATIE</data>
+</node>
+<node id="thematique-politique">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">POLITIQUE</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d11">POLITIQUE</data>
+</node>
+<node id="Transition énergétique équitable">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Transition énergétique équitable</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Gouvernement français">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Gouvernement français</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Redéfinition du système fiscal">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Redéfinition du système fiscal</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Conditions de démocratie et citoyenneté">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Conditions de démocratie et citoyenneté</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Réorganisation de l'État">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Réorganisation de l'État</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Écologie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Écologie</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Fiscalité">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Fiscalité</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Démocratie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Démocratie</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Justice">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Justice</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Changement nécessaire pour vivre mieux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Changement nécessaire pour vivre mieux</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Système fiscal injuste">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Système fiscal injuste</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Impôt sur le revenu">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Impôt sur le revenu</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Impôts locaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Impôts locaux</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Taxes sur les sociétés">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Taxes sur les sociétés</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Économies d'énergie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Économies d'énergie</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</node>
+<node id="Transport en commun">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Transport en commun</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</node>
+<node id="Covoiturage">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Covoiturage</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</node>
+<node id="Référendums d'initiative locale">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Référendums d'initiative locale</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Proportionnelle">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Proportionnelle</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Tirage au sort">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Tirage au sort</data>
+  <data key="d8">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+  <data key="d21">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<edge source="citoyen-Unknown-None" target="contribution-Unknown-None">
+  <data key="d22">SOUMET</data>
+  <data key="d23">1.0</data>
+  <data key="d24">contribution-Unknown-None</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-ecologie">
+  <data key="d22">ABORDE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-social">
+  <data key="d22">ABORDE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-fiscalite">
+  <data key="d22">ABORDE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-immigration">
+  <data key="d22">ABORDE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-sanitaire">
+  <data key="d22">ABORDE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-democratie">
+  <data key="d22">ABORDE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-politique">
+  <data key="d22">ABORDE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Transition énergétique équitable" target="Gouvernement français">
+  <data key="d22">EXPRIME</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Transition énergétique équitable" target="Écologie">
+  <data key="d22">CONTIENT</data>
+  <data key="d23">0.9</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Transition énergétique équitable" target="Changement nécessaire pour vivre mieux">
+  <data key="d22">EXPRIME</data>
+  <data key="d23">0.9</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Gouvernement français" target="Redéfinition du système fiscal">
+  <data key="d22">EXPRIME</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Gouvernement français" target="Conditions de démocratie et citoyenneté">
+  <data key="d22">EXPRIME</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Gouvernement français" target="Réorganisation de l'État">
+  <data key="d22">EXPRIME</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Gouvernement français" target="Référendums d'initiative locale">
+  <data key="d22">PROPOSE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Gouvernement français" target="Proportionnelle">
+  <data key="d22">PROPOSE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Gouvernement français" target="Tirage au sort">
+  <data key="d22">PROPOSE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Redéfinition du système fiscal" target="Fiscalité">
+  <data key="d22">CONTIENT</data>
+  <data key="d23">0.9</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Redéfinition du système fiscal" target="Système fiscal injuste">
+  <data key="d22">FAIT_REMONTER</data>
+  <data key="d23">0.9</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Conditions de démocratie et citoyenneté" target="Démocratie">
+  <data key="d22">CONTIENT</data>
+  <data key="d23">0.9</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Réorganisation de l'État" target="Justice">
+  <data key="d22">CONTIENT</data>
+  <data key="d23">0.9</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Système fiscal injuste" target="Impôt sur le revenu">
+  <data key="d22">CONCERNE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Système fiscal injuste" target="Impôts locaux">
+  <data key="d22">CONCERNE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Système fiscal injuste" target="Taxes sur les sociétés">
+  <data key="d22">CONCERNE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Économies d'énergie" target="Transport en commun">
+  <data key="d22">PROPOSE</data>
+  <data key="d23">0.8</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+<edge source="Transport en commun" target="Covoiturage">
+  <data key="d22">PROPOSE</data>
+  <data key="d23">0.7</data>
+  <data key="d24">contrib-f9d0d7840f195ff938b0e2dda427c7c8</data>
+</edge>
+</graph></graphml>

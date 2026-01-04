@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d25" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d24" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d23" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d22" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d21" for="node" attr.name="domaine" attr.type="string"/>
+<key id="d20" for="node" attr.name="type" attr.type="string"/>
+<key id="d19" for="node" attr.name="description" attr.type="string"/>
+<key id="d18" for="node" attr.name="cible" attr.type="string"/>
+<key id="d17" for="node" attr.name="valeur" attr.type="string"/>
+<key id="d16" for="node" attr.name="nom" attr.type="string"/>
+<key id="d15" for="node" attr.name="estTypique" attr.type="boolean"/>
+<key id="d14" for="node" attr.name="gravite" attr.type="string"/>
+<key id="d13" for="node" attr.name="objet" attr.type="string"/>
+<key id="d12" for="node" attr.name="intensite" attr.type="double"/>
+<key id="d11" for="node" attr.name="sujet" attr.type="string"/>
+<key id="d10" for="node" attr.name="position" attr.type="string"/>
+<key id="d9" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d8" for="node" attr.name="manuscritType" attr.type="string"/>
+<key id="d7" for="node" attr.name="contributionNumber" attr.type="long"/>
+<key id="d6" for="node" attr.name="commune" attr.type="string"/>
+<key id="d5" for="node" attr.name="estPartielle" attr.type="boolean"/>
+<key id="d4" for="node" attr.name="texte" attr.type="string"/>
+<key id="d3" for="node" attr.name="contributionId" attr.type="string"/>
+<key id="d2" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d1" for="node" attr.name="citoyenId" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="citoyen-Unknown-None">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-None</data>
+  <data key="d2">citoyen-Unknown-None</data>
+</node>
+<node id="contribution-Unknown-None">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-None</data>
+  <data key="d4">Cahier de Saint-Dizant-du-Gua1. Manuscrit, 45 lignes, 369 mots (homme)Le 09 janvier 2019- Combien de têtes sont elles aux commandes de ce pays ? Un jour l'un donne une orientationaussitôt contestée ou démentie par l'autre, ministre ou autre. Pourquoi tant de tergiversations ?...Pas une entreprise privée ne survivrait à une telle gestion !...Mesdames, Messieurs nos dirigeants, un peu plus de cohérence s'il vous plaît.- On feint de découvrir aujourd'hui un problème qui perdure depuis des dé...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d2">contribution-Unknown-None</data>
+</node>
+<node id="citoyen-Unknown-2">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-2</data>
+  <data key="d2">citoyen-Unknown-2</data>
+</node>
+<node id="contribution-Unknown-2">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-2</data>
+  <data key="d4">2. Manuscrit, 1 ligne, 5 motsLe 16 janvier 2019ABOLITION DE TOUS LES PRIVILÈGES[Initiale prénom Nom][FIN]Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition avril 2024</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">2</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-2</data>
+</node>
+<node id="opinion-e81f3499">
+  <data key="d0">OPINION</data>
+  <data key="d2">Incohérence des dirigeants</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d10">contre</data>
+  <data key="d11">gestion du pays</data>
+  <data key="d12">0.8</data>
+</node>
+<node id="doleance-9c3c470f">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Travailleurs pauvres</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d13">non reconnaissance des travailleurs pauvres</data>
+  <data key="d14">forte</data>
+</node>
+<node id="doleance-9e60d4a8">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Incohérence politique</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d13">incohérence des décisions politiques</data>
+  <data key="d14">forte</data>
+</node>
+<node id="verbatim-82ca3db1">
+  <data key="d0">VERBATIM</data>
+  <data key="d2">Cette démocratie est devenue obsolète.</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d15">True</data>
+</node>
+<node id="thematique-db91f285">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Politique</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5&lt;SEP&gt;contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d16">Politique</data>
+</node>
+<node id="niveau_confiance-ecc2cf56">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers les dirigeants</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d17">faible</data>
+  <data key="d18">gouvernement</data>
+</node>
+<node id="reforme_democratique-22170396">
+  <data key="d0">REFORME_DEMOCRATIQUE</data>
+  <data key="d2">Réforme du mode de scrutin</data>
+  <data key="d19">Un changement nécessaire pour revitaliser la démocratie et la rendre plus représentative.</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d16">Réforme du mode de scrutin</data>
+</node>
+<node id="mode_scrutin-ea2eea42">
+  <data key="d0">MODE_SCRUTIN</data>
+  <data key="d2">Vote blanc reconnu</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d16">Vote blanc reconnu</data>
+</node>
+<node id="acteur_institutionnel-1970d9a0">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">Gouvernement</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5&lt;SEP&gt;contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d16">Gouvernement</data>
+  <data key="d20">gouvernement</data>
+</node>
+<node id="service_public-c09381a9">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Démocratie</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d16">Démocratie</data>
+  <data key="d21">politique</data>
+</node>
+<node id="thematique-democratie">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">DEMOCRATIE</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d16">DEMOCRATIE</data>
+</node>
+<node id="thematique-politique">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">POLITIQUE</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d16">POLITIQUE</data>
+</node>
+<node id="doleance-13b2c5ff">
+  <data key="d0">VERBATIM</data>
+  <data key="d2">Abolition de tous les privilèges</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+  <data key="d13">privilèges</data>
+  <data key="d14">forte</data>
+  <data key="d4">Abolition de tous les privilèges</data>
+  <data key="d15">True</data>
+</node>
+<node id="service_public-de523530">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Politique publique</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+  <data key="d16">Politique publique</data>
+  <data key="d21">social</data>
+</node>
+<node id="Incohérence des dirigeants">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Incohérence des dirigeants</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Incohérence politique">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Incohérence politique</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Travailleurs pauvres">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Travailleurs pauvres</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Cette démocratie est devenue obsolète.">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Cette démocratie est devenue obsolète.</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Politique">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Politique</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Réforme du mode de scrutin">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Réforme du mode de scrutin</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Vote blanc reconnu">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Vote blanc reconnu</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Confiance envers les dirigeants">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance envers les dirigeants</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Démocratie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Démocratie</data>
+  <data key="d9">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Abolition de tous les privilèges">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Abolition de tous les privilèges</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition avril 2024">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition avril 2024</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Gouvernement">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Gouvernement</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Politique publique">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Politique publique</data>
+  <data key="d9">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+  <data key="d22">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<edge source="citoyen-Unknown-None" target="contribution-Unknown-None">
+  <data key="d23">SOUMET</data>
+  <data key="d24">1.0</data>
+  <data key="d25">contribution-Unknown-None</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-democratie">
+  <data key="d23">ABORDE</data>
+  <data key="d24">0.8</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-politique">
+  <data key="d23">ABORDE</data>
+  <data key="d24">0.8</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="citoyen-Unknown-2" target="contribution-Unknown-2">
+  <data key="d23">SOUMET</data>
+  <data key="d24">1.0</data>
+  <data key="d25">contribution-Unknown-2</data>
+</edge>
+<edge source="Incohérence des dirigeants" target="Incohérence politique">
+  <data key="d23">EXPRIME</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Incohérence des dirigeants" target="Travailleurs pauvres">
+  <data key="d23">EXPRIME</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Incohérence politique" target="Politique">
+  <data key="d23">FAIT_REMONTER</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Incohérence politique" target="Confiance envers les dirigeants">
+  <data key="d23">TRADUIT</data>
+  <data key="d24">0.85</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Incohérence politique" target="Démocratie">
+  <data key="d23">CONCERNE</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Cette démocratie est devenue obsolète." target="Politique">
+  <data key="d23">CONTIENT</data>
+  <data key="d24">0.8</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Politique" target="Abolition de tous les privilèges">
+  <data key="d23">CONTIENT</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+</edge>
+<edge source="Réforme du mode de scrutin" target="Vote blanc reconnu">
+  <data key="d23">PROPOSE</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Réforme du mode de scrutin" target="Confiance envers les dirigeants">
+  <data key="d23">TRADUIT</data>
+  <data key="d24">0.7</data>
+  <data key="d25">contrib-b0dec8e81511e3bea01f48f8ac400425</data>
+</edge>
+<edge source="Abolition de tous les privilèges" target="Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition avril 2024">
+  <data key="d23">FAIT_REMONTER</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+</edge>
+<edge source="Abolition de tous les privilèges" target="Gouvernement">
+  <data key="d23">EXPRIME</data>
+  <data key="d24">0.8</data>
+  <data key="d25">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+</edge>
+<edge source="Abolition de tous les privilèges" target="Politique publique">
+  <data key="d23">CONCERNE</data>
+  <data key="d24">0.9</data>
+  <data key="d25">contrib-5e9e49284c98a15eaebd523782502ca5</data>
+</edge>
+</graph></graphml>

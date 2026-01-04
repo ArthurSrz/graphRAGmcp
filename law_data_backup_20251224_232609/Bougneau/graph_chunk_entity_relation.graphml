@@ -1,0 +1,1582 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d28" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d27" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d26" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d25" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d24" for="node" attr.name="estTypique" attr.type="boolean"/>
+<key id="d23" for="node" attr.name="type" attr.type="string"/>
+<key id="d22" for="node" attr.name="domaine" attr.type="string"/>
+<key id="d21" for="node" attr.name="cible" attr.type="string"/>
+<key id="d20" for="node" attr.name="valeur" attr.type="string"/>
+<key id="d19" for="node" attr.name="intensite" attr.type="double"/>
+<key id="d18" for="node" attr.name="sujet" attr.type="string"/>
+<key id="d17" for="node" attr.name="position" attr.type="string"/>
+<key id="d16" for="node" attr.name="nom" attr.type="string"/>
+<key id="d15" for="node" attr.name="categorie" attr.type="string"/>
+<key id="d14" for="node" attr.name="titre" attr.type="string"/>
+<key id="d13" for="node" attr.name="description" attr.type="string"/>
+<key id="d12" for="node" attr.name="gravite" attr.type="string"/>
+<key id="d11" for="node" attr.name="objet" attr.type="string"/>
+<key id="d10" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="node" attr.name="manuscritType" attr.type="string"/>
+<key id="d8" for="node" attr.name="contributionNumber" attr.type="long"/>
+<key id="d7" for="node" attr.name="demographic" attr.type="string"/>
+<key id="d6" for="node" attr.name="commune" attr.type="string"/>
+<key id="d5" for="node" attr.name="estPartielle" attr.type="boolean"/>
+<key id="d4" for="node" attr.name="texte" attr.type="string"/>
+<key id="d3" for="node" attr.name="contributionId" attr.type="string"/>
+<key id="d2" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d1" for="node" attr.name="citoyenId" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="citoyen-Unknown-None">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-None</data>
+  <data key="d2">citoyen-Unknown-None</data>
+</node>
+<node id="contribution-Unknown-None">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-None</data>
+  <data key="d4">Cahier de Bougneau1. Manuscrit, 10 lignes, 87 mots (homme)[Nom Prénom] le 12-02-19[Adresse]Stop à l'augmentation des carburants, de l'électricité et du gaz.Hausse des retraites, suppression de la CSG tout de suite.Hausse du SMIC de 20 %. On ne veut pas de la prime d'activité, seulement que les salaires soient prisen compte pour les retraites.Rétablissement de l'ISF.Pour un référendum d'initiative citoyenne à questions multiples.Conserver nos services de proximité.Suppression du CICE...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d2">contribution-Unknown-None</data>
+</node>
+<node id="citoyen-Unknown-2">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-2</data>
+  <data key="d7">homme</data>
+  <data key="d2">citoyen-Unknown-2</data>
+</node>
+<node id="contribution-Unknown-2">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-2</data>
+  <data key="d4">2. Dactylographié, 18 lignes, 204 mots (homme)[PRÉNOM NOM, Adresse, Téléphone]Doléance 2018Domaine sécurité routièreRevenir à la vitesse de 90 km/h sur les RN afin de rétablir la distance de sécurité entre les véhiculeslégers et les poids lourds et de retrouver la vigilance au volant, éviter l’endormissement, la perted'attention et l'utilisation du portable.Domaine économie nationale et localeRéduire le nombre de parlementaires (sénateurs et députés) ainsi que les élus locaux régionaux,...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d8">2</data>
+  <data key="d9">dactylographié</data>
+  <data key="d2">contribution-Unknown-2</data>
+</node>
+<node id="citoyen-Unknown-4">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-4</data>
+  <data key="d7">femme</data>
+  <data key="d2">citoyen-Unknown-4</data>
+</node>
+<node id="contribution-Unknown-4">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-4</data>
+  <data key="d4">4. Manuscrit, 18 lignes, 160 mots (femme)15/01/20191 - Revenir sur la CSG. Les pensions trop petites ne peuvent pas supporter la CSG.2 - ISF à repenser, ou à rétablir pour ceux qui n'investissent par dans les entreprises françaises. Unecontrepartie doit être demandée en fonction du non-investissement.3 - Trop d'écarts dans les salaires ; chacun doit pouvoir vivre décemment de son travail.Qu’est ce qui justifie des salaires aussi importants pour les hauts fonctionnaires alors que d'autres n...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d8">4</data>
+  <data key="d9">manuscrit</data>
+  <data key="d2">contribution-Unknown-4</data>
+</node>
+<node id="citoyen-Unknown-5">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-5</data>
+  <data key="d2">citoyen-Unknown-5</data>
+</node>
+<node id="contribution-Unknown-5">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-5</data>
+  <data key="d4">5. Manuscrit, 9 lignes, 57 motsLe 17.12.2018- Il faut freiner le train de vie [de] l’État, par réduire les indemnités parlementaires des sénateurs ettous les avantages.- Changer cette constitution afin que le président soit responsable.Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition septembre 2024Cahier de Bougneau- Réouverture des services publics.- Non aux fermetures de lignes trains régionaux.- Augmentation du SMIC 1500 € nets.- Réfléchir au référendum initiat...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d8">5</data>
+  <data key="d9">manuscrit</data>
+  <data key="d2">contribution-Unknown-5</data>
+</node>
+<node id="citoyen-Unknown-6">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-6</data>
+  <data key="d2">citoyen-Unknown-6</data>
+</node>
+<node id="contribution-Unknown-6">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-6</data>
+  <data key="d4">6. Dactylographié (italique), 28 lignes, 326 motsDoléances1 - Retour à la vitesse de 90 km/h sur les nationales et mise en vigueur d'une vitesse adaptée à ladangerosité des routes.2 - Retour sur la loi NOTRe et restitution des compétences aux communes sur les sujets d'intérêtgénéral (économie, commerces, urbanisme) ; retour aux anciennes régions pour améliorer ledialogue altéré pour des raisons de manque de proximité. « On ne gère bien que de près !!! ».3 - Amélioration de la mobilité da...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d8">6</data>
+  <data key="d9">dactylographié</data>
+  <data key="d2">contribution-Unknown-6</data>
+</node>
+<node id="citoyen-Unknown-8">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-8</data>
+  <data key="d7">homme</data>
+  <data key="d2">citoyen-Unknown-8</data>
+</node>
+<node id="contribution-Unknown-8">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-8</data>
+  <data key="d4">8. Manuscrit, 8 lignes, 50 mots (homme)Bougneau le 23.1.2019Mr [Nom Prénom, Adresse]Demande1er - Remettre ISF.2e - Augmentation des petites retraites.3e - Baisse de la CSG.4e - Contrôle des chômeurs de très longue durée qui ne cherchent aucun emploi et profitent detoutes les gratuités : banque alimentaire, CMU, etc. et gagnent plus qu'une personne payée au SMIG.[Signature][FIN]Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition septembre 2024</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d8">8</data>
+  <data key="d9">manuscrit</data>
+  <data key="d2">contribution-Unknown-8</data>
+</node>
+<node id="doleance-4ffae966">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Augmentation des carburants, électricité et gaz</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d11">augmentation des carburants, électricité et gaz</data>
+  <data key="d12">forte</data>
+</node>
+<node id="proposition-a7acf2ad">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Hausse des retraites et suppression CSG</data>
+  <data key="d13">Hausse des retraites et suppression immédiate de la CSG</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d14">Hausse des retraites et suppression CSG</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="proposition-f11587d4">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Hausse du SMIC</data>
+  <data key="d13">Hausse du SMIC de 20%</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d14">Hausse du SMIC</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-f8a4b908">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Rétablissement de l'ISF</data>
+  <data key="d13">Rétablir l'ISF s’il n'y a pas de contrepartie.</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d14">Rétablissement de l'ISF</data>
+  <data key="d15">fiscale</data>
+  <data key="d16">Rétablissement de l'ISF</data>
+  <data key="d17">pour</data>
+  <data key="d18">Rétablissement de l'ISF s’il n'y a pas de contrepartie</data>
+  <data key="d19">0.7</data>
+</node>
+<node id="proposition-c8d34114">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Référendum d'initiative citoyenne</data>
+  <data key="d13">Réfléchir au référendum d'initiative citoyenne</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2&lt;SEP&gt;contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d14">Réflexion sur le référendum d'initiative citoyenne</data>
+  <data key="d15">democratique</data>
+  <data key="d16">Référendum d'initiative citoyenne</data>
+  <data key="d17">pour</data>
+  <data key="d18">Référendum d'initiative citoyenne révocatoire</data>
+  <data key="d19">0.9</data>
+</node>
+<node id="proposition-67f424bf">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Conserver les services de proximité</data>
+  <data key="d13">Conserver nos services de proximité</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d14">Conserver les services de proximité</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-7ce09f86">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Suppression du CICE</data>
+  <data key="d13">Suppression du Crédit d'Impôt pour la Compétitivité et l'Emploi (CICE) qui enrichit les entreprises sans créer d'emploi</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d14">Suppression du CICE</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="proposition-b403a423">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Prise en compte du vote blanc et proportionnelle</data>
+  <data key="d13">Prendre en compte le vote blanc et introduire la proportionnelle à 25%</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d14">Prise en compte du vote blanc et proportionnelle</data>
+  <data key="d15">democratique</data>
+</node>
+<node id="type_impot-ddf86b0b">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d2">CSG</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532&lt;SEP&gt;contrib-b613629238016864577bd5c14f9d02b0&lt;SEP&gt;contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d16">CSG</data>
+  <data key="d15">direct</data>
+</node>
+<node id="type_impot-4c226d35">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d2">ISF</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e&lt;SEP&gt;contrib-8735d2028f6b5455c9ec3c74ea0c9532&lt;SEP&gt;contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d16">ISF</data>
+  <data key="d15">direct</data>
+</node>
+<node id="type_impot-fe982ecc">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d2">CICE</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d16">CICE</data>
+  <data key="d15">indirect</data>
+</node>
+<node id="niveau_confiance-f49c972e">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers les services de proximité</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d20">élevé</data>
+  <data key="d21">services de proximité</data>
+</node>
+<node id="mode_scrutin-b6410e1a">
+  <data key="d0">MODE_SCRUTIN</data>
+  <data key="d2">Proportionnelle</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d16">proportionnelle</data>
+</node>
+<node id="mode_scrutin-c93ef120">
+  <data key="d0">MODE_SCRUTIN</data>
+  <data key="d2">Vote blanc</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d16">vote blanc</data>
+</node>
+<node id="thematique-fiscalite">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">FISCALITE</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-203d04e37ba38ec2a91f32b767c9d80e&lt;SEP&gt;contrib-8735d2028f6b5455c9ec3c74ea0c9532&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483&lt;SEP&gt;contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d16">FISCALITE</data>
+</node>
+<node id="thematique-democratie">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">DEMOCRATIE</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2&lt;SEP&gt;contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d16">DEMOCRATIE</data>
+</node>
+<node id="thematique-social">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">SOCIAL</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-203d04e37ba38ec2a91f32b767c9d80e&lt;SEP&gt;contrib-8735d2028f6b5455c9ec3c74ea0c9532&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483&lt;SEP&gt;contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d16">SOCIAL</data>
+</node>
+<node id="doleance-9cfd1041">
+  <data key="d0">OPINION</data>
+  <data key="d2">Vitesse de 90 km/h</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Vitesse de 90 km/h sur les RN</data>
+  <data key="d12">moyenne</data>
+  <data key="d17">pour</data>
+  <data key="d18">Retour à la vitesse de 90 km/h sur les nationales</data>
+  <data key="d19">0.7</data>
+</node>
+<node id="doleance-6e1260c5">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Parlementaires et élus locaux</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d11">Réduction du nombre de parlementaires et élus locaux</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="proposition-dfcc1fc9">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Regroupement de communes</data>
+  <data key="d13">Regrouper les communes inférieures à 2000 habitants avec création d'une commune principale et d'un conseil municipal élargi</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d14">Regroupement de communes</data>
+  <data key="d15">democratique</data>
+</node>
+<node id="proposition-8cfe4b16">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Déclaration de dons aux impôts</data>
+  <data key="d13">Permettre aux parents et grands-parents de déclarer les dons financiers aux impôts pour bénéficier de la réduction d'impôt sur le revenu</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d14">Déclaration de dons aux impôts</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="proposition-84a990ff">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Suppression augmentation CSG</data>
+  <data key="d13">Supprimer l'augmentation de la CSG de 1,7 qui pénalise le pouvoir d'achat des retraités</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d14">Suppression augmentation CSG</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="thematique-86adca24">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Sécurité Routière</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d16">Sécurité Routière</data>
+</node>
+<node id="thematique-ead14cb2">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Économie Nationale et Locale</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d16">Économie Nationale et Locale</data>
+</node>
+<node id="thematique-c6b0464c">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Social et Sociétal</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d16">Social et Sociétal</data>
+</node>
+<node id="niveau_confiance-edfdf567">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers les parlementaires</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d20">faible</data>
+  <data key="d21">parlementaires</data>
+</node>
+<node id="niveau_confiance-d56b9368">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers les élus locaux</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d20">faible</data>
+  <data key="d21">élus locaux</data>
+</node>
+<node id="thematique-justice">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">JUSTICE</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d16">JUSTICE</data>
+</node>
+<node id="thematique-securite">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">SECURITE</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d16">SECURITE</data>
+</node>
+<node id="thematique-politique">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">POLITIQUE</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2&lt;SEP&gt;contrib-b613629238016864577bd5c14f9d02b0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d16">POLITIQUE</data>
+</node>
+<node id="opinion-8fc3aa87">
+  <data key="d0">OPINION</data>
+  <data key="d2">Revenir sur la CSG</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d17">contre</data>
+  <data key="d18">CSG</data>
+  <data key="d19">0.8</data>
+</node>
+<node id="reforme_fiscale-35b70b28">
+  <data key="d0">REFORME_FISCALE</data>
+  <data key="d2">Repenser ISF</data>
+  <data key="d13">Repenser ou rétablir l'ISF pour ceux qui n'investissent pas dans les entreprises françaises, avec une contrepartie liée au non-investissement.</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d16">Repenser ISF</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="doleance-2a833278">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Disparités salariales</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d11">Disparités salariales et sociales</data>
+  <data key="d12">forte</data>
+</node>
+<node id="doleance-72c9f6f5">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Figer les retraites</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d11">Figer les retraites et CSG</data>
+  <data key="d12">forte</data>
+</node>
+<node id="mesure_ecologique-69481ba6">
+  <data key="d0">MESURE_ECOLOGIQUE</data>
+  <data key="d2">Aide à la transition écologique</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d16">Aide à la transition écologique</data>
+  <data key="d22">energie</data>
+</node>
+<node id="doleance-a9df9494">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Vitesse 80 km/h</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d11">Réduction de la vitesse à 80 km/h</data>
+  <data key="d12">faible</data>
+</node>
+<node id="thematique-7347f8ed">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Fiscalité</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e&lt;SEP&gt;contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d16">Fiscalité</data>
+</node>
+<node id="thematique-26e27b6f">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Économie</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e&lt;SEP&gt;contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d16">Économie</data>
+</node>
+<node id="thematique-2378b56c">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Justice Sociale</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d16">Justice Sociale</data>
+</node>
+<node id="thematique-2666cd03">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Écologie</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d16">Écologie</data>
+</node>
+<node id="niveau_confiance-1f7f607b">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance dans le gouvernement</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d20">faible</data>
+  <data key="d21">gouvernement</data>
+</node>
+<node id="acteur_institutionnel-1970d9a0">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">Gouvernement</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d16">Gouvernement</data>
+  <data key="d23">gouvernement</data>
+</node>
+<node id="service_public-01d38e52">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Retraites</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e&lt;SEP&gt;contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d16">Retraites</data>
+  <data key="d22">social</data>
+</node>
+<node id="service_public-f8cddb9f">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Éducation</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d16">Éducation</data>
+  <data key="d22">social</data>
+</node>
+<node id="thematique-ecologie">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">ECOLOGIE</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d16">ECOLOGIE</data>
+</node>
+<node id="opinion-dd959bce">
+  <data key="d0">OPINION</data>
+  <data key="d2">Freiner le train de vie de l'État</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d17">pour</data>
+  <data key="d18">train de vie de l'État</data>
+  <data key="d19">0.8</data>
+</node>
+<node id="proposition-f1401414">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Réduction des indemnités parlementaires</data>
+  <data key="d13">Réduire les indemnités parlementaires des sénateurs et tous les avantages</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d14">Réduction des indemnités parlementaires</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="proposition-5d73c118">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Responsabilité du président</data>
+  <data key="d13">Changer la constitution afin que le président soit responsable</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d14">Responsabilité du président</data>
+  <data key="d15">democratique</data>
+</node>
+<node id="servic_public-131a3037">
+  <data key="d0">SERVIC_PUBLIC</data>
+  <data key="d2">Services publics</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d16">Services publics</data>
+  <data key="d22">social</data>
+</node>
+<node id="doleance-862d302a">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Fermeture des lignes de trains régionaux</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d11">Fermetures de lignes de trains régionaux</data>
+  <data key="d12">forte</data>
+</node>
+<node id="proposition-21f75669">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Augmentation du SMIC</data>
+  <data key="d13">Augmenter le SMIC à 1500 € nets</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d14">Augmentation du SMIC</data>
+  <data key="d15">sociale</data>
+  <data key="d11">Augmentation du SMIC et abandon des seuils d'attribution des aides sociales</data>
+  <data key="d12">forte</data>
+  <data key="d17">pour</data>
+  <data key="d18">Augmentation du SMIC</data>
+  <data key="d19">0.8</data>
+</node>
+<node id="niveau_confiance-8dd568ad">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">État</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d20">faible</data>
+  <data key="d21">État</data>
+</node>
+<node id="service_public-0024f2a0">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Transports</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d16">Transports</data>
+  <data key="d22">transport</data>
+</node>
+<node id="doleance-4548f4ae">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Vitesse sur nationales</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Retour à la vitesse de 90 km/h sur les nationales</data>
+  <data key="d12">faible</data>
+</node>
+<node id="doleance-94edaba6">
+  <data key="d0">OPINION</data>
+  <data key="d2">Compétences aux communes</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Retour sur la loi NOTRe et restitution des compétences aux communes</data>
+  <data key="d12">moyenne</data>
+  <data key="d17">pour</data>
+  <data key="d18">Restitution des compétences aux communes</data>
+  <data key="d19">0.8</data>
+</node>
+<node id="verbatim-4cea6aff">
+  <data key="d0">VERBATIM</data>
+  <data key="d2">On ne gère bien que de près !!!</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d4">On ne gère bien que de près !!!</data>
+  <data key="d24">True</data>
+</node>
+<node id="doleance-1e0f4098">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Mobilité rurale</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Amélioration de la mobilité dans les zones rurales ou périurbaines</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="doleance-59406693">
+  <data key="d0">OPINION</data>
+  <data key="d2">Politique de redistribution</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Remise à plat de la politique de redistribution des aides sociales</data>
+  <data key="d12">forte</data>
+  <data key="d17">pour</data>
+  <data key="d18">Remise à plat de la politique de redistribution des aides sociales</data>
+  <data key="d19">0.9</data>
+</node>
+<node id="reforme_fiscale-cae965d2">
+  <data key="d0">REFORME_FISCALE</data>
+  <data key="d2">Remise à plat de la fiscalité</data>
+  <data key="d13">Remise à plat de la fiscalité et suppression des niches fiscales permettant l'optimisation.</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d16">Remise à plat de la fiscalité</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="doleance-b70f197a">
+  <data key="d0">OPINION</data>
+  <data key="d2">Dose de proportionnelle</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Introduction d'une dose de proportionnelle dans les élections nationales</data>
+  <data key="d12">moyenne</data>
+  <data key="d17">pour</data>
+  <data key="d18">Introduction d'une dose de proportionnelle dans les élections nationales</data>
+  <data key="d19">0.75</data>
+</node>
+<node id="reforme_democratique-c794db54">
+  <data key="d0">REFORME_DEMOCRATIQUE</data>
+  <data key="d2">Référendum d'initiative citoyenne révocatoire</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d16">Référendum d'initiative citoyenne révocatoire</data>
+</node>
+<node id="doleance-e9e0d043">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Rétroactif CSG</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Retour sur l'indexation de la CSG pour les retraites</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="mesure_ecologique-71b75ad4">
+  <data key="d0">MESURE_ECOLOGIQUE</data>
+  <data key="d2">Écologie constructive</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d16">Écologie constructive</data>
+  <data key="d22">environnement</data>
+</node>
+<node id="doleance-c19e7ff3">
+  <data key="d0">OPINION</data>
+  <data key="d2">Immunité des élus</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d11">Suppression de l'immunité des élus</data>
+  <data key="d12">forte</data>
+  <data key="d17">contre</data>
+  <data key="d18">Suppression de l'immunité des élus</data>
+  <data key="d19">0.7</data>
+</node>
+<node id="opinion-5b314f1d">
+  <data key="d0">OPINION</data>
+  <data key="d2">Amélioration de la mobilité</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d17">pour</data>
+  <data key="d18">Amélioration de la mobilité dans les zones rurales</data>
+  <data key="d19">0.6</data>
+</node>
+<node id="opinion-afae13b2">
+  <data key="d0">OPINION</data>
+  <data key="d2">Suppression des niches fiscales</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d17">pour</data>
+  <data key="d18">Suppression des niches fiscales</data>
+  <data key="d19">0.8</data>
+</node>
+<node id="opinion-69545e04">
+  <data key="d0">OPINION</data>
+  <data key="d2">Diminution des élus</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d17">pour</data>
+  <data key="d18">Diminution du nombre de députés et de sénateurs</data>
+  <data key="d19">0.6</data>
+</node>
+<node id="opinion-67e812bf">
+  <data key="d0">OPINION</data>
+  <data key="d2">Révision des salaires des fonctionnaires</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d17">pour</data>
+  <data key="d18">Révision du barème des salaires des hauts fonctionnaires</data>
+  <data key="d19">0.5</data>
+</node>
+<node id="opinion-86cd1031">
+  <data key="d0">OPINION</data>
+  <data key="d2">Indexation de la CSG</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d17">contre</data>
+  <data key="d18">Retour sur l'indexation de la CSG pour les retraites</data>
+  <data key="d19">0.4</data>
+</node>
+<node id="opinion-436d1caf">
+  <data key="d0">OPINION</data>
+  <data key="d2">Écologie punitive</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d17">contre</data>
+  <data key="d18">Écologie punitive</data>
+  <data key="d19">0.6</data>
+</node>
+<node id="proposition-18809fcc">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Remettre ISF</data>
+  <data key="d13">Remettre en place l'ISF (Impôt de Solidarité sur la Fortune).</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d14">Remettre ISF</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="proposition-fc437c96">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Augmentation petites retraites</data>
+  <data key="d13">Augmenter les petites retraites pour améliorer le niveau de vie des retraités.</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d14">Augmentation petites retraites</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-d66e1880">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Baisse CSG</data>
+  <data key="d13">Proposer une baisse de la CSG (Contribution Sociale Généralisée) pour alléger le fardeau fiscal des citoyens.</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d14">Baisse CSG</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="doleance-4b33b7ec">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Contrôle chômeurs longue durée</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d11">Contrôle des chômeurs de très longue durée</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="service_public-91ead2de">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Banque alimentaire</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d16">Banque alimentaire</data>
+  <data key="d22">social</data>
+</node>
+<node id="service_public-f04c5694">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">CMU</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d16">CMU</data>
+  <data key="d22">social</data>
+</node>
+<node id="service_public-007cf553">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">SMIG</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d16">SMIG</data>
+  <data key="d22">social</data>
+</node>
+<node id="opinion-ab9fdb7a">
+  <data key="d0">OPINION</data>
+  <data key="d2">Supporter Remise ISF</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d17">pour</data>
+  <data key="d18">Remettre l'ISF</data>
+  <data key="d19">0.8</data>
+</node>
+<node id="opinion-7004f7db">
+  <data key="d0">OPINION</data>
+  <data key="d2">Supporter Augmentation petites retraites</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d17">pour</data>
+  <data key="d18">Augmentation des petites retraites</data>
+  <data key="d19">0.9</data>
+</node>
+<node id="opinion-646ef1bb">
+  <data key="d0">OPINION</data>
+  <data key="d2">Supporter Baisse CSG</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d17">pour</data>
+  <data key="d18">Baisse de la CSG</data>
+  <data key="d19">0.85</data>
+</node>
+<node id="niveau_confiance-4f68b45d">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers aides sociales</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d20">faible</data>
+  <data key="d21">aides sociales</data>
+</node>
+<node id="thematique-60f0f320">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Chômage</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d16">Chômage</data>
+</node>
+<node id="Stop à l'augmentation des carburants, de l'électricité et du gaz">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Stop à l'augmentation des carburants, de l'électricité et du gaz</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="augmentation des carburants, électricité et gaz">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">augmentation des carburants, électricité et gaz</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="Hausse des retraites et suppression CSG">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Hausse des retraites et suppression CSG</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="Hausse du SMIC">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Hausse du SMIC</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="Rétablissement de l'ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Rétablissement de l'ISF</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Référendum d'initiative citoyenne">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Référendum d'initiative citoyenne</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Conserver les services de proximité">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Conserver les services de proximité</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="Suppression du CICE">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Suppression du CICE</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="Prise en compte du vote blanc et proportionnelle">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Prise en compte du vote blanc et proportionnelle</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">ISF</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="CICE">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">CICE</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="Proportionnelle">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Proportionnelle</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="vote blanc">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">vote blanc</data>
+  <data key="d10">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</node>
+<node id="Vitesse de 90 km/h">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Vitesse de 90 km/h</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Vitesse de 90 km/h sur les RN">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Vitesse de 90 km/h sur les RN</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Parlementaires et élus locaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Parlementaires et élus locaux</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Réduction du nombre de parlementaires et élus locaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Réduction du nombre de parlementaires et élus locaux</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Regroupement de communes">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Regroupement de communes</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Déclaration de dons aux impôts">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Déclaration de dons aux impôts</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Suppression augmentation CSG">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Suppression augmentation CSG</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="CSG">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">CSG</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Sécurité Routière">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Sécurité Routière</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Économie Nationale et Locale">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Économie Nationale et Locale</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Social et Sociétal">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Social et Sociétal</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Confiance envers les parlementaires">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance envers les parlementaires</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Confiance envers les élus locaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance envers les élus locaux</data>
+  <data key="d10">contrib-b613629238016864577bd5c14f9d02b0</data>
+</node>
+<node id="Revenir sur la CSG">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Revenir sur la CSG</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Repenser ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Repenser ISF</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Disparités salariales">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Disparités salariales</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Service public">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Service public</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Figer les retraites">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Figer les retraites</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Aide à la transition écologique">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Aide à la transition écologique</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Réduction de la vitesse à 80 km/h">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Réduction de la vitesse à 80 km/h</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Fiscalité">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Fiscalité</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Économie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Économie</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Justice Sociale">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Justice Sociale</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Retraites">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Retraites</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Écologie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Écologie</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Sécurité">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Sécurité</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Confiance dans le gouvernement">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance dans le gouvernement</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Gouvernement">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Gouvernement</data>
+  <data key="d10">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</node>
+<node id="Réduction des indemnités parlementaires">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Réduction des indemnités parlementaires</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Services publics">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Services publics</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="Responsabilité du président">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Responsabilité du président</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Fermeture des lignes de trains régionaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Fermeture des lignes de trains régionaux</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="Augmentation du SMIC">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Augmentation du SMIC</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</node>
+<node id="SMIC">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">SMIC</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</node>
+<node id="Freiner le train de vie de l'État">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Freiner le train de vie de l'État</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Transports">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Transports</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="Référence aux services publics">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Référence aux services publics</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</node>
+<node id="État">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">État</data>
+  <data key="d10">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</node>
+<node id="Remise à plat de la fiscalité">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Remise à plat de la fiscalité</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Retour sur la loi NOTRe et restitution des compétences aux communes">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Retour sur la loi NOTRe et restitution des compétences aux communes</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+</node>
+<node id="Vitesse sur nationales">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Vitesse sur nationales</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+</node>
+<node id="Dose de proportionnelle">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Dose de proportionnelle</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+</node>
+<node id="Mobilité rurale">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Mobilité rurale</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+</node>
+<node id="Politique de redistribution">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Politique de redistribution</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+</node>
+<node id="Suppression de l'immunité des élus">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Suppression de l'immunité des élus</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+</node>
+<node id="Intégration d'une écologie constructive">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Intégration d'une écologie constructive</data>
+  <data key="d10">contrib-c9f0270ce547329ad361e7750c121483</data>
+</node>
+<node id="Remettre ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Remettre ISF</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Baisse CSG">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Baisse CSG</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Contrôle chômeurs longue durée">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Contrôle chômeurs longue durée</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<node id="Banque alimentaire">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Banque alimentaire</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<node id="CMU">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">CMU</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<node id="SMIG">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">SMIG</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<node id="Augmentation petites retraites">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Augmentation petites retraites</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<node id="Chômage">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Chômage</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<node id="Supporter Remise ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Supporter Remise ISF</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Supporter Augmentation petites retraites">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Supporter Augmentation petites retraites</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<node id="Supporter Baisse CSG">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Supporter Baisse CSG</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Confiance envers aides sociales">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance envers aides sociales</data>
+  <data key="d10">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</node>
+<edge source="citoyen-Unknown-None" target="contribution-Unknown-None">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-None</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-democratie">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="citoyen-Unknown-2" target="contribution-Unknown-2">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-2</data>
+</edge>
+<edge source="contribution-Unknown-2" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="contribution-Unknown-2" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="contribution-Unknown-2" target="thematique-justice">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="contribution-Unknown-2" target="thematique-securite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="contribution-Unknown-2" target="thematique-politique">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="citoyen-Unknown-4" target="contribution-Unknown-4">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-4</data>
+</edge>
+<edge source="contribution-Unknown-4" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="contribution-Unknown-4" target="thematique-ecologie">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="contribution-Unknown-4" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="citoyen-Unknown-5" target="contribution-Unknown-5">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-5</data>
+</edge>
+<edge source="contribution-Unknown-5" target="thematique-democratie">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="contribution-Unknown-5" target="thematique-politique">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="citoyen-Unknown-6" target="contribution-Unknown-6">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-6</data>
+</edge>
+<edge source="contribution-Unknown-6" target="thematique-ecologie">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="contribution-Unknown-6" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="contribution-Unknown-6" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="contribution-Unknown-6" target="thematique-democratie">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="contribution-Unknown-6" target="thematique-politique">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="citoyen-Unknown-8" target="contribution-Unknown-8">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-8</data>
+</edge>
+<edge source="contribution-Unknown-8" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="contribution-Unknown-8" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Stop à l'augmentation des carburants, de l'électricité et du gaz" target="augmentation des carburants, électricité et gaz">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Hausse des retraites et suppression CSG" target="Hausse des retraites et suppression CSG">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Hausse du SMIC" target="Hausse du SMIC">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Rétablissement de l'ISF" target="Rétablissement de l'ISF">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Rétablissement de l'ISF" target="ISF">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">1.8</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0&lt;SEP&gt;contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="Rétablissement de l'ISF" target="Remise à plat de la fiscalité">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="Référendum d'initiative citoyenne" target="Référendum d'initiative citoyenne">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Référendum d'initiative citoyenne" target="Responsabilité du président">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Référendum d'initiative citoyenne" target="Économie">
+  <data key="d26">PROPOSE</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Conserver les services de proximité" target="Conserver les services de proximité">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Suppression du CICE" target="Suppression du CICE">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Suppression du CICE" target="CICE">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Prise en compte du vote blanc et proportionnelle" target="Prise en compte du vote blanc et proportionnelle">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Prise en compte du vote blanc et proportionnelle" target="Proportionnelle">
+  <data key="d26">PROPOSE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="Prise en compte du vote blanc et proportionnelle" target="vote blanc">
+  <data key="d26">PROPOSE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-ce295e5218e4ca9205d5635ab0191eb0</data>
+</edge>
+<edge source="ISF" target="Repenser ISF">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="ISF" target="Remettre ISF">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Vitesse de 90 km/h" target="Vitesse de 90 km/h sur les RN">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Vitesse de 90 km/h" target="Sécurité Routière">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Parlementaires et élus locaux" target="Réduction du nombre de parlementaires et élus locaux">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Parlementaires et élus locaux" target="Économie Nationale et Locale">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Parlementaires et élus locaux" target="Confiance envers les parlementaires">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Parlementaires et élus locaux" target="Confiance envers les élus locaux">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Regroupement de communes" target="Regroupement de communes">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Regroupement de communes" target="Économie Nationale et Locale">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Déclaration de dons aux impôts" target="Déclaration de dons aux impôts">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Déclaration de dons aux impôts" target="Social et Sociétal">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Suppression augmentation CSG" target="CSG">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Suppression augmentation CSG" target="Suppression augmentation CSG">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="Suppression augmentation CSG" target="Social et Sociétal">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-b613629238016864577bd5c14f9d02b0</data>
+</edge>
+<edge source="CSG" target="Revenir sur la CSG">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="CSG" target="Baisse CSG">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Revenir sur la CSG" target="Fiscalité">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Repenser ISF" target="Économie">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Disparités salariales" target="Service public">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Disparités salariales" target="Justice Sociale">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Service public" target="Figer les retraites">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Service public" target="Aide à la transition écologique">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Service public" target="Réduction de la vitesse à 80 km/h">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.5</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Figer les retraites" target="Retraites">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Aide à la transition écologique" target="Écologie">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Réduction de la vitesse à 80 km/h" target="Sécurité">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.6</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Fiscalité" target="Remettre ISF">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Fiscalité" target="Baisse CSG">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Économie" target="Réduction des indemnités parlementaires">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Retraites" target="Augmentation petites retraites">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Confiance dans le gouvernement" target="Gouvernement">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-203d04e37ba38ec2a91f32b767c9d80e</data>
+</edge>
+<edge source="Réduction des indemnités parlementaires" target="Services publics">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Réduction des indemnités parlementaires" target="Freiner le train de vie de l'État">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Services publics" target="Fermeture des lignes de trains régionaux">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Responsabilité du président" target="Freiner le train de vie de l'État">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Fermeture des lignes de trains régionaux" target="Transports">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Augmentation du SMIC" target="SMIC">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Augmentation du SMIC" target="Augmentation du SMIC">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="Référence aux services publics" target="État">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-f34efda9c302f30ec8cad2a12d8860d2</data>
+</edge>
+<edge source="Retour sur la loi NOTRe et restitution des compétences aux communes" target="Vitesse sur nationales">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.6</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="Retour sur la loi NOTRe et restitution des compétences aux communes" target="Dose de proportionnelle">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.5</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="Mobilité rurale" target="Politique de redistribution">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.5</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="Suppression de l'immunité des élus" target="Intégration d'une écologie constructive">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-c9f0270ce547329ad361e7750c121483</data>
+</edge>
+<edge source="Remettre ISF" target="Supporter Remise ISF">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Baisse CSG" target="Supporter Baisse CSG">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Contrôle chômeurs longue durée" target="Banque alimentaire">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Contrôle chômeurs longue durée" target="CMU">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Contrôle chômeurs longue durée" target="SMIG">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Contrôle chômeurs longue durée" target="Chômage">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Banque alimentaire" target="Confiance envers aides sociales">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="CMU" target="Confiance envers aides sociales">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+<edge source="Augmentation petites retraites" target="Supporter Augmentation petites retraites">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-8735d2028f6b5455c9ec3c74ea0c9532</data>
+</edge>
+</graph></graphml>

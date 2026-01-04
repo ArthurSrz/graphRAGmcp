@@ -1,0 +1,1485 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d9" for="edge" attr.name="relationship_type" attr.type="string" />
+<ns0:key id="d8" for="edge" attr.name="order" attr.type="long" />
+<ns0:key id="d7" for="edge" attr.name="source_id" attr.type="string" />
+<ns0:key id="d6" for="edge" attr.name="description" attr.type="string" />
+<ns0:key id="d5" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d4" for="node" attr.name="clusters" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="entity_name" attr.type="string" />
+<ns0:key id="d2" for="node" attr.name="source_id" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="description" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+<ns0:graph edgedefault="undirected"><node id="&quot;CORME ECLUSE_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Corme Ecluse - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Corme_Ecluse-commune-root"</data><data key="d3">"CORME ECLUSE_COMMUNE"</data><data key="d4">[]</data></node><node id="&quot;CORME ECLUSE_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Corme Ecluse - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Corme_Ecluse-commune-root"</data><data key="d3">"CORME ECLUSE_COMMUNE"</data><data key="d4">[]</data></node><ns0:node id="&quot;MONSIEUR LE PRÉSIDENT&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Monsieur le Président is a figure of authority in the context of the citizen's consultation, being addressed by citizens with suggestions and grievances."&lt;SEP&gt;"Monsieur le Président is addressed as a key institutional actor involved in the national debate."&lt;SEP&gt;"Monsieur le Président is the addressed institutional actor; the citizen is calling upon him regarding succession laws."&lt;SEP&gt;"Monsieur le Président is the institutional actor being addressed by the citizen in the conciliation document."&lt;SEP&gt;"Monsieur le Président is the recipient of the citizen's grievances and proposals regarding public services and taxation."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-a18fe38b9ef7df9b5ac22e771d35ea6f&lt;SEP&gt;contrib-e1f0afa5e2a481156c648b24144a0135&lt;SEP&gt;contrib-79ab2822b2beca15bf683d34cfe1e86a&lt;SEP&gt;contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"MONSIEUR LE PRÉSIDENT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DOLÉANCES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Doléances are grievances articulated by citizens concerning perceived injustices or inequalities in the system."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"DOLÉANCES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AVANTAGES DES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Avantages des anciens présidents refers to benefits granted to former presidents of the Republic, which the citizen believes should be reconsidered."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"AVANTAGES DES ANCIENS PRÉSIDENTS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RETRAITE DES CITOYENS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Retraite des citoyens highlights the lack of advantages provided to ordinary citizens upon retirement, contrasting with the benefits of former presidents."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"RETRAITE DES CITOYENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉDUCTION DES DÉPENSES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Réduction des dépenses is a proposal suggesting that the government should start reducing expenses, especially at higher levels of administration."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"RÉDUCTION DES DÉPENSES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Services publics refers to public services that the citizen is concerned about, specifically in the context of access to healthcare."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"SERVICES PUBLICS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MÉDECIN&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Médecin refers to healthcare services, which the citizen expresses concerns about in terms of accessibility and waiting times."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"MÉDECIN"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LOI SUR LES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"Loi sur les anciens présidents refers to the legislation that grants benefits to former presidents, which the citizen is questioning."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"LOI SUR LES ANCIENS PRÉSIDENTS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AVANTAGES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Avantages encompasses the benefits and privileges offered to certain individuals, contrasting the situation of the average citizen."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"AVANTAGES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYEN&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Citoyen is the term used for ordinary citizens, underscoring the contributor’s identity and perspective in the text."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"CITOYEN"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PYRAMIDE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Pyramide is used metaphorically to represent the hierarchical structure of spending and administration, suggesting the need for change at the top."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"PYRAMIDE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DILIGENCE&quot;">
+  <ns0:data key="d0">"CONSENSUS"</ns0:data>
+  <ns0:data key="d1">"Diligence refers to the expectation of prompt and careful attention to the grievances submitted by the citizen."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"DILIGENCE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;KMS POUR SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Kms pour services publics indicates the distance that citizens must travel to access public services, highlighting accessibility issues."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"KMS POUR SERVICES PUBLICS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RV CHEZ LE MÉDECIN&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"RV chez le médecin refers to the waiting times for medical appointments, which the citizen criticizes."</ns0:data>
+  <ns0:data key="d2">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d3">"RV CHEZ LE MÉDECIN"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PERSONNEL MÉDICAL&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Le Personnel Médical fait référence aux professionnels de santé nécessaires pour assurer des services de santé adéquats, particulièrement dans les zones rurales."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"PERSONNEL MÉDICAL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INTERNET&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Internet is highlighted as a medium for accessible public services, emphasizing the need for user-friendly websites."&lt;SEP&gt;"L'Internet est une ressource essentielle pour l'accès à l'information et aux services, mais certains citoyens en sont exclus par manque d'accès ou de compétences."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"INTERNET"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ZONES BLANCHES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les Zones Blanches désignent des zones géographiques où il n'y a pas de couverture mobile, posant des défis à la connectivité."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"ZONES BLANCHES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FONCTIONNAIRES&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Les Fonctionnaires sont des employés de l'État dont les salaires et avantages peuvent être sujets à des révisions et configurations selon des propositions citoyennes."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"FONCTIONNAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ANCIENS PRÉSIDENTS DE LA RÉPUBLIQUE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Les Anciens Présidents de la République bénéficient d'avantages qui sont remis en question par des demandes citoyennes pour une réduction de ces privilèges."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"ANCIENS PRÉSIDENTS DE LA RÉPUBLIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDE DE PLUS DE PERSONNEL S MÉDICAL&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition appelle à un renforcement du Personnel Médical dans les zones rurales pour améliorer l'accès aux soins."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"DEMANDE DE PLUS DE PERSONNEL S MÉDICAL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDE D'AIDE POUR NON-ACCESSEURS INTERNET&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition vise à fournir de l'aide à ceux qui n'ont pas Internet ou qui ne maîtrisent pas les nouvelles technologies."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"DEMANDE D'AIDE POUR NON-ACCESSEURS INTERNET"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDE DE BAISSE DES SALAIRES DES FONCTIONNAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition exige une réduction des salaires des très hauts fonctionnaires pour une meilleure gestion des ressources publiques."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"DEMANDE DE BAISSE DES SALAIRES DES FONCTIONNAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDE DE BAISSE DES AVANTAGES DES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette demande suggère de réduire les avantages accordés aux Anciens Présidents de la République pour une plus grande équité en matière de dépenses publiques."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"DEMANDE DE BAISSE DES AVANTAGES DES ANCIENS PRÉSIDENTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDE DE PLUS DE ZONES BLANCHES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition appelle à la création de Zones Blanches pour améliorer la connectivité mobile dans des zones dépourvues de service."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"DEMANDE DE PLUS DE ZONES BLANCHES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDE D'AUGMENTATION DE SOUTIEN POUR ACCÈS AUX NOUVELLES TECHNOLOGIES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition vise à accroitre le soutien pour aider ceux qui ont des difficultés à maîtriser les nouvelles technologies."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"DEMANDE D'AUGMENTATION DE SOUTIEN POUR ACCÈS AUX NOUVELLES TECHNOLOGIES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONSULTATION DU GRAND DÉBAT NATIONAL&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"La Consultation du Grand Débat National est une initiative pour recueillir les opinions et propositions des citoyens sur divers sujets d'actualité."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"CONSULTATION DU GRAND DÉBAT NATIONAL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONTRIBUTION CITOYENNE&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Contribution citoyenne signifies the overall citizen contributions to the grand debate, encompassing various voices and issues raised by the public."&lt;SEP&gt;"Une Contribution Citoyenne se réfère aux input directs des citoyens sur des questions publiques, comme celles abordées dans ce document."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76&lt;SEP&gt;contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"CONTRIBUTION CITOYENNE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;QUESTION SUR L'ACCÈS AUX SOINS&quot;">
+  <ns0:data key="d0">"QUESTION"</ns0:data>
+  <ns0:data key="d1">"Cette Question relatives à l'Accès aux Soins met en lumière les défis rencontrés par les citoyens dans l'obtention de services de santé."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"QUESTION SUR L'ACCÈS AUX SOINS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ALIMENTATION&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"L'Alimentation est un sujet pertinent qui peut être lié aux préoccupations sur la santé et l'accès aux services alimentaires."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"ALIMENTATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SOUTIEN AUX PERSONNES ÂGÉES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette demande exprime la nécessité d'améliorer le soutien pour les personnes âgées, en particulier dans les domaines de la santé et des aides sociales."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"SOUTIEN AUX PERSONNES ÂGÉES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ACCÈS AUX SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"L'Accès aux services publics est un thème majeur soulignant le besoin de rendre les services accessibles à tous les citoyens, quel que soit leur statut."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"ACCÈS AUX SERVICES PUBLICS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉDUCTION DES INÉGALITÉS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition vise à réduire les inégalités sociales et économiques entre les citoyens."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"RÉDUCTION DES INÉGALITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SOUTIEN À L'EMPLOI&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition appelle à des initiatives pour stimuler l'emploi et offrir un soutien aux chômeurs."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"SOUTIEN À L'EMPLOI"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES SOCIAUX&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Les Services Sociaux comprennent divers programmes et ressources destinés à soutenir les citoyens en situation de pauvreté ou de besoin."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"SERVICES SOCIAUX"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INFORMATIONS SUR LA PROTECTION SOCIALE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"L'Information sur la Protection Sociale est cruciale pour aider les citoyens à comprendre leurs droits et les ressources disponibles."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"INFORMATIONS SUR LA PROTECTION SOCIALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉMOCRATIE PARTICIPATIVE&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"La Démocratie Participative désigne des initiatives visant à intégrer plus activement les citoyens dans le processus décisionnel."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"DÉMOCRATIE PARTICIPATIVE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COORDINATION DES SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"La Coordination des Services Publics renvoie à la nécessité d'un meilleur alignement et interaction entre les différents services pour améliorer l'efficacité."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"COORDINATION DES SERVICES PUBLICS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C5"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈMES DE TRANSPORT PUBLIC&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Les Systèmes de Transport Public incluent les moyens de transport proposés aux citoyens pour se déplacer efficacement."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"SYSTÈMES DE TRANSPORT PUBLIC"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉDUCATION&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"L'Éducation est un Service Public fondamental abordant des questions d'accès et de qualité dans les établissements scolaires."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"ÉDUCATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES DE SANTÉ&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Les Services de Santé englobent divers programmes et infrastructures visant à fournir des soins médicaux et une assistance médicale."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"SERVICES DE SANTÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈME DE SANTÉ PUBLIQUE&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"Le Système de Santé Publique fait référence à l'ensemble des politiques et services qui régissent la santé de la population."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"SYSTÈME DE SANTÉ PUBLIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ASSISTANCE AUX FAMILLES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition préconise des programmes supplémentaires d'assistance pour soutenir les familles dans le besoin."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"ASSISTANCE AUX FAMILLES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ATELIERS DE SENSIBILISATION&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette proposition appelle à organiser des Ateliers de Sensibilisation pour améliorer la maîtrise des nouvelles technologies dans la population."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"ATELIERS DE SENSIBILISATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MESURES D'AIDE AUX ÉQUIPES ENSEIGNANTES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Cette demande souligne l'importance d'offrir des mesures de soutien aux équipes éducatives pour une meilleure qualité d'enseignement."</ns0:data>
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d3">"MESURES D'AIDE AUX ÉQUIPES ENSEIGNANTES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"A proposal to enhance public services, emphasizing the need for timely medical appointments and support for the elderly without internet access."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"AMÉLIORER LES SERVICES PUBLICS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RENDEZ-VOUS CHEZ SON MÉDECIN&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"A grievance about the unacceptable waiting time of one week for a medical appointment."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"RENDEZ-VOUS CHEZ SON MÉDECIN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CARDIOLOGUE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"A specific public service where there are complaints about waiting months for appointments."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"CARDIOLOGUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;OCULISTE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Similar to cardiologists, oculists are mentioned in context to excessive waiting times for appointments."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"OCULISTE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AIDES POUR LES PERSONNES ÂGÉES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"A proposal to provide assistance for elderly individuals who lack access to the internet."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"AIDES POUR LES PERSONNES ÂGÉES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRES DES PRÉSIDENTS ET MINISTRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"A proposal suggesting a reduction in salaries for presidents and ministers."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"SALAIRES DES PRÉSIDENTS ET MINISTRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POSTES DE GENDARMERIE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"A proposal to increase the number of police positions to enhance security in rural areas."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"POSTES DE GENDARMERIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LES RETRAITÉS&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Citizens who are retired and feel neglected despite having contributed throughout their lives."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"LES RETRAITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ATTENTE POUR UN RENDEZ-VOUS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"A grievance expressing the issue of waiting too long for medical appointments, highlighting the inefficiency in the healthcare service."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"ATTENTE POUR UN RENDEZ-VOUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ATTENTE POUR VOIR UN CARDIOLOGUE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"A specific grievance about the excessive waiting time required to see a cardiologist, indicating a concern with healthcare accessibility."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"ATTENTE POUR VOIR UN CARDIOLOGUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ATTENTE POUR VOIR UN OCULISTE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"A grievance about the long wait required to see an oculist, revealing issues in the healthcare service delivery."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"ATTENTE POUR VOIR UN OCULISTE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;URGENCE D'AMÉLIORER LES SERVICES&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"An opinion reflecting the urgent need to improve healthcare services to address long waiting times."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"URGENCE D'AMÉLIORER LES SERVICES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SÉCURISER NOS CAMPAGNES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"A proposal aimed at enhancing security in rural areas, specifically by increasing police presence."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"SÉCURISER NOS CAMPAGNES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SENTIMENT DES RETRAITÉS&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"An opinion expressing the feeling of neglect and abandonment by retired individuals who feel overlooked in the system."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"SENTIMENT DES RETRAITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRAVAIL ET COTISATION DES RETRAITÉS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"A grievance concerning the contributions made by retirees during their working lives versus the lack of recognition they feel they receive."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"TRAVAIL ET COTISATION DES RETRAITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROPAGANDE SOCIALE SUR LES SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"A theme surrounding the promotion and social perception of public services and how they are delivered to citizens."</ns0:data>
+  <ns0:data key="d2">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d3">"PROPAGANDE SOCIALE SUR LES SERVICES PUBLICS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ISF&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"ISF (Impôt de Solidarité sur la Fortune) refers to a wealth tax that is suggested to contribute to the country to better balance financial responsibilities."&lt;SEP&gt;"The ISF (Impôt de Solidarité sur la Fortune) is a tax that citizens want to reinstate, indicating a desire for fiscal reform to address wealth distribution."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9&lt;SEP&gt;contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"ISF"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahiers de Doléances are citizen contributions that express collective grievances, opinions, and proposals regarding governance."&lt;SEP&gt;"Cahiers de doléances refers to citizen contributions that express opinions, grievances, or proposals regarding public services and reforms."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76&lt;SEP&gt;contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"CAHIERS DE DOLÉANCES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIERS CITOYENS DE CHARENTE-MARITIME&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahiers citoyens de Charente-Maritime are specific contributions made by citizens in the Charente-Maritime area to express their views on various issues."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"CAHIERS CITOYENS DE CHARENTE-MARITIME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIER DE CORME-ÉCLUSE&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Corme-Écluse is a specific record of citizen grievances and proposals from the Corme-Écluse commune."&lt;SEP&gt;"Cahier de Corme-Écluse represents a specific citizen contribution document pertaining to the local issues within the Corme-Écluse commune."&lt;SEP&gt;"Cahier de Corme-Écluse specifically represents the collective contributions from citizens of the Corme-Écluse commune to address various local governance issues."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76&lt;SEP&gt;contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"CAHIER DE CORME-ÉCLUSE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;REDUCTION OF SALARIES AND BENEFITS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal suggests that elected officials should have their salaries and benefits reduced, reflecting a demand for accountability and austerity."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"REDUCTION OF SALARIES AND BENEFITS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NUMBER OF DEPUTIES AND SENATORS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposition calls for a decrease in the number of parliamentary members, indicating a push for efficiency in governance."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"NUMBER OF DEPUTIES AND SENATORS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PUBLIC SERVICE IN THE COUNTRYSIDE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"The public service in the countryside refers to essential services that should be maintained to ensure decent living conditions for rural residents."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"PUBLIC SERVICE IN THE COUNTRYSIDE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C7"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ACCESS TO INTERNET IN THE COUNTRYSIDE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposition emphasizes the need for improved access to the internet in rural areas, alongside training to bolster digital literacy."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"ACCESS TO INTERNET IN THE COUNTRYSIDE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C7"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRAINING&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Training is referred to as a necessary service to aid citizens in adapting to increased access to technology and the internet."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"TRAINING"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C7"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYENS&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Citoyens refer to the individuals participating in the Grand Débat National, expressing their needs, opinions, and proposals in the consultation process."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"CITOYENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICE PUBLIC&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Service Public encompasses various public services that citizens expect to be maintained or improved, particularly in rural areas."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"SERVICE PUBLIC"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DIMINUTION DES SALAIRES ET AVANTAGES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Diminution des salaires et avantages expresses the citizens' demand for reducing the pay and benefits of elected officials."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"DIMINUTION DES SALAIRES ET AVANTAGES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ACCÈS À INTERNET&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Accès à Internet highlights the necessity to enhance internet availability in the countryside to improve the quality of life and services for residents."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"ACCÈS À INTERNET"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FORMATION&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Formation refers to educational programs aimed at helping citizens adapt to new technologies, especially concerning internet access."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"FORMATION"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GARDE DU CORPS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Garde du corps refers to security services provided to elected officials, which some citizens propose to reduce or eliminate."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"GARDE DU CORPS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VOITURE DE FONCTION&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Voiture de fonction represents the official vehicles provided to elected officials that are suggested to be reconsidered in terms of expenditure."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"VOITURE DE FONCTION"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FIN DU MANDAT&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Fin du mandat reflects the citizens' concerns about the privileges retained by elected officials even after their term ends."</ns0:data>
+  <ns0:data key="d2">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d3">"FIN DU MANDAT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RETRAITES&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Retraites (pensions) are government-sponsored payments to retirees, with citizens expressing the need for their increase in the context of their contributions to societal welfare."&lt;SEP&gt;"Retraites refers to pensions for individuals who have worked their entire lives, highlighting concerns about the financial burden on retirees."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"RETRAITES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXES&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"Taxes refer to financial charges imposed by the government, and citizens are expressing a grievance about their increase, wanting to halt further hikes."&lt;SEP&gt;"Taxes refer to various forms of financial charges that affect citizens, particularly retirees who are mentioned to be burdened by them."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"TAXES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SANTÉ&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Santé encompasses health services, with an emphasis on timely access to medical care mentioned by the citizen."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"SANTÉ"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈME POLITIQUE&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"Système Politique is mentioned in the context of reducing politicians' salaries, indicating a proposal for reforming political compensation."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"SYSTÈME POLITIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DIMINUTION DES SALAIRES DES POLITICIENS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Diminution des Salaires des Politiciens is a specific proposal aiming to reduce salaries of elected officials to alleviate the financial burden on retirees and low-wage earners."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"DIMINUTION DES SALAIRES DES POLITICIENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C6"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PERSONNES AYANT TRAVAILLÉ TOUTE LEUR VIE&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Personnes ayant travaillé toute leur vie refers to individuals who have contributed to the workforce and are now experiencing financial strain in retirement."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"PERSONNES AYANT TRAVAILLÉ TOUTE LEUR VIE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C6"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PETITE RETRAITE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Petite Retraite expresses a grievance regarding inadequate pensions received by retirees, which affects their daily financial situation."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"PETITE RETRAITE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C6"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRISE EN CHARGE MÉDICALE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Prise en Charge Médicale involves the provision of health services, with an emphasis on the timely availability of care for citizens."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"PRISE EN CHARGE MÉDICALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RENDEZ-VOUS CHEZ LES MÉDECINS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Rendez-vous chez les Médecins refers to appointments with healthcare providers, highlighting concerns about long wait times for such services."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"RENDEZ-VOUS CHEZ LES MÉDECINS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SITES PRATIQUES ET SIMPLES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Sites Pratiques et Simples is a proposal to improve the usability of online services for citizens seeking medical appointments and other services."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"SITES PRATIQUES ET SIMPLES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POLITICIENS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Politiciens refers to elected officials whose salaries and expenses are being scrutinized in relation to the financial burden on citizens."</ns0:data>
+  <ns0:data key="d2">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d3">"POLITICIENS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C6"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LES SUCCESSIONS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les successions refers to the topic of inheritance and the associated fees and taxes that are charged on inherited property."</ns0:data>
+  <ns0:data key="d2">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d3">"LES SUCCESSIONS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LES FRAIS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Les frais refer to the costs associated with inheritance that the citizen finds incoherent and unjustified."</ns0:data>
+  <ns0:data key="d2">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d3">"LES FRAIS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LES TAXES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Les taxes refers to the taxes imposed on inherited properties, which the citizen believes are unfair given the circumstances."</ns0:data>
+  <ns0:data key="d2">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d3">"LES TAXES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NICOLAS SARKOZY&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Nicolas Sarkozy was the former president of France, referenced here as having enacted more just laws for inheritances during his presidency."</ns0:data>
+  <ns0:data key="d2">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d3">"NICOLAS SARKOZY"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LA LOI SUR LES SUCCESSIONS&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"La loi sur les successions refers to the inheritance law that regulated fees and taxes on inherited property, noted as just during Sarkozy's presidency."</ns0:data>
+  <ns0:data key="d2">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d3">"LA LOI SUR LES SUCCESSIONS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;L'ÉTAT&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"L'état refers to the government entity that imposes fees and taxes on inheritances as discussed in the citizen's contribution."</ns0:data>
+  <ns0:data key="d2">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d3">"L'ÉTAT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LA DURÉE ET LE MONTANT DE CETTE SUCCESSION&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"La durée et le montant de cette succession refer to the time and the amount involved in the succession process, which the citizen finds unjustified."</ns0:data>
+  <ns0:data key="d2">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d3">"LA DURÉE ET LE MONTANT DE CETTE SUCCESSION"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRES&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Salaires (salaries) are the payments received by employees, specifically mentioned here for desired increases reflecting the public's call for better compensation."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"SALAIRES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONTRÔLES FISCAUX&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Contrôles fiscaux (tax audits) refer to governmental assessments of financial records, indicating a concern regarding tax compliance and transparency."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"CONTRÔLES FISCAUX"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CASIER JUDICIAIRE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Casier judiciaire (criminal record) relates to a grievance expressed about its impact on the government's credibility and citizen trust."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"CASIER JUDICIAIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"The Gouvernement (government) is the central institution being scrutinized regarding decisions impacting citizens' financial and social well-being."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"GOUVERNEMENT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MINISTRES&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Ministres (ministers) are government officials whose salary increases are opposed by citizens, showing a desire for equitable financial practices in governance."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"MINISTRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉPUTÉS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Députés (deputies) are members of the legislative body, mentioned in relation to their salary increases, reflecting public sentiment favoring budgetary restraint."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"DÉPUTÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HOMME&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Homme (man) references the individual citizen expressing opinions and grievances regarding fiscal policies and public service expenditures."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"HOMME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;2019&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"2019 signifies the year in which the Grand Débat National took place, indicating the context of citizen contributions during this consultation."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"2019"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AUGMENTATIONS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Augmentations (increases) refer to the grievances related to both tax and salary hikes that citizens want to stop."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"AUGMENTATIONS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRES DES MINISTRES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Salaires des ministres (salaries of ministers) are specifically mentioned in the context of citizens opposing further increases for government officials."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"SALAIRES DES MINISTRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AUGMENTATIONS DES SALAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Augmentations des salaires (salary increases) represents a proposal from citizens to enhance wages as part of their contributions to the dialogue."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"AUGMENTATIONS DES SALAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HAUSSE DES TAXES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Hausse des taxes (increased taxes) is a grievance expressed by citizens advocating for a cessation of these financial burdens."</ns0:data>
+  <ns0:data key="d2">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d3">"HAUSSE DES TAXES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C4"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MONSIEUR LE MAIRE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Monsieur le Maire is also addressed as a local institutional actor, indicating his role in the local governance context."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"MONSIEUR LE MAIRE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C3"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉSERT MÉDICAL&quot;">
+  <ns0:data key="d0">"THÉMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Désert médical refers to the theme of medical desertification, indicating a lack of available healthcare professionals in certain areas."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"DÉSERT MÉDICAL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SOINS DE SANTÉ&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Soins de santé encompasses the public services related to health care, which are severely impacted by the issues discussed like medical deserts."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"SOINS DE SANTÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INTERNET ET LE GRAND ÂGE&quot;">
+  <ns0:data key="d0">"THÉMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Internet et le grand âge refers to the theme concerning the challenges faced by the elderly in the digital age, particularly regarding online services."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"INTERNET ET LE GRAND ÂGE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉCLARATION D’IMPÔTS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Déclaration d’impôts is a public service that involves filing tax returns, which can be complicated for those not connected online."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"DÉCLARATION D’IMPÔTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MINIBUS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Minibus refers to a proposed solution for transporting the elderly to medical facilities and other necessary locations."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"MINIBUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TERRITOIRE DE JANSAC ET LA MOTTE-DE-PONS&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Territoire de Jansac et La Motte-de-Pons refers to a geographical area impacted by the proposals for transportation services."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"TERRITOIRE DE JANSAC ET LA MOTTE-DE-PONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONFIDENTIALITÉ DU PERMIS DE CONDUIRE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Confidentialité du permis de conduire refers to the discourse surrounding revisiting driving licenses for seniors, reflecting their mobility concerns."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"CONFIDENTIALITÉ DU PERMIS DE CONDUIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FEMME&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"femme is the female citizen who contributes to the grand debate, expressing her opinions and grievances."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"FEMME"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}, {"level": 1, "cluster": "L0C0_C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RENDEZ-VOUS AVEC UN SPÉCIALISTE&quot;">
+  <ns0:data key="d0">"THÉMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Rendez-vous avec un spécialiste highlights the difficulties citizens face in accessing specialist medical services, emphasizing healthcare access issues."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"RENDEZ-VOUS AVEC UN SPÉCIALISTE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SATURATION DES URGENCES&quot;">
+  <ns0:data key="d0">"THÉMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Saturation des urgences refers to the overwhelming number of patients in emergency services, a direct consequence of insufficient healthcare availability."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"SATURATION DES URGENCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TECHNOLOGIE&quot;">
+  <ns0:data key="d0">"CLUSTERSEMANTIQUE"</ns0:data>
+  <ns0:data key="d1">"Technologie encompasses various technological aspects that influence modern life, particularly regarding health access for seniors."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"TECHNOLOGIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VIEILLISSEMENT DE LA POPULATION&quot;">
+  <ns0:data key="d0">"THÉMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Vieillissement de la population refers to the theme of an aging population, indicating sociocultural impacts on public services."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"VIEILLISSEMENT DE LA POPULATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ACCOMPAGNEMENT DES ANCIENS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Accompagnement des anciens refers to the suggested support for elderly individuals to access healthcare services and necessary mobility assistance."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"ACCOMPAGNEMENT DES ANCIENS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CARDIOLOGUES, RHUMATOLOGUES, PODOLOGUES&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Cardiologues, rhumatologues, podologues are specific specialist healthcare services that are increasingly hard to access due to medical desertification."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"CARDIOLOGUES, RHUMATOLOGUES, PODOLOGUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRANSPORT DES GENS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Transport des gens refers to the proposed transport system for citizens, especially aiding the elderly in reaching healthcare facilities."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"TRANSPORT DES GENS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉBAT NATIONAL&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Débat national refers to the nationwide consultation process where citizens can express their grievances, opinions, and proposals."</ns0:data>
+  <ns0:data key="d2">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d3">"DÉBAT NATIONAL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NOUVELLES TECHNOLOGIES&quot;">
+  <ns0:data key="d2">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d1">"Cette demande vise à accroître le soutien pour aider ceux qui ont des difficultés à maîtriser les nouvelles technologies, cruciales dans un monde numérique."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;DOLÉANCES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is the recipient of the Doléances, which are directed at him for consideration and action."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <ns0:data key="d5">16.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is the addressee of the Cahiers de Doléances, indicating a communication channel between citizens and authority."&lt;SEP&gt;"Monsieur le Président is the addressee of the citizen contributions collected in the Cahiers de doléances, representing the voice of citizens in the national debate."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76&lt;SEP&gt;contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;RETRAITES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is addressed regarding the concerns around Retraites, as retirees express grievances about the burden of taxes."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;TAXES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is called upon to consider the impact of Taxes on individuals, particularly those with small pensions."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;SANTÉ&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is asked to address the issue of delays in receiving health services, indicating a direct concern for public health access."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;INTERNET&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is urged to ensure that public service websites are user-friendly, affecting citizens' access to services."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;DIMINUTION DES SALAIRES DES POLITICIENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is requested to enact a proposal reducing political salaries, which relates to financial equity for retirees."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR LE PRÉSIDENT&quot;" target="&quot;LES SUCCESSIONS&quot;">
+  <ns0:data key="d5">16.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Président is called upon to address issues related to successions and the associated fees and taxes."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;AVANTAGES DES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Doléances address concerns about the Avantages des anciens présidents, questioning their fairness in comparison to citizen retirement benefits."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;RETRAITE DES CITOYENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Doléances highlight the inequalities in the Retraite des citoyens as opposed to the advantages enjoyed by former presidents."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;RÉDUCTION DES DÉPENSES&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The Doléances include a suggestion for Réduction des dépenses, indicating the citizen's call for fiscal responsibility from the leadership."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;SERVICES PUBLICS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Doléances express specific grievances regarding the quality and accessibility of Services publics, particularly healthcare."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;LOI SUR LES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Doléances explicitly question the fairness of the Loi sur les anciens présidents, asking for a revision of these benefits."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;AVANTAGES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Doléances express a concern regarding Avantages, emphasizing the disparity between the privileges of the elite and those of citizens."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;CITOYEN&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Citoyen expresses Doléances, representing the common voice in advocating for change and recognition by the government."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES&quot;" target="&quot;DILIGENCE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Doléances carry an expectation of Diligence, urging the government to pay prompt attention to the public's concerns."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉDUCTION DES DÉPENSES&quot;" target="&quot;PYRAMIDE&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The Réduction des dépenses suggests a need for re-evaluation of the Pyramide of spending, focusing on reducing it from the top level downward."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;MÉDECIN&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Services publics are essential for access to Médecin, underlining the citizen's worry about healthcare accessibility."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;KMS POUR SERVICES PUBLICS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Services publics are connected to the Kms pour services publics, highlighting the physical distance citizens must travel to access essential services."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;COORDINATION DES SERVICES PUBLICS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La Coordination des Services Publics est essentielle pour assurer que les différents Services Publics fonctionnent efficacement ensemble."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MÉDECIN&quot;" target="&quot;RV CHEZ LE MÉDECIN&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Médecin is directly related to the RV chez le médecin, as waiting times for appointments are a significant concern in healthcare access."</ns0:data>
+  <ns0:data key="d7">contrib-e1f0afa5e2a481156c648b24144a0135</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PERSONNEL MÉDICAL&quot;" target="&quot;DEMANDE DE PLUS DE PERSONNEL S MÉDICAL&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La proposition demande un accroissement du Personnel Médical afin de répondre aux besoins des services de santé dans les campagnes."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;INTERNET&quot;" target="&quot;DEMANDE D'AIDE POUR NON-ACCESSEURS INTERNET&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"La proposition vise à aider les personnes qui n'ont pas accès à Internet, ce qui renforce l'importance de cette ressource pour la société."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;INTERNET&quot;" target="&quot;ZONES BLANCHES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Le problème des Zones Blanches souligne un manque d'accès à Internet, nécessitant une attention spécifique pour améliorer la couverture mobile."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;INTERNET&quot;" target="&quot;SANTÉ&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"The relationship between Santé and Internet highlights the need for efficient online services in managing health care appointments."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FONCTIONNAIRES&quot;" target="&quot;DEMANDE DE BAISSE DES SALAIRES DES FONCTIONNAIRES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Cette demande fait référence à la nécessité de revoir les salaires des Fonctionnaires pour une meilleure équité économique."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ANCIENS PRÉSIDENTS DE LA RÉPUBLIQUE&quot;" target="&quot;DEMANDE DE BAISSE DES AVANTAGES DES ANCIENS PRÉSIDENTS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La proposition réclame une réduction des avantages des Anciens Présidents, soulignant un désir d'équité et de responsabilité économique."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DEMANDE D'AUGMENTATION DE SOUTIEN POUR ACCÈS AUX NOUVELLES TECHNOLOGIES&quot;" target="&quot;NOUVELLES TECHNOLOGIES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cette demande vise à accroître le soutien pour aider ceux qui ont des difficultés à maîtriser les nouvelles technologies, cruciales dans un monde numérique."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CONSULTATION DU GRAND DÉBAT NATIONAL&quot;" target="&quot;CONTRIBUTION CITOYENNE&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"Les Contributions Citoyennes sont recueillies durant la Consultation du Grand Débat National pour intégrer les points de vue des citoyens."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CONSULTATION DU GRAND DÉBAT NATIONAL&quot;" target="&quot;DÉMOCRATIE PARTICIPATIVE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"La Démocratie Participative est encouragée par des initiatives telles que la Consultation du Grand Débat National, permettant la voix des citoyens."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CONTRIBUTION CITOYENNE&quot;" target="&quot;DÉBAT NATIONAL&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Contribution citoyenne reflects the individual citizen voices within the broader framework of the Débat national, showcasing public engagement."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SOUTIEN AUX PERSONNES ÂGÉES&quot;" target="&quot;SERVICES SOCIAUX&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cette demande suggère d'améliorer le soutien des Services Sociaux pour les personnes âgées pouvant être vulnérables."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ACCÈS AUX SERVICES PUBLICS&quot;" target="&quot;ÉDUCATION&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"L'Éducation fait partie intégrante de l'Accès aux Services Publics, essentielle au développement de la société."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉDUCTION DES INÉGALITÉS&quot;" target="&quot;SERVICES SOCIAUX&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"La Réduction des Inégalités est directement concernée par les Services Sociaux, qui cherchent à soutenir les plus démunis."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES DE SANTÉ&quot;" target="&quot;SYSTÈME DE SANTÉ PUBLIQUE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Le Système de Santé Public englobe la gestion et l'efficacité des Services de Santé offerts aux citoyens."</ns0:data>
+  <ns0:data key="d7">contrib-dd5f8afcfa2e07864042bb06e062e410</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;RENDEZ-VOUS CHEZ SON MÉDECIN&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal to improve public services directly addresses the grievance regarding long wait times for medical appointments."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;AIDES POUR LES PERSONNES ÂGÉES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal includes the need for assistance to elderly individuals who cannot access the internet, which is part of improving public services."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;SALAIRES DES PRÉSIDENTS ET MINISTRES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal suggests a reduction in salaries for government leaders as part of a broader initiative to enhance public services."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;POSTES DE GENDARMERIE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Increasing police positions is part of the proposal to enhance public services related to safety and security."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;LES RETRAITÉS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The feelings of retired citizens about being forgotten relate to calls for improving public services for the elderly."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;ATTENTE POUR UN RENDEZ-VOUS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The grievance about waiting for medical appointments is directly addressed by the proposal to improve public services."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;ATTENTE POUR VOIR UN CARDIOLOGUE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The specific grievance regarding long wait times to see a cardiologist connects with the proposal for improving public services."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;ATTENTE POUR VOIR UN OCULISTE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Concerns about long waits to see an oculist relate to the broader proposal to enhance medical service efficiency."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;URGENCE D'AMÉLIORER LES SERVICES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The opinion stressing urgent service improvements ties directly to the proposal for enhancing services.")</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;SÉCURISER NOS CAMPAGNES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal to increase police presence for rural security is part of the overall effort to improve public services."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AMÉLIORER LES SERVICES PUBLICS&quot;" target="&quot;PROPAGANDE SOCIALE SUR LES SERVICES PUBLICS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The theme of social propaganda surrounding public services informs discussions on how to enhance their efficacy, tying directly to the proposals made."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LES RETRAITÉS&quot;" target="&quot;SENTIMENT DES RETRAITÉS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The sentiment of neglect experienced by retirees reflects the feelings of this group, indicating a connection between their opinion and identity."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LES RETRAITÉS&quot;" target="&quot;TRAVAIL ET COTISATION DES RETRAITÉS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contributions and work of retirees are connected to their identity and experiences of feeling overlooked by the public system."</ns0:data>
+  <ns0:data key="d7">contrib-5c1878a897b4d50093ae6d2609ed1da9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ISF&quot;" target="&quot;CAHIER DE CORME-ÉCLUSE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The mention of ISF in the Cahier de Corme-Écluse indicates a call for wealthier citizens to contribute more to the country's resources."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ISF&quot;" target="&quot;TAXES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Reinstatement of the ISF is directly related to stopping the increase in taxes as a broader call for fiscal justice."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;CAHIER DE CORME-ÉCLUSE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Corme-Écluse is a specific contribution under the broader title of Cahiers de Doléances, representing localized citizen input."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;MONSIEUR LE MAIRE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Monsieur le Maire is also a recipient of citizen concerns expressed in the Cahiers de doléances, indicating local governance involvement."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;REDUCTION OF SALARIES AND BENEFITS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"A proposal within the Cahier de Corme-Écluse suggests that elected officials' salaries and benefits should be reduced."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;NUMBER OF DEPUTIES AND SENATORS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Another suggestion within the Cahier de Corme-Écluse calls for a reduction in the number of deputies and senators as part of citizen feedback."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;PUBLIC SERVICE IN THE COUNTRYSIDE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The concerns expressed in the Cahier de Corme-Écluse highlight the importance of maintaining public service in rural areas."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;CITOYENS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Citoyens contribute to the Cahier de Corme-Écluse, expressing their collective grievances and proposals directly to the authorities."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;DIMINUTION DES SALAIRES ET AVANTAGES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Proposal for the reduction of salaries and benefits is a specific suggestion documented within the Cahier de Corme-Écluse."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;ACCÈS À INTERNET&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The necessity for improved internet access is mentioned as a part of the proposals in the Cahier de Corme-Écluse."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;FORMATION&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The need for training is included in the Cahier de Corme-Écluse to support citizens in utilizing better internet access."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;GARDE DU CORPS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal to limit the number of benefits extends to the reduction of security services for elected officials as outlined in the Cahier de Corme-Écluse."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;VOITURE DE FONCTION&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Voiture de fonction is another benefit that citizens feel should be reduced as per the suggestions in the Cahier de Corme-Écluse."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;FIN DU MANDAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Concerns regarding Fin du mandat involve privileges retained by officials, as described in the citizen's contributions in the Cahier de Corme-Écluse."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE CORME-ÉCLUSE&quot;" target="&quot;FEMME&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"femme contributes her opinions and grievances documented in the Cahier de Corme-Écluse, illustrating her engagement in the grand debate."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PUBLIC SERVICE IN THE COUNTRYSIDE&quot;" target="&quot;ACCESS TO INTERNET IN THE COUNTRYSIDE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Improved access to the internet in rural areas is part of the discussion around maintaining public services and ensuring decent living conditions."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ACCESS TO INTERNET IN THE COUNTRYSIDE&quot;" target="&quot;TRAINING&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposition to improve internet access is complemented by the need for training, emphasizing the importance of education in utilizing new technologies."</ns0:data>
+  <ns0:data key="d7">contrib-79ab2822b2beca15bf683d34cfe1e86a</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RETRAITES&quot;" target="&quot;TAXES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Retraites are directly impacted by Taxes, with retirees expressing grievances about their financial state under the current taxation system."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RETRAITES&quot;" target="&quot;SALAIRES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The citizens are advocating for increases in both salaries and pensions as interconnected elements of public service improvements."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DIMINUTION DES SALAIRES DES POLITICIENS&quot;" target="&quot;PERSONNES AYANT TRAVAILLÉ TOUTE LEUR VIE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The financial concerns of Personnes ayant travaillé toute leur vie lead to a call for Diminution des Salaires des Politiciens to alleviate their burden."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DIMINUTION DES SALAIRES DES POLITICIENS&quot;" target="&quot;POLITICIENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposed Diminution des Salaires des Politiciens reflects a direct relationship with public sentiment regarding political compensation in tough economic times."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PERSONNES AYANT TRAVAILLÉ TOUTE LEUR VIE&quot;" target="&quot;PETITE RETRAITE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Personnes ayant travaillé toute leur vie experience grievances related to their financial states due to Petite Retraite."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PRISE EN CHARGE MÉDICALE&quot;" target="&quot;RENDEZ-VOUS CHEZ LES MÉDECINS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Prise en Charge Médicale is directly influenced by the efficiency of scheduling Rendez-vous chez les Médecins, affecting health service accessibility."</ns0:data>
+  <ns0:data key="d7">contrib-0dc63562dc128beab373e5395a2e1c70</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LES SUCCESSIONS&quot;" target="&quot;LES FRAIS&quot;">
+  <ns0:data key="d5">18.0</ns0:data>
+  <ns0:data key="d6">"Les successions are directly linked to les frais, which the citizen considers excessive and incoherent based on personal perspective."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LES SUCCESSIONS&quot;" target="&quot;LES TAXES&quot;">
+  <ns0:data key="d5">18.0</ns0:data>
+  <ns0:data key="d6">"Les successions involve les taxes, which are imposed on inherited properties that the citizen feels are unjustified."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LES SUCCESSIONS&quot;" target="&quot;LA DURÉE ET LE MONTANT DE CETTE SUCCESSION&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"La durée et le montant de cette succession are aspects of the process that the citizen critiques as being unjustified, tied to les successions."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LES FRAIS&quot;" target="&quot;LA LOI SUR LES SUCCESSIONS&quot;">
+  <ns0:data key="d5">16.0</ns0:data>
+  <ns0:data key="d6">"La loi sur les successions should guide how les frais are applied, as the citizen argues for its reinstatement to address current inadequacies."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LES FRAIS&quot;" target="&quot;L'ÉTAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"L'état is responsible for imposing les frais on the successions, which the citizen finds incoherent."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;NICOLAS SARKOZY&quot;" target="&quot;LA LOI SUR LES SUCCESSIONS&quot;">
+  <ns0:data key="d5">14.0</ns0:data>
+  <ns0:data key="d6">"Nicolas Sarkozy implemented la loi sur les successions, which the citizen remembers as being just compared to current regulations."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;NICOLAS SARKOZY&quot;" target="&quot;L'ÉTAT&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"L'état’s laws on successions were viewed as improved during Nicolas Sarkozy’s presidency, impacting the current sentiment expressed in the contribution."</ns0:data>
+  <ns0:data key="d7">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SALAIRES&quot;" target="&quot;AUGMENTATIONS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The increases in wages are a direct concern for citizens, linking grievances about salary adjustments to broader economic issues."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CONTRÔLES FISCAUX&quot;" target="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Tax audits are a function of the government, indicating the need for accountability and transparency in financial matters."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CASIER JUDICIAIRE&quot;" target="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The mention of criminal records implies a critique of the government's role in maintaining public trust and integrity."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GOUVERNEMENT&quot;" target="&quot;MINISTRES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The salary increases of ministers represent a point of contention regarding governmental financial management and priorities."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GOUVERNEMENT&quot;" target="&quot;DÉPUTÉS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Salary adjustments for deputies spark citizen dissatisfaction, linking representative government and public financial concerns."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GOUVERNEMENT&quot;" target="&quot;2019&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The year 2019 marks the time frame for government consultations, where citizen input is sought on fiscal reforms and governance issues."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;HOMME&quot;" target="&quot;2019&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The reference to 'homme' implies a citizen participating in the 2019 consultation, signaling individual engagement in civic discourse."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;AUGMENTATIONS&quot;" target="&quot;HAUSSE DES TAXES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The mention of augmentations highlights a collective grievance regarding both salary and tax increases as burdens on citizens."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SALAIRES DES MINISTRES&quot;" target="&quot;AUGMENTATIONS DES SALAIRES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The opposition to salary increases of ministers reflects public frustration towards fiscal policies affecting wage adjustments for all workers."</ns0:data>
+  <ns0:data key="d7">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉSERT MÉDICAL&quot;" target="&quot;SOINS DE SANTÉ&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Désert médical relates directly to the provision of Soins de santé, highlighting the healthcare service challenges in areas with fewer doctors."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉSERT MÉDICAL&quot;" target="&quot;MINIBUS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Minibus transportation is a response to the issues raised by Désert médical, aiming to improve access to healthcare for those affected."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉSERT MÉDICAL&quot;" target="&quot;CONFIDENTIALITÉ DU PERMIS DE CONDUIRE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The discussion around Confidentialité du permis de conduire signals concerns about mobility for seniors in areas facing a Désert médical, indicating needing to reassess driving criteria."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;INTERNET ET LE GRAND ÂGE&quot;" target="&quot;DÉCLARATION D’IMPÔTS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Internet et le grand âge represents the issues the elderly face with online services such as Déclaration d’impôts, indicating a connection between digital access and essential services."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MINIBUS&quot;" target="&quot;TERRITOIRE DE JANSAC ET LA MOTTE-DE-PONS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposed Minibus service targets the Territoire de Jansac et La Motte-de-Pons, facilitating transport for the elderly in this area."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RENDEZ-VOUS AVEC UN SPÉCIALISTE&quot;" target="&quot;SATURATION DES URGENCES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Rendez-vous avec un spécialiste is directly tied to the issue of Saturation des urgences, as fewer specialists lead to increased emergency visits."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SATURATION DES URGENCES&quot;" target="&quot;CARDIOLOGUES, RHUMATOLOGUES, PODOLOGUES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The lack of available Cardiologues, rhumatologues, podologues contributes to the Saturation des urgences, highlighting issues in the healthcare system."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;VIEILLISSEMENT DE LA POPULATION&quot;" target="&quot;ACCOMPAGNEMENT DES ANCIENS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Vieillissement de la population necessitates the Accompagnement des anciens, as more elderly individuals require assistance with healthcare access."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ACCOMPAGNEMENT DES ANCIENS&quot;" target="&quot;TRANSPORT DES GENS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Transport des gens is proposed as a solution to the necessity of Accompagnement des anciens for mobility to healthcare services."</ns0:data>
+  <ns0:data key="d7">contrib-9ed493aa383f79265155e701ccfc8a76</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>

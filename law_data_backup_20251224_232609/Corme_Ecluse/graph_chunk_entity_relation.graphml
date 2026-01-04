@@ -1,0 +1,1538 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d28" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d27" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d26" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d25" for="node" attr.name="clusters" attr.type="string"/>
+<key id="d24" for="node" attr.name="type" attr.type="string"/>
+<key id="d23" for="node" attr.name="estTypique" attr.type="boolean"/>
+<key id="d22" for="node" attr.name="cible" attr.type="string"/>
+<key id="d21" for="node" attr.name="valeur" attr.type="string"/>
+<key id="d20" for="node" attr.name="intensite" attr.type="double"/>
+<key id="d19" for="node" attr.name="sujet" attr.type="string"/>
+<key id="d18" for="node" attr.name="position" attr.type="string"/>
+<key id="d17" for="node" attr.name="domaine" attr.type="string"/>
+<key id="d16" for="node" attr.name="nom" attr.type="string"/>
+<key id="d15" for="node" attr.name="categorie" attr.type="string"/>
+<key id="d14" for="node" attr.name="titre" attr.type="string"/>
+<key id="d13" for="node" attr.name="description" attr.type="string"/>
+<key id="d12" for="node" attr.name="gravite" attr.type="string"/>
+<key id="d11" for="node" attr.name="objet" attr.type="string"/>
+<key id="d10" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="node" attr.name="demographic" attr.type="string"/>
+<key id="d8" for="node" attr.name="manuscritType" attr.type="string"/>
+<key id="d7" for="node" attr.name="contributionNumber" attr.type="long"/>
+<key id="d6" for="node" attr.name="commune" attr.type="string"/>
+<key id="d5" for="node" attr.name="estPartielle" attr.type="boolean"/>
+<key id="d4" for="node" attr.name="texte" attr.type="string"/>
+<key id="d3" for="node" attr.name="contributionId" attr.type="string"/>
+<key id="d2" for="node" attr.name="entity_name" attr.type="string"/>
+<key id="d1" for="node" attr.name="citoyenId" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="citoyen-Unknown-None">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-None</data>
+  <data key="d2">citoyen-Unknown-None</data>
+</node>
+<node id="contribution-Unknown-None">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-None</data>
+  <data key="d4">Cahier de Corme-Écluse1. Manuscrit (encre bleue), 19 lignes, 152 motsMonsieur le PrésidentVoici mes doléances :⎯ Ne serait-il pas possible de revoir cette loi qui octroie des avantages aux anciens présidentsde la République ?⎯ Comme simple citoyen, nous n’avons aucun avantage quand nous prenons nos retraites,aucune comparaison avec les vôtres, et nous sommes bien obligés de faire avec….⎯ Si nous faisons de calcul de ce que nous aurions à vous régler par an, nous n’avons pas fini, vuvotr...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d2">contribution-Unknown-None</data>
+</node>
+<node id="citoyen-Unknown-2">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-2</data>
+  <data key="d2">citoyen-Unknown-2</data>
+</node>
+<node id="contribution-Unknown-2">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-2</data>
+  <data key="d4">2. Manuscrit, 10 lignes, 56 motsDemandes éventuelles :⎯ Plus de personnel s médicaux dans les campagnes,⎯ Plus d’aide pour ceux qui ne possèdent pas Internet ou qui ne maîtrisent pas les nouvellestechnologies,⎯ Plus de zones blanches pour les téléphones portables,⎯ Baisse des salaires des très hauts fonctionnaires,⎯ Baisse des avantages des anciens présidents de la République.</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">2</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-2</data>
+</node>
+<node id="citoyen-Unknown-3">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-3</data>
+  <data key="d2">citoyen-Unknown-3</data>
+</node>
+<node id="contribution-Unknown-3">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-3</data>
+  <data key="d4">3. Manuscrit, 13 lignes, 75 motsAméliorer les services publics :Il est inadmissible d’attendre une semaine pour 1 rendez-vous chez son médecin ; attendre plusieursmois pour voir un cardiologue ou un oculiste…Prévoir des aides pour les personnes âgées qui n’ont pas Internet.Il serait bon de baisser les salaires des présidents et ministres.Il faudrait augmenter les postes de gendarmerie pour sécuriser nos campagnes.Les retraités se sentent oubliés alors qu’ils ont travaillé et cotisé toute ...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">3</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-3</data>
+</node>
+<node id="citoyen-Unknown-4">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-4</data>
+  <data key="d2">citoyen-Unknown-4</data>
+</node>
+<node id="contribution-Unknown-4">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-4</data>
+  <data key="d4">4. Manuscrit (encre bleue), 10 lignes, 76 motsMonsieur le Président,Il serait bon que les gens riches (ISF) participent "un peu" à notre pays !!!Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition février 2024Cahier de Corme-ÉcluseQue certains de nos élus se voient diminuer leur salaire et avantages ; y compris lors de la fin dumandat (garde du corps, voiture de fonction…), diminuer le nombre de députés et sénateurs.Maintenir le service public à la campagne afin que l’o...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">4</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-4</data>
+</node>
+<node id="citoyen-Unknown-5">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-5</data>
+  <data key="d2">citoyen-Unknown-5</data>
+</node>
+<node id="contribution-Unknown-5">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-5</data>
+  <data key="d4">5. Manuscrit (encre bleue), 10 lignes, 75 motsMonsieur le Président,Est-il possible de faire en sorte que les personnes qui ont travaillé toute leur vie [et] qui ont unepetite retraite paient au quotidien cent formes de taxes….Ne pas attendre des semaines, voire des mois pour se faire soigner, prendre rendez-vous chez lesmédecins, dentistes, dermato.Faire des sites pratiques et simples à Internet.Diminuer les salaires des politiciens, au lieu de se servir auprès des retraités et des petit...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">5</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-5</data>
+</node>
+<node id="citoyen-Unknown-6">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-6</data>
+  <data key="d2">citoyen-Unknown-6</data>
+</node>
+<node id="contribution-Unknown-6">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-6</data>
+  <data key="d4">6. Manuscrit, 12 lignes, 92 motsMonsieur le Président,Je vous interpelle concernant les successions et notamment les frais. Je trouve incohérent le systèmedes frais et des taxes sur un bien que nos parents nous transmettent et qui ont travaillé pour l’avoir.Aussi, la durée et le montant de cette succession qui ne sont pas justifiées. Je comprends que l’étatpeut récupérer de l’argent avec ces frais et c’est normal. Pendant les 5 années de l’ex-présidentNicolas Sarkozy, la loi sur les succes...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">6</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-6</data>
+</node>
+<node id="citoyen-Unknown-7">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-7</data>
+  <data key="d9">homme</data>
+  <data key="d2">citoyen-Unknown-7</data>
+</node>
+<node id="contribution-Unknown-7">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-7</data>
+  <data key="d4">7. Manuscrit, 6 lignes, 31 mots (homme)01 2019Rétablir ISF.Stop à la hausse des taxes.Augmentations des salaires et des retraites. Contrôles fiscaux.Casier judiciaire / pour le gouvernement.Stop des augmentations des salaires des ministres, députés.</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">7</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-7</data>
+</node>
+<node id="citoyen-Unknown-9">
+  <data key="d0">Citoyen</data>
+  <data key="d1">citoyen-Unknown-9</data>
+  <data key="d9">femme</data>
+  <data key="d2">citoyen-Unknown-9</data>
+</node>
+<node id="contribution-Unknown-9">
+  <data key="d0">Contribution</data>
+  <data key="d3">contribution-Unknown-9</data>
+  <data key="d4">9. Manuscrit, 20 lignes, 180 mots (femme)18.2.2019Monsieur le Président,Monsieur le Maire,Je tiens à participer au grand débat ! Ce sera simple.Désert médical. Plus de médecin, plus de dentiste. Obtenir un rendez-vous avec un spécialiste relèvedu miracle, d’où la saturation des urgences.Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition février 2024Cahier de Corme-ÉcluseInternet et el grand âge. Lorsque l’on n’est pas "connecté", les jours à venir vont être compliqué...</data>
+  <data key="d5">False</data>
+  <data key="d6">Unknown</data>
+  <data key="d7">9</data>
+  <data key="d8">manuscrit</data>
+  <data key="d2">contribution-Unknown-9</data>
+</node>
+<node id="doleance-13909114">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Avantages anciens présidents</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d11">Avantages octroyés aux anciens présidents de la République</data>
+  <data key="d12">forte</data>
+</node>
+<node id="doleance-40a4b14f">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Attente chez le médecin</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d11">Longtemps d'attente pour un rendez-vous médical</data>
+  <data key="d12">forte</data>
+</node>
+<node id="proposition-6a7d8705">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Réduire les dépenses publiques</data>
+  <data key="d13">Commencer à réduire les dépenses en baisse par le haut de la pyramide.</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d14">Réduction des dépenses publiques</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="service_public-650eb9a5">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Médecine</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135&lt;SEP&gt;contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d16">Médecine</data>
+  <data key="d17">sante</data>
+</node>
+<node id="opinion-4e6e20d4">
+  <data key="d0">OPINION</data>
+  <data key="d2">Opinion sur avantages anciens présidents</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d18">contre</data>
+  <data key="d19">Avantages octroyés aux anciens présidents</data>
+  <data key="d20">0.9</data>
+</node>
+<node id="opinion-58d89f12">
+  <data key="d0">OPINION</data>
+  <data key="d2">Opinion sur délais pour médecin</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d18">contre</data>
+  <data key="d19">Delais d'attente pour consultation médicale</data>
+  <data key="d20">0.8</data>
+</node>
+<node id="thematique-db91f285">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Politique</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d16">Politique</data>
+</node>
+<node id="thematique-1bdcfdc2">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Santé</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-e1f0afa5e2a481156c648b24144a0135&lt;SEP&gt;contrib-9ed493aa383f79265155e701ccfc8a76&lt;SEP&gt;contrib-5c1878a897b4d50093ae6d2609ed1da9&lt;SEP&gt;contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d16">Santé</data>
+  <data key="d17">sante</data>
+</node>
+<node id="niveau_confiance-50c9019e">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers le gouvernement</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d21">faible</data>
+  <data key="d22">gouvernement</data>
+</node>
+<node id="thematique-social">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">SOCIAL</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-e1f0afa5e2a481156c648b24144a0135&lt;SEP&gt;contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d16">SOCIAL</data>
+</node>
+<node id="thematique-sanitaire">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">SANITAIRE</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-e1f0afa5e2a481156c648b24144a0135&lt;SEP&gt;contrib-9ed493aa383f79265155e701ccfc8a76&lt;SEP&gt;contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d16">SANITAIRE</data>
+</node>
+<node id="proposition-b6032103">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Augmenter le personnel médical en campagne</data>
+  <data key="d13">Augmenter le nombre de personnels médicaux présents dans les zones rurales afin d'améliorer l'accès aux soins.</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d14">Augmenter le personnel médical en campagne</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-cbedaf6c">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Aide pour l'accès numérique</data>
+  <data key="d13">Mettre en place des aides pour les personnes qui n'ont pas accès à Internet ou qui ne maîtrisent pas les nouvelles technologies.</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d14">Aide pour l'accès numérique</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-5e589a3d">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Augmenter les zones de couverture mobile</data>
+  <data key="d13">Créer plus de zones blanches pour assurer la couverture des téléphones portables dans les zones rurales.</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d14">Augmenter les zones de couverture mobile</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-8b641f2d">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Baisse des salaires des hauts fonctionnaires</data>
+  <data key="d13">Proposer une réduction des salaires des hauts fonctionnaires pour mieux équilibrer les finances publiques.</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d14">Baisse des salaires des hauts fonctionnaires</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="proposition-61cdf805">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Réduction des avantages des anciens présidents</data>
+  <data key="d13">Réduire les privilèges et avantages accordés aux anciens présidents de la République.</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d14">Réduction des avantages des anciens présidents</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="service_public-77a7587c">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Accès numérique</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d16">Accès numérique</data>
+  <data key="d17">education</data>
+</node>
+<node id="service_public-cb2c993c">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Télécommunications</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d16">Télécommunications</data>
+  <data key="d17">transport</data>
+</node>
+<node id="service_public-14904089">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Fonction publique</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d16">Fonction publique</data>
+  <data key="d17">social</data>
+</node>
+<node id="service_public-abbaba51">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Présidence</data>
+  <data key="d10">contrib-dd5f8afcfa2e07864042bb06e062e410</data>
+  <data key="d16">Présidence</data>
+  <data key="d17">politique</data>
+</node>
+<node id="doleance-af7139b2">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Attente pour rendez-vous médical</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d11">Attente excessive pour rendez-vous médical</data>
+  <data key="d12">forte</data>
+</node>
+<node id="proposition-91f6af07">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Aides pour personnes âgées sans Internet</data>
+  <data key="d13">Prévoir des aides pour les personnes âgées qui n'ont pas Internet.</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d14">Aides pour personnes âgées</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-b7a2b711">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Baisse des salaires des présidents et ministres</data>
+  <data key="d13">Il serait bon de baisser les salaires des présidents et ministres.</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d14">Baisse salaires présidents et ministres</data>
+  <data key="d15">democratique</data>
+</node>
+<node id="proposition-b3930c7a">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Augmenter les postes de gendarmerie</data>
+  <data key="d13">Il faudrait augmenter les postes de gendarmerie pour sécuriser nos campagnes.</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d14">Augmenter postes de gendarmerie</data>
+  <data key="d15">securite</data>
+</node>
+<node id="doleance-96f5f765">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Retraités se sentent oubliés</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d11">Oubli des retraités par les institutions</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="opinion-c4ac2b0a">
+  <data key="d0">OPINION</data>
+  <data key="d2">Retraités oubliés</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d18">contre</data>
+  <data key="d19">Oubli des retraités</data>
+  <data key="d20">0.8</data>
+</node>
+<node id="thematique-2378b56c">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Justice Sociale</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d16">Justice Sociale</data>
+</node>
+<node id="thematique-f02018cc">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Sécurité</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d16">Sécurité</data>
+</node>
+<node id="thematique-securite">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">SECURITE</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d16">SECURITE</data>
+</node>
+<node id="opinion-21e7222a">
+  <data key="d0">OPINION</data>
+  <data key="d2">Participation des riches</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d18">pour</data>
+  <data key="d19">participation des riches à la fiscalité</data>
+  <data key="d20">0.7</data>
+</node>
+<node id="reforme_fiscale-e88f09ba">
+  <data key="d0">REFORME_FISCALE</data>
+  <data key="d2">Contribution ISF</data>
+  <data key="d13">Les gens riches devraient contribuer un peu plus au financement de l'État.</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d16">Contribution ISF</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="type_impot-4c226d35">
+  <data key="d0">TYPE_IMPOT</data>
+  <data key="d2">ISF</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a&lt;SEP&gt;contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d16">ISF</data>
+  <data key="d15">direct</data>
+</node>
+<node id="doleance-ce2b1e0c">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Diminution salaire élus</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d11">salaire et avantages des élus</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="service_public-4f4c3a37">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Service public rural</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d16">Service public</data>
+  <data key="d17">social</data>
+</node>
+<node id="proposition-675242d4">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Diminuer le nombre de députés et sénateurs</data>
+  <data key="d13">Proposition de diminuer le nombre de députés et sénateurs ainsi que leurs avantages.</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d14">Diminuer le nombre de députés et sénateurs</data>
+  <data key="d15">democratique</data>
+</node>
+<node id="proposition-0303d2b3">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Accès à Internet en campagne</data>
+  <data key="d13">Favoriser l'accès à Internet dans les zones rurales, en incluant des formations.</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d14">Accès à Internet en campagne</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="verbatim-473658b4">
+  <data key="d0">VERBATIM</data>
+  <data key="d2">Monsieur le Président, Il serait bon que les gens riches (ISF) participent 'un peu' à notre pays !!!</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d4">Monsieur le Président, Il serait bon que les gens riches (ISF) participent 'un peu' à notre pays !!!</data>
+  <data key="d23">True</data>
+</node>
+<node id="thematique-7347f8ed">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Fiscalité</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d16">Fiscalité</data>
+</node>
+<node id="thematique-c09381a9">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Démocratie</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d16">Démocratie</data>
+</node>
+<node id="thematique-c8205c76">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Internet</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a&lt;SEP&gt;contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d16">Sites pratiques Internet</data>
+  <data key="d17">autre</data>
+</node>
+<node id="acteur_institutionnel-b209a714">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">Élus</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d16">Élus</data>
+  <data key="d24">collectivite</data>
+</node>
+<node id="service_public-807a349b">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Accès à Internet</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d16">Accès à Internet</data>
+  <data key="d17">social</data>
+</node>
+<node id="thematique-fiscalite">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">FISCALITE</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70&lt;SEP&gt;contrib-9ed493aa383f79265155e701ccfc8a76&lt;SEP&gt;contrib-a18fe38b9ef7df9b5ac22e771d35ea6f&lt;SEP&gt;contrib-79ab2822b2beca15bf683d34cfe1e86a&lt;SEP&gt;contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d16">FISCALITE</data>
+</node>
+<node id="thematique-politique">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">POLITIQUE</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d16">POLITIQUE</data>
+</node>
+<node id="doleance-b1f39614">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Retraités et taxes</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d11">Les retraités paient trop de taxes</data>
+  <data key="d12">forte</data>
+</node>
+<node id="doleance-5de6e19f">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Attente soins médicaux</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d11">Attente trop longue pour se faire soigner</data>
+  <data key="d12">forte</data>
+</node>
+<node id="proposition-62390f67">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Amélioration accès soins</data>
+  <data key="d13">Ne pas attendre des semaines, voire des mois pour se faire soigner et prendre rendez-vous chez les médecins, dentistes, dermato.</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d14">Amélioration accès soins</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="proposition-d3a8c8d2">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Diminution des salaires des politiciens</data>
+  <data key="d13">Diminuer les salaires des politiciens au lieu de se servir auprès des retraités et des petits salaires.</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d14">Diminution salaires politiciens</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="opinion-cb7453b8">
+  <data key="d0">OPINION</data>
+  <data key="d2">Retraités et taxes injustes</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d18">contre</data>
+  <data key="d19">Les retraités payent trop de taxes</data>
+  <data key="d20">0.9</data>
+</node>
+<node id="opinion-81a21516">
+  <data key="d0">OPINION</data>
+  <data key="d2">Longues attentes pour soins</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d18">contre</data>
+  <data key="d19">Attente pour se faire soigner</data>
+  <data key="d20">0.9</data>
+</node>
+<node id="thematique-01d38e52">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Retraites</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d16">Retraites</data>
+</node>
+<node id="doleance-434d22c3">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Frais de succession</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+  <data key="d11">frais et taxes sur les successions</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="opinion-d276a8fd">
+  <data key="d0">OPINION</data>
+  <data key="d2">Système incohérent des frais de succession</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+  <data key="d18">contre</data>
+  <data key="d19">système des frais et des taxes sur les successions</data>
+  <data key="d20">0.7</data>
+</node>
+<node id="proposition-262c7130">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Remettre en place la loi sur les successions</data>
+  <data key="d13">Restaurer la loi sur les successions mise en place sous l'ex-président Nicolas Sarkozy</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+  <data key="d14">Remettre en place la loi sur les successions</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="niveau_confiance-9b7ea959">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance envers l'État sur les successions</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+  <data key="d21">moyen</data>
+  <data key="d22">État</data>
+</node>
+<node id="acteur_institutionnel-8dd568ad">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">État</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+  <data key="d16">État</data>
+  <data key="d24">gouvernement</data>
+</node>
+<node id="thematique-0f519c04">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Fiscalité des successions</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+  <data key="d16">Fiscalité</data>
+</node>
+<node id="proposition-ac80f865">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Rétablissement ISF</data>
+  <data key="d13">Rétablir l'Impôt de Solidarité sur la Fortune (ISF).</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d14">Rétablissement ISF</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="doleance-ebd9d33e">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Augmentation des taxes</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d11">hausse des taxes</data>
+  <data key="d12">forte</data>
+</node>
+<node id="doleance-a13b004f">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Augmentations salaires et retraites</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d11">augmentation des salaires et retraites</data>
+  <data key="d12">forte</data>
+</node>
+<node id="doleance-d51dced5">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Contrôles fiscaux</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d11">contrôles fiscaux</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="opinion-f0f1de4a">
+  <data key="d0">OPINION</data>
+  <data key="d2">Stop augmentations salaires ministres</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d18">contre</data>
+  <data key="d19">augmentations des salaires des ministres</data>
+  <data key="d20">0.8</data>
+</node>
+<node id="acteur_institutionnel-15994e39">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">gouvernement</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d16">gouvernement</data>
+  <data key="d24">gouvernement</data>
+</node>
+<node id="proposition-91a33841">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Stop hausse des taxes</data>
+  <data key="d13">Stopper l'augmentation des taxes.</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d14">Stop hausse des taxes</data>
+  <data key="d15">fiscale</data>
+</node>
+<node id="doleance-4c471d7f">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Salaires des ministres</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d11">salaires des ministres</data>
+  <data key="d12">forte</data>
+</node>
+<node id="doleance-71e03622">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Salaires des députés</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+  <data key="d11">salaires des députés</data>
+  <data key="d12">forte</data>
+</node>
+<node id="doleance-b24ce7f2">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Désert médical</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d11">Désert médical</data>
+  <data key="d12">forte</data>
+</node>
+<node id="service_public-9dacb57f">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Médecin</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d16">Médecin</data>
+  <data key="d17">sante</data>
+</node>
+<node id="doleance-ffbea7d6">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Accès aux soins</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d11">Accès aux soins</data>
+  <data key="d12">forte</data>
+</node>
+<node id="service_public-414b35d5">
+  <data key="d0">SERVICE_PUBLIC</data>
+  <data key="d2">Urgences</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d16">Urgences</data>
+  <data key="d17">sante</data>
+</node>
+<node id="proposition-6d335c68">
+  <data key="d0">PROPOSITION</data>
+  <data key="d2">Prévoir minibus</data>
+  <data key="d13">Prévoir deux minibus pour accompagner les personnes âgées chez le médecin et autres lieux nécessaires</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d14">Prévoir minibus</data>
+  <data key="d15">sociale</data>
+</node>
+<node id="thematique-f5f0c488">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Transport</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d16">Transport</data>
+</node>
+<node id="verbatim-ce821e16">
+  <data key="d0">VERBATIM</data>
+  <data key="d2">obtenir un rendez-vous avec un spécialiste relève du miracle</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d4">obtenir un rendez-vous avec un spécialiste relève du miracle</data>
+  <data key="d23">True</data>
+</node>
+<node id="verbatim-589e83e2">
+  <data key="d0">VERBATIM</data>
+  <data key="d2">il faudra peut-être envisager d’accompagner les anciens</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d4">il faudra peut-être envisager d’accompagner les anciens</data>
+  <data key="d23">True</data>
+</node>
+<node id="opinion-3fda8262">
+  <data key="d0">OPINION</data>
+  <data key="d2">Saturation des urgences</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d18">contre</data>
+  <data key="d19">saturation des urgences</data>
+  <data key="d20">0.9</data>
+</node>
+<node id="niveau_confiance-7d1fa048">
+  <data key="d0">NIVEAU_CONFIANCE</data>
+  <data key="d2">Confiance en médecins</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d21">faible</data>
+  <data key="d22">Médecin</data>
+</node>
+<node id="mesure_ecologique-88416423">
+  <data key="d0">MESURE_ECOLOGIQUE</data>
+  <data key="d2">Accompagnement des anciens</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d16">Accompagnement des anciens</data>
+  <data key="d17">transport</data>
+</node>
+<node id="acteur_institutionnel-abb0d510">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">Monsieur le Président</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d16">Monsieur le Président</data>
+  <data key="d24">gouvernement</data>
+</node>
+<node id="acteur_institutionnel-d7898229">
+  <data key="d0">ACTEUR_INSTITUTIONNEL</data>
+  <data key="d2">Monsieur le Maire</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d16">Monsieur le Maire</data>
+  <data key="d24">collectivite</data>
+</node>
+<node id="doleance-ee2894e1">
+  <data key="d0">DOLEANCE</data>
+  <data key="d2">Problèmes de connexion pour les anciens</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d11">Problèmes de connexion pour les anciens</data>
+  <data key="d12">moyenne</data>
+</node>
+<node id="thematique-f009c130">
+  <data key="d0">THEMATIQUE</data>
+  <data key="d2">Digitalisation</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d16">Digitalisation</data>
+</node>
+<node id="Réduction des dépenses publiques">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Réduction des dépenses publiques</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Avantages anciens présidents">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Avantages anciens présidents</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Attente chez le médecin">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Attente chez le médecin</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Médecine">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Médecine</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Opinion sur avantages anciens présidents">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Opinion sur avantages anciens présidents</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Opinion sur délais pour médecin">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Opinion sur délais pour médecin</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Politique">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Politique</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Santé">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Santé</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Confiance envers le gouvernement">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance envers le gouvernement</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</node>
+<node id="gouvernement">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">gouvernement</data>
+  <data key="d10">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</node>
+<node id="Attente pour rendez-vous médical">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Attente pour rendez-vous médical</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Retraités se sentent oubliés">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Retraités se sentent oubliés</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="Aides pour personnes âgées sans Internet">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Aides pour personnes âgées sans Internet</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</node>
+<node id="Aides pour personnes âgées">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Aides pour personnes âgées</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</node>
+<node id="Baisse des salaires des présidents et ministres">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Baisse des salaires des présidents et ministres</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</node>
+<node id="Baisse salaires présidents et ministres">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Baisse salaires présidents et ministres</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</node>
+<node id="Augmenter les postes de gendarmerie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Augmenter les postes de gendarmerie</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</node>
+<node id="Augmenter postes de gendarmerie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Augmenter postes de gendarmerie</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</node>
+<node id="Retraités oubliés">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Retraités oubliés</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="Justice Sociale">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Justice Sociale</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C5"}]</data>
+</node>
+<node id="Sécurité">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Sécurité</data>
+  <data key="d10">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</node>
+<node id="Contribution ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Contribution ISF</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</node>
+<node id="ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">ISF</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</node>
+<node id="Diminution salaire élus">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Diminution salaire élus</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Service public rural">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Service public rural</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Diminuer le nombre de députés et sénateurs">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Diminuer le nombre de députés et sénateurs</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Accès à Internet en campagne">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Accès à Internet en campagne</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="VERBATIM">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">VERBATIM</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</node>
+<node id="Participation des riches">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Participation des riches</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</node>
+<node id="Accès à Internet">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Accès à Internet</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Fiscalité">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Fiscalité</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</node>
+<node id="Démocratie">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Démocratie</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Élus">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Élus</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Internet">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Internet</data>
+  <data key="d10">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C1"}]</data>
+</node>
+<node id="Retraités et taxes">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Retraités et taxes</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Attente soins médicaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Attente soins médicaux</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Amélioration accès soins">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Amélioration accès soins</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Diminution des salaires des politiciens">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Diminution des salaires des politiciens</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Retraités">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Retraités</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C2"}]</data>
+</node>
+<node id="Longues attentes pour soins">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Longues attentes pour soins</data>
+  <data key="d10">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C0"}]</data>
+</node>
+<node id="Frais de succession">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Frais de succession</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</node>
+<node id="Système incohérent des frais de succession">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Système incohérent des frais de succession</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</node>
+<node id="Remettre en place la loi sur les successions">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Remettre en place la loi sur les successions</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</node>
+<node id="Confiance envers l'État sur les successions">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance envers l'État sur les successions</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</node>
+<node id="État">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">État</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</node>
+<node id="Fiscalité des successions">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Fiscalité des successions</data>
+  <data key="d10">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</node>
+<node id="Rétablissement ISF">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Rétablissement ISF</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Augmentation des taxes">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Augmentation des taxes</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Augmentations salaires et retraites">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Augmentations salaires et retraites</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Contrôles fiscaux">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Contrôles fiscaux</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Stop augmentations salaires ministres">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Stop augmentations salaires ministres</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Stop hausse des taxes">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Stop hausse des taxes</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Salaires des ministres">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Salaires des ministres</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Salaires des députés">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Salaires des députés</data>
+  <data key="d10">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</node>
+<node id="Désert médical">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Désert médical</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="Médecin">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Médecin</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="Accès aux soins">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Accès aux soins</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</node>
+<node id="Urgences">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Urgences</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</node>
+<node id="Prévoir minibus">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Prévoir minibus</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Transport">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Transport</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="obtenir un rendez-vous avec un spécialiste relève du miracle">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">obtenir un rendez-vous avec un spécialiste relève du miracle</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="il faudra peut-être envisager d’accompagner les anciens">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">il faudra peut-être envisager d’accompagner les anciens</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Saturation des urgences">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Saturation des urgences</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</node>
+<node id="Confiance en médecins">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Confiance en médecins</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</node>
+<node id="Accompagnement des anciens">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Accompagnement des anciens</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Monsieur le Président">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Monsieur le Président</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Monsieur le Maire">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Monsieur le Maire</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C3"}]</data>
+</node>
+<node id="Problèmes de connexion pour les anciens">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Problèmes de connexion pour les anciens</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<node id="Digitalisation">
+  <data key="d0">UNKNOWN</data>
+  <data key="d2">Digitalisation</data>
+  <data key="d10">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+  <data key="d25">[{"level": 0, "cluster": "L0C4"}]</data>
+</node>
+<edge source="citoyen-Unknown-None" target="contribution-Unknown-None">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-None</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="contribution-Unknown-None" target="thematique-sanitaire">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="citoyen-Unknown-2" target="contribution-Unknown-2">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-2</data>
+</edge>
+<edge source="citoyen-Unknown-3" target="contribution-Unknown-3">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-3</data>
+</edge>
+<edge source="contribution-Unknown-3" target="thematique-sanitaire">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="contribution-Unknown-3" target="thematique-securite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="citoyen-Unknown-4" target="contribution-Unknown-4">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-4</data>
+</edge>
+<edge source="contribution-Unknown-4" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="contribution-Unknown-4" target="thematique-politique">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="citoyen-Unknown-5" target="contribution-Unknown-5">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-5</data>
+</edge>
+<edge source="contribution-Unknown-5" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="contribution-Unknown-5" target="thematique-sanitaire">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="contribution-Unknown-5" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="citoyen-Unknown-6" target="contribution-Unknown-6">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-6</data>
+</edge>
+<edge source="contribution-Unknown-6" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</edge>
+<edge source="citoyen-Unknown-7" target="contribution-Unknown-7">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-7</data>
+</edge>
+<edge source="contribution-Unknown-7" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="contribution-Unknown-7" target="thematique-social">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="citoyen-Unknown-9" target="contribution-Unknown-9">
+  <data key="d26">SOUMET</data>
+  <data key="d27">1.0</data>
+  <data key="d28">contribution-Unknown-9</data>
+</edge>
+<edge source="contribution-Unknown-9" target="thematique-fiscalite">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="contribution-Unknown-9" target="thematique-sanitaire">
+  <data key="d26">ABORDE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Réduction des dépenses publiques" target="Avantages anciens présidents">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">1.6</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="Réduction des dépenses publiques" target="Attente chez le médecin">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="Avantages anciens présidents" target="Opinion sur avantages anciens présidents">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.95</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="Attente chez le médecin" target="Médecine">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="Attente chez le médecin" target="Opinion sur délais pour médecin">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="Médecine" target="Attente pour rendez-vous médical">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">1.8</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Médecine" target="Retraités se sentent oubliés">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.6</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Opinion sur avantages anciens présidents" target="Politique">
+  <data key="d26">SINSCRIT_DANS</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="Opinion sur délais pour médecin" target="Santé">
+  <data key="d26">SINSCRIT_DANS</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="Politique" target="Diminution des salaires des politiciens">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Politique" target="Retraités et taxes">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Santé" target="Attente pour rendez-vous médical">
+  <data key="d26">CONTIENT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Santé" target="Retraités et taxes">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Santé" target="Attente soins médicaux">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Santé" target="Amélioration accès soins">
+  <data key="d26">FORMULE</data>
+  <data key="d27">1.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Santé" target="Longues attentes pour soins">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Santé" target="Désert médical">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Confiance envers le gouvernement" target="gouvernement">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.85</data>
+  <data key="d28">contrib-e1f0afa5e2a481156c648b24144a0135</data>
+</edge>
+<edge source="gouvernement" target="Augmentation des taxes">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="gouvernement" target="Augmentations salaires et retraites">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="gouvernement" target="Contrôles fiscaux">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="gouvernement" target="Stop augmentations salaires ministres">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="gouvernement" target="Stop hausse des taxes">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="Retraités se sentent oubliés" target="Retraités oubliés">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Aides pour personnes âgées sans Internet" target="Aides pour personnes âgées">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Baisse des salaires des présidents et ministres" target="Baisse salaires présidents et ministres">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Augmenter les postes de gendarmerie" target="Augmenter postes de gendarmerie">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Augmenter postes de gendarmerie" target="Sécurité">
+  <data key="d26">CONTIENT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Retraités oubliés" target="Justice Sociale">
+  <data key="d26">SINSCRIT_DANS</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-5c1878a897b4d50093ae6d2609ed1da9</data>
+</edge>
+<edge source="Contribution ISF" target="ISF">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Contribution ISF" target="Fiscalité">
+  <data key="d26">SINSCRIT_DANS</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="ISF" target="Rétablissement ISF">
+  <data key="d26">PORTE_SUR_IMPOT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="ISF" target="Stop hausse des taxes">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="Diminution salaire élus" target="Service public rural">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Diminution salaire élus" target="Diminuer le nombre de députés et sénateurs">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Diminution salaire élus" target="Accès à Internet en campagne">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.6</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Diminution salaire élus" target="Élus">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Diminuer le nombre de députés et sénateurs" target="Démocratie">
+  <data key="d26">SINSCRIT_DANS</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Accès à Internet en campagne" target="Accès à Internet">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Accès à Internet en campagne" target="Internet">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="VERBATIM" target="Participation des riches">
+  <data key="d26">CONTIENT</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-79ab2822b2beca15bf683d34cfe1e86a</data>
+</edge>
+<edge source="Internet" target="Diminution des salaires des politiciens">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Retraités et taxes" target="Diminution des salaires des politiciens">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Retraités et taxes" target="Retraités">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-0dc63562dc128beab373e5395a2e1c70</data>
+</edge>
+<edge source="Frais de succession" target="Système incohérent des frais de succession">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</edge>
+<edge source="Frais de succession" target="Remettre en place la loi sur les successions">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</edge>
+<edge source="Frais de succession" target="Confiance envers l'État sur les successions">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</edge>
+<edge source="Frais de succession" target="État">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</edge>
+<edge source="Frais de succession" target="Fiscalité des successions">
+  <data key="d26">CONTIENT</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-a18fe38b9ef7df9b5ac22e771d35ea6f</data>
+</edge>
+<edge source="Stop augmentations salaires ministres" target="Salaires des ministres">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="Stop augmentations salaires ministres" target="Salaires des députés">
+  <data key="d26">FAIT_REMONTER</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-2a3265eb7d8f4f3fe3d585ffec898de9</data>
+</edge>
+<edge source="Désert médical" target="Médecin">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Désert médical" target="Prévoir minibus">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Désert médical" target="obtenir un rendez-vous avec un spécialiste relève du miracle">
+  <data key="d26">CONTIENT</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Médecin" target="Problèmes de connexion pour les anciens">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.6</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Accès aux soins" target="Urgences">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Prévoir minibus" target="Transport">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.9</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Prévoir minibus" target="il faudra peut-être envisager d’accompagner les anciens">
+  <data key="d26">CONTIENT</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Prévoir minibus" target="Accompagnement des anciens">
+  <data key="d26">FORMULE</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Prévoir minibus" target="Monsieur le Président">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Prévoir minibus" target="Monsieur le Maire">
+  <data key="d26">EXPRIME</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Saturation des urgences" target="Confiance en médecins">
+  <data key="d26">TRADUIT</data>
+  <data key="d27">0.8</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+<edge source="Problèmes de connexion pour les anciens" target="Digitalisation">
+  <data key="d26">CONCERNE</data>
+  <data key="d27">0.7</data>
+  <data key="d28">contrib-9ed493aa383f79265155e701ccfc8a76</data>
+</edge>
+</graph></graphml>

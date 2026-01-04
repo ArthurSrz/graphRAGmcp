@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d9" for="edge" attr.name="relationship_type" attr.type="string" />
+<ns0:key id="d8" for="edge" attr.name="order" attr.type="long" />
+<ns0:key id="d7" for="edge" attr.name="source_id" attr.type="string" />
+<ns0:key id="d6" for="edge" attr.name="description" attr.type="string" />
+<ns0:key id="d5" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d4" for="node" attr.name="clusters" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="entity_name" attr.type="string" />
+<ns0:key id="d2" for="node" attr.name="source_id" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="description" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+<ns0:graph edgedefault="undirected"><node id="&quot;SAINT DIZANT DU GUA_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Saint Dizant Du Gua - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Saint_Dizant_Du_Gua-commune-root"</data><data key="d3">"SAINT DIZANT DU GUA_COMMUNE"</data><data key="d4">[]</data></node><node id="&quot;SAINT DIZANT DU GUA_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Saint Dizant Du Gua - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Saint_Dizant_Du_Gua-commune-root"</data><data key="d3">"SAINT DIZANT DU GUA_COMMUNE"</data><data key="d4">[]</data></node><ns0:node id="&quot;SAINT-DIZANT-DU-GUA&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Saint-Dizant-du-Gua is a commune in France where citizens are expressing their grievances and proposals regarding national governance and social issues."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"SAINT-DIZANT-DU-GUA"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LE GOUVERNEMENT&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Le gouvernement refers to the current French government that is being critiqued by citizens for its lack of coherence and effectiveness in addressing social issues."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"LE GOUVERNEMENT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LES TRAVAILLEURS PAUVRES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Les travailleurs pauvres refers to a social issue highlighted by citizens, indicating the plight of low-income workers that has persisted for decades."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"LES TRAVAILLEURS PAUVRES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYEN LAMBDA&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Le citoyen lambda represents the average citizen who feels powerless in the face of political decisions and expresses skepticism about the current political system."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"CITOYEN LAMBDA"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TECHNOCRATIE&quot;">
+  <ns0:data key="d0">"COURANTIDEOLOGIQUE"</ns0:data>
+  <ns0:data key="d1">"Technocratie refers to the ideological framework criticized for being overly organized and influenced by lobbies, rendering democracy obsolete."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"TECHNOCRATIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉMOCRATIE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"La démocratie is the political system that citizens feel is no longer functioning effectively due to disenfranchisement and technocracy."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"DÉMOCRATIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉPUBLIQUE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"République represents the governmental and civic system that citizens feel has devolved into a form of governance that prioritizes bureaucratic power over public engagement."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"RÉPUBLIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ELECTIONS NATIONALES&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Les élections nationales refer to the recent national elections that citizens analyze to illustrate the disconnection between elected officials and the electorate's true opinions."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"ELECTIONS NATIONALES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROMESSES ÉLECTORALES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Promesses électorales are the often unfulfilled commitments made by politicians during campaigns, causing disillusionment among citizens."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"PROMESSES ÉLECTORALES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LOBBIES&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Les lobbies are interest groups that are criticized for their strong influence over the government, often at the expense of democratic processes."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"LOBBIES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TERGIVERSATIONS&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Tergiversations refer to the indecisiveness and inconsistency in governmental decisions, criticized by citizens as detrimental to effective governance."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"TERGIVERSATIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COHÉRENCE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Cohérence refers to the need for consistency in governmental policies, something citizens demand from their leaders."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"COHÉRENCE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VICTIMES DE LA CONJONCTURE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Victimes de la conjoncture describes individuals who are suffering due to current socio-economic conditions, emphasizing the need for action from the government."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"VICTIMES DE LA CONJONCTURE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉGALITÉ ET FRATERNITÉ&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Égalité et fraternité are fundamental principles of the French Republic that citizens feel are being neglected in current policies."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"ÉGALITÉ ET FRATERNITÉ"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉPUTÉS ET SÉNATEURS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Députés et sénateurs refer to elected officials in France, whose roles and effectiveness are scrutinized by citizens."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"DÉPUTÉS ET SÉNATEURS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DIARRHÉE VERBALE&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Diarrhée verbale is a metaphor used by citizens to describe the excessive and empty rhetoric that politicians employ during speeches and campaigns."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"DIARRHÉE VERBALE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C2"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PLACE ÉLECTORALE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Place électorale refers to the perceived importance of political positions, which citizens argue has led to a competitive and sometimes unethical political environment."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"PLACE ÉLECTORALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ARBITRAIRE DES AUTORITÉS&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Arbitraire des autorités denotes the perceived randomness and inconsistency in the application of government authority, causing distrust among citizens."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"ARBITRAIRE DES AUTORITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ESPOIR&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Espoir symbolizes the hope that citizens maintain for a better political future despite their frustrations with the current state of governance."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"ESPOIR"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONJONCTURE ACTUELLE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Conjoncture actuelle refers to the current socio-economic context that affects citizens' lives and shapes their grievances and demands."</ns0:data>
+  <ns0:data key="d2">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d3">"CONJONCTURE ACTUELLE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ABOLITION DE TOUS LES PRIVILÈGES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"This proposal expresses a demand for the removal of all privileges, indicating a desire for equality and fairness among citizens."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"ABOLITION DE TOUS LES PRIVILÈGES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIERS DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahiers de doléances refer to the documents where citizens voice their complaints, opinions, and proposals during the Grand Débat National."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"CAHIERS DE DOLÉANCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYENS DE CHARENTE-MARITIME&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Citizens of Charente-Maritime are the individuals contributing to the debates and the demand for the abolition of privileges."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"CITOYENS DE CHARENTE-MARITIME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONSULTATION&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"Consultation refers to the process of engaging citizens in discussions about their views and grievances, specifically during the Grand Débat National."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"CONSULTATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;16 JANVIER 2019&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"This date marks the specific occasion when the grievance or proposal for the abolition of privileges was presented, indicating a timeline of citizen activism."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"16 JANVIER 2019"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;[INITIALE PRÉNOM NOM]&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"This placeholder represents an individual's signature that could be associated with the citizen's contribution, emphasizing personal accountability and engagement in the process."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"[INITIALE PRÉNOM NOM]"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CHARENTE-MARITIME&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Charente-Maritime is the geographical territory where the citizens' consultation takes place, influencing the local context of the contributions and grievances."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"CHARENTE-MARITIME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉDITION AVRIL 2024&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"This denotes the publication of a specific edition of citizen contributions, indicating ongoing engagement in the discussions beyond the initial consultation period."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"ÉDITION AVRIL 2024"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIERS CITOYENS&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahiers citoyens indicates a similar documentation of citizen voices and proposals, linking to the broader movement of civic engagement involved in the Grand Débat National."</ns0:data>
+  <ns0:data key="d2">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d3">"CAHIERS CITOYENS"</ns0:data>
+</ns0:node>
+<ns0:edge source="&quot;SAINT-DIZANT-DU-GUA&quot;" target="&quot;DÉMOCRATIE&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"Saint-Dizant-du-Gua represents a local perspective on la démocratie, with citizens expressing concerns about its effectiveness at the communal level."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LE GOUVERNEMENT&quot;" target="&quot;CITOYEN LAMBDA&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Le citoyen lambda expresses grievances against le gouvernement for its incoherence and ineffectiveness in addressing societal issues."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LE GOUVERNEMENT&quot;" target="&quot;LES TRAVAILLEURS PAUVRES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Les travailleurs pauvres is a critical social issue that le gouvernement is accused of neglecting, despite ongoing challenges in this demographic."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LE GOUVERNEMENT&quot;" target="&quot;PROMESSES ÉLECTORALES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Les promesses électorales made by le gouvernement are often seen as unfulfilled, adding to citizens’ disillusionment with the political system."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LE GOUVERNEMENT&quot;" target="&quot;LOBBIES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Les lobbies exert influence over le gouvernement, which citizens feel undermines democratic processes and citizen engagement."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LE GOUVERNEMENT&quot;" target="&quot;COHÉRENCE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cohérence is demanded by citizens from le gouvernement to ensure effective decision-making and policy implementation."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LE GOUVERNEMENT&quot;" target="&quot;VICTIMES DE LA CONJONCTURE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Victimes de la conjoncture highlights the group that le gouvernement needs to address, reflecting social issues affecting the populace."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LE GOUVERNEMENT&quot;" target="&quot;ÉGALITÉ ET FRATERNITÉ&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Égalité et fraternité are being critiqued by citizens as principles that le gouvernement is failing to uphold in its policies."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CITOYEN LAMBDA&quot;" target="&quot;ELECTIONS NATIONALES&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Les élections nationales are analyzed by le citoyen lambda to highlight issues of disenfranchisement and the disconnection from political representation."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CITOYEN LAMBDA&quot;" target="&quot;DÉPUTÉS ET SÉNATEURS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Députés et sénateurs are being scrutinized by le citoyen lambda for their effectiveness and responsiveness to public needs."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;TECHNOCRATIE&quot;" target="&quot;DÉMOCRATIE&quot;">
+  <ns0:data key="d5">16.0</ns0:data>
+  <ns0:data key="d6">"La démocratie has come under critique for giving rise to a technocracy that prioritizes institutional control over public needs."&lt;SEP&gt;"La technocratie represents a concern that has emerged regarding the effectiveness of la démocratie, suggesting that bureaucratic governance has supplanted true democratic engagement."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PROMESSES ÉLECTORALES&quot;" target="&quot;DIARRHÉE VERBALE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Diarrhée verbale relates to the empty promises made during political campaigns, contributing to citizens' disillusionment with the electoral process."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PLACE ÉLECTORALE&quot;" target="&quot;ARBITRAIRE DES AUTORITÉS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Place électorale suggests the competitive positioning among politicians, which citizens perceive as leading to arbitraire des autorités in governance."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ESPOIR&quot;" target="&quot;CONJONCTURE ACTUELLE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Espoir represents the optimism that citizens cling to despite the challenges posed by la conjoncture actuelle in their lives."</ns0:data>
+  <ns0:data key="d7">contrib-b0dec8e81511e3bea01f48f8ac400425</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ABOLITION DE TOUS LES PRIVILÈGES&quot;" target="&quot;CITOYENS DE CHARENTE-MARITIME&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The citizens of Charente-Maritime are directly expressing the proposal for the abolition of all privileges in their contributions."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ABOLITION DE TOUS LES PRIVILÈGES&quot;" target="&quot;CONSULTATION&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The proposal for the abolition of all privileges is a part of the themes discussed during the consultation process."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ABOLITION DE TOUS LES PRIVILÈGES&quot;" target="&quot;16 JANVIER 2019&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The date indicates when the proposal for the abolition of all privileges was made, establishing a temporal context for this contribution."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ABOLITION DE TOUS LES PRIVILÈGES&quot;" target="&quot;[INITIALE PRÉNOM NOM]&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The placeholder for the individual's name links directly to the proposal, suggesting personal endorsement of the stated grievance or request."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;CITOYENS DE CHARENTE-MARITIME&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Cahiers de doléances are the means through which citizens of Charente-Maritime articulate their grievances and proposals."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;CONSULTATION&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Cahiers de doléances are part of the broader consultation process, representing citizen contributions in the discussions."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;CHARENTE-MARITIME&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahiers de doléances are representative of the collective sentiments of the people within Charente-Maritime, highlighting regional issues and concerns."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIERS DE DOLÉANCES&quot;" target="&quot;ÉDITION AVRIL 2024&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The edition indicates an updated collection of contributions that continue to gather citizens' voices beyond the immediate events of January 2019."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CONSULTATION&quot;" target="&quot;CAHIERS CITOYENS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Cahiers citoyens participate in the consultation process, reflecting a parallel avenue for citizen input during the Grand Débat National."</ns0:data>
+  <ns0:data key="d7">contrib-5e9e49284c98a15eaebd523782502ca5</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>

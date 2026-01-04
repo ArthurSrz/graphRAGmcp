@@ -1,0 +1,1220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d9" for="edge" attr.name="relationship_type" attr.type="string" />
+<ns0:key id="d8" for="edge" attr.name="order" attr.type="long" />
+<ns0:key id="d7" for="edge" attr.name="source_id" attr.type="string" />
+<ns0:key id="d6" for="edge" attr.name="description" attr.type="string" />
+<ns0:key id="d5" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d4" for="node" attr.name="clusters" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="entity_name" attr.type="string" />
+<ns0:key id="d2" for="node" attr.name="source_id" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="description" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+<ns0:graph edgedefault="undirected"><node id="&quot;SAINT PIERRE DU PALAIS_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Saint Pierre Du Palais - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Saint_Pierre_Du_Palais-commune-root"</data><data key="d3">"SAINT PIERRE DU PALAIS_COMMUNE"</data><data key="d4">[]</data></node><ns0:node id="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Saint-Pierre-du-Palais is a document containing civic contributions from citizens, expressing grievances and proposals regarding various social and economic issues."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"CAHIER DE SAINT-PIERRE-DU-PALAIS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HOMME&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Homme refers to the contributor who has provided the input in the Cahier, representing the voice of a citizen expressing opinions and proposals."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"HOMME"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉCART DE SALAIRES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Écart de Salaires is a proposal advocating for maximum salary disparities between private and public sectors, specifically suggesting a ratio of 1 to 20."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"ÉCART DE SALAIRES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PARADIS FISCAUX&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Paradis Fiscaux refers to the grievance about tax havens and calls for effective measures against them."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"PARADIS FISCAUX"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRAUDE FISCALE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Fraude Fiscale is a concern expressed regarding tax fraud and the need for stronger regulations."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"FRAUDE FISCALE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LOBBYS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Lobbys refer to the proposal to regulate lobbying activities in sectors such as energy, agriculture, and waste management."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"LOBBYS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AGRICULTURE BIO&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Agriculture Bio is an opinion expressing that organic farming can sustain the global population."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"AGRICULTURE BIO"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COÛT DES TRANSPORTS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Coût des Transports is a proposal to increase costs for transporting goods and tourism outside Europe."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"COÛT DES TRANSPORTS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ENQUÊTES D'UTILITÉ PUBLIQUE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Enquêtes d'Utilité Publique refers to the proposal for favoring public interest investigations, exemplified by the approach of Élise Lucet."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"ENQUÊTES D'UTILITÉ PUBLIQUE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXATION DES ŒUVRES D'ART&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Taxation des Œuvres d'Art is a proposal advocating for higher taxes on artworks."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"TAXATION DES ŒUVRES D'ART"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉPARTITION DES RICHESSES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Répartition des Richesses is a call for voting laws that promote fair distribution of wealth."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"RÉPARTITION DES RICHESSES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LUTTE CONTRE LES PARADIS FISCAUX&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Lutte contre les Paradis Fiscaux is a proposal advocating for effective measures to combat tax havens, highlighting the need for financial justice."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"LUTTE CONTRE LES PARADIS FISCAUX"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LUTTE CONTRE LA FRAUDE FISCALE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Lutte contre la Fraude Fiscale is a proposal aimed at strengthening regulations to prevent tax fraud, indicating a demand for fiscal transparency."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"LUTTE CONTRE LA FRAUDE FISCALE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ENCADREMENT DES LOBBYS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Encadrement des Lobbys is a proposal focused on imposing stricter regulations on lobbying activities in key sectors, addressing the influence of special interest groups."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"ENCADREMENT DES LOBBYS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;UTILITÉ PUBLIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Utilité Publique refers to the theme of public interest, underlining the importance of community-driven inquiries and accountability in governance."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"UTILITÉ PUBLIQUE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRANSPORT HORS EUROPE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Transport Hors Europe is a proposal to increase transport costs for goods and tourism outside of Europe, aiming to address environmental and economic concerns."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"TRANSPORT HORS EUROPE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RICHESSES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Richesses addresses the theme of wealth distribution, focusing on social justice and the importance of equitable resource management."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"RICHESSES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VOTER DES LOIS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Voter des Lois is a proposal suggesting the enactment of laws that facilitate the fair distribution of wealth among citizens, promoting social equity."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"VOTER DES LOIS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SIGNATURE&quot;">
+  <ns0:data key="d0">"VERBATIM"</ns0:data>
+  <ns0:data key="d1">"Signature indicates the author's affirmation and finalization of the contributions made in the Cahier, signifying personal accountability."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"SIGNATURE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;21 JANVIER 2019&quot;">
+  <ns0:data key="d0">"DATE"</ns0:data>
+  <ns0:data key="d1">"21 Janvier 2019 is the date when the contributions were signed, marking a specific point in time for the civic engagement expressed in the document."</ns0:data>
+  <ns0:data key="d2">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d3">"21 JANVIER 2019"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;E. MACRON&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"E. Macron is the President of the Republic, elected by universal suffrage, perceived as disconnected from the struggles of ordinary citizens."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"E. MACRON"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRANCE D'EN BAS&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"France d'en bas refers to the segment of the population that feels overlooked and underrepresented by the government and institutions."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"FRANCE D'EN BAS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Doléances is a citizen contribution document in the context of the Grand Débat National, expressing collective grievances and opinions."&lt;SEP&gt;"Cahier de Doléances is a document where citizens express their grievances and proposals regarding governance and public services."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2&lt;SEP&gt;contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"CAHIER DE DOLÉANCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONSTITUTION&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"The Constitution provides the framework for governance, including provisions for referendums and citizen engagement."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"CONSTITUTION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONSEIL ÉCONOMIQUE ET SOCIAL&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Conseil économique et social is an institution scrutinized for its relevance and cost to the state budget, suggested as a potential duplication of the roles of elected officials."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"CONSEIL ÉCONOMIQUE ET SOCIAL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PENSIONS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Pensions are financial support for retirees, which are criticized for being insufficiently indexed to the cost of living."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"PENSIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXE D'HABITATION&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"Taxe d'habitation is a property tax that is debated regarding its necessity and fairness across different income levels."&lt;SEP&gt;"Taxe d'habitation is one of the local taxes mentioned as a source of revenue that should remain with small municipalities to support local services."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38&lt;SEP&gt;contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"TAXE D'HABITATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES PUBLICS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Services publics refer to public services that citizens believe require more investment and should not be run solely for profitability."&lt;SEP&gt;"Services publics refers to public services such as hospitals and schools, which are mentioned in the context of not being reduced as a cost-cutting measure."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38&lt;SEP&gt;contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"SERVICES PUBLICS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRACTURE NUMÉRIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Fracture numérique refers to the digital divide affecting less privileged segments of the population who lack access to technology and the internet."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"FRACTURE NUMÉRIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFORME DU SYSTÈME ÉDUCATIF&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"Réforme du système éducatif highlights the need for changes to the educational system beyond just curriculum adjustments, emphasizing discipline and respect."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"RÉFORME DU SYSTÈME ÉDUCATIF"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ANCIEN PRÉSIDENT DE LA RÉPUBLIQUE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Ancien présidents are former presidents of the Republic, their perks and roles are questioned in terms of relevance and cost."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ANCIEN PRÉSIDENT DE LA RÉPUBLIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ASSISTANCE SOCIALE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Assistance sociale encompasses community support services aimed at helping vulnerable populations, such as the elderly living in isolation."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ASSISTANCE SOCIALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CUMUL DES MANDATS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Cumul des mandats is a grievance against the practice of holding multiple political positions simultaneously, perceived as a conflict of interest."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"CUMUL DES MANDATS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;REDEVANCE LOCATIVE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Redevance locative concerns the rising costs of living, particularly rent, and the need to regulate excessive rent increases."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"REDEVANCE LOCATIVE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉGALITÉ&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Égalité refers to the principle of equality among citizens, which is viewed as continuously violated in various aspects of governance and policy."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ÉGALITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉCOLOGIE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Écologie encompasses environmental concerns raised by citizens, calling for serious attention and reform regarding climate commitments and sustainable practices."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ÉCOLOGIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRANCE&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"France refers to the nation as a whole, which is experiencing various socio-economic issues expressed by citizens in their grievances."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"FRANCE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFÉRENDUM&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Référendum is proposed as a mechanism for direct citizen involvement in decision-making, particularly concerning significant policy changes."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"RÉFÉRENDUM"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ARTICLE 11 DE LA CONSTITUTION&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"Article 11 of the Constitution allows for referendums, which citizens believe should be utilized more frequently to gauge public opinion."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ARTICLE 11 DE LA CONSTITUTION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXE PROFESSIONNELLE&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"Taxe professionnelle is a local tax that has been criticized for its negative impact on poorer communes when suppressed without adequate compensation."&lt;SEP&gt;"Taxe professionnelle is another local tax referred to in the text, emphasizing the need for municipalities to retain some taxation power."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38&lt;SEP&gt;contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"TAXE PROFESSIONNELLE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COMMERCE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Commerce refers to local businesses that citizens feel are suffering due to economic policies and lack of governmental support especially in rural areas."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"COMMERCE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉPUTÉS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Députés are elected representatives in the National Assembly, involved in legislation and oversight of the government, whose numbers are disputed in terms of necessity."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"DÉPUTÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SÉNATEURS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Sénateurs are elected officials in the Senate, whose role and number are also questioned in terms of representation and effectiveness."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"SÉNATEURS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LOCATAIRE&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"Locataire refers to tenants who are affected by ongoing issues of housing costs and housing policies that can disproportionately impact their livelihood."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"LOCATAIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PERSONNES ÂGÉES&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"Personnes âgées refers to the elderly population whom citizens express concern for, regarding their social support and access to services."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"PERSONNES ÂGÉES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRANSPORTS PUBLICS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Transports publics encompasses public transportation systems that are seen as essential for connecting rural and urban areas, yet are often underfunded."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"TRANSPORTS PUBLICS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉCOLOGIE ET ENVIRONNEMENT&quot;">
+  <ns0:data key="d0">"CLUSTERSEMANTIQUE"</ns0:data>
+  <ns0:data key="d1">"Écologie et Environnement denotes a cluster of semantic themes focusing on sustainability, environmental protection, and climate change challenges."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ÉCOLOGIE ET ENVIRONNEMENT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INÉGALITÉS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Inégalités refers to the social and economic disparities that citizens voice concern over, reflecting a broader sentiment of injustice."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"INÉGALITÉS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ISOLATION DES PERSONNES ÂGÉES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Isolation des personnes âgées highlights the challenges faced by elderly individuals living alone in rural or underserved areas."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ISOLATION DES PERSONNES ÂGÉES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FRACTURE TERRITORIALE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Fracture territoriale refers to the disparities between urban and rural areas in terms of resources, representation, and services provided."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"FRACTURE TERRITORIALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Gouvernement refers to the administrative body in charge of public policy and governance, often criticized for its disconnection from citizen concerns."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"GOUVERNEMENT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉMOCRATIE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Démocratie is the concept of governance by the people, emphasizing citizen involvement and representation in political matters."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"DÉMOCRATIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SALAIRES&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Salaires represents the compensation received by workers, notably under discussion in relation to fairness and equity in wage distributions."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"SALAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LOYERS&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Loyers or rents are mentioned in the context of economic pressures faced by citizens, particularly in relation to affordability and cost of living."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"LOYERS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BUDGET DE L'ÉTAT&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Budget de l'État refers to the financial planning and expenditure of the state, criticized for allocations that do not sufficiently address citizen needs."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"BUDGET DE L'ÉTAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ASSISTANCE À DOMICILE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Assistance à domicile reflects the necessity for support services for those unable to live independently, particularly among the elderly."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ASSISTANCE À DOMICILE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉSERTIFICATION DES CENTRES-VILLES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Désertification des centres-villes refers to the phenomenon of urban centers losing vitality, which citizens attribute to various economic pressures."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"DÉSERTIFICATION DES CENTRES-VILLES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉDUCATION&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Éducation refers to the system of schooling and education policies, which citizens urge to prioritize discipline, effective learning, and equity."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"ÉDUCATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INNOVATION DANS LE SECTEUR DES TRANSPORTS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Innovation dans le secteur des transports emphasizes the need for modern solutions to improve connectivity and infrastructure for rural populations."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"INNOVATION DANS LE SECTEUR DES TRANSPORTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉDUCTION DU FOSSÉ NUMÉRIQUE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Réduction du fossé numérique is a proposed measure to ensure equitable access to technology and internet for all citizens, particularly the disadvantaged."</ns0:data>
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d3">"RÉDUCTION DU FOSSÉ NUMÉRIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;20/02/2019&quot;">
+  <ns0:data key="d0">"DATE"</ns0:data>
+  <ns0:data key="d1">"The date refers to February 20, 2019, when the contribution was recorded."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"20/02/2019"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PISCICULTEUR D’ÉTANG&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"pisciculteur d’étang represents a professional involved in fish farming, highlighting issues regarding the management of aquatic environments."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"PISCICULTEUR D’ÉTANG"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SERVICES DE L'ÉTAT&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"services de l'État refers to government services and institutions responsible for the regulatory framework surrounding environmental management."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"SERVICES DE L'ÉTAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RESSOURCE EN EAU&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"ressource en eau refers to water resources, emphasizing the importance of water management policies and their impact on biodiversity and ecosystems."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"RESSOURCE EN EAU"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MILIEUX AQUATIQUES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"milieux aquatiques refers to aquatic environments, emphasizing their importance in biodiversity and requiring proper management to sustain their quality."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"MILIEUX AQUATIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CERTIFICATION PEFC&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"certification PEFC is a proposed incentive measure from the forestry sector that could be applied to aquatic environments to promote sustainable management."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"CERTIFICATION PEFC"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CORMORAN&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"cormoran refers to a type of bird impacting biodiversity in aquatic environments, highlighting the ecological issues discussed in the contribution."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"CORMORAN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXE ADAR&quot;">
+  <ns0:data key="d0">"REFORMEFISCALE"</ns0:data>
+  <ns0:data key="d1">"taxe ADAR is a form of tax on the revenue of fish farming operations that is seen as excessive and disconnected from actual benefits."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"TAXE ADAR"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MSA&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"MSA refers to the agricultural social mutual society which sometimes fails to differentiate adequately between professional benefits and individual income."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"MSA"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉCLARATIONS ADMINISTRATIVES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"déclarations administratives refers to the multiple administrative declarations that create complexity and inefficiencies for the contributors."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"DÉCLARATIONS ADMINISTRATIVES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NOUVEAU CONTRÔLE TECHNIQUE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"nouveau contrôle technique is a proposed measure affecting older vehicles used for professional purposes and the economic impact on small structures."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"NOUVEAU CONTRÔLE TECHNIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INADÉQUATION RÉGLEMENTAIRE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"inadéquation réglementaire refers to the mismatch between regulations and practical management needs in the aquatic sector, leading to inefficiencies and grievances."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"INADÉQUATION RÉGLEMENTAIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GESTION EXTENSIVE DE MILIEUX AQUATIQUES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"gestion extensive de milieux aquatiques describes a sustainable management approach for aquatic environments that supports biodiversity and resource availability."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"GESTION EXTENSIVE DE MILIEUX AQUATIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ABANDON DE LA GESTION RAISONNÉE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"abandon de la gestion raisonnée refers to the cessation of well-considered management practices in aquatic environments, leading to ecological degradation."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"ABANDON DE LA GESTION RAISONNÉE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉFICIT EN TERMES DE QUALITÉ DES MILIEUX AQUATIQUES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"déficit en termes de qualité des milieux aquatiques indicates a decline in the ecological health of aquatic habitats due to inadequate management policies."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"DÉFICIT EN TERMES DE QUALITÉ DES MILIEUX AQUATIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MESURES INCITATIVES&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"mesures incitatives refers to suggested incentives for promoting better management practices, intended to engage local stakeholders."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"MESURES INCITATIVES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GROUPES DE PRESSION&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"groupes de pression refers to interest groups influencing regulations and decisions concerning environmental management, often without local insight."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"GROUPES DE PRESSION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PERTURBATION DES ACTIVITÉS LIÉES AU SECTEUR DU POISSON&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"perturbation des activités liées au secteur du poisson indicates the negative impact of management policies on fishing-related livelihoods."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"PERTURBATION DES ACTIVITÉS LIÉES AU SECTEUR DU POISSON"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PERTE DE BIODIVERSITÉ&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"perte de biodiversité refers to the decrease in the variety of species within aquatic ecosystems, as highlighted by the contributor's concerns."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"PERTE DE BIODIVERSITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRESSION FISCALE INDIRECTE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"pression fiscale indirecte outlines financial burdens from indirect taxes that disproportionately affect fish farming operations."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"PRESSION FISCALE INDIRECTE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;FACE DE PAUVRETÉ&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"face de pauvreté describes the living condition the contributor experiences despite hard work in fish farming due to unfavorable regulations and taxes."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"FACE DE PAUVRETÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COMPLEXITÉ DE GESTION&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"complexité de gestion refers to the difficulties and inefficiencies created by extensive administrative requirements for fish farming operators."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"COMPLEXITÉ DE GESTION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONFISCATOIRE VIS-À-VIS DES ANCIENS VÉHICULES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"confiscatoire vis-à-vis des anciens véhicules describes a burdensome regulation on older vehicles that threatens financial stability for small operations."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"CONFISCATOIRE VIS-À-VIS DES ANCIENS VÉHICULES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CONTRÔLE TECHNIQUE DE POLLUTION ANNUEL&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"contrôle technique de pollution annuel refers to the annual checks enforced on vehicles, imposing financial strain without addressing the practical needs of rural habits."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"CONTRÔLE TECHNIQUE DE POLLUTION ANNUEL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉCLARATION DE TVA&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"déclaration de TVA refers to the tax declaration process that should be streamlined but adds to the inefficiency in management practices."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"DÉCLARATION DE TVA"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉCLARATION FISCALE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"déclaration fiscale refers to the tax declaration process which creates scheduling conflicts and contributes to administrative burdens for contributors."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"DÉCLARATION FISCALE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SITUATION DE TRAVAIL SOUS LE SEUIL DE PAUVRETÉ&quot;">
+  <ns0:data key="d0">|"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"situation de travail sous le seuil de pauvreté reflects the economic struggles faced by the contributor despite continuous work in their field."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"SITUATION DE TRAVAIL SOUS LE SEUIL DE PAUVRETÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;INITIATIVES POUR L'ÉVOLUTION DE QUALITÉ DES MILIEUX&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"initiatives pour l'évolution de qualité des milieux suggests actions aimed at improving the ecological quality of aquatic environments through stakeholder collaboration."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"INITIATIVES POUR L'ÉVOLUTION DE QUALITÉ DES MILIEUX"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SYSTÈME EXERCÉ PAR LES SERVICES DE L'ÉTAT&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"système exercé par les services de l'État refers to the mechanisms and regulations instituted by state services that impact environmental management."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"SYSTÈME EXERCÉ PAR LES SERVICES DE L'ÉTAT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CLAUSES RÉGLEMENTAIRES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"clauses réglementaires indicate the legal stipulations that restrict effective management practices, complicating the operational landscape for fish farmers."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"CLAUSES RÉGLEMENTAIRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MESURES INADAPTÉES EN CAMPAGNE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"mesures inadaptées en campagne refers to policies that are not suited for rural areas, exacerbating challenges faced by small farming operations."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"MESURES INADAPTÉES EN CAMPAGNE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DIFFICULTÉ DE GESTION DES PLANS D'EAU&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"difficulté de gestion des plans d'eau highlights the challenges faced in managing water bodies effectively due to bureaucratic policies."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"DIFFICULTÉ DE GESTION DES PLANS D'EAU"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RISQUE DE PÉNURIE DES RESSOURCES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"risque de pénurie des ressources indicates the potential scarcity of water resources due to mismanagement and ineffective regulations."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"RISQUE DE PÉNURIE DES RESSOURCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MARCHÉ DU POISSON&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Marché du poisson refers to the market dynamics affecting fish trade, where regulatory measures impact prices and availability."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"MARCHÉ DU POISSON"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉCOSYSTÈMES AQUATIQUES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"écosystèmes aquatiques are ecosystems reliant on water that are sensitive to changes in management practices and biodiversity policies."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"ÉCOSYSTÈMES AQUATIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉCOSYSTÈMES TERRESTRES&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"écosystèmes terrestres encompass land-based ecosystems affected by regulations concerning water bodies, highlighting interconnected environmental issues."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"ÉCOSYSTÈMES TERRESTRES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POLITIQUE ÉCOSYSTÉMIQUE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"politique écosystémique suggests a system-wide approach to policy-making that considers all components of aquatic and terrestrial ecosystems in decision-making processes."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"POLITIQUE ÉCOSYSTÉMIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROTECTION D'ESPÈCES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"protection d'espèces refers to measures aimed at safeguarding specific species, often influenced by misaligned regulatory decisions."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"PROTECTION D'ESPÈCES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉCISIONS NON INFORMÉES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"décisions non informées indicates decisions made without sufficient data or consultation with local stakeholders, leading to potential ecological issues."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"DÉCISIONS NON INFORMÉES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GESTION RAISONNÉE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"gestion raisonnée refers to a proposed holistic management approach that balances ecological health with economic viability for stakeholders."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"GESTION RAISONNÉE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ENGAGEMENT DES ACTEURS DE TERRAIN&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"engagement des acteurs de terrain emphasizes the need for active participation from local stakeholders in environmental decision-making."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"ENGAGEMENT DES ACTEURS DE TERRAIN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXES DIVERSES ET IMPÔTS COURANTS&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"taxes diverses et impôts courants refers to the multitude of taxes that cumulatively impose a heavy burden on fish farmers."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"TAXES DIVERSES ET IMPÔTS COURANTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DEMANDE DE CONCERTATION&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"demande de concertation refers to a call for collaborative decision-making processes that involve all relevant stakeholders in environmental management."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"DEMANDE DE CONCERTATION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉSERVE ÉCOLOGIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"réserve écologique denotes protected areas aimed at conserving biodiversity and promoting sustainable practices in environment management."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"RÉSERVE ÉCOLOGIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PLAN DE GESTION DE L'EAU&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"plan de gestion de l'eau suggests the establishment of structured plans to manage water resources more effectively."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"PLAN DE GESTION DE L'EAU"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMPACT DES CHANGEMENTS CLIMATIQUES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"impact des changements climatiques refers to the effects of climate change on aquatic ecosystems and fishing activities."</ns0:data>
+  <ns0:data key="d2">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d3">"IMPACT DES CHANGEMENTS CLIMATIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MONSIEUR MACRON&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Monsieur Macron is the President of France, addressed in the text regarding grievances about governmental spending and taxation policies."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"MONSIEUR MACRON"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DOLÉANCES N° 1&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Doléances n° 1 expresses grievances about the high levels of taxation and debt affecting small and medium taxpayers, particularly focusing on extravagant governmental expenditures."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"DOLÉANCES N° 1"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DOLÉANCES N° 2&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Doléances n° 2 proposes solutions to reduce France's debt while criticizing the abolition of the wealth tax (ISF) and advocating for better resource allocation to support the less fortunate."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"DOLÉANCES N° 2"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CHÂTEAUX DE L'ÉLYSÉE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Châteaux de l'Élysée refers to the presidential residences, criticized for being transformed into luxury hotels, representing extravagant governmental spending."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"CHÂTEAUX DE L'ÉLYSÉE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;IMPÔTS&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"Impôts refers to the taxes levied on citizens, which are a central theme in the grievances expressed by the citizen writer."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"IMPÔTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DETTES DE LA FRANCE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Dettes de la France pertains to the national debt of France, a major concern for the citizen contributor, who questions how to reduce it."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"DETTES DE LA FRANCE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;REVENUS TRÈS HAUTS&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Revenus très hauts expresses the opinion that very high salaries should be reduced to support lower wages for workers, aligning with the proposals in the Doléances."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"REVENUS TRÈS HAUTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CLASSES MOYENNES&quot;">
+  <ns0:data key="d0">"CLUSTERSEMANTIQUE"</ns0:data>
+  <ns0:data key="d1">"Classes moyennes refers to the middle class, which contributes to charitable donations but is impacted by tax policies that favor the wealthy."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"CLASSES MOYENNES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SURTAXES&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"Surtaxes refers to additional taxes that contribute to the financial burden faced by lower-income citizens, mentioned in relation to energy costs."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"SURTAXES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LETTRE&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Lettre is the written document addressed to Monsieur Macron, containing the citizens' grievances and proposals regarding governmental policies."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"LETTRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉPENSES FARAMINEUSES DE L'ÉLYSÉE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Dépenses faramineuses de l'Élysée refers to the excessive spending by the French government on luxury events and facilities, which is a central concern in the grievances."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"DÉPENSES FARAMINEUSES DE L'ÉLYSÉE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GRAND LUXE&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Grand luxe describes the luxurious lifestyle funded by taxpayer money, critiqued in the context of government spending."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"GRAND LUXE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉCEPTIONS SOMPTUEUSES&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Réceptions somptueuses refer to lavish receptions hosted for the wealthy, criticized as wasteful during times of economic hardship."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"RÉCEPTIONS SOMPTUEUSES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;VOYAGES AUTOUR DU MONDE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Voyages autour du monde refers to the international trips taken by the president, which are also criticized for their costs borne by taxpayers."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"VOYAGES AUTOUR DU MONDE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COMPTEURS D'ÉLYSÉE&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"Compteurs d'Élysée refers to the historical use of special meters for the presidential residence, indicating a separation of expenses for public figures versus taxpayers."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"COMPTEURS D'ÉLYSÉE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DONS DES CLASSES MOYENNES&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Dons des classes moyennes refers to the financial contributions made by the middle class to charitable organizations, which support the poorer segments of society."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"DONS DES CLASSES MOYENNES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RICHES FRANÇAIS&quot;">
+  <ns0:data key="d0">"ACTORINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Riches Français refers to wealthy French citizens, whose tax obligations are a subject of contention in the grievances expressed."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"RICHES FRANÇAIS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MIRH&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"MIRH is the initial designation of the individual contributing these grievances, indicating their active participation in the citizen consultation."</ns0:data>
+  <ns0:data key="d2">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d3">"MIRH"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉPUTÉS ET SÉNATEURS&quot;">
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d1">"Conseil économique et social and legislators (deputies and senators) address similar topics, leading to criticism of redundancy and cost."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAXES SUR LES RETRAITÉS&quot;">
+  <ns0:data key="d2">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d1">"Grievances about taxes on retirees are directly related to concerns over the adequacy of pensions for maintaining a decent standard of living."</ns0:data>
+  <ns0:data key="d0">"UNKNOWN"</ns0:data>
+</ns0:node>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;HOMME&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Cahier contains contributions from Homme, who is responsible for the civic input and expresses diverse proposals."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;ÉCART DE SALAIRES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal regarding Écart de Salaires is one of the main contributions recorded in the Cahier, expressing a specific economic concern."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;PARADIS FISCAUX&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The grievance about Paradis Fiscaux is highlighted as a significant social issue in the contributions of the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;FRAUDE FISCALE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The concern of Fraude Fiscale is part of the grievances presented in the Cahier, indicating a demand for accountability."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;LOBBYS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The regulation of Lobbys is presented as a proposal within the contributions of the Cahier, addressing political influence issues."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;AGRICULTURE BIO&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The opinion on Agriculture Bio suggests that this perspective is part of the broader discourse captured in the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;COÛT DES TRANSPORTS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal regarding Coût des Transports is articulated as a specific concern within the text of the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;ENQUÊTES D'UTILITÉ PUBLIQUE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Enquêtes d'Utilité Publique is part of the contributions aimed at improving civic engagement noted in the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;TAXATION DES ŒUVRES D'ART&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Taxation des Œuvres d'Art is included in the reflective suggestions made by the contributor within the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;RÉPARTITION DES RICHESSES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Répartition des Richesses is among the key contributions, emphasizing social equity concerns in the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;LUTTE CONTRE LES PARADIS FISCAUX&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Lutte contre les Paradis Fiscaux is part of the wider discussions captured in the Cahier regarding economic fairness."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;LUTTE CONTRE LA FRAUDE FISCALE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal concerning Lutte contre la Fraude Fiscale aligns with the overarching themes of accountability expressed in the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;ENCADREMENT DES LOBBYS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Encadrement des Lobbys reflects concerns about political influence, articulated as part of the contributions in the Cahier."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;UTILITÉ PUBLIQUE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The theme of Utilité Publique underpins several proposals, emphasizing the importance of societal benefit in the contributions."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;TRANSPORT HORS EUROPE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The proposal regarding Transport Hors Europe seeks to address economic impact and ecological issues highlighted in the contributions."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;RICHESSES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The theme of Richesses is integral to several proposals within the Cahier focused on social equity and wealth distribution."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;VOTER DES LOIS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The proposal for Voter des Lois indicates a commitment to legislative efforts aimed at enhancing wealth equity within the civic contributions."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;SIGNATURE&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"Signature reflects the author's personal commitment to the ideas presented in the Cahier and ensures accountability."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-PIERRE-DU-PALAIS&quot;" target="&quot;21 JANVIER 2019&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The date 21 Janvier 2019 indicates when the contributions were finalized, providing temporal context for the civic engagement."</ns0:data>
+  <ns0:data key="d7">contrib-5a81075ea01ee5db8405d3cb5bac0f4b</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;E. MACRON&quot;" target="&quot;FRANCE D'EN BAS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"E. Macron is viewed as disconnected from the challenges faced by France d'en bas, symbolizing a gap between political leaders and citizens."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;E. MACRON&quot;" target="&quot;CUMUL DES MANDATS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Criticism of the practice of holding multiple mandates is directed at E. Macron's government for failing to address this issue."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FRANCE D'EN BAS&quot;" target="&quot;CAHIER DE DOLÉANCES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Cahier de Doléances captures grievances and proposals from France d'en bas, providing a voice to their concerns."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;FRANCE D'EN BAS&quot;" target="&quot;CONSEIL ÉCONOMIQUE ET SOCIAL&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"France d'en bas expresses skepticism about the effectiveness of the Conseil économique et social in representing their interests."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;CONSTITUTION&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The contributions in the Cahier de Doléances reflect citizens' desires for more direct engagement with democratic processes as outlined in the Constitution."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;PISCICULTEUR D’ÉTANG&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contribution highlights issues specific to the pisciculteur d’étang, reflecting their professional experiences and concerns."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CONSEIL ÉCONOMIQUE ET SOCIAL&quot;" target="&quot;DÉPUTÉS ET SÉNATEURS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Conseil économique et social and legislators (deputies and senators) address similar topics, leading to criticism of redundancy and cost."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CONSEIL ÉCONOMIQUE ET SOCIAL&quot;" target="&quot;ANCIEN PRÉSIDENT DE LA RÉPUBLIQUE&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"The role of Ancien présidents in the Council is debated in terms of cost effectiveness and relevance to contemporary issues."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PENSIONS&quot;" target="&quot;TAXES SUR LES RETRAITÉS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Grievances about taxes on retirees are directly related to concerns over the adequacy of pensions for maintaining a decent standard of living."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PENSIONS&quot;" target="&quot;ÉGALITÉ&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Concerns about pension policies are tied to broader issues of equality, as retirees feel disproportionately affected by fiscal policies."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;TAXE D'HABITATION&quot;" target="&quot;LETTRE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Letter advocates for the retention of the Taxe d'habitation by local governments, emphasizing the importance of local resources for communities."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;ASSISTANCE SOCIALE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The call to prioritize services publics aligns with the need for better assistance sociale for vulnerable groups in society."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;FRACTURE NUMÉRIQUE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The digital divide affects access to critical services publics, highlighting a need for inclusive technological outreach."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;ÉCOLOGIE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Environmental concerns highlight the need for services publics to prioritize sustainability and ecological responsibility."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;DOLÉANCES N° 2&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Doléances n° 2 emphasizes the need to maintain funding for public services instead of cutting personnel, which is vital for societal welfare."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES PUBLICS&quot;" target="&quot;CLASSES MOYENNES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The relationship between Services publics and Classes moyennes highlights the impact of public service funding on the middle class and their financial obligations."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RÉFORME DU SYSTÈME ÉDUCATIF&quot;" target="&quot;ÉGALITÉ&quot;">
+  <ns0:data key="d5">5.0</ns0:data>
+  <ns0:data key="d6">"Debates surrounding equality invoke discussions on educational reforms necessary to uphold democratic values and citizen respect."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;ÉGALITÉ&quot;" target="&quot;TAXES SUR LES RETRAITÉS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The ongoing struggle for equality is manifest in grievances regarding unfair taxation of retirees affecting their quality of life."</ns0:data>
+  <ns0:data key="d7">contrib-4eb2eb06e508fb65a49d5b26feabb7b2</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;TAXE PROFESSIONNELLE&quot;" target="&quot;LETTRE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Lettre mentions Taxe professionnelle as a necessary local tax for municipalities, advocating for local autonomy over these revenues."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PISCICULTEUR D’ÉTANG&quot;" target="&quot;TAXE ADAR&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The taxe ADAR directly affects the economic viability of pisciculteurs, representing a grievance against unfair fiscal burdens."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PISCICULTEUR D’ÉTANG&quot;" target="&quot;MSA&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The MSA's classification impacts pisciculteurs’ benefits and funding opportunities, creating grievances related to income loss."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;PISCICULTEUR D’ÉTANG&quot;" target="&quot;NOUVEAU CONTRÔLE TECHNIQUE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The new technical control is seen as a measure that could threaten the economic stability of pesciculturists, reflecting concerns for small operations."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES DE L'ÉTAT&quot;" target="&quot;RESSOURCE EN EAU&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Government services are responsible for the management decisions that impact water resources, as lamented by the contributor."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;SERVICES DE L'ÉTAT&quot;" target="&quot;DÉCLARATIONS ADMINISTRATIVES&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The multiple administrative declarations indicate bureaucracy from state services that complicate management for the contributors."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;RESSOURCE EN EAU&quot;" target="&quot;MILIEUX AQUATIQUES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Aquatic environments rely on water resources, which are discussed in the context of the overall environmental health and biodiversity."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MILIEUX AQUATIQUES&quot;" target="&quot;CERTIFICATION PEFC&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The certification PEFC is proposed as a constructive management approach for aquatic environments, analogous to its success in forestry."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MILIEUX AQUATIQUES&quot;" target="&quot;CORMORAN&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The presence of the cormoran represents an ecological issue affecting the health of aquatic environments, leading to biodiversity loss."</ns0:data>
+  <ns0:data key="d7">contrib-53997edb9b113d1ca4394c0e4daf7064</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR MACRON&quot;" target="&quot;DOLÉANCES N° 1&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Monsieur Macron is directly addressed through the grievance expressed in Doléances n° 1, where concerns about governmental spending and taxes are raised."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;MONSIEUR MACRON&quot;" target="&quot;DOLÉANCES N° 2&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Monsieur Macron is appealed to for solutions regarding France's national debt as expressed in Doléances n° 2."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES N° 1&quot;" target="&quot;CHÂTEAUX DE L'ÉLYSÉE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Doléances n° 1 critiques the extravagant spending on the Châteaux de l'Élysée as being inappropriate during financial hardship."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES N° 1&quot;" target="&quot;IMPÔTS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Doléances n° 1 raises concerns about the high levels of taxation, indicating dissatisfaction with how tax revenues are managed."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES N° 1&quot;" target="&quot;CLASSES MOYENNES&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Classes moyennes are mentioned in relation to charitable contributions, which are considered crucial for supporting those in need as outlined in Doléances n° 1."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES N° 1&quot;" target="&quot;SURTAXES&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"Surtaxes are discussed in Doléances n° 1 as exacerbating the financial struggles of citizens during winter months."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES N° 2&quot;" target="&quot;DETTES DE LA FRANCE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Doléances n° 2 discusses the national debt and suggests ways to alleviate it, highlighting fiscal responsibility."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES N° 2&quot;" target="&quot;REVENUS TRÈS HAUTS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"In Doléances n° 2, the notion of reducing very high salaries is proposed as a means to address economic inequality and support workers."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DOLÉANCES N° 2&quot;" target="&quot;DONS DES CLASSES MOYENNES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The idea of Dons des classes moyennes is linked to Doléances n° 2, highlighting how changes in tax policy could affect charitable contributions to the poor."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LETTRE&quot;" target="&quot;DÉPENSES FARAMINEUSES DE L'ÉLYSÉE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The Lettre addresses the issues of excessive spending, specifically mentioning the extravagant expenditures by the Élysée administration."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LETTRE&quot;" target="&quot;GRAND LUXE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Lettre critiques the concept of Grand luxe in the context of public spending, highlighting its unsustainability during economic difficulties."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LETTRE&quot;" target="&quot;RÉCEPTIONS SOMPTUEUSES&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Lettre includes specific grievances against Réceptions somptueuses organized for the affluent, showcasing wastefulness in government practices."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LETTRE&quot;" target="&quot;VOYAGES AUTOUR DU MONDE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The Lettre points out Voyages autour du monde as part of excessive government expenditure that raises concerns about fiscal responsibility."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LETTRE&quot;" target="&quot;COMPTEURS D'ÉLYSÉE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The Lettre references the Compteurs d'Élysée to illustrate past accountability regarding expenditures at the presidential residence."&lt;</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;LETTRE&quot;" target="&quot;MIRH&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"MIRH is the contributor of the Lettre, indicating their active participation in voicing concerns during the citizen consultation process."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;DÉPENSES FARAMINEUSES DE L'ÉLYSÉE&quot;" target="&quot;RICHES FRANÇAIS&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Dépenses faramineuses de l'Élysée directly impacts the Riches Français by raising questions about their tax obligations amidst public spending cuts."</ns0:data>
+  <ns0:data key="d7">contrib-4211069489d3c01950acf5b21be88e38</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>

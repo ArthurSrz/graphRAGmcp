@@ -1,0 +1,30 @@
+# MCP SDK
+mcp>=1.0.0
+
+# ASGI server for HTTP deployment
+uvicorn>=0.30.0
+
+# Data validation
+pydantic>=2.0.0
+
+# HTTP client for API calls
+httpx>=0.25.0
+
+# GraphRAG dependencies
+openai>=1.0.0
+tiktoken>=0.5.0
+networkx>=3.0
+numpy>=1.24.0
+aioboto3>=12.0.0
+tenacity>=8.0.0
+transformers>=4.30.0
+
+# nano_graphrag dependencies
+neo4j>=5.0.0
+hnswlib>=0.7.0
+xxhash>=3.0.0
+nano-vectordb>=0.0.4
+dspy-ai>=2.0.0
+
+# Optional: for advanced graph algorithms
+graspologic>=3.0.0

@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d9" for="edge" attr.name="relationship_type" attr.type="string" />
+<ns0:key id="d8" for="edge" attr.name="order" attr.type="long" />
+<ns0:key id="d7" for="edge" attr.name="source_id" attr.type="string" />
+<ns0:key id="d6" for="edge" attr.name="description" attr.type="string" />
+<ns0:key id="d5" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d4" for="node" attr.name="clusters" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="entity_name" attr.type="string" />
+<ns0:key id="d2" for="node" attr.name="source_id" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="description" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+<ns0:graph edgedefault="undirected"><node id="&quot;SAINT JULIEN DE LESCAP_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Saint Julien De Lescap - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Saint_Julien_De_Lescap-commune-root"</data><data key="d3">"SAINT JULIEN DE LESCAP_COMMUNE"</data><data key="d4">[]</data></node><node id="&quot;SAINT JULIEN DE LESCAP_COMMUNE&quot;"><data key="d0">"COMMUNE"</data><data key="d1">"Saint Julien De Lescap - Commune de Charente-Maritime participant au Grand Débat National 2019"</data><data key="d2">"Saint_Julien_De_Lescap-commune-root"</data><data key="d3">"SAINT JULIEN DE LESCAP_COMMUNE"</data><data key="d4">[]</data></node><ns0:node id="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Saint-Julien-de-l'Escap is a citizen contribution document detailing various opinions and proposals from the citizens of Saint-Julien-de-l'Escap."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"CAHIER DE SAINT-JULIEN-DE-L'ESCAP"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFÉRENDUM D'INITIATIVE CITOYENNE (RIC)&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The Référendum d'initiative citoyenne (RIC) is proposed as a means for citizens to initiate referendums, reflecting a demand for greater direct democracy."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"RÉFÉRENDUM D'INITIATIVE CITOYENNE (RIC)"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SMIC&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"SMIC (Salaire Minimum Interprofessionnel de Croissance) is the minimum wage in France, the proposal suggests its increase to improve citizens' economic situation."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"SMIC"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ISF&quot;">
+  <ns0:data key="d0">"TYPEIMPOT"</ns0:data>
+  <ns0:data key="d1">"ISF (Impôt de Solidarité sur la Fortune) is a tax on large fortunes, which is suggested to be increased significantly for wealth redistribution."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"ISF"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BRUXELLES (UE)&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Bruxelles refers to the European Union's governing body, and the text expresses a desire for national sovereignty away from its influence."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"BRUXELLES (UE)"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;LOI DU 3 JANVIER 1973&quot;">
+  <ns0:data key="d0">"REFORMEDEMOCRATIQUE"</ns0:data>
+  <ns0:data key="d1">"The law of January 3, 1973 is criticized for causing national debt issues, with a call to repeal it as it is deemed illegitimate by the citizens."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"LOI DU 3 JANVIER 1973"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRÉCARITÉ&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Précarité addresses the issue of job insecurity faced by workers in CDD (Contrat à Durée Déterminée) and interim positions, which citizens wish to mitigate."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"PRÉCARITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RETRAITE DES PRÉSIDENTS&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal suggests ending lifetime pensions for former presidents, indicating a desire for accountability and economic justice."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"RETRAITE DES PRÉSIDENTS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;POLLUTION&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Pollution relates to environmental concerns, with a proposal to heavily tax significant polluters such as companies and means of transport like ships and planes."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"POLLUTION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉLUS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Élus refers to elected officials, with the proposal stating they should be accountable to the citizens."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"ÉLUS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;6ÈME RÉPUBLIQUE&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"The proposal to transition to a 6th Republic indicates a push for political reform and a new governance model in France."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"6ÈME RÉPUBLIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MANUSCRIT&quot;">
+  <ns0:data key="d0">"VERBATIM"</ns0:data>
+  <ns0:data key="d1">"The manuscript refers to the written document containing the opinions and proposals from citizens in Saint-Julien-de-l'Escap."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"MANUSCRIT"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;HOMME&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"Homme indicates the demographic category or type of respondent, suggesting that the contribution was made by a male citizen."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"HOMME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DATE&quot;">
+  <ns0:data key="d0">"QUESTION"</ns0:data>
+  <ns0:data key="d1">"Date indicates the date when the contribution was made, serving as a temporal reference for the document."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"DATE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;NOM ET PRÉNOMS&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Nom et Prénoms refers to the personal identification of the contributor, representing the individual citizen who expressed the opinions."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"NOM ET PRÉNOMS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ADRESSE&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Adresse denotes the location of the citizen making the contribution, which contextualizes the submission."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"ADRESSE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TÉL&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Tél refers to the telephone contact information of the citizen, indicating a means of communication for follow-up."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"TÉL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;MAIL&quot;">
+  <ns0:data key="d0">"CITOYEN"</ns0:data>
+  <ns0:data key="d1">"Mail represents the email contact of the citizen, allowing for digital communication regarding the contribution."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"MAIL"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SIGNATURE&quot;">
+  <ns0:data key="d0">"VERBATIM"</ns0:data>
+  <ns0:data key="d1">"Signature indicates the formal closing of the document, asserting the authenticity of the contributions made."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"SIGNATURE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PRIS CONNAISSANCE&quot;">
+  <ns0:data key="d0">"VERBATIM"</ns0:data>
+  <ns0:data key="d1">"Pris connaissance refers to the acknowledgment date of the contribution by the local governance or authority."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"PRIS CONNAISSANCE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIERSCITOYENS&quot;">
+  <ns0:data key="d0">"CONSULTATION"</ns0:data>
+  <ns0:data key="d1">"CahiersCitoyens refers to the overarching citizen consultation process under the Grand Débat National initiative, where citizens express their opinions."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"CAHIERSCITOYENS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PREFECTURE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Prefecture indicates the local government authority receiving and overseeing the contributions from the citizens."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"PREFECTURE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CHARENTE-MARITIME&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Charente-Maritime is the geographical territory where the commune of Saint-Julien-de-l'Escap is located, providing regional context to the findings."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"CHARENTE-MARITIME"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CRISE FINANCIÈRE DE 2008&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Crise financière de 2008 refers to the economic crisis period that led to significant upheavals in the banking sector and has influenced citizen opinions on financial policies."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"CRISE FINANCIÈRE DE 2008"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAUX ZÉRO&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Taux zéro highlights the historical context in which banks were able to borrow at zero interest rates, reflecting on changes in economic policy affecting citizens."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"TAUX ZÉRO"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TAUX ABOMINABLES&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Taux abominables expresses a strong negative sentiment regarding high interest rates that affect citizens and the economy."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"TAUX ABOMINABLES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉFORMES FISCALES&quot;">
+  <ns0:data key="d0">"REFORMEFISCALE"</ns0:data>
+  <ns0:data key="d1">"Réformes fiscales denotes the proposed changes in taxation policies aimed at promoting economic fairness and sustainability among citizens."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"RÉFORMES FISCALES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROSPÉRITÉ ÉCONOMIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Prospérité économique addresses the overall economic well-being that citizens wish to achieve through proposed economic measures."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"PROSPÉRITÉ ÉCONOMIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉCOLOGIE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Écologie emphasizes the environmental theme underlying several proposals, reflecting citizens' concerns about ecological sustainability."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"ÉCOLOGIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;JUSTIFICATIONS ÉCONOMIQUES&quot;">
+  <ns0:data key="d0">"OPINION"</ns0:data>
+  <ns0:data key="d1">"Justifications économiques reflects citizens' opinions on the economic rationale behind their proposals and demands."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"JUSTIFICATIONS ÉCONOMIQUES"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉTAT FRANÇAIS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"État français refers to the national government of France, which is influenced by citizens' opinions and proposals articulated in the contribution."</ns0:data>
+  <ns0:data key="d2">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d3">"ÉTAT FRANÇAIS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CAHIER DE DOLÉANCES&quot;">
+  <ns0:data key="d0">"CONTRIBUTION"</ns0:data>
+  <ns0:data key="d1">"Cahier de Doléances is a formal document where citizens express their grievances, proposals, and questions directed at elected officials."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"CAHIER DE DOLÉANCES"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SAINT-JULIEN-DE-L'ESCAP&quot;">
+  <ns0:data key="d0">"TERRITOIRE"</ns0:data>
+  <ns0:data key="d1">"Saint-Julien-de-l'Escap is a commune in Charente-Maritime where citizens submit their grievances and proposals through the Cahier de Doléances."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"SAINT-JULIEN-DE-L'ESCAP"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Gouvernement refers to the body of elected officials responsible for managing the country's economic and social policies."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"GOUVERNEMENT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ÉTAT&quot;">
+  <ns0:data key="d0">"SERVICEPUBLIC"</ns0:data>
+  <ns0:data key="d1">"État is the governmental body responsible for the overall management of the country, including financial and social responsibilities."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"ÉTAT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ASSEMBLÉE NATIONALE&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"Assemblée Nationale is the national legislative body in France, involved in creating and voting on laws."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"ASSEMBLÉE NATIONALE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CORRUPTION&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Corruption is a significant issue mentioned in relation to the responsibility of elected officials and the judicial system."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"CORRUPTION"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;TRANSITION ÉNERGÉTIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Transition Énergétique is a theme concerning the shift towards sustainable energy practices and policies."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"TRANSITION ÉNERGÉTIQUE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;QUESTIONS POLITIQUE&quot;">
+  <ns0:data key="d0">"QUESTION"</ns0:data>
+  <ns0:data key="d1">"Questions Politique are specific inquiries raised by citizens regarding the government's actions and policies."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"QUESTIONS POLITIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;AGRICULTURE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Agriculture refers to issues related to farming practices and economic conditions affecting farmers."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"AGRICULTURE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COÛT SOCIAL&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Coût Social refers to the social costs associated with employment and economic policies."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"COÛT SOCIAL"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RÉCHAUFFEMENT CLIMATIQUE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Réchauffement Climatique refers to the issue of global warming and its impact on environmental policies."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"RÉCHAUFFEMENT CLIMATIQUE"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;OGM&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"OGM (Organismes Génétiquement Modifiés) pertains to genetically modified organisms and their regulation in France."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"OGM"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉPENSES DE L'ÉTAT&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Dépenses de l'État involve discussions on public expenditure and budget transparency."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"DÉPENSES DE L'ÉTAT"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C0"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;M. CAHUZAC&quot;">
+  <ns0:data key="d0">"PERSON"</ns0:data>
+  <ns0:data key="d1">"M. Cahuzac is mentioned as a figure related to corruption and public accountability."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"M. CAHUZAC"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;700 SCIENTIFIQUES FRANÇAIS&quot;">
+  <ns0:data key="d0">"ACTEURINSTITUTIONNEL"</ns0:data>
+  <ns0:data key="d1">"700 Scientifiques Français refer to scientists who are concerned about the dictatorial approach to climate policies."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"700 SCIENTIFIQUES FRANÇAIS"</ns0:data>
+  <ns0:data key="d4">[{"level": 0, "cluster": "L0C1"}]</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CITOYEN&quot;">
+  <ns0:data key="d0">"TYPEREPONDANT"</ns0:data>
+  <ns0:data key="d1">"Citoyen refers to an individual member of the community who expresses their opinions and grievances through the Cahier de Doléances."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"CITOYEN"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DOLÉANCE&quot;">
+  <ns0:data key="d0">"DOLEANCE"</ns0:data>
+  <ns0:data key="d1">"Doléance represents a grievance or complaint expressed by a citizen regarding government actions or policies."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"DOLÉANCE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;PROPOSITION&quot;">
+  <ns0:data key="d0">"PROPOSITION"</ns0:data>
+  <ns0:data key="d1">"Proposition refers to suggestions made by citizens for improvements or changes in policies or governance practices."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"PROPOSITION"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RESPONSABILITÉ&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Responsabilité concerns the expectations placed on the government and elected officials to manage economic and social issues effectively."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"RESPONSABILITÉ"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉMOCRATIE&quot;">
+  <ns0:data key="d0">"COURANTIDEOLOGIQUE"</ns0:data>
+  <ns0:data key="d1">"Démocratie encompasses the ideals of democratic governance, citizen participation, and accountability in political processes."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"DÉMOCRATIE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;ENGAGEMENT FINANCIER&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Engagement Financier relates to the financial accountability of elected officials and the expectations of personal financial commitment."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"ENGAGEMENT FINANCIER"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;SIMPLIFICATION LÉGISLATIVE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Simplification Législative deals with the need for clearer and more efficient law-making processes that reduce complexity."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"SIMPLIFICATION LÉGISLATIVE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;CACOPHONIE POLITIQUE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Cacophonie Politique signifies the chaotic and disorderly nature of political discourse as expressed in the context of the Assemblée Nationale."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"CACOPHONIE POLITIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;QUESTION SPÉCIFIQUE&quot;">
+  <ns0:data key="d0">"QUESTION"</ns0:data>
+  <ns0:data key="d1">"Question Spécifique refers to particular queries posed by citizens about pressing issues, reflecting civic engagement."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"QUESTION SPÉCIFIQUE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;BUDGET PUBLIC&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Budget Public relates to the government's financial management, including expenses and allocations to various sectors."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"BUDGET PUBLIC"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;COÛTS SALARIAUX&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Coûts Salariaux involve the financial implications of salaries within public service and governance."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"COÛTS SALARIAUX"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;RESTRUCTURATION DES RÉGIONS&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Restructuration des Régions refers to the process of reorganizing regional governance and its expected financial impacts."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"RESTRUCTURATION DES RÉGIONS"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DÉBAT CONTRADICTOIRE&quot;">
+  <ns0:data key="d0">"THEMATIQUE"</ns0:data>
+  <ns0:data key="d1">"Débat Contradictoire is related to the need for open discussions and diverse viewpoints on critical political and environmental issues."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"DÉBAT CONTRADICTOIRE"</ns0:data>
+</ns0:node>
+<ns0:node id="&quot;DICTATURE DE LA PENSÉE&quot;">
+  <ns0:data key="d0">"CONCEPT"</ns0:data>
+  <ns0:data key="d1">"Dictature de la Pensée describes a situation where certain viewpoints dominate discussions, particularly in the context of climate science."</ns0:data>
+  <ns0:data key="d2">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d3">"DICTATURE DE LA PENSÉE"</ns0:data>
+</ns0:node>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;RÉFÉRENDUM D'INITIATIVE CITOYENNE (RIC)&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The contribution advocates for the introduction of the RIC as a means to enhance citizen involvement in decision-making."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;SMIC&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The contribution expresses the opinion that the SMIC should be increased to improve the economic situation of citizens."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;ISF&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The document suggests that there should be a significant tax increase on large fortunes (ISF) as part of wealth redistribution efforts."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;BRUXELLES (UE)&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The contribution conveys a sentiment against external control, advocating for national sovereignty away from Brussels."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;LOI DU 3 JANVIER 1973&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The document mentions the law critically and proposes its abrogation to address citizen grievances about national debt."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;PRÉCARITÉ&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"The contribution addresses job security issues and proposes measures to alleviate precarious work situations."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;RETRAITE DES PRÉSIDENTS&quot;">
+  <ns0:data key="d5">6.0</ns0:data>
+  <ns0:data key="d6">"The contribution proposes terminating lifetime pensions for presidents to foster accountability."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;POLLUTION&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"The document addresses environmental issues by proposing taxation on polluters, showing concern for ecological measures."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;ÉLUS&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"The contribution asserts that elected officials should be accountable to the populace, highlighting a demand for democratic reform."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE SAINT-JULIEN-DE-L'ESCAP&quot;" target="&quot;6ÈME RÉPUBLIQUE&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"The push for a 6th Republic symbolizes a desire for substantial political reform and a new framework for governance."</ns0:data>
+  <ns0:data key="d7">contrib-7ab3715b4d98c886a01a39de25141116</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;SAINT-JULIEN-DE-L'ESCAP&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances is submitted by citizens of Saint-Julien-de-l'Escap, reflecting the local concerns and opinions."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;GOUVERNEMENT&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Gouvernement is the target of grievances and questions expressed in the Cahier de Doléances by citizens."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;ÉTAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances addresses the responsibilities and actions of the État regarding citizen's queries and grievances."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;ASSEMBLÉE NATIONALE&quot;">
+  <ns0:data key="d5">7.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances raises issues regarding the effectiveness of the Assemblée Nationale in governance."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;AGRICULTURE&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances contains questions from citizens about agricultural issues, indicating their concern for local farmers."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;COÛT SOCIAL&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances discusses the Coût Social and its impact on salaries and employment."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;OGM&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances raises questions concerning the regulation and acceptance of OGM in agriculture."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CAHIER DE DOLÉANCES&quot;" target="&quot;DÉPENSES DE L'ÉTAT&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"Cahier de Doléances requests transparency and details on the Depenses de l'État from the government."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GOUVERNEMENT&quot;" target="&quot;CORRUPTION&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"Corruption is highlighted as a critical issue related to the accountability of the Gouvernement."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GOUVERNEMENT&quot;" target="&quot;TRANSITION ÉNERGÉTIQUE&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"Transition Énergétique is a theme raised in the context of governmental policies and debates concerning energy practices."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;GOUVERNEMENT&quot;" target="&quot;700 SCIENTIFIQUES FRANÇAIS&quot;">
+  <ns0:data key="d5">8.0</ns0:data>
+  <ns0:data key="d6">"700 Scientifiques Français express critique towards the Gouvernement regarding environmental policies and practices."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;CORRUPTION&quot;" target="&quot;M. CAHUZAC&quot;">
+  <ns0:data key="d5">9.0</ns0:data>
+  <ns0:data key="d6">"M. Cahuzac is cited as an example of corruption, highlighting concerns about political accountability."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+<ns0:edge source="&quot;TRANSITION ÉNERGÉTIQUE&quot;" target="&quot;RÉCHAUFFEMENT CLIMATIQUE&quot;">
+  <ns0:data key="d5">10.0</ns0:data>
+  <ns0:data key="d6">"Réchauffement Climatique is closely related to the discussions on Transition Énergétique and is a critical issue for scientists and policymakers."</ns0:data>
+  <ns0:data key="d7">contrib-4a9208a52905890f73504b56dc51affd</ns0:data>
+  <ns0:data key="d8">1</ns0:data>
+  <ns0:data key="d9">RELATED_TO</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>
