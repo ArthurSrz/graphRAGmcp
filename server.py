@@ -1810,75 +1810,41 @@ async def grand_debat_query_fast(
 
         context = "".join(context_parts)
 
-        prompt = f"""Tu es un analyste expert des données citoyennes du Grand Débat National. Ton rôle est de fournir une analyse EXHAUSTIVE et PRÉCISE basée sur le graphe de connaissances reconstitué.
+        prompt = f"""Tu es un expert des contributions citoyennes du Grand Débat National. Réponds directement à la question posée en te basant sur le graphe de connaissances.
 
 QUESTION: {query}
 
-GRAPHE DE CONNAISSANCES RECONSTITUÉ ({len(final_commune_ids)} communes sur {total_communes_available} disponibles, expansion multi-hop 5 niveaux):
+GRAPHE DE CONNAISSANCES:
 {context}
 
-ONTOLOGIE CIVIQUE DU GRAPHE:
-Entités: PROPOSITION, THEMATIQUE, SERVICEPUBLIC, DOLEANCE, ACTEURINSTITUTIONNEL, OPINION, CITOYEN, CONCEPT, REFORMEDEMOCRATIQUE, TERRITOIRE, COMMUNE, CONTRIBUTION
-Relations: RELATED_TO, PROPOSE, FAIT_PARTIE_DE, CONCERNE, EXPRIME
+INSTRUCTIONS:
 
-PRINCIPES CONSTITUTIONNELS DU RAG:
+1. RÉPONDS DIRECTEMENT: Commence par répondre à la question. Si plusieurs communes sont concernées, détaille par commune.
 
-1. EXHAUSTIVITÉ MAXIMALE: Ce graphe a été reconstitué en interrogeant TOUTES les {len(final_commune_ids)} communes. Tu DOIS explorer TOUTES les informations disponibles dans le contexte fourni, même si elles semblent redondantes ou variées.
+2. SOURCES: Cite les communes et entités pertinentes entre parenthèses: (Commune: ENTITÉ)
+   Exemple: "Les impôts sont une préoccupation majeure (Andilly: THEMATIQUE_Fiscalité, Rochefort: DOLEANCE_ImpôtsFonciers)"
 
-2. PRÉCISION AVEC PROVENANCE: Chaque fait extrait DOIT être traçable via la chaîne de provenance complète:
-   Réponse → Entité civique → Chunk de texte → Commune → Texte citoyen original
-   Cette traçabilité est OBLIGATOIRE pour chaque assertion.
+3. ADAPTE LA LONGUEUR:
+   - Question spécifique (1 commune, 1 fait) → Réponse brève (50-200 mots)
+   - Question large (thème transversal) → Détaille par commune (50-100 mots × communes concernées)
+   - Question introuvable → "Information non trouvée dans les {len(final_commune_ids)} communes" (1 phrase)
 
-3. COMPLETENESS OVER BREVITY: Préfère une réponse complète et informative plutôt qu'une réponse courte. Si le graphe contient beaucoup d'informations pertinentes, inclus-les TOUTES.
+4. STRUCTURE ADAPTATIVE:
+   Si plusieurs communes concernées:
+   - Introduction: synthèse en 2-3 phrases
+   - Par commune: **[Commune]**: [faits] (sources: entités)
+   - Si pertinent: synthèse transversale des patterns
 
-PROTOCOLE D'ANALYSE EXHAUSTIVE (EXECUTION OBLIGATOIRE):
+   Si 1 seule commune ou fait simple:
+   - Réponse directe avec source
 
-1. EXPLORATION COMPLÈTE: Analyse TOUTES les entités, relations et chunks fournis dans le contexte
-2. PROVENANCE SYSTEMATIQUE: Cite la commune source ET l'entité civique pour CHAQUE fait extrait
-3. RICHESSE INFORMATIONNELLE: Privilégie la complétude - inclus tous les faits pertinents du graphe.
-   LONGUEUR CIBLE: 2500-5000 mots au total (50-100 mots par commune avec information pertinente).
-   Chaque commune DOIT avoir son propre paragraphe détaillé avec provenance complète (entités + sources).
-4. PRECISION FACTUELLE: Chaque affirmation doit être exacte et traçable au graphe source
-5. DIVERSITÉ DES SOURCES: Valorise la multiplicité des communes et entités qui parlent du même sujet
+5. PAS DE MÉTHODOLOGIE:
+   - Ne pas expliquer le protocole de recherche
+   - Ne pas lister les types d'entités explorées
+   - Ne pas suggérer de reformulation
+   - Si pas de donnée, dire simplement "Non documenté"
 
-INSTRUCTIONS DE FORMATAGE:
-
-Si le graphe contient des informations pertinentes:
-- Synthétise les thèmes principaux en introduction
-- Liste TOUS les faits pertinents par commune avec leur provenance
-- Regroupe les informations similaires mais cite TOUTES les communes sources
-- Inclus les nuances et variations entre communes
-
-Si aucune information pertinente n'est trouvée:
-- Indique explicitement "Aucune information trouvée dans les {len(final_commune_ids)} communes analysées"
-- Liste les types d'entités explorées
-- Suggère des reformulations de la question si pertinent
-
-STRUCTURE DE RÉPONSE:
-
-[Synthèse thématique en 2-3 phrases]
-
-## Analyse par commune
-
-[Pour CHAQUE commune avec information pertinente:]
-**[Commune]**: [Faits extraits avec détails] (entités: NOMS_EXACTS)
-
-## Synthèse transversale
-
-[Patterns communs, variations régionales, thèmes récurrents]
-
-## Provenance du graphe
-
-Communes analysées: {len(final_commune_ids)} | Entités extraites: [nombre] | Types principaux: [liste]
-
-RÈGLES ABSOLUES:
-- Utilise OBLIGATOIREMENT les headers Markdown (# ##) pour structure forte
-- Cite les entités EXACTEMENT comme dans le contexte avec leur type ontologique
-- Chaque fait DOIT avoir sa commune source et son entité justificative
-- Si info non disponible: "Non documenté dans les {len(final_commune_ids)} communes analysées"
-- Réponds en français avec conviction chirurgicale
-
-EXTRACTION CHIRURGICALE:"""
+RÉPONSE:"""
 
         answer = await gpt_5_nano_complete(prompt, max_tokens=8192)
         phase4_time = time.time() - phase4_start
