@@ -62,23 +62,23 @@ Output: """
 
 PROMPTS[
     "community_report"
-] = """You are an AI assistant that helps a human analyst to perform general information discovery. 
-Information discovery is the process of identifying and assessing relevant information associated with certain entities (e.g., organizations and individuals) within a network.
+] = """Vous êtes un assistant IA qui aide un analyste humain à découvrir des informations générales.
+La découverte d'informations est le processus d'identification et d'évaluation des informations pertinentes associées à certaines entités (par exemple, organisations et individus) au sein d'un réseau.
 
-# Goal
-Write a comprehensive report of a community, given a list of entities that belong to the community as well as their relationships and optional associated claims. The report will be used to inform decision-makers about information associated with the community and their potential impact. The content of this report includes an overview of the community's key entities, their legal compliance, technical capabilities, reputation, and noteworthy claims.
+# Objective
+Rédiger un rapport complet d'une communauté, à partir d'une liste d'entités appartenant à la communauté ainsi que leurs relations et revendications associées optionnelles. Le rapport sera utilisé pour informer les décideurs sur les informations associées à la communauté et leur impact potentiel. Le contenu de ce rapport comprend un aperçu des entités clés de la communauté, leur conformité légale, leurs capacités techniques, leur réputation et les revendications notables.
 
 # Report Structure
 
-The report should include the following sections:
+Le rapport doit inclure les sections suivantes :
 
-- TITLE: community's name that represents its key entities - title should be short but specific. When possible, include representative named entities in the title.
-- SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant information associated with its entities.
-- IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community.  IMPACT is the scored importance of a community.
-- RATING EXPLANATION: Give a single sentence explanation of the IMPACT severity rating.
-- DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive.
+- TITLE: nom de la communauté qui représente ses entités clés - le titre doit être court mais spécifique. Dans la mesure du possible, inclure des entités nommées représentatives dans le titre.
+- SUMMARY: un résumé exécutif de la structure globale de la communauté, comment ses entités sont liées les unes aux autres, et les informations significatives associées à ses entités.
+- IMPACT SEVERITY RATING: un score flottant entre 0-10 qui représente la sévérité de l'IMPACT posé par les entités au sein de la communauté. IMPACT est l'importance notée d'une communauté.
+- RATING EXPLANATION: donner une explication en une phrase du score de sévérité d'IMPACT.
+- DETAILED FINDINGS: une liste de 5-10 observations clés sur la communauté. Chaque observation doit avoir un résumé court suivi de plusieurs paragraphes de texte explicatif fondé selon les règles de fondement ci-dessous. Soyez complet.
 
-Return output as a well-formed JSON-formatted string with the following format:
+Retourner la sortie sous forme de chaîne JSON bien formée avec le format suivant :
     {{
         "title": <report_title>,
         "summary": <executive_summary>,
@@ -98,7 +98,7 @@ Return output as a well-formed JSON-formatted string with the following format:
     }}
 
 # Grounding Rules
-Do not include information where the supporting evidence for it is not provided.
+Ne pas inclure d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
 
 # Example Input
@@ -151,22 +151,22 @@ Output:
 
 # Real Data
 
-Use the following text for your answer. Do not make anything up in your answer.
+Utilisez le texte suivant pour votre réponse. N'inventez rien dans votre réponse.
 
 Text:
 ```
 {input_text}
 ```
 
-The report should include the following sections:
+Le rapport doit inclure les sections suivantes :
 
-- TITLE: community's name that represents its key entities - title should be short but specific. When possible, include representative named entities in the title.
-- SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant information associated with its entities.
-- IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community.  IMPACT is the scored importance of a community.
-- RATING EXPLANATION: Give a single sentence explanation of the IMPACT severity rating.
-- DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive.
+- TITLE: nom de la communauté qui représente ses entités clés - le titre doit être court mais spécifique. Dans la mesure du possible, inclure des entités nommées représentatives dans le titre.
+- SUMMARY: un résumé exécutif de la structure globale de la communauté, comment ses entités sont liées les unes aux autres, et les informations significatives associées à ses entités.
+- IMPACT SEVERITY RATING: un score flottant entre 0-10 qui représente la sévérité de l'IMPACT posé par les entités au sein de la communauté. IMPACT est l'importance notée d'une communauté.
+- RATING EXPLANATION: donner une explication en une phrase du score de sévérité d'IMPACT.
+- DETAILED FINDINGS: une liste de 5-10 observations clés sur la communauté. Chaque observation doit avoir un résumé court suivi de plusieurs paragraphes de texte explicatif fondé selon les règles de fondement ci-dessous. Soyez complet.
 
-Return output as a well-formed JSON-formatted string with the following format:
+Retourner la sortie sous forme de chaîne JSON bien formée avec le format suivant :
     {{
         "title": <report_title>,
         "summary": <executive_summary>,
@@ -186,7 +186,7 @@ Return output as a well-formed JSON-formatted string with the following format:
     }}
 
 # Grounding Rules
-Do not include information where the supporting evidence for it is not provided.
+Ne pas inclure d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
 Output:
 """
@@ -397,14 +397,14 @@ PROMPTS[
     "local_rag_response"
 ] = """---Role---
 
-You are a helpful assistant responding to questions about data in the tables provided.
+Vous êtes un assistant utile qui répond aux questions sur les données dans les tableaux fournis.
 
 
 ---Goal---
 
-Generate a response of the target length and format that responds to the user's question, summarizing all information in the input data tables appropriate for the response length and format, and incorporating any relevant general knowledge.
-If you don't know the answer, just say so. Do not make anything up.
-Do not include information where the supporting evidence for it is not provided.
+Générer une réponse de la longueur et du format cibles qui répond à la question de l'utilisateur, en résumant toutes les informations dans les tableaux de données d'entrée appropriées pour la longueur et le format de réponse, et en incorporant toute connaissance générale pertinente.
+Si vous ne connaissez pas la réponse, dites-le simplement. N'inventez rien.
+N'incluez pas d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
 ---Target response length and format---
 
@@ -418,39 +418,39 @@ Do not include information where the supporting evidence for it is not provided.
 
 ---Goal---
 
-Generate a response of the target length and format that responds to the user's question, summarizing all information in the input data tables appropriate for the response length and format, and incorporating any relevant general knowledge.
+Générer une réponse de la longueur et du format cibles qui répond à la question de l'utilisateur, en résumant toutes les informations dans les tableaux de données d'entrée appropriées pour la longueur et le format de réponse, et en incorporant toute connaissance générale pertinente.
 
-If you don't know the answer, just say so. Do not make anything up.
+Si vous ne connaissez pas la réponse, dites-le simplement. N'inventez rien.
 
-Do not include information where the supporting evidence for it is not provided.
+N'incluez pas d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
 
 ---Target response length and format---
 
 {response_type}
 
-Add sections and commentary to the response as appropriate for the length and format. Style the response in markdown.
+Ajoutez des sections et des commentaires à la réponse selon le cas pour la longueur et le format. Stylisez la réponse en markdown.
 """
 
 PROMPTS[
     "global_map_rag_points"
 ] = """---Role---
 
-You are a helpful assistant responding to questions about data in the tables provided.
+Vous êtes un assistant utile qui répond aux questions sur les données dans les tableaux fournis.
 
 
 ---Goal---
 
-Generate a response consisting of a list of key points that responds to the user's question, summarizing all relevant information in the input data tables.
+Générer une réponse composée d'une liste de points clés qui répond à la question de l'utilisateur, en résumant toutes les informations pertinentes dans les tableaux de données d'entrée.
 
-You should use the data provided in the data tables below as the primary context for generating the response.
-If you don't know the answer or if the input data tables do not contain sufficient information to provide an answer, just say so. Do not make anything up.
+Vous devez utiliser les données fournies dans les tableaux de données ci-dessous comme contexte principal pour générer la réponse.
+Si vous ne connaissez pas la réponse ou si les tableaux de données d'entrée ne contiennent pas suffisamment d'informations pour fournir une réponse, dites-le simplement. N'inventez rien.
 
-Each key point in the response should have the following element:
-- Description: A comprehensive description of the point.
-- Importance Score: An integer score between 0-100 that indicates how important the point is in answering the user's question. An 'I don't know' type of response should have a score of 0.
+Chaque point clé dans la réponse doit avoir l'élément suivant :
+- Description: une description complète du point.
+- Importance Score: un score entier entre 0-100 qui indique l'importance du point pour répondre à la question de l'utilisateur. Une réponse de type 'Je ne sais pas' devrait avoir un score de 0.
 
-The response should be JSON formatted as follows:
+La réponse doit être formatée en JSON comme suit :
 {{
     "points": [
         {{"description": "Description of point 1...", "score": score_value}},
@@ -458,8 +458,8 @@ The response should be JSON formatted as follows:
     ]
 }}
 
-The response shall preserve the original meaning and use of modal verbs such as "shall", "may" or "will".
-Do not include information where the supporting evidence for it is not provided.
+La réponse doit préserver le sens original et l'utilisation des verbes modaux.
+N'incluez pas d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
 
 ---Data tables---
@@ -468,19 +468,19 @@ Do not include information where the supporting evidence for it is not provided.
 
 ---Goal---
 
-Generate a response consisting of a list of key points that responds to the user's question, summarizing all relevant information in the input data tables.
+Générer une réponse composée d'une liste de points clés qui répond à la question de l'utilisateur, en résumant toutes les informations pertinentes dans les tableaux de données d'entrée.
 
-You should use the data provided in the data tables below as the primary context for generating the response.
-If you don't know the answer or if the input data tables do not contain sufficient information to provide an answer, just say so. Do not make anything up.
+Vous devez utiliser les données fournies dans les tableaux de données ci-dessous comme contexte principal pour générer la réponse.
+Si vous ne connaissez pas la réponse ou si les tableaux de données d'entrée ne contiennent pas suffisamment d'informations pour fournir une réponse, dites-le simplement. N'inventez rien.
 
-Each key point in the response should have the following element:
-- Description: A comprehensive description of the point.
-- Importance Score: An integer score between 0-100 that indicates how important the point is in answering the user's question. An 'I don't know' type of response should have a score of 0.
+Chaque point clé dans la réponse doit avoir l'élément suivant :
+- Description: une description complète du point.
+- Importance Score: un score entier entre 0-100 qui indique l'importance du point pour répondre à la question de l'utilisateur. Une réponse de type 'Je ne sais pas' devrait avoir un score de 0.
 
-The response shall preserve the original meaning and use of modal verbs such as "shall", "may" or "will".
-Do not include information where the supporting evidence for it is not provided.
+La réponse doit préserver le sens original et l'utilisation des verbes modaux.
+N'incluez pas d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
-The response should be JSON formatted as follows:
+La réponse doit être formatée en JSON comme suit :
 {{
     "points": [
         {{"description": "Description of point 1", "score": score_value}},
@@ -493,24 +493,24 @@ PROMPTS[
     "global_reduce_rag_response"
 ] = """---Role---
 
-You are a helpful assistant responding to questions about a dataset by synthesizing perspectives from multiple analysts.
+Vous êtes un assistant utile qui répond aux questions sur un ensemble de données en synthétisant les perspectives de plusieurs analystes.
 
 
 ---Goal---
 
-Generate a response of the target length and format that responds to the user's question, summarize all the reports from multiple analysts who focused on different parts of the dataset.
+Générer une réponse de la longueur et du format cibles qui répond à la question de l'utilisateur, en résumant tous les rapports de plusieurs analystes qui se sont concentrés sur différentes parties de l'ensemble de données.
 
-Note that the analysts' reports provided below are ranked in the **descending order of importance**.
+Notez que les rapports des analystes fournis ci-dessous sont classés par **ordre décroissant d'importance**.
 
-If you don't know the answer or if the provided reports do not contain sufficient information to provide an answer, just say so. Do not make anything up.
+Si vous ne connaissez pas la réponse ou si les rapports fournis ne contiennent pas suffisamment d'informations pour fournir une réponse, dites-le simplement. N'inventez rien.
 
-The final response should remove all irrelevant information from the analysts' reports and merge the cleaned information into a comprehensive answer that provides explanations of all the key points and implications appropriate for the response length and format.
+La réponse finale doit supprimer toutes les informations non pertinentes des rapports des analystes et fusionner les informations nettoyées en une réponse complète qui fournit des explications de tous les points clés et implications appropriés pour la longueur et le format de réponse.
 
-Add sections and commentary to the response as appropriate for the length and format. Style the response in markdown.
+Ajoutez des sections et des commentaires à la réponse selon le cas pour la longueur et le format. Stylisez la réponse en markdown.
 
-The response shall preserve the original meaning and use of modal verbs such as "shall", "may" or "will".
+La réponse doit préserver le sens original et l'utilisation des verbes modaux.
 
-Do not include information where the supporting evidence for it is not provided.
+N'incluez pas d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
 
 ---Target response length and format---
@@ -525,41 +525,41 @@ Do not include information where the supporting evidence for it is not provided.
 
 ---Goal---
 
-Generate a response of the target length and format that responds to the user's question, summarize all the reports from multiple analysts who focused on different parts of the dataset.
+Générer une réponse de la longueur et du format cibles qui répond à la question de l'utilisateur, en résumant tous les rapports de plusieurs analystes qui se sont concentrés sur différentes parties de l'ensemble de données.
 
-Note that the analysts' reports provided below are ranked in the **descending order of importance**.
+Notez que les rapports des analystes fournis ci-dessous sont classés par **ordre décroissant d'importance**.
 
-If you don't know the answer or if the provided reports do not contain sufficient information to provide an answer, just say so. Do not make anything up.
+Si vous ne connaissez pas la réponse ou si les rapports fournis ne contiennent pas suffisamment d'informations pour fournir une réponse, dites-le simplement. N'inventez rien.
 
-The final response should remove all irrelevant information from the analysts' reports and merge the cleaned information into a comprehensive answer that provides explanations of all the key points and implications appropriate for the response length and format.
+La réponse finale doit supprimer toutes les informations non pertinentes des rapports des analystes et fusionner les informations nettoyées en une réponse complète qui fournit des explications de tous les points clés et implications appropriés pour la longueur et le format de réponse.
 
-The response shall preserve the original meaning and use of modal verbs such as "shall", "may" or "will".
+La réponse doit préserver le sens original et l'utilisation des verbes modaux.
 
-Do not include information where the supporting evidence for it is not provided.
+N'incluez pas d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 
 
 ---Target response length and format---
 
 {response_type}
 
-Add sections and commentary to the response as appropriate for the length and format. Style the response in markdown.
+Ajoutez des sections et des commentaires à la réponse selon le cas pour la longueur et le format. Stylisez la réponse en markdown.
 """
 
 PROMPTS[
     "naive_rag_response"
-] = """You're a helpful assistant
-Below are the knowledge you know:
+] = """Vous êtes un assistant utile.
+Voici les connaissances que vous connaissez :
 {content_data}
 ---
-If you don't know the answer or if the provided knowledge do not contain sufficient information to provide an answer, just say so. Do not make anything up.
-Generate a response of the target length and format that responds to the user's question, summarizing all information in the input data tables appropriate for the response length and format, and incorporating any relevant general knowledge.
-If you don't know the answer, just say so. Do not make anything up.
-Do not include information where the supporting evidence for it is not provided.
+Si vous ne connaissez pas la réponse ou si les connaissances fournies ne contiennent pas suffisamment d'informations pour fournir une réponse, dites-le simplement. N'inventez rien.
+Générer une réponse de la longueur et du format cibles qui répond à la question de l'utilisateur, en résumant toutes les informations dans les tableaux de données d'entrée appropriées pour la longueur et le format de réponse, et en incorporant toute connaissance générale pertinente.
+Si vous ne connaissez pas la réponse, dites-le simplement. N'inventez rien.
+N'incluez pas d'informations pour lesquelles les preuves à l'appui ne sont pas fournies.
 ---Target response length and format---
 {response_type}
 """
 
-PROMPTS["fail_response"] = "Sorry, I'm not able to provide an answer to that question."
+PROMPTS["fail_response"] = "Désolé, je ne peux pas fournir de réponse à cette question."
 
 PROMPTS["process_tickers"] = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
 
