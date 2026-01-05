@@ -65,6 +65,7 @@ except ImportError:
 # Configuration
 ENABLE_OPIK_LOGGING = os.getenv("ENABLE_OPIK_LOGGING", "true").lower() == "true"
 OPIK_API_KEY = os.getenv("OPIK_API_KEY")
+OPIK_WORKSPACE = os.getenv("OPIK_WORKSPACE", "arthursrz")  # Default workspace
 OPIK_PROJECT_NAME = os.getenv("OPIK_PROJECT_NAME", "law_graphRAG")
 OPIK_ENABLE_ASYNC_JUDGE = os.getenv("OPIK_ENABLE_ASYNC_JUDGE", "true").lower() == "true"
 OPIK_JUDGE_MODEL = os.getenv("OPIK_JUDGE_MODEL", "gpt-4o-mini")
@@ -97,9 +98,13 @@ def get_opik_client():
         return None
 
     try:
-        opik.configure(api_key=OPIK_API_KEY)
+        opik.configure(
+            api_key=OPIK_API_KEY,
+            workspace=OPIK_WORKSPACE,
+            force=True,  # Recreate config to avoid prompts
+        )
         _opik_client = opik.Opik(project_name=OPIK_PROJECT_NAME)
-        logger.info(f"✅ Opik client initialized for project: {OPIK_PROJECT_NAME}")
+        logger.info(f"✅ Opik client initialized for project: {OPIK_PROJECT_NAME} (workspace: {OPIK_WORKSPACE})")
         return _opik_client
     except Exception as e:
         logger.error(f"Failed to initialize Opik client: {e}")
@@ -119,7 +124,12 @@ def get_opik_metrics():
     try:
         # Import metrics from rag_comparison if available
         import sys
-        sys.path.insert(0, "/Users/arthursarazin/Documents/law_graph")
+        LAW_GRAPH_PATH = os.getenv("LAW_GRAPH_PATH", "/Users/arthursarazin/Documents/law_graph")
+        if os.path.exists(LAW_GRAPH_PATH):
+            sys.path.insert(0, LAW_GRAPH_PATH)
+        else:
+            logger.warning(f"LAW_GRAPH_PATH not found: {LAW_GRAPH_PATH} - judge metrics unavailable")
+            return None
 
         from rag_comparison.metrics.llm_judge import LLMPrecisionJudge
         from rag_comparison.metrics.opik_metrics import (
