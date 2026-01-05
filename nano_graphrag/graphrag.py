@@ -330,7 +330,20 @@ class GraphRAG:
         loop = always_get_an_event_loop()
         return loop.run_until_complete(self.aquery(query, param))
 
-    async def aquery(self, query: str, param: QueryParam = QueryParam()):
+    async def aquery(
+        self,
+        query: str,
+        param: QueryParam = QueryParam(),
+        exclude_communities: bool = False,
+    ):
+        """Query the GraphRAG system.
+
+        Args:
+            query: The query string.
+            param: Query parameters.
+            exclude_communities: If True, skip community reports in local mode
+                                (for surgical queries that need maximum granularity).
+        """
         if param.mode == "local" and not self.enable_local:
             raise ValueError("enable_local is False, cannot query in local mode")
         if param.mode == "naive" and not self.enable_naive_rag:
@@ -345,6 +358,7 @@ class GraphRAG:
                 param,
                 self.tokenizer_wrapper,
                 asdict(self),
+                exclude_communities=exclude_communities,
             )
         elif param.mode == "global":
             response = await global_query(

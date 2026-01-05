@@ -1085,11 +1085,16 @@ async def _build_local_query_context(
     query_param: QueryParam,
     tokenizer_wrapper,
     return_provenance: bool = False,
+    exclude_communities: bool = False,
 ):
     """Build context for local query.
 
     If return_provenance is True, returns (context_string, provenance_dict).
     Otherwise returns just the context string for backward compatibility.
+
+    Args:
+        exclude_communities: If True, skip community reports (for surgical queries
+                            that need maximum granularity with small worlds only).
     """
     results = await entities_vdb.query(query, top_k=query_param.top_k)
     if not len(results):
@@ -1113,9 +1118,14 @@ async def _build_local_query_context(
                     continue
 
     node_datas = filtered_node_datas
-    use_communities = await _find_most_related_community_from_entities(
-        node_datas, query_param, community_reports, tokenizer_wrapper
-    )
+
+    # Conditionally exclude community reports (surgical queries use small worlds only)
+    if exclude_communities:
+        use_communities = []
+    else:
+        use_communities = await _find_most_related_community_from_entities(
+            node_datas, query_param, community_reports, tokenizer_wrapper
+        )
     use_text_units = await _find_most_related_text_unit_from_entities(
         node_datas, query_param, text_chunks_db, knowledge_graph_inst, tokenizer_wrapper
     )
@@ -1244,8 +1254,12 @@ async def local_query(
     query_param: QueryParam,
     tokenizer_wrapper,
     global_config: dict,
+    exclude_communities: bool = False,
 ):
     """Execute local query with optional provenance tracking.
+
+    Args:
+        exclude_communities: If True, skip community reports (for surgical queries).
 
     Returns:
         If query_param.return_provenance is True: dict with {answer, provenance}
@@ -1264,6 +1278,7 @@ async def local_query(
             query_param,
             tokenizer_wrapper,
             return_provenance=True,
+            exclude_communities=exclude_communities,
         )
         context, provenance = result if result else (None, None)
     else:
@@ -1275,6 +1290,7 @@ async def local_query(
             text_chunks_db,
             query_param,
             tokenizer_wrapper,
+            exclude_communities=exclude_communities,
             return_provenance=False,
         )
         provenance = None

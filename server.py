@@ -2013,13 +2013,15 @@ async def grand_debat_query_local_surgical(
         # - local_max_hops=5 (deep multi-hop for small worlds)
         # - Increased token limits for complete context
         # - Comprehensive response_type for detailed multi-commune analysis
+        # - exclude_communities=True (surgical = small worlds only, no aggregations)
         result = await rag.aquery(
             query,
             param=QueryParam(
                 mode="local",
                 return_provenance=include_sources,
                 response_type="Comprehensive multi-commune analysis: 2500-5000 words total. Structure: Introduction (2-3 sentences) + ## Analyse par commune (one detailed paragraph per commune with provenance, 50-100 words each) + ## Synthèse transversale (patterns and variations across communes)"
-            )
+            ),
+            exclude_communities=True  # Surgical queries use maximum granularity (small worlds only)
         )
 
         total_time = time.time() - start_time
