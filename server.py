@@ -2031,6 +2031,15 @@ async def grand_debat_query_local_surgical(
         if isinstance(result, dict):
             answer = result.get("answer", "")
             llm_context = result.get("llm_context", "")  # ADDED: Extract LLM context
+
+            # DEBUG: Verify LLM context was extracted
+            llm_context_length = len(llm_context)
+            logger.info(f"🔍 LOCAL SURGICAL - Extracted LLM context: {llm_context_length} chars ({llm_context_length/4:.0f} tokens approx)")
+            if llm_context_length > 0:
+                logger.info(f"📋 Context preview: {llm_context[:200]}...")
+            else:
+                logger.warning(f"⚠️  LLM context is EMPTY for commune {commune_id}")
+
             if include_sources:
                 result_prov = result.get("provenance", {})
                 entities = result_prov.get('entities', [])
@@ -2058,6 +2067,9 @@ async def grand_debat_query_local_surgical(
                 ]
                 missing_types = [t for t in CORE_CIVIC_ENTITY_TYPES if t not in entity_types]
                 coverage_pct = (len(CORE_CIVIC_ENTITY_TYPES) - len(missing_types)) / len(CORE_CIVIC_ENTITY_TYPES) * 100
+
+                # DEBUG: Log provenance construction
+                logger.info(f"✅ Including llm_context in provenance ({len(llm_context)} chars)")
 
                 provenance = {
                     "entities": entities[:50],  # Sample for output size
@@ -2166,13 +2178,17 @@ async def grand_debat_query_all_surgical(
                     chunks = stats.get('total_chunks_retrieved', 0)
                     rels = stats.get('total_relationships', 0)
 
+                    # Extract LLM context from provenance
+                    llm_context = prov.get('llm_context', '')
+                    logger.info(f"🔍 ALL SURGICAL - {commune_id}: llm_context = {len(llm_context)} chars")
+
                     mini_worlds.append({
                         'commune': commune_id,
                         'entities': entities,
                         'chunks': chunks,
                         'relationships': rels,
                         'coverage_pct': stats.get('ontological_coverage_pct', 0),
-                        'llm_context': prov.get('llm_context', '')  # ADDED: Include LLM context for each commune
+                        'llm_context': llm_context  # ADDED: Include LLM context for each commune
                     })
 
                     total_entities += entities
@@ -2189,6 +2205,14 @@ async def grand_debat_query_all_surgical(
 
         # Collect unique communes with results
         communes_with_results = list(set(mw['commune'] for mw in mini_worlds))
+
+        # DEBUG: Verify mini_worlds contain llm_context
+        total_context_chars = sum(len(mw.get('llm_context', '')) for mw in mini_worlds)
+        logger.info(f"📊 ALL SURGICAL - Total mini_worlds: {len(mini_worlds)}, Total llm_context: {total_context_chars} chars")
+        if total_context_chars == 0:
+            logger.warning(f"⚠️  WARNING: All mini_worlds have EMPTY llm_context!")
+        else:
+            logger.info(f"✅ mini_worlds contain llm_context (avg {total_context_chars/len(mini_worlds):.0f} chars per commune)")
 
         # Create aggregated response
         response = {
