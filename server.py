@@ -46,6 +46,246 @@ transport_security = TransportSecuritySettings(
 mcp = FastMCP("graphrag_mcp", transport_security=transport_security)
 
 # ============================================================================
+# OPIK LOGGING INTEGRATION
+# ============================================================================
+
+import threading
+import time
+
+# Lazy imports to avoid crashes if Opik not installed
+try:
+    import opik
+    from opik import track
+    from opik.evaluation.metrics import BaseMetric
+    OPIK_AVAILABLE = True
+except ImportError:
+    logger.warning("Opik not installed - logging disabled. Install with: pip install opik")
+    OPIK_AVAILABLE = False
+
+# Configuration
+ENABLE_OPIK_LOGGING = os.getenv("ENABLE_OPIK_LOGGING", "true").lower() == "true"
+OPIK_API_KEY = os.getenv("OPIK_API_KEY")
+OPIK_PROJECT_NAME = os.getenv("OPIK_PROJECT_NAME", "law_graphRAG")
+OPIK_ENABLE_ASYNC_JUDGE = os.getenv("OPIK_ENABLE_ASYNC_JUDGE", "true").lower() == "true"
+OPIK_JUDGE_MODEL = os.getenv("OPIK_JUDGE_MODEL", "gpt-4o-mini")
+
+# Global state
+_opik_client = None
+_opik_metrics = None
+_opik_init_attempted = False
+
+
+def get_opik_client():
+    """Thread-safe Opik client singleton."""
+    global _opik_client, _opik_init_attempted
+
+    if _opik_init_attempted:
+        return _opik_client
+
+    _opik_init_attempted = True
+
+    if not OPIK_AVAILABLE:
+        logger.info("Opik not available - skipping initialization")
+        return None
+
+    if not OPIK_API_KEY:
+        logger.warning("OPIK_API_KEY not set - logging disabled")
+        return None
+
+    if not ENABLE_OPIK_LOGGING:
+        logger.info("Opik logging disabled via ENABLE_OPIK_LOGGING=false")
+        return None
+
+    try:
+        opik.configure(api_key=OPIK_API_KEY)
+        _opik_client = opik.Opik(project_name=OPIK_PROJECT_NAME)
+        logger.info(f"✅ Opik client initialized for project: {OPIK_PROJECT_NAME}")
+        return _opik_client
+    except Exception as e:
+        logger.error(f"Failed to initialize Opik client: {e}")
+        return None
+
+
+def get_opik_metrics():
+    """Lazy load Opik metrics (custom judge + native metrics)."""
+    global _opik_metrics
+
+    if _opik_metrics is not None:
+        return _opik_metrics
+
+    if not get_opik_client():
+        return None
+
+    try:
+        # Import metrics from rag_comparison if available
+        import sys
+        sys.path.insert(0, "/Users/arthursarazin/Documents/law_graph")
+
+        from rag_comparison.metrics.llm_judge import LLMPrecisionJudge
+        from rag_comparison.metrics.opik_metrics import (
+            AnswerRelevanceWrapper,
+            HallucinationWrapper,
+            UsefulnessWrapper,
+        )
+
+        _opik_metrics = {
+            'llm_precision': LLMPrecisionJudge(model_name=OPIK_JUDGE_MODEL),
+            'answer_relevance': AnswerRelevanceWrapper(),
+            'hallucination': HallucinationWrapper(),
+            'usefulness': UsefulnessWrapper(),
+        }
+
+        logger.info(f"✅ Loaded {len(_opik_metrics)} Opik metrics")
+        return _opik_metrics
+    except ImportError as e:
+        logger.warning(f"Failed to import Opik metrics from rag_comparison: {e}")
+        return None
+    except Exception as e:
+        logger.error(f"Failed to load Opik metrics: {e}")
+        return None
+
+
+def log_to_opik(
+    query: str,
+    answer: str,
+    latency_ms: float,
+    mode: str,
+    commune_id: Optional[str] = None,
+    provenance: Optional[dict] = None,
+    status: str = "success",
+    error: Optional[str] = None,
+) -> None:
+    """Log query/answer to Opik with async judge evaluation.
+
+    CRITICAL: Judge receives ONLY query+answer (NOT llm_context).
+    llm_context is stored in metadata for debugging but excluded from judge.
+
+    Args:
+        query: User query
+        answer: LLM response
+        latency_ms: Query latency in milliseconds
+        mode: Query mode (local, global, naive, surgical)
+        commune_id: Commune ID (if applicable)
+        provenance: Full provenance dict (includes llm_context, entities, etc.)
+        status: "success" or "error"
+        error: Error message (if status="error")
+    """
+    client = get_opik_client()
+    if not client:
+        return  # Opik not available or disabled
+
+    try:
+        # Extract llm_context from provenance (if present)
+        llm_context = ""
+        if provenance:
+            llm_context = provenance.get("llm_context", "")
+            # Check mini_worlds for multi-commune queries
+            if not llm_context and "mini_worlds" in provenance:
+                mini_worlds = provenance.get("mini_worlds", [])
+                if mini_worlds and len(mini_worlds) > 0:
+                    first_world = mini_worlds[0]
+                    if isinstance(first_world, dict):
+                        llm_context = first_world.get("llm_context", "")
+
+        # Build metadata (includes llm_context length + preview, NOT full context)
+        metadata = {
+            "mode": mode,
+            "latency_ms": latency_ms,
+            "status": status,
+        }
+
+        if commune_id:
+            metadata["commune_id"] = commune_id
+
+        if error:
+            metadata["error"] = error
+
+        if provenance:
+            # Extract counts from provenance
+            metadata["entities_count"] = len(provenance.get("entities", []))
+            metadata["relationships_count"] = len(provenance.get("relationships", []))
+            metadata["chunks_count"] = len(provenance.get("source_quotes", []))
+
+            if "mini_worlds" in provenance:
+                metadata["communes_searched"] = len(provenance["mini_worlds"])
+
+        # Store llm_context LENGTH + PREVIEW (not full context)
+        if llm_context:
+            metadata["llm_context_length"] = len(llm_context)
+            metadata["llm_context_preview"] = llm_context[:500] + "..." if len(llm_context) > 500 else llm_context
+
+        # Create Opik trace
+        trace = client.trace(
+            name=f"mcp_{mode}_query",
+            input={"query": query},
+            output={"answer": answer},
+            metadata=metadata,
+        )
+
+        logger.info(f"✅ Logged to Opik: trace_id={trace.id}, mode={mode}, latency={latency_ms:.0f}ms")
+
+        # Run judge async (if enabled)
+        if OPIK_ENABLE_ASYNC_JUDGE and status == "success":
+            thread = threading.Thread(
+                target=_run_judge_async,
+                args=(query, answer, trace.id),
+                daemon=True,
+            )
+            thread.start()
+            logger.debug(f"🔍 Started async judge thread for trace {trace.id}")
+
+    except Exception as e:
+        logger.error(f"Failed to log to Opik: {e}")
+
+
+def _run_judge_async(query: str, answer: str, trace_id: str) -> None:
+    """Run judge metrics asynchronously (doesn't block response).
+
+    CRITICAL: Judge receives ONLY query+answer (NOT llm_context).
+    """
+    metrics = get_opik_metrics()
+    if not metrics:
+        logger.debug("No Opik metrics available - skipping judge")
+        return
+
+    client = get_opik_client()
+    if not client:
+        return
+
+    try:
+        # Rate limiting: 500ms between metrics to avoid OpenAI rate limits
+        for metric_name, metric in metrics.items():
+            try:
+                # CRITICAL: Pass ONLY output and input (no llm_context)
+                score_result = metric.score(
+                    output=answer,
+                    input=query,
+                    # NO llm_context!
+                )
+
+                # Log score to Opik
+                client.log_score(
+                    trace_id=trace_id,
+                    name=metric_name,
+                    value=score_result.value,
+                    reason=score_result.reason if hasattr(score_result, 'reason') else None,
+                )
+
+                logger.debug(f"✅ Judge metric '{metric_name}': {score_result.value:.2f}")
+
+                # Rate limiting
+                time.sleep(0.5)
+
+            except Exception as e:
+                logger.error(f"Failed to score with {metric_name}: {e}")
+
+        logger.info(f"✅ Judge evaluation complete for trace {trace_id}")
+
+    except Exception as e:
+        logger.error(f"Judge async thread failed: {e}")
+
+
+# ============================================================================
 # Multi-Source Configuration
 # ============================================================================
 
@@ -1314,6 +1554,7 @@ async def grand_debat_query(
     Returns:
         JSON with answer and full provenance for end-to-end interpretability
     """
+    start_time = time.time()  # Track latency for Opik
     commune_path = get_commune_path(commune_id)
     if not commune_path:
         available = [c['id'] for c in list_communes()[:10]]
@@ -1355,6 +1596,17 @@ async def grand_debat_query(
             answer = result.get("answer", "")
             provenance = result.get("provenance", {})
 
+            # Log to Opik (includes llm_context in provenance if available)
+            log_to_opik(
+                query=query,
+                answer=answer,
+                latency_ms=(time.time() - start_time) * 1000,
+                mode=mode.value,
+                commune_id=commune_id,
+                provenance=provenance,
+                status="success",
+            )
+
             return json.dumps({
                 "success": True,
                 "commune_id": commune_id,
@@ -1378,6 +1630,19 @@ async def grand_debat_query(
             }, indent=2, ensure_ascii=False)
         else:
             # Fallback for string response (include_sources=False)
+            answer = result if isinstance(result, str) else result.get("answer", "")
+
+            # Log to Opik (no provenance when include_sources=False)
+            log_to_opik(
+                query=query,
+                answer=answer,
+                latency_ms=(time.time() - start_time) * 1000,
+                mode=mode.value,
+                commune_id=commune_id,
+                provenance=None,
+                status="success",
+            )
+
             return json.dumps({
                 "success": True,
                 "commune_id": commune_id,
@@ -1392,6 +1657,18 @@ async def grand_debat_query(
 
     except Exception as e:
         logger.error(f"Query error for {commune_id}: {e}")
+
+        # Log error to Opik
+        log_to_opik(
+            query=query,
+            answer="",
+            latency_ms=(time.time() - start_time) * 1000,
+            mode=mode.value,
+            commune_id=commune_id,
+            status="error",
+            error=str(e),
+        )
+
         return json.dumps({
             "success": False,
             "error": str(e),
@@ -2103,12 +2380,35 @@ async def grand_debat_query_local_surgical(
             "provenance": provenance if include_sources else None
         }
 
+        # Log to Opik (provenance includes llm_context for debugging)
+        log_to_opik(
+            query=query,
+            answer=answer,
+            latency_ms=total_time * 1000,
+            mode="local_surgical",
+            commune_id=commune_id,
+            provenance=provenance if include_sources else None,
+            status="success",
+        )
+
         return json.dumps(response, indent=2, ensure_ascii=False)
 
     except Exception as e:
         logger.error(f"Local surgical query error: {e}")
         import traceback
         traceback.print_exc()
+
+        # Log error to Opik
+        log_to_opik(
+            query=query,
+            answer="",
+            latency_ms=(time.time() - start_time) * 1000,
+            mode="local_surgical",
+            commune_id=commune_id,
+            status="error",
+            error=str(e),
+        )
+
         return json.dumps({
             "success": False,
             "error": str(e),
@@ -2244,12 +2544,37 @@ async def grand_debat_query_all_surgical(
             }
         }
 
+        # Log to Opik (provenance includes all mini_worlds with llm_context)
+        log_to_opik(
+            query=query,
+            answer=aggregated_answer,
+            latency_ms=total_time * 1000,
+            mode="multi_commune_surgical",
+            commune_id=None,  # Multi-commune query
+            provenance={
+                "mini_worlds": mini_worlds,  # Each has llm_context
+                "aggregated_stats": response["aggregated_stats"],
+            },
+            status="success",
+        )
+
         return json.dumps(response, indent=2, ensure_ascii=False)
 
     except Exception as e:
         logger.error(f"Parallel surgical query error: {e}")
         import traceback
         traceback.print_exc()
+
+        # Log error to Opik
+        log_to_opik(
+            query=query,
+            answer="",
+            latency_ms=(time.time() - start_time) * 1000,
+            mode="multi_commune_surgical",
+            status="error",
+            error=str(e),
+        )
+
         return json.dumps({
             "success": False,
             "error": str(e)
