@@ -1302,7 +1302,8 @@ async def local_query(
     if query_param.return_provenance:
         return {
             "answer": response,
-            "provenance": provenance or {"entities": [], "relationships": [], "communities": [], "source_quotes": []}
+            "provenance": provenance or {"entities": [], "relationships": [], "communities": [], "source_quotes": []},
+            "llm_context": context  # ADDED: Return full LLM context for debugging
         }
 
     return response

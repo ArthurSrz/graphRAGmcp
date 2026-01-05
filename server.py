@@ -2030,6 +2030,7 @@ async def grand_debat_query_local_surgical(
 
         if isinstance(result, dict):
             answer = result.get("answer", "")
+            llm_context = result.get("llm_context", "")  # ADDED: Extract LLM context
             if include_sources:
                 result_prov = result.get("provenance", {})
                 entities = result_prov.get('entities', [])
@@ -2062,6 +2063,7 @@ async def grand_debat_query_local_surgical(
                     "entities": entities[:50],  # Sample for output size
                     "source_quotes": chunks[:20],
                     "relationships": relationships[:30],
+                    "llm_context": llm_context,  # ADDED: Full LLM context for OPIK logging
                     "small_worlds_stats": {
                         "target_commune": commune_id,
                         "total_entities_retrieved": len(entities),
@@ -2169,7 +2171,8 @@ async def grand_debat_query_all_surgical(
                         'entities': entities,
                         'chunks': chunks,
                         'relationships': rels,
-                        'coverage_pct': stats.get('ontological_coverage_pct', 0)
+                        'coverage_pct': stats.get('ontological_coverage_pct', 0),
+                        'llm_context': prov.get('llm_context', '')  # ADDED: Include LLM context for each commune
                     })
 
                     total_entities += entities
