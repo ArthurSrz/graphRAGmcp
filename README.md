@@ -131,8 +131,23 @@ The **Grand Débat National** (2019) was a French civic consultation initiative 
 - **Geographic scope**: 50 communes in Charente-Maritime département, France
 - **Total entities**: 8,000+ extracted concepts, themes, policy proposals
 - **Structure**: Each commune is a separate knowledge graph
-- **Entity types**: COMMUNE (geographic unit), CONCEPT (civic ideas), THEME (topic clusters), CITIZEN_CONTRIBUTION (source texts), CHUNK (text segments)
-- **Relationships**: CONCERNE (relates to), HAS_SOURCE (chunk provenance), APPARTIENT_A (belongs to), RELATED_TO (semantic connection)
+- **Entity types** (extracted from citizen contributions in French):
+  - **PROPOSITION** (policy proposals/suggestions)
+  - **THEMATIQUE** (thematic categories)
+  - **SERVICEPUBLIC** (public services)
+  - **DOLEANCE** (grievances/complaints)
+  - **CONCEPT** (conceptual entities)
+  - **OPINION** (citizen opinions/viewpoints)
+  - **ACTEURINSTITUTIONNEL** (institutional actors)
+  - **CITOYEN** (citizen references)
+  - Plus others: REFORMEDEMOCRATIQUE (democratic reforms), TERRITOIRE (territories), CONSULTATION (consultations), VERBATIM (direct quotes), CLUSTERSEMANTIQUE (semantic clusters), TYPEIMPOT (tax types), REFORMEFISCALE (fiscal reforms), MESUREECOLOGIQUE (ecological measures), etc.
+- **Relationship types** (extraction system defines 26 semantic types):
+  - **Primary flow**: SOUMET (submits), REPOND_A (responds to), APPARTIENT_A (belongs to), FAIT_PARTIE_DE (part of)
+  - **Content extraction**: EXPRIME (expresses), FORMULE (formulates), FAIT_REMONTER (raises), CONTIENT (contains)
+  - **Thematic**: CONCERNE (concerns), CIBLE (targets), GERE (manages)
+  - **Consensus**: CONTRIBUE_A (contributes to), REVELE (reveals), SINSCRIT_DANS (inscribes in)
+  - **Programmatically added**: HAS_SOURCE (entity→chunk provenance), SOURCED_BY (chunk→entity)
+  - **Note**: GraphML files primarily store RELATED_TO edges; semantic types are defined in extraction prompts
 
 ### Top Communes by Coverage
 
