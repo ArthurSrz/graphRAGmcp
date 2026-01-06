@@ -28,7 +28,7 @@ from enum import Enum
 from mcp.server.fastmcp import FastMCP
 
 # Feature 007-mcp-graph-optimization: Pre-computed graph index
-from graph_index import GraphIndex, get_graph_index, get_cached_graph_index
+from graph_index import GraphIndex
 from mcp.server.transport_security import TransportSecuritySettings
 from pydantic import BaseModel, Field, ConfigDict
 
