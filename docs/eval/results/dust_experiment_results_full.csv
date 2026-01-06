@@ -1,0 +1,574 @@
+id,experiment_name,trace_id,question,expected_answer,actual_answer,latency_ms,status,contains_metric,llm_precision,answer_relevance,hallucination,meaning_match,usefulness,created_at
+019b9410-d6d3-718a-a28d-9b05a09cbb01,rag_comparison_20260106_160751_Dust,019b9410-3be0-7bb8-ac86-35991f9f8d7b,"Dans la contribution n°4 du cahier de Rochefort, quel montant de retraite mensuel est mentionné comme insuffisant pour une personne seule ?","Dans la contribution n°4 du cahier de Rochefort, une personne mentionne que vivre seule avec 1200 euros par mois rend les fins de mois 'très dures'.",Le montant mentionné est de 1200 € par mois pour une personne seule. :cite[ekx],27180.184417,1.0,0.0,0.8,1.0,1.0,0.0,1.0,
+019b93ed-1c65-7ca7-92d0-0b7f0f2b3c96,rag_comparison_20260106_160751_Dust,019b93e8-573c-7196-85a9-5dc48ff73fcf,Quels services publics sont mentionnés comme manquants ou dégradés dans l'ensemble des contributions ?,"Les services publics mentionnés comme manquants ou dégradés sont : les écoles (74 mentions), la poste (67 mentions), les gendarmeries (15 mentions), les maternités (14 mentions, fermetures), les urgences (11 mentions), les hôpitaux (11 mentions), les tribunaux (8 mentions), les crèches (4 mentions) et les commissariats (2 mentions). Ces mentions reflètent le sentiment de désertification des services publics en zone rurale.",,300678.611541999,0.0,0.0,0.0,0.0,1.0,0.099979663,0.0,
+019b940f-990d-7d44-86c0-c8105bd9192a,rag_comparison_20260106_160751_Dust,019b940f-0c6d-7c08-8476-186d4cd4e7e8,"Dans la contribution n°6 du cahier de Rochefort, quel est le montant horaire du SMIC mentionné ?","Dans la contribution n°6 du cahier de Rochefort, le citoyen mentionne un SMIC à 9,88 euros de l'heure, affirmant qu'avec ce montant 'on ne peut pas vivre, survivre'.","9,88 € par heure. :cite[ekx]",23267.043916999,1.0,0.0,0.8,1.0,1.0,0.001098697,1.0,
+019b940f-0c6b-7aee-8fc7-52ee7cd6a1c6,rag_comparison_20260106_160751_Dust,019b940e-d5e6-7f06-9c26-8e5648aa517e,Quelle entreprise de recyclage est mentionnée dans la contribution n°13 du cahier de Rochefort ?,"La contribution n°13 du cahier de Rochefort mentionne l'entreprise Ovive, installée à Périgny depuis 1988, spécialisée dans le broyage des coquilles d'huîtres pour l'alimentation des poules.",,0.0,0.0,0.0,0.0,0.0,1.0,0.097966778,0.0,
+019b940e-d5e3-7590-a084-99263dad50d0,rag_comparison_20260106_160751_Dust,019b940e-8db5-73ce-8e3a-5387a70fe95d,Que demande la contribution n°14 du cahier de Rochefort concernant le kiosque à musique ?,La contribution n°14 du cahier de Rochefort demande de 'Réparer le toit du kiosque à musique square Parat (marre des pigeons mélomanes)'.,,0.0,0.0,0.0,0.0,0.0,1.0,0.091490162,0.2,
+019b940e-8db3-7926-8d99-526864211150,rag_comparison_20260106_160751_Dust,019b940d-fb41-7a2b-a63d-b7c227595ab6,Dans quelle contribution du cahier de Rochefort trouve-t-on une question sur l'éclairage public jusqu'à minuit ?,"C'est dans la contribution n°13 du cahier de Rochefort qu'une citoyenne pose la question 'L'éclairage public jusqu'à minuit, est-ce bien utile ?'","La question apparaît dans la contribution numéro 13 du Cahier de Rochefort. Il s’agit d’un manuscrit de 18 lignes (femme), daté du 28/12/2018, où est formulée la phrase: « L’éclairage public jusqu’à minuit, est-ce bien utile ? ». :cite[ekx]",24169.007041999,1.0,0.0,1.0,0.95,0.5,0.099752738,1.0,
+019b940d-fb40-7bb8-a160-a1444b7ca1ae,rag_comparison_20260106_160751_Dust,019b940d-71bc-7e72-9446-9c5f81bbe2d1,Quelle contribution du cahier de Rochefort mentionne Monsanto-Bayer ?,La contribution n°13 du cahier de Rochefort mentionne Monsanto-Bayer. La citoyenne écrit qu'elle est 'entourée de champs cultivés et pollués par Monsanto-Bayer'.,"La contribution du cahier de Rochefort qui mentionne Monsanto-Bayer est l’entrée n°13 dans le Cahier de Rochefort (transcription 4-42). Le texte exact est: 
+
+« Je suis entourée de champs cultivés et pollués par Monsanto-Bayer. Comment travaillent les agriculteurs bio dans notre département ? »
+
+Cité depuis Cahier de Rochefort, transcription 4-42, entrée 13. :cite[n1k]",21489.414666,1.0,0.0,1.0,0.95,1.0,0.099896777,1.0,
+019b940d-71ba-7231-a624-13408d9487d7,rag_comparison_20260106_160751_Dust,019b940b-8cbc-7710-be95-0cf0e8ec6671,"Dans la contribution n°2 du cahier de Surgères, quel montant mensuel la citoyenne dit-elle percevoir ?","Dans la contribution n°2 du cahier de Surgères (la plus longue avec 2717 mots), la citoyenne mentionne vivre avec 600 euros par mois et demande au président s'il pourrait vivre avec cette somme.","Pour être sûr de répondre exactement, pouvez-vous préciser si vous parlez de la deuxième contribution listée sous le bloc “Cahier de Surgères” (cahier de Surgères, contribution n°2 correspondant probablement à l’entrée numéro 17 dans le fichier) ou d’un autre édition/numéro ?
+
+Pour l’instant, avec les extraits disponibles, je ne vois pas le montant mensuel exact associé à une citoyenne dans la contribution n°2 de Surgères. Je peux toutefois aller chercher plus précisément dans le fichier correspondant et vous donner la ligne exacte dès que je l’ai localisée. Voulez-vous que je poursuite la recherche dans le document “Cahier de Surgères transcription_4_23.txt” et vous restitue le passage exact (avec le montant en euros) ?",110547.028416,1.0,0.0,0.0,0.4,0.0,1e-09,0.4,
+019b940b-8cba-7f8e-9f39-824435ce6c98,rag_comparison_20260106_160751_Dust,019b940b-2b46-7b06-bee8-be2ea2c55a79,Quel salaire maximum pour les députés est proposé dans la contribution n°2 du cahier de Surgères ?,"Dans la contribution n°2 du cahier de Surgères, la citoyenne propose que les députés et personnes travaillant pour le gouvernement aient un salaire de 2000 euros par mois maximum, 'vu qu'on leur paye les déplacements'.",,0.0,0.0,0.0,0.0,0.0,1.0,0.095257449,0.0,
+019b940b-2b45-7688-9172-53f34ac67366,rag_comparison_20260106_160751_Dust,019b940a-f49f-75e4-90c0-e26cb0baa445,"Dans la contribution n°2 du cahier de Surgères, quel modèle allemand de gestion du chômage partiel est décrit ?","La contribution n°2 du cahier de Surgères décrit qu'en Allemagne, lors d'une baisse de commande, les ouvriers ont leur salaire gelé (exemple: 1500 euros par mois) et restent à la maison sans perte de salaire, au lieu d'être mis au chômage.",,0.0,0.0,0.0,0.0,0.0,1.0,0.059266758,0.0,
+019b940a-f49e-7e7d-9bac-2cfd7ced8318,rag_comparison_20260106_160751_Dust,019b940a-958a-7adc-bcc6-5ebdda2ae2fc,Que dit la contribution n°1 du cahier de Surgères concernant les autoroutes ?,"La contribution n°1 du cahier de Surgères critique la vente des autoroutes au privé, qualifiant cette décision de 'belle connerie'.",,0.0,0.0,0.0,0.0,0.0,1.0,0.090465081,0.0,
+019b940a-9588-748d-993b-047722c2227b,rag_comparison_20260106_160751_Dust,019b940a-0bc6-7a9b-9d0b-ca820f793805,"Dans la contribution n°3 du cahier de Saint-Jean-d'Angély, quel montant de retraite pour les femmes d'agriculteur est mentionné ?","La contribution n°3 du cahier de Saint-Jean-d'Angély, écrite par une femme d'agriculteur, mentionne une retraite de 400 euros après avoir cotisé toute sa vie, ce qu'elle qualifie d'anormal.","Le montant mentionné est 400 € de retraite pour les femmes d’agriculteur. Cette donnée apparaît dans la contribution n°3 du cahier de Saint-Jean-d’Angély (3. Manuscrit, 10 lignes, 69 mots, femme). :cite[g8q]",20911.004374998,1.0,0.0,0.9,1.0,1.0,0.0,0.8,
+019b940a-0bc4-72f6-acb3-8b616c6a24c7,rag_comparison_20260106_160751_Dust,019b9409-287f-7e9f-a82e-e5881626783b,Quelle inquiétude familiale est exprimée dans la contribution n°3 du cahier de Saint-Jean-d'Angély ?,"Dans la contribution n°3 du cahier de Saint-Jean-d'Angély, la femme d'agriculteur s'inquiète pour son fils de 30 ans qui a 'beaucoup d'emprunts' agricoles.","L’inquiétude familiale exprimée dans la contribution n°3 du cahier de Saint-Jean-d’Angély est que l’avenir de l’exploitation agricole familiale est menacé par les réformes en cours: le métier d’agriculteur pourrait ne plus être viable sur leurs terres, notamment pour pratiquer le bio, et il est aussi question du fils de 30 ans qui porte beaucoup d’emprunts. Par ailleurs, elle souligne que les retraites des femmes d’agriculteur (environ 400 €) ne sont pas suffisantes. :cite[duj]",41045.181958001,1.0,0.0,0.8,0.95,0.6,0.0,0.8,
+019b9409-287c-70e0-9787-f59d3aa069a2,rag_comparison_20260106_160751_Dust,019b9408-12a5-7a89-b11a-8a843e05e436,Que demande la contribution n°13 du cahier de Saint-Jean-d'Angély concernant l'ENA ?,La contribution n°13 du cahier de Saint-Jean-d'Angély mentionne la 'nécessité absolue de fermeture de l'ENA' ainsi que la diminution des privilèges des hauts fonctionnaires.,"Voici ce que dit la contribution n°13 du Cahier de Saint-Jean-d’Angély, et ce qu’elle ne dit pas.
+
+- La contribution n°13 (Saint-Jean-d’Angély) est un texte court de 3 lignes et 19 mots. Son contenu est: « La revalorisation des retraites n’augmente pas et les anciens qui ont travaillé toute leur vie ne vivent plus dignement. »
+- Cette contribution ne mentionne pas l’ENA (École Nationale d’Administration).
+
+Source: Cahiers de doléances de Saint-Jean-d’Angély, contribution n°13 (référence eks). :cite[eks]
+
+Souhaitez-vous que je cherche spécifiquement des occurrences liées à l’ENA dans ce cahier ou dans d’autres cahiers Citizens/griots similaires ?",57640.648,1.0,0.0,0.0,0.7,0.0,0.0,0.6,
+019b9410-3bdd-7cd5-ab07-7e9709296bef,rag_comparison_20260106_160751_Dust,019b940f-990f-70f2-87b1-00b0c6e93c20,Quelle est la demande formulée dans la contribution n°5 du cahier de Rochefort ?,La contribution n°5 du cahier de Rochefort demande simplement la 'Suppression de la CSG pour les retraités'. C'est une contribution très courte de seulement 7 mots.,La contribution n°5 du cahier de Rochefort demande la suppression de la CSG pour les retraités. :cite[ekx],29172.845959001,1.0,0.0,1.0,0.9,1.0,0.011920294,0.8,
+019b9407-48e1-7fc9-8dbc-05ba82e5add8,rag_comparison_20260106_160751_Dust,019b9406-d1ae-78a8-a71d-2775bce7ef1a,Qui est l'auteur de la contribution n°2 du cahier de Saint-Jean-d'Angély ?,"La contribution n°2 du cahier de Saint-Jean-d'Angély est signée par Françoise Mesnard, qui est identifiée comme la maire de la commune.","Françoise Mesnard, maire de Saint-Jean-d’Angély. :cite[g8q]",17805.338916999,1.0,0.0,1.0,0.9,1.0,0.077729988,0.8,
+019b9406-d1ac-7bdf-8605-2495429799cb,rag_comparison_20260106_160751_Dust,019b9406-5d31-7e3f-a2a4-3fc6b8c3fcbb,"Dans la contribution n°5 du cahier de Marans, quel âge a la veuve qui s'exprime ?","Dans la contribution n°5 du cahier de Marans, une veuve de 83 ans demande à ne plus payer deux fois par an la taxe sur les poubelles et la taxe d'habitation.","83 ans.
+
+Dans la contribution n°5 du Cahier de Marans, la veuve précise son âge en indiquant “car j’ai 83 ans.” :cite[ekx]",17353.559625,1.0,0.0,0.8,1.0,1.0,2e-09,1.0,
+019b9406-5d2f-7eca-991c-0068665dbe41,rag_comparison_20260106_160751_Dust,019b9405-d9a4-7eda-9609-d932d1f7e35f,Quel montant d'augmentation de salaire est proposé dans la contribution n°15 du cahier de Marans ?,La contribution n°15 du cahier de Marans estime que 300 euros de plus sur les salaires serait raisonnable pour permettre de 'manger et tout payer en fin de mois'.,,0.0,0.0,0.0,0.0,0.0,1.0,0.097068793,0.0,
+019b9405-d9a2-706f-995e-7538a170c698,rag_comparison_20260106_160751_Dust,019b9404-ad0c-7bac-9391-93a66ccef65b,Que signifie 'RIC CARL' mentionné dans la contribution n°3 du cahier de Marans ?,"Dans la contribution n°3 du cahier de Marans, 'RIC CARL' signifie Référendum d'Initiative Citoyenne 'en toutes matières' - couvrant les domaines Constituant, Abrogatoire, Révocatoire et Législatif.","Voici ce que l’on peut dire sur ce passage.
+
+- Signification de RIC: dans ce cahier et dans le mouvement des Gilets jaunes en général, RIC signifie Référendum d’Initiative Citoyenne. C’est une demande d’organiser des référendums sur des sujets choisis par les citoyens, plutôt que par les élus. On voit cette abréviation apparaître à plusieurs reprises dans les contributions (par exemple dans le cahier de Marans et dans d’autres cahiers) comme une revendication centrale ou propagée par les auteurs. Référence: Cahier de Marans, contribution n°3 (texte transcrit). :cite[d1e]
+
+- À propos de “RIC CARL”: dans la contribution n°3 du cahier de Marans, on lit exactement: « Avant de demander de nous serrer la ceinture, commencez par nos dirigeants. SVP. Ensuite, le RIC CARL toutes matières. » Cette expression ne fait pas partie d’un sigle standard connu, et le texte ne donne pas d’explication definissant ce que “CARL” veut dire. Dans d’autres cahiers (par exemple Cahier d’Andilly), on retrouve aussi la formule “RIC CARL en toutes matières” sans définition explicite. Cela suggère soit une abréviation ou un mot donné par l’auteur qui n’est pas documenté dans les sources, soit une erreur de transcription/omission de la signification. Référence: Cahier de Marans n°3 et Cahier d’Andilly (retours similaires). :cite[d1e], :cite[aqj]
+
+En résumé:
+- RIC = Référendum d’Initiative Citoyenne, comme élément clé de la demande citoyenne.
+- CARL: la source ne donne pas de définition claire; il pourrait s’agir d’un acronyme peu usuel, d’un surnom/transcription erronée, ou d’un élément non documenté dans ces cahiers. Si vous le souhaitez, je peux tenter une vérification plus poussée sur les pages originales ou comparer d’autres copies pour voir si une signification claire apparaît ailleurs.",59699.379916999,1.0,0.0,0.5,0.95,0.5,0.0,0.8,
+019b9404-ad0a-7fe6-9227-2786a8bc745e,rag_comparison_20260106_160751_Dust,019b9403-4e89-79f5-91de-597fedead0a7,Combien d'années de travail mentionne le retraité dans la contribution n°13 du cahier de Marans ?,"Dans la contribution n°13 du cahier de Marans, un jeune retraité mentionne avoir travaillé 45 ans tout en ayant une retraite 'au plus bas'.","Aucune. Dans la contribution n°13 du cahier de Marans, le retraité ne mentionne pas d’années de travail. Le passage est très court et porte sur des points comme l’augmentation des retraites et la suppression de certains éléments (par exemple la CSG). Référence associée: Cahier de Marans, transcription dans le fichier a31. :cite[a31] 
+
+Souhaitez-vous que je vous affiche exactement le texte de la contribution n°13 pour en voir le contenu précis ?",75798.226708999,1.0,0.0,0.0,0.95,0.0,4e-09,0.8,
+019b9403-4e87-78ed-abb5-606698b52332,rag_comparison_20260106_160751_Dust,019b9402-ffb5-70c2-ac32-03ed698b76be,Quel montant annuel de perte due à la CSG est mentionné dans la contribution n°1 du cahier de Marennes-Hiers-Brouage ?,"Dans la contribution n°1 du cahier de Marennes-Hiers-Brouage, une citoyenne déclare perdre 600 euros par an à cause de la CSG, sans compter l'augmentation prévue pour janvier 2019.",,0.0,0.0,0.0,0.0,0.0,1.0,0.094659696,0.0,
+019b9402-ffb3-7c85-9cfe-43b74edb3da5,rag_comparison_20260106_160751_Dust,019b9402-2c61-7d52-a26c-977adf4d2db5,Que demande la contribution n°2 du cahier de Marennes concernant le contrôle technique ?,La contribution n°2 du cahier de Marennes-Hiers-Brouage demande une 'réduction à 50 % du contrôle technique et amendes en tous genres'.,"La contribution n°2 du cahier de Marennes demande l’annulation du nouveau contrôle technique (5 gaz). Cette proposition apparaît dans le cahier Marennes-Hiers-Brouage (entrée 31, datée du 11/01/2019). :cite[n1k]",37910.296292,1.0,0.0,0.2,0.95,0.0,0.0,0.8,
+019b9402-2c5e-7a0c-88e1-eeabb83a5ad7,rag_comparison_20260106_160751_Dust,019b9400-15fe-7b22-b58b-665d56ca9b1d,Combien d'années de cotisation mentionne la citoyenne dans la contribution n°3 du cahier de Marennes ?,"Dans la contribution n°3 du cahier de Marennes-Hiers-Brouage, la citoyenne mentionne avoir cotisé pendant 42 ans.","Aucune. La contribution n°3 du cahier de Marennes ne mentionne pas d’années de cotisation ou de durée de travail. Ce passage porte sur le référendum d’initiative citoyenne (RIC) et le bilan politique à mi-mandat, sans référence à des années de cotisation. Si vous cherchez une mention de « années de travail » ou de « cotisations », elle apparaît dans d’autres contributions (par exemple la n°21) de ce cahier, mais pas dans la n°3. :cite[i6q]",120792.578084001,1.0,0.0,0.0,0.8,0.0,0.0,0.8,
+019b9400-15fc-7282-864b-a28a6cbeff8c,rag_comparison_20260106_160751_Dust,019b93fe-d194-73de-a39e-fa80f6df880c,"Dans la contribution n°2 du cahier de Bernay-Saint-Martin, quelle durée d'exercice obligatoire en milieu rural est proposée pour les médecins ?","La contribution n°2 du cahier de Bernay-Saint-Martin propose que les étudiants en médecine en fin de cursus exercent obligatoirement en milieu rural pendant 1 an, voire 2, pour pallier les déserts médicaux.","La contribution n°2 propose que les étudiants en médecine en fin de cursus exercent obligatoirement en milieu rural pendant 1 an, voire 2 ans. Notez que le texte parle d’étudiants en médecine, pas nécessairement de médecins déjà diplômés. :cite[ekx]",68977.773999999,1.0,0.0,0.9,0.8,0.8,5.829e-06,0.8,
+019b93fe-d18f-7d07-9b82-13469e948d84,rag_comparison_20260106_160751_Dust,019b93fe-35f1-7047-bd21-29cbfcc5717a,Que propose la contribution n°2 du cahier de Bernay-Saint-Martin concernant les femmes au foyer ?,"La contribution n°2 du cahier de Bernay-Saint-Martin propose que les femmes au foyer soient rémunérées car 'le travail à la maison est un travail à part entière', ce qui pourrait diminuer le chômage et améliorer l'éducation des enfants.","Dans la contribution n°2 du cahier de Bernay-Saint-Martin, il est proposé que les femmes au foyer soient rémunérées, le travail à la maison étant considéré comme un travail à part entière. Cette proposition serait associée à des effets potentiels comme une diminution du chômage et une meilleure éducation des enfants. :cite[ekx]",23766.414832998,1.0,0.0,1.0,0.9,1.0,0.099993396,0.8,
+019b93fe-35ee-7756-b385-e78bd7fa6185,rag_comparison_20260106_160751_Dust,019b93fd-56e2-77fb-b5ee-ff1f6970c06b,Quelle liaison de transport est demandée dans la contribution n°7 du cahier de Bernay-Saint-Martin ?,La contribution n°7 du cahier de Bernay-Saint-Martin demande la mise en place de transports collectifs avec la liaison Surgères-Saint-Jean-d'Angély avec des arrêts à Parançay-Bernay.,"Je ne trouve pas de contribution n°7 pour le cahier de Bernay-Saint-Martin dans les documents accessibles. Le fichier disponible contient les contributions 1 à 5; la contribution la plus proche sur le transport est la n°3, qui demande d’améliorer le maillage des territoires ruraux en matière de transport public et de construire rapidement l’intermodalité. :cite[as7] 
+
+Si vous avez une version plus complète ou un lien vers la contribution n°7, je peux la localiser et vous donner la formulation exacte.",42405.750957999,1.0,0.0,0.0,0.5,0.0,0.0,0.6,
+019b93fd-56df-771f-a7ee-a57cc537a8b4,rag_comparison_20260106_160751_Dust,019b93fc-6af0-7cb1-afce-c552a8b9903e,Quelle contribution du cahier de Bernay-Saint-Martin compare les taxes d'habitation entre une petite commune et Paris ?,"La contribution n°7 du cahier de Bernay-Saint-Martin questionne s'il est normal de payer plus cher de taxe d'habitation dans une petite commune comme Bernay qu'à Paris, sans les équipements collectifs adéquats.","En résumé, le cahier de Bernay-Saint-Martin n’inclut pas de contribution qui compare explicitement les taxes d’habitation entre une petite commune et Paris. Sa première et unique entrée détaillée des pages 3 et 4 porte sur des sujets comme le regroupement de petites communes, le positionnement des services administratifs, la déductibilité des cotisations mutuelles du revenu imposable, et des remarques sur le travail et le chômage, sans référence spécifique à Paris ou à une comparaison des taxes d’habitation. :cite[ekh]
+
+Si vous le souhaitez, je peux élargir la recherche dans d’autres cahiers pour voir si une comparaison de taxes d’habitation entre petites communes et grandes villes apparaît ailleurs.",44453.364916,1.0,0.0,0.0,0.9,0.0,1e-09,0.6,
+019b93fc-6aed-7483-82c2-a0b9988297db,rag_comparison_20260106_160751_Dust,019b93fb-f271-7fe2-9599-bdb286ad85e1,"Dans la contribution n°10 du cahier de Rochefort, quelle proposition est faite concernant la TVA sur l'alimentation ?",La contribution n°10 du cahier de Rochefort propose une 'TVA à 0 % sur l'alimentation (produits frais et français)'.,La proposition est d’appliquer une TVA à 0 % sur l’alimentation (produits frais et français). :cite[ekx],17632.070333,1.0,0.0,1.0,0.9,1.0,0.097702264,0.8,
+019b93fb-f26e-73f9-913d-054c924b93f5,rag_comparison_20260106_160751_Dust,019b93fa-e522-72b7-a804-ab01f1f23109,Quelles institutions propose de supprimer la contribution n°10 du cahier de Rochefort ?,La contribution n°10 du cahier de Rochefort propose la 'Suppression du Sénat' parmi sa liste de demandes.,"D’après les sources consultées, il n’y a pas d’indication qu’une institution ait proposé de supprimer la contribution n°10 du cahier de Rochefort. Cette entrée est présente telle quelle dans le Cahier de Rochefort et contient une série de propositions politiques (voir ci-dessous). Le contenu exact de la contribution n°10 est: Élection législative à la proportionnelle; Suppression du Sénat; RIC; Revenu universel; Inéligibilité des élus condamnés à vie; Destitution possible des élus; Casier judiciaire vierge des élus; Plafond des aides cumulées; Impôt pour les élus; TVA à 0 % sur l’alimentation (produits frais et français). Cette liste correspond à la contribution n°10 telle qu’enregistrée pour Rochefort. :cite[ctt]
+
+Si vous souhaitez, je peux aussi vérifier dans d’autres cahiers (par exemple Soubise, Saint-Denis-d’Oléron, Surgères, etc.) pour voir si des mentions de suppression de cette contribution apparaissent ailleurs ou si des annotations indiquent une modification/suppression locale.",50020.526457999,1.0,0.0,0.5,0.75,1.0,7e-09,0.6,
+019b93fa-e520-7e0f-96e6-8978f99b62a4,rag_comparison_20260106_160751_Dust,019b93fa-325c-793f-87cd-381af3663d20,Que demande la contribution n°14 du cahier de Rochefort concernant le 'verrou de Bercy' ?,"La contribution n°14 du cahier de Rochefort demande de 'Lever le verrou de Bercy', mécanisme qui donne au ministère des Finances le monopole des poursuites en matière de fraude fiscale.","D’après la contribution n°14 du cahier de Rochefort, il n’y a pas de demande concernant le « verrou de Bercy ». La demande relative au verrou de Bercy figure dans la contribution n°12, et non dans le n°14. Cela dit, la contribution n°14 contient les points suivants:
+
+- Le recours au RIC sur tous les sujets, et écrit par les citoyens eux-mêmes.
+- Fin du népotisme chez les élus.
+- Contrôle des dotations et des subventions.
+- Diminution du salaire des hauts fonctionnaires.
+- Casier judiciaire vierge pour les élus.
+
+Si vous souhaitez, je peux extraire les extraits exacts ou recouper avec d’autres contributions du même cahier. Référence consultée: Cahiers de doléances/cahiers citoyens de Charente-Maritime, édition février 2024, Cahier de Rochefort (n°14). :cite[ekx]",29538.413666999,1.0,0.0,0.0,0.8,0.0,3e-09,0.8,
+019b93fa-3259-7b46-8e61-a273e393dd8c,rag_comparison_20260106_160751_Dust,019b93f9-36d3-795a-a491-8a3a33b3e25a,Combien de cahiers de doléances mentionnent le RIC (Référendum d'Initiative Citoyenne) ?,"Le RIC (Référendum d'Initiative Citoyenne) est mentionné dans 38 cahiers de doléances sur les 50 du corpus, ce qui en fait l'une des revendications les plus répandues. Le cahier de Rochefort est celui qui le mentionne le plus souvent (21 occurrences).","D’après le relevé des cahiers de doléances dans la base fournie, 11 cahiers mentionnent explicitement le Référendum d’Initiative Citoyenne (RIC).
+
+- Saint-Julien-de-l’Escap — mention du RIC dans le cahier (ekx) :cite[ekx]
+- Marennes-Hiers-Brouage — « Le RIC… » et mentions associées (n1k) :cite[n1k]
+- Le Thou — « Le Référendum Initiative Citoyenne (RIC) » (g8q) :cite[g8q]
+- Rochefort — présence explicite de « RIC » (duj) :cite[duj]
+- Sainte-Colombe — « RIC ou débat citoyen » (sil) :cite[sil]
+- Montendre — « Consultation du peuple (RIC) » (a31) :cite[a31]
+- Nieulle-sur-Seudre — « Mise en place du RIC » (ch7) :cite[ch7]
+- Vaux-sur-Mer — « Une Française révoltée : oui au RIC » (eks) :cite[eks]
+- Taillebourg — « Mettre en place le RIC » (cvs) :cite[cvs]
+- Bougneau — « Réfléchir au référendum initiative citoyenne » (a41) :cite[a41]
+- Gue-d’Allere — « Mettre en place le RIC » (bs0) :cite[bs0]
+
+Si vous souhaitez, je peux extraire les occurrences exactes par cahier (même compte par commune, ou un export récapitulatif).",49604.620166999,1.0,0.0,0.0,1.0,0.0,0.0,1.0,
+019b93f9-36d1-7b83-abc3-136170ecb708,rag_comparison_20260106_160751_Dust,019b93f7-c7d3-7b4b-98d3-b864c1c83d76,Quels sont les différents montants de retraite mentionnés comme insuffisants dans l'ensemble des contributions ?,"Plusieurs montants de retraite sont mentionnés comme insuffisants dans les contributions : 1200€/mois (Rochefort contribution n°4), 600€/mois (Surgères contribution n°2), 400€/mois pour une femme d'agriculteur (Saint-Jean-d'Angély contribution n°3). Ces témoignages illustrent la diversité des situations de précarité chez les retraités.","Voici les montants de retraite qui sont mentionnés comme insuffisants ou comme objectif d’augmentation dans l’ensemble des doléances que j’ai pu rechercher.
+
+- 282 € par mois — Revalorisation des petites retraites (je perçois 282 € mensuels). Référence: Cahiers de doléances de Marans (transcription 3-14). :cite[duj]
+- 497 € par mois — « ma retraite est de 497 € / mois » (et une rente de 100 € / mois). Référence: Cahier de Saint-Pierre-d’Oléron (transcription 4-14). :cite[ekx]
+- 500 € par mois — Minimum à 500 € pour tous ceux qui ont contribué l’enrichissement de la France (mentionné comme objectif pour les personnes âgées). Référence: Cahier de Nieulle-sur-Seudre (transcription 3-12). :cite[a31]
+- 800 € par mois — « J’ai une toute petite retraite de 800 € ». Référence: Cahier de Marennes-Hiers-Brouage (transcription 4-40). :cite[ch7]
+- 980 € par mois — « retraitée, veuve, 82 ans, avec une petite retraite de 980 euros par mois ». Référence: Cahier de Marans (transcription 3-14). :cite[duj]
+- 1000 € par mois — « 1000 € n’a rien d’indécent, bien au contraire, pour fin 2019 » (dans le cadre des propositions sur les retraites). Référence: Cahier de Nieulle-sur-Seudre (transcription 3-12). :cite[a31]
+- 1200 € nets par mois — « porter le minima des pensions de retraite à 1200 € nets mensuels pour pouvoir vivre dignement ». Référence: Cahier de Saint-Pierre-d’Oléron (transcription 4-14). :cite[ekx]
+- 1200 € par mois — « Une grosse augmentation des retraites aux personnes vivant seules avec 1200 € par mois; les fins de mois, c’est très dur ». Référence: Cahier de Rochefort (transcription 4-42). :cite[g8q]
+
+Souhaitez-vous que j’extraie aussi les extraits exacts (phrases complètes) pour chacun de ces chiffres, ou que je filtre ces montants par commune/région dans la base de doléances ?",78367.17275,1.0,0.0,0.5,0.95,0.0,0.0,0.8,
+019b93f7-c7d2-7210-a028-edb566d89085,rag_comparison_20260106_160751_Dust,019b93f5-fc4f-7cc0-b3cf-435d707afac4,Dans combien de cahiers la suppression ou la contestation de la CSG est-elle demandée ?,La CSG (Contribution Sociale Généralisée) est mentionnée dans 41 cahiers sur 50. Les demandes vont de la suppression totale de la CSG sur les retraites (Rochefort n°5) à la contestation de son augmentation (Marennes n°1 qui évoque une perte de 600€/an).,"Bonne question. À partir des cahiers de doléances Charente-Maritime disponibles dans notre corpus, on identifie 11 cahiers où la suppression ou la contestation de la CSG est explicitement demandée. Voici ces cahiers avec des exemples précis (et leurs références pour vérification) :
+
+- Cahier de Sainte-Colombe transcription 3 — Suppression de la CSG pour les retraités. :cite[as6]
+- Cahier de Saint-Pierre-d’Oléron transcription 4-14 — Suppression de la CSG pour tous les retraités. :cite[ctt]
+- Cahier de Bougneau transcription 3-6 — Suppression de la CSG tout de suite. :cite[bld]
+- Cahier de Rochefort transcription 4-42 — Suppression de l’augmentation de la CSG et autres mesures liées. :cite[cu0]
+- Cahier de Saint-Trojan-les-Bains transcription 3-7 — Abrogation de l’augmentation de la CSG pour tous les retraités. :cite[as7]
+- Cahier de Saint-Georges-de-Didonne transcription 3-16 — Suppression de la CSG pour les retraités. :cite[ekh]
+- Cahier de Saint-Hilaire-de-Villefranche transcription 3-6 — Annulation de la hausse de la CSG sur tous les retraités. :cite[d32]
+- Cahier de Nancras transcription 3-8 — Suppression de la CSG sur les retraites. :cite[a41]
+- Cahier de Bourcefranc-le-Chapus transcription 3-13 — Suppression de la hausse de la CSG pour tous les retraités. :cite[czg]
+- Cahier de Marennes-Hiers-Brouage transcription 4-40 — Suppression de l’augmentation de la CSG et réhabilitation de l’ISF. :cite[dr7]
+- Cahier de Saint-Césaire transcription 3-11 — Suppression (ou contestation) de la hausse de la CSG pour les retraités. :cite[ch7]
+
+Si vous le souhaitez, je peux ajouter des extraits exacts (fragments de texte) montrant chaque demande, ou étendre la recherche pour vérifier s’il existe d’autres cahiers mentionnant la CSG dans d’autres sections.",103767.090625,1.0,0.0,0.5,1.0,1.0,2.7e-08,1.0,
+019b93f5-fc48-7364-8807-0b7457270d4c,rag_comparison_20260106_160751_Dust,019b93f4-8d03-7bdb-87c2-f55389bba5fa,Quels cahiers demandent le rétablissement de l'ISF et dans quel contexte ?,"Le rétablissement de l'ISF (Impôt de Solidarité sur la Fortune) est demandé dans 45 cahiers. Par exemple, la contribution n°9 de Rochefort demande de 'Remettre l'ISF', la contribution n°14 de Rochefort demande le 'Rétablissement de l'ISF', et la contribution n°14 de Saint-Jean-d'Angély critique sa suppression comme mesure injuste.","Bonne question. Dans le corpus des cahiers de doléances que j’ai pu consulter, plusieurs cahiers mentionnent explicitement le rétablissement de l’ISF (impôt sur la fortune), parfois sous des formules proches comme “ Retour de l’ISF” ou “Rétablissement de l’ISF”. Ci‑dessous, les cahiers concernés et le contexte dans lequel l’ISF est évoqué.
+
+- Cahier de Marennes-Hiers-Brouage (transcription 4-40)
+  - Contenu: RÉTABLISSEMENT de L’ISF apparaît au milieu d’autres revendications fiscales et sociales.
+  - Contexte: cadre général de doléances fiscales et de justice sociale, avec notamment des demandes sur les salaires, les taxes et le coût de la vie.
+  - Référence : ekx
+
+- Cahier de Rochefort (transcription 4-42)
+  - Contenu: Rétablissement de l’ISF. Adopter le RIC. Réduction des parlementaires et des salaires scandaleux.
+  - Contexte: rassemble des propositions liées à la justice fiscale et à la représentation politique, dans une tonalité proche des mouvements des Gilets jaunes.
+  - Référence : n1k
+
+- Cahier de Bourcefranc-le-Chapus (transcription 3-13)
+  - Contenu: Retour de l’ISF.
+  - Contexte: liste de revendications fiscales et sociales, incluant des mesures sur le pouvoir d’achat et les prestations sociales.
+  - Référence : g8q
+
+- Cahier de Fontcouverte (transcription 3-15)
+  - Contenu: Rétablir l’ISF.
+  - Contexte: propositions fiscales et budgétaires (réforme du Conseil économique, taxation, etc.) dans une vision de rééquilibrage fiscal.
+  - Référence : aqj
+
+- Cahier de Montendre (transcription 3-11)
+  - Contenu: Remettre l’ISF.
+  - Contexte: ensemble de propositions sur l’impôt, les retraites et la démocratie directe (RIC).
+  - Référence : cvs
+
+- Cahier de Saint-Xandre (transcription 4-29)
+  - Contenu: Rétablissement de l’ISF.
+  - Contexte: discussion plus large sur la fiscalité, l’inflation, l’indice des retraites et le vote blanc.
+  - Référence : bs0
+
+- Cahier de Saint-Julien-de-l’Escap (transcription 3-4)
+  - Contenu: ISF est évoqué dans un ensemble de propositions (revue/recalibrage de l’ISF, droit à la parole citoyen, etc.).
+  - Contexte: cadre général de “référendum d’initiative citoyenne” et réformes structurelles; l’ISF est mentionné comme un point de revendication fiscale.
+  - Référence : drk
+
+- Cahier de Nancras (transcription 3-8)
+  - Contenu: Rétablissement de l’ISF (dans des pages variées, y compris des propositions sur les retraites et la fiscalité).
+  - Contexte: appels à une justice fiscale et sociale, avec d’autres mesures sur les retraites et les prestations sociales.
+  - Référence : ch7
+
+- Cahier de Saint-Pierre-d’Oléron (transcription 4-14)
+  - Contenu: Restorer l’ISF (Rétablir l’ISF).
+  - Contexte: ensemble de demandes fiscales et sociales, avec des réflexions sur l’inflation et l’indexation des retraites.
+  - Référence : ajm
+
+- Cahier de Saint-Sulpice-d’Arnoult (transcription 3-9)
+  - Contenu: ISF est évoqué comme une piste à revoir ou à rétablir; le texte parle aussi d’un cadre réformiste et de justice fiscale.
+  - Contexte: liste de réformes locales et nationales sur la fiscalité, les services publics et l’ISF dans une optique de justice fiscale.
+  - Référence : cx6
+
+- Cahier du Thou (transcription 3-8)
+  - Contenu: L’ISF est cité directement dans les propositions (impôt sur la fortune).
+  - Contexte: cadre de réformes fiscales et budgétaires autour de l’ISF et de l’investissement, avec d’autres mesures économiques.
+  - Référence : bpe
+
+- Cahier de Plassay (transcription 3-11)
+  - Contenu: ISF mentionné dans un ensemble de revendications (dans le cadre du RIC et d’autres propositions sociales et économiques).
+  - Contexte: débat local sur la fiscalité et le rôle de l’État, avec des appels au référendum et à des mesures sociales.
+  - Référence : sil
+
+- Cahier de Saint-Hilaire-de-Villefranche (transcription 3-6)
+  - Contenu: Remettre l’impôt sur la fortune (ISF).
+  - Contexte: doléances locales axées sur la justice fiscale et l’amélioration des conditions de vie.
+  - Référence : a41
+
+- Cahier de Saint-Angoulins (transcription 4-18) 
+  - Contenu: Discussion sur l’ISF dans le cadre d’un “Thème: Fiscalité” et propositions associées (ex. restitution de l’ISF dans certains scénarios liés à l’investissement économique).
+  - Contexte: débat fiscal et social à l’échelle communale.
+  - Référence : a31
+
+- Cahier de Saint-Julien d’Angély et autres
+  - D’autres extraits mentionnent l’ISF ou des variantes (par exemple des formulations comme “Rétablissement de l’ISF” ou “ISF revu et corrigé”). Ils apparaissent dans plusieurs autres cahiers que j’ai listés ci‑dessus avec les références correspondantes.
+
+Note: quelques cahiers évoquent l’ISF de manière plus indirecte (par exemple “ISF revu et corrigé” ou des formulations proches). Si vous souhaitez, je peux extraire et afficher les extraits exacts motif par motif et les classer par ordre chronologique ou par département.
+
+Souhaitez-vous que je vous fournisse les extraits textuels exacts de chaque cahier (avec les passages pertinents) ou que je fasse une liste plus condensée par département/famille de revendications (justice fiscale, pouvoir d’achat, réforme du régime des élus, etc.)?",74787.045584,1.0,0.0,0.8,0.95,0.1,9.614e-06,0.9,
+019b93f4-8cfe-7480-ba03-d73d43472b3f,rag_comparison_20260106_160751_Dust,019b93f3-2e27-7163-9462-6332daa777fc,Quelles contributions mentionnent les GAFA et que demandent-elles ?,"Les GAFA sont mentionnées dans 20 cahiers. La contribution n°2 de Saint-Jean-d'Angély (de la maire Françoise Mesnard) demande une 'taxe TOBIN et impôts sur les sociétés au niveau européen, notamment les GAFA'. La contribution n°14 de Rochefort demande la 'Taxation des GAFA'. La contribution n°12 de Saint-Jean-d'Angély demande également de 'Taxer les GAFA'.","Voici les contributions qui mentionnent explicitement les GAFA (ou les GAFAM) et ce qu’elles demandent, telles qu’elles apparaissent dans le corpus des doléances que j’ai consulté.
+
+- GD_Reunions_01.txt (réf n1k)
+  - Mention GAFA: Gafams/GAFAM (dans le titre du thème et le texte).
+  - Demandent: fiscaliser les GAFA en France et en Europe, via un impôt ou une taxe sur les ventes de ces entreprises; proposent aussi une réflexion sur une taxation à la source et sur une meilleure coordination UE. Ce document traite surtout des questions fiscales liées aux GAFA et des mécanismes de taxation envisagés.
+  - Référence : :cite[n1k]
+
+- Saint-Xandre transcription 4-29 (réf g8q)
+  - Mention GAFA: yes (GAFA). 
+  - Demandent: imposer les GAFA sur leurs bénéfices réels réalisés en France; appel à une harmonisation de la fiscalité au sein de l’Union européenne.
+  - Référence : :cite[g8q]
+
+- Fontenat (Fontenet) transcription 3-8 (réf aqj)
+  - Mention GAFA: GAFA (GAFA, et plus généralement les multinationales type GAFA).
+  - Demandent: imposer les GAFA sur leur part de profit total proportionnellement aux ventes réalisées sur le territoire français; proposer aussi la création d’un ISF vert et renforcer la lutte contre la fraude fiscale.
+  - Référence : :cite[aqj]
+
+- Saint-Denis d’Oléron transcription 3-8 (réf drk)
+  - Mention GAFA: GAFA (GAFAM).
+  - Demandent: taxer les GAFA.
+  - Référence : :cite[drk]
+
+- Rochefort transcription 4-42 (réf cx6)
+  - Mention GAFA: GAFA.
+  - Demandent: taxer les GAFA sur les profits réalisés en France et ne pas limiter cette taxation à des taux déjà faibles (concrètement, noter la comparaison avec un taux fictif « 5 % » plutôt que 30 % pour les PME). L’idée générale est une taxation plus juste des GAFA en France.
+  - Référence : :cite[cx6]
+
+- Saint-Médard-d’Aunis transcription 3-14 (réf eks)
+  - Mention GAFA: GAFA.
+  - Demandent: imposer les GAFA sur le chiffre d’affaires réalisé en France; s’inscrit dans un cadre plus large de justice fiscale et de réforme de la fiscalité.
+  - Référence : :cite[eks]
+
+- GD_Reunions_06 transcription (réf duj)
+  - Mention GAFA: GAFA (dans le cadre d’un échange sur l’optimisation fiscale).
+  - Demandent: le document aborde GAFA dans le contexte de l’optimisation fiscale; la contribution mentionne le sujet mais ne détaille pas nécessairement une demande unique, plutôt une discussion sur la nécessité de lutter contre les pratiques d’optimisation et d’évasion fiscale associées aux GAFA.
+  - Référence : :cite[duj]
+
+Synthèse rapide
+- Le fil commun: la plupart des contributions qui citent les GAFA plaident pour une taxation plus forte et plus transparente des GAFA en France (et souvent au niveau européen), soit sur les bénéfices réels, soit sur le chiffre d’affaires réalisé localement. 
+- D’autres volets apparaissent: harmonisation fiscale européenne, renforcement des contrôles et de la lutte contre la fraude fiscale, et, dans certains textes, l’ajout d’un « ISF vert » ou d’une approche plus globale de justice fiscale.
+- Attention: certaines occurrences mentionnent les GAFA dans un contexte plus large de discussion fiscale (par exemple GD_Reunions_06 parle de GAFA dans le cadre de l’optimisation fiscale), plutôt que comme une proposition précise unique.
+
+Souhaitez-vous que j’organise ces résultats dans un tableau avec les références, les lieux/date des contributions et les propositions exactes pour faciliter leur réutilisation? Je peux aussi extraire des citations précises pour chaque contribution si vous le souhaitez.",72671.159875,1.0,0.0,0.5,1.0,1.0,7.4e-08,1.0,
+019b93f3-2e23-7964-b3b0-8f5db7dacc1a,rag_comparison_20260106_160751_Dust,019b93f1-8149-7763-a79b-842bc9ef1806,Combien de cahiers demandent la suppression ou la réforme du Sénat ?,"La suppression ou la réforme du Sénat est mentionnée dans 28 cahiers. Par exemple, la contribution n°10 de Rochefort demande la 'Suppression du Sénat', et la contribution n°12 de Saint-Jean-d'Angély demande que 'la dissolution du Sénat s'impose'.","En s’appuyant sur l’échantillon de cahiers de doléances fourni, on identifie 15 cahiers qui appellent explicitement à la suppression ou à la réforme du Sénat.
+
+Exemples et preuves (accompagnés des références des cahiers) :
+- L’Houmeau — appel à « drastiquement les effectifs du Sénat » et à une réforme associée (réduction du nombre de sénateurs) — ekx.
+- Saint-Georges-de-Didonne — « Suppression totale du Sénat » — n1k.
+- Rivedoux-Plage — « Réduire de moitié le nombre de députés, sénateurs et secrétaires d’État » (réforme du Sénat) — g8q.
+- Saint-Sulpice-d’Arnoult — « Réforme des institutions : 1 sénateur et 2 députés par département » — aqj.
+- Saint-Hilaire-de-Villefranche — « Réduction des sénateurs et députés et voir 1 chambre » — cx6.
+- Taillebourg — « Réduire le nombre de députés et sénateurs » — as8.
+- Saint-Cesaire — « Sénat : 56 sénateurs » et propositions de réforme — bs0.
+- Montendre — « Réduction 1/3 des députés et 1/3 des sénateurs » — ej2.
+- Rochefort — « Réduction du nombre des parlementaires, voire suppression du Sénat » — c5u.
+- Nancras — « Réduction du nombre de députés et sénateurs » — b2w.
+- Nieulle-sur-Seudre — « Diminution de 50 pour cent des députés et sénateurs » — eks.
+- Plassay — « Diminution des députés et sénateurs » — duj.
+- Angoulins — « Suppression du Sénat » — drk.
+- Vaux-sur-Mer — « Réduction des effectifs du Sénat, des députés … » — bl4.
+- Bougneau — « Réduire le train de vie de l’État … Réduire le nombre de sénateurs » — cvs.
+
+Souhaitez-vous que je vous fournisse la liste complète avec les extraits exacts et les liens de chaque cahier pour vérification, ou que je fasse une synthèse thématique des propositions liées au Sénat (par exemple, suppression pure et simple vs. réduction vs. réorganisation/fusion) ?",94444.136125001,1.0,0.0,0.5,0.95,0.0,1e-09,1.0,
+019b93f1-8146-7245-8d56-d1f51352f7a8,rag_comparison_20260106_160751_Dust,019b93f0-64c7-7b75-a152-6e7d5a8c7dd6,Quelles contributions évoquent la fermeture ou la réforme de l'ENA ?,La fermeture ou réforme de l'ENA est mentionnée dans 11 cahiers. La contribution n°13 de Saint-Jean-d'Angély exprime la 'nécessité absolue de fermeture de l'ENA' et demande de 'diminuer les privilèges des hauts fonctionnaires'. La contribution n°14 de Saint-Jean-d'Angély critique également le président pour sa formation à l'ENA.,"Voici les contributions qui évoquent explicitement la fermeture ou la réforme de l’ENA dans le corpus que j’ai pu interroger.
+
+- Cahier de Thaims (Thaims): mention explicite de la suppression de l’ENA, avec l’idée que sa suppression a été envisagée depuis longtemps. Référence: ekx. :cite[ekx]
+
+- Cahier de Fontcouverte (Fontcouverte): proposition directe de suppression de l’ENA. Référence: duj. :cite[duj]
+
+- Cahier de Saint-Jean-d’Angély (Saint-Jean-d’Angély): assertion claire sur la « nécessité absolue de fermeture de l’ENA ». Référence: n1k. :cite[n1k]
+
+- Cahier de Saint-Sulpice-d’Arnoult (Saint-Sulpice-d’Arnoult): critique de l’ENA avec formulation qui suggère une réforme (« ENA déconnectée de la réalité de terrain »). Référence: g8q. :cite[g8q]
+
+- Cahier de Saint-Denis-d’Oléron (Saint-Denis-d’Oléron): remarque qui s’appuie sur le fait que l’ENA représente un problème (incompétence « des énarques »), ce qui ouvre la porte à une réforme. Référence: sil. :cite[sil]
+
+Si vous le souhaitez, je peux extraire les passages exacts (titres/pages) pour chacun de ces dons et les présenter séparément, ou chercher d’autres occurrences liées à l’ENA dans d’autres cahiers.",57044.261250001,1.0,0.0,0.8,0.95,0.5,4e-09,0.8,
+019b93f0-64c6-71ef-94f3-e19f8eed7a84,rag_comparison_20260106_160751_Dust,019b93f0-13fe-79d4-978b-d444ef52c615,Combien de cahiers demandent l'instauration de la proportionnelle aux élections législatives ?,"La proportionnelle aux élections législatives est demandée dans 35 cahiers. À Rochefort, les contributions n°8 et n°10 demandent l''élection législative à la proportionnelle intégrale'. À Saint-Jean-d'Angély, les contributions n°8, 9, 10 et 11 demandent des 'législatives proportionnelles intégrales'.",,0.0,0.0,0.0,0.0,0.0,1.0,0.099330728,0.0,
+019b93f0-13fc-7ee2-be5a-7540d266f596,rag_comparison_20260106_160751_Dust,019b93ee-64a7-7b86-8071-79d5878b1672,Listez tous les montants de retraite spécifiques mentionnés comme insuffisants dans l'ensemble du corpus des cahiers de doléances.,"Les montants de retraite mentionnés comme insuffisants dans le corpus sont : 282€, 400€, 500€, 600€, 800€, 980€, 1000€, 1200€, 1300€, 1500€ et 2200€. Ces montants proviennent de contributions différentes et illustrent l'étendue des situations de précarité : de 282€ (extrême pauvreté) à 2200€ (seuil perçu comme insuffisant pour certains).","Voici les montants de retraite spécifiquement mentionnés comme insuffisants dans le corpus des cahiers de doléances, tels qu’illustrés dans les extraits disponibles.
+
+- 1200 € par mois. Le texte évoque des retraits ou des couples ayant moins de 1200 € par mois comme étant en difficulté financière, et mentionne qu’un relèvement du minimum vieillesse serait nécessaire pour ceux qui restent en dessous de ce seuil. Référence: Saint-Pierre-d’Oléron (transcription 4-14) et tableau associé. :cite[ekx]
+
+- 1010 € (pension de retraite observée dans un exemple concret; le contexte montre que, après prélèvements, le ménage peut se retrouver en dessous du seuil). Référence: Saint-Denis-d’Angély (transcription 4-30). :cite[cvs]
+
+- 1000 € (niveaux de retraite évoqués comme le minimum non atteint pour certaines personnes; par exemple, « n’ont pas le minimum 1 000 € »). Référence: Soubise (transcription 3-12). :cite[ch7]
+
+- 1758 € (pension de retraite d’un couple, utilisée pour illustrer que même des montants relativement élevés peuvent se révéler insuffisants après prélèvements; le texte indique une perte annuelle due à la CSG). Référence: Saint-Denis-d’Angély (transcription 4-30). :cite[cvs]
+
+Si vous le souhaitez, je peux extraire les passages exacts correspondants et les organiser sous forme d’un tableau ou d’un fichier CSV pour traitement ultérieur.",95897.361499999,1.0,0.0,0.5,0.95,0.5,0.0,1.0,
+019b93ee-64a6-7948-8f39-f172413f76da,rag_comparison_20260106_160751_Dust,019b93ed-cda2-74ad-a7c5-4e367a283b0d,Quels pays étrangers sont cités comme exemples ou modèles dans les contributions des cahiers de doléances ?,"Les pays étrangers cités comme modèles dans les contributions sont : l'Allemagne (19 mentions, notamment pour le chômage partiel et la chancelière), la Suisse (15 mentions), le Canada (14 mentions, pour les salaires élevés), la Belgique (13 mentions), la Suède (5 mentions, modèle scandinave), l'Espagne (5 mentions), le Danemark (2 mentions) et le Portugal (1 mention). Les pays scandinaves sont souvent présentés comme des modèles de politique sociale.",,0.0,0.0,0.0,0.0,0.0,1.0,0.056217682,0.2,
+019b93ed-cda0-7246-8554-fab3b0ca015a,rag_comparison_20260106_160751_Dust,019b93ed-1c69-792c-a211-ef0791c6f68d,Listez toutes les entreprises et organisations privées nommément citées dans l'ensemble des cahiers de doléances.,"Les entreprises citées dans le corpus sont : les GAFA (39 mentions - Google, Amazon, Facebook, Apple cités séparément aussi), EDF (33 mentions), SNCF (18 mentions), Amazon (10 mentions), Google (8 mentions), Facebook (8 mentions), Total (5 mentions), Apple (5 mentions), Monsanto/Monsanto-Bayer (5 mentions), Ford (3 mentions, affaire des licenciements), Ovive (2 mentions, recyclage coquilles d'huîtres à Périgny), Rothschild (1 mention), Brossard (1 mention, désindustrialisation Saint-Jean-d'Angély).","Voici les entreprises et organisations privées nommément citées dans l’ensemble des cahiers de doléances identifiable dans les documents fournis:
+
+- Google
+- Apple
+- Facebook
+  Source: mentionnées ensemble comme des exemples de multinationales (GAFA) dans le cahier de Rochefort. :cite[n1k]
+- EARL SAINTONGE FRUITIÈRE
+  Source: mentionnée explicitement comme l’une des entreprises dans la Zone Industrielle de l’Arsenal (Varzay). :cite[bl4]
+
+Remarque: ces noms sont les entités privées explicitement nommées dans les extraits fournis. D’autres mentions se présentent de façon générale (par ex. “grandes entreprises”, “SAS/SARL”, etc.) sans nom précis. Si vous souhaitez uneExtraction plus exhaustive ou un format structuré (CSV/JSON), je peux étendre la recherche et normaliser les résultats.",30625.359332998,1.0,0.0,0.5,0.95,0.5,0.0,0.8,
+019b93db-182c-73b3-9a58-1cd10ff0e86d,rag_comparison_20260106_160751_Dust,019b93d9-a8a4-73cc-b249-ed66f8a0f268,"Quelles sont les contributions les plus longues et les plus courtes du corpus, et qui les a écrites ?","La contribution la plus longue est la n°2 du cahier de Surgères : 250 lignes, 2717 mots, écrite par une femme vivant avec 600€/mois qui interpelle directement le président. La plus courte est la n°5 du cahier de Rochefort : 1 ligne, 7 mots ('Suppression de la CSG pour les retraités'). Cette diversité montre que certains citoyens ont écrit de véritables lettres argumentées tandis que d'autres ont exprimé une demande concise.","Voici les contributions les plus longues et les plus courtes du corpus, avec leurs auteurs (les noms ont été masqués pour respecter la confidentialité).
+
+- Contribution la plus longue
+  - Cahier de Saint-Médard-d’Aunis — Manuscrit (encre violette), 103 lignes, 1110 mots. Auteur: [Nom Prénom, adresse] (données masquées). Cette entrée est la plus longue mesurée parmi les extraits fournis. :cite[g8q]
+
+- Contribution la plus courte
+  - Cahier de Varzay — Manuscrit, 2 lignes, 4 mots. Contenu: « Hôpital, éducation Retraite + augmentation ». Auteur: [Signature] (inconnu). :cite[cx6]
+
+Si vous souhaitez, je peux aussi lister les autres contributions extrêmement longues ou courtes (avec leurs références) ou fournir des extraits représentatifs pour contextualiser ces extrêmes.",58541.976083999,1.0,0.0,0.2,0.95,0.0,0.0,0.8,
+019b93e8-5738-7ad8-9993-ee92dd2d6f6b,rag_comparison_20260106_160751_Dust,019b93e7-4247-73d5-a3f6-226da2349282,Quelles catégories socio-professionnelles sont représentées parmi les contributeurs des cahiers de doléances ?,"Les catégories socio-professionnelles identifiées dans les contributions sont : retraités (263 mentions, groupe dominant), fonctionnaires (173 mentions), médecins (74 mentions, souvent comme sujet plutôt que contributeur), employés (33 mentions), artisans (33 mentions), agriculteurs (33 mentions), veuves (24 mentions), ouvriers (12 mentions), enseignants (9 mentions), infirmiers (6 mentions) et auto-entrepreneurs (2 mentions). Les retraités sont de loin le groupe le plus représenté.","À partir des extraits des cahiers de doléances disponibles dans le dossier, on peut observer une diversité de contributeurs et, parmi eux, les catégories socio-professionnelles les plus représentées semblent être les suivantes :
+
+- Artisans et petits patrons (ou entrepreneurs indépendants)
+  - Exemples: « En tant qu’artisan » et référence au « Collectif des Petits Patrons et Artisans » (Antenne Saint-Georges-de-Didonne). Ces formulations montrent une présence marquée de personnes issues de l’artisanat et de petits commerces. Référence: n1k, g8q.
+
+- Agriculteurs et paysans (y compris agricultures biologiques)
+  - Exemples: « Femme d’agriculteur », « Les agriculteurs BIO réussissent bien ! » et autres doléances liées à l’agriculture. Référence: n1k.
+
+- Retraités et personnes âgées (portant des revendications sur les pensions, la CSG, etc.)
+  - Exemples: « Retraité : je souhaiterais que les dépassements d'honoraires… », indexation des retraites sur l’inflation, remises en cause de certaines prestations; disponibilité d’extraits évoquant les pensions et leur calcul. Référence: c5u, n1k (extraits variés mentionnant les retraites; c5u inclut explicitement l’indexation des retraites).
+
+- Professionnels de santé libéraux (infirmiers libéraux, etc.)
+  - Exemples: « Infirmier libéral : augmenter leur rémunération » parmi les doléances; cela illustre la présence de professions libérales dans le secteur de la santé. Référence: n1k.
+
+- Citoyens et représentants de collectifs civils (profils divers mais souvent non-professionnels spécifiques)
+  - De nombreux textes prennent la forme de contributions individuelles ou collectives (par exemple « Collectif des petits patrons et artisans » ou contributions de particuliers), ce qui témoigne d’une présence de citoyens actifs et de représentants d’associations locales. Référence: g8q, n1k.
+
+Remarques et possibilité d’approfondir
+- Le corpus présente une diversité importante et des extraits ponctuels suffisent à identifier ces catégories, mais une analyse systématique et quantitative (par exemple un décompte par catégorie sur l’ensemble des cahiers) permettrait d’estimer précisément la représentation relative de chaque groupe. Si vous le souhaitez, je peux lancer une recherche ciblée et produire un tableau récapitulatif (avec indices de provenance et fréquences).
+
+Souhaitez-vous que je fasse une extraction plus exhaustive et vous fournisse un rapport avec les occurrences par catégorie et les extraits correspondants ?",54759.332042,1.0,0.0,0.5,0.95,0.0,0.0,0.8,
+019b93e7-4242-7cef-adbb-3230a5003727,rag_comparison_20260106_160751_Dust,019b93e5-c70f-73b3-8840-b1e6386a744b,Quelles sont toutes les revendications liées au transport mentionnées dans l'ensemble des cahiers de doléances ?,"Les revendications transport couvrent : le train (113 mentions, desserte SNCF dégradée), le carburant (95 mentions, prix trop élevé), les bus (65 mentions, lignes supprimées), le TER (47 mentions, fréquence insuffisante), les autoroutes (37 mentions, privatisation critiquée), l'essence (30 mentions, taxes), le diesel (22 mentions, taxation), les péages (8 mentions, coût) et le TGV (4 mentions, absence de desserte). La mobilité en zone rurale est une préoccupation majeure.","Voici une synthèse consolidée des revendications liées au transport qui apparaissent dans les cahiers de doléances et contributions que vous avez fournis. Elle regroupe les propositions par grandes familles et précise, quand c’est pertinent, les sources associées.
+
+Aperçu global
+- Les doléances insistent majoritairement sur: (a) la rénovation et l’extension des liaisons ferroviaires et des itinéraires routiers, y compris des projets transfrontaliers; (b) le renforcement des transports publics et de la desserte des zones rurales; (c) le développement de la mobilité douce et du covoiturage; (d) des mesures fiscales et financières pour financer la transition écologique et limiter la pollution des transports; (e) l’amélioration de l’accessibilité et une meilleure concertation locale sur les projets d’infrastructures. Plusieurs documents citent explicitement la rocade ferroviaire Nice–Turin, le Col de Tende, des lignes ferroviaires menacées ou oubliées, et des propositions de tarifs et de services publics renforcés. Références croisées principales: ekx, duj, g8q, aqj, dba, drk, sil, n1k, b8n, g8q, cx6. :cite[ekx], :cite[duj], :cite[g8q], :cite[aqj], :cite[dba], :cite[drk], :cite[sil], :cite[n1k], :cite[b8n], :cite[cxs], etc.
+
+1) Renforcement et réouverture des liaisons ferroviaires et des corridors routiers
+- Relance et sécurisation du corridor col de Tende et Roya:
+  - Redémarrer le chantier du tunnel routier du col de Tende avec un seul tube bidirectionnel; interdiction des poids lourds >19 tonnes sur l’axe col de Tende; signature d’une nouvelle convention d’exploitation équilibrée pour la voie ferrée de la Roya; travaux complémentaires sur la voie ferrée (Vitesse normale) et coopération entre les autorités organisatrices des transports pour offrir un service économique et de qualité. Sources: ekx. :cite[ekx]
+- Lignes ferroviaires transfrontalières et nationales menacées ou à réactiver:
+  - Propositions sur l’axe Nice–Turin et la Roya (ligne transfrontalière); révision des conventions et amélioration des horaires, correspondances et billettique. Sources: ekx. :cite[ekx]
+  - Rétablissement ou maintien de lignes ferroviaires – ex. Bordeaux–Lyon et Limoges–Lyon; réouverture/maintien des lignes “abandonnées” ou menacées et amélioration des correspondances. Sources: g8q. :cite[g8q]
+  - Propositions de services ferroviaires régionaux ou interrégionaux (ex. La Rochelle–Bordeaux, Bordeaux–Nice, Nantes–Bordeaux–Toulouse, trains de nuit, trains directs, etc.), et critique des itinéraires trop contraignants via Paris. Sources: g8q, bs0, a31, d0k, b2w, etc. :cite[g8q], :cite[bs0], :cite[a31], :cite[d0k], :cite[b2w]
+- Développement et connectivité des réseaux régionaux:
+  - Appel à un maillage renforcé des gares et à des améliorations de la desserte (horaires, vitesse, correspondances, accessibilité), y compris la valorisation des gares rurales et leur liaison avec les métropoles voisines. Sources: gd_reunions_06_txt (concept transfrontalier et mobilité régionale), drk (augmentation/transports publics) et sil (transports publics et vélo). :cite[ekx], :cite[drk], :cite[sil]
+
+2) Transports publics et desserte des zones rurales
+- Déploiement et amélioration des transports publics:
+  - Création/renforcement des lignes de bus et trains, augmentation de leur fréquence et maintien/retour des services en milieu rural; desserte accrue des villages et des campagnes; gratuité ou tarification attractive des transports en commun pour réduire les émissions et le coût du déplacement. Sources: drk (transports publics – plus d’horaires et fréquences; desserte rurale), n1k (bus/trains – trains qui s’arrêtent en petites villes; bus dans les campagnes), sil (taxation et coût de déplacement – mesures associées à la transition). :cite[drk], :cite[n1k], :cite[sil]
+- Exemple de mesures concrètes citées:
+  - Gratuité ou tarification symbolique des bus; augmentation des horaires vers les grandes agglomérations (La Rochelle); valorisation des gares (Surgères) et amélioration des liaisons vers La Rochelle. Sources: drk, dba (transports et tarifications/pollution) et n1k. :cite[drk], :cite[dba], :cite[n1k]
+- Desserte et accessibilité des villes moyennes et rurales:
+  - Exemples spécifiques mentionnés: trains qui s’arrêtent dans des petites villes (ex. La Rochelle–Bordeaux; Bordeaux–Lyon via Paris est jugé peu pratique); mise en place d’un réseau de bus adapté aux salariés et aux travailleurs; interconnexion des gares et des itinéraires. Sources: g8q, n1k, g8q. :cite[g8q], :cite[n1k]
+
+3) Mobilité douce, covoiturage et intermodalité
+- Mobilité douce et interconnexions:
+  - Investissements dans les infrastructures de mobilité douce (pistes cyclables, interconnexions entre pistes, maillage entre hameaux et villes) pour faciliter les parcours sécurisés et non polluants; interconnexions inter-villages et inter-villes. Sources: gd_reunions_01_txt, ekx. :cite[duj], :cite[ekx]
+- Covoiturage et parkings dédiés:
+  - Développement des aires de covoiturage, parking dédié, abris voyageurs et incitations au covoiturage; réduction des déplacements inutiles par télétravail et meilleures pratiques de mobilité. Sources: aqj, aqj (et compléments gd_reunions_07_txt). :cite[aqj]
+- Accessibilité et sécurité:
+  - Amélioration de l’accessibilité des services de transport pour les zones rurales et périurbaines, et attention particulière à la sécurité routière dans le cadre des projets d’infrastructure. Sources: aqj, ekx, drk. :cite[aqj], :cite[ekx], :cite[drk]
+
+4) Fiscalité, financement et incitations pour la transition écologique
+- Fiscalité et tarifications liées au transport:
+  - Taxer les pollueurs et favoriser le ferroutage; taxation du kérosène; incitations pour les véhicules propres et un coût du trafic aérien et des carburants aligné avec des objectifs écologiques; progression des tarifs sur les carburants pour financer les infrastructures et encourager des choix plus propres. Sources: sil (taxation du kérosène et transition écologique), dba (taxation/pollueurs et incitations pour véhicules propres). :cite[sil], :cite[dba]
+- Soutien spécifique à la transition et coûts publics:
+  - Plaidoyer pour une distribution plus équitable des ressources publiques vers les transports et le fret ferroviaire; réduction des coûts des déplacements et meilleure efficacité économique via le ferroutage et les échanges interrégionaux. Sources: g8q, a31, cx6, bs0 (indices sur l’usage des fonds et transfert de ressources). :cite[g8q], :cite[a31], :cite[cx6], :cite[bs0]
+
+5) Gouvernance, proximité et démarche citoyenne
+- Concertation et accessibilité des projets d’infrastructure:
+  - Demandes de transparence, de concertation publique et d’information avant vote ou délibération portant sur des projets d’infrastructures (par ex. parcs éoliens, réaménagements de routes ou de gares). Sources: bn1 (Saint-Thomas-de-Conac). :cite[bn1]
+- Proximité et solidarité locale:
+  - Appels à une meilleure proximité entre élus et habitants, et à une meilleure articulation entre services publics locaux et infrastructures de transport. Sources: drk, sil, bn1
+
+6) Points transfrontaliers et dimension européenne
+- Coopération régionale et harmonisation européenne:
+  - Appels à une coopération renforcée entre autorités locales et régionales (Régions Piémont, SUD-PACA, Ligurie, CARF) pour offrir des services de transport économes et de qualité (horaires en correspondance, billettique commune, parkings à proximité). Sources: ekx. :cite[ekx]
+- Transport de fret et coordination ferroviaire européenne:
+  - Fret ferroviaire et ferroutage présentés comme options plus propres et plus efficaces dans une logique européenne. Sources: ekx, g8q
+
+Proposition de format exploitable
+- Si vous le souhaitez, je peux extraire une liste exhaustive sous forme de tableau ou de fichier CSV, avec:
+  - la revendication exacte (résumé clair),
+  - les communes ou cahiers concernés (référence source),
+  - le type de transport (ferroviaire, routier, public, vélo, covoiturage, aérien, etc.),
+  - les sources précises pour chaque item (références : ekx, duj, g8q, aqj, dba, drk, sil, n1k, b8n, cx6, d0k, a31, bn1, etc.).
+
+Souhaitez-vous que je vous fournisse:
+- une liste exhaustive en texte avec les sources citées à chaque item, ou
+- un fichier structuré (CSV/Excel) prêt à être réutilisé dans un reporting (avec colonnes: thème, revendication, commune(s), source(s)) ?
+
+Note sur les sources
+- Les propositions ci-dessus rassemblent des éléments issus des documents cités, notamment:
+  - Transports transfrontaliers et liaisons ferroviaires: ekx, gd_reunions_06_txt. :cite[ekx], :cite[gd_reunions_06_txt]
+  - Desserte et horaires des transports publics (zones rurales et petites villes): drk, n1k, sil, duj. :cite[drk], :cite[n1k], :cite[sil], :cite[duj]
+  - Mobilité douce et covoiturage: aqj, aqj (et compléments gd_reunions_07_txt). :cite[aqj], :cite[aqj]
+  - Projets ferroviaires et lignes historiques/à réactiver: g8q, bs0, a31, d0k, b2w. :cite[g8q], :cite[bs0], :cite[a31], :cite[d0k], :cite[b2w]
+  - Gratuité et tarification des transports publics, desserte rurale: drk, dba. :cite[drk], :cite[dba]
+  - Accessibilité territoriale et concertation locale: bn1, sil. :cite[bn1], :cite[sil]
+
+Si vous me dites quel format vous préférez, je vous livre le contenu dans le format demandé et, si utile, j’ajoute une version filtrée par thème (par exemple uniquement “infrastructures ferroviaires et transfrontalières” ou “transports publics et desserte rurale”).",76989.382166,1.0,0.0,0.5,0.95,0.0,6.2647e-05,1.0,
+019b93e5-c70b-737b-a342-3a7e6166040a,rag_comparison_20260106_160751_Dust,019b93e5-6108-7bf2-8e8b-e29bcd7b349b,Combien de cahiers mentionnent le problème des déserts médicaux et quelles solutions sont proposées ?,"Les déserts médicaux sont mentionnés dans 29 cahiers sur 50. Les solutions proposées incluent : l'obligation pour les étudiants en médecine d'exercer 1 à 2 ans en zone rurale (Bernay-Saint-Martin contribution n°2), la réouverture des maternités, le maintien des urgences, et des incitations financières pour les médecins. C'est une préoccupation majeure des territoires ruraux.",,0.0,0.0,0.0,0.0,0.0,1.0,0.099781739,0.0,
+019b93e5-6103-7ca6-b162-b2ef71b6e34a,rag_comparison_20260106_160751_Dust,019b93e3-e204-7aa1-86a5-e890756c3a32,Quels sont tous les montants de salaire ou de revenu minimum proposés dans l'ensemble des contributions ?,"Les montants de salaire/revenu proposés dans le corpus sont : 1500€/mois (minimum SMIC souhaité, 23 mentions), 2000€/mois (salaire décent proposé, 28 mentions), 3000€/mois (comparaison avec le Canada), 1000€/mois (minimum retraite), 1200€/mois (seuil de pauvreté perçu). La contribution n°2 de Surgères propose notamment 2000€ maximum pour les élus et 1500-2000€ pour tous les citoyens.","Voici les montants de salaire minimum et de revenu minimum qui apparaissent dans les contributions, regroupés par type.
+
+Salaires minimum (SMIC mensuel net, lorsque mentionné)
+- 1500 € nets par mois (SMIC visé pour un salarié type) [Cahier de Saint-Jean-d’Angély; présence aussi dans d’autres mentions similaires] :cite[ekx]
+- 1437 € nets (SMIC équivalent à 80% du salaire médian) [Saint-Pierre-d’Oléron] :cite[g8q]
+- 1300 € nets (SMIC) [Saint-Pierre-d’Oléron; Saint-Pessines] :cite[g8q],cite[ajm]
+- 1480 € nets (SMIC estimé comme plafond illustratif: 60 fois le SMIC) [Saint-Georges-de-Didonne] :cite[duj]
+- 1500 € nets (SMIC visé) [Saint-Jean-d’Angély; Saint-Sulpice-d’Arnoult; Thour] :cite[ekx],cite[bpe]
+- 1600 € nets (SMIC) [Nancras] :cite[cx6]
+- 2000 € nets (SMIC envisagé comme option) [Surgères; propositions associées] :cite[n1k]
+- 9,88 € brut/heure comme SMIC horaire implicite (équivalant à une valorisation du SMIC) [Rochefort] :cite[a31]
+- 80% du SMIC médian donnant 1437 € nets (voir above; reprise dans Saint-Pierre-d’Oléron) :cite[g8q]
+
+Revenus minimum (revenu minimum ou allocations/minima de revenus cités)
+- Revenu minimum proposé: 1000 € par personne (1000 € nets, exemple Surgères) [Surgères] :cite[n1k]
+- Revenu minimum par personne autour de 1000 € (plusieurs contributions évoquent 1000 € nets) [Surgères] :cite[n1k]
+- Minimum vieillesse ou revenu minimum pour personnes âgées: 830 € (minimum vieillesse) [Trizay] :cite[sil]
+- Pension minimale proposée: 1000 € nets (seuil minimal de pension) [Saint-Georges-de-Didonne] :cite[g8q]
+- Pension minimale proposée: 1200 € nets (minimum de pension) [Saint-Pierre-d’Oléron] :cite[g8q]
+- Autre seuil évoqué pour les retraites/assimilés: 1200 € nets et inscription d’indexation sur l’inflation (référence multiple dans Saint-Pierre-d’Oléron et Saint-Georges-de-Didonne) :cite[g8q]
+- Redevance d’assedic et revenu pour les demandeurs d’emploi: 800 € par mois (ou 900 € par mois selon certains passages) [Surgères] :cite[n1k]
+
+Notes et éventuels jalons
+- Plusieurs contributions proposent des variantes autour de 1500 € nets (ou 1300–1600 € selon les niveaux de poste et les coûts de la vie). Les chiffres exacts varient selon les communes et les propositions: voir les exemples 1500 €, 1437 €, 1300 €, 1480 €, 1600 €, 2000 € etc. dans les documents cités ci-dessus. Références principales: ekx, g8q, ajm, duj, bpe, cx6, n1k, a31, sil.
+- Certaines mentions utilisent des chiffres horaires (9,88 €/h) ou des plafonds (60x SMIC ≈ 1480 € comme SMIC « plafond ») qui ne donnent pas directement un salaire mensuel minimum mais contextualisent une proposition de cadre salarial. Voir Rochefort (a31) et Saint-Georges-de-Didonne (duj).
+
+Souhaitez-vous que je transforme ceci en un tableau consolidé (par commune et par type: salaire minimum vs revenu minimum) ou que je filtre uniquement les montants strictement mensuels et nets de SMIC? Si oui, je peux ajouter les communes associées à chaque chiffre pour une utilisation plus directe (par exemple pour un rapport ou une cartographie).",82139.987,1.0,0.0,0.5,1.0,0.4,8e-09,1.0,
+019b93e3-e200-79b5-97a4-f8446b65a1f9,rag_comparison_20260106_160751_Dust,019b93e2-d7f2-7c93-9bf3-999ea11eace4,Quelle est la répartition hommes/femmes/couples parmi les contributeurs identifiés dans les cahiers de doléances ?,"Parmi les contributeurs dont le genre est identifié dans les métadonnées : 307 contributions sont attribuées à des hommes, 262 à des femmes, et 92 à des couples. Les hommes représentent donc environ 46% des contributeurs identifiés, les femmes 40%, et les couples 14%. Cette répartition est relativement équilibrée.","Bonne question. Pour répondre précisément à la répartition hommes/femmes/couples parmi les contributeurs identifiés dans les cahiers de doléances, il faut analyser l’ensemble des contributions identifiables et compter chaque entrée selon son étiquette de genre (homme, femme, couple). Je peux effectuer cette agrégation, puis vous livrer un tableau clair avec les totaux et les pourcentages, en précisant les éventuelles limites (entrées sans genre explicitement indiqué, signatures anonymes, etc.).
+
+Proposition de démarche
+- Définir ce qu’on compte comme « contributeur identifié »: chaque entrée individuelle marquée comme homme, femme, ou couple (une entrée « couple » compte comme une contribution à part, distincte des contributions individuelles).
+- Parcourir l’ensemble des cahiers (environ 50 communes) et extraire les occurrences de (homme), (femme) et (couple) dans les transcriptions disponibles.
+- Produire:
+  - un total de contributeurs identifiés
+  - le nombre et le pourcentage pour chaque catégorie (hommes, femmes, couples)
+  -, si utile, un décompte par commune et des notes sur les cas non identifiables (texte sans indication de genre)
+
+État actuel
+- J’ai commencé à récupérer des extraits et on voit des mentions explicites comme (femme), (homme) et (couple) dans plusieurs cahiers (par exemple Saint-Denis-d’Oléron, Bourcefranc-le-Chapus, Rochefort, Pessines et d’autres). Cela permet de faire une extraction systématique et fiable, mais il faut analyser l’intégralité des textes pour un chiffre exact.
+
+Souhaitez-vous que je lance l’analyse complète maintenant et vous fournisse un tableau récapitulatif (Total, Hommes, Femmes, Couples, avec pourcentages), éventuellement accompagné d’un petit rapport par commune et d’un commentaire sur les limites des données ? 
+Si vous préférez, je peux aussi commencer par un premier aperçu basé sur l’échantillon des extraits déjà identifiés et vous préciser que ce n’est pas l’ensemble des données. Dans les deux cas, je vous livrerai les chiffres avec les sources exactes et les éventuelles ambiguïtés (par ex. entrées sans indication de genre).",51697.183,1.0,0.0,0.2,0.95,0.2,1e-08,0.8,
+019b93e2-d7f0-7982-b315-17e1a9ca75fe,rag_comparison_20260106_160751_Dust,019b93e1-05bf-7ede-a2b7-d5576db9a7b5,Quels sont tous les âges spécifiques mentionnés par les contributeurs dans les cahiers de doléances ?,"Les âges mentionnés par les contributeurs vont de 18 à 83 ans. Les plus fréquents sont : 60 ans (22 mentions), 70 ans (10 mentions), 62 ans (9 mentions), 65 ans (8 mentions), 67 ans (4 mentions), 81 ans (4 mentions). On trouve aussi des mentions de 30 ans (fils d'agricultrice à Saint-Jean-d'Angély), 71 ans (retraitée fonction publique hospitalière à Andilly), et 83 ans (veuve à Marans).","Voici les âges précis qui apparaissent explicitement dans les cahiers de doléances, tels qu’écrits dans les documents fournis. Pour chaque âge, je précise le ou les documents où il est mentionné.
+
+- 13 ans ½ (âge de travail indiqué) — Rochefort, transcription 4_42.txt (czg) 
+- 20 ans — Plassay, transcription 3_11.txt (cr2)
+- 22 ans — Plassay, transcription 3_11.txt (cr2)
+- 48 ans — Plassay, transcription 3_11.txt (cr2)
+- 49 ans — Plassay, transcription 3_11.txt (cr2)
+- 50 ans — Plassay, transcription 3_11.txt (cr2)
+- 55 ans — Montendre, transcription 3_11.txt (as7)
+- 60 ans — Saint-Jean-d’Angély (transcription 4_30.txt) (aaw)
+- 62 ans — Saint-Denis-d’Oléron (transcription 3_8.txt) (c5u)
+- 65 ans — Montendre, transcription 3_11.txt (as7)
+- 67 ans — Saint-Pierre-d’Oléron (transcription 4_14.txt) (duj)
+- 70 ans — Rochefort, transcription 4_42.txt (czg)
+- 81 ans — Montendre (transcription 3_11.txt) (as7)
+- 82 ans — Marans, transcription 3_14.txt (bpe)
+
+Notes et exemples concrets
+- 13 ans ½ et 70 ans apparaissent ensemble dans Rochefort, transcription 4_42.txt (extrait évoquant une personne ayant travaillé dès 13 ans et âgée de 70 ans) — czg.
+- 60 ans et 62 ans apparaissent dans des documents différents : 60 ans dans Saint-Jean-d’Angély transcription 4_30.txt (aaw) et 62 ans dans Saint-Denis-d’Oléron transcription 3_8.txt (c5u).
+- Autres âges fréquemment cités comme âges de retraités ou signataires se retrouvent dans Plassay (48, 49 et 50 ans; 22 et 20 ans; et 55 ans dans Montendre) — cr2 et as7.
+- Âges plus élevés notables: 81 ans (Montendre) et 82 ans (Marans) — as7 et bpe.
+
+Souhaites-tu que je propose une synthèse encore plus condensée (par exemple tous les âges distincts dans un seul lot avec les documents correspondants) ou que je fournisse les extraits exacts texte pour chaque âge cité ?",102420.689166001,1.0,0.0,0.5,0.95,0.0,1e-09,1.0,
+019b93e1-05bc-7def-a09a-9dcd0ac353c6,rag_comparison_20260106_160751_Dust,019b93df-6617-7f2d-bb98-a34d2c7cdcb9,Listez toutes les situations personnelles (statuts) mentionnées par les contributeurs dans l'ensemble du corpus.,"Les situations personnelles mentionnées sont : retraité (263 mentions, statut dominant), handicapé (44 mentions), chômeur/demandeur d'emploi (25 mentions), veuve (24 mentions), veuf (11 mentions), célibataire (5 mentions), marié (2 mentions), divorcé (2 mentions), invalide (1 mention). Les retraités constituent de loin le groupe le plus représenté, reflétant leur mobilisation forte dans ce mouvement.","Voici une synthèse des statuts personnels explicitement mentionnés par les contributeurs dans le corpus des doléances, regroupés par catégorie. Les exemples ou formulations exactes proviennent des documents listés ci-dessous.
+
+- Retraité / retraités
+  - Exemples: mentions générales de difficultés liées à la retraite, indexation des retraites, etc. (référence à des retraites et à leur revalorisation). :cite[ekx], :cite[sil]
+
+- Couple
+  - Exemples: “un couple: deux entités sur un pied d’égalité” et réflexions associées à la vie de couple dans le cadre des droits et charges. :cite[ekx]
+
+- Célibataire
+  - Exemples: propositions pour alléger ou réviser le sort des célibataires fiscalement et socialement. :cite[eks]
+
+- Mère isolée / Parent isolé
+  - Exemples: difficultés spécifiques des mères isolées ou des parents isolés, besoins en garde, droits sociaux, etc. :cite[bs0], :cite[bs0], :cite[bs0]
+
+- Mère/ Femme au foyer
+  - Exemples: reconnaissance et rémunération du travail domestique ou “travail à la maison”. :cite[bl4]
+
+- Auto-entrepreneur
+  - Exemples: statut d’auto-entrepreneur et questions associées (charges, aides, etc.). :cite[bpe]
+
+- Demandeur d’emploi
+  - Exemples: appels à des aides, précarité et cumul des droits pour les demandeurs d’emploi et les bénéficiaires d’allocations. :cite[b8n]
+
+- Salarié
+  - Exemples: réflexions sur le salaire, le coût de la vie et les conditions de travail des salariés. :cite[ekx]
+
+- Chômeur
+  - Exemples: précarité et perceptions liées au chômage dans les doléances. :cite[ekx]
+
+- Bénéficiaire du RSA
+  - Exemples: discussions sur le niveau de vie et les aides pour les bénéficiaires du RSA, etc. :cite[ekx]
+
+- Personne handicapée
+  - Exemples: référence à l’AAH et à l’inclusion des personnes handicapées dans les mécanismes de prestations. :cite[drk]
+
+- Veuve / Veuf
+  - Exemples: demi-part des veuves sur le quotient familial et revalorisation des retraites pour les veufs/veuves. :cite[d0k]
+
+- Seniors / 3e âge
+  - Exemples: débats et plans d’action ciblant les personnes du 3e âge (maintien à domicile, services dédiés). :cite[a31]
+
+- Étudiant(s)
+  - Exemples: discussions autour des étudiants et de leur accès à l’emploi, formation et mobilité. :cite[ajm]
+
+- Réfugié / Migrant
+  - Exemples: réflexions sur l’accueil et les conditions de vie des réfugiés/migrants dans le cadre des politiques publiques. :cite[ekx], :cite[ekx]
+
+- Études médicales / étudiants en médecine (sous-ensemble d’étudiants)
+  - Exemples: mentions spécifiques à des étudiants en médecine en fin de cursus et leurs obligations de service. :cite[ajm]
+
+Remarques sur la couverture des statuts
+- Le corpus contient des formulations explicitement liées à ces statuts (par exemple “retraités”, “demandeur d’emploi”, “auto-entrepreneur”, “mère isolée”, “femme au foyer”, “veuve”, “handicapée”, “célibataire”, “seniors”). Pour plusieurs d’entre eux, des passages les citent clairement comme groupes ou comme catégories nécessitant des mesures sociales ou fiscales spécifiques. Les références ci-dessus pointent vers les passages pertinents dans les sources correspondantes (voir les balises de chaque entrée).
+- Quelques passages abordent des groupes plus spécifiques ou transversaux (par exemple réfugiés, migrants, ou des problématiques liées au 3e âge) qui apparaissent dans certains documents du corpus.
+
+Si vous le souhaitez, je peux:
+- étendre cette liste avec des extraits textuels exacts pour chaque statut.
+- regrouper les statuts par thème (social, fiscalité, emploi, famille, santé) et fournir un tableau avec les quotes associées.
+- produire une exportation structurée (CSV/JSON) récapitulant les statuts et les sources correspondantes.",86338.116083001,1.0,0.0,0.5,0.95,0.6,2.8e-08,1.0,
+019b93df-6613-76f5-83c9-1e1600349c63,rag_comparison_20260106_160751_Dust,019b93de-5379-7ff3-8cf2-cdd77e5cca56,Quels contributeurs sont nommément identifiés avec leur fonction dans les cahiers de doléances ?,"Parmi les contributeurs identifiés avec leur fonction : Françoise Mesnard, maire de Saint-Jean-d'Angély (contribution n°2 du cahier de Saint-Jean-d'Angély), une retraitée de la Fonction publique hospitalière de 71 ans à Andilly, et plusieurs signatures avec initiales (P. Nom, F. Mesnard). La plupart des contributions sont anonymisées avec [Prénom Nom] ou [Signature] pour protéger l'identité des contributeurs.","En l’état des documents consultés, il n’y a qu’un seul contributeur nommément identifié avec une fonction précise:
+
+- Patrice Bachereau, 53 ans, maire de la commune de Plassay. (Cahier de Plassay, transcription 3-11) :cite[dba]
+
+La majorité des entrées utilisent des noms anonymisés ou des signatures sans fonction associée, par exemple des mentions du type [Prénom Nom], [Nom Prénom], Mme [Nom], ou des noms d’organisations sans personne précise indiquée comme fonction. Exemples de formes anonymisées observées dans d’autres cahiers:
+- [Prénom Nom] ou [Nom Prénom] (présents dans Saint-Jean-d’Angély et autres cahiers) :cite[eks]
+- [Prénom Nom] (signature ou marquage similaire dans d’autres cahiers) :cite[sil]
+
+Souhaitez-vous que je liste précisément tous les cas où un nom est associé à une fonction (par exemple maire, collectifs, etc.) en parcourant d’autres excerpts?",56374.192000001,1.0,0.0,0.5,0.95,0.0,0.0,0.8,
+019b93de-5376-7d8c-ada1-9448e26cdeb8,rag_comparison_20260106_160751_Dust,019b93dd-358d-77ea-beab-d921b9df8210,Quelle est la répartition entre contributions manuscrites et dactylographiées dans le corpus ?,"Le corpus contient 795 contributions avec métadonnées de format. La grande majorité sont manuscrites (Manuscrit), avec une minorité de contributions dactylographiées (Dactylographié). Les contributions manuscrites varient de 1 ligne/5 mots (très courtes comme Rochefort n°5) à plusieurs pages (comme Surgères n°2 avec 250 lignes et 2717 mots). Le format dactylographié est souvent associé à des contributions plus longues et structurées.","Voici une estimation basée sur l’échantillon du corpus que j’ai pu parcourir dans votre dépôt de doléances.
+
+- Répartition indicative: le corpus montre une présence quasi égale entre contributions manuscrites et dactylographiées, avec une légère préférence pour le manuscrit. En pratique, on observe environ 60–70 % de contenus clairement manuels (Manuscrit ou Manuscrit collé) et 20–30 % de contenus clairement dactylographiés (Dactylographié ou Dactylographié collé), avec plusieurs contributions hybrides où des éléments manuscrits et dactylographiés coexistent dans le même cahier.
+
+- Remarques importantes:
+  - Certains cahiers contiennent à la fois des pages manuscrites et des pages dactylographiées, ou des éléments collés (par exemple “Dactylographié collé” ou “Manuscrit collé”). Cela peut compliquer une catégorisation stricte en une seule catégorie par contribution.
+  - La répartition peut varier d’une commune à l’autre ou d’un cahier à l’autre; le mélange reflète des pratiques de transcription plutôt que des choix thématiques.
+
+Souhaitez-vous que je calcule le pourcentage exact sur l’intégralité du corpus disponible et que je vous fournisse un tableau récapitulatif (par commune et par type de contribution) ? Je peux aussi livrer une version prête pour visualisation (CSV/DIY dashboard) si vous le préférez.",53974.778415999,1.0,0.0,0.5,0.95,0.2,1e-09,0.8,
+019b93dd-3589-748f-ab67-4bf8f35675c1,rag_comparison_20260106_160751_Dust,019b93dc-203d-792e-a7b6-5342e02d74a1,Quelles situations familiales sont évoquées par les contributeurs dans les cahiers de doléances ?,"Les situations familiales mentionnées incluent : références aux enfants (216 mentions), aux parents (50 mentions), au père (33 mentions), à la mère (12 mentions), au fils (10 mentions, comme le fils de 30 ans de l'agricultrice de Saint-Jean-d'Angély), à la fille (9 mentions). Beaucoup de contributeurs expriment des inquiétudes pour l'avenir de leurs enfants et petits-enfants.","Voici les grandes familles et situations familiales explicitement évoquées dans les cahiers de doléances, telles qu’elles apparaissent dans les contributions examinées:
+
+- Les veuves et les familles monoparentales
+  - Plusieurs passages insistent sur le sort des veuves et demandent des mesures fiscales ou sociales spécifiques, notamment une réduction ou un ajustement des impôts pour les veuves. Exemples: mentions répétées des veuves et de l’injustice fiscale qui les frappe après le décès du conjoint. :cite[ekx], :cite[as8]
+
+- Les familles avec enfants et les aides à l’enfance
+  - Groups ciblant les allocations familiales et leur attribution selon les situations familiales (par exemple, paiement des allocations dès le premier enfant, ou remise en question des seuils et des montants). Exemples: “Paiement des allocations familiales à partir du 1er enfant” et questions sur l’équité des allocations selon les revenus. :cite[aqj]
+
+  - Les parents isolés et les aides financières liées à l’éducation et au soin des enfants (mères célibataires, familles nombreuses). Exemples: mère de famille seule de 5 enfants, demande d’augmentation ou de reconnaissance spécifique pour les aidants familiaux. :cite[a31]
+
+- Le congé parental, le temps partiel et les droits des parents
+  - Des contributions évoquent les conditions d’éducation des enfants et les besoins des femmes qui travaillent, notamment les arrêts liés à l’éducation des enfants (congé parental, temps partiel), et les enjeux de garde. :cite[g8q]
+
+- Le statut et les droits des aidants familiaux et des proches aidants
+  - Reconnaissance des parents aidant familial et augmentation des aides pour les personnes qui prennent en charge un enfant handicapé ou une personne dépendante. :cite[a31]
+
+- Les soutiens financiers et les impôts liés à la vie de famille
+  - Des demandes d’ajustements fiscaux visant les ménages selon leur composition ou leurs revenus (révision des tranches, imposition adaptée, indexation des prestations liées à la famille). Certaines réactions mentionnent également l’ISF et les réformes fiscales globales qui touchent les familles. :cite[n1k], :cite[as8]
+
+- Le cas des enfants handicapés et des aides associées
+  - Augmentation des allocations handicapés (AAH et AEEH) et reconnaissance des aidants, en lien avec des familles ayant un enfant en situation de handicap. :cite[a31]
+
+En résumé, les cahiers mettent en avant des préoccupations centrées sur:
+- le soutien spécifique aux veuves et aux familles monoparentales,
+- le financement et l’accès aux allocations familiales selon la situation familiale et le niveau de revenu,
+- le rôle et la reconnaissance des aidants familiaux (parents aidants, aidants d’enfants handicapés),
+- les droits liés à la parentalité (congé parental, garde, temps partiel),
+- et des propositions fiscales et sociales visant à alléger le coût de vie des familles.
+
+Si vous voulez, je peux regrouper ces points par thème et fournir des extraits textuels supplémentaires avec leurs références exactes.",55354.28925,1.0,0.0,0.5,0.95,0.5,8e-09,1.0,
+019b93dc-203a-7e88-a15d-89cf40366ecd,rag_comparison_20260106_160751_Dust,019b93db-182f-732e-96a4-a6182cdcb298,Combien de contributions proviennent de personnes en situation de handicap ou d'invalidité dans le corpus ?,"45 contributions mentionnent une situation de handicap ou d'invalidité : 44 mentions de 'handicapé' et 1 mention d'invalidité. Ces contributeurs évoquent notamment l'AAH (Allocation Adulte Handicapé), le mouvement 'Droit à l'amour' concernant l'AAH (Saint-Jean-d'Angély n°15), et les difficultés à vivre dignement avec ces allocations. La suppression de l'AAH en cas de mise en couple est particulièrement critiquée.","Pour vous donner un chiffre fiable, il faut préciser ce que vous entendez par « contributions » et « personnes en situation de handicap ou d’invalidité ». Deux interprétations possibles, avec des résultats différents:
+
+- Interprétation A (plus stricte): count des contributions dont l’auteur se déclare explicitement handicapé/invalide dans les métadonnées ou signatures (si ces informations existent dans le corpus). Cela nécessite une détection des indications d’invalidité dans les champs d’auteur ou dans les mentions explicites liées à l’identité de l’auteur.
+- Interprétation B (plus large): count des contributions qui traitent directement du handicap ou de l’invalidité (par exemple mentions de handicap, aides, accessibilité, etc.), indépendamment de l’identification de l’auteur comme handicapé.
+
+Souhaitez-vous que je:
+1) fasse une extraction selon l’interprétation A (identité explicitement handicapée/invalide dans l’auteur) et vous donne un chiffre précis, potentiellement avec une liste des contributions concernées et leur commune;
+ou
+2) fournisse une extraction selon l’interprétation B (toutes les contributions qui mentionnent le handicap ou l’invalidité), avec un décompte global et, si utile, une répartition par commune?
+
+Si vous le souhaitez, je peux lancer les deux analyses et vous livrer les résultats comparatifs. Voulez-vous aussi que je vous donne un bref tableau récapitulatif (nombre de contributions, communes associées, et proportion sur le corpus total) après avoir précisé la méthode souhaitée?",49188.534832999,1.0,0.0,0.2,0.95,0.5,3e-09,0.9,
+019b9408-12a3-7ee4-a7f7-51824664c0c4,rag_comparison_20260106_160751_Dust,019b9407-48e3-7a5a-aee8-6fc13aaf0315,Quelle contribution du cahier de Saint-Jean-d'Angély critique la desserte SNCF ?,"La contribution n°13 du cahier de Saint-Jean-d'Angély critique la SNCF pour la mauvaise desserte en transports en commun de la ville, décrite comme 'en perdition'.","La contribution du cahier de Saint-Jean-d’Angély qui critique la desserte SNCF est celle intitulée Cahier de Saint-Jean-d’Angély, au sein des doléances locales. Dans l’entrée manuscrite n°37 (18 lignes, 120 mots, datée du 6 janvier 2019), il est demandé la remise en état des lignes secondaires de la SNCF et, en particulier, la ligne Saintes-Niort, et Saintes-Bordeaux; et il est dénoncé que, depuis plusieurs années, il faut 1h30 pour le trajet Saintes-Niort en TER. C’est donc cette contribution qui aborde explicitement la desserte SNCF. :cite[ekx]",35699.672832999,1.0,0.0,0.5,0.9,0.4,2e-09,0.8,
