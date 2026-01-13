@@ -1,6 +1,7 @@
 import re
 import json
 import asyncio
+import time
 from typing import Union, Dict
 from collections import Counter, defaultdict
 from ._splitter import SeparatorSplitter
@@ -1262,10 +1263,13 @@ async def local_query(
         exclude_communities: If True, skip community reports (for surgical queries).
 
     Returns:
-        If query_param.return_provenance is True: dict with {answer, provenance}
+        If query_param.return_provenance is True: dict with {answer, provenance, retrieval_time_ms, llm_time_ms}
         Otherwise: string response (backward compatible)
     """
     use_model_func = global_config["best_model_func"]
+
+    # RETRIEVAL PHASE - with timing
+    retrieval_start = time.perf_counter()
 
     # Get context with optional provenance
     if query_param.return_provenance:
@@ -1295,31 +1299,44 @@ async def local_query(
         )
         provenance = None
 
+    retrieval_time_ms = (time.perf_counter() - retrieval_start) * 1000
+
     if query_param.only_need_context:
         if query_param.return_provenance:
-            return {"context": context, "provenance": provenance}
+            return {"context": context, "provenance": provenance, "retrieval_time_ms": retrieval_time_ms}
         return context
 
     if context is None:
         fail_response = PROMPTS["fail_response"]
         if query_param.return_provenance:
-            return {"answer": fail_response, "provenance": {"entities": [], "relationships": [], "communities": [], "source_quotes": []}}
+            return {
+                "answer": fail_response,
+                "provenance": {"entities": [], "relationships": [], "communities": [], "source_quotes": []},
+                "retrieval_time_ms": retrieval_time_ms,
+                "llm_time_ms": 0,
+            }
         return fail_response
 
     sys_prompt_temp = PROMPTS["local_rag_response"]
     sys_prompt = sys_prompt_temp.format(
         context_data=context, response_type=query_param.response_type
     )
+
+    # LLM GENERATION PHASE - with timing
+    llm_start = time.perf_counter()
     response = await use_model_func(
         query,
         system_prompt=sys_prompt,
     )
+    llm_time_ms = (time.perf_counter() - llm_start) * 1000
 
     if query_param.return_provenance:
         return {
             "answer": response,
             "provenance": provenance or {"entities": [], "relationships": [], "communities": [], "source_quotes": []},
-            "llm_context": context  # ADDED: Return full LLM context for debugging
+            "llm_context": context,
+            "retrieval_time_ms": retrieval_time_ms,
+            "llm_time_ms": llm_time_ms,
         }
 
     return response
