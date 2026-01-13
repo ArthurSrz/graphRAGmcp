@@ -2146,8 +2146,10 @@ RÉPONSE:"""
             "success": True,
             "query": query,
             "answer": answer,
+            "retrieval_time_ms": round(retrieval_time * 1000, 2),
             "performance": {
                 "total_seconds": round(total_time, 2),
+                "retrieval_time_ms": round(retrieval_time * 1000, 2),
                 "target_met": total_time < 10.0,
                 "phases": {
                     "community_selection": round(phase1a_time, 3),
