@@ -2023,6 +2023,10 @@ async def grand_debat_query_fast(
         # Combined phase 1 time for backward compatibility
         phase1_time = phase1a_time + phase1b_time
 
+        # Log retrieval time (phases 1-3, before LLM call)
+        retrieval_time = phase1a_time + phase1b_time + phase2_time + phase3_time
+        logger.info(f"Retrieval completed in {retrieval_time*1000:.0f}ms (phases 1-3)")
+
         # Phase 4: Build context + LLM call (3-5s)
         phase4_start = time.time()
 
