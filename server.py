@@ -2322,10 +2322,14 @@ async def grand_debat_query_local_surgical(
         # Extract provenance for small worlds analysis (result is a dict)
         answer = ""
         provenance = {}
+        retrieval_time_ms = -1
+        llm_time_ms = -1
 
         if isinstance(result, dict):
             answer = result.get("answer", "")
             llm_context = result.get("llm_context", "")  # ADDED: Extract LLM context
+            retrieval_time_ms = result.get("retrieval_time_ms", -1)  # Extract retrieval timing
+            llm_time_ms = result.get("llm_time_ms", -1)  # Extract LLM timing
 
             # DEBUG: Verify LLM context was extracted
             llm_context_length = len(llm_context)
@@ -2387,10 +2391,14 @@ async def grand_debat_query_local_surgical(
             "success": True,
             "query": query,
             "answer": answer,
+            "retrieval_time_ms": round(retrieval_time_ms, 2),
+            "llm_time_ms": round(llm_time_ms, 2),
             "mode": "local",
             "architecture": "Surgical RAG with Small Worlds (top_k=100, local_max_hops=5)",
             "performance": {
                 "total_seconds": round(total_time, 2),
+                "retrieval_time_ms": round(retrieval_time_ms, 2),
+                "llm_time_ms": round(llm_time_ms, 2),
                 "query_mode": "local_surgical_rag"
             },
             "provenance": provenance if include_sources else None
@@ -2480,6 +2488,8 @@ async def grand_debat_query_all_surgical(
         total_chunks = 0
         total_relationships = 0
         all_answers = []
+        all_retrieval_times = []
+        all_llm_times = []
 
         for commune_id, result_str in zip(communes_to_query, results):
             if isinstance(result_str, Exception):
@@ -2500,12 +2510,22 @@ async def grand_debat_query_all_surgical(
                     llm_context = prov.get('llm_context', '')
                     logger.info(f"🔍 ALL SURGICAL - {commune_id}: llm_context = {len(llm_context)} chars")
 
+                    # Extract timing metrics
+                    retrieval_time = result.get('retrieval_time_ms', -1)
+                    llm_time = result.get('llm_time_ms', -1)
+                    if retrieval_time >= 0:
+                        all_retrieval_times.append(retrieval_time)
+                    if llm_time >= 0:
+                        all_llm_times.append(llm_time)
+
                     mini_worlds.append({
                         'commune': commune_id,
                         'entities': entities,
                         'chunks': chunks,
                         'relationships': rels,
                         'coverage_pct': stats.get('ontological_coverage_pct', 0),
+                        'retrieval_time_ms': retrieval_time,
+                        'llm_time_ms': llm_time,
                         'llm_context': llm_context  # ADDED: Include LLM context for each commune
                     })
 
@@ -2532,10 +2552,21 @@ async def grand_debat_query_all_surgical(
         else:
             logger.info(f"✅ mini_worlds contain llm_context (avg {total_context_chars/len(mini_worlds):.0f} chars per commune)")
 
+        # Calculate aggregated timing metrics
+        # Sum of all retrieval times (parallel execution, but total work done)
+        total_retrieval_ms = sum(all_retrieval_times) if all_retrieval_times else -1
+        total_llm_ms = sum(all_llm_times) if all_llm_times else -1
+        avg_retrieval_ms = round(total_retrieval_ms / len(all_retrieval_times), 2) if all_retrieval_times else -1
+        avg_llm_ms = round(total_llm_ms / len(all_llm_times), 2) if all_llm_times else -1
+
         # Create aggregated response
         response = {
             "success": True,
             "query": query,
+            "retrieval_time_ms": avg_retrieval_ms,  # Average per commune (parallel execution)
+            "total_retrieval_time_ms": total_retrieval_ms,  # Sum across all communes
+            "llm_time_ms": avg_llm_ms,
+            "total_llm_time_ms": total_llm_ms,
             "architecture": "Parallel Surgical RAG (56 Mini-Worlds)",
             "mini_worlds_count": len(mini_worlds),
             "aggregated_answer": aggregated_answer,
@@ -2556,7 +2587,11 @@ async def grand_debat_query_all_surgical(
             "performance": {
                 "total_seconds": round(total_time, 2),
                 "communes_queried": len(mini_worlds),
-                "queries_per_second": round(len(mini_worlds) / total_time, 2) if total_time > 0 else 0
+                "queries_per_second": round(len(mini_worlds) / total_time, 2) if total_time > 0 else 0,
+                "avg_retrieval_time_ms": avg_retrieval_ms,
+                "avg_llm_time_ms": avg_llm_ms,
+                "total_retrieval_time_ms": total_retrieval_ms,
+                "total_llm_time_ms": total_llm_ms
             }
         }
 
